@@ -1,0 +1,94 @@
+﻿dam_sm_best_character = {
+	first_valid = {
+		modifier = {
+			factor = 5
+			trigger = {
+				is_ruler = yes
+			}
+		}
+		modifier = {
+			factor = 4
+			trigger = {
+				is_heir = yes
+				OR = {
+					AND = {
+						exists = father
+						father = {
+							is_ruler = yes
+						}
+					}
+					AND = {
+						exists = mother
+						mother = {
+							is_ruler = yes
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			trigger = {
+				is_heir = no
+				OR = {
+					AND = {
+						exists = father
+						father = {
+							is_ruler = yes
+						}
+					}
+					AND = {
+						exists = mother
+						mother = {
+							is_ruler = yes
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			trigger = {
+				OR = {
+					in_cabinet = yes
+					is_general = yes
+					is_admiral = yes
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			trigger = {
+				OR = {
+					AND = {
+						exists = father
+						father = {
+							is_heir = yes
+						}
+					}
+					AND = {
+						exists = mother
+						mother = {
+							is_heir = yes
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			trigger = {
+				is_artist = yes
+			}
+		}
+	}
+	modifier = {
+		factor = 2
+		trigger = {
+			age_in_years < 30
+		}
+	}
+	modifier = {
+		add = total_abilities
+	}
+}

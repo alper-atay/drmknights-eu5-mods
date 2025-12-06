@@ -1,0 +1,13 @@
+﻿dam_sl_suitable_characters = {
+	base = character
+	conditions = {
+		is_married = no
+		is_alive = yes
+		is_adult = yes
+		modifier:blocked_from_marriage = no
+		OR = {
+			has_estate = estate_type:crown_estate
+			has_estate = estate_type:nobles_estate
+		}
+	}
+}

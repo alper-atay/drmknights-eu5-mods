@@ -1,0 +1,21 @@
+﻿dbu_gr_ottoman_grand_bazaar = {
+	unique = yes
+	potential = {
+		has_or_had_tag = TUR
+		has_variable = dbu_gr_ottoman_grand_bazaar
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = government_reform
+			type = dbu_gr_ottoman_grand_bazaar
+		}
+	}
+	country_modifier = {
+		global_merchant_capacity_modifier = 0.1
+		global_merchant_power = 0.1
+		merchant_power_from_maritime_modifier = 0.1
+		merchant_maintenance_cost = -0.1
+		government_reform_slots = 1
+	}
+	years = 2
+}

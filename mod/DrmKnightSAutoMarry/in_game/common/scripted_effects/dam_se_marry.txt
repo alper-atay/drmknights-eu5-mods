@@ -1,0 +1,73 @@
+﻿dam_se_marry = {
+	if = {
+		random_dam_sl_suitable_characters = {
+			limit = {
+				is_female = no
+				age_in_years > 20
+			}
+			weight = {
+				base = 100
+				dam_sm_best_character = {
+				}
+			}
+			save_scope_as = target_male
+		}
+		if = {
+			limit = {
+				exists = scope:target_male
+			}
+			random_dam_sl_suitable_characters = {
+				limit = {
+					is_female = yes
+					age_in_years < 20
+					total_abilities > 200
+					NOT = {
+						is_close_relative = scope:target_male
+					}
+				}
+				weight = {
+					base = 100
+					dam_sm_best_character = {
+					}
+				}
+				save_scope_as = target_female
+			}
+			if = {
+				limit = {
+					exists = scope:target_female
+				}
+				scope:target_male ?= {
+					marry_character = scope:target_female
+				}
+			}
+			else = {
+				create_character = {
+					female = yes
+					estate = estate_type:nobles_estate
+					adm = {
+						70
+						100
+					}
+					dip = {
+						70
+						100
+					}
+					mil = {
+						70
+						100
+					}
+					age = 16
+					save_scope_as = target_female_created
+				}
+				if = {
+					limit = {
+						exists = scope:target_female_created
+					}
+					scope:target_male ?= {
+						marry_character = scope:target_female_created
+					}
+				}
+			}
+		}
+	}
+}

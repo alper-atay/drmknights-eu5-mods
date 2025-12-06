@@ -1,0 +1,15 @@
+﻿{
+	"name": "DrmKnightS Auto Child Education",
+	"id": "DrmKnightS.autochildeducation",
+	"version": "",
+	"supported_game_version": "",
+	"short_description": " Automatically educates children when they reach the appropriate age.",
+	"tags": [
+		"Gameplay",
+		"Utilities"
+	],
+	"relationships": [],
+	"game_custom_data": {
+		"multiplayer_synchronized": true
+	}
+}
