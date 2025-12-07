@@ -1,0 +1,13 @@
+﻿l_turkish:
+ dbo_gr_cultural_capital: "Kültür Başkenti [ShowLocationName('constantinople')]"
+ dbo_gr_cultural_capital_desc: "[ShowLocationName('constantinople')], Osmanlı İmparatorluğu'nun kültürel başkenti olarak, sanat, mimari ve entelektüel faaliyetlerin merkeziydi. Şehir, farklı kültürlerin ve dinlerin bir arada yaşadığı zengin bir mozaik oluşturdu. [ShowLocationName('constantinople')] kültürel önemi, Osmanlıların hoşgörülü yönetim anlayışını ve imparatorluğun çeşitliliğini yansıtır."
+ dbo_gr_grand_bazaar: "Kapalıçarşı"
+ dbo_gr_grand_bazaar_desc: "Kapalıçarşı, Osmanlı İmparatorluğu'nun ticaret ve zanaat merkezi olarak hizmet vermiştir. Bu büyük pazar, çeşitli malların ticaretinin yapıldığı, zanaatkarların ürünlerini sergilediği ve ekonomik canlılığın sürdüğü bir yerdir. Kapalıçarşı'nın varlığı, Osmanlı ekonomisinin çeşitliliğini ve ticaretin önemini yansıtır."
+ dbo_gr_great_bronze_cannon: "Büyük Bronz Top Şahi"
+ dbo_gr_great_bronze_cannon_desc: "Büyük Bronz Top Şahi, Osmanlıların askeri mühendislikteki ustalığını ve savaş alanındaki gücünü simgeler. Bu devasa top, kuşatma savaşlarında kullanılmış ve Osmanlı ordusunun düşman kalelerini etkili bir şekilde yıkmasına olanak sağlamıştır. Büyük Bronz Top, Osmanlıların askeri teknolojideki yenilikçi yaklaşımını ve stratejik üstünlüğünü temsil eder."
+ dbo_gr_legacy_of_seljuks: "Selçukluların Mirası"
+ dbo_gr_legacy_of_seljuks_desc: "Selçuklu mirasını benimsemek, Osmanlıların kültürel çeşitliliğini ve yönetim becerilerini artırdı. Selçuklu etkisi, Osmanlıların mimarisinde, sanatında ve yönetiminde belirgin bir şekilde görülmektedir. Selçuklu mirasını kabul etmek, Osmanlıların bölgedeki hakimiyetini pekiştirdi ve onların uzun ömürlü bir imparatorluk olmalarına katkıda bulundu."
+ dbo_gr_lessons_from_mongols: "Moğollardan Alınan Dersler"
+ dbo_gr_lessons_from_mongols_desc: "Moğollardan alınan dersler, Osmanlıların askeri stratejilerini ve yönetim yaklaşımlarını geliştirmelerine yardımcı oldu. Moğol taktikleri ve organizasyon becerileri, Osmanlıların savaş alanındaki etkinliğini artırdı. Moğollardan öğrenilen bu dersler, Osmanlıların geniş toprakları yönetme ve savunma konusundaki yeteneklerini güçlendirdi."
+ dbo_gr_martolos_units: "Martolos Birlikleri"
+ dbo_gr_martolos_units_desc: "Martolos birlikleri, Osmanlı ordusunun istibarat ve güvenlik görevlerinde önemli bir rol oynadı. Bu özel birlikler, sınır bölgelerinde devriye gezerek düşman hareketlerini izledi ve iç güvenliği sağladı. Martoloslar, Osmanlıların askeri yapısında kritik bir unsur olarak, imparatorluğun geniş topraklarını korumada etkili oldular."

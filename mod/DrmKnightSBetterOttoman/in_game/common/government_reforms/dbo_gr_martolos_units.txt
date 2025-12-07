@@ -1,0 +1,21 @@
+﻿dbo_gr_martolos_units = {
+	unique = yes
+	potential = {
+		has_or_had_tag = TUR
+		has_variable = dbo_gr_martolos_units
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = government_reform
+			type = dbo_gr_martolos_units
+		}
+	}
+	country_modifier = {
+		army_initiative = 0.1
+		correct_box_chance = 0.1
+		counter_espionage = 0.1
+		spy_network_construction = 0.1
+		government_reform_slots = 1
+	}
+	years = 2
+}
