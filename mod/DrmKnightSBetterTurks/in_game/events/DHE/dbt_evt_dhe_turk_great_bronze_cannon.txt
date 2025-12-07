@@ -1,0 +1,36 @@
+﻿namespace = dbt_evt_dhe_turk_great_bronze_cannon
+dbt_evt_dhe_turk_great_bronze_cannon.1 = {
+	type = country_event
+	title = dbt_evt_dhe_turk_great_bronze_cannon.1.title
+	desc = dbt_evt_dhe_turk_great_bronze_cannon.1.desc
+	historical_info = dbt_evt_dhe_turk_great_bronze_cannon.1.historical_info
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 10
+	}
+	trigger = {
+		OR = {
+			has_advance = unlock_houfnice_advance
+			has_advance = unlock_falconet_advance
+			has_advance = unlock_chambered_cannon_advance
+			has_advance = unlock_royal_mortar_advance
+			has_advance = unlock_flying_battery_advance
+		}
+		NOT = {
+			has_reform = government_reform:dbt_gr_turk_great_bronze_cannon
+		}
+	}
+	option = {
+		name = dbt_evt_dhe_turk_great_bronze_cannon.1.a
+		set_variable = {
+			name = dbt_gr_turk_great_bronze_cannon
+			value = 1
+		}
+		historical_option = yes
+		add_reform = government_reform:dbt_gr_turk_great_bronze_cannon
+		add_stability = 10
+	}
+}

@@ -1,0 +1,26 @@
+﻿dbt_gr_turk_cultural_capital = {
+	unique = yes
+	potential = {
+		has_or_had_tag = TUR
+		has_variable = dbt_gr_turk_cultural_capital
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = government_reform
+			type = dbt_gr_turk_cultural_capital
+		}
+	}
+	country_modifier = {
+		artist_monthly_start_chance = 0.1
+		artist_salary_modifier = -0.1
+		artist_salary_modifier_on_character = -0.1
+		artist_skill_level_gain = 10
+		cultures_capacity = 1
+		cultures_capacity_modifier = 0.25
+		cultural_tradition_modifier = 0.1
+		cultural_influence_modifier = 0.1
+		global_institution_growth_modifier = 0.1
+		government_reform_slots = 1
+	}
+	years = 2
+}
