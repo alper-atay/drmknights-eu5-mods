@@ -1,0 +1,22 @@
+﻿dbo_anatolian_turks_union_achieved = {
+	own_entire_province = province_definition:edirne_province
+	own_entire_province = province_definition:dardanelles_province
+	own_entire_province = province_definition:constantinople_province
+	own_entire_area = area:cappadocia_area
+	own_entire_area = area:central_anatolia_area
+	own_entire_area = area:cilicia_area
+	own_entire_area = area:marmara_area
+	own_entire_area = area:pontus_area
+	own_entire_area = area:west_anatolia_area
+	own_entire_area = area:armenian_highlands_area
+}
+
+
+
+
+
+
+
+
+
+
