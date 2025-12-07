@@ -1,0 +1,21 @@
+﻿dbo_gr_ottoman_great_bronze_cannon = {
+	unique = yes
+	potential = {
+		has_or_had_tag = TUR
+		has_variable = dbo_gr_ottoman_great_bronze_cannon
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = government_reform
+			type = dbo_gr_ottoman_great_bronze_cannon
+		}
+	}
+	country_modifier = {
+		artillery_bonus_vs_fort = 1
+		siege_ability = 0.1
+		army_artillery_power = 0.1
+		army_artillery_maintenance_cost_modifier = -0.1
+		government_reform_slots = 1
+	}
+	years = 2
+}
