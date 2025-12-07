@@ -11,9 +11,10 @@
 		}
 	}
 	country_modifier = {
-		global_merchant_capacity_modifier = 0.1
-		global_merchant_power = 0.1
-		merchant_power_from_maritime_modifier = 0.1
+		trade_efficiency = 0.1
+		trade_range_modifier = 0.1
+		trade_land_movement_cost_modifier = -0.1
+		trade_sea_movement_cost_modifier = -0.1
 		merchant_maintenance_cost = -0.1
 		government_reform_slots = 1
 	}
