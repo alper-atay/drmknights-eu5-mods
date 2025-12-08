@@ -9,14 +9,10 @@
 			has_raised_levies = no
 		}
 	}
-	automation_tick = never
-	automation_tick_frequency = 12
-	ai_tick = monthly
-	ai_tick_frequency = 3
 	price = price:rto_press_claims_price
 	cooldown = {
-		type = press_claims_cooldown_key
-		years = 2
+		type = dbo_ge_anatolian_turks_union_press_claims_cooldown_key
+		years = 0
 	}
 	select_trigger = {
 		looking_for_a = situation
@@ -53,12 +49,11 @@
 					can_declare_war_on = root.owner
 				}
 				trigger_if = {
-					region = region:anatolia_region
-				}
-				trigger_else = {
 					OR = {
 						region = region:anatolia_region
 						region = region:balkan_region
+						region = region:crescent_region
+						region = region:caucasus_region
 					}
 				}
 				any_location_in_province = {
@@ -74,6 +69,19 @@
 								target = scope:actor
 							}
 						}
+					}
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					exists = scope:target
+				}
+				custom_tooltip = {
+					text = dbo_sit_anatolian_turks_union_press_claims
+					scope:actor = {
+						trigger_event_silently = dbo_evt_sit_anatolian_turks_union.1
 					}
 				}
 			}

@@ -27,7 +27,7 @@
 	own_entire_province = province_definition:bitlis_province
 	own_entire_province = province_definition:hasankeyf_province
 	own_entire_province = province_definition:diyarbekir_province
-	own_entire_province = province_definition:urfa_province
+	own_entire_province = province_definition:ar_ruha_province
 	own_entire_province = province_definition:amadiya_province
 	own_entire_province = province_definition:nusaybin_province
 	own_entire_province = province_definition:mardin_province
