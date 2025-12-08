@@ -6,9 +6,15 @@
 		has_or_had_tag = TUR
 	}
 	can_end = {
-		dbo_anatolian_turks_union_achieved = yes
+		#dbo_anatolian_turks_union_achieved = yes
+		current_date > 1337.5.1
 	}
 	visible = {
 		has_or_had_tag = TUR
+	}
+	on_ended = {
+		c:TUR ?= {
+			trigger_event_non_silently = dbo_evt_sit_anatolian_turks_union.2
+		}
 	}
 }
