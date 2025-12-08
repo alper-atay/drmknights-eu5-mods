@@ -82,7 +82,7 @@
             custom_tooltip = {
                 text = dbo_sit_anatolian_turks_union_press_claims
                 scope:actor = {
-                    trigger_event_silently = dbo_evt_sit_anatolian_turks_union.1
+                    trigger_event_silently = dbo_evt_sit_anatolian_turks_union.100
                 }
             }
         }
