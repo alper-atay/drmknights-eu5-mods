@@ -1,0 +1,24 @@
+dbo_gr_anatolian_turks_union = {
+    unique = yes
+    potential = {
+        has_or_had_tag = TUR
+        has_variable = dbo_gr_anatolian_turks_union
+    }
+    locked = {
+        is_locked_mechanic = {
+            mechanic = government_reform
+            type = dbo_gr_anatolian_turks_union
+        }
+    }
+    country_modifier = {
+        global_max_control = 0.05
+        global_monthly_control = 0.005
+        global_pop_assimilation_speed = 0.05
+        global_pop_assimilation_speed_modifier = 0.01
+        global_pop_conversion_speed = 0.05
+        global_pop_conversion_speed_modifier = 0.01
+        global_population_growth = 0.0001
+        government_reform_slots = 1
+    }
+    years = 2
+}
