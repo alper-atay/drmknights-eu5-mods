@@ -1,22 +1,36 @@
 ﻿dbo_anatolian_turks_union_achieved = {
-	own_entire_province = province_definition:edirne_province
-	own_entire_province = province_definition:dardanelles_province
-	own_entire_province = province_definition:constantinople_province
+	#Alanlar
 	own_entire_area = area:cappadocia_area
 	own_entire_area = area:central_anatolia_area
-	own_entire_area = area:cilicia_area
 	own_entire_area = area:marmara_area
 	own_entire_area = area:pontus_area
 	own_entire_area = area:west_anatolia_area
-	own_entire_area = area:armenian_highlands_area
+	#Balkanlar
+	own_entire_province = province_definition:edirne_province
+	own_entire_province = province_definition:dardanelles_province
+	own_entire_province = province_definition:constantinople_province
+	#Kilikya
+	own_entire_province = province_definition:icel_province
+	own_entire_province = province_definition:tarsus_province
+	own_entire_province = province_definition:sis_province
+	own_entire_province = province_definition:adana_province
+	own_entire_province = province_definition:marash_province
+	own_entire_province = province_definition:malatya_province
+	# Doğu Anadolu
+	own_entire_province = province_definition:erzurum_province
+	own_entire_province = province_definition:harput_province
+	own_entire_province = province_definition:malazgirt_province
+	own_entire_province = province_definition:meskheti_province
+	own_entire_province = province_definition:kars_province
+	# Güney Doğu Anadolu
+	own_entire_province = province_definition:van_province
+	own_entire_province = province_definition:bitlis_province
+	own_entire_province = province_definition:hasankeyf_province
+	own_entire_province = province_definition:diyarbekir_province
+	own_entire_province = province_definition:urfa_province
+	own_entire_province = province_definition:amadiya_province
+	own_entire_province = province_definition:nusaybin_province
+	own_entire_province = province_definition:mardin_province
+	own_entire_province = province_definition:ayntab_province
+	own_entire_province = province_definition:antakya_province
 }
-
-
-
-
-
-
-
-
-
-

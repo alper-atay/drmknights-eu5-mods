@@ -1,0 +1,4 @@
+﻿l_turkish:
+ rise_of_the_ottomans.100.title: "[target_country.GetNameWithNoTooltip] Seferi"
+ rise_of_the_ottomans.100.desc: "[ROOT.GetCountry.GetGovernment.GetRulerTitle], büyük planındaki bir sonraki hamlesini düşünürken muzaffer [ROOT.GetCountry.GetAdjective] sancaklarının rüzgârda dalgalanışını seyrediyor. Komşu topraklarsa şimdiden büyüyen [ROOT.GetCountry.GetFlavorRank] egemenliğine dâhil olmaya hazır görünüyor.\n\n[target.GetProvince.GetName] vilayeti üstünde hak iddia etmeye karar verirsek [target.GetArea.GetName] üstündeki kontrolünü sağlamlaştırır ve bölgedeki nüfuzunu daha da artırırız. Yeni bir sefer düzenleme zamanı geldi!"
+ rise_of_the_ottomans.100.a: "[target.GetNameWithNoTooltip] yakında bizim olacak!"

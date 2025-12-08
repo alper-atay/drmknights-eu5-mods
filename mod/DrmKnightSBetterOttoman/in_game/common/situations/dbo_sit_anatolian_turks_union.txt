@@ -1,5 +1,4 @@
-﻿namespace = dbo_sit_anatolian_turks_union
-dbo_sit_anatolian_turks_union = {
+﻿dbo_sit_anatolian_turks_union = {
 	monthly_spawn_chance = monthly_spawn_chance_unique
 	hint_tag = hint_rise_of_the_ottomans
 	can_start = {
