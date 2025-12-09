@@ -1,0 +1,11 @@
+﻿dbo_st_conquer_arabian_peninsula = {
+    c:TUR ?= {
+        own_entire_area = area:bahrein_area
+        own_entire_area = area:hedjaz_area
+        own_entire_area = area:najd_area
+        own_entire_area = area:oman_area
+        own_entire_area = area:hail_area
+        own_entire_area = area:north_yemen_area
+        own_entire_area = area:south_yemen_area
+    }
+}

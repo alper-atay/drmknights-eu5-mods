@@ -1,5 +1,0 @@
-﻿dbu_destiny = {
-	alias = {
-		dbu_destinies
-	}
-}

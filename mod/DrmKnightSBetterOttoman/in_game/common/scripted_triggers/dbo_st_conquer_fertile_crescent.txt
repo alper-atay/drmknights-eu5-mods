@@ -1,0 +1,7 @@
+dbo_st_conquer_fertile_crescent = {
+    c:TUR ?= {
+        own_entire_area = area:iraq_arabi_area
+        own_entire_area = area:jazira_area
+        own_entire_area = area:levant_area
+    }
+}

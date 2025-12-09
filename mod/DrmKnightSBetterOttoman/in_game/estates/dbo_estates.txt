@@ -1,0 +1,3 @@
+﻿destiny_estate = {
+	color = estate_crown	
+}
