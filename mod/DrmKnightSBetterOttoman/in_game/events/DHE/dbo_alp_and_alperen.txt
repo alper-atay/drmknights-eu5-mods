@@ -1,0 +1,32 @@
+dbo_alp_and_alperen.1 = {
+	type = country_event
+	title = dbo_alp_and_alperen.1.title
+	desc = dbo_alp_and_alperen.1.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 10
+	}
+	trigger = {
+		tag = TUR
+		NOT = {
+			has_reform = government_reform:dbo_alp_and_alperen
+		}
+	}
+	option = {
+		name = dbo_alp_and_alperen.1.a
+		set_variable = {
+			name = dbo_alp_and_alperen
+			value = 1
+		}
+		historical_option = yes
+		set_variable = {
+			name = dbo_alp_and_alperen
+			value = 1
+		}
+		add_reform = government_reform:dbo_alp_and_alperen
+		add_stability = 10
+	}
+}

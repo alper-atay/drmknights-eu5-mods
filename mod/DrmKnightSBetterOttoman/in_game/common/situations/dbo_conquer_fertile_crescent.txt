@@ -2,7 +2,7 @@
     monthly_spawn_chance = monthly_spawn_chance_unique
     hint_tag = dbo_hint_conquer_fertile_crescent
     can_start = {
-        current_date > 1371.1.1
+        current_date > 1337.1.1
     }
     can_end = {
         dbo_conquer_fertile_crescent_achieved = yes

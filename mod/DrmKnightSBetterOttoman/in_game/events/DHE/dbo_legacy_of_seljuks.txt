@@ -5,6 +5,12 @@ dbo_legacy_of_seljuks.1 = {
 	desc = dbo_legacy_of_seljuks.1.desc
 	historical_info = dbo_legacy_of_seljuks.1.historical_info
 	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 10
+	}
 	trigger = {
 		tag = TUR
 		#has_advance = seljuk_heritage

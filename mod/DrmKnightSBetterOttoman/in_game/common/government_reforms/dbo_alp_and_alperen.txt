@@ -1,0 +1,24 @@
+﻿dbo_alp_and_alperen = {
+    unique = yes
+    potential = {
+        has_or_had_tag = TUR
+        has_variable = dbo_alp_and_alperen
+    }
+    locked = {
+        is_locked_mechanic = {
+            mechanic = government_reform
+            type = dbo_alp_and_alperen
+        }
+    }
+    country_modifier = {
+        power_projection = 5
+		monthly_towards_belligerent = societal_value_monthly_move
+		monthly_towards_quality = societal_value_monthly_move
+		monthly_towards_offensive = societal_value_monthly_move
+		monthly_towards_land = societal_value_monthly_move
+		land_morale_modifier = 0.05
+		military_tactics = 1
+		discipline = 0.05
+        government_reform_slots = 1
+    }
+}
