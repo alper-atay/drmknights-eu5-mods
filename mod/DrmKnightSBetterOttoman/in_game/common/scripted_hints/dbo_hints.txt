@@ -1,0 +1,11 @@
+﻿dbo_hint_anatolian_turks_union = {
+	priority = {
+		can_see_situation = situation:dbo_anatolian_turks_union
+	}
+	hide = {
+		NOT = {
+			is_situation_active = situation:dbo_anatolian_turks_union
+		}
+	}
+	sort_priority = 200	#React now!
+}

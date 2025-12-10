@@ -31,3 +31,23 @@
         own_entire_province = province_definition:antakya_province
     }
 }
+
+dbo_conquer_arabian_peninsula_achieved = {
+    c:TUR ?= {
+        own_entire_area = area:bahrein_area
+        own_entire_area = area:hedjaz_area
+        own_entire_area = area:najd_area
+        own_entire_area = area:oman_area
+        own_entire_area = area:hail_area
+        own_entire_area = area:north_yemen_area
+        own_entire_area = area:south_yemen_area
+    }
+}
+
+dbo_conquer_fertile_crescent_achieved = {
+    c:TUR ?= {
+        own_entire_area = area:iraq_arabi_area
+        own_entire_area = area:jazira_area
+        own_entire_area = area:levant_area
+    }
+}

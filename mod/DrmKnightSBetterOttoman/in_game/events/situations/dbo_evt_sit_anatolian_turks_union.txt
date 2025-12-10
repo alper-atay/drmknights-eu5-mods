@@ -1,25 +1,25 @@
-﻿namespace = dbo_evt_sit_anatolian_turks_union
+﻿namespace = dbo_anatolian_turks_union
 
-dbo_evt_sit_anatolian_turks_union.1 = {
+dbo_anatolian_turks_union.1 = {
     type = country_event
     category = situation_event
 
-    title = dbo_evt_sit_anatolian_turks_union.1.title
-    desc = dbo_evt_sit_anatolian_turks_union.1.desc
+    title = dbo_anatolian_turks_union.1.title
+    desc = dbo_anatolian_turks_union.1.desc
     image = "gfx/interface/illustrations/situation/rise_of_the_ottomans.dds"
 
     option = {
-        name = dbo_evt_sit_anatolian_turks_union.1.a
+        name = dbo_anatolian_turks_union.1.a
     }
 }
 
-dbo_evt_sit_anatolian_turks_union.2 = {
+dbo_anatolian_turks_union.2 = {
     type = country_event
     category = situation_event
-    title = dbo_evt_sit_anatolian_turks_union.2.title
-    desc = dbo_evt_sit_anatolian_turks_union.2.desc
+    title = dbo_anatolian_turks_union.2.title
+    desc = dbo_anatolian_turks_union.2.desc
     option = {
-        name = dbo_evt_sit_anatolian_turks_union.2.a
+        name = dbo_anatolian_turks_union.2.a
         set_variable = {
             name = dbo_gr_anatolian_turks_union
             value = 1
@@ -30,11 +30,11 @@ dbo_evt_sit_anatolian_turks_union.2 = {
         add_legitimacy = legitimacy_extreme_bonus
     }
 }
-dbo_evt_sit_anatolian_turks_union.100 = {
+dbo_anatolian_turks_union.100 = {
     type = country_event
     category = situation_event
-    title = dbo_evt_sit_anatolian_turks_union.100.title
-    desc = dbo_evt_sit_anatolian_turks_union.100.desc
+    title = dbo_anatolian_turks_union.100.title
+    desc = dbo_anatolian_turks_union.100.desc
     immediate = {
         ruler_or_regent ?= {
             save_scope_as = target_character1
@@ -47,7 +47,7 @@ dbo_evt_sit_anatolian_turks_union.100 = {
         }
     }
     option = {
-        name = dbo_evt_sit_anatolian_turks_union.100.a
+        name = dbo_anatolian_turks_union.100.a
         add_casus_belli = {
             target = scope:target.owner
             type = casus_belli:cb_conquer_province

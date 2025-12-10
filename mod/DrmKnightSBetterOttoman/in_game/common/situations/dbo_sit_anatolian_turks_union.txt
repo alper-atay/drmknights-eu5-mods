@@ -1,4 +1,4 @@
-﻿dbo_sit_anatolian_turks_union = {
+﻿dbo_anatolian_turks_union = {
     monthly_spawn_chance = monthly_spawn_chance_unique
     hint_tag = hint_rise_of_the_ottomans
     can_start = {
@@ -13,12 +13,12 @@
     }
     on_start = {
         c:TUR ?= {
-            trigger_event_non_silently = dbo_evt_sit_anatolian_turks_union.1
+            trigger_event_non_silently = dbo_anatolian_turks_union.1
         }
     }
     on_ended = {
         c:TUR ?= {
-            trigger_event_non_silently = dbo_evt_sit_anatolian_turks_union.2
+            trigger_event_non_silently = dbo_anatolian_turks_union.2
         }
     }
 }

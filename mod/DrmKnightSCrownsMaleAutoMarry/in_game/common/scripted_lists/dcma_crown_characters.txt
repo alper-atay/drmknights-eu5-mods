@@ -1,0 +1,11 @@
+﻿dcma_crown_characters = {
+    base = character
+    conditions = {
+        is_female = no
+        is_alive = yes
+        is_adult = yes
+		has_available_marriage_slot = yes
+        num_of_spouses < 4
+        has_estate = estate_type:crown_estate
+    }
+}

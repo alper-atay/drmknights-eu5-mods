@@ -1,0 +1,45 @@
+﻿dcma_marry = {
+    if = {
+        random_dcma_crown_characters = {
+            limit = {
+            }
+            weight = {
+                base = 100
+                dcma_prioritize_ruler_family = {
+                }
+            }
+            save_scope_as = target_crown_male
+        }
+        if = {
+            limit = {
+                exists = scope:target_crown_male
+            }
+            create_character = {
+                female = yes
+                estate = estate_type:nobles_estate
+                adm = {
+                    80
+                    100
+                }
+                dip = {
+                    80
+                    100
+                }
+                mil = {
+                    80
+                    100
+                }
+                age = 16
+                save_scope_as = target_female_created
+            }
+            if = {
+                limit = {
+                    exists = scope:target_female_created
+                }
+                scope:target_crown_male ?= {
+                    marry_character = scope:target_female_created
+                }
+            }
+        }
+    }
+}

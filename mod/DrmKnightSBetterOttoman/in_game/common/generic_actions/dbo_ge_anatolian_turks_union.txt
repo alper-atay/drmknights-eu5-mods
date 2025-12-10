@@ -17,7 +17,7 @@
     select_trigger = {
         looking_for_a = situation
         interaction_source_list = {
-            situation:dbo_sit_anatolian_turks_union = {
+            situation:dbo_anatolian_turks_union = {
                 add_to_list = source
             }
         }
@@ -27,7 +27,7 @@
             data = name
         }
         visible = {
-            situation:dbo_sit_anatolian_turks_union = this
+            situation:dbo_anatolian_turks_union = this
             situation_is_active = yes
         }
     }
@@ -80,9 +80,9 @@
                 exists = scope:target
             }
             custom_tooltip = {
-                text = dbo_sit_anatolian_turks_union_press_claims
+                text = dbo_anatolian_turks_union_press_claims
                 scope:actor = {
-                    trigger_event_silently = dbo_evt_sit_anatolian_turks_union.100
+                    trigger_event_silently = dbo_anatolian_turks_union.100
                 }
             }
         }

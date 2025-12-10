@@ -1,2 +1,23 @@
 ﻿dbo_sit_conquer_arabian_peninsula = {
+    monthly_spawn_chance = monthly_spawn_chance_unique
+    can_start = {
+        current_date > 1371.1.1
+        has_or_had_tag = TUR
+    }
+    can_end = {
+        dbo_conquer_arabian_peninsula_achieved = yes
+    }
+    visible = {
+        has_or_had_tag = TUR
+    }
+    on_start = {
+        c:TUR ?= {
+            trigger_event_non_silently = dbo_anatolian_turks_union.1
+        }
+    }
+    on_ended = {
+        c:TUR ?= {
+            trigger_event_non_silently = dbo_anatolian_turks_union.2
+        }
+    }
 }

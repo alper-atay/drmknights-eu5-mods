@@ -1,0 +1,50 @@
+﻿dcma_prioritize_ruler_family = {
+	first_valid = {
+		modifier = {
+			factor = 5
+			trigger = {
+				is_ruler = yes
+			}
+		}
+		modifier = {
+			factor = 4
+			trigger = {
+				is_heir = yes
+				OR = {
+					AND = {
+						exists = father
+						father = {
+							is_ruler = yes
+						}
+					}
+					AND = {
+						exists = mother
+						mother = {
+							is_ruler = yes
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			trigger = {
+				is_heir = no
+				OR = {
+					AND = {
+						exists = father
+						father = {
+							is_ruler = yes
+						}
+					}
+					AND = {
+						exists = mother
+						mother = {
+							is_ruler = yes
+						}
+					}
+				}
+			}
+		}
+	}
+}
