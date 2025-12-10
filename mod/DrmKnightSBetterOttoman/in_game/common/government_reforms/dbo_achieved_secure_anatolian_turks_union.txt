@@ -19,5 +19,4 @@
         monthly_rebel_growth = -0.001
         government_reform_slots = 1
     }
-    years = 2
 }

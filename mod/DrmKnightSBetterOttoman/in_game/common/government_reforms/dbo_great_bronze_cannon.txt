@@ -19,5 +19,4 @@
         army_artillery_reinforce_cost_modifier = -0.1
         government_reform_slots = 1
     }
-    years = 2
 }

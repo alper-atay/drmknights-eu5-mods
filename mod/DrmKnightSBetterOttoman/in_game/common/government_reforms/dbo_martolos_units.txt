@@ -17,5 +17,4 @@
 		spy_network_construction = 0.1
 		government_reform_slots = 1
 	}
-	years = 2
 }

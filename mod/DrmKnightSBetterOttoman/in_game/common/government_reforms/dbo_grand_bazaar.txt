@@ -18,5 +18,4 @@
 		merchant_maintenance_cost = -0.1
 		government_reform_slots = 1
 	}
-	years = 2
 }
