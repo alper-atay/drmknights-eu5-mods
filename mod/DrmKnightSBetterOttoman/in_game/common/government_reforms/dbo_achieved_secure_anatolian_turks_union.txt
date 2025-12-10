@@ -11,6 +11,7 @@ dbo_achieved_secure_anatolian_turks_union = {
         }
     }
     country_modifier = {
+        power_projection = 5
         global_monthly_control = 0.001
         global_pop_assimilation_speed_modifier = 0.1
         global_pop_conversion_speed_modifier = 0.1

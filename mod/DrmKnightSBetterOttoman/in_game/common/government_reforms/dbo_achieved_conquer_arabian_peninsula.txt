@@ -1,20 +1,19 @@
-dbo_achieved_secure_anatolian_turks_union = {
+dbo_achieved_conquer_arabian_peninsula = {
     unique = yes
     potential = {
         has_or_had_tag = TUR
-        has_variable = dbo_achieved_secure_anatolian_turks_union
+        has_variable = dbo_achieved_conquer_arabian_peninsula
     }
     locked = {
         is_locked_mechanic = {
             mechanic = government_reform
-            type = dbo_achieved_secure_anatolian_turks_union
+            type = dbo_achieved_conquer_arabian_peninsula
         }
     }
     country_modifier = {
-        global_monthly_control = 0.001
-        global_pop_assimilation_speed_modifier = 0.1
-        global_pop_conversion_speed_modifier = 0.1
-        global_population_growth = 0.0001
+        power_projection = 5
+        global_pop_conversion_speed = 20
+        global_pop_conversion_speed_modifier = 0.2
         monthly_rebel_growth = -0.001
         government_reform_slots = 1
     }

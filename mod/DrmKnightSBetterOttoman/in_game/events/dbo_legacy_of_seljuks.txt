@@ -1,17 +1,12 @@
-﻿namespace = dbo_evt_dhe_legacy_of_seljuks
-dbo_evt_dhe_legacy_of_seljuks.1 = {
+﻿namespace = dbo_legacy_of_seljuks
+dbo_legacy_of_seljuks.1 = {
 	type = country_event
-	title = dbo_evt_dhe_legacy_of_seljuks.1.title
-	desc = dbo_evt_dhe_legacy_of_seljuks.1.desc
-	historical_info = dbo_evt_dhe_legacy_of_seljuks.1.historical_info
+	title = dbo_legacy_of_seljuks.1.title
+	desc = dbo_legacy_of_seljuks.1.desc
+	historical_info = dbo_legacy_of_seljuks.1.historical_info
 	fire_only_once = yes
-	dynamic_historical_event = {
-		tag = TUR
-		from = 1337.1.1
-		to = 1837.1.1
-		monthly_chance = 10
-	}
 	trigger = {
+		tag = TUR
 		has_advance = seljuk_heritage
 		has_advance = seljuk_roots
 		has_advance = heirs_of_rum
@@ -20,7 +15,7 @@ dbo_evt_dhe_legacy_of_seljuks.1 = {
 		}
 	}
 	option = {
-		name = dbo_evt_dhe_legacy_of_seljuks.1.a
+		name = dbo_legacy_of_seljuks.1.a
 		set_variable = {
 			name = dbo_legacy_of_seljuks
 			value = 1

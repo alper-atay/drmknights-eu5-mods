@@ -1,17 +1,12 @@
-﻿namespace = dbo_evt_dhe_great_bronze_cannon
-dbo_evt_dhe_great_bronze_cannon.1 = {
+﻿namespace = dbo_great_bronze_cannon
+dbo_great_bronze_cannon.1 = {
 	type = country_event
-	title = dbo_evt_dhe_great_bronze_cannon.1.title
-	desc = dbo_evt_dhe_great_bronze_cannon.1.desc
-	historical_info = dbo_evt_dhe_great_bronze_cannon.1.historical_info
+	title = dbo_great_bronze_cannon.1.title
+	desc = dbo_great_bronze_cannon.1.desc
+	historical_info = dbo_great_bronze_cannon.1.historical_info
 	fire_only_once = yes
-	dynamic_historical_event = {
-		tag = TUR
-		from = 1337.1.1
-		to = 1837.1.1
-		monthly_chance = 10
-	}
 	trigger = {
+		tag = TUR
 		OR = {
 			has_advance = unlock_houfnice_advance
 			has_advance = unlock_falconet_advance
@@ -24,7 +19,7 @@ dbo_evt_dhe_great_bronze_cannon.1 = {
 		}
 	}
 	option = {
-		name = dbo_evt_dhe_great_bronze_cannon.1.a
+		name = dbo_great_bronze_cannon.1.a
 		set_variable = {
 			name = dbo_great_bronze_cannon
 			value = 1

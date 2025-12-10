@@ -1,0 +1,25 @@
+﻿namespace = dbo_grand_bazaar
+dbo_grand_bazaar.1 = {
+	type = country_event
+	title = dbo_grand_bazaar.1.title
+	desc = dbo_grand_bazaar.1.desc
+	historical_info = dbo_grand_bazaar.1.historical_info
+	fire_only_once = yes
+	trigger = {
+		tag = TUR
+		NOT = {
+			has_reform = government_reform:dbo_grand_bazaar
+		}
+		owns = location:constantinople
+	}
+	option = {
+		name = dbo_grand_bazaar.1.a
+		set_variable = {
+			name = dbo_grand_bazaar
+			value = 1
+		}
+		historical_option = yes
+		add_reform = government_reform:dbo_grand_bazaar
+		add_stability = 10
+	}
+}

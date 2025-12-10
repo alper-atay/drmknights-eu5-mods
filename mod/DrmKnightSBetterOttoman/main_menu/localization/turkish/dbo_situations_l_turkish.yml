@@ -1,5 +1,9 @@
 ﻿l_turkish:
  dbo_secure_anatolian_turks_union: "Anadolu Türk Birliği"
  dbo_secure_anatolian_turks_union_desc: "Hırsları, savaştaki becerileri ve stratejik vizyonlarıyla hareket eden birçok [ShowCultureName('turkish_culture')] Beyliği, [ShowRegionName('anatolia_region')] bölgesinin parçalanmış topraklarında kendi yolunu çizdi. Göçebe kökenlerini, yerleşik toplumların karmaşık kültürleriyle birleştirerek muazzam bir askerî ve idari yapı oluşturdular.\n\nYerel prensliklerin bölünmüşlüğünü ve savunmasızlığını fırsat bilen Türkler tek bir sancak altında toplandılar. [GetCountry('TUR').GetName] ülkesinin kurucusu [GetCharacter('tur_osman').GetName] gibi karizmatik liderler asırlarca canlı kalacak ilham ateşinin kıvılcımını çaktılar.\n\nBeylikler her zaferle daha da güçlenerek hafife alınmayacak hâle geldiler. Bölgedeki önemli kasabaların ve şehirlerin fethiyle yükselişlerinin önlenemez olduğunu herkese gösterdiler. [ShowSituationNameWithNoTooltip('dbo_secure_anatolian_turks_union')] kurulması için bedel ödemeye hazır!"
- dbo_secure_anatolian_turks_union_press_claims: "[ShowSituationName('dbo_secure_anatolian_turks_union')] üzerinden hak iddiasında bulun."
+ dbo_secure_anatolian_turks_union_press_claims: "Hak İddiasında Bulun"
  dbo_secure_anatolian_turks_union_press_claims_desc: "[ShowSituationName('dbo_secure_anatolian_turks_union')]; [ShowRegionName('anatolia_region')], [ShowRegionName('balkan_region')], [ShowRegionName('caucasus_region')], [ShowRegionName('crescent_region')] bölgesindeki bir [province|e] üzerinde hak iddiası sağlar."
+ dbo_conquer_arabian_peninsula_press_claims: "Hak İddiasında Bulun"
+ dbo_conquer_arabian_peninsula_press_claims_desc: "[ShowSituationName('dbo_conquer_arabian_peninsula')]; [ShowRegionName('arabia_region')] bölgesindeki bir [province|e] üzerinde hak iddiası sağlar."
+ dbo_conquer_fertile_crescent_press_claims: "Hak İddiasında Bulun"
+ dbo_conquer_fertile_crescent_press_claims_desc: "[ShowSituationName('dbo_conquer_fertile_crescent')]; [ShowRegionName('crescent_region')] bölgesindeki bir [province|e] üzerinde hak iddiası sağlar."

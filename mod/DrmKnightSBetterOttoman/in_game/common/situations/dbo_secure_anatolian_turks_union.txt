@@ -1,6 +1,6 @@
 ﻿dbo_secure_anatolian_turks_union = {
     monthly_spawn_chance = monthly_spawn_chance_unique
-    hint_tag = hint_rise_of_the_ottomans
+    hint_tag = dbo_hint_secure_anatolian_turks_union
     can_start = {
         current_date > 1371.1.1
         has_or_had_tag = TUR
