@@ -1,13 +1,13 @@
-﻿dbo_gr_legacy_of_seljuks = {
+﻿dbo_legacy_of_seljuks = {
 	unique = yes
 	potential = {
 		has_or_had_tag = TUR
-		has_variable = dbo_gr_legacy_of_seljuks
+		has_variable = dbo_legacy_of_seljuks
 	}
 	locked = {
 		is_locked_mechanic = {
 			mechanic = government_reform
-			type = dbo_gr_legacy_of_seljuks
+			type = dbo_legacy_of_seljuks
 		}
 	}
 	country_modifier = {

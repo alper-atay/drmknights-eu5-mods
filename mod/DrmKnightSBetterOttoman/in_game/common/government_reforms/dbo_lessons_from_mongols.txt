@@ -1,13 +1,13 @@
-﻿dbo_gr_lessons_from_mongols = {
+﻿dbo_lessons_from_mongols = {
 	unique = yes
 	potential = {
 		has_or_had_tag = TUR
-		has_variable = dbo_gr_lessons_from_mongols
+		has_variable = dbo_lessons_from_mongols
 	}
 	locked = {
 		is_locked_mechanic = {
 			mechanic = government_reform
-			type = dbo_gr_lessons_from_mongols
+			type = dbo_lessons_from_mongols
 		}
 	}
 	country_modifier = {

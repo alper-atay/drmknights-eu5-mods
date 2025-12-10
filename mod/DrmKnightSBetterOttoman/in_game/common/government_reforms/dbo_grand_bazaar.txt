@@ -1,13 +1,13 @@
-﻿dbo_gr_grand_bazaar = {
+﻿dbo_grand_bazaar = {
 	unique = yes
 	potential = {
 		has_or_had_tag = TUR
-		has_variable = dbo_gr_grand_bazaar
+		has_variable = dbo_grand_bazaar
 	}
 	locked = {
 		is_locked_mechanic = {
 			mechanic = government_reform
-			type = dbo_gr_grand_bazaar
+			type = dbo_grand_bazaar
 		}
 	}
 	country_modifier = {

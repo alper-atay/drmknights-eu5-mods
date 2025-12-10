@@ -1,13 +1,13 @@
-﻿dbo_gr_great_bronze_cannon = {
+﻿dbo_great_bronze_cannon = {
 	unique = yes
 	potential = {
 		has_or_had_tag = TUR
-		has_variable = dbo_gr_great_bronze_cannon
+		has_variable = dbo_great_bronze_cannon
 	}
 	locked = {
 		is_locked_mechanic = {
 			mechanic = government_reform
-			type = dbo_gr_great_bronze_cannon
+			type = dbo_great_bronze_cannon
 		}
 	}
 	country_modifier = {

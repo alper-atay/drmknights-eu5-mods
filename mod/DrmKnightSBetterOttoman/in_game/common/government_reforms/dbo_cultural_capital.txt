@@ -1,13 +1,13 @@
-﻿dbo_gr_cultural_capital = {
+﻿dbo_cultural_capital = {
 	unique = yes
 	potential = {
 		has_or_had_tag = TUR
-		has_variable = dbo_gr_cultural_capital
+		has_variable = dbo_cultural_capital
 	}
 	locked = {
 		is_locked_mechanic = {
 			mechanic = government_reform
-			type = dbo_gr_cultural_capital
+			type = dbo_cultural_capital
 		}
 	}
 	country_modifier = {

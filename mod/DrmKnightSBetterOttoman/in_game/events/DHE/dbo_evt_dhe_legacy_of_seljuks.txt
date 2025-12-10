@@ -16,17 +16,17 @@ dbo_evt_dhe_legacy_of_seljuks.1 = {
 		has_advance = seljuk_roots
 		has_advance = heirs_of_rum
 		NOT = {
-			has_reform = government_reform:dbo_gr_legacy_of_seljuks
+			has_reform = government_reform:dbo_legacy_of_seljuks
 		}
 	}
 	option = {
 		name = dbo_evt_dhe_legacy_of_seljuks.1.a
 		set_variable = {
-			name = dbo_gr_legacy_of_seljuks
+			name = dbo_legacy_of_seljuks
 			value = 1
 		}
 		historical_option = yes
-		add_reform = government_reform:dbo_gr_legacy_of_seljuks
+		add_reform = government_reform:dbo_legacy_of_seljuks
 		add_stability = 10
 	}
 }

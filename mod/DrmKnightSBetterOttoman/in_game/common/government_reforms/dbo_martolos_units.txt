@@ -1,13 +1,13 @@
-﻿dbo_gr_martolos_units = {
+﻿dbo_martolos_units = {
 	unique = yes
 	potential = {
 		has_or_had_tag = TUR
-		has_variable = dbo_gr_martolos_units
+		has_variable = dbo_martolos_units
 	}
 	locked = {
 		is_locked_mechanic = {
 			mechanic = government_reform
-			type = dbo_gr_martolos_units
+			type = dbo_martolos_units
 		}
 	}
 	country_modifier = {
