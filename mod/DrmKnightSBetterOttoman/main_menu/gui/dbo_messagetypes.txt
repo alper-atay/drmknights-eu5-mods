@@ -1,0 +1,27 @@
+﻿PERFORM_press_claims_ACTION={
+    log=yes
+    onmap=no
+    popup=yes
+    idle=no
+    option=yes
+    pausepopup=no
+    message_category = wars
+}
+WE_PERFORM_press_claims_ACTION={
+    log=yes
+    onmap=no
+    popup=yes
+    idle=no
+    option=yes
+    pausepopup=no
+    message_category = wars
+}
+OTHER_PERFORMS_press_claims_ACTION={
+    log=yes
+    onmap=no
+    popup=no
+    idle=no
+    option=yes
+    pausepopup=no
+    message_category = wars
+}

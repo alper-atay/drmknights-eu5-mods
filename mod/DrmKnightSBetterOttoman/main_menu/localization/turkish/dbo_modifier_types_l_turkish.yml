@@ -1,0 +1,3 @@
+﻿l_turkish:
+ MODIFIER_TYPE_NAME_dbo_casus_belli_price_price_cost_modifier: "Hak İddiasında Bulunma Maliyet Etkeni"
+ MODIFIER_TYPE_DESC_dbo_casus_belli_price_price_cost_modifier: "[ShowGenericActionName('press_claims')] eyleminin [Concept('costs', 'Maliyetini')|e] düzenler."

@@ -9,6 +9,8 @@
             has_raised_levies = no
         }
     }
+    ai_tick = never
+    automation_tick = never
     price = price:dbo_casus_belli_price
     cooldown = {
         type = dbo_secure_anatolian_turks_union_press_claims_cooldown_key

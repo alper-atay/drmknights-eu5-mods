@@ -1,0 +1,3 @@
+﻿dbo_casus_belli_price_cost_modifier = {
+	positive = "gfx/interface/icons/modifier_types/rto_press_claims_price_cost_modifier.dds"
+}
