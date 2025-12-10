@@ -49,7 +49,7 @@
             blockoverride "onaction_hint" {
                 action_tooltip = {
                     title = "OPEN_HINT"
-                    on_action = "[OpenLateralViewWithParams('hints', 'selected_hint = dbo_hint_anatolian_turks_union')]"
+                    on_action = "[OpenLateralViewWithParams('hints', 'selected_hint = dbo_secure_anatolian_turks_union')]"
                 }
             }
             blockoverride "bottom_content_onclick" {

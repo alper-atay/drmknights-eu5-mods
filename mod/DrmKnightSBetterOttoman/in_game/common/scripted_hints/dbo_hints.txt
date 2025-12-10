@@ -1,11 +1,35 @@
-﻿dbo_hint_anatolian_turks_union = {
-	priority = {
-		can_see_situation = situation:dbo_anatolian_turks_union
-	}
-	hide = {
-		NOT = {
-			is_situation_active = situation:dbo_anatolian_turks_union
-		}
-	}
-	sort_priority = 200	#React now!
+﻿dbo_hint_secure_anatolian_turks_union = {
+    priority = {
+        can_see_situation = situation:dbo_secure_anatolian_turks_union
+    }
+    hide = {
+        NOT = {
+            is_situation_active = situation:dbo_secure_anatolian_turks_union
+        }
+    }
+    sort_priority = 200	#React now!
+}
+
+dbo_hint_conquer_arabian_peninsula = {
+    priority = {
+        can_see_situation = situation:dbo_conquer_arabian_peninsula
+    }
+    hide = {
+        NOT = {
+            is_situation_active = situation:dbo_conquer_arabian_peninsula
+        }
+    }
+    sort_priority = 200	#React now!
+}
+
+dbo_hint_conquer_fertile_crescent = {
+    priority = {
+        can_see_situation = situation:dbo_conquer_fertile_crescent
+    }
+    hide = {
+        NOT = {
+            is_situation_active = situation:dbo_conquer_fertile_crescent
+        }
+    }
+    sort_priority = 200	#React now!
 }

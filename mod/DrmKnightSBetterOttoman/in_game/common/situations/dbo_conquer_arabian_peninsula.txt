@@ -1,24 +1,23 @@
-﻿dbo_anatolian_turks_union = {
+﻿dbo_sit_conquer_arabian_peninsula = {
     monthly_spawn_chance = monthly_spawn_chance_unique
-    hint_tag = hint_rise_of_the_ottomans
     can_start = {
         current_date > 1371.1.1
         has_or_had_tag = TUR
     }
     can_end = {
-        dbo_conquer_fertile_crescent_achieved = yes
+        dbo_conquer_arabian_peninsula_achieved = yes
     }
     visible = {
         has_or_had_tag = TUR
     }
     on_start = {
         c:TUR ?= {
-            trigger_event_non_silently = dbo_anatolian_turks_union.1
+            trigger_event_non_silently = dbo_secure_anatolian_turks_union.1
         }
     }
     on_ended = {
         c:TUR ?= {
-            trigger_event_non_silently = dbo_anatolian_turks_union.2
+            trigger_event_non_silently = dbo_secure_anatolian_turks_union.2
         }
     }
 }
