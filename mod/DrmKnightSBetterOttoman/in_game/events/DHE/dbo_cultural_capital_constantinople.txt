@@ -9,7 +9,7 @@ dbo_cultural_capital_constantinople.1 = {
 		tag = TUR
 		from = 1337.1.1
 		to = 1837.1.1
-		monthly_chance = 10
+		monthly_chance = 20
 	}
 	trigger = {
 		tag = TUR
