@@ -2,6 +2,7 @@
     if = {
         random_dcma_crown_characters = {
             limit = {
+                total_abilities > 150
             }
             weight = {
                 base = 100
