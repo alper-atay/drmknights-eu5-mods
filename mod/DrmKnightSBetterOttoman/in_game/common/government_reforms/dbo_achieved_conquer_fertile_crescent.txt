@@ -1,4 +1,4 @@
-dbo_achieved_conquer_fertile_crescent = {
+﻿dbo_achieved_conquer_fertile_crescent = {
     unique = yes
     potential = {
         has_or_had_tag = TUR

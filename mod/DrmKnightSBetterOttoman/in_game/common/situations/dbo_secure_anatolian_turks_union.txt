@@ -3,13 +3,12 @@
     hint_tag = dbo_hint_secure_anatolian_turks_union
     can_start = {
         current_date > 1371.1.1
-        has_or_had_tag = TUR
     }
     can_end = {
         dbo_secure_anatolian_turks_union_achieved = yes
     }
     visible = {
-        has_or_had_tag = TUR
+        tag = TUR
     }
     on_start = {
         c:TUR ?= {

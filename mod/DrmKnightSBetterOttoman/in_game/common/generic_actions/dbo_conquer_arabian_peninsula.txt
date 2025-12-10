@@ -12,7 +12,7 @@
     price = price:dbo_casus_belli_price
     cooldown = {
         type = dbo_conquer_arabian_peninsula_press_claims_cooldown_key
-        years = 0
+        years = 2
     }
     select_trigger = {
         looking_for_a = situation

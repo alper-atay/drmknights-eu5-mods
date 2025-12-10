@@ -7,9 +7,9 @@ dbo_legacy_of_seljuks.1 = {
 	fire_only_once = yes
 	trigger = {
 		tag = TUR
-		has_advance = seljuk_heritage
-		has_advance = seljuk_roots
-		has_advance = heirs_of_rum
+		#has_advance = seljuk_heritage
+		#has_advance = seljuk_roots
+		#has_advance = heirs_of_rum
 		NOT = {
 			has_reform = government_reform:dbo_legacy_of_seljuks
 		}

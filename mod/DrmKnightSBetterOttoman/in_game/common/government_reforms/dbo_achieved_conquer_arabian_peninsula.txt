@@ -1,4 +1,4 @@
-dbo_achieved_conquer_arabian_peninsula = {
+﻿dbo_achieved_conquer_arabian_peninsula = {
     unique = yes
     potential = {
         has_or_had_tag = TUR

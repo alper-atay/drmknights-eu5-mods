@@ -1,15 +1,14 @@
 ﻿dbo_conquer_arabian_peninsula = {
     monthly_spawn_chance = monthly_spawn_chance_unique
-    hint_tag = dbo_conquer_arabian_peninsula
+    hint_tag = dbo_hint_conquer_arabian_peninsula
     can_start = {
         current_date > 1371.1.1
-        has_or_had_tag = TUR
     }
     can_end = {
         dbo_conquer_arabian_peninsula_achieved = yes
     }
     visible = {
-        has_or_had_tag = TUR
+        tag = TUR
     }
     on_start = {
         c:TUR ?= {

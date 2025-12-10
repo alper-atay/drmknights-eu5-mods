@@ -1,4 +1,4 @@
-dbo_achieved_secure_anatolian_turks_union = {
+﻿dbo_achieved_secure_anatolian_turks_union = {
     unique = yes
     potential = {
         has_or_had_tag = TUR
