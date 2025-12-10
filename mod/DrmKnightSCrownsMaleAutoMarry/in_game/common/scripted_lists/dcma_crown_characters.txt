@@ -5,7 +5,8 @@
         is_alive = yes
         is_adult = yes
 		has_available_marriage_slot = yes
-        num_of_spouses < 4
+        num_of_spouses < 3
+        age_in_years < 60
         has_estate = estate_type:crown_estate
     }
 }
