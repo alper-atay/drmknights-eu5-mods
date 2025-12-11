@@ -1,4 +1,4 @@
-namespace = dbo_alp_and_alperen
+﻿namespace = dbo_alp_and_alperen
 dbo_alp_and_alperen.1 = {
 	type = country_event
 	title = dbo_alp_and_alperen.1.title
@@ -23,10 +23,6 @@ dbo_alp_and_alperen.1 = {
 			value = 1
 		}
 		historical_option = yes
-		set_variable = {
-			name = dbo_alp_and_alperen
-			value = 1
-		}
 		add_reform = government_reform:dbo_alp_and_alperen
 		add_stability = 10
 	}
