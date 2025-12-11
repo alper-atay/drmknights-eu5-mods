@@ -11,120 +11,36 @@
 				has_estate = estate_type:crown_estate
 				total_abilities > 150
 			}
-			weight = {
-				base = 100
-				first_valid = {
-					modifier = {
-						factor = 5
-						trigger = {
-							is_ruler = yes
-						}
-					}
-					modifier = {
-						factor = 4
-						trigger = {
-							is_heir = yes
-							OR = {
-								AND = {
-									exists = father
-									father = {
-										is_ruler = yes
-									}
-								}
-								AND = {
-									exists = mother
-									mother = {
-										is_ruler = yes
-									}
-								}
-							}
-						}
-					}
-					modifier = {
-						factor = 3
-						trigger = {
-							is_heir = no
-							OR = {
-								AND = {
-									exists = father
-									father = {
-										is_ruler = yes
-									}
-								}
-								AND = {
-									exists = mother
-									mother = {
-										is_ruler = yes
-									}
-								}
-							}
-						}
-					}
-					modifier = {
-						factor = 2
-						trigger = {
-							is_heir = no
-							OR = {
-								AND = {
-									exists = father
-									father = {
-										is_heir = yes
-									}
-								}
-								AND = {
-									exists = mother
-									mother = {
-										is_heir = yes
-									}
-								}
-							}
-						}
-					}
-				}
-				modifier = {
-					factor = 2
-					trigger = {
-						OR = {
-							in_cabinet = yes
-							is_general = yes
-							is_admiral = yes
-						}
-					}
-				}
-				modifier = {
-					add = total_abilities
-				}
-			}
 			save_scope_as = target_crown_male
-		}
-		if = {
-			limit = {
-				exists = scope:target_crown_male
-			}
-			create_character = {
-				female = yes
-				estate = estate_type:nobles_estate
-				adm = {
-					80
-					100
-				}
-				dip = {
-					80
-					100
-				}
-				mil = {
-					80
-					100
-				}
-				age = 16
-				save_scope_as = target_female_created
-			}
 			if = {
 				limit = {
-					exists = scope:target_female_created
+					exists = scope:target_crown_male
 				}
-				scope:target_crown_male ?= {
-					marry_character = scope:target_female_created
+				create_character = {
+					female = yes
+					estate = estate_type:nobles_estate
+					adm = {
+						80
+						100
+					}
+					dip = {
+						80
+						100
+					}
+					mil = {
+						80
+						100
+					}
+					age = 16
+					save_scope_as = target_female_created
+				}
+				if = {
+					limit = {
+						exists = scope:target_female_created
+					}
+					scope:target_crown_male ?= {
+						marry_character = scope:target_female_created
+					}
 				}
 			}
 		}
