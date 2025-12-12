@@ -1,13 +1,13 @@
-﻿dbo_achieved_conquer_arabian_peninsula = {
+﻿dbo_achieved_conquest_arabian_peninsula = {
     unique = yes
     potential = {
         has_or_had_tag = TUR
-        has_variable = dbo_achieved_conquer_arabian_peninsula
+        has_variable = dbo_achieved_conquest_arabian_peninsula
     }
     locked = {
         is_locked_mechanic = {
             mechanic = government_reform
-            type = dbo_achieved_conquer_arabian_peninsula
+            type = dbo_achieved_conquest_arabian_peninsula
         }
     }
     country_modifier = {

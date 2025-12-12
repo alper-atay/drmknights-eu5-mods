@@ -12,7 +12,6 @@ dbo_great_bronze_cannon.1 = {
 		monthly_chance = 20
 	}
 	trigger = {
-		tag = TUR
 		OR = {
 			has_advance = unlock_houfnice_advance
 			has_advance = unlock_falconet_advance

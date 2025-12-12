@@ -1,0 +1,27 @@
+﻿dbo_conquest_arabian_peninsula = {
+	monthly_spawn_chance = monthly_spawn_chance_unique
+	hint_tag = dbo_hint_conquest_arabian_peninsula
+	can_start = {
+		current_date > 1337.1.1
+		#situation:dbo_conquest_fertile_crescent = {
+		#	situation_is_active = no
+		#	situation_has_ended = yes
+		#}
+	}
+	can_end = {
+		dbo_conquest_arabian_peninsula_achieved = yes
+	}
+	visible = {
+		tag = TUR
+	}
+	on_start = {
+		c:TUR ?= {
+			trigger_event_non_silently = dbo_conquest_arabian_peninsula.1
+		}
+	}
+	on_ended = {
+		c:TUR ?= {
+			trigger_event_non_silently = dbo_conquest_arabian_peninsula.2
+		}
+	}
+}

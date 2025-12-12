@@ -12,7 +12,6 @@ dbo_cultural_capital_constantinople.1 = {
 		monthly_chance = 20
 	}
 	trigger = {
-		tag = TUR
 		owns = location:constantinople
 		NOT = {
 			has_reform = government_reform:dbo_cultural_capital_constantinople

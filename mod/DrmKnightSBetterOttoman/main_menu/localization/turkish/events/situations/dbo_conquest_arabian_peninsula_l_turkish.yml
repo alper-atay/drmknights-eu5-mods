@@ -1,0 +1,10 @@
+﻿l_turkish:
+ dbo_conquest_arabian_peninsula.1.title: "[ShowSituationName('dbo_conquest_arabian_peninsula')]"
+ dbo_conquest_arabian_peninsula.1.desc: ""
+ dbo_conquest_arabian_peninsula.1.a: "[ShowSituationNameWithNoTooltip('dbo_conquest_arabian_peninsula')] mücadelesi başlasın!"
+ dbo_conquest_arabian_peninsula.2.title: "[ShowSituationName('dbo_conquest_arabian_peninsula')]"
+ dbo_conquest_arabian_peninsula.2.desc: "[ShowSituationName('dbo_conquest_arabian_peninsula')] uğruna verdiğimiz onlarca mücadele ve sayısız şehidin kanıyla boyanmış vatan toprakları artık [ShowCultureGroupName('turkic_group')] milletinin ebedi bir parçası. Mücadelemiz devam edecektir. Su uyur düşman uyumaz!"
+ dbo_conquest_arabian_peninsula.2.a: "[ShowSituationNameWithNoTooltip('dbo_conquest_arabian_peninsula')] huzur buldu!"
+ dbo_conquest_arabian_peninsula.100.title: "[target_country.GetNameWithNoTooltip] Seferi"
+ dbo_conquest_arabian_peninsula.100.desc: "[ROOT.GetCountry.GetGovernment.GetRulerTitle], [ShowSituationName('dbo_conquest_arabian_peninsula')] sağlamak için bir sonraki hamlesini düşünürken muzaffer [ROOT.GetCountry.GetAdjective] sancaklarının rüzgârda dalgalanışını seyrediyor. Komşu topraklarsa şimdiden büyüyen [ROOT.GetCountry.GetFlavorRank] egemenliğine dâhil olmaya hazır görünüyor.\n\n[target.GetProvince.GetName] vilayeti üstünde hak iddia etmeye karar verirsek [target.GetArea.GetName] üstündeki kontrolünü sağlamlaştırır ve [ShowSituationName('dbo_conquest_arabian_peninsula')] sağlamaya bir adım daha yakın oluruz. Yeni bir sefer düzenleme zamanı geldi!"
+ dbo_conquest_arabian_peninsula.100.a: "[target.GetName] yakında bizim olacak!"

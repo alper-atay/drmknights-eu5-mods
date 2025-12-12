@@ -1,7 +1,7 @@
 ﻿l_turkish:
  dbo_hint_secure_anatolian_turks_union: "[GetSituationByKey('dbo_secure_anatolian_turks_union').GetNameWithNoTooltip] İpuçları"
  dbo_hint_secure_anatolian_turks_union_hint_text: "[ShowGenericActionName('dbo_secure_anatolian_turks_union_press_claims')] gibi güçlü [Concept('actions', 'Eylemleri')|e] kullan ve tüm [ShowRegionName('anatolia_region')], [ShowRegionName('balkan_region')], [ShowRegionName('caucasus_region')], [ShowRegionName('crescent_region')] bölgelerini fethet!"
- dbo_hint_conquer_arabian_peninsula: "[GetSituationByKey('dbo_secure_anatolian_turks_union').GetNameWithNoTooltip] İpuçları"
- dbo_hint_conquer_arabian_peninsula_hint_text: "[ShowGenericActionName('dbo_conquer_arabian_peninsula_press_claims')] gibi güçlü [Concept('actions', 'Eylemleri')|e] kullan ve tüm [ShowRegionName('arabia_region')] bölgelerini fethet!"
- dbo_hint_dbo_conquer_fertile_crescent: "[GetSituationByKey('dbo_conquer_fertile_crescent').GetNameWithNoTooltip] İpuçları"
- dbo_hint_dbo_conquer_fertile_crescent_hint_text: "[ShowGenericActionName('dbo_conquer_fertile_crescent_press_claims')] gibi güçlü [Concept('actions', 'Eylemleri')|e] kullan ve tüm [ShowRegionName('crescent_region')] bölgelerini fethet!"
+ dbo_hint_conquest_arabian_peninsula: "[GetSituationByKey('dbo_secure_anatolian_turks_union').GetNameWithNoTooltip] İpuçları"
+ dbo_hint_conquest_arabian_peninsula_hint_text: "[ShowGenericActionName('dbo_conquest_arabian_peninsula_press_claims')] gibi güçlü [Concept('actions', 'Eylemleri')|e] kullan ve tüm [ShowRegionName('arabia_region')] bölgelerini fethet!"
+ dbo_hint_conquest_fertile_crescent: "[GetSituationByKey('dbo_conquest_fertile_crescent').GetNameWithNoTooltip] İpuçları"
+ dbo_hint_conquest_fertile_crescent_hint_text: "[ShowGenericActionName('dbo_conquest_fertile_crescent_press_claims')] gibi güçlü [Concept('actions', 'Eylemleri')|e] kullan ve tüm [ShowRegionName('crescent_region')] bölgelerini fethet!"

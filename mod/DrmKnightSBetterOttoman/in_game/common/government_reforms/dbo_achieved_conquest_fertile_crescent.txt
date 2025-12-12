@@ -1,18 +1,17 @@
-﻿dbo_achieved_conquer_fertile_crescent = {
+﻿dbo_achieved_conquest_fertile_crescent = {
     unique = yes
     potential = {
         has_or_had_tag = TUR
-        has_variable = dbo_achieved_conquer_fertile_crescent
+        has_variable = dbo_achieved_conquest_fertile_crescent
     }
     locked = {
         is_locked_mechanic = {
             mechanic = government_reform
-            type = dbo_achieved_conquer_fertile_crescent
+            type = dbo_achieved_conquest_fertile_crescent
         }
     }
     country_modifier = {
         power_projection = 5
-        global_max_control = 0.1
         global_max_rgo_size_modifier = 0.1
         global_raw_material_output = 0.1
         global_rgo_build_time = -0.1

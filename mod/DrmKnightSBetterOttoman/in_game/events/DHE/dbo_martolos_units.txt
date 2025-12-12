@@ -12,7 +12,6 @@ dbo_martolos_units.1 = {
 		monthly_chance = 20
 	}
 	trigger = {
-		tag = TUR
 		has_advance = janissaries_advance
 		NOT = {
 			has_reform = government_reform:dbo_martolos_units

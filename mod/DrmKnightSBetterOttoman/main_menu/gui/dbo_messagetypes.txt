@@ -1,4 +1,4 @@
-﻿PERFORM_dbo_conquer_arabian_peninsula_press_claims_ACTION={
+﻿PERFORM_dbo_conquest_arabian_peninsula_press_claims_ACTION={
     log=yes
     onmap=no
     popup=yes
@@ -7,7 +7,7 @@
     pausepopup=no
     message_category = wars
 }
-WE_PERFORM_dbo_conquer_arabian_peninsula_press_claims_ACTION={
+WE_PERFORM_dbo_conquest_arabian_peninsula_press_claims_ACTION={
     log=yes
     onmap=no
     popup=yes
@@ -16,7 +16,7 @@ WE_PERFORM_dbo_conquer_arabian_peninsula_press_claims_ACTION={
     pausepopup=no
     message_category = wars
 }
-OTHER_PERFORMS_dbo_conquer_arabian_peninsula_press_claims_ACTION={
+OTHER_PERFORMS_dbo_conquest_arabian_peninsula_press_claims_ACTION={
     log=yes
     onmap=no
     popup=no
@@ -25,7 +25,7 @@ OTHER_PERFORMS_dbo_conquer_arabian_peninsula_press_claims_ACTION={
     pausepopup=no
     message_category = wars
 }
-PERFORM_dbo_conquer_fertile_crescent_press_claims_ACTION={
+PERFORM_dbo_conquest_fertile_crescent_press_claims_ACTION={
     log=yes
     onmap=no
     popup=yes
@@ -34,7 +34,7 @@ PERFORM_dbo_conquer_fertile_crescent_press_claims_ACTION={
     pausepopup=no
     message_category = wars
 }
-WE_PERFORM_dbo_conquer_fertile_crescent_press_claims_ACTION={
+WE_PERFORM_dbo_conquest_fertile_crescent_press_claims_ACTION={
     log=yes
     onmap=no
     popup=yes
@@ -43,7 +43,7 @@ WE_PERFORM_dbo_conquer_fertile_crescent_press_claims_ACTION={
     pausepopup=no
     message_category = wars
 }
-OTHER_PERFORMS_dbo_conquer_fertile_crescent_press_claims_ACTION={
+OTHER_PERFORMS_dbo_conquest_fertile_crescent_press_claims_ACTION={
     log=yes
     onmap=no
     popup=no

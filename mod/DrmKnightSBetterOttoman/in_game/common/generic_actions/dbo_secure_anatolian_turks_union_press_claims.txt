@@ -54,7 +54,6 @@
 			trigger_if = {
 				OR = {
 					region = region:anatolia_region
-					region = region:balkan_region
 					region = region:crescent_region
 					region = region:caucasus_region
 				}

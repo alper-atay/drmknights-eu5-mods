@@ -50,7 +50,7 @@ dbo_secure_anatolian_turks_union.100 = {
         name = dbo_secure_anatolian_turks_union.100.a
         add_casus_belli = {
             target = scope:target.owner
-            type = casus_belli:cb_conquer_province
+            type = casus_belli:cb_conquest_province
             province = scope:target
         }
         refresh_map_colors = yes

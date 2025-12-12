@@ -1,4 +1,4 @@
-﻿dbo_conquer_arabian_peninsula_press_claims = {
+﻿dbo_conquest_arabian_peninsula_press_claims = {
     type = situation
     show_message = no
     potential = {
@@ -13,13 +13,13 @@
     automation_tick = never
     price = price:dbo_casus_belli_price
     cooldown = {
-        type = dbo_conquer_arabian_peninsula_press_claims_cooldown_key
+        type = dbo_conquest_arabian_peninsula_press_claims_cooldown_key
         years = 2
     }
     select_trigger = {
         looking_for_a = situation
         interaction_source_list = {
-            situation:dbo_conquer_arabian_peninsula = {
+            situation:dbo_conquest_arabian_peninsula = {
                 add_to_list = source
             }
         }
@@ -29,7 +29,7 @@
             data = name
         }
         visible = {
-            situation:dbo_conquer_arabian_peninsula = this
+            situation:dbo_conquest_arabian_peninsula = this
             situation_is_active = yes
         }
     }
@@ -79,9 +79,9 @@
                 exists = scope:target
             }
             custom_tooltip = {
-                text = dbo_conquer_arabian_peninsula_press_claims
+                text = dbo_conquest_arabian_peninsula_press_claims
                 scope:actor = {
-                    trigger_event_silently = dbo_conquer_arabian_peninsula.100
+                    trigger_event_silently = dbo_conquest_arabian_peninsula.100
                 }
             }
         }

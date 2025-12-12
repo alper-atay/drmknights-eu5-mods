@@ -12,7 +12,6 @@ dbo_grand_bazaar.1 = {
 		monthly_chance = 20
 	}
 	trigger = {
-		tag = TUR
 		NOT = {
 			has_reform = government_reform:dbo_grand_bazaar
 		}

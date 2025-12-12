@@ -12,7 +12,6 @@ dbo_lessons_from_mongols.1 = {
 		monthly_chance = 20
 	}
 	trigger = {
-		tag = TUR
 		has_advance = akinji_cavalry
 		NOT = {
 			has_reform = government_reform:dbo_lessons_from_mongols

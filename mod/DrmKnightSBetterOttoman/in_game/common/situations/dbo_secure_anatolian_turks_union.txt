@@ -3,10 +3,10 @@
     hint_tag = dbo_hint_secure_anatolian_turks_union
     can_start = {
         current_date > 1337.1.1
-        situation:rise_of_the_ottomans = {
-			situation_is_active = no
-			situation_has_ended = yes
-		}
+        #situation:rise_of_the_ottomans = {
+		#	situation_is_active = no
+		#	situation_has_ended = yes
+		#}
     }
     can_end = {
         dbo_secure_anatolian_turks_union_achieved = yes
