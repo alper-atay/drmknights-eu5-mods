@@ -12,10 +12,10 @@ dbo_grand_bazaar.1 = {
 		monthly_chance = 20
 	}
 	trigger = {
+		owns = location:constantinople
 		NOT = {
 			has_reform = government_reform:dbo_grand_bazaar
 		}
-		owns = location:constantinople
 	}
 	option = {
 		name = dbo_grand_bazaar.1.a

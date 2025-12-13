@@ -1,0 +1,24 @@
+﻿dbo_ottoman_empire = {
+	unique = yes
+	potential = {
+		has_or_had_tag = TUR
+		has_variable = dbo_ottoman_empire
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = government_reform
+			type = dbo_ottoman_empire
+		}
+	}
+	country_modifier = {
+		global_integration_speed_modifier = 0.40
+		government_size = 1
+		antagonism_received_modifier = -0.33
+		auto_slave_raid_different_religion = yes
+		government_reform_slots = 1
+		global_monthly_control = 0.05
+		cultures_capacity_modifier = 0.25
+		global_crown_estate_power = 0.40
+		government_reform_slots = 1
+	}
+}

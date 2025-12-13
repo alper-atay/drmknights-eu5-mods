@@ -8,7 +8,7 @@
 			num_of_spouses < 2
 			age_in_years < 40
 			has_estate = estate_type:crown_estate
-			total_abilities > 150
+			total_abilities > 120
 		}
 		save_scope_as = target_crown_male
 		if = {
