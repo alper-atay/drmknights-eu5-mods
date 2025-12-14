@@ -1,13 +1,13 @@
-﻿dbo_achieved_secure_anatolian_turks_union = {
+﻿dbo_achieved_conquest_anatolian_turks = {
     unique = yes
     potential = {
         has_or_had_tag = TUR
-        has_variable = dbo_achieved_secure_anatolian_turks_union
+        has_variable = dbo_achieved_conquest_anatolian_turks
     }
     locked = {
         is_locked_mechanic = {
             mechanic = government_reform
-            type = dbo_achieved_secure_anatolian_turks_union
+            type = dbo_achieved_conquest_anatolian_turks
         }
     }
     country_modifier = {

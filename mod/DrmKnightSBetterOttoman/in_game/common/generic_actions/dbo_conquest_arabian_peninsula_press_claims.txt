@@ -19,7 +19,7 @@
     select_trigger = {
         looking_for_a = situation
         interaction_source_list = {
-            situation:dbo_conquest_arabian_peninsula = {
+            situation:dbo_conquest = {
                 add_to_list = source
             }
         }
@@ -29,7 +29,7 @@
             data = name
         }
         visible = {
-            situation:dbo_conquest_arabian_peninsula = this
+            situation:dbo_conquest = this
             situation_is_active = yes
         }
     }
@@ -81,7 +81,7 @@
             custom_tooltip = {
                 text = dbo_conquest_arabian_peninsula_press_claims
                 scope:actor = {
-                    trigger_event_silently = dbo_conquest_arabian_peninsula.100
+                    trigger_event_silently = dbo_conquest.100
                 }
             }
         }

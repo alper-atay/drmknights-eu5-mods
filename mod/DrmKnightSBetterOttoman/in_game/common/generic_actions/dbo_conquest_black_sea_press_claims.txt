@@ -1,4 +1,4 @@
-﻿dbo_secure_anatolian_turks_union_press_claims = {
+﻿dbo_conquest_black_sea_press_claims = {
 	type = situation
 	show_message = no
 	potential = {
@@ -7,23 +7,19 @@
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			situation:rise_of_the_ottomans = {
-				situation_is_active = no
-				situation_has_ended = yes
-			}
 		}
 	}
 	ai_tick = never
 	automation_tick = never
 	price = price:dbo_casus_belli_price
 	cooldown = {
-		type = dbo_secure_anatolian_turks_union_press_claims_cooldown_key
+		type = dbo_conquest_black_sea_press_claims_cooldown_key
 		years = 2
 	}
 	select_trigger = {
 		looking_for_a = situation
 		interaction_source_list = {
-			situation:dbo_secure_anatolian_turks_union = {
+			situation:dbo_conquest = {
 				add_to_list = source
 			}
 		}
@@ -33,7 +29,7 @@
 			data = name
 		}
 		visible = {
-			situation:dbo_secure_anatolian_turks_union = this
+			situation:dbo_conquest = this
 			situation_is_active = yes
 		}
 	}
@@ -57,9 +53,7 @@
 			}
 			trigger_if = {
 				OR = {
-					region = region:anatolia_region
 					region = region:crescent_region
-					region = region:caucasus_region
 				}
 			}
 			any_location_in_province = {
@@ -85,9 +79,9 @@
 				exists = scope:target
 			}
 			custom_tooltip = {
-				text = dbo_secure_anatolian_turks_union_press_claims
+				text = dbo_conquest_black_sea_press_claims
 				scope:actor = {
-					trigger_event_silently = dbo_secure_anatolian_turks_union.100
+					trigger_event_silently = dbo_conquest.100
 				}
 			}
 		}

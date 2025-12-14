@@ -4,7 +4,7 @@ dbo_conquest = {
         current_date > 1337.1.1
     }
     can_end = {
-		dbo_secure_anatolian_turks_union_achieved = yes
+		dbo_conquest_anatolian_turks_achieved = yes
         dbo_conquest_rumelia_achieved = yes
 		dbo_conquest_fertile_crescent_achieved = yes
 		dbo_conquest_arabian_peninsula_achieved = yes

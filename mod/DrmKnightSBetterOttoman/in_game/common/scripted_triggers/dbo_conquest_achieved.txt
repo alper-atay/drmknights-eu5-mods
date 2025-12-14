@@ -1,4 +1,4 @@
-﻿dbo_secure_anatolian_turks_union_achieved = {
+﻿dbo_conquest_anatolian_turks_achieved = {
 	c:TUR ?= {
 		own_entire_area = area:cappadocia_area
 		own_entire_area = area:central_anatolia_area
