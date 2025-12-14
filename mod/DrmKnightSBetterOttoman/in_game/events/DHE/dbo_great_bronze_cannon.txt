@@ -9,7 +9,7 @@ dbo_great_bronze_cannon.1 = {
 		tag = TUR
 		from = 1337.1.1
 		to = 1837.1.1
-		monthly_chance = 20
+		monthly_chance = 100
 	}
 	trigger = {
 		OR = {
@@ -31,6 +31,6 @@ dbo_great_bronze_cannon.1 = {
 		}
 		historical_option = yes
 		add_reform = government_reform:dbo_great_bronze_cannon
-		add_stability = 10
+		add_stability = stability_severe_bonus
 	}
 }

@@ -25,6 +25,6 @@ dbo_cultural_capital_constantinople.1 = {
 		}
 		historical_option = yes
 		add_reform = government_reform:dbo_cultural_capital_constantinople
-		add_stability = 10
+		add_stability = stability_severe_bonus
 	}
 }

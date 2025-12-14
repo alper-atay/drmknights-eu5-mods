@@ -23,6 +23,6 @@ dbo_alp_and_alperen.1 = {
 		}
 		historical_option = yes
 		add_reform = government_reform:dbo_alp_and_alperen
-		add_stability = 10
+		add_stability = stability_severe_bonus
 	}
 }

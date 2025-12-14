@@ -10,16 +10,6 @@ dbo_secure_anatolian_turks_union.1 = {
 	}
 }
 
-dbo_secure_anatolian_turks_union.2 = {
-	type = country_event
-	category = situation_event
-	title = dbo_conquest.2.title
-	desc = dbo_conquest.2.desc
-	option = {
-		name = dbo_conquest.2.a
-	}
-}
-
 dbo_conquest.100 = {
 	type = country_event
 	category = situation_event

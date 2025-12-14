@@ -11,6 +11,9 @@
 				situation_is_active = no
 				situation_has_ended = yes
 			}
+			NOT = {
+				has_variable = dbo_achieved_conquest_anatolian_turks
+			}
 		}
 	}
 	ai_tick = never
@@ -23,7 +26,7 @@
 	select_trigger = {
 		looking_for_a = situation
 		interaction_source_list = {
-			situation:dbo_secure_anatolian_turks_union = {
+			situation:dbo_conquest = {
 				add_to_list = source
 			}
 		}
@@ -33,7 +36,7 @@
 			data = name
 		}
 		visible = {
-			situation:dbo_secure_anatolian_turks_union = this
+			situation:dbo_conquest = this
 			situation_is_active = yes
 		}
 	}

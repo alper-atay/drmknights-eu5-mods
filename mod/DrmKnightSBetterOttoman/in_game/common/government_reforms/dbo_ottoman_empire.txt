@@ -19,6 +19,5 @@
 		global_monthly_control = 0.05
 		cultures_capacity_modifier = 0.25
 		global_crown_estate_power = 0.40
-		government_reform_slots = 1
 	}
 }
