@@ -12,6 +12,7 @@
     }
     country_modifier = {
         power_projection = 5
+        tolerance_own = 1
         global_pop_conversion_speed = 20
         global_pop_conversion_speed_modifier = 0.2
         monthly_rebel_growth = -0.001

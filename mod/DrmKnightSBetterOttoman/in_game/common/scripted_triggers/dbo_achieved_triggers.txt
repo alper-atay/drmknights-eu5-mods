@@ -1,53 +1,87 @@
 ﻿dbo_secure_anatolian_turks_union_achieved = {
-    c:TUR ?= {
-        own_entire_area = area:cappadocia_area
-        own_entire_area = area:central_anatolia_area
-        own_entire_area = area:marmara_area
-        own_entire_area = area:pontus_area
-        own_entire_area = area:west_anatolia_area
-        own_entire_province = province_definition:edirne_province
-        own_entire_province = province_definition:dardanelles_province
-        own_entire_province = province_definition:constantinople_province
-        own_entire_province = province_definition:icel_province
-        own_entire_province = province_definition:tarsus_province
-        own_entire_province = province_definition:sis_province
-        own_entire_province = province_definition:adana_province
-        own_entire_province = province_definition:marash_province
-        own_entire_province = province_definition:malatya_province
-        own_entire_province = province_definition:erzurum_province
-        own_entire_province = province_definition:harput_province
-        own_entire_province = province_definition:malazgirt_province
-        own_entire_province = province_definition:meskheti_province
-        own_entire_province = province_definition:kars_province
-        own_entire_province = province_definition:van_province
-        own_entire_province = province_definition:bitlis_province
-        own_entire_province = province_definition:hasankeyf_province
-        own_entire_province = province_definition:diyarbekir_province
-        own_entire_province = province_definition:ar_ruha_province
-        own_entire_province = province_definition:amadiya_province
-        own_entire_province = province_definition:nusaybin_province
-        own_entire_province = province_definition:mardin_province
-        own_entire_province = province_definition:ayntab_province
-        own_entire_province = province_definition:antakya_province
-    }
+	c:TUR ?= {
+		own_entire_area = area:cappadocia_area
+		own_entire_area = area:central_anatolia_area
+		own_entire_area = area:marmara_area
+		own_entire_area = area:pontus_area
+		own_entire_area = area:west_anatolia_area
+		own_entire_province = province_definition:edirne_province
+		own_entire_province = province_definition:dardanelles_province
+		own_entire_province = province_definition:constantinople_province
+		own_entire_province = province_definition:icel_province
+		own_entire_province = province_definition:tarsus_province
+		own_entire_province = province_definition:sis_province
+		own_entire_province = province_definition:adana_province
+		own_entire_province = province_definition:marash_province
+		own_entire_province = province_definition:malatya_province
+		own_entire_province = province_definition:erzurum_province
+		own_entire_province = province_definition:harput_province
+		own_entire_province = province_definition:malazgirt_province
+		own_entire_province = province_definition:meskheti_province
+		own_entire_province = province_definition:kars_province
+		own_entire_province = province_definition:van_province
+		own_entire_province = province_definition:bitlis_province
+		own_entire_province = province_definition:hasankeyf_province
+		own_entire_province = province_definition:diyarbekir_province
+		own_entire_province = province_definition:ar_ruha_province
+		own_entire_province = province_definition:amadiya_province
+		own_entire_province = province_definition:nusaybin_province
+		own_entire_province = province_definition:mardin_province
+		own_entire_province = province_definition:ayntab_province
+		own_entire_province = province_definition:antakya_province
+	}
 }
 
 dbo_conquest_arabian_peninsula_achieved = {
-    c:TUR ?= {
-        own_entire_area = area:bahrein_area
-        own_entire_area = area:hedjaz_area
-        own_entire_area = area:najd_area
-        own_entire_area = area:oman_area
-        own_entire_area = area:hail_area
-        own_entire_area = area:north_yemen_area
-        own_entire_area = area:south_yemen_area
-    }
+	c:TUR ?= {
+		own_entire_area = area:bahrein_area
+		own_entire_area = area:hedjaz_area
+		own_entire_area = area:najd_area
+		own_entire_area = area:oman_area
+		own_entire_area = area:hail_area
+		own_entire_area = area:north_yemen_area
+		own_entire_area = area:south_yemen_area
+	}
 }
 
 dbo_conquest_fertile_crescent_achieved = {
-    c:TUR ?= {
-        own_entire_area = area:iraq_arabi_area
-        own_entire_area = area:jazira_area
-        own_entire_area = area:levant_area
-    }
+	c:TUR ?= {
+		own_entire_area = area:iraq_arabi_area
+		own_entire_area = area:jazira_area
+		own_entire_area = area:levant_area
+	}
+}
+
+dbo_conquest_rumelia_achieved = {
+	c:TUR ?= {
+		own_entire_area = area:aegean_archipelago_area
+		own_entire_area = area:bosnia_area
+		own_entire_area = area:bulgaria_area
+		own_entire_area = area:croatia_area
+		own_entire_area = area:macedonia_area
+		own_entire_area = area:morea_area
+		own_entire_area = area:northern_greece_area
+		own_entire_area = area:serbia_area
+		own_entire_area = area:silistria_area
+		own_entire_area = area:slavonia_area
+		own_entire_area = area:thrace_area
+		own_entire_area = area:wallachia_area
+	}
+}
+
+dbo_conquest_black_sea_achieved = {
+	area:black_sea_area = {
+		every_neighbor_area = {
+			every_neighbor_location = {
+				if = {
+					limit = {
+						owner ?= {
+							owns = this
+						}
+					}
+				}
+			}
+			
+		}
+	}
 }

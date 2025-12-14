@@ -7,6 +7,10 @@
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
+			situation:rise_of_the_ottomans = {
+				situation_is_active = no
+				situation_has_ended = yes
+			}
 		}
 	}
 	ai_tick = never

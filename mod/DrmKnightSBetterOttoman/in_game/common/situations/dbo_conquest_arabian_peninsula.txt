@@ -3,10 +3,6 @@
 	hint_tag = dbo_hint_conquest_arabian_peninsula
 	can_start = {
 		current_date > 1337.1.1
-		#situation:dbo_conquest_fertile_crescent = {
-		#	situation_is_active = no
-		#	situation_has_ended = yes
-		#}
 	}
 	can_end = {
 		dbo_conquest_arabian_peninsula_achieved = yes

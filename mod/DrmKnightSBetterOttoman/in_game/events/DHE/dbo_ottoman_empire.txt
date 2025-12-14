@@ -8,26 +8,43 @@ dbo_ottoman_empire.1 = {
 		tag = TUR
 		from = 1337.1.1
 		to = 1837.1.1
-		monthly_chance = 20
+		monthly_chance = 100
 	}
 	trigger = {
 		country_rank = country_rank:rank_empire
 		NOT = {
 			has_reform = government_reform:dbo_ottoman_empire
-			has_reform = government_reform:legacy_of_osman
 		}
-		has_reform = government_reform:legacy_of_the_ottomans
-		has_reform = government_reform:turkish_pashas
+		OR = {
+			has_reform = government_reform:legacy_of_the_ottomans
+			has_reform = government_reform:turkish_pashas
+		}
 	}
 	option = {
 		name = dbo_ottoman_empire.1.a
+		historical_option = yes
 		set_variable = {
 			name = dbo_ottoman_empire
 			value = 1
 		}
-		remove_reform = government_reform:legacy_of_the_ottomans
-		remove_reform = government_reform:turkish_pashas
-		historical_option = yes
+		if = {
+			limit = {
+				has_reform = government_reform:legacy_of_the_ottomans
+			}
+			remove_reform = government_reform:legacy_of_the_ottomans
+		}
+		if = {
+			limit = {
+				has_reform = government_reform:turkish_pashas
+			}
+			remove_reform = government_reform:turkish_pashas
+		}
+		lock_government_reform_effect = {
+			type = legacy_of_the_ottomans
+		}
+		lock_government_reform_effect = {
+			type = turkish_pashas
+		}
 		add_reform = government_reform:dbo_ottoman_empire
 		add_stability = 10
 	}

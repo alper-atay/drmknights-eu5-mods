@@ -1,0 +1,10 @@
+﻿l_turkish:
+ dbo_conquest_rumelia.1.title: "[ShowSituationName('dbo_conquest_rumelia')]"
+ dbo_conquest_rumelia.1.desc: "Osmanlı İmparatorluğu için Rumeli’nin fethi, bir genişlemeden öte devletin kalıcı bir imparatorluk gücüne dönüşmesinin temel adımıydı. Balkanlar’da ele geçirilen şehirler ve kaleler, Anadolu ile Avrupa arasında kesintisiz bir hâkimiyet alanı oluşturdu; askerî sevkiyat, vergi toplama ve siyasi nüfuz bu bölge üzerinden kurumsallaştı. Rumeli, Osmanlı ordusunun ana insan kaynağı ve batıya açılan stratejik üssü hâline gelerek imparatorluğun Avrupa’daki varlığını kalıcı kıldı."
+ dbo_conquest_rumelia.1.a: "[ShowSituationNameWithNoTooltip('dbo_conquest_rumelia')] mücadelesi başlasın!"
+ dbo_conquest_rumelia.2.title: "[ShowSituationName('dbo_conquest_rumelia')]"
+ dbo_conquest_rumelia.2.desc: "[ShowSituationName('dbo_conquest_rumelia')] uğruna verdiğimiz onlarca mücadele ve sayısız şehidin kanıyla boyanmış vatan toprakları artık [ShowCultureGroupName('turkic_group')] milletinin ebedi bir parçası. Mücadelemiz devam edecektir. Su uyur düşman uyumaz!"
+ dbo_conquest_rumelia.2.a: "[ShowSituationNameWithNoTooltip('dbo_conquest_rumelia')] huzur buldu!"
+ dbo_conquest_rumelia.100.title: "[target_country.GetNameWithNoTooltip] Seferi"
+ dbo_conquest_rumelia.100.desc: "[ROOT.GetCountry.GetGovernment.GetRulerTitle], [ShowSituationName('dbo_conquest_rumelia')] sağlamak için bir sonraki hamlesini düşünürken muzaffer [ROOT.GetCountry.GetAdjective] sancaklarının rüzgârda dalgalanışını seyrediyor. Komşu topraklarsa şimdiden büyüyen [ROOT.GetCountry.GetFlavorRank] egemenliğine dâhil olmaya hazır görünüyor.\n\n[target.GetProvince.GetName] vilayeti üstünde hak iddia etmeye karar verirsek [target.GetArea.GetName] üstündeki kontrolünü sağlamlaştırır ve [ShowSituationName('dbo_conquest_rumelia')] sağlamaya bir adım daha yakın oluruz. Yeni bir sefer düzenleme zamanı geldi!"
+ dbo_conquest_rumelia.100.a: "[target.GetName] yakında bizim olacak!"

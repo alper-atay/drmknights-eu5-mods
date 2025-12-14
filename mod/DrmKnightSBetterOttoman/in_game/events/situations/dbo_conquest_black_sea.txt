@@ -1,37 +1,37 @@
-﻿namespace = dbo_conquest_fertile_crescent
-dbo_conquest_fertile_crescent.1 = {
+﻿namespace = dbo_conquest_black_sea
+dbo_conquest_black_sea.1 = {
 	type = country_event
 	category = situation_event
-	title = dbo_conquest_fertile_crescent.1.title
-	desc = dbo_conquest_fertile_crescent.1.desc
+	title = dbo_conquest_black_sea.1.title
+	desc = dbo_conquest_black_sea.1.desc
 	image = "gfx/interface/illustrations/situation/rise_of_the_ottomans.dds"
 	option = {
-		name = dbo_conquest_fertile_crescent.1.a
+		name = dbo_conquest_black_sea.1.a
 	}
 }
 
-dbo_conquest_fertile_crescent.2 = {
+dbo_conquest_black_sea.2 = {
 	type = country_event
 	category = situation_event
-	title = dbo_conquest_fertile_crescent.2.title
-	desc = dbo_conquest_fertile_crescent.2.desc
+	title = dbo_conquest_black_sea.2.title
+	desc = dbo_conquest_black_sea.2.desc
 	option = {
-		name = dbo_conquest_fertile_crescent.2.a
+		name = dbo_conquest_black_sea.2.a
 		set_variable = {
-			name = dbo_achieved_conquest_fertile_crescent
+			name = dbo_achieved_conquest_black_sea
 			value = 1
 		}
-		add_reform = government_reform:dbo_achieved_conquest_fertile_crescent
+		add_reform = government_reform:dbo_achieved_conquest_black_sea
 		add_stability = stability_extreme_bonus
 		add_legitimacy = legitimacy_extreme_bonus
 	}
 }
 
-dbo_conquest_fertile_crescent.100 = {
+dbo_conquest_black_sea.100 = {
 	type = country_event
 	category = situation_event
-	title = dbo_conquest_fertile_crescent.100.title
-	desc = dbo_conquest_fertile_crescent.100.desc
+	title = dbo_conquest_black_sea.100.title
+	desc = dbo_conquest_black_sea.100.desc
 	immediate = {
 		ruler_or_regent ?= {
 			save_scope_as = target_character1
@@ -44,7 +44,7 @@ dbo_conquest_fertile_crescent.100 = {
 		}
 	}
 	option = {
-		name = dbo_conquest_fertile_crescent.100.a
+		name = dbo_conquest_black_sea.100.a
 		add_casus_belli = {
 			target = scope:target.owner
 			type = casus_belli:cb_conquer_province

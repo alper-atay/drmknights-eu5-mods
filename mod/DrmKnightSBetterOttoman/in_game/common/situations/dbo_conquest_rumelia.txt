@@ -1,0 +1,26 @@
+dbo_conquest_rumelia = {
+    monthly_spawn_chance = monthly_spawn_chance_unique
+    can_start = {
+        current_date > 1337.1.1
+        #situation:rise_of_the_ottomans = {
+		#	situation_is_active = no
+		#	situation_has_ended = yes
+		#}
+    }
+    can_end = {
+        dbo_conquest_rumelia_achieved = yes
+    }
+    visible = {
+        tag = TUR
+    }
+    on_start = {
+        c:TUR ?= {
+            trigger_event_non_silently = dbo_conquest_rumelia.1
+        }
+    }
+    on_ended = {
+        c:TUR ?= {
+            trigger_event_non_silently = dbo_conquest_rumelia.2
+        }
+    }
+}

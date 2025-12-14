@@ -1,0 +1,26 @@
+dbo_conquest = {
+    monthly_spawn_chance = monthly_spawn_chance_unique
+    can_start = {
+        current_date > 1337.1.1
+    }
+    can_end = {
+		dbo_secure_anatolian_turks_union_achieved = yes
+        dbo_conquest_rumelia_achieved = yes
+		dbo_conquest_fertile_crescent_achieved = yes
+		dbo_conquest_arabian_peninsula_achieved = yes
+		dbo_conquest_black_sea_achieved = yes
+    }
+    visible = {
+        tag = TUR
+    }
+    on_start = {
+        c:TUR ?= {
+            trigger_event_non_silently = dbo_conquest.1
+        }
+    }
+    on_ended = {
+        c:TUR ?= {
+            trigger_event_non_silently = dbo_conquest.2
+        }
+    }
+}
