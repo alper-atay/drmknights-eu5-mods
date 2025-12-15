@@ -7,8 +7,12 @@
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
+			situation:rise_of_the_ottomans = {
+				situation_is_active = no
+				situation_has_ended = yes
+			}
 			NOT = {
-				has_variable = dbo_achieved_conquest_fertile_crescent
+				has_reform = government_reform:dbo_achieved_conquest_fertile_crescent
 			}
 		}
 	}
