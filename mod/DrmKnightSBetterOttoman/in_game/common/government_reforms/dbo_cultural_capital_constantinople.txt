@@ -18,7 +18,6 @@
         artist_impact = 0.1
         num_possible_artists = 1
         skill_of_new_artists = 0.25
-
         cultures_capacity = 1
         cultures_capacity_modifier = 0.25
         cultural_tradition_modifier = 0.1
