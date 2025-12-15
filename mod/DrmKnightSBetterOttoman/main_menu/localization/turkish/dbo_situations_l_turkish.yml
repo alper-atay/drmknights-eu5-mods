@@ -1,6 +1,6 @@
 ﻿l_turkish:
- dbo_conquest: "Fetih"
- dbo_conquest_desc: "Fetih Başlasın!\n$dbo_conquest_rumelia_desc$\n$dbo_conquest_anatolian_turks_desc$\n$dbo_conquest_arabian_peninsula_desc$\n$dbo_conquest_fertile_crescent_desc$\n$dbo_conquest_black_sea_desc$"
+ dbo_conquest: "Cihan Hâkimiyeti Ülküsü – Tek Taht, Tek Dünya"
+ dbo_conquest_desc: "Anadolu’nun dar ufukları artık Osmanlı’ya yetmemektedir. Roma’nın mirası, İslam’ın muhafızlığı ve Türk kılıcının sarsılmaz kudreti tek bir ülküde birleşmiştir: cihana nizam vermek. Osmanlı artık yalnızca toprak kazanan bir devlet değil, tarihin akışını belirleyen mutlak bir iradedir. Dünya parçalanmış hâlde kaldıkça fitne ve kaos sona ermeyecektir. Bu nedenle doğudan batıya, kuzeyden güneye tüm ticaret yolları, kutsal mabedler ve imparatorluk başkentleri Osmanlı sancağı altında toplanmalıdır. Direnen kılıçla ezilecek, boyun eğen adaletle korunacaktır. Her fetih, yalnızca bir zafer değil; dünyayı tek bir merkezden yönetilen düzene yaklaştıran kutsal bir adımdır. Osmanlı, fethettiği toprakları değil; cihanın kaderini miras alır. Tek bir taht, tek bir nizam ve tek bir dünya kurulmadıkça gerçek barış mümkün değildir. Bu yol, imparatorluğun değil; dünyanın fethidir."
  dbo_casus_belli_price: "Hak İddiası Bedeli"
  dbo_conquest_anatolian_turks_press_claims: "Anadolu Türk Birliği üzerinden Hak İddiasında Bulun"
  dbo_conquest_rumelia_press_claims: "Rumeli üzerinden Hak İddiasında Bulun"
@@ -11,4 +11,6 @@
  dbo_conquest_fertile_crescent_press_claims: "Verimli Hilal üzerinden Hak İddiasında Bulun"
  dbo_conquest_fertile_crescent_press_claims_desc: "[ShowAreaName('iraq_arabi_area')], [ShowAreaName('jazira_area')], [ShowAreaName('levant_area')] [Concept('areas', 'alanlarında')|e]."
  dbo_conquest_black_sea_press_claims: "Karadeniz üzerinden Hak İddiasında Bulun"
+ dbo_conquest_black_sea_press_claims_desc: "Karadeniz Açıklama"
+ dbo_conquest_nile_river_press_claims: "Nil Nehri üzerinden Bütün Mısır Bölgesine Hak İddiasında Bulun"
  dbo_conquest_black_sea_press_claims_desc: "Karadeniz Açıklama"
