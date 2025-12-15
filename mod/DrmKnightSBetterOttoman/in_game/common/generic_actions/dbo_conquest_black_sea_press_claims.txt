@@ -55,9 +55,30 @@
 				can_declare_war_on = root.owner
 			}
 			trigger_if = {
-				OR = {
-					region = region:crescent_region
-				}
+				area = area:black_sea_area
+				area = area:pontus_area
+				province = province_definition:bolu_province
+				province = province_definition:kocaeli_province
+				province = province_definition:constantinople_province
+				province = province_definition:edirne_province
+				province = province_definition:burgas_province
+				province = province_definition:preslav_province
+				province = province_definition:south_dobruja_province
+				province = province_definition:north_dobruja_province
+				province = province_definition:basarabia_province
+				province = province_definition:khadjibey_province
+				province = province_definition:boh_province
+				province = province_definition:oleshia_province
+				province = province_definition:qalancak_province
+				province = province_definition:berda_province
+				province = province_definition:kalmius_province
+				province = province_definition:tana_province
+				province = province_definition:azov_province
+				province = province_definition:akhtar_province
+				province = province_definition:taman_province
+				province = province_definition:tuapse_province
+				province = province_definition:abkhazia_province
+				province = province_definition:samegrelo_province
 			}
 			any_location_in_province = {
 				is_neighbor_of = scope:actor

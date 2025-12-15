@@ -12,7 +12,7 @@
 				situation_has_ended = yes
 			}
 			NOT = {
-				has_variable = dbo_achieved_conquest_anatolian_turks
+				has_reform = government_reform:dbo_achieved_conquest_anatolian_turks
 			}
 		}
 	}

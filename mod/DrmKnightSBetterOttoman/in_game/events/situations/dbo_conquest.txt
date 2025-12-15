@@ -1,5 +1,5 @@
 ﻿namespace = dbo_conquest
-dbo_secure_anatolian_turks_union.1 = {
+dbo_conquest.1 = {
 	type = country_event
 	category = situation_event
 	title = dbo_conquest.1.title
@@ -9,7 +9,6 @@ dbo_secure_anatolian_turks_union.1 = {
 		name = dbo_conquest.1.a
 	}
 }
-
 dbo_conquest.100 = {
 	type = country_event
 	category = situation_event

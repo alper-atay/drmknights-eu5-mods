@@ -1,4 +1,4 @@
-namespace = dbo_achieved_conquest_rumelia
+﻿namespace = dbo_achieved_conquest_rumelia
 dbo_achieved_conquest_rumelia.1 = {
 	type = country_event
 	title = dbo_achieved_conquest_rumelia.1.title
@@ -14,10 +14,18 @@ dbo_achieved_conquest_rumelia.1 = {
 		NOT = {
 			has_reform = government_reform:dbo_achieved_conquest_rumelia
 		}
- 		dbo_conquest_anatolian_turks_achieved = yes
+		own_entire_area = area:aegean_archipelago_area
+		own_entire_area = area:bosnia_area
+		own_entire_area = area:bulgaria_area
+		own_entire_area = area:macedonia_area
+		own_entire_area = area:morea_area
+		own_entire_area = area:northern_greece_area
+		own_entire_area = area:serbia_area
+		own_entire_area = area:thrace_area
+		own_entire_area = area:wallachia_area
 	}
 	option = {
-		name = dbo_achieved_conquest_rumelia.1.a
+		name = dbo_achieved_conquest.1.a
 		set_variable = {
 			name = dbo_achieved_conquest_rumelia
 			value = 1
