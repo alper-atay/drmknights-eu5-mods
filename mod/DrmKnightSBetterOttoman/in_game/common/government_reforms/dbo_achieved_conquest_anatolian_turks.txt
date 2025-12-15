@@ -15,7 +15,7 @@
         global_monthly_control = 0.05
         global_pop_assimilation_speed_modifier = 0.1
         global_pop_conversion_speed_modifier = 0.1
-        global_population_growth = 0.0001
+        global_population_growth = 0.001
         monthly_rebel_growth = -0.001
         global_hostile_attrition = 1
         government_reform_slots = 1

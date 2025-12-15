@@ -15,6 +15,7 @@
         global_max_rgo_size_modifier = 0.1
         global_raw_material_output = 0.1
         global_rgo_build_time = -0.1
+        global_population_growth = 0.001
         government_reform_slots = 1
     }
 }
