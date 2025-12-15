@@ -1,17 +1,29 @@
 ﻿dbo_achieved_conquest_nile_river = {
-    unique = yes
-    potential = {
-        has_or_had_tag = TUR
-        has_variable = dbo_achieved_conquest_nile_river
-    }
-    locked = {
-        is_locked_mechanic = {
-            mechanic = government_reform
-            type = dbo_achieved_conquest_nile_river
-        }
-    }
-    country_modifier = {
-        power_projection = 5
-        government_reform_slots = 1
-    }
+	unique = yes
+	potential = {
+		has_or_had_tag = TUR
+		has_variable = dbo_achieved_conquest_nile_river
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = government_reform
+			type = dbo_achieved_conquest_nile_river
+		}
+	}
+	country_modifier = {
+		power_projection = 5
+		cultures_capacity = 1
+		cultures_capacity_modifier = 0.25
+		cultural_tradition_modifier = 0.1
+		cultural_influence_modifier = 0.1
+		global_institution_growth_modifier = 0.1
+		global_max_rgo_size_modifier = 0.1
+		global_raw_material_output = 0.1
+		global_rgo_build_time = -0.1
+		tolerance_own = 1
+		global_pop_conversion_speed = 20
+		global_pop_conversion_speed_modifier = 0.2
+		monthly_rebel_growth = -0.001
+		government_reform_slots = 1
+	}
 }
