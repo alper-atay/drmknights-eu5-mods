@@ -87,3 +87,93 @@ OTHER_PERFORMS_dbo_conquest_anatolian_turks_press_claims_ACTION = {
 	pausepopup = no
 	message_category = wars
 }
+
+PERFORM_dbo_conquest_black_sea_press_claims_ACTION = {
+	log = yes
+	onmap = no
+	popup = yes
+	idle = no
+	option = yes
+	pausepopup = no
+	message_category = wars
+}
+
+WE_PERFORM_dbo_conquest_black_sea_press_claims_ACTION = {
+	log = yes
+	onmap = no
+	popup = yes
+	idle = no
+	option = yes
+	pausepopup = no
+	message_category = wars
+}
+
+OTHER_PERFORMS_dbo_conquest_black_sea_press_claims_ACTION = {
+	log = yes
+	onmap = no
+	popup = no
+	idle = no
+	option = yes
+	pausepopup = no
+	message_category = wars
+}
+
+PERFORM_dbo_conquest_rumelia_press_claims_ACTION = {
+	log = yes
+	onmap = no
+	popup = yes
+	idle = no
+	option = yes
+	pausepopup = no
+	message_category = wars
+}
+
+WE_PERFORM_dbo_conquest_rumelia_press_claims_ACTION = {
+	log = yes
+	onmap = no
+	popup = yes
+	idle = no
+	option = yes
+	pausepopup = no
+	message_category = wars
+}
+
+OTHER_PERFORMS_dbo_conquest_rumelia_press_claims_ACTION = {
+	log = yes
+	onmap = no
+	popup = no
+	idle = no
+	option = yes
+	pausepopup = no
+	message_category = wars
+}
+
+PERFORM_dbo_conquest_nile_river_press_claims_ACTION = {
+	log = yes
+	onmap = no
+	popup = yes
+	idle = no
+	option = yes
+	pausepopup = no
+	message_category = wars
+}
+
+WE_PERFORM_dbo_conquest_nile_river_press_claims_ACTION = {
+	log = yes
+	onmap = no
+	popup = yes
+	idle = no
+	option = yes
+	pausepopup = no
+	message_category = wars
+}
+
+OTHER_PERFORMS_dbo_conquest_nile_river_press_claims_ACTION = {
+	log = yes
+	onmap = no
+	popup = no
+	idle = no
+	option = yes
+	pausepopup = no
+	message_category = wars
+}

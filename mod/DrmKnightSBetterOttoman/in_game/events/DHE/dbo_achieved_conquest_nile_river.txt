@@ -1,0 +1,33 @@
+﻿namespace = dbo_achieved_conquest_nile_river
+dbo_achieved_conquest_nile_river.1 = {
+	type = country_event
+	title = dbo_achieved_conquest_nile_river.1.title
+	desc = dbo_achieved_conquest_nile_river.1.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		NOT = {
+			has_reform = government_reform:dbo_achieved_conquest_nile_river
+		}
+		own_entire_area = area:lower_egypt_area
+		own_entire_area = area:upper_egypt_area
+		own_entire_area = area:sinai_area
+		own_entire_area = area:cyrenaica_area
+	}
+	option = {
+		name = dbo_achieved_conquest.1.a
+		set_variable = {
+			name = dbo_achieved_conquest_nile_river
+			value = 1
+		}
+		historical_option = yes
+		add_reform = government_reform:dbo_achieved_conquest_nile_river
+		add_stability = stability_extreme_bonus
+		add_legitimacy = legitimacy_extreme_bonus
+	}
+}

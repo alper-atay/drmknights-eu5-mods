@@ -1,0 +1,92 @@
+﻿dbo_conquest_nile_river_press_claims = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			NOT = {
+				has_variable = dbo_achieved_conquest_nile_river
+			}
+		}
+	}
+	ai_tick = never
+	automation_tick = never
+	price = price:dbo_casus_belli_price
+	cooldown = {
+		type = dbo_conquest_nile_river_press_claims_cooldown_key
+		years = 2
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:dbo_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:dbo_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				OR = {
+					region = region:egypt_region
+				}
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			custom_tooltip = {
+				text = dbo_conquest_nile_river_press_claims
+				scope:actor = {
+					trigger_event_silently = dbo_conquest.100
+				}
+			}
+		}
+	}
+}

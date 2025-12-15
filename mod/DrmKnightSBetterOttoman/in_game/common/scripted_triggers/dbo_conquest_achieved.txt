@@ -94,3 +94,12 @@ dbo_conquest_black_sea_achieved = {
 		own_entire_province = province_definition:samegrelo_province
 	}
 }
+
+dbo_conquest_nile_river_achieved = {
+	c:TUR ?= {
+		own_entire_area = area:lower_egypt_area
+		own_entire_area = area:upper_egypt_area
+		own_entire_area = area:sinai_area
+		own_entire_area = area:cyrenaica_area
+	}
+}
