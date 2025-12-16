@@ -18,28 +18,36 @@
 			owner = {
 				create_character = {
 					female = yes
-					estate = estate_type:nobles_estate
+					religion = scope:target_crown_male.religion
+					culture = scope:target_crown_male.culture
+					random_estate_type_trigger = {
+						NOR = {
+							this = estate_type:nobles_estate
+							this = estate_type:clergy_estate
+							this = estate_type:dhimmi_estate
+						}
+					}
 					adm = {
-						80
+						90
 						100
 					}
 					dip = {
-						80
+						90
 						100
 					}
 					mil = {
-						80
+						90
 						100
 					}
 					age = 16
-					save_scope_as = target_female_created
+					save_scope_as = target_created_lowborn_female
 				}
 				if = {
 					limit = {
-						exists = scope:target_female_created
+						exists = scope:target_created_lowborn_female
 					}
 					scope:target_crown_male ?= {
-						marry_character = scope:target_female_created
+						marry_character = scope:target_created_lowborn_female
 					}
 				}
 			}

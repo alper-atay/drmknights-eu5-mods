@@ -1,13 +1,13 @@
-﻿monthly_country_pulse = {
+﻿yearly_country_pulse  = {
     on_actions = {
         delay = {
             days = 1
         }
-        dcma_monthly_check
+        dcma_yearly_check
     }
 }
 
-dcma_monthly_check = {
+dcma_yearly_check = {
     effect = {
         if = {
             limit = {
