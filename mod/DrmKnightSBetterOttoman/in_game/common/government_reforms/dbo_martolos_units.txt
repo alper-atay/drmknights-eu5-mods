@@ -16,5 +16,6 @@
 		counter_espionage = 0.1
 		spy_network_construction = 0.1
 		government_reform_slots = 1
+		monthly_rebel_growth = -0.002
 	}
 }

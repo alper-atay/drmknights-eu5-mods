@@ -62,6 +62,7 @@
 				OR = {
 					area = area:aegean_archipelago_area
 					area = area:bosnia_area
+					area = area:albania_area
 					area = area:bulgaria_area
 					area = area:macedonia_area
 					area = area:morea_area

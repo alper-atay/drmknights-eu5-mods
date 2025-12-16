@@ -36,6 +36,7 @@ dbo_conquest_rumelia_achieved = {
 	c:TUR ?= {
 		own_entire_area = area:aegean_archipelago_area
 		own_entire_area = area:bosnia_area
+		own_entire_area = area:albania_area
 		own_entire_area = area:bulgaria_area
 		own_entire_area = area:macedonia_area
 		own_entire_area = area:morea_area
