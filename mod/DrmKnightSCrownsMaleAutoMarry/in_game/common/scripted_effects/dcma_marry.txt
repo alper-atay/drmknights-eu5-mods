@@ -20,6 +20,7 @@
 					female = yes
 					religion = scope:target_crown_male.religion
 					culture = scope:target_crown_male.culture
+					birth_location = scope:target_crown_male.birth_location
 					random_estate_type_trigger = {
 						NOR = {
 							this = estate_type:nobles_estate

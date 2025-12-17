@@ -60,7 +60,6 @@
 			}
 			trigger_if = {
 				OR = {
-					area = area:black_sea_area
 					area = area:pontus_area
 					province_definition = province_definition:bolu_province
 					province_definition = province_definition:kocaeli_province
