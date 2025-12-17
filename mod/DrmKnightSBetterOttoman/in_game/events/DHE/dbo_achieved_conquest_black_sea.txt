@@ -14,7 +14,6 @@ dbo_achieved_conquest_black_sea.1 = {
 		NOT = {
 			has_reform = government_reform:dbo_achieved_conquest_black_sea
 		}
-		own_entire_area = area:black_sea_area
 		own_entire_area = area:pontus_area
 		own_entire_province = province_definition:bolu_province
 		own_entire_province = province_definition:kocaeli_province
