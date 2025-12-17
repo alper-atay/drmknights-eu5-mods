@@ -26,7 +26,7 @@ dbo_achieved_conquest_arabian_peninsula.1 = {
 		name = dbo_achieved_conquest.1.a
 		set_variable = {
 			name = dbo_achieved_conquest_arabian_peninsula
-			value = 1
+			value = yes
 		}
 		historical_option = yes
 		add_reform = government_reform:dbo_achieved_conquest_arabian_peninsula

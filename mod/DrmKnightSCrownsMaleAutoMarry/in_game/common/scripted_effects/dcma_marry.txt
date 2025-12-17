@@ -10,7 +10,7 @@
 			has_estate = estate_type:crown_estate
 			total_abilities > 120
 		}
-		save_scope_as = target_crown_male
+		save_temporary_scope_as = target_crown_male
 		if = {
 			limit = {
 				exists = scope:target_crown_male
@@ -31,10 +31,11 @@
 					dip = 100
 					mil = 100
 					age = 16
-					save_scope_as = target_created_lowborn_female
+					save_temporary_scope_as = target_created_lowborn_female
 				}
 				if = {
 					limit = {
+						exists = scope:target_crown_male
 						exists = scope:target_created_lowborn_female
 					}
 					scope:target_crown_male ?= {
