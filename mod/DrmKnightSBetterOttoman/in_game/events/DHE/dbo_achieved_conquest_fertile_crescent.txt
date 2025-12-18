@@ -14,9 +14,7 @@ dbo_achieved_conquest_fertile_crescent.1 = {
 		NOT = {
 			has_reform = government_reform:dbo_achieved_conquest_fertile_crescent
 		}
-		own_entire_area = area:iraq_arabi_area
-		own_entire_area = area:jazira_area
-		own_entire_area = area:levant_area
+		dbo_conquest_fertile_crescent_achieved = yes
 	}
 	option = {
 		name = dbo_achieved_conquest.1.a

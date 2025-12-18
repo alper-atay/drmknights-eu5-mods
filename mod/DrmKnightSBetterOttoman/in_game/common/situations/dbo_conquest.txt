@@ -1,26 +1,38 @@
 ﻿dbo_conquest = {
-    monthly_spawn_chance = monthly_spawn_chance_unique
-    can_start = {
-        current_date > 1337.1.1
-    }
-    can_end = {
-		dbo_conquest_anatolian_turks_achieved = yes
-        dbo_conquest_rumelia_achieved = yes
-		dbo_conquest_fertile_crescent_achieved = yes
-		dbo_conquest_arabian_peninsula_achieved = yes
-		dbo_conquest_black_sea_achieved = yes
-        dbo_conquest_nile_river_achieved = yes
-    }
-    visible = {
-        tag = TUR
-    }
-    on_start = {
-        c:TUR ?= {
-            trigger_event_non_silently = dbo_conquest.1
-        }
-    }
-    on_ended = {
-        c:TUR ?= {
-        }
-    }
+	monthly_spawn_chance = monthly_spawn_chance_unique
+	can_start = {
+		current_date > 1337.1.1
+	}
+	can_end = {
+		custom_tooltip = {
+			text = dbo_conquest_achieve_anatolian_turks_tt
+			c:TUR = {
+				dbo_conquest_anatolian_turks_achieved = yes
+			}
+		}
+		custom_tooltip = {
+			text = dbo_conquest_achieve_rumelia_tt
+			c:TUR = {
+                dbo_conquest_rumelia_achieved = yes
+			}
+		}
+		#dbo_conquest_anatolian_turks_achieved = yes
+		#dbo_conquest_rumelia_achieved = yes
+		#dbo_conquest_fertile_crescent_achieved = yes
+		#dbo_conquest_arabian_peninsula_achieved = yes
+		#dbo_conquest_black_sea_achieved = yes
+		#dbo_conquest_nile_river_achieved = yes
+	}
+	visible = {
+		tag = TUR
+	}
+	on_start = {
+		c:TUR ?= {
+			trigger_event_non_silently = dbo_conquest.1
+		}
+	}
+	on_ended = {
+		c:TUR ?= {
+		}
+	}
 }

@@ -14,14 +14,7 @@ dbo_achieved_conquest_rumelia.1 = {
 		NOT = {
 			has_reform = government_reform:dbo_achieved_conquest_rumelia
 		}
-		own_entire_area = area:bosnia_area
-		own_entire_area = area:albania_area
-		own_entire_area = area:bulgaria_area
-		own_entire_area = area:macedonia_area
-		own_entire_area = area:morea_area
-		own_entire_area = area:northern_greece_area
-		own_entire_area = area:serbia_area
-		own_entire_area = area:thrace_area
+		dbo_conquest_rumelia_achieved = yes
 	}
 	option = {
 		name = dbo_achieved_conquest.1.a

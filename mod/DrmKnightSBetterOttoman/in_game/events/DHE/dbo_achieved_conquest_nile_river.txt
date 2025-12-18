@@ -14,10 +14,7 @@ dbo_achieved_conquest_nile_river.1 = {
 		NOT = {
 			has_reform = government_reform:dbo_achieved_conquest_nile_river
 		}
-		own_entire_area = area:lower_egypt_area
-		own_entire_area = area:upper_egypt_area
-		own_entire_area = area:sinai_area
-		own_entire_area = area:cyrenaica_area
+		dbo_conquest_nile_river_achieved = yes
 	}
 	option = {
 		name = dbo_achieved_conquest.1.a

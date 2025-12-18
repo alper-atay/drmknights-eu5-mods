@@ -14,13 +14,7 @@ dbo_achieved_conquest_arabian_peninsula.1 = {
 		NOT = {
 			has_reform = government_reform:dbo_achieved_conquest_arabian_peninsula
 		}
-		own_entire_area = area:bahrein_area
-		own_entire_area = area:hedjaz_area
-		own_entire_area = area:najd_area
-		own_entire_area = area:oman_area
-		own_entire_area = area:hail_area
-		own_entire_area = area:north_yemen_area
-		own_entire_area = area:south_yemen_area
+		dbo_conquest_arabian_peninsula_achieved = yes
 	}
 	option = {
 		name = dbo_achieved_conquest.1.a
