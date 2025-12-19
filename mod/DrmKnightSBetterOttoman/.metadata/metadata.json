@@ -1,12 +1,13 @@
 ﻿{
-	"name": "DrmKnightS Better Ottoman",
+	"name": "Muhteşem Osmanlı",
 	"id": "drmknights.betterottoman",
-	"version": "",
-	"supported_game_version": "",
-	"short_description": "DrmKnightS Better Ottoman",
+	"version": "0.1",
+	"supported_game_version": "1.0.10",
+	"short_description": "Muhteşem Osmanlı, oyun içi deneyimini geliştirir ve zenginleştirir. Yeni hukumet ıslahatları ve görevler ekler, böylece oyuncular Osmanlı'nın tarihsel büyüklüğünü daha iyi yaşayabilirler.",
 	"tags": [
 		"Gameplay"
 	],
+	"picture": "thumbnail.png",
 	"relationships": [],
 	"game_custom_data": {}
 }

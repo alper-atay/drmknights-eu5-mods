@@ -45,7 +45,7 @@
 			text = dbo_conquest_achieve_lessons_from_mongols_tt
 			c:TUR = {
 				OR = {
-					has_reform = government_reform:lessons_from_mongols
+					has_reform = government_reform:dbo_lessons_from_mongols
 					has_reform = government_reform:dbo_modernized_timariot_system
 				}
 			}
