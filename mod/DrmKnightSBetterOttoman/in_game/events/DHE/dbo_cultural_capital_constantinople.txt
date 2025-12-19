@@ -12,7 +12,7 @@ dbo_cultural_capital_constantinople.1 = {
 		monthly_chance = 25
 	}
 	trigger = {
-		owns = location:constantinople
+		own_entire_province = province_definition:constantinople_province
 		NOT = {
 			has_reform = government_reform:dbo_cultural_capital_constantinople
 		}

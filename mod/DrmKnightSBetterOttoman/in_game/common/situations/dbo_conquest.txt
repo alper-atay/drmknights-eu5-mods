@@ -4,6 +4,65 @@
 		current_date > 1337.1.1
 	}
 	can_end = {
+		#Achievements for Reforms
+		custom_tooltip = {
+			text = dbo_conquest_achieve_alp_and_alperen_tt
+			c:TUR = {
+				has_reform = government_reform:dbo_alp_and_alperen
+			}
+		}
+		custom_tooltip = {
+			text = dbo_conquest_achieve_cultural_capital_constantinople_tt
+			c:TUR = {
+				has_reform = government_reform:dbo_cultural_capital_constantinople
+			}
+		}
+		custom_tooltip = {
+			text = dbo_conquest_achieve_grand_bazaar_tt
+			c:TUR = {
+				has_reform = government_reform:dbo_grand_bazaar
+			}
+		}
+		custom_tooltip = {
+			text = dbo_conquest_achieve_great_bronze_cannon_tt
+			c:TUR = {
+				has_reform = government_reform:dbo_great_bronze_cannon
+			}
+		}
+		custom_tooltip = {
+			text = dbo_conquest_achieve_legacy_of_seljuks_tt
+			c:TUR = {
+				has_reform = government_reform:dbo_legacy_of_seljuks
+			}
+		}
+		custom_tooltip = {
+			text = dbo_conquest_achieve_martolos_units_tt
+			c:TUR = {
+				has_reform = government_reform:dbo_martolos_units
+			}
+		}
+		custom_tooltip = {
+			text = dbo_conquest_achieve_lessons_from_mongols_tt
+			c:TUR = {
+				OR = {
+					has_reform = government_reform:lessons_from_mongols
+					has_reform = government_reform:dbo_modernized_timariot_system
+				}
+			}
+		}
+		custom_tooltip = {
+			text = dbo_conquest_achieve_modernized_timariot_system_tt
+			c:TUR = {
+				has_reform = government_reform:dbo_modernized_timariot_system
+			}
+		}
+		custom_tooltip = {
+			text = dbo_conquest_achieve_ottoman_empire_tt
+			c:TUR = {
+				has_reform = government_reform:dbo_ottoman_empire
+			}
+		}
+		#Achievements for Conquests
 		custom_tooltip = {
 			text = dbo_conquest_achieve_anatolian_turks_tt
 			c:TUR = {
@@ -54,6 +113,5 @@
 		}
 	}
 	on_monthly = {
-		
 	}
 }
