@@ -9,7 +9,7 @@ dbo_martolos_units.1 = {
 		tag = TUR
 		from = 1337.1.1
 		to = 1837.1.1
-		monthly_chance = 100
+		monthly_chance = 25
 	}
 	trigger = {
 		has_advance = janissaries_advance

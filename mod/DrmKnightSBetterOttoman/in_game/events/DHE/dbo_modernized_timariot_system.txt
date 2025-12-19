@@ -6,9 +6,9 @@ dbo_modernized_timariot_system.1 = {
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
-		from = 1637.1.1
+		from = 1437.1.1
 		to = 1837.1.1
-		monthly_chance = 20
+		monthly_chance = 25
 	}
 	trigger = {
 		has_advance = akinji_cavalry
@@ -65,6 +65,7 @@ dbo_modernized_timariot_system.1 = {
 			type = estate_type:peasants_estate
 			value = estate_satisfaction_mild_penalty
 		}
+		add_stability = stability_extreme_penalty
 		set_variable = {
 			name = dbo_modernized_timariot_system
 			value = yes

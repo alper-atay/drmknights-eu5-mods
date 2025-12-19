@@ -9,7 +9,7 @@ dbo_great_bronze_cannon.1 = {
 		tag = TUR
 		from = 1337.1.1
 		to = 1837.1.1
-		monthly_chance = 100
+		monthly_chance = 25
 	}
 	trigger = {
 		OR = {

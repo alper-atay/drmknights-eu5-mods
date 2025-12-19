@@ -20,7 +20,7 @@
 		monthly_towards_quality = societal_value_monthly_move
 		monthly_towards_offensive = societal_value_monthly_move
 		monthly_towards_land = societal_value_monthly_move
-		land_morale_modifier = 0.1
+		land_morale_modifier = 0.05
 		military_tactics = 0.25
 		discipline = 0.05
 		global_levy_size_modifier = 0.1

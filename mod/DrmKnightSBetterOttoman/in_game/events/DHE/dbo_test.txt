@@ -1,0 +1,42 @@
+﻿namespace = dbo_test
+dbo_test.1 = {
+	type = country_event
+	title = dbo_test.1.title
+	desc = dbo_test.1.desc
+	historical_info = dbo_test.1.historical_info
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		NOT = {
+			has_reform = government_reform:dbo_alp_and_alperen
+		}
+	}
+	option = {
+		name = dbo_test.1.a
+		set_variable = {
+			name = dbo_alp_and_alperen
+			value = yes
+		}
+		historical_option = yes
+		add_reform = government_reform:dbo_achieved_conquest_anatolian_turks
+		add_reform = government_reform:dbo_achieved_conquest_arabian_peninsula
+		add_reform = government_reform:dbo_achieved_conquest_black_sea
+		add_reform = government_reform:dbo_achieved_conquest_fertile_crescent
+		add_reform = government_reform:dbo_achieved_conquest_nile_river
+		add_reform = government_reform:dbo_achieved_conquest_rumelia
+		add_reform = government_reform:dbo_alp_and_alperen
+		add_reform = government_reform:dbo_cultural_capital_constantinople
+		add_reform = government_reform:dbo_grand_bazaar
+		add_reform = government_reform:dbo_great_bronze_cannon
+		add_reform = government_reform:dbo_legacy_of_seljuks
+		add_reform = government_reform:dbo_lessons_from_mongols
+		add_reform = government_reform:dbo_martolos_units
+		add_reform = government_reform:dbo_modernized_timariot_system
+		add_reform = government_reform:dbo_ottoman_empire
+	}
+}
