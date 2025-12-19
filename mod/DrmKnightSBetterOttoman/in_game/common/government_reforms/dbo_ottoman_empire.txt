@@ -11,7 +11,7 @@
 		}
 	}
 	country_modifier = {
-		global_integration_speed_modifier = 0.25
+		global_integration_speed_modifier = 0.5
 		government_size = 1
 		antagonism_received_modifier = -0.25
 		auto_slave_raid_different_religion = yes
