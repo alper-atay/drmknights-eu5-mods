@@ -1,4 +1,4 @@
-﻿dbo_lessons_from_mongols = {
+﻿dbo_modernized_timariot_system = {
 	unique = yes
 	potential = {
 		has_or_had_tag = TUR
@@ -6,24 +6,27 @@
 			limit = {
 				has_variable = dbo_lessons_from_mongols
 			}
-			var:dbo_lessons_from_mongols = yes
+			var:dbo_lessons_from_mongols = no
 		}
-		NOT = {
-			has_variable = dbo_modernized_timariot_system
+		trigger_if = {
+			limit = {
+				has_variable = dbo_modernized_timariot_system
+			}
+			var:dbo_modernized_timariot_system = yes
 		}
 	}
 	locked = {
 		is_locked_mechanic = {
 			mechanic = government_reform
-			type = dbo_lessons_from_mongols
+			type = dbo_modernized_timariot_system
 		}
 	}
 	country_modifier = {
 		assault_ability = 0.1
 		army_logistics_distance_modifier = 0.1
-		army_cavalry_power = 0.1
-		army_cavalry_maintenance_cost_modifier = -0.1
 		army_movement_speed = 0.1
+		army_cavalry_power = 0.2
+		army_cavalry_maintenance_cost_modifier = -0.2
 		government_reform_slots = 1
 	}
 }

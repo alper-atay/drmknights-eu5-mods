@@ -23,7 +23,7 @@ dbo_legacy_of_seljuks.1 = {
 		name = dbo_legacy_of_seljuks.1.a
 		set_variable = {
 			name = dbo_legacy_of_seljuks
-			value = 1
+			value = yes
 		}
 		historical_option = yes
 		add_reform = government_reform:dbo_legacy_of_seljuks

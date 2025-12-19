@@ -1,0 +1,74 @@
+﻿namespace = dbo_modernized_timariot_system
+dbo_modernized_timariot_system.1 = {
+	type = country_event
+	title = dbo_modernized_timariot_system.1.title
+	desc = dbo_modernized_timariot_system.1.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1637.1.1
+		to = 1837.1.1
+		monthly_chance = 20
+	}
+	trigger = {
+		has_advance = akinji_cavalry
+		has_advance = unlock_arquebusiers_advance
+		has_reform = government_reform:dbo_lessons_from_mongols
+		NOT = {
+			has_reform = government_reform:dbo_modernized_timariot_system
+		}
+	}
+	option = {
+		name = dbo_modernized_timariot_system.1.a
+		set_variable = {
+			name = dbo_modernized_timariot_system
+			value = yes
+		}
+		historical_option = yes
+		if = {
+			limit = {
+				has_reform = government_reform:basic_timariot_system
+			}
+			remove_reform = government_reform:basic_timariot_system
+		}
+		if = {
+			limit = {
+				has_reform = government_reform:expanded_timariot_system
+			}
+			remove_reform = government_reform:expanded_timariot_system
+		}
+		if = {
+			limit = {
+				has_variable = expanded_timariot_system
+			}
+			remove_variable = expanded_timariot_system
+		}
+		if = {
+			limit = {
+				has_reform = government_reform:dbo_lessons_from_mongols
+			}
+			change_variable = {
+				name = dbo_lessons_from_mongols
+				value = no
+			}
+			remove_reform = government_reform:dbo_lessons_from_mongols
+		}
+		add_estate_satisfaction = {
+			type = estate_type:nobles_estate
+			value = estate_satisfaction_mild_penalty
+		}
+		add_estate_satisfaction = {
+			type = estate_type:clergy_estate
+			value = estate_satisfaction_mild_penalty
+		}
+		add_estate_satisfaction = {
+			type = estate_type:peasants_estate
+			value = estate_satisfaction_mild_penalty
+		}
+		set_variable = {
+			name = dbo_modernized_timariot_system
+			value = yes
+		}
+		add_reform = government_reform:dbo_modernized_timariot_system
+	}
+}

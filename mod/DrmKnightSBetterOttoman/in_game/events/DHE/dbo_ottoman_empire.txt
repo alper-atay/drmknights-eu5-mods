@@ -3,6 +3,7 @@ dbo_ottoman_empire.1 = {
 	type = country_event
 	title = dbo_ottoman_empire.1.title
 	desc = dbo_ottoman_empire.1.desc
+	historical_info = dbo_ottoman_empire.1.historical_info
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
@@ -25,7 +26,7 @@ dbo_ottoman_empire.1 = {
 		historical_option = yes
 		set_variable = {
 			name = dbo_ottoman_empire
-			value = 1
+			value = yes
 		}
 		if = {
 			limit = {
