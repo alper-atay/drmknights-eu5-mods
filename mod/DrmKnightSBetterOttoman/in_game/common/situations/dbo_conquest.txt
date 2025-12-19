@@ -54,16 +54,6 @@
 		}
 	}
 	on_monthly = {
-		every_in_global_list = {
-			variable = eligible_beylik_list
-			limit = {
-				this != c:TUR
-			}
-			c:TUR = {
-				annex_country = {
-					target = this
-				}
-			}
-		}
+		
 	}
 }
