@@ -2,12 +2,7 @@
 	unique = yes
 	potential = {
 		has_or_had_tag = TUR
-		trigger_if = {
-			limit = {
-				has_variable = dbo_alp_and_alperen
-			}
-			var:dbo_alp_and_alperen = yes
-		}
+		has_variable = dbo_alp_and_alperen
 	}
 	locked = {
 		is_locked_mechanic = {

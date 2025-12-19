@@ -47,11 +47,13 @@ dbo_modernized_timariot_system.1 = {
 			limit = {
 				has_reform = government_reform:dbo_lessons_from_mongols
 			}
-			change_variable = {
-				name = dbo_lessons_from_mongols
-				value = no
-			}
 			remove_reform = government_reform:dbo_lessons_from_mongols
+		}
+		if = {
+			limit = {
+				has_variable = dbo_lessons_from_mongols
+			}
+			remove_variable = dbo_lessons_from_mongols
 		}
 		add_estate_satisfaction = {
 			type = estate_type:nobles_estate

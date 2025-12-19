@@ -2,18 +2,7 @@
 	unique = yes
 	potential = {
 		has_or_had_tag = TUR
-		trigger_if = {
-			limit = {
-				has_variable = dbo_lessons_from_mongols
-			}
-			var:dbo_lessons_from_mongols = no
-		}
-		trigger_if = {
-			limit = {
-				has_variable = dbo_modernized_timariot_system
-			}
-			var:dbo_modernized_timariot_system = yes
-		}
+		has_variable = dbo_modernized_timariot_system
 	}
 	locked = {
 		is_locked_mechanic = {
