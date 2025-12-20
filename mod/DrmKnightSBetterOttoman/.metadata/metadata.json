@@ -1,9 +1,9 @@
 ﻿{
-	"name": "Muhteşem Osmanlı",
+	"name": "Daha İyi Osmanlı - Cihan Hâkimiyeti Ülküsü",
 	"id": "drmknights.betterottoman",
-	"version": "0.1",
+	"version": "0.2",
 	"supported_game_version": "1.0.10",
-	"short_description": "Muhteşem Osmanlı, oyun içi deneyimini geliştirir ve zenginleştirir. Yeni hukumet ıslahatları ve görevler ekler, böylece oyuncular Osmanlı'nın tarihsel büyüklüğünü daha iyi yaşayabilirler.",
+	"short_description": "Osmanlı İmparatorluğu için daha iyi bir deneyim sunar. Yeni ulusal fikirler, olaylar ve daha fazlası. Cihan hâkimiyeti ülküsünü gerçekleştirin!",
 	"tags": [
 		"Gameplay"
 	],
