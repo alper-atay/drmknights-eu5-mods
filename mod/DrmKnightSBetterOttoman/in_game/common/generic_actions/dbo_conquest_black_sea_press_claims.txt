@@ -61,6 +61,7 @@
 			trigger_if = {
 				OR = {
 					area = area:pontus_area
+					area = area:crimea_area
 					province_definition = province_definition:bolu_province
 					province_definition = province_definition:kocaeli_province
 					province_definition = province_definition:constantinople_province

@@ -59,6 +59,7 @@ dbo_conquest_fertile_crescent_achieved = {
 
 dbo_conquest_black_sea_achieved = {
 	own_entire_area = area:pontus_area
+	own_entire_area = area:crimea_area
 	own_entire_province = province_definition:bolu_province
 	own_entire_province = province_definition:kocaeli_province
 	own_entire_province = province_definition:constantinople_province
