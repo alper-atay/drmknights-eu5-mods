@@ -15,6 +15,10 @@
 		military_tactics = 1
 		assault_ability = 0.2
 		land_morale_modifier = 0.1
+		land_morale_attrition_cost = -0.1
+		land_morale_movement_cost = -0.1
+		land_morale_recovery = 0.1
+		land_unit_attrition = -0.1
 		military_tactics = 2
 		discipline = 0.1
 	}
