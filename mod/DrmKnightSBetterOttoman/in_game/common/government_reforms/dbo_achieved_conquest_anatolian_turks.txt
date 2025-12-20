@@ -16,7 +16,6 @@
         tax_income_efficiency = large_tax_income_efficiency_bonus
         global_monthly_control = 0.05
         monthly_rebel_growth = -0.001
-        global_hostile_attrition = 1
         government_reform_slots = 1
     }
 }
