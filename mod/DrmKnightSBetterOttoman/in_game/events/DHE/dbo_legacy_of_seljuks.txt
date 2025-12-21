@@ -12,9 +12,14 @@ dbo_legacy_of_seljuks.1 = {
 		monthly_chance = 25
 	}
 	trigger = {
-		has_advance = seljuk_heritage
-		has_advance = seljuk_roots
-		has_advance = heirs_of_rum
+		OR = {
+			AND = {
+				has_advance = seljuk_heritage
+				has_advance = seljuk_roots
+				has_advance = heirs_of_rum
+			}
+			
+		}
 		NOT = {
 			has_reform = government_reform:dbo_legacy_of_seljuks
 		}

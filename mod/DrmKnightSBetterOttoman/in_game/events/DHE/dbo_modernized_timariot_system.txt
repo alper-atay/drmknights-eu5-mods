@@ -6,19 +6,33 @@ dbo_modernized_timariot_system.1 = {
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
-		from = 1437.1.1
+		from = 1453.1.1
 		to = 1837.1.1
 		monthly_chance = 25
 	}
 	trigger = {
-		has_advance = unlock_arquebusiers_advance
 		has_reform = government_reform:dbo_lessons_from_mongols
 		NOT = {
 			has_reform = government_reform:dbo_modernized_timariot_system
 		}
+		AND = {
+			OR = {
+				has_variable = expanded_timariot_system
+				has_variable = abolished_timariot_system
+			}
+			has_advance = timariots
+		}
 	}
 	option = {
 		name = dbo_modernized_timariot_system.1.a
+		if = {
+			limit = {
+				{
+					has_variable = abolished_timariot_system
+				}
+			}
+			remove_variable = abolished_timariot_system
+		}
 		set_variable = {
 			name = dbo_modernized_timariot_system
 			value = yes

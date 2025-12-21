@@ -16,8 +16,10 @@
 			}
 		}
 	}
-	ai_tick = never
+	ai_tick = monthly
+	ai_tick_frequency = 3
 	automation_tick = never
+	automation_tick_frequency = 12
 	price = price:dbo_casus_belli_price
 	cooldown = {
 		type = dbo_conquest_anatolian_turks_press_claims_cooldown_key
@@ -94,5 +96,8 @@
 				}
 			}
 		}
+	}
+	ai_will_do = {
+		db_conquest_ai_will_do = yes
 	}
 }

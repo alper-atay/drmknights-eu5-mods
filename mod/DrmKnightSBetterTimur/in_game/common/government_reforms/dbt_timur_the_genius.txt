@@ -12,6 +12,7 @@
 	}
 	country_modifier = {
 		government_reform_slots = 1
+		global_crown_estate_power = 0.50
 		power_projection = 10
 		country_child_education = 0.25
 		global_distance_from_capital_cost_modifier = -0.2

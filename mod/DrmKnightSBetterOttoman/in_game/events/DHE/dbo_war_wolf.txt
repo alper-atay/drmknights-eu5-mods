@@ -1,0 +1,27 @@
+﻿namespace = dbo_war_wolf
+dbo_war_wolf.1 = {
+	type = country_event
+	title = dbo_war_wolf.1.title
+	desc = dbo_war_wolf.1.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1553.1.1
+		to = 1837.1.1
+		monthly_chance = 25
+	}
+	trigger = {
+		has_reform = government_reform:dbo_modernized_sekban_system
+		has_reform = government_reform:dbo_modernized_timariot_system
+	}
+	option = {
+		name = dbo_war_wolf.1.a
+		set_variable = {
+			name = dbo_war_wolf
+			value = yes
+		}
+		historical_option = yes
+		add_reform = government_reform:dbo_war_wolf
+		add_stability = stability_severe_bonus
+	}
+}

@@ -1,0 +1,20 @@
+﻿dbo_modernized_sekban_system = {
+	unique = yes
+	potential = {
+		has_or_had_tag = TUR
+		has_variable = dbo_modernized_sekban_system
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = government_reform
+			type = dbo_modernized_sekban_system
+		}
+	}
+	country_modifier = {
+		army_infantry_power = 0.2
+		army_infantry_build_cost_modifier = -0.1
+		army_infantry_maintenance_cost_modifier = -0.1
+		army_infantry_reinforce_cost_modifier = -0.1
+		government_reform_slots = 1
+	}
+}

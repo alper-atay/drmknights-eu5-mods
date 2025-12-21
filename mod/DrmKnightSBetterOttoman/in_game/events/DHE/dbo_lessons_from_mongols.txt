@@ -7,12 +7,22 @@ dbo_lessons_from_mongols.1 = {
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
-		from = 1437.1.1
+		from = 1337.1.1
 		to = 1837.1.1
 		monthly_chance = 25
 	}
 	trigger = {
-		has_advance = akinji_cavalry
+		OR = {
+			current_age_or_later = {
+				age = {
+					age = age_3_discovery
+				}
+			}
+			OR = {
+				has_advance = timariots
+				has_advance = unlock_cavalry_advance
+			}
+		}
 		NOT = {
 			has_reform = government_reform:dbo_lessons_from_mongols
 		}

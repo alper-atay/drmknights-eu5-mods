@@ -11,11 +11,10 @@
 		}
 	}
 	country_modifier = {
-		assault_ability = 0.1
-		army_logistics_distance_modifier = 0.1
-		army_movement_speed = 0.1
 		army_cavalry_power = 0.2
-		army_cavalry_maintenance_cost_modifier = -0.2
+		army_cavalry_build_cost_modifier = -0.1
+		army_cavalry_maintenance_cost_modifier = -0.1
+		army_cavalry_reinforce_cost_modifier = -0.1
 		government_reform_slots = 1
 	}
 }
