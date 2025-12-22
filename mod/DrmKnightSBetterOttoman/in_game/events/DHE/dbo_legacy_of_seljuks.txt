@@ -18,7 +18,9 @@ dbo_legacy_of_seljuks.1 = {
 				has_advance = seljuk_roots
 				has_advance = heirs_of_rum
 			}
-			
+			current_age_or_later = {
+				age = age_3_discovery
+			}
 		}
 		NOT = {
 			has_reform = government_reform:dbo_legacy_of_seljuks

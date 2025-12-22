@@ -1,0 +1,189 @@
+﻿dbo_crown_harem_marry = {
+	sound = UI_action_character_marry_noble
+	is_consort_action = yes
+	on_own_nation = yes
+	context_menu_click_mode = click
+	message = no
+	ai_tick = daily
+	ai_tick_frequency = 120
+	potential = {
+		scope:actor = {
+			OR = {
+				tag = TUR
+				tag = TIM
+			}
+		}
+	}
+	allow = {
+	}
+	select_trigger = {
+		looking_for_a = character
+		source = actor
+		target_flag = recipient
+		name = "choose_character"
+		column = {
+			data = name
+		}
+		visible = {
+			is_alive = yes
+		}
+		enabled = {
+			is_alive = yes
+			is_adult = yes
+			has_estate = estate_type:crown_estate
+			total_abilities > 120
+			has_available_marriage_slot = yes
+		}
+	}
+	effect = {
+		scope:actor = {
+			custom_tooltip = "dbo_crown_harem_marry_tt"
+			hidden_effect = {
+				if = {
+					limit = {
+						scope:recipient = {
+							is_female = no
+						}
+					}
+					create_character = {
+						religion = scope:recipient.religion
+						female = yes
+						random_estate_type_trigger = {
+							NOR = {
+								this = estate_type:nobles_estate
+								this = estate_type:clergy_estate
+								this = estate_type:dhimmi_estate
+							}
+						}
+						adm = 100
+						dip = 100
+						mil = 100
+						age = 16
+						marry_character = scope:recipient
+					}
+				}
+				if = {
+					limit = {
+						scope:recipient = {
+							is_female = yes
+						}
+					}
+					create_character = {
+						female = no
+						religion = scope:recipient.religion
+						random_estate_type_trigger = {
+							NOR = {
+								this = estate_type:nobles_estate
+								this = estate_type:clergy_estate
+								this = estate_type:dhimmi_estate
+							}
+						}
+						adm = 100
+						dip = 100
+						mil = 100
+						age = {
+							value = scope:recipient.age_in_years
+							add = 1
+						}
+						marry_character = scope:recipient
+					}
+				}
+			}
+		}
+	}
+	ai_will_do = {
+		add = {
+			if = {
+				limit = {
+					scope:recipient ?= {
+						OR = {
+							has_available_marriage_slot = no
+							total_abilities <= 120
+						}
+					}
+				}
+				value = -1000
+			}
+		}
+		add = {
+			if = {
+				limit = {
+					scope:recipient = {
+						is_female = no
+					}
+				}
+				value = 4
+				subtract = scope:recipient.num_of_spouses
+				multiply = 25
+			}
+		}
+		add = {
+			if = {
+				limit = {
+					scope:recipient = {
+						OR = {
+							is_heir = yes
+							AND = {
+								exists = father
+								father = {
+									is_ruler = yes
+								}
+							}
+							AND = {
+								exists = mother
+								mother = {
+									is_ruler = yes
+								}
+							}
+						}
+					}
+				}
+				value = scope:recipient.age_in_years
+				subtract = 10
+				multiply = 5
+			}
+		}
+		add = {
+			if = {
+				limit = {
+					scope:recipient = {
+						OR = {
+							is_heir = no
+							AND = {
+								exists = father
+								father = {
+									is_heir = yes
+								}
+							}
+							AND = {
+								exists = mother
+								mother = {
+									is_heir = yes
+								}
+							}
+						}
+					}
+				}
+				value = scope:recipient.age_in_years
+				subtract = 20
+				multiply = 5
+			}
+		}
+		add = {
+			value = scope:recipient.total_abilities
+		}
+		add = {
+			if = {
+				limit = {
+					scope:recipient = {
+						is_female = yes
+						age_in_years > 35
+					}
+				}
+				value = 35
+				subtract = scope:recipient.age_in_years
+				multiply = 10
+			}
+		}
+	}
+}

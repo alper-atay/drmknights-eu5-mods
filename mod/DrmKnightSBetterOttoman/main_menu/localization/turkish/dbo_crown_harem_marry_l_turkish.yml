@@ -1,0 +1,9 @@
+﻿l_turkish:
+ dbo_crown_harem_marry: "Harem-i Hümâyun'dan Evlendir"
+ dbo_crown_harem_marry_concept: "[marriage|E]"
+ dbo_crown_harem_marry_act: "$dbo_crown_harem_marry$"
+ dbo_crown_harem_marry_desc_specific: "[SCOPE.sCharacter('recipient').GetName], Harem-i Hümâyun'dan seçkin bir cariye ile evlenecek."
+ dbo_crown_harem_marry_desc: "[character|e], Harem-i Hümâyun'dan seçkin bir cariye ile evlenecek."
+ dbo_crown_harem_marry_past: "[SCOPE.sCharacter('recipient').GetName] [SCOPE.sCharacter('recipient').GetHerselfHimself] evlendi!"
+ dbo_crown_harem_marry_act_past: "[SCOPE.sCharacter('recipient').GetName], Harem-i Hümâyun'dan seçkin bir cariye ile evlendi."
+ dbo_crown_harem_marry_tt: "Bu karakter, Harem-i Hümâyun içinden tüm [Concept('abilities', 'becerileri')|e] tam olan uygun bir eşle evlendirilecektir. "

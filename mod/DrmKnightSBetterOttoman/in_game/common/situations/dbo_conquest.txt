@@ -57,6 +57,18 @@
 			}
 		}
 		custom_tooltip = {
+			text = dbo_conquest_achieve_modernized_sekban_system_tt
+			c:TUR = {
+				has_reform = government_reform:dbo_modernized_sekban_system
+			}
+		}
+		custom_tooltip = {
+			text = dbo_conquest_achieve_war_wolf_tt
+			c:TUR = {
+				has_reform = government_reform:dbo_war_wolf
+			}
+		}
+		custom_tooltip = {
 			text = dbo_conquest_achieve_ottoman_empire_tt
 			c:TUR = {
 				has_reform = government_reform:dbo_ottoman_empire

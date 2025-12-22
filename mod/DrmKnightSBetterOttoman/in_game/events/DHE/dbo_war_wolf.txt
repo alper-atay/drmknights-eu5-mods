@@ -6,11 +6,13 @@ dbo_war_wolf.1 = {
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
-		from = 1553.1.1
+		from = 1337.1.1
 		to = 1837.1.1
 		monthly_chance = 25
 	}
 	trigger = {
+		has_reform = government_reform:dbo_alp_and_alperen
+		has_reform = government_reform:dbo_great_bronze_cannon
 		has_reform = government_reform:dbo_modernized_sekban_system
 		has_reform = government_reform:dbo_modernized_timariot_system
 	}

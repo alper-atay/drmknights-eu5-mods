@@ -6,16 +6,19 @@ dbo_modernized_sekban_system.1 = {
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
-		from = 1553.1.1
+		from = 1337.1.1
 		to = 1837.1.1
 		monthly_chance = 25
 	}
 	trigger = {
 		OR = {
-			has_variable = tur_sekban_system
-			has_variable = dbo_modernized_timariot_system
-			has_reform = government_reform:sekban_system
-
+			AND = {
+				has_variable = dbo_modernized_timariot_system
+				has_advance = unlock_arquebusiers_advance
+			}
+			current_age_or_later = {
+				age = age_5_absolutism
+			}
 		}
 		NOT = {
 			has_reform = government_reform:dbo_modernized_sekban_system

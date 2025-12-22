@@ -18,11 +18,9 @@
 		army_maintenance_cost = -0.1
 		army_reinforce_cost = -0.1
 		army_tradition_decay = -0.1
-		army_tradition_from_battles = 0.1
 		army_weight_modifier = -0.1
 		army_logistics_distance_modifier = 0.1
 		movement_cost = -0.1
-		movement_speed_if_no_roads = -0.1
 		movement_speed_when_attached_to_another_unit = -0.1
 		discipline = 0.1
 	}

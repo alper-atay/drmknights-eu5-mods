@@ -13,11 +13,14 @@ dbo_great_bronze_cannon.1 = {
 	}
 	trigger = {
 		OR = {
-			has_advance = unlock_houfnice_advance
-			has_advance = unlock_falconet_advance
-			has_advance = unlock_chambered_cannon_advance
-			has_advance = unlock_royal_mortar_advance
-			has_advance = unlock_flying_battery_advance
+			OR = {
+				has_advance = unlock_houfnice_advance
+				has_advance = unlock_falconet_advance
+				has_advance = unlock_chambered_cannon_advance
+				has_advance = unlock_royal_mortar_advance
+				has_advance = unlock_flying_battery_advance
+			}
+			own_entire_province = province_definition:constantinople_province
 		}
 		NOT = {
 			has_reform = government_reform:dbo_great_bronze_cannon

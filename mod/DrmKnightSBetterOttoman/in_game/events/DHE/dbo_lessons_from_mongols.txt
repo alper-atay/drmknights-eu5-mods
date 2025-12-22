@@ -14,9 +14,7 @@ dbo_lessons_from_mongols.1 = {
 	trigger = {
 		OR = {
 			current_age_or_later = {
-				age = {
-					age = age_3_discovery
-				}
+				age = age_3_discovery
 			}
 			OR = {
 				has_advance = timariots
