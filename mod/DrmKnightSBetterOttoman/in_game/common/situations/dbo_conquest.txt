@@ -74,6 +74,12 @@
 				has_reform = government_reform:dbo_ottoman_empire
 			}
 		}
+		custom_tooltip = {
+			text = dbo_conquest_achieve_piri_reis_tt
+			c:TUR = {
+				has_reform = government_reform:dbo_piri_reis
+			}
+		}
 		#Achievements for Conquests
 		custom_tooltip = {
 			text = dbo_conquest_achieve_anatolian_turks_tt
