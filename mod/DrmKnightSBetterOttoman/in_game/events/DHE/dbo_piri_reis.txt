@@ -1,0 +1,27 @@
+﻿namespace = dbo_piri_reis
+dbo_piri_reis.1 = {
+	type = country_event
+	title = dbo_piri_reis.1.title
+	desc = dbo_piri_reis.1.desc
+	historical_info = dbo_piri_reis.1.historical_info
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1500.1.1
+		to = 1837.1.1
+		monthly_chance = 10
+	}
+	trigger = {
+		has_country_modifier = maps_of_piri_reis_modifier
+	}
+	option = {
+		name = dbo_piri_reis.1.a
+		set_variable = {
+			name = dbo_piri_reis
+			value = yes
+		}
+		historical_option = yes
+		add_reform = government_reform:dbo_piri_reis
+		add_stability = stability_severe_bonus
+	}
+}
