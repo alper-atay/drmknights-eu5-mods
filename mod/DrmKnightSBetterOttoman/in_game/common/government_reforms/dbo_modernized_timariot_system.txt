@@ -11,7 +11,8 @@
 		}
 	}
 	country_modifier = {
-		army_cavalry_power = 0.2
+		global_manpower_modifier = 0.1
+		army_cavalry_power = 0.3
 		army_cavalry_build_cost_modifier = -0.1
 		army_cavalry_maintenance_cost_modifier = -0.1
 		army_cavalry_reinforce_cost_modifier = -0.1
