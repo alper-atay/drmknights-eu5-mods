@@ -3,8 +3,8 @@ dbo_leader_of_sunni.1 = {
 	type = country_event
 	title = dbo_leader_of_sunni.1.title
 	desc = dbo_leader_of_sunni.1.desc
-	historical_info = dbo_leader_of_sunni.1.historical_info
 	fire_only_once = no
+	hidden = yes
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.1.1
@@ -13,23 +13,46 @@ dbo_leader_of_sunni.1 = {
 	}
 	trigger = {
 		own_entire_province = province_definition:constantinople_province
-		religion = religion:sunni
-		any_country_at_war_with = {
+		OR = {
 			religion = religion:sunni
+			religion = religion:shia
+		}
+		any_country_at_war_with = {
+			NOT = {
+				is_an_attacker = root
+			}
+			OR = {
+				religion = religion:sunni
+				religion = religion:shia
+			}
 		}
 	}
-	option = {
-		name = dbo_leader_of_sunni.1.a
-		historical_option = yes
+	immediate = {
 		every_country_at_war_with = {
 			limit = {
-				religion = religion:sunni
-				#NOT = { tag = TUR }
+				OR = {
+					religion = religion:sunni
+					religion = religion:shia
+				}
+				NOT = {
+					is_an_attacker = root
+				}
 			}
-			add_legitimacy = legitimacy_severe_penalty
-			add_stability = stability_severe_penalty
-			add_prestige = prestige_severe_penalty
-			add_pop_satisfaction = pop_satisfaction_radical_penalty
+			add_legitimacy = legitimacy_weak_penalty
+			add_stability = stability_weak_penalty
+			add_prestige = prestige_weak_penalty
+			every_pop = {
+				limit = {
+					OR = {
+						religion = religion:sunni
+						religion = religion:shia
+					}
+				}
+				add_pop_satisfaction = pop_satisfaction_weak_penalty
+			}
+		}
+		option = {
+			name = dbo_leader_of_sunni.1.a
 		}
 	}
 }

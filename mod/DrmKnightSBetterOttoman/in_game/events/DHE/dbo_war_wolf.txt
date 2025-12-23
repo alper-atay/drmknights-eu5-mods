@@ -2,13 +2,13 @@
 dbo_war_wolf.1 = {
 	type = country_event
 	title = dbo_war_wolf.1.title
-	desc = dbo_war_wolf.1.desc
+	desc = dbo_war_wolf.desc
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.1.1
 		to = 1837.1.1
-		monthly_chance = 25
+		monthly_chance = 100
 	}
 	trigger = {
 		num_locations >= 250
@@ -29,13 +29,13 @@ dbo_war_wolf.1 = {
 dbo_war_wolf.2 = {
 	type = country_event
 	title = dbo_war_wolf.2.title
-	desc = dbo_war_wolf.1.desc
+	desc = dbo_war_wolf.desc
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.1.1
 		to = 1837.1.1
-		monthly_chance = 25
+		monthly_chance = 100
 	}
 	trigger = {
 		num_locations >= 500
@@ -68,13 +68,13 @@ dbo_war_wolf.2 = {
 dbo_war_wolf.3 = {
 	type = country_event
 	title = dbo_war_wolf.3.title
-	desc = dbo_war_wolf.1.desc
+	desc = dbo_war_wolf.desc
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.1.1
 		to = 1837.1.1
-		monthly_chance = 25
+		monthly_chance = 100
 	}
 	trigger = {
 		num_locations >= 1000
