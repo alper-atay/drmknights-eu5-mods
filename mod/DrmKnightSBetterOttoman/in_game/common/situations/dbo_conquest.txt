@@ -63,9 +63,28 @@
 			}
 		}
 		custom_tooltip = {
-			text = dbo_conquest_achieve_war_wolf_tt
+			text = dbo_conquest_achieve_war_wolf_bronze_tt
 			c:TUR = {
-				has_reform = government_reform:dbo_war_wolf
+				OR = {
+					has_reform = government_reform:dbo_war_wolf_bronze
+					has_reform = government_reform:dbo_war_wolf_silver
+					has_reform = government_reform:dbo_war_wolf_gold
+				}
+			}
+		}
+		custom_tooltip = {
+			text = dbo_conquest_achieve_war_wolf_silver_tt
+			c:TUR = {
+				OR = {
+					has_reform = government_reform:dbo_war_wolf_silver
+					has_reform = government_reform:dbo_war_wolf_gold
+				}
+			}
+		}
+		custom_tooltip = {
+			text = dbo_conquest_achieve_war_wolf_gold_tt
+			c:TUR = {
+				has_reform = government_reform:dbo_war_wolf_gold
 			}
 		}
 		custom_tooltip = {
