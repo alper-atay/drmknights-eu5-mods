@@ -1,0 +1,62 @@
+﻿dbo_war_wolf_bronze = {
+	unique = yes
+	potential = {
+		has_or_had_tag = TUR
+		has_variable = dbo_war_wolf_bronze
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = government_reform
+			type = dbo_war_wolf_bronze
+		}
+	}
+	country_modifier = {
+		government_reform_slots = 1
+		army_initiative = 0.05
+		assault_ability = 0.05
+		army_movement_speed = 0.05
+		army_weight_modifier = -0.05
+	}
+}
+
+dbo_war_wolf_silver = {
+	unique = yes
+	potential = {
+		has_or_had_tag = TUR
+		has_variable = dbo_war_wolf_silver
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = government_reform
+			type = dbo_war_wolf_silver
+		}
+	}
+	country_modifier = {
+		government_reform_slots = 1
+		army_initiative = 0.1
+		assault_ability = 0.1
+		army_movement_speed = 0.1
+		army_weight_modifier = -0.1
+	}
+}
+
+dbo_war_wolf_gold = {
+	unique = yes
+	potential = {
+		has_or_had_tag = TUR
+		has_variable = dbo_war_wolf_gold
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = government_reform
+			type = dbo_war_wolf_gold
+		}
+	}
+	country_modifier = {
+		government_reform_slots = 1
+		army_initiative = 0.2
+		assault_ability = 0.2
+		army_movement_speed = 0.2
+		army_weight_modifier = -0.2
+	}
+}
