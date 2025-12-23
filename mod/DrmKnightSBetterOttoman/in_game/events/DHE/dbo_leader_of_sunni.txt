@@ -1,0 +1,35 @@
+﻿namespace = dbo_leader_of_sunni
+dbo_leader_of_sunni.1 = {
+	type = country_event
+	title = dbo_leader_of_sunni.1.title
+	desc = dbo_leader_of_sunni.1.desc
+	historical_info = dbo_leader_of_sunni.1.historical_info
+	fire_only_once = no
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		own_entire_province = province_definition:constantinople_province
+		religion = religion:sunni
+		any_country_at_war_with = {
+			religion = religion:sunni
+		}
+	}
+	option = {
+		name = dbo_leader_of_sunni.1.a
+		historical_option = yes
+		every_country_at_war_with = {
+			limit = {
+				religion = religion:sunni
+				#NOT = { tag = TUR }
+			}
+			add_legitimacy = legitimacy_severe_penalty
+			add_stability = stability_severe_penalty
+			add_prestige = prestige_severe_penalty
+			add_pop_satisfaction = pop_satisfaction_radical_penalty
+		}
+	}
+}

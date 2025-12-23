@@ -11,19 +11,106 @@ dbo_war_wolf.1 = {
 		monthly_chance = 25
 	}
 	trigger = {
-		has_reform = government_reform:dbo_alp_and_alperen
-		has_reform = government_reform:dbo_great_bronze_cannon
-		has_reform = government_reform:dbo_modernized_sekban_system
-		has_reform = government_reform:dbo_modernized_timariot_system
+		NOT = {
+			has_reform = government_reform:dbo_war_wolf_bronze
+		}
+		num_locations >= 250
+		num_of_non_rural >= 25
 	}
 	option = {
 		name = dbo_war_wolf.1.a
+		historical_option = yes
 		set_variable = {
-			name = dbo_war_wolf
+			name = dbo_war_wolf_bronze
 			value = yes
 		}
+		add_reform = government_reform:dbo_war_wolf_bronze
+		add_stability = stability_severe_bonus
+	}
+}
+
+dbo_war_wolf.2 = {
+	type = country_event
+	title = dbo_war_wolf.2.title
+	desc = dbo_war_wolf.1.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 25
+	}
+	trigger = {
+		has_reform = government_reform:dbo_war_wolf_bronze
+		NOT = {
+			has_reform = government_reform:dbo_war_wolf_silver
+		}
+		num_locations >= 500
+		num_of_non_rural >= 50
+	}
+	option = {
+		name = dbo_war_wolf.2.a
 		historical_option = yes
-		add_reform = government_reform:dbo_war_wolf
+		if = {
+			limit = {
+				has_reform = government_reform:dbo_war_wolf_bronze
+			}
+			remove_reform = government_reform:dbo_war_wolf_bronze
+		}
+		if = {
+			limit = {
+				has_variable = dbo_war_wolf_bronze
+			}
+			remove_variable = dbo_war_wolf_bronze
+		}
+		set_variable = {
+			name = dbo_war_wolf_silver
+			value = yes
+		}
+		add_reform = government_reform:dbo_war_wolf_silver
+		add_stability = stability_severe_bonus
+	}
+}
+
+dbo_war_wolf.3 = {
+	type = country_event
+	title = dbo_war_wolf.3.title
+	desc = dbo_war_wolf.1.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 25
+	}
+	trigger = {
+		has_reform = government_reform:dbo_war_wolf_silver
+		NOT = {
+			has_reform = government_reform:dbo_war_wolf_gold
+		}
+		num_locations >= 1000
+		num_of_non_rural >= 100
+	}
+	option = {
+		name = dbo_war_wolf.3.a
+		historical_option = yes
+		if = {
+			limit = {
+				has_reform = government_reform:dbo_war_wolf_silver
+			}
+			remove_reform = government_reform:dbo_war_wolf_silver
+		}
+		if = {
+			limit = {
+				has_variable = dbo_war_wolf_silver
+			}
+			remove_variable = dbo_war_wolf_silver
+		}
+		set_variable = {
+			name = dbo_war_wolf_gold
+			value = yes
+		}
+		add_reform = government_reform:dbo_war_wolf_gold
 		add_stability = stability_severe_bonus
 	}
 }

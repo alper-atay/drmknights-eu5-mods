@@ -11,14 +11,15 @@
 		}
 	}
 	country_modifier = {
+		power_projection = 10
 		global_integration_speed_modifier = 0.5
-		government_size = 1
-		antagonism_received_modifier = -0.25
+		government_size = 2
+		antagonism_received_modifier = -0.5
 		auto_slave_raid_different_religion = yes
 		government_reform_slots = 1
-		global_monthly_control = 0.05
+		global_monthly_control = 0.1
 		cultures_capacity = 2
-		cultures_capacity_modifier = 0.25
-		global_crown_estate_power = 0.25
+		cultures_capacity_modifier = 0.5
+		global_crown_estate_power = 0.5
 	}
 }
