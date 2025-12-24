@@ -11,8 +11,8 @@ dbo_war_wolf.1 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		num_locations >= 250
-		num_of_non_rural >= 25
+		num_locations >= 50
+		num_of_non_rural >= 5
 	}
 	option = {
 		name = dbo_war_wolf.1.a
@@ -22,7 +22,9 @@ dbo_war_wolf.1 = {
 			value = yes
 		}
 		add_reform = government_reform:dbo_war_wolf_bronze
-		add_stability = stability_severe_bonus
+		add_legitimacy = legitimacy_mild_bonus
+		add_stability = stability_mild_bonus
+		add_prestige = prestige_mild_bonus
 	}
 }
 
@@ -38,8 +40,8 @@ dbo_war_wolf.2 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		num_locations >= 500
-		num_of_non_rural >= 50
+		num_locations >= 150
+		num_of_non_rural >= 15
 	}
 	option = {
 		name = dbo_war_wolf.2.a
@@ -61,7 +63,9 @@ dbo_war_wolf.2 = {
 			value = yes
 		}
 		add_reform = government_reform:dbo_war_wolf_silver
-		add_stability = stability_severe_bonus
+		add_legitimacy = legitimacy_mild_bonus
+		add_stability = stability_mild_bonus
+		add_prestige = prestige_mild_bonus
 	}
 }
 
@@ -77,8 +81,8 @@ dbo_war_wolf.3 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		num_locations >= 1000
-		num_of_non_rural >= 100
+		num_locations >= 300
+		num_of_non_rural >= 30
 	}
 	option = {
 		name = dbo_war_wolf.3.a
@@ -112,6 +116,73 @@ dbo_war_wolf.3 = {
 			value = yes
 		}
 		add_reform = government_reform:dbo_war_wolf_gold
-		add_stability = stability_severe_bonus
+		add_legitimacy = legitimacy_mild_bonus
+		add_stability = stability_mild_bonus
+		add_prestige = prestige_mild_bonus
+	}
+}
+
+dbo_war_wolf.4 = {
+	type = country_event
+	title = dbo_war_wolf.4.title
+	desc = dbo_war_wolf.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		num_locations >= 500
+		num_of_non_rural >= 50
+	}
+	option = {
+		name = dbo_war_wolf.4.a
+		historical_option = yes
+		if = {
+			limit = {
+				has_reform = government_reform:dbo_war_wolf_bronze
+			}
+			remove_reform = government_reform:dbo_war_wolf_bronze
+		}
+		if = {
+			limit = {
+				has_variable = dbo_war_wolf_bronze
+			}
+			remove_variable = dbo_war_wolf_bronze
+		}
+		if = {
+			limit = {
+				has_reform = government_reform:dbo_war_wolf_silver
+			}
+			remove_reform = government_reform:dbo_war_wolf_silver
+		}
+		if = {
+			limit = {
+				has_variable = dbo_war_wolf_silver
+			}
+			remove_variable = dbo_war_wolf_silver
+		}
+		if = {
+			limit = {
+				has_reform = government_reform:dbo_war_wolf_gold
+			}
+			remove_reform = government_reform:dbo_war_wolf_gold
+		}
+		if = {
+			limit = {
+				has_variable = dbo_war_wolf_gold
+			}
+			remove_variable = dbo_war_wolf_gold
+		}
+		set_variable = {
+			name = dbo_war_wolf_diamond
+			value = yes
+		}
+		add_reform = government_reform:dbo_war_wolf_diamond
+		add_legitimacy = legitimacy_mild_bonus
+		add_stability = stability_mild_bonus
+		add_prestige = prestige_mild_bonus
 	}
 }

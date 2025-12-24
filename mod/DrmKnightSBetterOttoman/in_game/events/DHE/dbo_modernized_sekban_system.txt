@@ -44,5 +44,8 @@ dbo_modernized_sekban_system.1 = {
 			remove_variable = tur_sekban_system
 		}
 		add_reform = government_reform:dbo_modernized_sekban_system
+		add_legitimacy = legitimacy_mild_bonus
+		add_stability = stability_mild_bonus
+		add_prestige = prestige_mild_bonus
 	}
 }

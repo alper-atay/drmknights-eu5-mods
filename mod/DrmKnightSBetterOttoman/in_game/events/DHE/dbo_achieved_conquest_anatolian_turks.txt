@@ -25,7 +25,8 @@ dbo_achieved_conquest_anatolian_turks.1 = {
 		}
 		historical_option = yes
 		add_reform = government_reform:dbo_achieved_conquest_anatolian_turks
-		add_stability = stability_extreme_bonus
 		add_legitimacy = legitimacy_extreme_bonus
+		add_stability = stability_extreme_bonus
+		add_prestige = prestige_extreme_bonus
 	}
 }

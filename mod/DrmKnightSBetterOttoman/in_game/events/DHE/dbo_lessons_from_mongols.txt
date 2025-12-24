@@ -33,6 +33,8 @@ dbo_lessons_from_mongols.1 = {
 		}
 		historical_option = yes
 		add_reform = government_reform:dbo_lessons_from_mongols
-		add_stability = stability_severe_bonus
+		add_legitimacy = legitimacy_mild_bonus
+		add_stability = stability_mild_bonus
+		add_prestige = prestige_mild_bonus
 	}
 }
