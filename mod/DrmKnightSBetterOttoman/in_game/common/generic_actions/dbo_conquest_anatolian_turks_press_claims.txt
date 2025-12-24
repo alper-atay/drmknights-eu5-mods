@@ -62,9 +62,38 @@
 			}
 			trigger_if = {
 				OR = {
-					region = region:anatolia_region
-					region = region:crescent_region
-					region = region:caucasus_region
+					#region = region:anatolia_region
+					#region = region:crescent_region
+					#region = region:caucasus_region
+					area = area:cappadocia_area
+					area = area:central_anatolia_area
+					area = area:marmara_area
+					area = area:pontus_area
+					area = area:west_anatolia_area
+					province_definition = province_definition:edirne_province
+					province_definition = province_definition:dardanelles_province
+					province_definition = province_definition:constantinople_province
+					province_definition = province_definition:icel_province
+					province_definition = province_definition:tarsus_province
+					province_definition = province_definition:sis_province
+					province_definition = province_definition:adana_province
+					province_definition = province_definition:marash_province
+					province_definition = province_definition:malatya_province
+					province_definition = province_definition:erzurum_province
+					province_definition = province_definition:harput_province
+					province_definition = province_definition:malazgirt_province
+					province_definition = province_definition:meskheti_province
+					province_definition = province_definition:kars_province
+					province_definition = province_definition:van_province
+					province_definition = province_definition:bitlis_province
+					province_definition = province_definition:hasankeyf_province
+					province_definition = province_definition:diyarbekir_province
+					province_definition = province_definition:ar_ruha_province
+					province_definition = province_definition:amadiya_province
+					province_definition = province_definition:nusaybin_province
+					province_definition = province_definition:mardin_province
+					province_definition = province_definition:ayntab_province
+					province_definition = province_definition:antakya_province
 				}
 			}
 			any_location_in_province = {
