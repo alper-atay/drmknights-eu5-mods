@@ -36,6 +36,12 @@
 			}
 		}
 		custom_tooltip = {
+			text = dbo_conquest_achieve_legacy_of_caka_bey_tt
+			c:TUR = {
+				has_reform = government_reform:dbo_legacy_of_caka_bey
+			}
+		}
+		custom_tooltip = {
 			text = dbo_conquest_achieve_martolos_units_tt
 			c:TUR = {
 				has_reform = government_reform:dbo_martolos_units
@@ -69,6 +75,7 @@
 					has_reform = government_reform:dbo_war_wolf_bronze
 					has_reform = government_reform:dbo_war_wolf_silver
 					has_reform = government_reform:dbo_war_wolf_gold
+					has_reform = government_reform:dbo_war_wolf_diamond
 				}
 			}
 		}
@@ -78,13 +85,23 @@
 				OR = {
 					has_reform = government_reform:dbo_war_wolf_silver
 					has_reform = government_reform:dbo_war_wolf_gold
+					has_reform = government_reform:dbo_war_wolf_diamond
 				}
 			}
 		}
 		custom_tooltip = {
 			text = dbo_conquest_achieve_war_wolf_gold_tt
 			c:TUR = {
-				has_reform = government_reform:dbo_war_wolf_gold
+				OR = {
+					has_reform = government_reform:dbo_war_wolf_gold
+					has_reform = government_reform:dbo_war_wolf_diamond
+				}
+			}
+		}
+		custom_tooltip = {
+			text = dbo_conquest_achieve_war_wolf_diamond_tt
+			c:TUR = {
+				has_reform = government_reform:dbo_war_wolf_diamond
 			}
 		}
 		custom_tooltip = {
