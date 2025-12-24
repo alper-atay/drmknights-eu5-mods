@@ -16,5 +16,6 @@
 		navy_movement_speed = 0.1
 		navy_heavy_ship_power = 0.1
 		navy_galley_power = 0.2
+		naval_damage_done = 0.1
 	}
 }

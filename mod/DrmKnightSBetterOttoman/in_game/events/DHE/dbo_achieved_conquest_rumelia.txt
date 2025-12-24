@@ -9,13 +9,15 @@ dbo_achieved_conquest_rumelia.1 = {
 		tag = TUR
 		from = 1337.1.1
 		to = 1837.1.1
-		monthly_chance = 25
+		monthly_chance = 100
 	}
 	trigger = {
 		NOT = {
 			has_reform = government_reform:dbo_achieved_conquest_rumelia
 		}
-		dbo_conquest_rumelia_achieved = yes
+		c:TUR = {
+			dbo_conquest_rumelia_achieved = yes
+		}
 	}
 	option = {
 		name = dbo_achieved_conquest.1.a

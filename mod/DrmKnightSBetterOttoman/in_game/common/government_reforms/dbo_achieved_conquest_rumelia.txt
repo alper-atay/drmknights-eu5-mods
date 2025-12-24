@@ -14,7 +14,11 @@
         power_projection = 5
         tolerance_heathen = 1
         tolerance_heretic = 1
-        wrong_culture_levy_size = 0.25
+        cultures_capacity = 1
+        cultures_capacity_modifier = 0.25
+        cultural_tradition_modifier = 0.1
+        cultural_influence_modifier = 0.1
+        global_institution_growth_modifier = 0.1
         government_reform_slots = 1
     }
 }

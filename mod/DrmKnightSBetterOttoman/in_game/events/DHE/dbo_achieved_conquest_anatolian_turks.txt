@@ -15,7 +15,9 @@ dbo_achieved_conquest_anatolian_turks.1 = {
 		NOT = {
 			has_reform = government_reform:dbo_achieved_conquest_anatolian_turks
 		}
-		dbo_conquest_anatolian_turks_achieved = yes
+		c:TUR = {
+			dbo_conquest_anatolian_turks_achieved = yes
+		}
 	}
 	option = {
 		name = dbo_achieved_conquest.1.a
