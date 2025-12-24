@@ -68,12 +68,12 @@ dbo_war_wolf_diamond = {
 	unique = yes
 	potential = {
 		has_or_had_tag = TUR
-		has_variable = dbo_war_wolf_gold
+		has_variable = dbo_war_wolf_diamond
 	}
 	locked = {
 		is_locked_mechanic = {
 			mechanic = government_reform
-			type = dbo_war_wolf_gold
+			type = dbo_war_wolf_diamond
 		}
 	}
 	country_modifier = {

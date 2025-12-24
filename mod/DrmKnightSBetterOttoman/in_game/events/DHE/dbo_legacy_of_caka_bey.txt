@@ -1,5 +1,5 @@
 ﻿namespace = dbo_legacy_of_caka_bey
-dbo_piri_reis.1 = {
+dbo_legacy_of_caka_bey.1 = {
 	type = country_event
 	title = dbo_legacy_of_caka_bey.1.title
 	desc = dbo_legacy_of_caka_bey.1.desc
