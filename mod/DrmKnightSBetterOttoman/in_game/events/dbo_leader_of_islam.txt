@@ -1,0 +1,63 @@
+﻿namespace = dbo_leader_of_islam
+dbo_leader_of_islam.1 = {
+	type = country_event
+	title = dbo_leader_of_islam.1.title
+	desc = dbo_leader_of_islam.1.desc
+	hidden = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		own_entire_province = province_definition:constantinople_province
+		tag = TUR
+		OR = {
+			religion = religion:sunni
+			religion = religion:shia
+		}
+		any_current_war = {
+			any_defender = {
+				tag = TUR
+			}
+			any_attacker = {
+				OR = {
+					religion = religion:sunni
+					religion = religion:shia
+				}
+			}
+		}
+	}
+	immediate = {
+		every_current_war = {
+			limit = {
+				is_a_defender = root
+			}
+			every_attacker = {
+				limit = {
+					OR = {
+						religion = religion:sunni
+						religion = religion:shia
+					}
+				}
+				add_legitimacy = legitimacy_weak_penalty
+				add_stability = stability_weak_penalty
+				add_prestige = prestige_weak_penalty
+				add_war_exhaustion = war_exhaustion_weak_penalty
+				every_pop = {
+					limit = {
+						OR = {
+							religion = religion:sunni
+							religion = religion:shia
+						}
+					}
+					add_pop_satisfaction = pop_satisfaction_weak_penalty
+				}
+			}
+		}
+	}
+	option = {
+		name = dbo_leader_of_islam.1.a
+	}
+}

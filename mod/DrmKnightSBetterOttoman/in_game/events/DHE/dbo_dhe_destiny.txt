@@ -1,0 +1,457 @@
+﻿namespace = dbo_dhe_destiny
+# Ottoman DHE
+# 1-999 are reserved for the base events
+# 1001-1999 are reserved for the core destiny government reforms
+# 2001-2099 are reserved for the core destiny war wolf reforms
+# Reform: Alp and Alperen
+dbo_dhe_destiny.1001 = {
+	type = country_event
+	title = dbo_dhe_destiny.1001.title
+	desc = dbo_dhe_destiny.1001.desc
+	historical_info = dbo_dhe_destiny.1001.historical_info
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		NOT = {
+			has_reform = government_reform:dbo_alp_and_alperen
+		}
+	}
+	option = {
+		name = dbo_dhe_destiny.1001.a
+		historical_option = yes
+		set_variable = dbo_alp_and_alperen_obtained
+		add_reform = government_reform:dbo_alp_and_alperen
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# Reform: Cultural Capital Constantinople
+dbo_dhe_destiny.1002 = {
+	type = country_event
+	title = dbo_dhe_destiny.1002.title
+	desc = dbo_dhe_destiny.1002.desc
+	historical_info = dbo_dhe_destiny.1002.historical_info
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		own_entire_province = province_definition:constantinople_province
+		NOT = {
+			has_reform = government_reform:dbo_cultural_capital_constantinople
+		}
+	}
+	option = {
+		name = dbo_dhe_destiny.1002.a
+		set_variable = dbo_cultural_capital_constantinople_obtained
+		historical_option = yes
+		add_reform = government_reform:dbo_cultural_capital_constantinople
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# Reform: Trade Center Grand Bazaar
+dbo_dhe_destiny.1003 = {
+	type = country_event
+	title = dbo_dhe_destiny.1003.title
+	desc = dbo_dhe_destiny.1003.desc
+	historical_info = dbo_dhe_destiny.1003.historical_info
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		own_entire_province = province_definition:constantinople_province
+		NOT = {
+			has_reform = government_reform:dbo_grand_bazaar
+		}
+	}
+	option = {
+		name = dbo_dhe_destiny.1003.a
+		set_variable = dbo_trade_center_grand_bazaar_obtained
+		historical_option = yes
+		add_reform = government_reform:dbo_trade_center_grand_bazaar
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# Reform: Great Bronze Cannon
+dbo_dhe_destiny.1004 = {
+	type = country_event
+	title = dbo_dhe_destiny.1004.title
+	desc = dbo_dhe_destiny.1004.desc
+	historical_info = dbo_dhe_destiny.1004.historical_info
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		own_entire_province = province_definition:constantinople_province
+		OR = {
+			has_advance = unlock_houfnice_advance
+			has_advance = unlock_falconet_advance
+			has_advance = unlock_chambered_cannon_advance
+			has_advance = unlock_royal_mortar_advance
+			has_advance = unlock_flying_battery_advance
+		}
+		NOT = {
+			has_reform = government_reform:dbo_great_bronze_cannon
+		}
+	}
+	option = {
+		name = dbo_dhe_destiny.1004.a
+		set_variable = dbo_great_bronze_cannon_obtained
+		historical_option = yes
+		add_reform = government_reform:dbo_great_bronze_cannon
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# Reform: Legacy of Caka Bey
+dbo_dhe_destiny.1005 = {
+	type = country_event
+	title = dbo_dhe_destiny.1005.title
+	desc = dbo_dhe_destiny.1005.desc
+	historical_info = dbo_dhe_destiny.1005.historical_info
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		own_entire_province = province_definition:smyrna_province
+		NOT = {
+			has_reform = government_reform:dbo_legacy_of_caka_bey
+		}
+	}
+	option = {
+		name = dbo_dhe_destiny.1005.a
+		historical_option = yes
+		set_variable = dbo_legacy_of_caka_bey_obtained
+		add_reform = government_reform:dbo_legacy_of_caka_bey
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# Reform: Legacy of Seljuks
+dbo_dhe_destiny.1006 = {
+	type = country_event
+	title = dbo_dhe_destiny.1006.title
+	desc = dbo_dhe_destiny.1006.desc
+	historical_info = dbo_dhe_destiny.1006.historical_info
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		OR = {
+			AND = {
+				has_advance = seljuk_heritage
+				has_advance = seljuk_roots
+				has_advance = heirs_of_rum
+			}
+			current_age_or_later = {
+				age = age_3_discovery
+			}
+		}
+		NOT = {
+			has_reform = government_reform:dbo_legacy_of_seljuks
+		}
+	}
+	option = {
+		name = dbo_dhe_destiny.1006.a
+		historical_option = yes
+		set_variable = dbo_legacy_of_seljuks_obtained
+		add_reform = government_reform:dbo_legacy_of_seljuks
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# Reform: Lessons from Mongols
+dbo_dhe_destiny.1007 = {
+	type = country_event
+	title = dbo_dhe_destiny.1007.title
+	desc = dbo_dhe_destiny.1007.desc
+	historical_info = dbo_dhe_destiny.1007.historical_info
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		OR = {
+			current_age_or_later = {
+				age = age_3_discovery
+			}
+			OR = {
+				has_advance = timariots
+				has_advance = unlock_cavalry_advance
+			}
+		}
+		NOT = {
+			has_reform = government_reform:dbo_lessons_from_mongols
+		}
+	}
+	option = {
+		name = dbo_dhe_destiny.1007.a
+		historical_option = yes
+		set_variable = dbo_lessons_from_mongols_obtained
+		add_reform = government_reform:dbo_lessons_from_mongols
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# Reform: Martolos Units
+dbo_dhe_destiny.1008 = {
+	type = country_event
+	title = dbo_dhe_destiny.1008.title
+	desc = dbo_dhe_destiny.1008.desc
+	historical_info = dbo_dhe_destiny.1008.historical_info
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		OR = {
+			has_advance = janissaries_advance
+			current_age_or_later = {
+				age = age_3_discovery
+			}
+		}
+		NOT = {
+			has_reform = government_reform:dbo_martolos_units
+		}
+	}
+	option = {
+		name = dbo_dhe_destiny.1008.a
+		historical_option = yes
+		set_variable = dbo_martolos_units_obtained
+		add_reform = government_reform:dbo_martolos_units
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# Reform: Devshirme System
+dbo_dhe_destiny.1009 = {
+	type = country_event
+	title = dbo_dhe_destiny.1009.title
+	desc = dbo_dhe_destiny.1009.desc
+	historical_info = dbo_dhe_destiny.1009.historical_info
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		has_advance = pike_and_shot_advance
+		NOT = {
+			has_reform = government_reform:dbo_devshirme_system
+		}
+	}
+	option = {
+		name = dbo_dhe_destiny.1009.a
+		historical_option = yes
+		set_variable = dbo_devshirme_system_obtained
+		add_reform = government_reform:dbo_devshirme_system
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# Reform: Modernized Timariot System
+dbo_dhe_destiny.1010 = {
+	type = country_event
+	title = dbo_dhe_destiny.1010.title
+	desc = dbo_dhe_destiny.1010.desc
+	historical_info = dbo_dhe_destiny.1010.historical_info
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		has_reform = government_reform:dbo_lessons_from_mongols
+		NOT = {
+			has_reform = government_reform:dbo_modernized_timariot_system
+		}
+		AND = {
+			OR = {
+				has_variable = expanded_timariot_system
+				has_variable = abolished_timariot_system
+			}
+			has_advance = timariots
+		}
+	}
+	option = {
+		name = dbo_dhe_destiny.1010.a
+		historical_option = yes
+		if = {
+			limit = {
+				has_reform = government_reform:basic_timariot_system
+			}
+			remove_reform = government_reform:basic_timariot_system
+		}
+		if = {
+			limit = {
+				has_reform = government_reform:expanded_timariot_system
+			}
+			remove_reform = government_reform:expanded_timariot_system
+		}
+		if = {
+			limit = {
+				has_variable = expanded_timariot_system
+			}
+			remove_variable = expanded_timariot_system
+		}
+		if = {
+			limit = {
+				has_reform = government_reform:dbo_lessons_from_mongols
+			}
+			remove_reform = government_reform:dbo_lessons_from_mongols
+		}
+		
+		if = {
+			limit = {
+				has_variable = dbo_lessons_from_mongols_obtained
+			}
+			remove_variable = dbo_lessons_from_mongols_obtained
+		}
+		set_variable = dbo_modernized_timariot_system_obtained
+		add_reform = government_reform:dbo_modernized_timariot_system
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# Reform: Piri Reis
+dbo_dhe_destiny.1011 = {
+	type = country_event
+	title = dbo_dhe_destiny.1011.title
+	desc = dbo_dhe_destiny.1011.desc
+	historical_info = dbo_dhe_destiny.1011.historical_info
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1500.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		character:tur_piri_reis = {
+			is_alive = yes
+		}
+		NOT = {
+			has_reform = government_reform:dbo_piri_reis
+		}
+	}
+	option = {
+		name = dbo_dhe_destiny.1011.a
+		historical_option = yes
+		set_variable = dbo_piri_reis_obtained
+		add_reform = government_reform:dbo_piri_reis
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# Reform: Ottoman Empire
+dbo_dhe_destiny.1012 = {
+	type = country_event
+	title = dbo_dhe_destiny.1012.title
+	desc = dbo_dhe_destiny.1012.desc
+	historical_info = dbo_dhe_destiny.1012.historical_info
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		country_rank = country_rank:rank_empire
+		NOT = {
+			has_reform = government_reform:dbo_ottoman_empire
+		}
+		OR = {
+			has_reform = government_reform:legacy_of_the_ottomans
+			has_reform = government_reform:turkish_pashas
+		}
+	}
+	option = {
+		name = dbo_dhe_destiny.1012.a
+		historical_option = yes
+		set_variable = dbo_ottoman_empire_obtained
+		if = {
+			limit = {
+				has_reform = government_reform:legacy_of_the_ottomans
+			}
+			remove_reform = government_reform:legacy_of_the_ottomans
+		}
+		if = {
+			limit = {
+				has_reform = government_reform:turkish_pashas
+			}
+			remove_reform = government_reform:turkish_pashas
+		}
+		lock_government_reform_effect = {
+			type = legacy_of_the_ottomans
+		}
+		lock_government_reform_effect = {
+			type = turkish_pashas
+		}
+		add_reform = government_reform:dbo_ottoman_empire
+		dbo_event_ultimate_bonus = yes
+	}
+}
+
+dbo_dhe_destiny.2001 = {
+	type = country_event
+	title = dbo_dhe_destiny.2001.title
+	desc = dbo_dhe_destiny.2001.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		num_locations >= 50
+		num_of_non_rural >= 5
+	}
+	option = {
+		name = dbo_dhe_destiny.1.a
+		historical_option = yes
+		set_variable = {
+			name = dbo_war_wolf_t1
+			value = yes
+		}
+		add_reform = government_reform:dbo_war_wolf_t1
+		dbo_event_severe_bonus = yes
+	}
+}

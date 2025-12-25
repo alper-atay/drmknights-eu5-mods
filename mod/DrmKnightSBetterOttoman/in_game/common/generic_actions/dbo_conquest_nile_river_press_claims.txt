@@ -12,7 +12,7 @@
 				situation_has_ended = yes
 			}
 			NOT = {
-				has_reform = government_reform:dbo_achieved_conquest_nile_river
+				has_reform = government_reform:dbo_conquest_nile_river
 			}
 		}
 	}

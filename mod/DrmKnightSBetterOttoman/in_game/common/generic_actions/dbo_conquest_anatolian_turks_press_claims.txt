@@ -12,7 +12,7 @@
 				situation_has_ended = yes
 			}
 			NOT = {
-				has_reform = government_reform:dbo_achieved_conquest_anatolian_turks
+				has_reform = government_reform:dbo_conquest_anatolian_turks
 			}
 		}
 	}
@@ -62,9 +62,6 @@
 			}
 			trigger_if = {
 				OR = {
-					#region = region:anatolia_region
-					#region = region:crescent_region
-					#region = region:caucasus_region
 					area = area:cappadocia_area
 					area = area:central_anatolia_area
 					area = area:marmara_area

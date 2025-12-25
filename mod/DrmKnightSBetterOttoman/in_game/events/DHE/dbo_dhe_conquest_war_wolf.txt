@@ -1,0 +1,248 @@
+﻿namespace = dbo_war_wolf
+
+
+dbo_war_wolf.2 = {
+	type = country_event
+	title = dbo_war_wolf.2.title
+	desc = dbo_war_wolf.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		num_locations >= 150
+		num_of_non_rural >= 15
+	}
+	option = {
+		name = dbo_war_wolf.2.a
+		historical_option = yes
+		if = {
+			limit = {
+				has_reform = government_reform:dbo_war_wolf_t1
+			}
+			remove_reform = government_reform:dbo_war_wolf_t1
+		}
+		if = {
+			limit = {
+				has_variable = dbo_war_wolf_t1
+			}
+			remove_variable = dbo_war_wolf_t1
+		}
+		set_variable = {
+			name = dbo_war_wolf_t2
+			value = yes
+		}
+		add_reform = government_reform:dbo_war_wolf_t2
+		add_legitimacy = legitimacy_mild_bonus
+		add_stability = stability_mild_bonus
+		add_prestige = prestige_mild_bonus
+	}
+}
+
+dbo_war_wolf.3 = {
+	type = country_event
+	title = dbo_war_wolf.3.title
+	desc = dbo_war_wolf.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		num_locations >= 250
+		num_of_non_rural >= 50
+	}
+	option = {
+		name = dbo_war_wolf.3.a
+		historical_option = yes
+		if = {
+			limit = {
+				has_reform = government_reform:dbo_war_wolf_t2
+			}
+			remove_reform = government_reform:dbo_war_wolf_t2
+		}
+		if = {
+			limit = {
+				has_variable = dbo_war_wolf_t2
+			}
+			remove_variable = dbo_war_wolf_t2
+		}
+		set_variable = {
+			name = dbo_war_wolf_t3
+			value = yes
+		}
+		add_reform = government_reform:dbo_war_wolf_t3
+		add_legitimacy = legitimacy_mild_bonus
+		add_stability = stability_mild_bonus
+		add_prestige = prestige_mild_bonus
+	}
+}
+
+dbo_war_wolf.4 = {
+	type = country_event
+	title = dbo_war_wolf.4.title
+	desc = dbo_war_wolf.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		num_locations >= 400
+		num_of_non_rural >= 40
+	}
+	option = {
+		name = dbo_war_wolf.4.a
+		historical_option = yes
+		if = {
+			limit = {
+				has_reform = government_reform:dbo_war_wolf_t3
+			}
+			remove_reform = government_reform:dbo_war_wolf_t3
+		}
+		if = {
+			limit = {
+				has_variable = dbo_war_wolf_t3
+			}
+			remove_variable = dbo_war_wolf_t3
+		}
+		set_variable = {
+			name = dbo_war_wolf_t4
+			value = yes
+		}
+		add_reform = government_reform:dbo_war_wolf_t4
+		add_legitimacy = legitimacy_mild_bonus
+		add_stability = stability_mild_bonus
+		add_prestige = prestige_mild_bonus
+	}
+}
+
+dbo_war_wolf.5 = {
+	type = country_event
+	title = dbo_war_wolf.4.title
+	desc = dbo_war_wolf.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		num_locations >= 600
+		num_of_non_rural >= 60
+	}
+	option = {
+		name = dbo_war_wolf.4.a
+		historical_option = yes
+		if = {
+			limit = {
+				has_reform = government_reform:dbo_war_wolf_t3
+			}
+			remove_reform = government_reform:dbo_war_wolf_t3
+		}
+		if = {
+			limit = {
+				has_variable = dbo_war_wolf_t3
+			}
+			remove_variable = dbo_war_wolf_t3
+		}
+		set_variable = {
+			name = dbo_war_wolf_t4
+			value = yes
+		}
+		add_reform = government_reform:dbo_war_wolf_t4
+		add_legitimacy = legitimacy_mild_bonus
+		add_stability = stability_mild_bonus
+		add_prestige = prestige_mild_bonus
+	}
+}
+
+dbo_war_wolf.6 = {
+	type = country_event
+	title = dbo_war_wolf.4.title
+	desc = dbo_war_wolf.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		num_locations >= 900
+		num_of_non_rural >= 90
+	}
+	option = {
+		name = dbo_war_wolf.4.a
+		historical_option = yes
+		if = {
+			limit = {
+				has_reform = government_reform:dbo_war_wolf_t3
+			}
+			remove_reform = government_reform:dbo_war_wolf_t3
+		}
+		if = {
+			limit = {
+				has_variable = dbo_war_wolf_t3
+			}
+			remove_variable = dbo_war_wolf_t3
+		}
+		set_variable = {
+			name = dbo_war_wolf_t4
+			value = yes
+		}
+		add_reform = government_reform:dbo_war_wolf_t4
+		add_legitimacy = legitimacy_mild_bonus
+		add_stability = stability_mild_bonus
+		add_prestige = prestige_mild_bonus
+	}
+}
+
+dbo_war_wolf.7 = {
+	type = country_event
+	title = dbo_war_wolf.4.title
+	desc = dbo_war_wolf.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		num_locations >= 1350
+		num_of_non_rural >= 135
+	}
+	option = {
+		name = dbo_war_wolf.4.a
+		historical_option = yes
+		if = {
+			limit = {
+				has_reform = government_reform:dbo_war_wolf_t3
+			}
+			remove_reform = government_reform:dbo_war_wolf_t3
+		}
+		if = {
+			limit = {
+				has_variable = dbo_war_wolf_t3
+			}
+			remove_variable = dbo_war_wolf_t3
+		}
+		set_variable = {
+			name = dbo_war_wolf_t4
+			value = yes
+		}
+		add_reform = government_reform:dbo_war_wolf_t4
+		add_legitimacy = legitimacy_mild_bonus
+		add_stability = stability_mild_bonus
+		add_prestige = prestige_mild_bonus
+	}
+}

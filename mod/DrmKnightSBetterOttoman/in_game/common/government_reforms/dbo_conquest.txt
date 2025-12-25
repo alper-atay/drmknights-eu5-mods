@@ -1,0 +1,137 @@
+﻿dbo_conquest_anatolian_turks = {
+	unique = yes
+	potential = {
+		has_or_had_tag = TUR
+		has_variable = dbo_conquest_anatolian_turks
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = government_reform
+			type = dbo_conquest_anatolian_turks
+		}
+	}
+	country_modifier = {
+		power_projection = 5
+		global_distance_from_capital_cost_modifier = -0.1
+		tax_income_efficiency = large_tax_income_efficiency_bonus
+		global_monthly_control = 0.05
+		monthly_rebel_growth = -0.001
+		government_reform_slots = 1
+	}
+}
+
+dbo_conquest_rumelia = {
+	unique = yes
+	potential = {
+		has_or_had_tag = TUR
+		has_variable = dbo_conquest_rumelia
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = government_reform
+			type = dbo_conquest_rumelia
+		}
+	}
+	country_modifier = {
+		power_projection = 5
+		tolerance_heathen = 1
+		tolerance_heretic = 1
+		cultures_capacity = 1
+		cultures_capacity_modifier = 0.25
+		cultural_tradition_modifier = 0.1
+		cultural_influence_modifier = 0.1
+		global_institution_growth_modifier = 0.1
+		government_reform_slots = 1
+	}
+}
+
+dbo_conquest_arabian_peninsula = {
+	unique = yes
+	potential = {
+		has_or_had_tag = TUR
+		has_variable = dbo_conquest_arabian_peninsula
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = government_reform
+			type = dbo_conquest_arabian_peninsula
+		}
+	}
+	country_modifier = {
+		power_projection = 5
+		tolerance_own = 1
+		global_pop_conversion_speed = 20
+		global_pop_conversion_speed_modifier = 0.2
+		monthly_rebel_growth = -0.001
+		government_reform_slots = 1
+	}
+}
+
+dbo_conquest_black_sea = {
+	unique = yes
+	potential = {
+		has_or_had_tag = TUR
+		has_variable = dbo_conquest_black_sea
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = government_reform
+			type = dbo_conquest_black_sea
+		}
+	}
+	country_modifier = {
+		power_projection = 5
+		navy_maintenance_cost = -0.1
+		local_port_cost_distance_from_capital_modifier = -0.1
+		trade_efficiency = 0.1
+		trade_range_modifier = 0.1
+		trade_land_movement_cost_modifier = -0.1
+		trade_sea_movement_cost_modifier = -0.1
+		merchant_maintenance_cost = -0.1
+		government_reform_slots = 1
+	}
+}
+
+dbo_conquest_fertile_crescent = {
+	unique = yes
+	potential = {
+		has_or_had_tag = TUR
+		has_variable = dbo_conquest_fertile_crescent
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = government_reform
+			type = dbo_conquest_fertile_crescent
+		}
+	}
+	country_modifier = {
+		power_projection = 5
+		global_max_rgo_size_modifier = 0.1
+		global_raw_material_output = 0.1
+		global_rgo_build_time = -0.1
+		global_population_growth = 0.001
+		government_reform_slots = 1
+	}
+}
+
+dbo_conquest_nile_river = {
+	unique = yes
+	potential = {
+		has_or_had_tag = TUR
+		has_variable = dbo_conquest_nile_river
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = government_reform
+			type = dbo_conquest_nile_river
+		}
+	}
+	country_modifier = {
+		power_projection = 5
+		cultures_capacity = 1
+		cultures_capacity_modifier = 0.25
+		global_institution_growth_modifier = 0.1
+		global_population_growth = 0.001
+		government_reform_slots = 1
+	}
+}
