@@ -10,6 +10,8 @@ dbo_dhe_destiny.1001 = {
 	desc = dbo_dhe_destiny.1001.desc
 	historical_info = dbo_dhe_destiny.1001.historical_info
 	fire_only_once = yes
+	image = "gfx/interface/illustrations/situation/dbo_destiny.dds"
+	outcome = positive
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.1.1
@@ -37,6 +39,8 @@ dbo_dhe_destiny.1002 = {
 	desc = dbo_dhe_destiny.1002.desc
 	historical_info = dbo_dhe_destiny.1002.historical_info
 	fire_only_once = yes
+	image = "gfx/interface/illustrations/situation/dbo_destiny.dds"
+	outcome = positive
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.1.1
@@ -65,6 +69,8 @@ dbo_dhe_destiny.1003 = {
 	desc = dbo_dhe_destiny.1003.desc
 	historical_info = dbo_dhe_destiny.1003.historical_info
 	fire_only_once = yes
+	image = "gfx/interface/illustrations/situation/dbo_destiny.dds"
+	outcome = positive
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.1.1
@@ -93,6 +99,8 @@ dbo_dhe_destiny.1004 = {
 	desc = dbo_dhe_destiny.1004.desc
 	historical_info = dbo_dhe_destiny.1004.historical_info
 	fire_only_once = yes
+	image = "gfx/interface/illustrations/situation/dbo_destiny.dds"
+	outcome = positive
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.1.1
@@ -128,6 +136,8 @@ dbo_dhe_destiny.1005 = {
 	desc = dbo_dhe_destiny.1005.desc
 	historical_info = dbo_dhe_destiny.1005.historical_info
 	fire_only_once = yes
+	image = "gfx/interface/illustrations/situation/dbo_destiny.dds"
+	outcome = positive
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.1.1
@@ -156,6 +166,8 @@ dbo_dhe_destiny.1006 = {
 	desc = dbo_dhe_destiny.1006.desc
 	historical_info = dbo_dhe_destiny.1006.historical_info
 	fire_only_once = yes
+	image = "gfx/interface/illustrations/situation/dbo_destiny.dds"
+	outcome = positive
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.1.1
@@ -193,6 +205,8 @@ dbo_dhe_destiny.1007 = {
 	desc = dbo_dhe_destiny.1007.desc
 	historical_info = dbo_dhe_destiny.1007.historical_info
 	fire_only_once = yes
+	image = "gfx/interface/illustrations/situation/dbo_destiny.dds"
+	outcome = positive
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.1.1
@@ -229,6 +243,8 @@ dbo_dhe_destiny.1008 = {
 	desc = dbo_dhe_destiny.1008.desc
 	historical_info = dbo_dhe_destiny.1008.historical_info
 	fire_only_once = yes
+	image = "gfx/interface/illustrations/situation/dbo_destiny.dds"
+	outcome = positive
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.1.1
@@ -262,6 +278,8 @@ dbo_dhe_destiny.1009 = {
 	desc = dbo_dhe_destiny.1009.desc
 	historical_info = dbo_dhe_destiny.1009.historical_info
 	fire_only_once = yes
+	image = "gfx/interface/illustrations/situation/dbo_destiny.dds"
+	outcome = positive
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.1.1
@@ -290,6 +308,8 @@ dbo_dhe_destiny.1010 = {
 	desc = dbo_dhe_destiny.1010.desc
 	historical_info = dbo_dhe_destiny.1010.historical_info
 	fire_only_once = yes
+	image = "gfx/interface/illustrations/situation/dbo_destiny.dds"
+	outcome = positive
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.1.1
@@ -336,7 +356,6 @@ dbo_dhe_destiny.1010 = {
 			}
 			remove_reform = government_reform:dbo_lessons_from_mongols
 		}
-		
 		if = {
 			limit = {
 				has_variable = dbo_lessons_from_mongols_obtained
@@ -356,6 +375,8 @@ dbo_dhe_destiny.1011 = {
 	desc = dbo_dhe_destiny.1011.desc
 	historical_info = dbo_dhe_destiny.1011.historical_info
 	fire_only_once = yes
+	image = "gfx/interface/illustrations/situation/dbo_destiny.dds"
+	outcome = positive
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1500.1.1
@@ -386,6 +407,8 @@ dbo_dhe_destiny.1012 = {
 	desc = dbo_dhe_destiny.1012.desc
 	historical_info = dbo_dhe_destiny.1012.historical_info
 	fire_only_once = yes
+	image = "gfx/interface/illustrations/situation/dbo_destiny.dds"
+	outcome = positive
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.1.1
@@ -432,8 +455,10 @@ dbo_dhe_destiny.1012 = {
 dbo_dhe_destiny.2001 = {
 	type = country_event
 	title = dbo_dhe_destiny.2001.title
-	desc = dbo_dhe_destiny.2001.desc
+	desc = dbo_dhe_destiny_war_wolf_common_desc
 	fire_only_once = yes
+	image = "gfx/interface/illustrations/situation/dbo_destiny.dds"
+	outcome = positive
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.1.1
@@ -441,17 +466,222 @@ dbo_dhe_destiny.2001 = {
 		monthly_chance = 100
 	}
 	trigger = {
+		NOT = {
+			has_reform = government_reform:dbo_destiny_war_wolf_t1
+			has_variable = dbo_destiny_war_wolf_t1_obtained
+		}
 		num_locations >= 50
 		num_of_non_rural >= 5
 	}
 	option = {
-		name = dbo_dhe_destiny.1.a
+		name = dbo_dhe_destiny_war_wolf_common_option
 		historical_option = yes
-		set_variable = {
-			name = dbo_war_wolf_t1
-			value = yes
+		set_variable = dbo_destiny_war_wolf_t1_obtained
+		add_reform = government_reform:dbo_destiny_war_wolf_t1
+		dbo_event_severe_bonus = yes
+	}
+}
+
+dbo_dhe_destiny.2002 = {
+	type = country_event
+	title = dbo_dhe_destiny.2002.title
+	desc = dbo_dhe_destiny_war_wolf_common_desc
+	fire_only_once = yes
+	image = "gfx/interface/illustrations/situation/dbo_destiny.dds"
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		has_reform = government_reform:dbo_destiny_war_wolf_t1
+		has_variable = dbo_destiny_war_wolf_t1_obtained
+		NOT = {
+			has_reform = government_reform:dbo_destiny_war_wolf_t2
+			has_variable = dbo_destiny_war_wolf_t2_obtained
 		}
-		add_reform = government_reform:dbo_war_wolf_t1
+		num_locations >= 150
+		num_of_non_rural >= 15
+	}
+	option = {
+		name = dbo_dhe_destiny_war_wolf_common_option
+		historical_option = yes
+		remove_reform = dbo_destiny_war_wolf_t1
+		remove_variable = dbo_destiny_war_wolf_t1_obtained
+		add_reform = government_reform:dbo_destiny_war_wolf_t2
+		set_variable = dbo_destiny_war_wolf_t2_obtained
+		dbo_event_severe_bonus = yes
+	}
+}
+
+dbo_dhe_destiny.2003 = {
+	type = country_event
+	title = dbo_dhe_destiny.2003.title
+	desc = dbo_dhe_destiny_war_wolf_common_desc
+	fire_only_once = yes
+	image = "gfx/interface/illustrations/situation/dbo_destiny.dds"
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		has_reform = government_reform:dbo_destiny_war_wolf_t2
+		has_variable = dbo_destiny_war_wolf_t2_obtained
+		NOT = {
+			has_reform = government_reform:dbo_destiny_war_wolf_t3
+			has_variable = dbo_destiny_war_wolf_t3_obtained
+		}
+		num_locations >= 300
+		num_of_non_rural >= 300
+	}
+	option = {
+		name = dbo_dhe_destiny_war_wolf_common_option
+		historical_option = yes
+		remove_reform = dbo_destiny_war_wolf_t2
+		remove_variable = dbo_destiny_war_wolf_t2_obtained
+		add_reform = government_reform:dbo_destiny_war_wolf_t3
+		set_variable = dbo_destiny_war_wolf_t3_obtained
+		dbo_event_severe_bonus = yes
+	}
+}
+
+dbo_dhe_destiny.2004 = {
+	type = country_event
+	title = dbo_dhe_destiny.2004.title
+	desc = dbo_dhe_destiny_war_wolf_common_desc
+	fire_only_once = yes
+	image = "gfx/interface/illustrations/situation/dbo_destiny.dds"
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		has_reform = government_reform:dbo_destiny_war_wolf_t3
+		has_variable = dbo_destiny_war_wolf_t3_obtained
+		NOT = {
+			has_reform = government_reform:dbo_destiny_war_wolf_t4
+			has_variable = dbo_destiny_war_wolf_t4_obtained
+		}
+		num_locations >= 500
+		num_of_non_rural >= 50
+	}
+	option = {
+		name = dbo_dhe_destiny_war_wolf_common_option
+		historical_option = yes
+		remove_reform = dbo_destiny_war_wolf_t3
+		remove_variable = dbo_destiny_war_wolf_t3_obtained
+		add_reform = government_reform:dbo_destiny_war_wolf_t4
+		set_variable = dbo_destiny_war_wolf_t4_obtained
+		dbo_event_severe_bonus = yes
+	}
+}
+
+dbo_dhe_destiny.2005 = {
+	type = country_event
+	title = dbo_dhe_destiny.2005.title
+	desc = dbo_dhe_destiny_war_wolf_common_desc
+	fire_only_once = yes
+	image = "gfx/interface/illustrations/situation/dbo_destiny.dds"
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		has_reform = government_reform:dbo_destiny_war_wolf_t4
+		has_variable = dbo_destiny_war_wolf_t4_obtained
+		NOT = {
+			has_reform = government_reform:dbo_destiny_war_wolf_t5
+			has_variable = dbo_destiny_war_wolf_t5_obtained
+		}
+		num_locations >= 750
+		num_of_non_rural >= 75
+	}
+	option = {
+		name = dbo_dhe_destiny_war_wolf_common_option
+		historical_option = yes
+		remove_reform = dbo_destiny_war_wolf_t4
+		remove_variable = dbo_destiny_war_wolf_t4_obtained
+		add_reform = government_reform:dbo_destiny_war_wolf_t5
+		set_variable = dbo_destiny_war_wolf_t5_obtained
+		dbo_event_severe_bonus = yes
+	}
+}
+
+dbo_dhe_destiny.2006 = {
+	type = country_event
+	title = dbo_dhe_destiny.2006.title
+	desc = dbo_dhe_destiny_war_wolf_common_desc
+	fire_only_once = yes
+	image = "gfx/interface/illustrations/situation/dbo_destiny.dds"
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		has_reform = government_reform:dbo_destiny_war_wolf_t5
+		has_variable = dbo_destiny_war_wolf_t5_obtained
+		NOT = {
+			has_reform = government_reform:dbo_destiny_war_wolf_t6
+			has_variable = dbo_destiny_war_wolf_t6_obtained
+		}
+		num_locations >= 1000
+		num_of_non_rural >= 100
+	}
+	option = {
+		name = dbo_dhe_destiny_war_wolf_common_option
+		historical_option = yes
+		remove_reform = dbo_destiny_war_wolf_t5
+		remove_variable = dbo_destiny_war_wolf_t5_obtained
+		add_reform = government_reform:dbo_destiny_war_wolf_t6
+		set_variable = dbo_destiny_war_wolf_t6_obtained
+		dbo_event_severe_bonus = yes
+	}
+}
+
+dbo_dhe_destiny.2007 = {
+	type = country_event
+	title = dbo_dhe_destiny.2007.title
+	desc = dbo_dhe_destiny_war_wolf_common_desc
+	fire_only_once = yes
+	image = "gfx/interface/illustrations/situation/dbo_destiny.dds"
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		has_reform = government_reform:dbo_destiny_war_wolf_t6
+		has_variable = dbo_destiny_war_wolf_t6_obtained
+		NOT = {
+			has_reform = government_reform:dbo_destiny_war_wolf_t7
+			has_variable = dbo_destiny_war_wolf_t7_obtained
+		}
+		num_locations >= 1500
+		num_of_non_rural >= 150
+	}
+	option = {
+		name = dbo_dhe_destiny_war_wolf_common_option
+		historical_option = yes
+		remove_reform = dbo_destiny_war_wolf_t6
+		remove_variable = dbo_destiny_war_wolf_t6_obtained
+		add_reform = government_reform:dbo_destiny_war_wolf_t7
+		set_variable = dbo_destiny_war_wolf_t7_obtained
 		dbo_event_severe_bonus = yes
 	}
 }

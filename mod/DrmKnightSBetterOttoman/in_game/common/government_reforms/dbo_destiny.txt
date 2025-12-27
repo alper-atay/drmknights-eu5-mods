@@ -144,7 +144,7 @@ dbo_destiny_lessons_from_mongols = {
 	unique = yes
 	potential = {
 		has_or_had_tag = TUR
-		has_variable = dbo_destiny_lessons_from_mongols
+		has_variable = dbo_destiny_lessons_from_mongols_obtained
 	}
 	locked = {
 		is_locked_mechanic = {
@@ -163,7 +163,7 @@ dbo_destiny_martolos_units = {
 	unique = yes
 	potential = {
 		has_or_had_tag = TUR
-		has_variable = dbo_destiny_martolos_units
+		has_variable = dbo_destiny_martolos_units_obtained
 	}
 	locked = {
 		is_locked_mechanic = {
@@ -185,7 +185,7 @@ dbo_destiny_modernized_timariot_system = {
 	unique = yes
 	potential = {
 		has_or_had_tag = TUR
-		has_variable = dbo_destiny_modernized_timariot_system
+		has_variable = dbo_destiny_modernized_timariot_system_obtained
 	}
 	locked = {
 		is_locked_mechanic = {
@@ -212,7 +212,7 @@ dbo_destiny_devshirme_system = {
 	locked = {
 		is_locked_mechanic = {
 			mechanic = government_reform
-			type = dbo_destiny_modernized_sekban_system
+			type = dbo_destiny_devshirme_system
 		}
 	}
 	country_modifier = {
@@ -229,7 +229,7 @@ dbo_destiny_ottoman_empire = {
 	unique = yes
 	potential = {
 		has_or_had_tag = TUR
-		has_variable = dbo_destiny_ottoman_empire
+		has_variable = dbo_destiny_ottoman_empire_obtained
 	}
 	locked = {
 		is_locked_mechanic = {
@@ -255,7 +255,7 @@ dbo_destiny_piri_reis = {
 	unique = yes
 	potential = {
 		has_or_had_tag = TUR
-		has_variable = dbo_destiny_piri_reis
+		has_variable = dbo_destiny_piri_reis_obtained
 	}
 	locked = {
 		is_locked_mechanic = {
@@ -280,7 +280,7 @@ dbo_destiny_war_wolf_t1 = {
 	unique = yes
 	potential = {
 		has_or_had_tag = TUR
-		has_variable = dbo_destiny_war_wolf_t1
+		has_variable = dbo_destiny_war_wolf_t1_obtained
 	}
 	locked = {
 		is_locked_mechanic = {
@@ -302,7 +302,7 @@ dbo_destiny_war_wolf_t2 = {
 	unique = yes
 	potential = {
 		has_or_had_tag = TUR
-		has_variable = dbo_destiny_war_wolf_t2
+		has_variable = dbo_destiny_war_wolf_t2_obtained
 	}
 	locked = {
 		is_locked_mechanic = {
@@ -324,7 +324,7 @@ dbo_destiny_war_wolf_t3 = {
 	unique = yes
 	potential = {
 		has_or_had_tag = TUR
-		has_variable = dbo_destiny_war_wolf_t3
+		has_variable = dbo_destiny_war_wolf_t3_obtained
 	}
 	locked = {
 		is_locked_mechanic = {
@@ -346,7 +346,7 @@ dbo_destiny_war_wolf_t4 = {
 	unique = yes
 	potential = {
 		has_or_had_tag = TUR
-		has_variable = dbo_destiny_war_wolf_t4
+		has_variable = dbo_destiny_war_wolf_t4_obtained
 	}
 	locked = {
 		is_locked_mechanic = {
@@ -368,12 +368,12 @@ dbo_destiny_war_wolf_t5 = {
 	unique = yes
 	potential = {
 		has_or_had_tag = TUR
-		has_variable = dbo_destiny_war_wolf_t4
+		has_variable = dbo_destiny_war_wolf_t5_obtained
 	}
 	locked = {
 		is_locked_mechanic = {
 			mechanic = government_reform
-			type = dbo_destiny_war_wolf_t4
+			type = dbo_destiny_war_wolf_t5
 		}
 	}
 	country_modifier = {
@@ -390,12 +390,12 @@ dbo_destiny_war_wolf_t6 = {
 	unique = yes
 	potential = {
 		has_or_had_tag = TUR
-		has_variable = dbo_destiny_war_wolf_t4
+		has_variable = dbo_destiny_war_wolf_t6_obtained
 	}
 	locked = {
 		is_locked_mechanic = {
 			mechanic = government_reform
-			type = dbo_destiny_war_wolf_t4
+			type = dbo_destiny_war_wolf_t6
 		}
 	}
 	country_modifier = {
@@ -412,12 +412,12 @@ dbo_destiny_war_wolf_t7 = {
 	unique = yes
 	potential = {
 		has_or_had_tag = TUR
-		has_variable = dbo_destiny_war_wolf_t4
+		has_variable = dbo_destiny_war_wolf_t4_obtained
 	}
 	locked = {
 		is_locked_mechanic = {
 			mechanic = government_reform
-			type = dbo_destiny_war_wolf_t4
+			type = dbo_destiny_war_wolf_t7
 		}
 	}
 	country_modifier = {

@@ -1,0 +1,19 @@
+INJECT:recruitment_law = {
+	dbo_destiny_devshirme_system = {
+		potential = {
+			has_or_had_tag = TUR
+			culture = culture:turkish_culture
+		}
+		country_modifier = {
+			monthly_legitimacy = 0.05
+			no_lowborn_leaders = yes
+			nobles_estate_blocked_from_leading_military = yes
+			peasants_estate_blocked_from_leading_military = yes
+			tribes_estate_blocked_from_leading_military = yes
+			burghers_estate_blocked_from_leading_military = yes
+			dhimmi_estate_blocked_from_leading_military = yes
+			cossacks_estate_blocked_from_leading_military = yes
+			clergy_estate_blocked_from_leading_military = yes
+		}
+	}
+}
