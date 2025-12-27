@@ -4,9 +4,8 @@
 		current_date > 1337.1.1
 	}
 	can_end = {
-		#Achievements for Conquests
 		custom_tooltip = {
-			text = dbo_conquest_achieve_anatolian_turks_can_end_tooltip
+			text = dbo_conquest_anatolian_turks_can_end_tooltip
 			c:TUR = {
 				dbo_conquest_anatolian_turks_check = yes
 			}
@@ -39,6 +38,12 @@
 			text = dbo_conquest_nile_river_can_end_tooltip
 			c:TUR = {
 				dbo_conquest_nile_river_check = yes
+			}
+		}
+		custom_tooltip = {
+			text = dbo_conquest_europe_eastern_gate_can_end_tooltip
+			c:TUR = {
+				dbo_conquest_europe_eastern_gate_check = yes
 			}
 		}
 	}

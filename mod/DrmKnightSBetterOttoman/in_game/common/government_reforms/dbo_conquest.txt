@@ -1,13 +1,13 @@
-﻿dbo_conquest_anatolian_turks = {
+﻿dbo_conquest_anatolian_turks_stamp = {
 	unique = yes
 	potential = {
 		has_or_had_tag = TUR
-		has_variable = dbo_conquest_anatolian_turks
+		has_variable = dbo_conquest_anatolian_turks_stamp_obtained
 	}
 	locked = {
 		is_locked_mechanic = {
 			mechanic = government_reform
-			type = dbo_conquest_anatolian_turks
+			type = dbo_conquest_anatolian_turks_stamp
 		}
 	}
 	country_modifier = {
@@ -20,16 +20,16 @@
 	}
 }
 
-dbo_conquest_rumelia = {
+dbo_conquest_rumelia_stamp = {
 	unique = yes
 	potential = {
 		has_or_had_tag = TUR
-		has_variable = dbo_conquest_rumelia
+		has_variable = dbo_conquest_rumelia_stamp_obtained
 	}
 	locked = {
 		is_locked_mechanic = {
 			mechanic = government_reform
-			type = dbo_conquest_rumelia
+			type = dbo_conquest_rumelia_stamp
 		}
 	}
 	country_modifier = {
@@ -45,16 +45,16 @@ dbo_conquest_rumelia = {
 	}
 }
 
-dbo_conquest_arabian_peninsula = {
+dbo_conquest_arabian_peninsula_stamp = {
 	unique = yes
 	potential = {
 		has_or_had_tag = TUR
-		has_variable = dbo_conquest_arabian_peninsula
+		has_variable = dbo_conquest_arabian_peninsula_stamp_obtained
 	}
 	locked = {
 		is_locked_mechanic = {
 			mechanic = government_reform
-			type = dbo_conquest_arabian_peninsula
+			type = dbo_conquest_arabian_peninsula_stamp
 		}
 	}
 	country_modifier = {
@@ -67,16 +67,16 @@ dbo_conquest_arabian_peninsula = {
 	}
 }
 
-dbo_conquest_black_sea = {
+dbo_conquest_black_sea_stamp = {
 	unique = yes
 	potential = {
 		has_or_had_tag = TUR
-		has_variable = dbo_conquest_black_sea
+		has_variable = dbo_conquest_black_sea_stamp_obtained
 	}
 	locked = {
 		is_locked_mechanic = {
 			mechanic = government_reform
-			type = dbo_conquest_black_sea
+			type = dbo_conquest_black_sea_stamp
 		}
 	}
 	country_modifier = {
@@ -92,16 +92,16 @@ dbo_conquest_black_sea = {
 	}
 }
 
-dbo_conquest_fertile_crescent = {
+dbo_conquest_fertile_crescent_stamp = {
 	unique = yes
 	potential = {
 		has_or_had_tag = TUR
-		has_variable = dbo_conquest_fertile_crescent
+		has_variable = dbo_conquest_fertile_crescent_stamp_obtained
 	}
 	locked = {
 		is_locked_mechanic = {
 			mechanic = government_reform
-			type = dbo_conquest_fertile_crescent
+			type = dbo_conquest_fertile_crescent_stamp
 		}
 	}
 	country_modifier = {
@@ -114,16 +114,16 @@ dbo_conquest_fertile_crescent = {
 	}
 }
 
-dbo_conquest_nile_river = {
+dbo_conquest_nile_river_stamp = {
 	unique = yes
 	potential = {
 		has_or_had_tag = TUR
-		has_variable = dbo_conquest_nile_river
+		has_variable = dbo_conquest_nile_river_stamp_obtained
 	}
 	locked = {
 		is_locked_mechanic = {
 			mechanic = government_reform
-			type = dbo_conquest_nile_river
+			type = dbo_conquest_nile_river_stamp
 		}
 	}
 	country_modifier = {
@@ -132,6 +132,28 @@ dbo_conquest_nile_river = {
 		cultures_capacity_modifier = 0.25
 		global_institution_growth_modifier = 0.1
 		global_population_growth = 0.001
+		government_reform_slots = 1
+	}
+}
+
+dbo_conquest_europe_eastern_gate_stamp = {
+	unique = yes
+	potential = {
+		has_or_had_tag = TUR
+		has_variable = dbo_conquest_europe_eastern_gate_stamp_obtained
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = government_reform
+			type = dbo_conquest_europe_eastern_gate_stamp
+		}
+	}
+	country_modifier = {
+		power_projection = 5
+		global_merchant_power = 0.1
+		global_goods_gold_output_modifier = 0.1
+		global_silver_output_modifier = 0.1
+		minting_income_factor = 0.20
 		government_reform_slots = 1
 	}
 }

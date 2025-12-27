@@ -194,7 +194,6 @@ dbo_destiny_modernized_timariot_system = {
 		}
 	}
 	country_modifier = {
-		global_manpower_modifier = 0.1
 		army_cavalry_power = 0.3
 		army_cavalry_build_cost_modifier = -0.1
 		army_cavalry_maintenance_cost_modifier = -0.1
@@ -203,7 +202,7 @@ dbo_destiny_modernized_timariot_system = {
 	}
 }
 
-dbo_destiny_devshirme_system = {
+dbo_destiny_advanced_devshirme_system = {
 	unique = yes
 	potential = {
 		has_or_had_tag = TUR
@@ -216,8 +215,7 @@ dbo_destiny_devshirme_system = {
 		}
 	}
 	country_modifier = {
-		global_manpower_modifier = 0.1
-		army_infantry_power = 0.2
+		army_infantry_power = 0.3
 		army_infantry_build_cost_modifier = -0.1
 		army_infantry_maintenance_cost_modifier = -0.1
 		army_infantry_reinforce_cost_modifier = -0.1
