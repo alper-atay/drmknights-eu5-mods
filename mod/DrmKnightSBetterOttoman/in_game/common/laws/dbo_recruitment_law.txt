@@ -1,19 +1,29 @@
 INJECT:recruitment_law = {
-	dbo_destiny_devshirme_system = {
+	dbo_devshirme_system = {
 		potential = {
 			has_or_had_tag = TUR
-			culture = culture:turkish_culture
+		}
+		allow = {
+			NOT = {
+				current_age = age_1_traditions
+			}
+			NOT = {
+				current_age = age_2_renaissance
+			}
+			custom_tooltip = {
+				text = devshirme_system_policy_why_tt
+				NOT = {
+					has_variable = devshirme_abolished
+				}
+			}
 		}
 		country_modifier = {
-			monthly_legitimacy = 0.05
-			no_lowborn_leaders = yes
-			nobles_estate_blocked_from_leading_military = yes
-			peasants_estate_blocked_from_leading_military = yes
-			tribes_estate_blocked_from_leading_military = yes
-			burghers_estate_blocked_from_leading_military = yes
-			dhimmi_estate_blocked_from_leading_military = yes
-			cossacks_estate_blocked_from_leading_military = yes
-			clergy_estate_blocked_from_leading_military = yes
+			monthly_towards_quality = societal_value_monthly_move
+			global_slaves_goods_output_modifier = 0.2
+			wrong_culture_levy_size = 0.2
+			levy_combat_efficiency_modifier = 0.1
+			peasants_estate_levy_size = -0.1
+			global_peasants_estate_power = 0.1
 		}
 	}
 }

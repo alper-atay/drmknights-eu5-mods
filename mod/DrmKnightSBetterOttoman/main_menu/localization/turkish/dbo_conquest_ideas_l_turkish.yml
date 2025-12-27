@@ -1,0 +1,13 @@
+﻿l_turkish:
+ dbo_conquest_anatolian_turks: "Anadolu Türk Birliği – Tek Yurt, Tek İrade"
+ dbo_conquest_rumelia: "Rumeli’nin Fethi – İki Kıta, Tek Devlet"
+ dbo_conquest_fertile_crescent: "Verimli Hilal’in Hâkimiyeti – Medeniyetin Kalbi"
+ dbo_conquest_arabian_peninsula: "Arap Yarımadası’nın Hâkimiyeti – Kutsal Toprakların Muhafızı"
+ dbo_conquest_black_sea: "Karadeniz’in Hâkimiyeti – Türk Gölü"
+ dbo_conquest_nile_river: "Mısır’ın Fethi – İmparatorluğun Kilit Taşı"
+ dbo_conquest_anatolian_turks_desc: "$dbo_conquest_anatolian_turks$ başarıyla sağlandı ve artık daha güçlüyüz. Tüm [ShowCultureGroupName('turkic_group')] halkının anavatanı olarak bu topraklara kök salacağız!"
+ dbo_conquest_rumelia_desc: "$dbo_conquest_rumelia$ başarıyla sağlandı ve artık daha güçlüyüz. Tüm [ShowCultureGroupName('turkic_group')] halkı olarak bu topraklara kök salacağız!"
+ dbo_conquest_fertile_crescent_desc: "$dbo_conquest_fertile_crescent$ başarıyla sağlandı ve artık daha güçlüyüz. Tüm [ShowCultureGroupName('turkic_group')] halkı olarak bu topraklara kök salacağız!"
+ dbo_conquest_arabian_peninsula_desc: "$dbo_conquest_arabian_peninsula$ başarıyla sağlandı ve artık daha güçlüyüz. Tüm [ShowCultureGroupName('turkic_group')] halkı olarak bu topraklara kök salacağız!"
+ dbo_conquest_black_sea_desc: "$dbo_conquest_black_sea$ başarıyla sağlandı ve artık daha güçlüyüz. Bütün [ShowAreaName('black_sea_area')] kıyısı olan [Concept('provinces','Vilayetlere')|e] hâkimiyet sağladık. Tüm [ShowCultureGroupName('turkic_group')] halkı olarak bu topraklara kök salacağız!"
+ dbo_conquest_nile_river_desc: "$dbo_conquest_nile_river$ başarıyla sağlandı ve artık daha güçlüyüz. Bütün [ShowRegionName('egypt_region')] bölgesine hâkimiyet sağladık. Tüm [ShowCultureGroupName('turkic_group')] halkı olarak bu topraklara kök salacağız!"

@@ -1,6 +1,6 @@
 ﻿l_turkish:
- dbo_conquest.1.title: "Cihan Hâkimiyeti Ülküsü"
- dbo_conquest.1.desc: "Anadolu’nun dar ufukları artık Osmanlı’ya yetmemektedir. Roma’nın mirası, İslam’ın muhafızlığı ve Türk kılıcının sarsılmaz kudreti tek bir ülküde birleşmiştir: cihana nizam vermek. Osmanlı artık yalnızca toprak kazanan bir devlet değil, tarihin akışını belirleyen mutlak bir iradedir. Dünya parçalanmış hâlde kaldıkça fitne ve kaos sona ermeyecektir. Bu nedenle doğudan batıya, kuzeyden güneye tüm ticaret yolları, kutsal mabedler ve imparatorluk başkentleri Osmanlı sancağı altında toplanmalıdır. Direnen kılıçla ezilecek, boyun eğen adaletle korunacaktır. Her fetih, yalnızca bir zafer değil; dünyayı tek bir merkezden yönetilen düzene yaklaştıran kutsal bir adımdır. Osmanlı, fethettiği toprakları değil; cihanın kaderini miras alır. Tek bir taht, tek bir nizam ve tek bir dünya kurulmadıkça gerçek barış mümkün değildir. Bu yol, imparatorluğun değil; dünyanın fethidir."
+ dbo_conquest.1.title: "$dbo_conquest$"
+ dbo_conquest.1.desc: "$dbo_conquest_desc$"
  dbo_conquest.1.a: "Cihan Fatihi Olacağım!"
  dbo_conquest.100.title: "[target_country.GetNameWithNoTooltip] Seferi"
  dbo_conquest.100.desc: "[ROOT.GetCountry.GetGovernment.GetRulerTitle], [ShowSituationName('dbo_conquest')] sağlamak için bir sonraki hamlesini düşünürken muzaffer [ROOT.GetCountry.GetAdjective] sancaklarının rüzgârda dalgalanışını seyrediyor. Komşu topraklarsa şimdiden büyüyen [ROOT.GetCountry.GetFlavorRank] egemenliğine dâhil olmaya hazır görünüyor.\n\n[target.GetProvince.GetName] vilayeti üstünde hak iddia etmeye karar verirsek [target.GetArea.GetName] üstündeki kontrolünü sağlamlaştırır ve [ShowSituationName('dbo_conquest')] sağlamaya bir adım daha yakın oluruz. Yeni bir sefer düzenleme zamanı geldi!"

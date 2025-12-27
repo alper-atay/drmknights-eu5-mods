@@ -1,4 +1,4 @@
-﻿dbo_conquest_anatolian_turks_achieved = {
+﻿dbo_conquest_anatolian_turks_check = {
 	own_entire_area = area:cappadocia_area
 	own_entire_area = area:central_anatolia_area
 	own_entire_area = area:marmara_area
@@ -30,7 +30,7 @@
 	own_entire_province = province_definition:antakya_province
 }
 
-dbo_conquest_rumelia_achieved = {
+dbo_conquest_rumelia_check = {
 	own_entire_area = area:bosnia_area
 	own_entire_area = area:albania_area
 	own_entire_area = area:bulgaria_area
@@ -41,7 +41,7 @@ dbo_conquest_rumelia_achieved = {
 	own_entire_area = area:thrace_area
 }
 
-dbo_conquest_arabian_peninsula_achieved = {
+dbo_conquest_arabian_peninsula_check = {
 	own_entire_area = area:bahrein_area
 	own_entire_area = area:hedjaz_area
 	own_entire_area = area:najd_area
@@ -51,13 +51,13 @@ dbo_conquest_arabian_peninsula_achieved = {
 	own_entire_area = area:south_yemen_area
 }
 
-dbo_conquest_fertile_crescent_achieved = {
+dbo_conquest_fertile_crescent_check = {
 	own_entire_area = area:iraq_arabi_area
 	own_entire_area = area:jazira_area
 	own_entire_area = area:levant_area
 }
 
-dbo_conquest_black_sea_achieved = {
+dbo_conquest_black_sea_check = {
 	own_entire_area = area:pontus_area
 	own_entire_area = area:crimea_area
 	own_entire_province = province_definition:bolu_province
@@ -84,7 +84,7 @@ dbo_conquest_black_sea_achieved = {
 	own_entire_province = province_definition:samegrelo_province
 }
 
-dbo_conquest_nile_river_achieved = {
+dbo_conquest_nile_river_check = {
 	own_entire_area = area:lower_egypt_area
 	own_entire_area = area:upper_egypt_area
 	own_entire_area = area:sinai_area
