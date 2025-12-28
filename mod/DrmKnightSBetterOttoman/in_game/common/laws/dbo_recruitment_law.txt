@@ -1,4 +1,4 @@
-INJECT:recruitment_law = {
+﻿INJECT:recruitment_law = {
 	dbo_advanced_devshirme_system = {
 		potential = {
 			has_or_had_tag = TUR

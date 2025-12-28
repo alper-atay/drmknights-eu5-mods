@@ -46,7 +46,7 @@
  dbo_dhe_destiny.1009.a: "Çok iyi!"
  # dbo_destiny_modernized_timariot_system
  dbo_dhe_destiny.1010.title: "[ShowGovernmentReformName('dbo_destiny_modernized_timariot_system')]"
- dbo_dhe_destiny.1010.desc: dbo_destiny_modernized_timariot_system_desc
+ dbo_dhe_destiny.1010.desc: "$dbo_destiny_modernized_timariot_system_desc$"
  dbo_dhe_destiny.1010.a: "Hemen uygulayalım!"
  # dbo_destiny_piri_reis
  dbo_dhe_destiny.1011.title: "[ShowGovernmentReformName('dbo_destiny_piri_reis')]"
@@ -59,6 +59,8 @@
  dbo_dhe_destiny.1012.historical_info: "Osmanlı İmparatorluğu, 1299 yılında Bilecik'in Söğüt ilçesinde Osman Gazi tarafından kurulan ve üç kıtaya yayılan cihanşümul bir devlettir.\nKuruluş döneminde Bizans ve Balkanlar üzerine yoğunlaşan stratejisiyle hızla büyümüş, 1453 yılında Fatih Sultan Mehmet'in İstanbul'u fethiyle bir 'İmparatorluk' kimliği kazanmıştır.\nYavuz Sultan Selim döneminde Hilafet'in Osmanlı'ya geçmesi ve Kanuni Sultan Süleyman devrinde ulaşılan siyasi, askeri ve kültürel zirve, devleti dünyanın en süper gücü haline getirmiştir.\n17. yüzyıldan itibaren değişen dünya ticaret yolları ve Avrupa'daki teknik gelişmelere ayak uydurmakta zorlanan devlet, duraklama ve gerileme dönemlerine girerek toprak kaybetmeye başlamıştır.\nTanzimat ve Islahat fermanlarıyla modernleşme çabaları gösterilse de, 1. Dünya Savaşı sonrası imzalanan anlaşmalarla imparatorluk fiilen sona ermiş ve yerini 1923 yılında kurulan modern Türkiye Cumhuriyeti'ne bırakmıştır."
  dbo_dhe_destiny.1012.a: "Harika!"
  # dbo_destiny_war_wolf_tN
+ dbo_dhe_destiny_war_wolf_common_desc: "$dbo_destiny_war_wolf_desc$"
+ dbo_dhe_destiny_war_wolf_common_option: "Auuuuuuu!"
  dbo_dhe_destiny.2001.title: "[ShowGovernmentReformName('dbo_destiny_war_wolf_t1')]"
  dbo_dhe_destiny.2002.title: "[ShowGovernmentReformName('dbo_destiny_war_wolf_t2')]"
  dbo_dhe_destiny.2003.title: "[ShowGovernmentReformName('dbo_destiny_war_wolf_t3')]"

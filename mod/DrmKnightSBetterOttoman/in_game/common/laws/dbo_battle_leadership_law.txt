@@ -1,4 +1,4 @@
-INJECT:battle_leadership_law = {
+﻿INJECT:battle_leadership_law = {
 	dbo_crown_command_policy = {
 		potential = {
 			has_or_had_tag = TUR
