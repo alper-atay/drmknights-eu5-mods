@@ -6,8 +6,8 @@
  dbo_conquest_black_sea_stamp: "$dbo_conquest_slogan_black_sea$ Damgası"
  dbo_conquest_nile_river_stamp: "$dbo_conquest_slogan_nile_river$ Damgası"
  dbo_conquest_europe_eastern_gate_stamp: "$dbo_conquest_slogan_europe_eastern_gate$ Damgası"
- dbo_conquest_turkish_renaissance_stamp: "$dbo_conquest_turkish_renaissance$ Damgası"
- dbo_conquest_pearl_of_east_stamp: "$dbo_conquest_pearl_of_east$ Damgası"
+ dbo_conquest_turkish_renaissance_stamp: "$dbo_conquest_slogan_turkish_renaissance$ Damgası"
+ dbo_conquest_pearl_of_east_stamp: "$dbo_conquest_slogan_pearl_of_east$ Damgası"
  # Desc
  dbo_conquest_anatolian_turks_stamp_desc: "$dbo_conquest_anatolian_turks$ başarıyla sağlandı ve artık daha güçlüyüz. Tüm [ShowCultureGroupName('turkic_group')] halkının anavatanı olarak bu topraklara kök salacağız!"
  dbo_conquest_rumelia_stamp_desc: "$dbo_conquest_rumelia$ başarıyla sağlandı ve artık daha güçlüyüz. Tüm [ShowCultureGroupName('turkic_group')] halkı olarak bu topraklara kök salacağız!"
