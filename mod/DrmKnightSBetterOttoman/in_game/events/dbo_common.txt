@@ -4,6 +4,7 @@ dbo_common.1 = {
 	type = country_event
 	title = dbo_common.1.title
 	desc = dbo_common.1.desc
+	orphan = yes
 	hidden = yes
 	trigger = {
 		tag = TUR
