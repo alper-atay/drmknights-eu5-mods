@@ -292,6 +292,7 @@ dbo_dhe_destiny.1009 = {
 	trigger = {
 		has_advance = pike_and_shot_advance
 		has_policy = dbo_advanced_devshirme_system
+		has_reform = government_reform:enderun_interior_service
 		NOT = {
 			has_reform = government_reform:dbo_destiny_advanced_devshirme_system
 		}
