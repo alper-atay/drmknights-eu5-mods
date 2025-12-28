@@ -3,7 +3,7 @@
 # 1-999 are reserved for the base events
 # 1001-1999 are reserved for the core destiny government reforms
 # 2001-2099 are reserved for the core destiny war wolf reforms
-# -
+# 3001-3999 are reserved for the laws
 # --
 # ---
 # dbo_destiny_alp_and_alperen
@@ -23,14 +23,14 @@ dbo_dhe_destiny.1001 = {
 	}
 	trigger = {
 		NOT = {
-			has_reform = government_reform:dbo_alp_and_alperen
+			has_reform = government_reform:dbo_destiny_alp_and_alperen
 		}
 	}
 	option = {
 		name = dbo_dhe_destiny.1001.a
 		historical_option = yes
-		set_variable = dbo_alp_and_alperen_obtained
-		add_reform = government_reform:dbo_alp_and_alperen
+		set_variable = dbo_destiny_alp_and_alperen_obtained
+		add_reform = government_reform:dbo_destiny_alp_and_alperen
 		dbo_event_mild_bonus = yes
 	}
 }
@@ -53,14 +53,14 @@ dbo_dhe_destiny.1002 = {
 	trigger = {
 		own_entire_province = province_definition:constantinople_province
 		NOT = {
-			has_reform = government_reform:dbo_cultural_capital_constantinople
+			has_reform = government_reform:dbo_destiny_cultural_capital_constantinople
 		}
 	}
 	option = {
 		name = dbo_dhe_destiny.1002.a
-		set_variable = dbo_cultural_capital_constantinople_obtained
 		historical_option = yes
-		add_reform = government_reform:dbo_cultural_capital_constantinople
+		set_variable = dbo_destiny_cultural_capital_constantinople_obtained
+		add_reform = government_reform:dbo_destiny_cultural_capital_constantinople
 		dbo_event_mild_bonus = yes
 	}
 }
@@ -83,14 +83,14 @@ dbo_dhe_destiny.1003 = {
 	trigger = {
 		own_entire_province = province_definition:constantinople_province
 		NOT = {
-			has_reform = government_reform:dbo_grand_bazaar
+			has_reform = government_reform:dbo_destiny_trade_center_grand_bazaar
 		}
 	}
 	option = {
 		name = dbo_dhe_destiny.1003.a
-		set_variable = dbo_trade_center_grand_bazaar_obtained
 		historical_option = yes
-		add_reform = government_reform:dbo_trade_center_grand_bazaar
+		set_variable = dbo_destiny_trade_center_grand_bazaar_obtained
+		add_reform = government_reform:dbo_destiny_trade_center_grand_bazaar
 		dbo_event_mild_bonus = yes
 	}
 }
@@ -120,14 +120,14 @@ dbo_dhe_destiny.1004 = {
 			has_advance = unlock_flying_battery_advance
 		}
 		NOT = {
-			has_reform = government_reform:dbo_great_bronze_cannon
+			has_reform = government_reform:dbo_destiny_great_bronze_cannon
 		}
 	}
 	option = {
 		name = dbo_dhe_destiny.1004.a
-		set_variable = dbo_great_bronze_cannon_obtained
 		historical_option = yes
-		add_reform = government_reform:dbo_great_bronze_cannon
+		set_variable = dbo_destiny_great_bronze_cannon_obtained
+		add_reform = government_reform:dbo_destiny_great_bronze_cannon
 		dbo_event_mild_bonus = yes
 	}
 }
@@ -150,14 +150,14 @@ dbo_dhe_destiny.1005 = {
 	trigger = {
 		own_entire_province = province_definition:smyrna_province
 		NOT = {
-			has_reform = government_reform:dbo_legacy_of_caka_bey
+			has_reform = government_reform:dbo_destiny_legacy_of_caka_bey
 		}
 	}
 	option = {
 		name = dbo_dhe_destiny.1005.a
 		historical_option = yes
-		set_variable = dbo_legacy_of_caka_bey_obtained
-		add_reform = government_reform:dbo_legacy_of_caka_bey
+		set_variable = dbo_destiny_legacy_of_caka_bey_obtained
+		add_reform = government_reform:dbo_destiny_legacy_of_caka_bey
 		dbo_event_mild_bonus = yes
 	}
 }
@@ -189,14 +189,14 @@ dbo_dhe_destiny.1006 = {
 			}
 		}
 		NOT = {
-			has_reform = government_reform:dbo_legacy_of_seljuks
+			has_reform = government_reform:dbo_destiny_legacy_of_seljuks
 		}
 	}
 	option = {
 		name = dbo_dhe_destiny.1006.a
 		historical_option = yes
-		set_variable = dbo_legacy_of_seljuks_obtained
-		add_reform = government_reform:dbo_legacy_of_seljuks
+		set_variable = dbo_destiny_legacy_of_seljuks_obtained
+		add_reform = government_reform:dbo_destiny_legacy_of_seljuks
 		dbo_event_mild_bonus = yes
 	}
 }
@@ -227,14 +227,14 @@ dbo_dhe_destiny.1007 = {
 			}
 		}
 		NOT = {
-			has_reform = government_reform:dbo_lessons_from_mongols
+			has_reform = government_reform:dbo_destiny_lessons_from_mongols
 		}
 	}
 	option = {
 		name = dbo_dhe_destiny.1007.a
 		historical_option = yes
-		set_variable = dbo_lessons_from_mongols_obtained
-		add_reform = government_reform:dbo_lessons_from_mongols
+		set_variable = dbo_destiny_lessons_from_mongols_obtained
+		add_reform = government_reform:dbo_destiny_lessons_from_mongols
 		dbo_event_mild_bonus = yes
 	}
 }
@@ -262,14 +262,14 @@ dbo_dhe_destiny.1008 = {
 			}
 		}
 		NOT = {
-			has_reform = government_reform:dbo_martolos_units
+			has_reform = government_reform:dbo_destiny_martolos_units
 		}
 	}
 	option = {
 		name = dbo_dhe_destiny.1008.a
 		historical_option = yes
-		set_variable = dbo_martolos_units_obtained
-		add_reform = government_reform:dbo_martolos_units
+		set_variable = dbo_destiny_martolos_units_obtained
+		add_reform = government_reform:dbo_destiny_martolos_units
 		dbo_event_mild_bonus = yes
 	}
 }
@@ -291,15 +291,16 @@ dbo_dhe_destiny.1009 = {
 	}
 	trigger = {
 		has_advance = pike_and_shot_advance
+		has_policy = dbo_advanced_devshirme_system
 		NOT = {
-			has_reform = government_reform:dbo_devshirme_system
+			has_reform = government_reform:dbo_destiny_advanced_devshirme_system
 		}
 	}
 	option = {
 		name = dbo_dhe_destiny.1009.a
 		historical_option = yes
-		set_variable = dbo_devshirme_system_obtained
-		add_reform = government_reform:dbo_devshirme_system
+		set_variable = dbo_destiny_advanced_devshirme_system_obtained
+		add_reform = government_reform:dbo_destiny_advanced_devshirme_system
 		dbo_event_mild_bonus = yes
 	}
 }
@@ -319,9 +320,9 @@ dbo_dhe_destiny.1010 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		has_reform = government_reform:dbo_lessons_from_mongols
+		has_reform = government_reform:dbo_destiny_lessons_from_mongols
 		NOT = {
-			has_reform = government_reform:dbo_modernized_timariot_system
+			has_reform = government_reform:dbo_destiny_modernized_timariot_system
 		}
 		AND = {
 			OR = {
@@ -364,8 +365,8 @@ dbo_dhe_destiny.1010 = {
 			}
 			remove_variable = dbo_lessons_from_mongols_obtained
 		}
-		set_variable = dbo_modernized_timariot_system_obtained
-		add_reform = government_reform:dbo_modernized_timariot_system
+		set_variable = dbo_destiny_modernized_timariot_system_obtained
+		add_reform = government_reform:dbo_destiny_modernized_timariot_system
 		dbo_event_mild_bonus = yes
 	}
 }
@@ -390,14 +391,14 @@ dbo_dhe_destiny.1011 = {
 			is_alive = yes
 		}
 		NOT = {
-			has_reform = government_reform:dbo_piri_reis
+			has_reform = government_reform:dbo_destiny_piri_reis
 		}
 	}
 	option = {
 		name = dbo_dhe_destiny.1011.a
 		historical_option = yes
-		set_variable = dbo_piri_reis_obtained
-		add_reform = government_reform:dbo_piri_reis
+		set_variable = dbo_destiny_piri_reis_obtained
+		add_reform = government_reform:dbo_destiny_piri_reis
 		dbo_event_mild_bonus = yes
 	}
 }
@@ -420,7 +421,7 @@ dbo_dhe_destiny.1012 = {
 	trigger = {
 		country_rank = country_rank:rank_empire
 		NOT = {
-			has_reform = government_reform:dbo_ottoman_empire
+			has_reform = government_reform:dbo_destiny_ottoman_empire
 		}
 		OR = {
 			has_reform = government_reform:legacy_of_the_ottomans
@@ -430,7 +431,6 @@ dbo_dhe_destiny.1012 = {
 	option = {
 		name = dbo_dhe_destiny.1012.a
 		historical_option = yes
-		set_variable = dbo_ottoman_empire_obtained
 		if = {
 			limit = {
 				has_reform = government_reform:legacy_of_the_ottomans
@@ -449,7 +449,8 @@ dbo_dhe_destiny.1012 = {
 		lock_government_reform_effect = {
 			type = turkish_pashas
 		}
-		add_reform = government_reform:dbo_ottoman_empire
+		set_variable = dbo_destiny_ottoman_empire_obtained
+		add_reform = government_reform:dbo_destiny_ottoman_empire
 		dbo_event_ultimate_bonus = yes
 	}
 }
@@ -692,5 +693,43 @@ dbo_dhe_destiny.2007 = {
 		add_reform = government_reform:dbo_destiny_war_wolf_t7
 		set_variable = dbo_destiny_war_wolf_t7_obtained
 		dbo_event_severe_bonus = yes
+	}
+}
+
+# dbo_advanced_devshirme_system
+dbo_dhe_destiny.3001 = {
+	title = dbo_dhe_destiny.3001.title
+	desc = dbo_dhe_destiny.3001.desc
+	historical_info = dbo_dhe_destiny.3001.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_advanced_devshirme_system.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		has_slavery = yes
+		has_advance = recruitment_law_advance
+		OR = {
+			has_policy = ottoman_war_slave_tax
+			has_policy = devshirme_system_policy
+		}
+		NOT = {
+			has_policy = dbo_advanced_devshirme_system
+		}
+		NOT = {
+			has_variable = devshirme_abolished
+		}
+	}
+	option = {
+		name = dbo_dhe_destiny.3001.a
+		historical_option = yes
+		add_policy = policy:dbo_advanced_devshirme_system
+		add_estate_satisfaction = {
+			type = estate_type:nobles_estate
+			value = estate_satisfaction_extreme_penalty
+		}
 	}
 }

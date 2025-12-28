@@ -59,9 +59,9 @@
 			}
 		}
 		custom_tooltip = {
-			text = dbo_destiny_devshirme_system_can_end_tooltip
+			text = dbo_destiny_advanced_devshirme_system_can_end_tooltip
 			c:TUR = {
-				has_variable = dbo_destiny_devshirme_system_obtained
+				has_variable = dbo_destiny_advanced_devshirme_system_obtained
 			}
 		}
 		custom_tooltip = {

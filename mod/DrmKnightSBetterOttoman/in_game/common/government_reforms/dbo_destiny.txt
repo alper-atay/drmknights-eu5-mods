@@ -185,7 +185,8 @@ dbo_destiny_advanced_devshirme_system = {
 	unique = yes
 	potential = {
 		has_or_had_tag = TUR
-		has_variable = dbo_destiny_devshirme_system_obtained
+		has_variable = dbo_destiny_advanced_devshirme_system_obtained
+		has_policy = dbo_advanced_devshirme_system
 	}
 	locked = {
 		is_locked_mechanic = {
