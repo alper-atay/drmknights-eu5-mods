@@ -1,4 +1,4 @@
-﻿dbo_conquest_arabian_peninsula_press_claims = {
+﻿dbo_conquest_arabian_peninsula_claim = {
 	type = situation
 	show_message = no
 	potential = {
@@ -20,7 +20,7 @@
 	automation_tick = never
 	price = price:dbo_casus_belli_price
 	cooldown = {
-		type = dbo_conquest_arabian_peninsula_press_claims_cooldown_key
+		type = dbo_conquest_arabian_peninsula_claim_cooldown_key
 		years = 2
 	}
 	select_trigger = {
@@ -86,7 +86,7 @@
 				exists = scope:target
 			}
 			custom_tooltip = {
-				text = dbo_conquest_arabian_peninsula_press_claims
+				text = dbo_conquest_arabian_peninsula_claim
 				scope:actor = {
 					trigger_event_silently = dbo_conquest.100
 				}

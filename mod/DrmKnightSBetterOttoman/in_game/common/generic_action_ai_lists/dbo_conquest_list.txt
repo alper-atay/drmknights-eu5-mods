@@ -3,6 +3,6 @@
 		can_see_situation = situation:dbo_conquest
 	}
 	actions = {
-		dbo_conquest_anatolian_turks_press_claims
+		dbo_conquest_anatolian_turks_claim
 	}
 }

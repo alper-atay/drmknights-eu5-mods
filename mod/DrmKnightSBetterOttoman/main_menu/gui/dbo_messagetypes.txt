@@ -1,4 +1,4 @@
-﻿PERFORM_dbo_conquest_arabian_peninsula_press_claims_ACTION = {
+﻿PERFORM_dbo_conquest_arabian_peninsula_claim_ACTION = {
 	log = yes
 	onmap = no
 	popup = yes
@@ -8,7 +8,7 @@
 	message_category = wars
 }
 
-WE_PERFORM_dbo_conquest_arabian_peninsula_press_claims_ACTION = {
+WE_PERFORM_dbo_conquest_arabian_peninsula_claim_ACTION = {
 	log = yes
 	onmap = no
 	popup = yes
@@ -18,7 +18,7 @@ WE_PERFORM_dbo_conquest_arabian_peninsula_press_claims_ACTION = {
 	message_category = wars
 }
 
-OTHER_PERFORMS_dbo_conquest_arabian_peninsula_press_claims_ACTION = {
+OTHER_PERFORMS_dbo_conquest_arabian_peninsula_claim_ACTION = {
 	log = yes
 	onmap = no
 	popup = no
@@ -28,7 +28,7 @@ OTHER_PERFORMS_dbo_conquest_arabian_peninsula_press_claims_ACTION = {
 	message_category = wars
 }
 
-PERFORM_dbo_conquest_fertile_crescent_press_claims_ACTION = {
+PERFORM_dbo_conquest_fertile_crescent_claim_ACTION = {
 	log = yes
 	onmap = no
 	popup = yes
@@ -38,7 +38,7 @@ PERFORM_dbo_conquest_fertile_crescent_press_claims_ACTION = {
 	message_category = wars
 }
 
-WE_PERFORM_dbo_conquest_fertile_crescent_press_claims_ACTION = {
+WE_PERFORM_dbo_conquest_fertile_crescent_claim_ACTION = {
 	log = yes
 	onmap = no
 	popup = yes
@@ -48,7 +48,7 @@ WE_PERFORM_dbo_conquest_fertile_crescent_press_claims_ACTION = {
 	message_category = wars
 }
 
-OTHER_PERFORMS_dbo_conquest_fertile_crescent_press_claims_ACTION = {
+OTHER_PERFORMS_dbo_conquest_fertile_crescent_claim_ACTION = {
 	log = yes
 	onmap = no
 	popup = no
@@ -58,7 +58,7 @@ OTHER_PERFORMS_dbo_conquest_fertile_crescent_press_claims_ACTION = {
 	message_category = wars
 }
 
-PERFORM_dbo_conquest_anatolian_turks_press_claims_ACTION = {
+PERFORM_dbo_conquest_anatolian_turks_claim_ACTION = {
 	log = yes
 	onmap = no
 	popup = yes
@@ -68,7 +68,7 @@ PERFORM_dbo_conquest_anatolian_turks_press_claims_ACTION = {
 	message_category = wars
 }
 
-WE_PERFORM_dbo_conquest_anatolian_turks_press_claims_ACTION = {
+WE_PERFORM_dbo_conquest_anatolian_turks_claim_ACTION = {
 	log = yes
 	onmap = no
 	popup = yes
@@ -78,7 +78,7 @@ WE_PERFORM_dbo_conquest_anatolian_turks_press_claims_ACTION = {
 	message_category = wars
 }
 
-OTHER_PERFORMS_dbo_conquest_anatolian_turks_press_claims_ACTION = {
+OTHER_PERFORMS_dbo_conquest_anatolian_turks_claim_ACTION = {
 	log = yes
 	onmap = no
 	popup = no
@@ -88,7 +88,7 @@ OTHER_PERFORMS_dbo_conquest_anatolian_turks_press_claims_ACTION = {
 	message_category = wars
 }
 
-PERFORM_dbo_conquest_black_sea_press_claims_ACTION = {
+PERFORM_dbo_conquest_black_sea_claim_ACTION = {
 	log = yes
 	onmap = no
 	popup = yes
@@ -98,7 +98,7 @@ PERFORM_dbo_conquest_black_sea_press_claims_ACTION = {
 	message_category = wars
 }
 
-WE_PERFORM_dbo_conquest_black_sea_press_claims_ACTION = {
+WE_PERFORM_dbo_conquest_black_sea_claim_ACTION = {
 	log = yes
 	onmap = no
 	popup = yes
@@ -108,7 +108,7 @@ WE_PERFORM_dbo_conquest_black_sea_press_claims_ACTION = {
 	message_category = wars
 }
 
-OTHER_PERFORMS_dbo_conquest_black_sea_press_claims_ACTION = {
+OTHER_PERFORMS_dbo_conquest_black_sea_claim_ACTION = {
 	log = yes
 	onmap = no
 	popup = no
@@ -118,7 +118,7 @@ OTHER_PERFORMS_dbo_conquest_black_sea_press_claims_ACTION = {
 	message_category = wars
 }
 
-PERFORM_dbo_conquest_rumelia_press_claims_ACTION = {
+PERFORM_dbo_conquest_rumelia_claim_ACTION = {
 	log = yes
 	onmap = no
 	popup = yes
@@ -128,7 +128,7 @@ PERFORM_dbo_conquest_rumelia_press_claims_ACTION = {
 	message_category = wars
 }
 
-WE_PERFORM_dbo_conquest_rumelia_press_claims_ACTION = {
+WE_PERFORM_dbo_conquest_rumelia_claim_ACTION = {
 	log = yes
 	onmap = no
 	popup = yes
@@ -138,7 +138,7 @@ WE_PERFORM_dbo_conquest_rumelia_press_claims_ACTION = {
 	message_category = wars
 }
 
-OTHER_PERFORMS_dbo_conquest_rumelia_press_claims_ACTION = {
+OTHER_PERFORMS_dbo_conquest_rumelia_claim_ACTION = {
 	log = yes
 	onmap = no
 	popup = no
@@ -148,7 +148,7 @@ OTHER_PERFORMS_dbo_conquest_rumelia_press_claims_ACTION = {
 	message_category = wars
 }
 
-PERFORM_dbo_conquest_nile_river_press_claims_ACTION = {
+PERFORM_dbo_conquest_nile_river_claim_ACTION = {
 	log = yes
 	onmap = no
 	popup = yes
@@ -158,7 +158,7 @@ PERFORM_dbo_conquest_nile_river_press_claims_ACTION = {
 	message_category = wars
 }
 
-WE_PERFORM_dbo_conquest_nile_river_press_claims_ACTION = {
+WE_PERFORM_dbo_conquest_nile_river_claim_ACTION = {
 	log = yes
 	onmap = no
 	popup = yes
@@ -168,7 +168,7 @@ WE_PERFORM_dbo_conquest_nile_river_press_claims_ACTION = {
 	message_category = wars
 }
 
-OTHER_PERFORMS_dbo_conquest_nile_river_press_claims_ACTION = {
+OTHER_PERFORMS_dbo_conquest_nile_river_claim_ACTION = {
 	log = yes
 	onmap = no
 	popup = no

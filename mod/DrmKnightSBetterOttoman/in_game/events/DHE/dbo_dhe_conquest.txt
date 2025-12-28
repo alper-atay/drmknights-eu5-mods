@@ -28,7 +28,7 @@ dbo_dhe_conquest.1001 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_conquest.1001.a
+		name = dbo_dhe_conquest_common_option
 		historical_option = yes
 		set_variable = dbo_conquest_anatolian_turks_stamp_obtained
 		add_reform = government_reform:dbo_conquest_anatolian_turks
@@ -59,7 +59,7 @@ dbo_dhe_conquest.1002 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_conquest.1.a
+		name = dbo_dhe_conquest_common_option
 		historical_option = yes
 		set_variable = dbo_conquest_rumelia_stamp_obtained
 		add_reform = government_reform:dbo_conquest_rumelia_stamp
@@ -90,7 +90,7 @@ dbo_dhe_conquest.1003 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_conquest.1003.a
+		name = dbo_dhe_conquest_common_option
 		historical_option = yes
 		set_variable = dbo_conquest_fertile_crescent_stamp_obtained
 		add_reform = government_reform:dbo_conquest_fertile_crescent_stamp
@@ -121,7 +121,7 @@ dbo_dhe_conquest.1004 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_conquest.1004.a
+		name = dbo_dhe_conquest_common_option
 		historical_option = yes
 		set_variable = dbo_conquest_arabian_peninsula_stamp_obtained
 		add_reform = government_reform:dbo_conquest_arabian_peninsula_stamp
@@ -152,7 +152,7 @@ dbo_dhe_conquest.1005 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_conquest.1005.a
+		name = dbo_dhe_conquest_common_option
 		historical_option = yes
 		set_variable = dbo_conquest_nile_river_stamp_obtained
 		add_reform = government_reform:dbo_conquest_nile_river_stamp
@@ -183,7 +183,7 @@ dbo_dhe_conquest.1006 = {
 		}
 	}
 	option = {
-		name = dbo_conquest.1006.a
+		name = dbo_dhe_conquest_common_option
 		historical_option = yes
 		set_variable = dbo_conquest_black_sea_stamp_obtained
 		add_reform = government_reform:dbo_conquest_black_sea_stamp
@@ -196,7 +196,6 @@ dbo_dhe_conquest.1007 = {
 	type = country_event
 	title = dbo_dhe_conquest.1007.title
 	desc = dbo_dhe_conquest.1007.desc
-	historical_info = dbo_dhe_conquest.1007.historical_info
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_europe_eastern_gate.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -214,7 +213,7 @@ dbo_dhe_conquest.1007 = {
 		}
 	}
 	option = {
-		name = dbo_conquest.1007.a
+		name = dbo_dhe_conquest_common_option
 		historical_option = yes
 		set_variable = dbo_conquest_europe_eastern_gate_stamp_obtained
 		add_reform = government_reform:dbo_conquest_europe_eastern_gate_stamp
@@ -222,3 +221,62 @@ dbo_dhe_conquest.1007 = {
 	}
 }
 
+# dbo_conquest_turkish_renaissance_stamp
+dbo_dhe_conquest.1008 = {
+	type = country_event
+	title = dbo_dhe_conquest.1008.title
+	desc = dbo_dhe_conquest.1008.desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_turkish_renaissance.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		NOT = {
+			has_reform = government_reform:dbo_conquest_turkish_renaissance_stamp
+		}
+		c:TUR = {
+			dbo_conquest_turkish_renaissance_check = yes
+		}
+	}
+	option = {
+		name = dbo_dhe_conquest_common_option
+		historical_option = yes
+		set_variable = dbo_conquest_turkish_renaissance_stamp_obtained
+		add_reform = government_reform:dbo_conquest_turkish_renaissance_stamp
+		dbo_event_extreme_bonus = yes
+	}
+}
+
+# dbo_conquest_pearl_of_east_stamp
+dbo_dhe_conquest.1009 = {
+	type = country_event
+	title = dbo_dhe_conquest.1009.title
+	desc = dbo_dhe_conquest.1009.desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_pearl_of_east.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		NOT = {
+			has_reform = government_reform:dbo_conquest_pearl_of_east_stamp
+		}
+		c:TUR = {
+			dbo_conquest_pearl_of_east_check = yes
+		}
+	}
+	option = {
+		name = dbo_dhe_conquest_common_option
+		historical_option = yes
+		set_variable = dbo_conquest_pearl_of_east_stamp_obtained
+		add_reform = government_reform:dbo_conquest_pearl_of_east_stamp
+		dbo_event_extreme_bonus = yes
+	}
+}

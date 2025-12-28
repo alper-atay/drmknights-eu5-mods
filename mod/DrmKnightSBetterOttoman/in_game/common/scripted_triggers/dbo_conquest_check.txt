@@ -92,7 +92,6 @@ dbo_conquest_nile_river_check = {
 }
 
 dbo_conquest_europe_eastern_gate_check = {
-	has_variable = dbo_conquest_black_sea_stamp_obtained
 	own_entire_area = area:north_alfold_area
 	own_entire_area = area:south_alfold_area
 	own_entire_area = area:transdanubia_area
@@ -103,4 +102,32 @@ dbo_conquest_europe_eastern_gate_check = {
 	own_entire_area = area:croatia_area
 	own_entire_area = area:slavonia_area
 	own_entire_area = area:slovenia_area
+}
+
+dbo_conquest_turkish_renaissance_check = {
+	own_entire_area = area:abruzzo_area
+	own_entire_area = area:apulia_area
+	own_entire_area = area:basilicata_area
+	own_entire_area = area:campania_area
+	own_entire_area = area:emilia_area
+	own_entire_area = area:lazio_area
+	own_entire_area = area:liguria_area
+	own_entire_area = area:lombardy_area
+	own_entire_area = area:marche_area
+	own_entire_area = area:piemonte_area
+	own_entire_area = area:sardinia_area
+	own_entire_area = area:sicily_area
+	own_entire_area = area:tuscany_area
+	own_entire_area = area:veneto_area
+}
+
+dbo_conquest_pearl_of_east_check = {
+	own_entire_area = area:azerbaijan_area
+	own_entire_area = area:mazandaran_area
+	own_entire_area = area:kordestan_area
+	own_entire_area = area:iraq_ajam_area
+	own_entire_area = area:khuzestan_area
+	own_entire_area = area:fars_area
+	own_entire_area = area:kerman_area
+	own_entire_area = area:quhestan_area
 }

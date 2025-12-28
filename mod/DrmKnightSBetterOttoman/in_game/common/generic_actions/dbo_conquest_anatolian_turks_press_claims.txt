@@ -1,4 +1,4 @@
-﻿dbo_conquest_anatolian_turks_press_claims = {
+﻿dbo_conquest_anatolian_turks_claim = {
 	type = situation
 	show_message = no
 	potential = {
@@ -22,7 +22,7 @@
 	automation_tick_frequency = 12
 	price = price:dbo_casus_belli_price
 	cooldown = {
-		type = dbo_conquest_anatolian_turks_press_claims_cooldown_key
+		type = dbo_conquest_anatolian_turks_claim_cooldown_key
 		years = 2
 	}
 	select_trigger = {
@@ -116,7 +116,7 @@
 				exists = scope:target
 			}
 			custom_tooltip = {
-				text = dbo_conquest_anatolian_turks_press_claims
+				text = dbo_conquest_anatolian_turks_claim
 				scope:actor = {
 					trigger_event_silently = dbo_conquest.100
 				}

@@ -34,7 +34,6 @@ dbo_conquest_rumelia_stamp = {
 	}
 	country_modifier = {
 		power_projection = 5
-		tolerance_heathen = 1
 		tolerance_heretic = 1
 		cultures_capacity = 1
 		cultures_capacity_modifier = 0.25
@@ -82,7 +81,7 @@ dbo_conquest_arabian_peninsula_stamp = {
 	country_modifier = {
 		power_projection = 5
 		tolerance_own = 1
-		global_pop_conversion_speed = 20
+		global_pop_conversion_speed = 0.02
 		global_pop_conversion_speed_modifier = 0.2
 		monthly_rebel_growth = -0.001
 		government_reform_slots = 1
@@ -154,6 +153,53 @@ dbo_conquest_europe_eastern_gate_stamp = {
 		global_goods_gold_output_modifier = 0.1
 		global_silver_output_modifier = 0.1
 		minting_income_factor = 0.2
+		government_reform_slots = 1
+	}
+}
+
+dbo_conquest_turkish_renaissance_stamp = {
+	unique = yes
+	potential = {
+		has_or_had_tag = TUR
+		has_variable = dbo_conquest_turkish_renaissance_stamp_obtained
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = government_reform
+			type = dbo_conquest_turkish_renaissance_stamp
+		}
+	}
+	country_modifier = {
+		power_projection = 5
+		tolerance_heretic = 1
+		bank_interest = -0.03
+		total_loan_capacity_modifier = 0.5
+		merchant_power_from_maritime = 0.1
+		global_institution_growth_modifier = 0.1
+		embrace_institution_cost_modifier = -0.1
+		government_reform_slots = 1
+	}
+}
+
+dbo_conquest_pearl_of_east_stamp = {
+	unique = yes
+	potential = {
+		has_or_had_tag = TUR
+		has_variable = dbo_conquest_pearl_of_east_stamp_obtained
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = government_reform
+			type = dbo_conquest_pearl_of_east_stamp
+		}
+	}
+	country_modifier = {
+		power_projection = 5
+		tolerance_heathen = 1
+		global_pop_conversion_speed = 0.01
+		global_pop_conversion_speed_modifier = 0.1
+		global_institution_growth_modifier = 0.1
+		embrace_institution_cost_modifier = -0.1
 		government_reform_slots = 1
 	}
 }
