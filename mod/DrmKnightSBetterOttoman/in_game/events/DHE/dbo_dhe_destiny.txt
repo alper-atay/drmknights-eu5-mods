@@ -3,14 +3,17 @@
 # 1-999 are reserved for the base events
 # 1001-1999 are reserved for the core destiny government reforms
 # 2001-2099 are reserved for the core destiny war wolf reforms
-# Reform: Alp and Alperen
+# -
+# --
+# ---
+# dbo_destiny_alp_and_alperen
 dbo_dhe_destiny.1001 = {
 	type = country_event
 	title = dbo_dhe_destiny.1001.title
 	desc = dbo_dhe_destiny.1001.desc
 	historical_info = dbo_dhe_destiny.1001.historical_info
 	fire_only_once = yes
-	image = "gfx/interface/illustrations/situation/dbo_destiny.dds"
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_alp_and_alperen.dds"
 	outcome = positive
 	dynamic_historical_event = {
 		tag = TUR
@@ -32,14 +35,14 @@ dbo_dhe_destiny.1001 = {
 	}
 }
 
-# Reform: Cultural Capital Constantinople
+# dbo_destiny_cultural_capital_constantinople
 dbo_dhe_destiny.1002 = {
 	type = country_event
 	title = dbo_dhe_destiny.1002.title
 	desc = dbo_dhe_destiny.1002.desc
 	historical_info = dbo_dhe_destiny.1002.historical_info
 	fire_only_once = yes
-	image = "gfx/interface/illustrations/situation/dbo_destiny.dds"
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_cultural_capital_constantinople.dds"
 	outcome = positive
 	dynamic_historical_event = {
 		tag = TUR
@@ -62,14 +65,14 @@ dbo_dhe_destiny.1002 = {
 	}
 }
 
-# Reform: Trade Center Grand Bazaar
+# dbo_destiny_trade_center_grand_bazaar
 dbo_dhe_destiny.1003 = {
 	type = country_event
 	title = dbo_dhe_destiny.1003.title
 	desc = dbo_dhe_destiny.1003.desc
 	historical_info = dbo_dhe_destiny.1003.historical_info
 	fire_only_once = yes
-	image = "gfx/interface/illustrations/situation/dbo_destiny.dds"
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_trade_center_grand_bazaar.dds"
 	outcome = positive
 	dynamic_historical_event = {
 		tag = TUR
@@ -92,14 +95,14 @@ dbo_dhe_destiny.1003 = {
 	}
 }
 
-# Reform: Great Bronze Cannon
+# dbo_destiny_great_bronze_cannon
 dbo_dhe_destiny.1004 = {
 	type = country_event
 	title = dbo_dhe_destiny.1004.title
 	desc = dbo_dhe_destiny.1004.desc
 	historical_info = dbo_dhe_destiny.1004.historical_info
 	fire_only_once = yes
-	image = "gfx/interface/illustrations/situation/dbo_destiny.dds"
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_great_bronze_cannon.dds"
 	outcome = positive
 	dynamic_historical_event = {
 		tag = TUR
@@ -129,14 +132,14 @@ dbo_dhe_destiny.1004 = {
 	}
 }
 
-# Reform: Legacy of Caka Bey
+# dbo_destiny_legacy_of_caka_bey
 dbo_dhe_destiny.1005 = {
 	type = country_event
 	title = dbo_dhe_destiny.1005.title
 	desc = dbo_dhe_destiny.1005.desc
 	historical_info = dbo_dhe_destiny.1005.historical_info
 	fire_only_once = yes
-	image = "gfx/interface/illustrations/situation/dbo_destiny.dds"
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_legacy_of_caka_bey.dds"
 	outcome = positive
 	dynamic_historical_event = {
 		tag = TUR
@@ -159,14 +162,14 @@ dbo_dhe_destiny.1005 = {
 	}
 }
 
-# Reform: Legacy of Seljuks
+# dbo_destiny_legacy_of_seljuks
 dbo_dhe_destiny.1006 = {
 	type = country_event
 	title = dbo_dhe_destiny.1006.title
 	desc = dbo_dhe_destiny.1006.desc
 	historical_info = dbo_dhe_destiny.1006.historical_info
 	fire_only_once = yes
-	image = "gfx/interface/illustrations/situation/dbo_destiny.dds"
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_legacy_of_seljuks.dds"
 	outcome = positive
 	dynamic_historical_event = {
 		tag = TUR
@@ -198,14 +201,14 @@ dbo_dhe_destiny.1006 = {
 	}
 }
 
-# Reform: Lessons from Mongols
+# dbo_destiny_lessons_from_mongols
 dbo_dhe_destiny.1007 = {
 	type = country_event
 	title = dbo_dhe_destiny.1007.title
 	desc = dbo_dhe_destiny.1007.desc
 	historical_info = dbo_dhe_destiny.1007.historical_info
 	fire_only_once = yes
-	image = "gfx/interface/illustrations/situation/dbo_destiny.dds"
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_lessons_from_mongols.dds"
 	outcome = positive
 	dynamic_historical_event = {
 		tag = TUR
@@ -236,14 +239,14 @@ dbo_dhe_destiny.1007 = {
 	}
 }
 
-# Reform: Martolos Units
+# dbo_destiny_martolos_units
 dbo_dhe_destiny.1008 = {
 	type = country_event
 	title = dbo_dhe_destiny.1008.title
 	desc = dbo_dhe_destiny.1008.desc
 	historical_info = dbo_dhe_destiny.1008.historical_info
 	fire_only_once = yes
-	image = "gfx/interface/illustrations/situation/dbo_destiny.dds"
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_martolos_units.dds"
 	outcome = positive
 	dynamic_historical_event = {
 		tag = TUR
@@ -271,14 +274,14 @@ dbo_dhe_destiny.1008 = {
 	}
 }
 
-# Reform: Devshirme System
+# dbo_destiny_advanced_devshirme_system
 dbo_dhe_destiny.1009 = {
 	type = country_event
 	title = dbo_dhe_destiny.1009.title
 	desc = dbo_dhe_destiny.1009.desc
 	historical_info = dbo_dhe_destiny.1009.historical_info
 	fire_only_once = yes
-	image = "gfx/interface/illustrations/situation/dbo_destiny.dds"
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_advanced_devshirme_system.dds"
 	outcome = positive
 	dynamic_historical_event = {
 		tag = TUR
@@ -301,14 +304,13 @@ dbo_dhe_destiny.1009 = {
 	}
 }
 
-# Reform: Modernized Timariot System
+# dbo_destiny_modernized_timariot_system
 dbo_dhe_destiny.1010 = {
 	type = country_event
 	title = dbo_dhe_destiny.1010.title
 	desc = dbo_dhe_destiny.1010.desc
-	historical_info = dbo_dhe_destiny.1010.historical_info
 	fire_only_once = yes
-	image = "gfx/interface/illustrations/situation/dbo_destiny.dds"
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_modernized_timariot_system.dds"
 	outcome = positive
 	dynamic_historical_event = {
 		tag = TUR
@@ -368,14 +370,14 @@ dbo_dhe_destiny.1010 = {
 	}
 }
 
-# Reform: Piri Reis
+# dbo_destiny_piri_reis
 dbo_dhe_destiny.1011 = {
 	type = country_event
 	title = dbo_dhe_destiny.1011.title
 	desc = dbo_dhe_destiny.1011.desc
 	historical_info = dbo_dhe_destiny.1011.historical_info
 	fire_only_once = yes
-	image = "gfx/interface/illustrations/situation/dbo_destiny.dds"
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_piri_reis.dds"
 	outcome = positive
 	dynamic_historical_event = {
 		tag = TUR
@@ -400,14 +402,14 @@ dbo_dhe_destiny.1011 = {
 	}
 }
 
-# Reform: Ottoman Empire
+# dbo_destiny_ottoman_empire
 dbo_dhe_destiny.1012 = {
 	type = country_event
 	title = dbo_dhe_destiny.1012.title
 	desc = dbo_dhe_destiny.1012.desc
 	historical_info = dbo_dhe_destiny.1012.historical_info
 	fire_only_once = yes
-	image = "gfx/interface/illustrations/situation/dbo_destiny.dds"
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_ottoman_empire.dds"
 	outcome = positive
 	dynamic_historical_event = {
 		tag = TUR
@@ -452,12 +454,13 @@ dbo_dhe_destiny.1012 = {
 	}
 }
 
+# dbo_destiny_war_wolf_t1
 dbo_dhe_destiny.2001 = {
 	type = country_event
 	title = dbo_dhe_destiny.2001.title
 	desc = dbo_dhe_destiny_war_wolf_common_desc
 	fire_only_once = yes
-	image = "gfx/interface/illustrations/situation/dbo_destiny.dds"
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_war_wolf_t1.dds"
 	outcome = positive
 	dynamic_historical_event = {
 		tag = TUR
@@ -482,12 +485,13 @@ dbo_dhe_destiny.2001 = {
 	}
 }
 
+# dbo_destiny_war_wolf_t2
 dbo_dhe_destiny.2002 = {
 	type = country_event
 	title = dbo_dhe_destiny.2002.title
 	desc = dbo_dhe_destiny_war_wolf_common_desc
 	fire_only_once = yes
-	image = "gfx/interface/illustrations/situation/dbo_destiny.dds"
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_war_wolf_t2.dds"
 	outcome = positive
 	dynamic_historical_event = {
 		tag = TUR
@@ -516,12 +520,13 @@ dbo_dhe_destiny.2002 = {
 	}
 }
 
+# dbo_destiny_war_wolf_t3
 dbo_dhe_destiny.2003 = {
 	type = country_event
 	title = dbo_dhe_destiny.2003.title
 	desc = dbo_dhe_destiny_war_wolf_common_desc
 	fire_only_once = yes
-	image = "gfx/interface/illustrations/situation/dbo_destiny.dds"
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_war_wolf_t3.dds"
 	outcome = positive
 	dynamic_historical_event = {
 		tag = TUR
@@ -537,7 +542,7 @@ dbo_dhe_destiny.2003 = {
 			has_variable = dbo_destiny_war_wolf_t3_obtained
 		}
 		num_locations >= 300
-		num_of_non_rural >= 300
+		num_of_non_rural >= 50
 	}
 	option = {
 		name = dbo_dhe_destiny_war_wolf_common_option
@@ -550,12 +555,13 @@ dbo_dhe_destiny.2003 = {
 	}
 }
 
+# dbo_destiny_war_wolf_t4
 dbo_dhe_destiny.2004 = {
 	type = country_event
 	title = dbo_dhe_destiny.2004.title
 	desc = dbo_dhe_destiny_war_wolf_common_desc
 	fire_only_once = yes
-	image = "gfx/interface/illustrations/situation/dbo_destiny.dds"
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_war_wolf_t4.dds"
 	outcome = positive
 	dynamic_historical_event = {
 		tag = TUR
@@ -570,8 +576,8 @@ dbo_dhe_destiny.2004 = {
 			has_reform = government_reform:dbo_destiny_war_wolf_t4
 			has_variable = dbo_destiny_war_wolf_t4_obtained
 		}
-		num_locations >= 500
-		num_of_non_rural >= 50
+		num_locations >= 600
+		num_of_non_rural >= 100
 	}
 	option = {
 		name = dbo_dhe_destiny_war_wolf_common_option
@@ -584,12 +590,13 @@ dbo_dhe_destiny.2004 = {
 	}
 }
 
+# dbo_destiny_war_wolf_t5
 dbo_dhe_destiny.2005 = {
 	type = country_event
 	title = dbo_dhe_destiny.2005.title
 	desc = dbo_dhe_destiny_war_wolf_common_desc
 	fire_only_once = yes
-	image = "gfx/interface/illustrations/situation/dbo_destiny.dds"
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_war_wolf_t5.dds"
 	outcome = positive
 	dynamic_historical_event = {
 		tag = TUR
@@ -604,8 +611,8 @@ dbo_dhe_destiny.2005 = {
 			has_reform = government_reform:dbo_destiny_war_wolf_t5
 			has_variable = dbo_destiny_war_wolf_t5_obtained
 		}
-		num_locations >= 750
-		num_of_non_rural >= 75
+		num_locations >= 1000
+		num_of_non_rural >= 200
 	}
 	option = {
 		name = dbo_dhe_destiny_war_wolf_common_option
@@ -618,12 +625,13 @@ dbo_dhe_destiny.2005 = {
 	}
 }
 
+# dbo_destiny_war_wolf_t6
 dbo_dhe_destiny.2006 = {
 	type = country_event
 	title = dbo_dhe_destiny.2006.title
 	desc = dbo_dhe_destiny_war_wolf_common_desc
 	fire_only_once = yes
-	image = "gfx/interface/illustrations/situation/dbo_destiny.dds"
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_war_wolf_t6.dds"
 	outcome = positive
 	dynamic_historical_event = {
 		tag = TUR
@@ -638,8 +646,8 @@ dbo_dhe_destiny.2006 = {
 			has_reform = government_reform:dbo_destiny_war_wolf_t6
 			has_variable = dbo_destiny_war_wolf_t6_obtained
 		}
-		num_locations >= 1000
-		num_of_non_rural >= 100
+		num_locations >= 1500
+		num_of_non_rural >= 500
 	}
 	option = {
 		name = dbo_dhe_destiny_war_wolf_common_option
@@ -652,12 +660,13 @@ dbo_dhe_destiny.2006 = {
 	}
 }
 
+# dbo_destiny_war_wolf_t7
 dbo_dhe_destiny.2007 = {
 	type = country_event
 	title = dbo_dhe_destiny.2007.title
 	desc = dbo_dhe_destiny_war_wolf_common_desc
 	fire_only_once = yes
-	image = "gfx/interface/illustrations/situation/dbo_destiny.dds"
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_war_wolf_t7.dds"
 	outcome = positive
 	dynamic_historical_event = {
 		tag = TUR
@@ -672,8 +681,8 @@ dbo_dhe_destiny.2007 = {
 			has_reform = government_reform:dbo_destiny_war_wolf_t7
 			has_variable = dbo_destiny_war_wolf_t7_obtained
 		}
-		num_locations >= 1500
-		num_of_non_rural >= 150
+		num_locations >= 2500
+		num_of_non_rural >= 1000
 	}
 	option = {
 		name = dbo_dhe_destiny_war_wolf_common_option
