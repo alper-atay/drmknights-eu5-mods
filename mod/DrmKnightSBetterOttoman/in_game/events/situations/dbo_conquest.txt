@@ -4,11 +4,12 @@ dbo_conquest.1 = {
 	category = situation_event
 	title = dbo_conquest.1.title
 	desc = dbo_conquest.1.desc
-	image = "gfx/interface/illustrations/situation/dbo_conqest.dds"
+	image = "gfx/interface/illustrations/situation/dbo_conquest.dds"
 	option = {
 		name = dbo_conquest.1.a
 	}
 }
+
 dbo_conquest.100 = {
 	type = country_event
 	category = situation_event
