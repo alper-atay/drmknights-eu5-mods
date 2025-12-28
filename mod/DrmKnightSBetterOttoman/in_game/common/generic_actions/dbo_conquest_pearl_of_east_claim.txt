@@ -12,7 +12,7 @@
 				situation_has_ended = yes
 			}
 			NOT = {
-				has_variable = dbo_conquest_rumelia_obtained
+				has_variable = dbo_conquest_pearl_of_east_obtained
 			}
 		}
 	}
@@ -62,14 +62,16 @@
 			}
 			trigger_if = {
 				OR = {
-					area = area:bosnia_area
-					area = area:albania_area
-					area = area:bulgaria_area
-					area = area:macedonia_area
-					area = area:morea_area
-					area = area:northern_greece_area
-					area = area:serbia_area
-					area = area:thrace_area
+					own_entire_area = area:azerbaijan_area
+					own_entire_area = area:baluchistan_area
+					own_entire_area = area:fars_area
+					own_entire_area = area:iraq_ajam_area
+					own_entire_area = area:kerman_area
+					own_entire_area = area:khuzestan_area
+					own_entire_area = area:kordestan_area
+					own_entire_area = area:mazandaran_area
+					own_entire_area = area:quhestan_area
+					own_entire_area = area:sistan_area
 				}
 			}
 			any_location_in_province = {
