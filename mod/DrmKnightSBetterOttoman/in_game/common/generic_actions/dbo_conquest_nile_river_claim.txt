@@ -1,4 +1,4 @@
-﻿dbo_conquest_fertile_crescent_claim = {
+﻿dbo_conquest_nile_river_claim = {
 	type = situation
 	show_message = no
 	potential = {
@@ -12,15 +12,17 @@
 				situation_has_ended = yes
 			}
 			NOT = {
-				has_reform = government_reform:dbo_conquest_fertile_crescent
+				has_variable = dbo_conquest_nile_river_obtained
 			}
 		}
 	}
 	ai_tick = never
+	ai_tick_frequency = 3
 	automation_tick = never
+	automation_tick_frequency = 12
 	price = price:dbo_casus_belli_price
 	cooldown = {
-		type = dbo_conquest_fertile_crescent_claim_cooldown_key
+		type = dbo_conquest_nile_river_claim_cooldown_key
 		years = 2
 	}
 	select_trigger = {
@@ -60,7 +62,7 @@
 			}
 			trigger_if = {
 				OR = {
-					region = region:crescent_region
+					region = region:egypt_region
 				}
 			}
 			any_location_in_province = {
@@ -86,7 +88,7 @@
 				exists = scope:target
 			}
 			custom_tooltip = {
-				text = dbo_conquest_fertile_crescent_claim
+				text = dbo_conquest_nile_river_claim
 				scope:actor = {
 					trigger_event_silently = dbo_conquest.100
 				}

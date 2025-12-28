@@ -2,7 +2,7 @@
 	unique = yes
 	potential = {
 		has_or_had_tag = TUR
-		has_variable = dbo_conquest_anatolian_turks_stamp_obtained
+		has_variable = dbo_conquest_anatolian_turks_obtained
 	}
 	locked = {
 		is_locked_mechanic = {
@@ -24,7 +24,7 @@ dbo_conquest_rumelia_stamp = {
 	unique = yes
 	potential = {
 		has_or_had_tag = TUR
-		has_variable = dbo_conquest_rumelia_stamp_obtained
+		has_variable = dbo_conquest_rumelia_obtained
 	}
 	locked = {
 		is_locked_mechanic = {
@@ -48,7 +48,7 @@ dbo_conquest_fertile_crescent_stamp = {
 	unique = yes
 	potential = {
 		has_or_had_tag = TUR
-		has_variable = dbo_conquest_fertile_crescent_stamp_obtained
+		has_variable = dbo_conquest_fertile_crescent_obtained
 	}
 	locked = {
 		is_locked_mechanic = {
@@ -70,7 +70,7 @@ dbo_conquest_arabian_peninsula_stamp = {
 	unique = yes
 	potential = {
 		has_or_had_tag = TUR
-		has_variable = dbo_conquest_arabian_peninsula_stamp_obtained
+		has_variable = dbo_conquest_arabian_peninsula_obtained
 	}
 	locked = {
 		is_locked_mechanic = {
@@ -92,7 +92,7 @@ dbo_conquest_nile_river_stamp = {
 	unique = yes
 	potential = {
 		has_or_had_tag = TUR
-		has_variable = dbo_conquest_nile_river_stamp_obtained
+		has_variable = dbo_conquest_nile_river_obtained
 	}
 	locked = {
 		is_locked_mechanic = {
@@ -114,7 +114,7 @@ dbo_conquest_black_sea_stamp = {
 	unique = yes
 	potential = {
 		has_or_had_tag = TUR
-		has_variable = dbo_conquest_black_sea_stamp_obtained
+		has_variable = dbo_conquest_black_sea_obtained
 	}
 	locked = {
 		is_locked_mechanic = {
@@ -139,7 +139,7 @@ dbo_conquest_europe_eastern_gate_stamp = {
 	unique = yes
 	potential = {
 		has_or_had_tag = TUR
-		has_variable = dbo_conquest_europe_eastern_gate_stamp_obtained
+		has_variable = dbo_conquest_europe_eastern_gate_obtained
 	}
 	locked = {
 		is_locked_mechanic = {
@@ -161,7 +161,7 @@ dbo_conquest_turkish_renaissance_stamp = {
 	unique = yes
 	potential = {
 		has_or_had_tag = TUR
-		has_variable = dbo_conquest_turkish_renaissance_stamp_obtained
+		has_variable = dbo_conquest_turkish_renaissance_obtained
 	}
 	locked = {
 		is_locked_mechanic = {
@@ -185,7 +185,7 @@ dbo_conquest_pearl_of_east_stamp = {
 	unique = yes
 	potential = {
 		has_or_had_tag = TUR
-		has_variable = dbo_conquest_pearl_of_east_stamp_obtained
+		has_variable = dbo_conquest_pearl_of_east_obtained
 	}
 	locked = {
 		is_locked_mechanic = {

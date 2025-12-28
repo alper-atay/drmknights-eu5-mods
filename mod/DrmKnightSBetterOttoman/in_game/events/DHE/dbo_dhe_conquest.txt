@@ -30,7 +30,7 @@ dbo_dhe_conquest.1001 = {
 	option = {
 		name = dbo_dhe_conquest_common_option
 		historical_option = yes
-		set_variable = dbo_conquest_anatolian_turks_stamp_obtained
+		set_variable = dbo_conquest_anatolian_turks_obtained
 		add_reform = government_reform:dbo_conquest_anatolian_turks
 		dbo_event_extreme_bonus = yes
 	}
@@ -61,7 +61,7 @@ dbo_dhe_conquest.1002 = {
 	option = {
 		name = dbo_dhe_conquest_common_option
 		historical_option = yes
-		set_variable = dbo_conquest_rumelia_stamp_obtained
+		set_variable = dbo_conquest_rumelia_obtained
 		add_reform = government_reform:dbo_conquest_rumelia_stamp
 		dbo_event_extreme_bonus = yes
 	}
@@ -92,7 +92,7 @@ dbo_dhe_conquest.1003 = {
 	option = {
 		name = dbo_dhe_conquest_common_option
 		historical_option = yes
-		set_variable = dbo_conquest_fertile_crescent_stamp_obtained
+		set_variable = dbo_conquest_fertile_crescent_obtained
 		add_reform = government_reform:dbo_conquest_fertile_crescent_stamp
 		dbo_event_extreme_bonus = yes
 	}
@@ -123,7 +123,7 @@ dbo_dhe_conquest.1004 = {
 	option = {
 		name = dbo_dhe_conquest_common_option
 		historical_option = yes
-		set_variable = dbo_conquest_arabian_peninsula_stamp_obtained
+		set_variable = dbo_conquest_arabian_peninsula_obtained
 		add_reform = government_reform:dbo_conquest_arabian_peninsula_stamp
 		dbo_event_extreme_bonus = yes
 	}
@@ -154,7 +154,7 @@ dbo_dhe_conquest.1005 = {
 	option = {
 		name = dbo_dhe_conquest_common_option
 		historical_option = yes
-		set_variable = dbo_conquest_nile_river_stamp_obtained
+		set_variable = dbo_conquest_nile_river_obtained
 		add_reform = government_reform:dbo_conquest_nile_river_stamp
 		dbo_event_extreme_bonus = yes
 	}
@@ -185,7 +185,7 @@ dbo_dhe_conquest.1006 = {
 	option = {
 		name = dbo_dhe_conquest_common_option
 		historical_option = yes
-		set_variable = dbo_conquest_black_sea_stamp_obtained
+		set_variable = dbo_conquest_black_sea_obtained
 		add_reform = government_reform:dbo_conquest_black_sea_stamp
 		dbo_event_extreme_bonus = yes
 	}
@@ -215,7 +215,7 @@ dbo_dhe_conquest.1007 = {
 	option = {
 		name = dbo_dhe_conquest_common_option
 		historical_option = yes
-		set_variable = dbo_conquest_europe_eastern_gate_stamp_obtained
+		set_variable = dbo_conquest_europe_eastern_gate_obtained
 		add_reform = government_reform:dbo_conquest_europe_eastern_gate_stamp
 		dbo_event_extreme_bonus = yes
 	}
@@ -245,7 +245,7 @@ dbo_dhe_conquest.1008 = {
 	option = {
 		name = dbo_dhe_conquest_common_option
 		historical_option = yes
-		set_variable = dbo_conquest_turkish_renaissance_stamp_obtained
+		set_variable = dbo_conquest_turkish_renaissance_obtained
 		add_reform = government_reform:dbo_conquest_turkish_renaissance_stamp
 		dbo_event_extreme_bonus = yes
 	}
@@ -275,7 +275,7 @@ dbo_dhe_conquest.1009 = {
 	option = {
 		name = dbo_dhe_conquest_common_option
 		historical_option = yes
-		set_variable = dbo_conquest_pearl_of_east_stamp_obtained
+		set_variable = dbo_conquest_pearl_of_east_obtained
 		add_reform = government_reform:dbo_conquest_pearl_of_east_stamp
 		dbo_event_extreme_bonus = yes
 	}
