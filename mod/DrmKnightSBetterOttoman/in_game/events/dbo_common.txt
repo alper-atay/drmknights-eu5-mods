@@ -1,8 +1,9 @@
-﻿namespace = dbo_leader_of_muslims
-dbo_leader_of_muslims.1 = {
+﻿namespace = dbo_common
+# Leader of Muslims
+dbo_common.1 = {
 	type = country_event
-	title = dbo_leader_of_muslims.1.title
-	desc = dbo_leader_of_muslims.1.desc
+	title = dbo_common.1.title
+	desc = dbo_common.1.desc
 	hidden = yes
 	dynamic_historical_event = {
 		tag = TUR
@@ -46,6 +47,6 @@ dbo_leader_of_muslims.1 = {
 		}
 	}
 	option = {
-		name = dbo_leader_of_muslims.1.a
+		name = dbo_common.1.a
 	}
 }
