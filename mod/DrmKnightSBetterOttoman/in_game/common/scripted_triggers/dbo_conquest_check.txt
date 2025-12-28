@@ -92,6 +92,7 @@ dbo_conquest_nile_river_check = {
 }
 
 dbo_conquest_europe_eastern_gate_check = {
+	has_variable = dbo_conquest_black_sea_stamp_obtained
 	own_entire_area = area:north_alfold_area
 	own_entire_area = area:south_alfold_area
 	own_entire_area = area:transdanubia_area
@@ -99,4 +100,7 @@ dbo_conquest_europe_eastern_gate_check = {
 	own_entire_area = area:slovakia_area
 	own_entire_area = area:transylvania_area
 	own_entire_area = area:wallachia_area
+	own_entire_area = area:croatia_area
+	own_entire_area = area:slavonia_area
+	own_entire_area = area:slovenia_area
 }
