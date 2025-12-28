@@ -11,6 +11,8 @@
 				situation_is_active = no
 				situation_has_ended = yes
 			}
+			has_variable = dbo_conquest_anatolian_turks_obtained
+			has_variable = dbo_conquest_rumelia_obtained
 			NOT = {
 				has_variable = dbo_conquest_turkish_renaissance_obtained
 			}

@@ -11,6 +11,7 @@
 				situation_is_active = no
 				situation_has_ended = yes
 			}
+			has_variable = dbo_conquest_fertile_crescent_obtained
 			NOT = {
 				has_variable = dbo_conquest_pearl_of_east_obtained
 			}

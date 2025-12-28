@@ -11,6 +11,9 @@
 				situation_is_active = no
 				situation_has_ended = yes
 			}
+			own_entire_province = province_definition:edirne_province
+			own_entire_province = province_definition:dardanelles_province
+			own_entire_province = province_definition:constantinople_province
 			NOT = {
 				has_variable = dbo_conquest_rumelia_obtained
 			}

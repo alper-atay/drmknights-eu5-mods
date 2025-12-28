@@ -51,7 +51,7 @@
  dbo_conquest_turkish_renaissance_claim: "$dbo_conquest_turkish_renaissance$"
  dbo_conquest_turkish_renaissance_claim_desc: "[Concept('areas', 'Alanlar')|e]; [ShowAreaName('abruzzo_area')], [ShowAreaName('apulia_area')], [ShowAreaName('basilicata_area')], [ShowAreaName('campania_area')], [ShowAreaName('emilia_area')], [ShowAreaName('lazio_area')], [ShowAreaName('liguria_area')], [ShowAreaName('lombardy_area')], [ShowAreaName('marche_area')], [ShowAreaName('piemonte_area')], [ShowAreaName('sardinia_area')], [ShowAreaName('sicily_area')], [ShowAreaName('tuscany_area')], [ShowAreaName('veneto_area')]."
  dbo_conquest_pearl_of_east_claim: "$dbo_conquest_pearl_of_east$"
- dbo_conquest_pearl_of_east_claim_desc: "[Concept('areas', 'Alanlar'|e)]; [ShowAreaName('')], [ShowAreaName('')], [ShowAreaName('')], [ShowAreaName('')], [ShowAreaName('')], [ShowAreaName('')], [ShowAreaName('')], [ShowAreaName('')], [ShowAreaName('')], [ShowAreaName('')], [ShowAreaName('')], [ShowAreaName('')]."
+ dbo_conquest_pearl_of_east_claim_desc: "[Concept('areas', 'Alanlar'|e)]; [ShowAreaName('azerbaijan_area')], [ShowAreaName('baluchistan_area')], [ShowAreaName('fars_area')], [ShowAreaName('iraq_ajam_area')], [ShowAreaName('kerman_area')], [ShowAreaName('khuzestan_area')], [ShowAreaName('kordestan_area')], [ShowAreaName('mazandaran_area')], [ShowAreaName('quhestan_area')], [ShowAreaName('sistan_area')]."
 #Tooltips
  dbo_conquest_anatolian_turks_can_end_tooltip: "$dbo_conquest_anatolian_turks$ #sağlarsan [ShowGovernmentReformName('dbo_conquest_anatolian_turks_stamp')] elde edersin."
  dbo_conquest_rumelia_can_end_tooltip: "$dbo_conquest_rumelia$ sağlarsan [ShowGovernmentReformName('dbo_conquest_rumelia_stamp')] elde edersin."
