@@ -174,7 +174,6 @@ dbo_conquest_turkish_renaissance_stamp = {
 		tolerance_heretic = 1
 		bank_interest = -0.03
 		total_loan_capacity_modifier = 0.5
-		merchant_power_from_maritime = 0.1
 		global_institution_growth_modifier = 0.1
 		embrace_institution_cost_modifier = -0.1
 		government_reform_slots = 1

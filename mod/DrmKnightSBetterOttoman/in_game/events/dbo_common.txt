@@ -5,15 +5,9 @@ dbo_common.1 = {
 	title = dbo_common.1.title
 	desc = dbo_common.1.desc
 	hidden = yes
-	dynamic_historical_event = {
-		tag = TUR
-		from = 1337.1.1
-		to = 1837.1.1
-		monthly_chance = 100
-	}
 	trigger = {
-		own_entire_province = province_definition:constantinople_province
 		tag = TUR
+		own_entire_province = province_definition:constantinople_province
 		religion.group = religion_group:muslim
 		any_current_war = {
 			any_defender = {
