@@ -1,5 +1,5 @@
 ﻿namespace = dbo_dhe_destiny
-# Ottoman DHE
+# dbo_dhe_destiny
 # 1-999 are reserved for the base events
 # 1001-1999 are reserved for the core destiny government reforms
 # 2001-2099 are reserved for the core destiny war wolf reforms

@@ -45,6 +45,28 @@ dbo_conquest_rumelia_stamp = {
 	}
 }
 
+dbo_conquest_fertile_crescent_stamp = {
+	unique = yes
+	potential = {
+		has_or_had_tag = TUR
+		has_variable = dbo_conquest_fertile_crescent_stamp_obtained
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = government_reform
+			type = dbo_conquest_fertile_crescent_stamp
+		}
+	}
+	country_modifier = {
+		power_projection = 5
+		global_max_rgo_size_modifier = 0.1
+		global_raw_material_output = 0.1
+		global_rgo_build_time = -0.1
+		global_population_growth = 0.001
+		government_reform_slots = 1
+	}
+}
+
 dbo_conquest_arabian_peninsula_stamp = {
 	unique = yes
 	potential = {
@@ -63,6 +85,28 @@ dbo_conquest_arabian_peninsula_stamp = {
 		global_pop_conversion_speed = 20
 		global_pop_conversion_speed_modifier = 0.2
 		monthly_rebel_growth = -0.001
+		government_reform_slots = 1
+	}
+}
+
+dbo_conquest_nile_river_stamp = {
+	unique = yes
+	potential = {
+		has_or_had_tag = TUR
+		has_variable = dbo_conquest_nile_river_stamp_obtained
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = government_reform
+			type = dbo_conquest_nile_river_stamp
+		}
+	}
+	country_modifier = {
+		power_projection = 5
+		cultures_capacity = 1
+		cultures_capacity_modifier = 0.25
+		global_institution_growth_modifier = 0.1
+		global_population_growth = 0.001
 		government_reform_slots = 1
 	}
 }
@@ -92,50 +136,6 @@ dbo_conquest_black_sea_stamp = {
 	}
 }
 
-dbo_conquest_fertile_crescent_stamp = {
-	unique = yes
-	potential = {
-		has_or_had_tag = TUR
-		has_variable = dbo_conquest_fertile_crescent_stamp_obtained
-	}
-	locked = {
-		is_locked_mechanic = {
-			mechanic = government_reform
-			type = dbo_conquest_fertile_crescent_stamp
-		}
-	}
-	country_modifier = {
-		power_projection = 5
-		global_max_rgo_size_modifier = 0.1
-		global_raw_material_output = 0.1
-		global_rgo_build_time = -0.1
-		global_population_growth = 0.001
-		government_reform_slots = 1
-	}
-}
-
-dbo_conquest_nile_river_stamp = {
-	unique = yes
-	potential = {
-		has_or_had_tag = TUR
-		has_variable = dbo_conquest_nile_river_stamp_obtained
-	}
-	locked = {
-		is_locked_mechanic = {
-			mechanic = government_reform
-			type = dbo_conquest_nile_river_stamp
-		}
-	}
-	country_modifier = {
-		power_projection = 5
-		cultures_capacity = 1
-		cultures_capacity_modifier = 0.25
-		global_institution_growth_modifier = 0.1
-		global_population_growth = 0.001
-		government_reform_slots = 1
-	}
-}
-
 dbo_conquest_europe_eastern_gate_stamp = {
 	unique = yes
 	potential = {
@@ -153,7 +153,7 @@ dbo_conquest_europe_eastern_gate_stamp = {
 		global_merchant_power = 0.1
 		global_goods_gold_output_modifier = 0.1
 		global_silver_output_modifier = 0.1
-		minting_income_factor = 0.20
+		minting_income_factor = 0.2
 		government_reform_slots = 1
 	}
 }

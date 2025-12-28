@@ -1,9 +1,16 @@
 ﻿namespace = dbo_dhe_conquest
-dbo_dhe_conquest.1 = {
+# dbo_dhe_conquest
+# 1-999 are reserved for the base events
+# 1001-1099 are reserved for the stamp events
+# -
+# --
+# ---
+# dbo_conquest_anatolian_turks_stamp
+dbo_dhe_conquest.1001 = {
 	type = country_event
-	title = dbo_dhe_conquest.1.title
-	desc = dbo_dhe_conquest.1.desc
-	historical_info = dbo_dhe_conquest.1.historical_info
+	title = dbo_dhe_conquest.1001.title
+	desc = dbo_dhe_conquest.1001.desc
+	historical_info = dbo_dhe_conquest.1001.historical_info
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
@@ -13,30 +20,26 @@ dbo_dhe_conquest.1 = {
 	}
 	trigger = {
 		NOT = {
-			has_reform = government_reform:dbo_conquest_anatolian_turks
+			has_reform = government_reform:dbo_conquest_anatolian_turks_stamp
 		}
 		c:TUR = {
-			dbo_conquest_anatolian_turks_achieved = yes
+			dbo_conquest_anatolian_turks_check = yes
 		}
 	}
 	option = {
-		name = dbo_dhe_conquest.1.a
-		set_variable = {
-			name = dbo_conquest_anatolian_turks
-			value = yes
-		}
+		name = dbo_dhe_conquest.1001.a
 		historical_option = yes
+		set_variable = dbo_conquest_anatolian_turks_stamp_obtained
 		add_reform = government_reform:dbo_conquest_anatolian_turks
-		add_legitimacy = legitimacy_extreme_bonus
-		add_stability = stability_extreme_bonus
-		add_prestige = prestige_extreme_bonus
+		dbo_event_extreme_bonus = yes
 	}
 }
 
-dbo_dhe_conquest.2 = {
+# dbo_conquest_rumelia_stamp
+dbo_dhe_conquest.1002 = {
 	type = country_event
-	title = dbo_dhe_conquest.2.title
-	desc = dbo_dhe_conquest.2.desc
+	title = dbo_dhe_conquest.1002.title
+	desc = dbo_dhe_conquest.1002.desc
 	historical_info = dbo_dhe_conquest.2.historical_info
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -47,31 +50,27 @@ dbo_dhe_conquest.2 = {
 	}
 	trigger = {
 		NOT = {
-			has_reform = government_reform:dbo_conquest_rumelia
+			has_reform = government_reform:dbo_conquest_rumelia_stamp
 		}
 		c:TUR = {
-			dbo_conquest_rumelia_achieved = yes
+			dbo_conquest_rumelia_check = yes
 		}
 	}
 	option = {
 		name = dbo_dhe_conquest.1.a
-		set_variable = {
-			name = dbo_conquest_rumelia
-			value = yes
-		}
 		historical_option = yes
-		add_reform = government_reform:dbo_conquest_rumelia
-		add_legitimacy = legitimacy_extreme_bonus
-		add_stability = stability_extreme_bonus
-		add_prestige = prestige_extreme_bonus
+		set_variable = dbo_conquest_rumelia_stamp_obtained
+		add_reform = government_reform:dbo_conquest_rumelia_stamp
+		dbo_event_extreme_bonus = yes
 	}
 }
 
-dbo_dhe_conquest.3 = {
+# dbo_conquest_fertile_crescent_stamp
+dbo_dhe_conquest.1003 = {
 	type = country_event
-	title = dbo_dhe_conquest.3.title
-	desc = dbo_dhe_conquest.3.desc
-	historical_info = dbo_dhe_conquest.3.historical_info
+	title = dbo_dhe_conquest.1003.title
+	desc = dbo_dhe_conquest.1003.desc
+	historical_info = dbo_dhe_conquest.1003.historical_info
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
@@ -81,31 +80,27 @@ dbo_dhe_conquest.3 = {
 	}
 	trigger = {
 		NOT = {
-			has_reform = government_reform:dbo_conquest_fertile_crescent
+			has_reform = government_reform:dbo_conquest_fertile_crescent_stamp
 		}
 		c:TUR = {
-			dbo_conquest_fertile_crescent_achieved = yes
+			dbo_conquest_fertile_crescent_check = yes
 		}
 	}
 	option = {
-		name = dbo_dhe_conquest.1.a
-		set_variable = {
-			name = dbo_conquest_fertile_crescent
-			value = yes
-		}
+		name = dbo_dhe_conquest.1003.a
 		historical_option = yes
-		add_reform = government_reform:dbo_conquest_fertile_crescent
-		add_legitimacy = legitimacy_extreme_bonus
-		add_stability = stability_extreme_bonus
-		add_prestige = prestige_extreme_bonus
+		set_variable = dbo_conquest_fertile_crescent_stamp_obtained
+		add_reform = government_reform:dbo_conquest_fertile_crescent_stamp
+		dbo_event_extreme_bonus = yes
 	}
 }
 
-dbo_dhe_conquest.4 = {
+# dbo_conquest_arabian_peninsula_stamp
+dbo_dhe_conquest.1004 = {
 	type = country_event
-	title = dbo_dhe_conquest.4.title
-	desc = dbo_dhe_conquest.4.desc
-	historical_info = dbo_dhe_conquest.4.historical_info
+	title = dbo_dhe_conquest.1004.title
+	desc = dbo_dhe_conquest.1004.desc
+	historical_info = dbo_dhe_conquest.1004.historical_info
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
@@ -115,31 +110,27 @@ dbo_dhe_conquest.4 = {
 	}
 	trigger = {
 		NOT = {
-			has_reform = government_reform:dbo_conquest_arabian_peninsula
+			has_reform = government_reform:dbo_conquest_arabian_peninsula_stamp
 		}
 		c:TUR = {
-			dbo_conquest_arabian_peninsula_achieved = yes
+			dbo_conquest_arabian_peninsula_check = yes
 		}
 	}
 	option = {
-		name = dbo_dhe_conquest.1.a
-		set_variable = {
-			name = dbo_conquest_arabian_peninsula
-			value = yes
-		}
+		name = dbo_dhe_conquest.1004.a
 		historical_option = yes
-		add_reform = government_reform:dbo_conquest_arabian_peninsula
-		add_legitimacy = legitimacy_extreme_bonus
-		add_stability = stability_extreme_bonus
-		add_prestige = prestige_extreme_bonus
+		set_variable = dbo_conquest_arabian_peninsula_stamp_obtained
+		add_reform = government_reform:dbo_conquest_arabian_peninsula_stamp
+		dbo_event_extreme_bonus = yes
 	}
 }
 
-dbo_dhe_conquest.5 = {
+# dbo_conquest_nile_river_stamp
+dbo_dhe_conquest.1005 = {
 	type = country_event
-	title = dbo_dhe_conquest.5.title
-	desc = dbo_dhe_conquest.5.desc
-	historical_info = dbo_dhe_conquest.5.historical_info
+	title = dbo_dhe_conquest.1005.title
+	desc = dbo_dhe_conquest.1005.desc
+	historical_info = dbo_dhe_conquest.1005.historical_info
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
@@ -149,31 +140,27 @@ dbo_dhe_conquest.5 = {
 	}
 	trigger = {
 		NOT = {
-			has_reform = government_reform:dbo_conquest_nile_river
+			has_reform = government_reform:dbo_conquest_nile_river_stamp
 		}
 		c:TUR = {
-			dbo_conquest_nile_river_achieved = yes
+			dbo_conquest_nile_river_check = yes
 		}
 	}
 	option = {
-		name = dbo_dhe_conquest.1.a
-		set_variable = {
-			name = dbo_conquest_nile_river
-			value = yes
-		}
+		name = dbo_dhe_conquest.1005.a
 		historical_option = yes
-		add_reform = government_reform:dbo_conquest_nile_river
-		add_legitimacy = legitimacy_extreme_bonus
-		add_stability = stability_extreme_bonus
-		add_prestige = prestige_extreme_bonus
+		set_variable = dbo_conquest_nile_river_stamp_obtained
+		add_reform = government_reform:dbo_conquest_nile_river_stamp
+		dbo_event_extreme_bonus = yes
 	}
 }
 
-dbo_dhe_conquest.6 = {
+# dbo_conquest_black_sea_stamp
+dbo_dhe_conquest.1006 = {
 	type = country_event
-	title = dbo_dhe_conquest.6.title
-	desc = dbo_dhe_conquest.6.desc
-	historical_info = dbo_dhe_conquest.6.historical_info
+	title = dbo_dhe_conquest.1006.title
+	desc = dbo_dhe_conquest.1006.desc
+	historical_info = dbo_dhe_conquest.1006.historical_info
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
@@ -183,22 +170,47 @@ dbo_dhe_conquest.6 = {
 	}
 	trigger = {
 		NOT = {
-			has_reform = government_reform:dbo_conquest_black_sea
+			has_reform = government_reform:dbo_conquest_black_sea_stamp
 		}
 		c:TUR = {
-			dbo_conquest_black_sea_achieved = yes
+			dbo_conquest_black_sea_check = yes
 		}
 	}
 	option = {
-		name = dbo_conquest.1.a
-		set_variable = {
-			name = dbo_conquest_black_sea
-			value = yes
-		}
+		name = dbo_conquest.1006.a
 		historical_option = yes
-		add_reform = government_reform:dbo_conquest_black_sea
-		add_legitimacy = legitimacy_extreme_bonus
-		add_stability = stability_extreme_bonus
-		add_prestige = prestige_extreme_bonus
+		set_variable = dbo_conquest_black_sea_stamp_obtained
+		add_reform = government_reform:dbo_conquest_black_sea_stamp
+		dbo_event_extreme_bonus = yes
+	}
+}
+
+# dbo_conquest_europe_eastern_gate_stamp
+dbo_dhe_conquest.1007 = {
+	type = country_event
+	title = dbo_dhe_conquest.1007.title
+	desc = dbo_dhe_conquest.1007.desc
+	historical_info = dbo_dhe_conquest.1007.historical_info
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		NOT = {
+			has_reform = government_reform:dbo_conquest_europe_eastern_gate_stamp
+		}
+		c:TUR = {
+			dbo_conquest_europe_eastern_gate_check = yes
+		}
+	}
+	option = {
+		name = dbo_conquest.1007.a
+		historical_option = yes
+		set_variable = dbo_conquest_europe_eastern_gate_stamp_obtained
+		add_reform = government_reform:dbo_conquest_black_sea_stamp
+		dbo_event_extreme_bonus = yes
 	}
 }
