@@ -191,7 +191,7 @@ dbo_destiny_advanced_devshirme_system = {
 	locked = {
 		is_locked_mechanic = {
 			mechanic = government_reform
-			type = dbo_destiny_devshirme_system
+			type = dbo_destiny_advanced_devshirme_system
 		}
 	}
 	country_modifier = {

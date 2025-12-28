@@ -322,6 +322,7 @@ dbo_dhe_destiny.1010 = {
 	}
 	trigger = {
 		has_reform = government_reform:dbo_destiny_lessons_from_mongols
+		has_variable = dbo_destiny_lessons_from_mongols_obtained
 		NOT = {
 			has_reform = government_reform:dbo_destiny_modernized_timariot_system
 		}
@@ -354,18 +355,8 @@ dbo_dhe_destiny.1010 = {
 			}
 			remove_variable = expanded_timariot_system
 		}
-		if = {
-			limit = {
-				has_reform = government_reform:dbo_lessons_from_mongols
-			}
-			remove_reform = government_reform:dbo_lessons_from_mongols
-		}
-		if = {
-			limit = {
-				has_variable = dbo_lessons_from_mongols_obtained
-			}
-			remove_variable = dbo_lessons_from_mongols_obtained
-		}
+		remove_reform = government_reform:dbo_destiny_lessons_from_mongols
+		remove_variable = dbo_destiny_lessons_from_mongols_obtained
 		set_variable = dbo_destiny_modernized_timariot_system_obtained
 		add_reform = government_reform:dbo_destiny_modernized_timariot_system
 		dbo_event_mild_bonus = yes

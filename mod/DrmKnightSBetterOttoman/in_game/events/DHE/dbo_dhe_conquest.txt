@@ -31,7 +31,7 @@ dbo_dhe_conquest.1001 = {
 		name = dbo_dhe_conquest_common_option
 		historical_option = yes
 		set_variable = dbo_conquest_anatolian_turks_obtained
-		add_reform = government_reform:dbo_conquest_anatolian_turks
+		add_reform = government_reform:dbo_conquest_anatolian_turks_stamp
 		dbo_event_extreme_bonus = yes
 	}
 }
