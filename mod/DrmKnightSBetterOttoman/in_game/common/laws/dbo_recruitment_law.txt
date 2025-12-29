@@ -1,5 +1,5 @@
 ﻿INJECT:recruitment_law = {
-	dbo_advanced_devshirme_system_law = {
+	dbo_advanced_devshirme_system_policy = {
 		potential = {
 			has_or_had_tag = TUR
 		}
@@ -10,6 +10,7 @@
 			NOT = {
 				current_age = age_2_renaissance
 			}
+			has_slavery = yes
 			custom_tooltip = {
 				text = devshirme_system_policy_why_tt
 				NOT = {

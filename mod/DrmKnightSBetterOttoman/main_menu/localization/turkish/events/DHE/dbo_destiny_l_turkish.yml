@@ -68,8 +68,8 @@
  dbo_dhe_destiny.2005.title: "[ShowGovernmentReformName('dbo_destiny_war_wolf_t5')] [Concept('government_reform', 'Hükûmet Islahatı')|e]"
  dbo_dhe_destiny.2006.title: "[ShowGovernmentReformName('dbo_destiny_war_wolf_t6')] [Concept('government_reform', 'Hükûmet Islahatı')|e]"
  dbo_dhe_destiny.2007.title: "[ShowGovernmentReformName('dbo_destiny_war_wolf_t7')] [Concept('government_reform', 'Hükûmet Islahatı')|e]"
- # dbo_advanced_devshirme_system_law
- dbo_dhe_destiny.3001.title: "[ShowLawName('dbo_advanced_devshirme_system_law')] [Concept('law', 'Kanununu')|e]"
+ # dbo_advanced_devshirme_system_policy
+ dbo_dhe_destiny.3001.title: "[ShowLawName('dbo_advanced_devshirme_system_policy')] [Concept('law', 'Kanununu')|e]"
  dbo_dhe_destiny.3001.desc: "$dbo_dhe_destiny.1009.desc$"
  dbo_dhe_destiny.3001.historical_info: "$dbo_dhe_destiny.1009.historical_info$"
  

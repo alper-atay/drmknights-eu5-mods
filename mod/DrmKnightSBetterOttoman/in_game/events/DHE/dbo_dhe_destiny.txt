@@ -291,7 +291,7 @@ dbo_dhe_destiny.1009 = {
 	}
 	trigger = {
 		has_advance = pike_and_shot_advance
-		has_policy = dbo_advanced_devshirme_system_law
+		has_policy = dbo_advanced_devshirme_system_policy
 		has_reform = government_reform:enderun_interior_service
 		NOT = {
 			has_reform = government_reform:dbo_destiny_advanced_devshirme_system
@@ -326,12 +326,9 @@ dbo_dhe_destiny.1010 = {
 		NOT = {
 			has_reform = government_reform:dbo_destiny_modernized_timariot_system
 		}
-		AND = {
-			OR = {
-				has_variable = expanded_timariot_system
-				has_variable = abolished_timariot_system
-			}
-			has_advance = timariots
+		OR = {
+			has_variable = expanded_timariot_system
+			has_variable = abolished_timariot_system
 		}
 	}
 	option = {
@@ -688,7 +685,7 @@ dbo_dhe_destiny.2007 = {
 	}
 }
 
-# dbo_advanced_devshirme_system_law
+# dbo_advanced_devshirme_system_policy
 dbo_dhe_destiny.3001 = {
 	title = dbo_dhe_destiny.3001.title
 	desc = dbo_dhe_destiny.3001.desc
@@ -709,7 +706,7 @@ dbo_dhe_destiny.3001 = {
 			has_policy = devshirme_system_policy
 		}
 		NOT = {
-			has_policy = dbo_advanced_devshirme_system_law
+			has_policy = dbo_advanced_devshirme_system_policy
 		}
 		NOT = {
 			has_variable = devshirme_abolished
@@ -718,7 +715,7 @@ dbo_dhe_destiny.3001 = {
 	option = {
 		name = dbo_dhe_destiny.3001.a
 		historical_option = yes
-		add_policy = policy:dbo_advanced_devshirme_system_law
+		add_policy = policy:dbo_advanced_devshirme_system_policy
 		add_estate_satisfaction = {
 			type = estate_type:nobles_estate
 			value = estate_satisfaction_extreme_penalty
