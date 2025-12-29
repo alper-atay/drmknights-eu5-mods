@@ -1,0 +1,30 @@
+﻿dbo_leader_of_muslims = {
+	potential_trigger = {
+		c:TUR = {
+			own_entire_province = province_definition:constantinople_province
+		}
+		at_war = yes
+		any_current_war = {
+			any_defender = {
+				tag = TUR
+			}
+			any_attacker = {
+				religion.group = religion_group:muslim
+			}
+		}
+	}
+	monthly_legitimacy = -0.5
+	monthly_tribal_cohesion = -0.5
+	monthly_devotion = -0.5
+	monthly_horde_unity = -0.5
+	monthly_republican_tradition = -0.5
+	add_legitimacy = legitimacy_weak_penalty
+	add_stability = stability_weak_penalty
+	add_prestige = prestige_weak_penalty
+	every_pop = {
+		limit = {
+			religion.group = religion_group:muslim
+		}
+		add_pop_satisfaction = pop_satisfaction_weak_penalty
+	}
+}

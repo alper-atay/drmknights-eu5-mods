@@ -1,3 +1,5 @@
 ﻿l_turkish:
  MODIFIER_TYPE_NAME_dbo_casus_belli_price_cost_modifier: "Hak İddiasında Bulunma Maliyet Etkeni"
  MODIFIER_TYPE_DESC_dbo_casus_belli_price_cost_modifier: "[ShowSituationName('dbo_conquest')] eylemlerinin [Concept('costs', 'Maliyetini')|e] düzenler."
+ MODIFIER_TYPE_NAME_ruler_must_be_commander_during_war: "Müslümanların'ın Lideri [GetCountry('TUR').GetName]"
+ MODIFIER_TYPE_DESC_ruler_must_be_commander_during_war: "İstanbul’un fethiyle Osmanlı, Hz. Muhammed’in müjdesine nail olarak İslam dünyasında rakipsiz bir manevi prestij kazanmıştır.\nFatih Sultan Mehmed, Kayser-i Rum unvanını alarak evrensel bir imparatorluk kurmuş ve kendisini diğer Müslüman hükümdarların üstünde, İslam’ın tek koruyucusu olarak konumlandırmıştır.\nZafernamelerle diğer İslam devletlerine gücünü kabul ettiren Osmanlı, İstanbul’u ilim merkezi yaparak kültürel liderliği de ele geçirmiştir.\nBu süreç, Hicaz üzerindeki nüfuz mücadelesini başlatmış ve Osmanlı’nın İslam dünyasındaki mutlak hegemonyasının temelini atmıştır."
