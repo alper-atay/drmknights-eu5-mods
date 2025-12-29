@@ -4,12 +4,6 @@
 			has_or_had_tag = TUR
 		}
 		allow = {
-			NOT = {
-				current_age = age_1_traditions
-			}
-			NOT = {
-				current_age = age_2_renaissance
-			}
 			has_slavery = yes
 			custom_tooltip = {
 				text = devshirme_system_policy_why_tt
