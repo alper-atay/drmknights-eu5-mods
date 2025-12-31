@@ -5,13 +5,10 @@
 	context_menu_click_mode = click
 	message = no
 	ai_tick = daily
-	ai_tick_frequency = 120
+	ai_tick_frequency = 40
 	potential = {
 		scope:actor = {
-			OR = {
-				tag = TUR
-				tag = TIM
-			}
+			tag = TUR
 		}
 	}
 	allow = {
@@ -26,6 +23,9 @@
 		}
 		visible = {
 			is_alive = yes
+			is_adult = yes
+			is_female = no
+			has_estate = estate_type:crown_estate
 		}
 		enabled = {
 			is_alive = yes
@@ -53,8 +53,8 @@
 						80
 					}
 					mil = {
-						40
-						60
+						50
+						70
 					}
 					age = 16
 					add_character_modifier = {
@@ -82,16 +82,9 @@
 			}
 		}
 		add = {
-			if = {
-				limit = {
-					scope:recipient = {
-						is_female = no
-					}
-				}
-				value = 4
-				subtract = scope:recipient.num_of_spouses
-				multiply = 25
-			}
+			value = 4
+			subtract = scope:recipient.num_of_spouses
+			multiply = 25
 		}
 		add = {
 			if = {
@@ -147,19 +140,6 @@
 		}
 		add = {
 			value = scope:recipient.total_abilities
-		}
-		add = {
-			if = {
-				limit = {
-					scope:recipient = {
-						is_female = yes
-						age_in_years > 35
-					}
-				}
-				value = 35
-				subtract = scope:recipient.age_in_years
-				multiply = 10
-			}
 		}
 	}
 }

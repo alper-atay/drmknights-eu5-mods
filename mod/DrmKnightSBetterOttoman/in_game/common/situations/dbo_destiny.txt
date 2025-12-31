@@ -87,6 +87,9 @@
 					has_variable = dbo_destiny_war_wolf_t5_obtained
 					has_variable = dbo_destiny_war_wolf_t6_obtained
 					has_variable = dbo_destiny_war_wolf_t7_obtained
+					has_variable = dbo_destiny_war_wolf_t8_obtained
+					has_variable = dbo_destiny_war_wolf_t9_obtained
+					has_variable = dbo_destiny_war_wolf_t10_obtained
 				}
 			}
 		}
@@ -100,6 +103,9 @@
 					has_variable = dbo_destiny_war_wolf_t5_obtained
 					has_variable = dbo_destiny_war_wolf_t6_obtained
 					has_variable = dbo_destiny_war_wolf_t7_obtained
+					has_variable = dbo_destiny_war_wolf_t8_obtained
+					has_variable = dbo_destiny_war_wolf_t9_obtained
+					has_variable = dbo_destiny_war_wolf_t10_obtained
 				}
 			}
 		}
@@ -112,6 +118,9 @@
 					has_variable = dbo_destiny_war_wolf_t5_obtained
 					has_variable = dbo_destiny_war_wolf_t6_obtained
 					has_variable = dbo_destiny_war_wolf_t7_obtained
+					has_variable = dbo_destiny_war_wolf_t8_obtained
+					has_variable = dbo_destiny_war_wolf_t9_obtained
+					has_variable = dbo_destiny_war_wolf_t10_obtained
 				}
 			}
 		}
@@ -123,6 +132,9 @@
 					has_variable = dbo_destiny_war_wolf_t5_obtained
 					has_variable = dbo_destiny_war_wolf_t6_obtained
 					has_variable = dbo_destiny_war_wolf_t7_obtained
+					has_variable = dbo_destiny_war_wolf_t8_obtained
+					has_variable = dbo_destiny_war_wolf_t9_obtained
+					has_variable = dbo_destiny_war_wolf_t10_obtained
 				}
 			}
 		}
@@ -133,6 +145,9 @@
 					has_variable = dbo_destiny_war_wolf_t5_obtained
 					has_variable = dbo_destiny_war_wolf_t6_obtained
 					has_variable = dbo_destiny_war_wolf_t7_obtained
+					has_variable = dbo_destiny_war_wolf_t8_obtained
+					has_variable = dbo_destiny_war_wolf_t9_obtained
+					has_variable = dbo_destiny_war_wolf_t10_obtained
 				}
 			}
 		}
@@ -142,6 +157,9 @@
 				OR = {
 					has_variable = dbo_destiny_war_wolf_t6_obtained
 					has_variable = dbo_destiny_war_wolf_t7_obtained
+					has_variable = dbo_destiny_war_wolf_t8_obtained
+					has_variable = dbo_destiny_war_wolf_t9_obtained
+					has_variable = dbo_destiny_war_wolf_t10_obtained
 				}
 			}
 		}
@@ -149,6 +167,30 @@
 			text = dbo_destiny_war_wolf_t7_can_end_tooltip
 			c:TUR = {
 				has_variable = dbo_destiny_war_wolf_t7_obtained
+				has_variable = dbo_destiny_war_wolf_t8_obtained
+				has_variable = dbo_destiny_war_wolf_t9_obtained
+				has_variable = dbo_destiny_war_wolf_t10_obtained
+			}
+		}
+		custom_tooltip = {
+			text = dbo_destiny_war_wolf_t8_can_end_tooltip
+			c:TUR = {
+				has_variable = dbo_destiny_war_wolf_t8_obtained
+				has_variable = dbo_destiny_war_wolf_t9_obtained
+				has_variable = dbo_destiny_war_wolf_t10_obtained
+			}
+		}
+		custom_tooltip = {
+			text = dbo_destiny_war_wolf_t9_can_end_tooltip
+			c:TUR = {
+				has_variable = dbo_destiny_war_wolf_t9_obtained
+				has_variable = dbo_destiny_war_wolf_t10_obtained
+			}
+		}
+		custom_tooltip = {
+			text = dbo_destiny_war_wolf_t10_can_end_tooltip
+			c:TUR = {
+				has_variable = dbo_destiny_war_wolf_t10_obtained
 			}
 		}
 		custom_tooltip = {

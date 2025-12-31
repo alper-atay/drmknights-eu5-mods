@@ -58,6 +58,10 @@
 				dbo_conquest_turkish_renaissance_check = yes
 			}
 		}
+		custom_tooltip = {
+			text = dbo_conquest_never_end_can_end_tooltip
+			always = no
+		}
 	}
 	visible = {
 		tag = TUR

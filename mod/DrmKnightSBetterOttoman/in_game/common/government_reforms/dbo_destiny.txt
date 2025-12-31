@@ -411,7 +411,7 @@ dbo_destiny_war_wolf_t7 = {
 	unique = yes
 	potential = {
 		has_or_had_tag = TUR
-		has_variable = dbo_destiny_war_wolf_t4_obtained
+		has_variable = dbo_destiny_war_wolf_t7_obtained
 	}
 	locked = {
 		is_locked_mechanic = {
@@ -421,10 +421,76 @@ dbo_destiny_war_wolf_t7 = {
 	}
 	country_modifier = {
 		government_reform_slots = 1
+		army_initiative = 0.35
+		assault_ability = 0.35
+		army_movement_speed = 0.35
+		army_weight_modifier = -0.35
+		global_war_score_cost = -0.35
+	}
+}
+
+dbo_destiny_war_wolf_t8 = {
+	unique = yes
+	potential = {
+		has_or_had_tag = TUR
+		has_variable = dbo_destiny_war_wolf_t8_obtained
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = government_reform
+			type = dbo_destiny_war_wolf_t8
+		}
+	}
+	country_modifier = {
+		government_reform_slots = 1
 		army_initiative = 0.4
 		assault_ability = 0.4
 		army_movement_speed = 0.4
 		army_weight_modifier = -0.4
 		global_war_score_cost = -0.4
+	}
+}
+
+dbo_destiny_war_wolf_t9 = {
+	unique = yes
+	potential = {
+		has_or_had_tag = TUR
+		has_variable = dbo_destiny_war_wolf_t9_obtained
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = government_reform
+			type = dbo_destiny_war_wolf_t9
+		}
+	}
+	country_modifier = {
+		government_reform_slots = 1
+		army_initiative = 0.45
+		assault_ability = 0.45
+		army_movement_speed = 0.45
+		army_weight_modifier = -0.45
+		global_war_score_cost = -0.45
+	}
+}
+
+dbo_destiny_war_wolf_t10 = {
+	unique = yes
+	potential = {
+		has_or_had_tag = TUR
+		has_variable = dbo_destiny_war_wolf_t10_obtained
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = government_reform
+			type = dbo_destiny_war_wolf_t10
+		}
+	}
+	country_modifier = {
+		government_reform_slots = 1
+		army_initiative = 0.5
+		assault_ability = 0.5
+		army_movement_speed = 0.5
+		army_weight_modifier = -0.5
+		global_war_score_cost = -0.5
 	}
 }

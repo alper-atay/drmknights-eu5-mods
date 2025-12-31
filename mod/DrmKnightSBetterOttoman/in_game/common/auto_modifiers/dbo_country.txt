@@ -13,11 +13,11 @@
 			}
 		}
 	}
-	monthly_legitimacy = -0.5
-	monthly_tribal_cohesion = -0.5
-	monthly_devotion = -0.5
-	monthly_horde_unity = -0.5
-	monthly_republican_tradition = -0.5
+	monthly_legitimacy = -0.1
+	monthly_tribal_cohesion = -0.1
+	monthly_devotion = -0.1
+	monthly_horde_unity = -0.1
+	monthly_republican_tradition = -0.1
 	add_legitimacy = legitimacy_weak_penalty
 	add_stability = stability_weak_penalty
 	add_prestige = prestige_weak_penalty
