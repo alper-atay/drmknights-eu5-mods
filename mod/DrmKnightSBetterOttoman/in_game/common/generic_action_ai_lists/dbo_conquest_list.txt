@@ -4,5 +4,6 @@
 	}
 	actions = {
 		dbo_conquest_anatolian_turks_claim
+		dbo_conquest_rumelia_claim
 	}
 }
