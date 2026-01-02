@@ -202,3 +202,27 @@ dbo_conquest_pearl_of_east_stamp = {
 		government_reform_slots = 1
 	}
 }
+
+dbo_conquest_maghreb_stamp = {
+	unique = yes
+	potential = {
+		has_or_had_tag = TUR
+		has_variable = dbo_conquest_maghreb_obtained
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = government_reform
+			type = dbo_conquest_maghreb_stamp
+		}
+	}
+	country_modifier = {
+		power_projection = 5
+		trade_efficiency = 0.2
+		trade_range_modifier = 0.2
+		trade_land_movement_cost_modifier = -0.2
+		trade_sea_movement_cost_modifier = -0.2
+		merchant_maintenance_cost = -0.2
+		global_navy_levy_size_modifier = 0.1
+		government_reform_slots = 1
+	}
+}

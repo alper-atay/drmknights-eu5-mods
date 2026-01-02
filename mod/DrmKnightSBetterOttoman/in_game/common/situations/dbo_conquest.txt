@@ -59,6 +59,12 @@
 			}
 		}
 		custom_tooltip = {
+			text = dbo_conquest_maghreb_can_end_tooltip
+			c:TUR = {
+				dbo_conquest_maghreb_check = yes
+			}
+		}
+		custom_tooltip = {
 			text = dbo_conquest_never_end_can_end_tooltip
 			always = no
 		}

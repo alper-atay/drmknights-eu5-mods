@@ -133,3 +133,13 @@ dbo_conquest_pearl_of_east_check = {
 	own_entire_area = area:quhestan_area
 	own_entire_area = area:sistan_area
 }
+
+dbo_conquest_maghreb_check = {
+	own_entire_area = area:algiers_area
+	own_entire_area = area:atlas_high_plateau
+	own_entire_area = area:desert_area
+	own_entire_area = area:morocco_area
+	own_entire_area = area:sus_area
+	own_entire_area = area:tripolitania_area
+	own_entire_area = area:tunis_area
+}
