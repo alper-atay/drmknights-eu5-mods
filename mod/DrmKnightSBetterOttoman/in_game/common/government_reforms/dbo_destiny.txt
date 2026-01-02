@@ -240,12 +240,12 @@ dbo_destiny_piri_reis = {
 		government_reform_slots = 1
 		exploration_mission_speed = 0.25
 		exploration_mission_speed_modifier = 0.5
-		colonial_range = 1000
-		colonial_range_modifier = 0.5
-		colonial_migration_size = 0.1
-		colonial_migration_size_modifier = 0.5
-		colonial_maintenance_cost = -0.25
-		create_colonial_charter_cost_modifier = -0.25
+		colonial_range = 500
+		colonial_range_modifier = 0.1
+		colonial_migration_size = 0.05
+		colonial_migration_size_modifier = 0.1
+		colonial_maintenance_cost = -0.1
+		create_colonial_charter_cost_modifier = -0.1
 	}
 }
 

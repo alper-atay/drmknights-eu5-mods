@@ -217,12 +217,12 @@ dbo_conquest_maghreb_stamp = {
 	}
 	country_modifier = {
 		power_projection = 5
-		trade_efficiency = 0.2
-		trade_range_modifier = 0.2
-		trade_land_movement_cost_modifier = -0.2
-		trade_sea_movement_cost_modifier = -0.2
-		merchant_maintenance_cost = -0.2
-		global_navy_levy_size_modifier = 0.1
+		trade_efficiency = 0.1
+		trade_range_modifier = 0.1
+		colonial_range = 1000
+		colonial_range_modifier = 0.15
+		colonial_maintenance_cost = -0.15
+		create_colonial_charter_cost_modifier = -0.15
 		government_reform_slots = 1
 	}
 }
