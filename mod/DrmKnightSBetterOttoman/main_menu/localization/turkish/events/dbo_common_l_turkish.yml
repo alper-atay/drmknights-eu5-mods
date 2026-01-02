@@ -1,0 +1,4 @@
+﻿l_turkish:
+ dbo_common.1.title: "Müslümanların'ın Lideri: [GetCountry('TUR').GetName]"
+ dbo_common.1.desc: "İstanbul’un fethiyle Osmanlı, Hz. Muhammed’in müjdesine nail olarak İslam dünyasında rakipsiz bir manevi prestij kazanmıştır.\nFatih Sultan Mehmed, Kayser-i Rum unvanını alarak evrensel bir imparatorluk kurmuş ve kendisini diğer Müslüman hükümdarların üstünde, İslam’ın tek koruyucusu olarak konumlandırmıştır.\nZafernamelerle diğer İslam devletlerine gücünü kabul ettiren Osmanlı, İstanbul’u ilim merkezi yaparak kültürel liderliği de ele geçirmiştir.\nBu süreç, Hicaz üzerindeki nüfuz mücadelesini başlatmış ve Osmanlı’nın İslam dünyasındaki mutlak hegemonyasının temelini atmıştır."
+ dbo_common.1.a: "Dini Liderliği Dayat!"
