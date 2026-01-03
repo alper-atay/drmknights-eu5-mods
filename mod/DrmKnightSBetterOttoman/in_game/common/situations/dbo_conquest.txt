@@ -65,6 +65,12 @@
 			}
 		}
 		custom_tooltip = {
+			text = dbo_conquest_steep_mountain_can_end_tooltip
+			c:TUR = {
+				dbo_conquest_steep_mountain_check = yes
+			}
+		}
+		custom_tooltip = {
 			text = dbo_conquest_never_end_can_end_tooltip
 			always = no
 		}

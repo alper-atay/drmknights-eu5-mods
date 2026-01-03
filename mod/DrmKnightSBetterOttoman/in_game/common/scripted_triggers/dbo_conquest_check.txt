@@ -143,3 +143,10 @@ dbo_conquest_maghreb_check = {
 	own_entire_area = area:tripolitania_area
 	own_entire_area = area:tunis_area
 }
+
+dbo_conquest_steep_mountain_check = {
+	own_entire_area = area:armenia_area
+	own_entire_area = area:georgia_area
+	own_entire_area = area:northern_caucasus_area
+	own_entire_area = area:shirvan_area
+}

@@ -280,3 +280,33 @@ dbo_dhe_conquest.1009 = {
 		dbo_event_extreme_bonus = yes
 	}
 }
+
+# dbo_conquest_maghreb_stamp
+dbo_dhe_conquest.1010 = {
+	type = country_event
+	title = dbo_dhe_conquest.1010.title
+	desc = dbo_dhe_conquest.1010.desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_maghreb.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		NOT = {
+			has_reform = government_reform:dbo_conquest_maghreb_stamp
+		}
+		c:TUR = {
+			dbo_conquest_maghreb_check = yes
+		}
+	}
+	option = {
+		name = dbo_dhe_conquest_common_option
+		historical_option = yes
+		set_variable = dbo_conquest_maghreb_obtained
+		add_reform = government_reform:dbo_conquest_maghreb_stamp
+		dbo_event_extreme_bonus = yes
+	}
+}

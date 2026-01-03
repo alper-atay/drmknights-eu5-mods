@@ -9,6 +9,7 @@
  dbo_conquest_turkish_renaissance_stamp: "$dbo_conquest_slogan_turkish_renaissance$ Damgası"
  dbo_conquest_pearl_of_east_stamp: "$dbo_conquest_slogan_pearl_of_east$ Damgası"
  dbo_conquest_maghreb_stamp: "$dbo_conquest_slogan_maghreb$ Damgası"
+ dbo_conquest_steep_mountain_stamp: "$dbo_conquest_slogan_steep_mountain$ Damgası"
  # Desc
  dbo_conquest_anatolian_turks_stamp_desc: "$dbo_conquest_anatolian_turks$ başarıyla sağlandı ve artık daha güçlüyüz. Tüm [ShowCultureGroupName('turkic_group')] halkının anavatanı olarak bu topraklara kök salacağız!"
  dbo_conquest_rumelia_stamp_desc: "$dbo_conquest_rumelia$ başarıyla sağlandı ve artık daha güçlüyüz. Tüm [ShowCultureGroupName('turkic_group')] halkı olarak bu topraklara kök salacağız!"
@@ -20,3 +21,4 @@
  dbo_conquest_turkish_renaissance_stamp_desc: "$dbo_conquest_turkish_renaissance$ başarıyla sağlandı ve artık daha güçlüyüz. Bütün [ShowRegionName('italy_region')] bölgesine hâkimiyet sağladık. Tüm [ShowCultureGroupName('turkic_group')] halkı olarak bu topraklara kök salacağız!"
  dbo_conquest_pearl_of_east_stamp_desc: "$dbo_conquest_pearl_of_east$ başarıyla sağlandı ve artık daha güçlüyüz. Bütün [ShowRegionName('persia_region')] bölgesine hâkimiyet sağladık. Tüm [ShowCultureGroupName('turkic_group')] halkı olarak bu topraklara kök salacağız!"
  dbo_conquest_maghreb_stamp_desc: "$dbo_conquest_maghreb$ başarıyla sağlandı ve artık daha güçlüyüz. Bütün [ShowRegionName('maghreb_region')] bölgesine hâkimiyet sağladık. Tüm [ShowCultureGroupName('turkic_group')] halkı olarak bu topraklara kök salacağız!"
+ dbo_conquest_steep_mountain_stamp_desc: "$dbo_conquest_steep_mountain$ başarıyla sağlandı ve artık daha güçlüyüz. Bütün [ShowRegionName('caucasus_region')] bölgesine hâkimiyet sağladık. Tüm [ShowCultureGroupName('turkic_group')] halkı olarak bu topraklara kök salacağız!" 
