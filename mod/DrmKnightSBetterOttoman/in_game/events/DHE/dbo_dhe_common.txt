@@ -5,7 +5,7 @@
 # -
 # --
 # ---
-# Winner Ottoman get all a
+# Winner Ottoman get all Beyliks
 dbo_dhe_common.1001 = {
 	type = country_event
 	title = dbo_dhe_common.1001.title
@@ -45,5 +45,8 @@ dbo_dhe_common.1001 = {
 				}
 			}
 		}
+	}
+	option = {
+		name = dbo_dhe_common.1001.b
 	}
 }
