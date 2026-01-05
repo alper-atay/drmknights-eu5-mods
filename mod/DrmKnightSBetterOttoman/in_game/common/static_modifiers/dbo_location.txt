@@ -1,0 +1,9 @@
+﻿dbo_turkish_migration_conquered = {
+	game_data = {
+		category = location
+		decaying = yes
+	}
+	growth_is_primary_culture = yes
+	local_pop_assimilation_speed = 0.1
+	local_pop_assimilation_speed_modifier = 0.1
+}

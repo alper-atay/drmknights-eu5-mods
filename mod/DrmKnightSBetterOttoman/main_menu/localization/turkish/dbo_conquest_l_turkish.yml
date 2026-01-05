@@ -73,5 +73,5 @@
  dbo_conquest_turkish_renaissance_can_end_tooltip: "$dbo_conquest_turkish_renaissance$ sağlarsan [ShowGovernmentReformName('dbo_conquest_turkish_renaissance_stamp')] [Concept('government_reform', 'Hükûmet Islahatını')|e] elde edersin."
  dbo_conquest_pearl_of_east_can_end_tooltip: "$dbo_conquest_pearl_of_east$ sağlarsan [ShowGovernmentReformName('dbo_conquest_pearl_of_east_stamp')] [Concept('government_reform', 'Hükûmet Islahatını')|e] elde edersin."
  dbo_conquest_maghreb_can_end_tooltip: "$dbo_conquest_maghreb$ sağlarsan [ShowGovernmentReformName('dbo_conquest_maghreb_stamp')] [Concept('government_reform', 'Hükûmet Islahatını')|e] elde edersin."
- dbo_conquest_steep_mountain_can_end_tooltip: "$dbo_conquest_steep_mountain$ sağlarsan [ShowGovernmentReformName('dbo_conquest_steep_mountain_stamp')] elde edersin."
+ dbo_conquest_steep_mountain_can_end_tooltip: "$dbo_conquest_steep_mountain$ sağlarsan [ShowGovernmentReformName('dbo_conquest_steep_mountain_stamp')] [Concept('government_reform', 'Hükûmet Islahatını')|e] elde edersin."
  dbo_conquest_never_end_can_end_tooltip: "$dbo_conquest$ asla bitmeyecek!"

@@ -195,6 +195,8 @@ dbo_conquest_pearl_of_east_stamp = {
 	country_modifier = {
 		power_projection = 5
 		tolerance_heathen = 1
+		trade_range = 1000
+		trade_range_modifier = 0.1
 		global_pop_conversion_speed = 0.01
 		global_pop_conversion_speed_modifier = 0.1
 		global_institution_growth_modifier = 0.1
@@ -217,14 +219,12 @@ dbo_conquest_maghreb_stamp = {
 	}
 	country_modifier = {
 		power_projection = 5
-		trade_range = 1000
-		trade_range_modifier = 0.1
 		colonial_range = 1000
-		colonial_range_modifier = 0.25
+		colonial_range_modifier = 0.5
 		colonial_migration_size = 0.05
-		colonial_migration_size_modifier = 0.1
-		colonial_maintenance_cost = -0.15
-		create_colonial_charter_cost_modifier = -0.15
+		colonial_migration_size_modifier = 0.25
+		colonial_maintenance_cost = -0.25
+		create_colonial_charter_cost_modifier = -0.25
 		government_reform_slots = 1
 	}
 }
