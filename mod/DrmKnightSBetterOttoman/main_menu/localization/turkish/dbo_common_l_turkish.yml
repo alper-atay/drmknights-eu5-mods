@@ -7,3 +7,5 @@
  dbo_crown_harem_marry_past: "[SCOPE.sCharacter('recipient').GetName] [SCOPE.sCharacter('recipient').GetHerselfHimself] evlendi!"
  dbo_crown_harem_marry_act_past: "[SCOPE.sCharacter('recipient').GetName], Harem-i Hümâyun'dan seçkin bir cariye ile evlendi."
  dbo_crown_harem_marry_tt: "Bu karakter, Harem-i Hümâyun içinden uygun bir cariye ile evlendirilecektir."
+ dbo_talented_youngest_heir_selection: "En Genç ve Tam Yetenek Esası"
+ dbo_talented_youngest_heir_selection_desc: "Devletin bekası, sadece yaşın getirdiği kıdemde değil, gençliğin getirdiği cevher ve kabiliyettedir. Hanedanın en yaşlısı yerine; kılıcı en keskin, zihni en berrak ve enerjisi en yüksek olan şehzadenin tahta çıkması, cihan hakimiyeti ülkümüzün teminatıdır. İhtiyar heyetlerin yerini, genç fatihlerin iradesi alacaktır."

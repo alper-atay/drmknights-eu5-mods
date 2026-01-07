@@ -41,20 +41,42 @@
 			custom_tooltip = "dbo_crown_harem_marry_tt"
 			hidden_effect = {
 				create_character = {
+					culture = scope:actor.culture
 					religion = scope:actor.religion
 					female = yes
 					estate = estate_type:crown_estate
 					adm = {
-						70
-						90
+						value = {
+							40
+							60
+						}
+						add = {
+							value = scope:actor.adm
+							divide = 2
+						}
+						max = 100
 					}
 					dip = {
-						60
-						80
+						value = {
+							40
+							60
+						}
+						add = {
+							value = scope:actor.dip
+							divide = 2
+						}
+						max = 100
 					}
 					mil = {
-						50
-						70
+						value = {
+							40
+							60
+						}
+						add = {
+							value = scope:actor.mil
+							divide = 2
+						}
+						max = 100
 					}
 					age = 16
 					add_character_modifier = {

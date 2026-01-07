@@ -1,0 +1,9 @@
+﻿namespace = dbo_test
+dbo_test.1 = {
+	type = location_event
+	immediate = {
+	}
+	option = {
+		name = dbo_test.1.a
+	}
+}

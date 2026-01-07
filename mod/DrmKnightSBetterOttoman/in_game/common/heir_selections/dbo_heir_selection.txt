@@ -1,4 +1,4 @@
-﻿dbo_most_talented_youngest = {
+﻿dbo_talented_youngest_heir_selection = {
 	traverse_family_tree = yes
 	ignore_ruler = yes
 	allow_children = yes
