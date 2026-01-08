@@ -1,8 +1,8 @@
 ﻿dbo_masjid = {
 	is_foreign = no
-	max_levels = 5
+	max_levels = 3
 	pop_type = clergy
-	employment_size = religious_building_employment
+	employment_size = 0.02
 	category = religious_category
 	country_potential = {
 		religion.group = religion_group:muslim
@@ -31,15 +31,16 @@
 		local_monthly_literacy = 0.01
 		local_clergy_estate_power = 0.05
 		local_cultural_influence = 0.01
-		local_pop_conversion_speed_modifier = 0.1
+		local_pop_conversion_speed_modifier = 0.005
+		local_pop_assimilation_speed_modifier = 0.005
 	}
 }
 
 dbo_mosque = {
 	is_foreign = no
-	max_levels = 3
+	max_levels = 2
 	pop_type = clergy
-	employment_size = large_religious_building_employment
+	employment_size = 0.1
 	category = religious_category
 	country_potential = {
 		religion.group = religion_group:muslim
@@ -65,11 +66,12 @@ dbo_mosque = {
 		}
 	}
 	modifier = {
-		local_monthly_literacy = 0.02
-		local_clergy_estate_power = 0.1
-		local_cultural_influence = 0.05
+		local_monthly_literacy = 0.01
+		local_clergy_estate_power = 0.075
+		local_cultural_influence = 0.02
 		local_unrest = -0.01
-		local_pop_conversion_speed_modifier = 0.05
+		local_pop_conversion_speed_modifier = 0.015
+		local_pop_assimilation_speed_modifier = 0.015
 	}
 }
 
@@ -77,14 +79,14 @@ dbo_grand_mosque = {
 	is_foreign = no
 	max_levels = 1
 	pop_type = clergy
-	employment_size = huge_religious_building_employment
+	employment_size = 0.25
 	category = religious_category
 	rural_settlement = no
 	town = no
 	city = yes
 	forbidden_for_estates = yes
 	expensive = yes
-	construction_demand = capital_building_construction
+	construction_demand = dbo_grand_mosque_building_construction
 	build_time = 1095
 	graphical_tags = {
 		large_religious
@@ -103,11 +105,12 @@ dbo_grand_mosque = {
 		}
 	}
 	modifier = {
-		local_monthly_literacy = 0.05
-		local_clergy_estate_power = 0.25
-		local_cultural_influence = 0.1
-		local_unrest = -0.05
-		local_pop_conversion_speed_modifier = 0.1
+		local_monthly_literacy = 0.1
+		local_clergy_estate_power = 0.15
+		local_cultural_influence = 0.03
+		local_unrest = -0.03
+		local_pop_conversion_speed_modifier = 0.03
+		local_pop_assimilation_speed_modifier = 0.03
 	}
 	capital_modifier = {
 		local_migration_attraction = 0.1

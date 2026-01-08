@@ -11,6 +11,12 @@
 			}
 		}
 		custom_tooltip = {
+			text = dbo_destiny_mentor_lala_can_end_tooltip
+			c:TUR = {
+				has_variable = dbo_destiny_mentor_lala_obtained
+			}
+		}
+		custom_tooltip = {
 			text = dbo_destiny_cultural_capital_constantinople_can_end_tooltip
 			c:TUR = {
 				has_variable = dbo_destiny_cultural_capital_constantinople_obtained
@@ -43,7 +49,10 @@
 		custom_tooltip = {
 			text = dbo_destiny_lessons_from_mongols_can_end_tooltip
 			c:TUR = {
-				has_variable = dbo_destiny_lessons_from_mongols_obtained
+				OR = {
+					has_variable = dbo_destiny_lessons_from_mongols_obtained
+					has_variable = dbo_destiny_modernized_timariot_system_obtained
+				}
 			}
 		}
 		custom_tooltip = {

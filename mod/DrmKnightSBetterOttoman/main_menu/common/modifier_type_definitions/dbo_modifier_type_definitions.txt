@@ -1,7 +1,7 @@
-﻿dbo_casus_belli_price_cost_modifier={
-	color=bad
-	percent=yes
-	game_data={
-		category=country
+﻿dbo_casus_belli_price_cost_modifier = {
+	color = bad
+	percent = yes
+	game_data = {
+		category = country
 	}
 }

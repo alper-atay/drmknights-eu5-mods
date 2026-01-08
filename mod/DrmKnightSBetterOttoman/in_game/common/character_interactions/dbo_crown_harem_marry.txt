@@ -47,36 +47,42 @@
 					estate = estate_type:crown_estate
 					adm = {
 						value = {
-							40
-							60
+							add = {
+								30
+								50
+							}
+							add = {
+								value = scope:recipient.adm
+								divide = 2
+							}
+							max = 100
 						}
-						add = {
-							value = scope:actor.adm
-							divide = 2
-						}
-						max = 100
 					}
 					dip = {
 						value = {
-							40
-							60
+							add = {
+								30
+								50
+							}
+							add = {
+								value = scope:recipient.dip
+								divide = 2
+							}
+							max = 100
 						}
-						add = {
-							value = scope:actor.dip
-							divide = 2
-						}
-						max = 100
 					}
 					mil = {
 						value = {
-							40
-							60
+							add = {
+								30
+								50
+							}
+							add = {
+								value = scope:recipient.mil
+								divide = 2
+							}
+							max = 100
 						}
-						add = {
-							value = scope:actor.mil
-							divide = 2
-						}
-						max = 100
 					}
 					age = 16
 					add_character_modifier = {
@@ -107,6 +113,16 @@
 			value = 4
 			subtract = scope:recipient.num_of_spouses
 			multiply = 25
+		}
+		add = {
+			if = {
+				limit = {
+					scope:recipient = {
+						is_ruler = yes
+					}
+				}
+				value = 300
+			}
 		}
 		add = {
 			if = {

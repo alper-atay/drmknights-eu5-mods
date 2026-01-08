@@ -6,12 +6,9 @@
 		}
 		allow = {
 			has_slavery = yes
-			custom_tooltip = {
-				text = devshirme_system_policy_why_tt
-				NOT = {
-					has_variable = devshirme_abolished
-				}
-			}
+		}
+		locked = {
+			has_slavery = yes
 		}
 		country_modifier = {
 			monthly_towards_quality = societal_value_monthly_move

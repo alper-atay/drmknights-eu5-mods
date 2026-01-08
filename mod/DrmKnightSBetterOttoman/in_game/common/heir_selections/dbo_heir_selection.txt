@@ -8,6 +8,9 @@
 	potential = {
 		tag = TUR
 	}
+	locked = {
+		tag = TUR
+	}
 	sibling_score = {
 		if = {
 			limit = {
