@@ -73,7 +73,6 @@
 			add = {
 				desc = "HEIR_SELECTION_YOUNGER_HEIR_DESC"
 				value = 100
-				subtract = character_age
 			}
 			add = {
 				desc = "HEIR_SELECTION_ADM_DESC"

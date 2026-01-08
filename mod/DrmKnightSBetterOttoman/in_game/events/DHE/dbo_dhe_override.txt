@@ -1,0 +1,35 @@
+﻿namespace = flavor_tur
+#Kanun-i Osmani
+REPLACE:flavor_tur.208 = {
+	type = country_event
+	title = flavor_tur.208.title
+	desc = flavor_tur.208.desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_override_kanuni_sultan_suleiman.dds"
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	fire_only_once = yes
+	trigger = {
+		has_advance = lawcode_of_suleiman
+		country_rank = country_rank:rank_empire
+	}
+	immediate = {
+		ruler_or_regent ?= {
+			save_scope_as = target_character
+		}
+	}
+	option = {
+		name = flavor_tur.208.a
+		if = {
+			limit = {
+				NOT = {
+					has_policy = tur_kanum_i_osmani
+				}
+			}
+			add_policy = policy:tur_kanum_i_osmani
+		}
+	}
+}

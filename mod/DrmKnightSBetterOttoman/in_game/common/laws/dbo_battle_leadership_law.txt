@@ -4,7 +4,7 @@
 			has_or_had_tag = TUR
 		}
 		country_modifier = {
-			monthly_legitimacy = 0.05
+			monthly_legitimacy = 0.1
 			no_lowborn_leaders = yes
 			nobles_estate_blocked_from_leading_military = yes
 			peasants_estate_blocked_from_leading_military = yes
@@ -13,6 +13,14 @@
 			dhimmi_estate_blocked_from_leading_military = yes
 			cossacks_estate_blocked_from_leading_military = yes
 			clergy_estate_blocked_from_leading_military = yes
+			scale = {
+				value = 1
+				add = {
+					value = "estate_power(estate_type:crown_estate)"
+					multiply = 1.5
+					max = 1
+				}
+			}
 		}
 	}
 }

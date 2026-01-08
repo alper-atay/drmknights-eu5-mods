@@ -1,0 +1,23 @@
+﻿dbo_masjid_building_maintenance = {
+	paper = 0.05
+	books = 0.05
+	cloth = 0.05
+	category = building_maintenance
+}
+
+dbo_mosque_building_maintenance = {
+	paper = 0.1
+	books = 0.1
+	cloth = 0.05
+	fine_cloth = 0.05
+	category = building_maintenance
+}
+
+dbo_grand_mosque_building_maintenance = {
+	paper = 0.2
+	books = 0.2
+	cloth = 0.1
+	fine_cloth = 0.1
+	silver = 0.05
+	category = building_maintenance
+}

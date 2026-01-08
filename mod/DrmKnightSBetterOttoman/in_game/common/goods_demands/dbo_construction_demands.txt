@@ -1,0 +1,28 @@
+dbo_masjid_building_construction = {
+	lumber = 1
+	tools = 1
+	glass = 1
+	cloth = 1
+	category = building_construction
+}
+
+dbo_mosque_building_construction = {
+	lumber = 1
+	tools = 1
+	glass = 1
+	cloth = 1
+	fine_cloth = 1
+	marble = 1
+	category = building_construction
+}
+
+dbo_grand_mosque_building_construction = {
+	lumber = 3
+	tools = 3
+	glass = 3
+	cloth = 3
+	fine_cloth = 3
+	goods_gold = 1
+	marble = 3
+	category = building_construction
+}

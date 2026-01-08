@@ -1,3 +1,5 @@
 ﻿l_turkish:
  MODIFIER_TYPE_NAME_dbo_casus_belli_price_cost_modifier: "Hak İddiasında Bulunma Maliyet Etkeni"
  MODIFIER_TYPE_DESC_dbo_casus_belli_price_cost_modifier: "[ShowSituationName('dbo_conquest')] eylemlerinin [Concept('costs', 'Maliyetini')|e] düzenler."
+ MODIFIER_TYPE_NAME_dbo_local_elite_manpower: "Aylık Seçkin İnsan Gücü"
+ MODIFIER_TYPE_DESC_dbo_local_elite_manpower: "Bir [Concept('location', 'İlin')|e] her ay verebileceği Seçkin [dbo_elite_manpower|e] miktarını düzenler."

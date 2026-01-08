@@ -25,6 +25,8 @@ dbo_on_conquer_any_location = {
 				size = {
 					value = population
 					multiply = 0.1
+					min = 1
+					max = 5
 				}
 			}
 		}
