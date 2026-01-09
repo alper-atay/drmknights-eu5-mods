@@ -218,12 +218,12 @@ dbo_dhe_destiny.1007 = {
 	}
 	trigger = {
 		OR = {
-			current_age_or_later = {
-				age = age_3_discovery
-			}
 			OR = {
 				has_advance = timariots
 				has_advance = unlock_cavalry_advance
+			}
+			current_age_or_later = {
+				age = age_3_discovery
 			}
 		}
 		NOT = {
@@ -321,10 +321,17 @@ dbo_dhe_destiny.1010 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		has_reform = government_reform:dbo_destiny_lessons_from_mongols
-		has_variable = dbo_destiny_lessons_from_mongols_obtained
-		has_advance = akinji_cavalry
-		has_advance = unlock_pistoleers_advance
+		OR = {
+			AND = {
+				has_reform = government_reform:dbo_destiny_lessons_from_mongols
+				has_variable = dbo_destiny_lessons_from_mongols_obtained
+				has_advance = akinji_cavalry
+				has_advance = unlock_pistoleers_advance
+			}
+			current_age_or_later = {
+				age = age_5_absolutism
+			}
+		}
 		NOT = {
 			has_reform = government_reform:dbo_destiny_modernized_timariot_system
 		}
@@ -842,8 +849,13 @@ dbo_dhe_destiny.3001 = {
 		has_slavery = yes
 		has_advance = recruitment_law_advance
 		OR = {
-			has_policy = ottoman_war_slave_tax
-			has_policy = devshirme_system_policy
+			OR = {
+				has_policy = ottoman_war_slave_tax
+				has_policy = devshirme_system_policy
+			}
+			current_age_or_later = {
+				age = age_3_discovery
+			}
 		}
 		NOT = {
 			has_policy = dbo_advanced_devshirme_system_policy
