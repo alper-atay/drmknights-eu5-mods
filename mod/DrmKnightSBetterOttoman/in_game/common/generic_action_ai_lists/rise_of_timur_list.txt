@@ -1,0 +1,19 @@
+﻿dbo_conquest_ai_list = {
+	potential = {
+		tag = TIM
+		can_see_situation = situation:dbo_conquest
+	}
+	actions = {
+		dbo_conquest_anatolian_turks_claim
+		dbo_conquest_rumelia_claim
+		dbo_conquest_black_sea_claim
+		dbo_conquest_steep_mountain_claim
+		dbo_conquest_fertile_crescent_claim
+		dbo_conquest_nile_river_claim
+		dbo_conquest_arabian_peninsula_claim
+		dbo_conquest_maghreb_claim
+		dbo_conquest_europe_eastern_gate_claim
+		dbo_conquest_turkish_renaissance_claim
+		dbo_conquest_pearl_of_east_claim
+	}
+}
