@@ -1,6 +1,6 @@
 ﻿dbo_conquest_ai_list = {
 	potential = {
-		tag = TIM
+		tag = TUR
 		can_see_situation = situation:dbo_conquest
 	}
 	actions = {
