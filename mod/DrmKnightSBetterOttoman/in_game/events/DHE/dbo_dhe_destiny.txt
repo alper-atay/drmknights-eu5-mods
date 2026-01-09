@@ -868,5 +868,35 @@ dbo_dhe_destiny.3001 = {
 		name = dbo_dhe_destiny.3001.a
 		historical_option = yes
 		add_policy = policy:dbo_advanced_devshirme_system_policy
+		dbo_event_severe_bonus = yes
+	}
+}
+
+# dbo_talented_youngest_heir_selection
+dbo_dhe_destiny.3002 = {
+	title = dbo_dhe_destiny.3002.title
+	desc = dbo_dhe_destiny.3002.desc
+	historical_info = dbo_dhe_destiny.3002.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_talented_youngest_heir_selection.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		has_ruler = yes
+		has_heir = yes
+		at_war = no
+		NOT = {
+			succession_law = heir_selection:dbo_talented_youngest_heir_selection
+		}
+	}
+	option = {
+		name = dbo_dhe_destiny.3002.a
+		historical_option = yes
+		change_heir_selection = heir_selection:dbo_talented_youngest_heir_selection
+		dbo_event_severe_bonus = yes
 	}
 }

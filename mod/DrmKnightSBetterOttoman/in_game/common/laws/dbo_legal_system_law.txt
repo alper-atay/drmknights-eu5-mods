@@ -1,25 +1,2 @@
 ﻿INJECT:legal_code_law = {
-	REPLACE:tur_kanum_i_osmani = {
-		unique = yes
-		potential = {
-			has_or_had_tag = TUR
-		}
-		country_modifier = {
-			monthly_towards_inward = societal_value_monthly_move
-			tax_income_efficiency = large_tax_income_efficiency_bonus
-			global_distance_from_capital_cost_modifier = -0.1
-			scale = {
-				value = 1
-				add = {
-					value = "estate_power(estate_type:crown_estate)"
-					multiply = 1.5
-					max = 1
-				}
-			}
-		}
-		estate_preferences = {
-			nobles_estate
-		}
-		years = 2
-	}
 }

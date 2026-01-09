@@ -9,8 +9,3 @@
  dbo_crown_harem_marry_tt: "Bu karakter, Harem-i Hümâyun içinden uygun bir cariye ile evlendirilecektir."
  dbo_talented_youngest_heir_selection: "En Genç ve Tam Yetenek Esası"
  dbo_talented_youngest_heir_selection_desc: "Devletin bekası, sadece yaşın getirdiği kıdemde değil, gençliğin getirdiği cevher ve kabiliyettedir. Hanedanın en yaşlısı yerine; kılıcı en keskin, zihni en berrak ve enerjisi en yüksek olan şehzadenin tahta çıkması, cihan hakimiyeti ülkümüzün teminatıdır. İhtiyar heyetlerin yerini, genç fatihlerin iradesi alacaktır."
- dbo_elite_soldiers: "Seçkin Askerler"
- dbo_elite_soldiers_desc: "[Concept('armies', 'Ordularımız')|e] bünyesinde en yüksek kalitede [dbo_elite_manpower|e] sağlayan profesyonel ve seçkin askerleri temsil eder."
- dbo_elite_manpower: "Seçkin İnsan Gücü"
- DBO_ELITE_MANPOWER_FROM_MANPOWERS: "Toplumlardan gelen [dbo_elite_manpower|e]: $VAL$ [dbo_elite_manpower|e]"
- DBO_ELITE_MANPOWER_INCOME_WITH_BREAKDOWN: "Aylık [dbo_elite_manpower|e]: #TOOLTIP:$BREAKDOWN_TAG$ $VAL$ [dbo_elite_manpower|e]#!"
