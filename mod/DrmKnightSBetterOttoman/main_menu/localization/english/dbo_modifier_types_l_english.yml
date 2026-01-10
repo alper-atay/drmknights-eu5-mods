@@ -1,0 +1,3 @@
+﻿l_english:
+ MODIFIER_TYPE_NAME_dbo_casus_belli_price_cost_modifier: "Claim Fabrication Cost Modifier"
+ MODIFIER_TYPE_DESC_dbo_casus_belli_price_cost_modifier: "Adjusts the [Concept('costs', 'Cost')|e] of [ShowSituationName('dbo_conquest')] actions."

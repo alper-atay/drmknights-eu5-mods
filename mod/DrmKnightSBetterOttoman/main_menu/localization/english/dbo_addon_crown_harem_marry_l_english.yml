@@ -1,0 +1,9 @@
+﻿l_english:
+ dbo_crown_harem_marry: "Marry from the Imperial Harem"
+ dbo_crown_harem_marry_concept: "[marriage|E]"
+ dbo_crown_harem_marry_act: "$dbo_crown_harem_marry$"
+ dbo_crown_harem_marry_desc_specific: "[SCOPE.sCharacter('recipient').GetName] will marry a distinguished concubine from the Imperial Harem."
+ dbo_crown_harem_marry_desc: "[character|e] will marry a distinguished concubine from the Imperial Harem."
+ dbo_crown_harem_marry_past: "[SCOPE.sCharacter('recipient').GetName] has married!"
+ dbo_crown_harem_marry_act_past: "[SCOPE.sCharacter('recipient').GetName] married a distinguished concubine from the Imperial Harem."
+ dbo_crown_harem_marry_tt: "This character will be married to a suitable concubine from the Imperial Harem."
