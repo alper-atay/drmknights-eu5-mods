@@ -17,7 +17,7 @@
 				value = 1
 				add = {
 					value = "estate_power(estate_type:crown_estate)"
-					multiply = 1.5
+					multiply = 2
 					max = 1
 				}
 			}

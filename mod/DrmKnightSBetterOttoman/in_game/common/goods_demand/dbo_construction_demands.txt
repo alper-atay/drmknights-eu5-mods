@@ -1,4 +1,5 @@
 dbo_masjid_building_construction = {
+	stone = 0.2
 	lumber = 0.2
 	tools = 0.2
 	glass = 0.2
@@ -7,22 +8,24 @@ dbo_masjid_building_construction = {
 }
 
 dbo_mosque_building_construction = {
+	stone = 0.5
+	marble = 0.5
 	lumber = 0.5
 	tools = 0.5
 	glass = 0.5
 	cloth = 0.5
-	fine_cloth = 0.5
-	marble = 0.5
+	fine_cloth = 0.25
 	category = building_construction
 }
 
 dbo_grand_mosque_building_construction = {
+	stone = 1
+	marble = 1
 	lumber = 1
 	tools = 1
 	glass = 1
 	cloth = 1
-	fine_cloth = 1
-	marble = 1
+	fine_cloth = 0.5
 	goods_gold = 0.5
 	category = building_construction
 }

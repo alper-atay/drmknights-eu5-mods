@@ -25,3 +25,5 @@
  dbo_destiny_war_wolf_t9_can_end_tooltip: "[ShowGovernmentReformName('dbo_destiny_war_wolf_t9')] [Concept('government_reform', 'Hükûmet Islahatını')|e] elde etmek için; [GetCountry('TUR').GetName] en az 1600 [Concept('locations', 'İle')|e] (mevcut: [GetCountry('TUR').GetOwnedLocationCount]) ve 400 [Concept('towns_or_cities', 'Kasabaya veya Şehre')|e] (mevcut: [GetCountry('TUR').GetTownsAndCities]) sahip ol."
  dbo_destiny_war_wolf_t10_can_end_tooltip: "[ShowGovernmentReformName('dbo_destiny_war_wolf_t10')] [Concept('government_reform', 'Hükûmet Islahatını')|e] elde etmek için; [GetCountry('TUR').GetName] en az 2000 [Concept('locations', 'İle')|e] (mevcut: [GetCountry('TUR').GetOwnedLocationCount]) ve 500 [Concept('towns_or_cities', 'Kasabaya veya Şehre')|e] (mevcut: [GetCountry('TUR').GetTownsAndCities]) sahip ol."
  dbo_destiny_never_end_can_end_tooltip: "$dbo_destiny$ asla bitmeyecek!"
+ DBO_DESTINY_HISTORICAL_EVENTS: "Tarihi Olaylar"
+ DBO_DESTINY_CAN_BE_OBTAIN_GOVERNMENT_REFORMS: "Elde Edilebilecek [Concept('government_reforms', 'Hükûmet Islahatları')|e]"
