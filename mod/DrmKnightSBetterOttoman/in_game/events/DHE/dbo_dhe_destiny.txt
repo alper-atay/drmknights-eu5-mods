@@ -1,11 +1,75 @@
 ﻿namespace = dbo_dhe_destiny
 # dbo_dhe_destiny
-# 1-999 are reserved for the base events
+# 1-100 are reserved for the base events
+# 101-1000 are reserved Ottomans DHE
 # 1001-1999 are reserved for the core destiny government reforms
 # 2001-2099 are reserved for the core destiny war wolf reforms
 # 3001-3999 are reserved for the laws
 # --
 # ---
+# Orban enter the game
+dbo_dhe_destiny.101 = {
+	type = country_event
+	title = dbo_dhe_destiny.101.title
+	desc = dbo_dhe_destiny.101.desc
+	historical_info = dbo_dhe_destiny.101.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_sultan_and_orban.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		owns = location:constantinople
+	}
+	immediate = {
+		if = {
+			limit = {
+				has_country_modifier = orbans_bombard_modifier
+			}
+			remove_country_modifier = orbans_bombard_modifier
+		}
+	}
+	option = {
+		name = dbo_dhe_destiny.101.a
+		historical_option = yes
+		unlock_unit = dbo_a_great_bronze_cannon_sahi
+	}
+}
+
+dbo_dhe_destiny.102 = {
+	type = country_event
+	title = dbo_dhe_destiny.102.title
+	desc = dbo_dhe_destiny.102.desc
+	historical_info = dbo_dhe_destiny.102.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_sultan_and_orban_metal_melting.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		owns = location:constantinople
+	}
+	immediate = {
+		if = {
+			limit = {
+				has_country_modifier = orbans_bombard_modifier
+			}
+			remove_country_modifier = orbans_bombard_modifier
+		}
+	}
+	option = {
+		name = dbo_dhe_destiny.101.a
+		historical_option = yes
+		unlock_unit = dbo_a_great_bronze_cannon_sahi
+	}
+}
+
 # dbo_destiny_alp_and_alperen
 dbo_dhe_destiny.1001 = {
 	type = country_event

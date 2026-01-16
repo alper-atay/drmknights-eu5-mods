@@ -1,0 +1,14 @@
+﻿dbo_army_heavy_artillery_build = {
+	gold = 200
+	manpower = 1
+}
+
+dbo_army_heavy_artillery_reinforce = {
+	gold = 10
+	manpower = 1
+}
+
+dbo_army_heavy_artillery_maintenance = {
+	gold = 2
+	manpower = 0.02
+}

@@ -1,0 +1,15 @@
+dbo_heavy_artillery_maintenance = {
+	cannons = 1
+	copper = 0.2
+	tin = 0.1
+	horses = 0.1
+	category = regiment_maintenance
+}
+
+dbo_heavy_artillery_construction = {
+	cannons = 2
+	copper = 0.4
+	tin = 0.2
+	horses = 0.2
+	category = regiment_construction
+}

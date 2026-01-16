@@ -1,0 +1,53 @@
+﻿dbo_a_great_bronze_cannon_sahi_t1 = {
+	category = dbo_army_heavy_artillery
+	age = "age_2_renaissance"
+	country_potential = {
+		tag = TUR
+	}
+	upgrades_to_only = dbo_a_great_bronze_cannon_sahi_t2
+	max_strength = 0.6
+	combat_power = 4
+	bombard_efficiency = 0.25
+	strength_damage_done = 0.25
+	combat_speed = 0
+	artillery_barrage = 5
+	gfx_tags = {
+		heavy_tag
+	}
+}
+
+dbo_a_great_bronze_cannon_sahi_t2 = {
+	category = dbo_army_heavy_artillery
+	age = "age_4_discovery"
+	country_potential = {
+		tag = TUR
+	}
+	upgrades_to_only = dbo_a_great_bronze_cannon_sahi_t3
+	max_strength = 1.2
+	combat_power = 8
+	strength_damage_done = 0.5
+	bombard_efficiency = 0.5
+	combat_speed = 0.25
+	artillery_barrage = 7
+	gfx_tags = {
+		heavy_tag
+	}
+}
+
+dbo_a_great_bronze_cannon_sahi_t3 = {
+	category = dbo_army_heavy_artillery
+	age = "age_6_revolutions"
+	country_potential = {
+		tag = TUR
+	}
+	upgrades_to_only = dbo_a_great_bronze_cannon_sahi_t3
+	max_strength = 1.6
+	combat_power = 12
+	strength_damage_done = 1
+	bombard_efficiency = 1
+	combat_speed = 0.5
+	artillery_barrage = 9
+	gfx_tags = {
+		heavy_tag
+	}
+}
