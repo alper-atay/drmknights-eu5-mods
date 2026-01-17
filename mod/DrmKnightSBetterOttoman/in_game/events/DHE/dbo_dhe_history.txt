@@ -37,7 +37,15 @@ dbo_dhe_history.1001 = {
 			dip = 20
 			mil = 20
 			child_trait = trait:child_prodigy
-			is_immortal = true
+			ruler_trait = bold_fighter
+			ruler_trait = conqueror
+			general_trait = master_of_arms
+			timed_modifier = {
+				modifier = "healthy_character"
+				start_date = 1330.1.1
+				date = 9999.1.1
+				size = 2
+			}
 			script = dbo_yildirim_bayezid
 		}
 	}
@@ -68,18 +76,6 @@ dbo_dhe_history.1002 = {
 	}
 	option = {
 		name = dbo_dhe_history.1002.a
-		hidden_effect = {
-			character:dbo_yildirim_bayezid = {
-				remove_traits_of_category = child
-				remove_traits_of_category = ruler
-				remove_traits_of_category = general
-			}
-		}
-		character:dbo_yildirim_bayezid = {
-			add_trait = trait:bold_fighter
-			add_trait = trait:conqueror
-			add_trait = trait:hussar_commander
-		}
 		set_new_ruler = character:dbo_yildirim_bayezid
 	}
 }
@@ -113,11 +109,11 @@ dbo_dhe_history.1003 = {
 }
 
 # Yildirim Bayezid Dream
-dbo_dhe_history.1003 = {
+dbo_dhe_history.1004 = {
 	type = country_event
-	title = dbo_dhe_history.1003.title
-	desc = dbo_dhe_history.1003.desc
-	historical_info = dbo_dhe_history.1003.historical_info
+	title = dbo_dhe_history.1004.title
+	desc = dbo_dhe_history.1004.desc
+	historical_info = dbo_dhe_history.1004.historical_info
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_challenge_yildirim_bayezid.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -140,7 +136,7 @@ dbo_dhe_history.1003 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_history.1003.a
+		name = dbo_dhe_history.1004.a
 		set_variable = dbo_conquest_anatolian_turks_challenged
 	}
 }
