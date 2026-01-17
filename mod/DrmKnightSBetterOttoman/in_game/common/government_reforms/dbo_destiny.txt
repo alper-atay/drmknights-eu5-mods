@@ -87,8 +87,10 @@ dbo_destiny_great_bronze_cannon = {
 		}
 	}
 	country_modifier = {
-		artillery_bonus_vs_fort = 2
-		siege_ability = 0.2
+		dbo_army_heavy_artillery_power = 0.3
+		dbo_army_heavy_artillery_build_cost_modifier = -0.1
+		dbo_army_heavy_artillery_maintenance_cost_modifier = -0.2
+		dbo_army_heavy_artillery_reinforce_cost_modifier = -0.1
 		government_reform_slots = 1
 	}
 }
@@ -306,11 +308,9 @@ dbo_destiny_humbaraci = {
 		}
 	}
 	country_modifier = {
-		artillery_bonus_vs_fort = 1
-		siege_ability = 0.1
-		army_artillery_power = 0.1
+		army_artillery_power = 0.3
 		army_artillery_build_cost_modifier = -0.1
-		army_artillery_maintenance_cost_modifier = -0.1
+		army_artillery_maintenance_cost_modifier = -0.2
 		army_artillery_reinforce_cost_modifier = -0.1
 		government_reform_slots = 1
 	}

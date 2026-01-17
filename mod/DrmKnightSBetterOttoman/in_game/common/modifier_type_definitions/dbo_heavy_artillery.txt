@@ -1,0 +1,30 @@
+﻿dbo_army_heavy_artillery_power = {
+	percent = yes
+	game_data = {
+		category = country
+	}
+}
+
+dbo_army_heavy_artillery_build_cost_modifier = {
+	color = bad
+	percent = yes
+	game_data = {
+		category = country
+	}
+}
+
+dbo_army_heavy_artillery_maintenance_cost_modifier = {
+	color = bad
+	percent = yes
+	game_data = {
+		category = country
+	}
+}
+
+dbo_army_heavy_artillery_reinforce_cost_modifier = {
+	color = bad
+	percent = yes
+	game_data = {
+		category = country
+	}
+}

@@ -1,0 +1,146 @@
+﻿namespace = dbo_dhe_history
+# dbo_dhe_history
+# 1-100 are reserved for the base events
+# 101-1000 are reserved Ottomans DHE
+# 1001-1100 are reserved for the core destiny government reforms
+# --
+# ---
+# Yildirim Bayezid https://tr.wikipedia.org/wiki/I._Bayezid
+dbo_dhe_history.1001 = {
+	type = country_event
+	title = dbo_dhe_history.1001.title
+	desc = dbo_dhe_history.1001.desc
+	historical_info = dbo_dhe_history.1001.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_born_yildirim_bayezid.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1353.1.1
+		to = 1363.1.1
+		monthly_chance = 10
+	}
+	trigger = {
+		has_ruler = yes
+	}
+	option = {
+		name = dbo_dhe_history.1001.a
+		create_character = {
+			first_name = Bayezid
+			nickname = nick_Yildirim
+			dynasty = dynasty:ottomans_dynasty
+			father = root.ruler
+			birth_location = root.capital
+			age = 0
+			culture = culture:turkish_culture
+			religion = religion:sunni
+			adm = 20
+			dip = 20
+			mil = 20
+			child_trait = trait:child_prodigy
+			is_immortal = true
+			script = dbo_yildirim_bayezid
+		}
+	}
+}
+
+# Rise Yildirim Bayezid
+dbo_dhe_history.1002 = {
+	type = country_event
+	title = dbo_dhe_history.1002.title
+	desc = dbo_dhe_history.1002.desc
+	historical_info = dbo_dhe_history.1002.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_rise_yildirim_bayezid.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1370.1.1
+		to = 1380.1.1
+		monthly_chance = 10
+	}
+	trigger = {
+		exists = character:dbo_yildirim_bayezid
+		has_ruler = yes
+		character:dbo_yildirim_bayezid = {
+			is_alive = yes
+			is_adult = yes
+			is_ruler = no
+		}
+	}
+	option = {
+		name = dbo_dhe_history.1002.a
+		hidden_effect = {
+			character:dbo_yildirim_bayezid = {
+				remove_traits_of_category = child
+				remove_traits_of_category = ruler
+				remove_traits_of_category = general
+			}
+		}
+		character:dbo_yildirim_bayezid = {
+			add_trait = trait:bold_fighter
+			add_trait = trait:conqueror
+			add_trait = trait:hussar_commander
+		}
+		set_new_ruler = character:dbo_yildirim_bayezid
+	}
+}
+
+# Yildirim Bayezid changelling to Anatolian Turks Union
+dbo_dhe_history.1003 = {
+	type = country_event
+	title = dbo_dhe_history.1003.title
+	desc = dbo_dhe_history.1003.desc
+	historical_info = dbo_dhe_history.1003.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_challenge_yildirim_bayezid.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1380.1.1
+		to = 1400.1.1
+		monthly_chance = 10
+	}
+	trigger = {
+		exists = character:dbo_yildirim_bayezid
+		has_ruler = yes
+		character:dbo_yildirim_bayezid = {
+			is_ruler = yes
+			character_age > 30
+		}
+	}
+	option = {
+		name = dbo_dhe_history.1003.a
+		set_variable = dbo_conquest_anatolian_turks_challenged
+	}
+}
+
+# Yildirim Bayezid Dream
+dbo_dhe_history.1003 = {
+	type = country_event
+	title = dbo_dhe_history.1003.title
+	desc = dbo_dhe_history.1003.desc
+	historical_info = dbo_dhe_history.1003.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_challenge_yildirim_bayezid.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1402.1.1
+		to = 1412.1.1
+		monthly_chance = 10
+	}
+	trigger = {
+		exists = character:dbo_yildirim_bayezid
+		has_ruler = yes
+		character:dbo_yildirim_bayezid = {
+			is_ruler = yes
+		}
+		country_exists = c:TIM
+		NOT = {
+			any_neighbor_country = {
+				tag = TIM
+			}
+		}
+	}
+	option = {
+		name = dbo_dhe_history.1003.a
+		set_variable = dbo_conquest_anatolian_turks_challenged
+	}
+}
