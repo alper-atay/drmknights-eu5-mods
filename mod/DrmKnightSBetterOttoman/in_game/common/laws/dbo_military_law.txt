@@ -96,3 +96,42 @@ dbo_military_army_auxiliary_law = {
         }
     }
 }
+
+dbo_military_navy_fundamental_law = {
+    law_category = dbo_military
+    law_country_group = TUR
+
+    dbo_military_navy_fundamental_legacy_of_caka_bey_policy = {
+        unique = yes
+        country_modifier = {
+            global_sailors_modifier = 0.1
+            navy_galley_power = 0.2
+            naval_damage_done = 0.1
+        }
+    }
+
+    dbo_military_navy_fundamental_barbaros_hayrettin_pasha_policy = {
+        unique = yes
+        country_modifier = {
+            global_sailors_modifier = 0.2
+            navy_initiative = 0.1
+            navy_movement_speed = 0.1
+            navy_heavy_ship_power = 0.2
+            navy_galley_power = 0.2
+            naval_damage_done = 0.2
+        }
+    }
+}
+
+dbo_military_gendarme_law = {
+    law_category = dbo_military
+    law_country_group = TUR
+    dbo_military_gendarme_martolos_units_policy = {
+        unique = yes
+        country_modifier = {
+            counter_espionage = 0.2
+            spy_network_construction = 0.2
+            monthly_rebel_growth = -0.002
+        }
+    }
+}
