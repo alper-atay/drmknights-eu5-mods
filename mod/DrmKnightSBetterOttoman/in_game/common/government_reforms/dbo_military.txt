@@ -1,0 +1,45 @@
+﻿dbo_military_legacy_of_caka_bey = {
+    unique = yes
+    potential = {
+        has_or_had_tag = TUR
+        has_variable = dbo_military_legacy_of_caka_bey_obtained
+    }
+    locked = {
+        is_locked_mechanic = {
+            mechanic = government_reform
+            type = dbo_military_legacy_of_caka_bey
+        }
+    }
+    country_modifier = {
+        government_reform_slots = 1
+        navy_initiative = 0.1
+        navy_movement_speed = 0.1
+        navy_heavy_ship_power = 0.1
+        navy_galley_power = 0.2
+        naval_damage_done = 0.1
+    }
+}
+
+dbo_military_martolos_units = {
+    unique = yes
+    potential = {
+        has_or_had_tag = TUR
+        has_variable = dbo_military_martolos_units_obtained
+    }
+    locked = {
+        is_locked_mechanic = {
+            mechanic = government_reform
+            type = dbo_military_martolos_units
+        }
+    }
+    country_modifier = {
+        army_initiative = 0.1
+        correct_box_chance = 0.1
+        counter_espionage = 0.1
+        spy_network_construction = 0.1
+        government_reform_slots = 1
+        monthly_rebel_growth = -0.002
+    }
+}
+
+

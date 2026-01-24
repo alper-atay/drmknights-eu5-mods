@@ -1,0 +1,189 @@
+﻿dbo_war_wolf_t1 = {
+    unique = yes
+    potential = {
+        has_or_had_tag = TUR
+        has_variable = dbo_war_wolf_t1_obtained
+    }
+    locked = {
+        is_locked_mechanic = {
+            mechanic = government_reform
+            type = dbo_war_wolf_t1
+        }
+    }
+    country_modifier = {
+        government_reform_slots = 1
+        assault_ability = 0.01
+        army_movement_speed = 0.01
+    }
+}
+
+dbo_war_wolf_t2 = {
+    unique = yes
+    potential = {
+        has_or_had_tag = TUR
+        has_variable = dbo_war_wolf_t2_obtained
+    }
+    locked = {
+        is_locked_mechanic = {
+            mechanic = government_reform
+            type = dbo_war_wolf_t2
+        }
+    }
+    country_modifier = {
+        government_reform_slots = 1
+        assault_ability = 0.02
+        army_movement_speed = 0.02
+    }
+}
+
+dbo_war_wolf_t3 = {
+    unique = yes
+    potential = {
+        has_or_had_tag = TUR
+        has_variable = dbo_war_wolf_t3_obtained
+    }
+    locked = {
+        is_locked_mechanic = {
+            mechanic = government_reform
+            type = dbo_war_wolf_t3
+        }
+    }
+    country_modifier = {
+        government_reform_slots = 1
+        assault_ability = 0.03
+        army_movement_speed = 0.03
+    }
+}
+
+dbo_war_wolf_t4 = {
+    unique = yes
+    potential = {
+        has_or_had_tag = TUR
+        has_variable = dbo_war_wolf_t4_obtained
+    }
+    locked = {
+        is_locked_mechanic = {
+            mechanic = government_reform
+            type = dbo_war_wolf_t4
+        }
+    }
+    country_modifier = {
+        government_reform_slots = 1
+        assault_ability = 0.05
+        army_movement_speed = 0.05
+    }
+}
+
+dbo_war_wolf_t5 = {
+    unique = yes
+    potential = {
+        has_or_had_tag = TUR
+        has_variable = dbo_war_wolf_t5_obtained
+    }
+    locked = {
+        is_locked_mechanic = {
+            mechanic = government_reform
+            type = dbo_war_wolf_t5
+        }
+    }
+    country_modifier = {
+        government_reform_slots = 1
+        assault_ability = 0.08
+        army_movement_speed = 0.08
+    }
+}
+
+dbo_war_wolf_t6 = {
+    unique = yes
+    potential = {
+        has_or_had_tag = TUR
+        has_variable = dbo_war_wolf_t6_obtained
+    }
+    locked = {
+        is_locked_mechanic = {
+            mechanic = government_reform
+            type = dbo_war_wolf_t6
+        }
+    }
+    country_modifier = {
+        government_reform_slots = 1
+        assault_ability = 0.1
+        army_movement_speed = 0.1
+    }
+}
+
+dbo_war_wolf_t7 = {
+    unique = yes
+    potential = {
+        has_or_had_tag = TUR
+        has_variable = dbo_war_wolf_t7_obtained
+    }
+    locked = {
+        is_locked_mechanic = {
+            mechanic = government_reform
+            type = dbo_war_wolf_t7
+        }
+    }
+    country_modifier = {
+        government_reform_slots = 1
+        assault_ability = 0.15
+        army_movement_speed = 0.15
+    }
+}
+
+dbo_war_wolf_t8 = {
+    unique = yes
+    potential = {
+        has_or_had_tag = TUR
+        has_variable = dbo_war_wolf_t8_obtained
+    }
+    locked = {
+        is_locked_mechanic = {
+            mechanic = government_reform
+            type = dbo_war_wolf_t8
+        }
+    }
+    country_modifier = {
+        government_reform_slots = 1
+        assault_ability = 0.2
+        army_movement_speed = 0.2
+    }
+}
+
+dbo_war_wolf_t9 = {
+    unique = yes
+    potential = {
+        has_or_had_tag = TUR
+        has_variable = dbo_war_wolf_t9_obtained
+    }
+    locked = {
+        is_locked_mechanic = {
+            mechanic = government_reform
+            type = dbo_war_wolf_t9
+        }
+    }
+    country_modifier = {
+        government_reform_slots = 1
+        assault_ability = 0.3
+        army_movement_speed = 0.3
+    }
+}
+
+dbo_war_wolf_t10 = {
+    unique = yes
+    potential = {
+        has_or_had_tag = TUR
+        has_variable = dbo_war_wolf_t10_obtained
+    }
+    locked = {
+        is_locked_mechanic = {
+            mechanic = government_reform
+            type = dbo_war_wolf_t10
+        }
+    }
+    country_modifier = {
+        government_reform_slots = 1
+        assault_ability = 0.4
+        army_movement_speed = 0.4
+    }
+}

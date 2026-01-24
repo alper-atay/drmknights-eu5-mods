@@ -2,7 +2,7 @@
 	is_army = yes
 	bombard = yes
 	movement_speed = 2
-	build_time = 360
+	build_time = 180
 	supply_weight = 1
 	max_strength = 0
 	attrition_loss = 0.5

@@ -1,0 +1,98 @@
+﻿dbo_military_army_fundamental_law = {
+    law_category = dbo_military
+    law_country_group = TUR
+    dbo_military_army_fundamental_alp_and_alperen_policy = {
+        unique = yes
+        country_modifier = {
+            military_tactics = 0.5
+            discipline = 0.1
+            global_levy_size_modifier = 0.1
+            levy_combat_efficiency_modifier = 0.1
+        }
+    }
+    dbo_military_army_fundamental_kapikulu_ocaklari_policy = {
+        unique = yes
+        country_modifier = {
+            military_tactics = 1
+            discipline = 0.2
+            global_manpower_modifier = 0.1
+        }
+    }
+}
+
+dbo_military_army_infantry_law = {
+    law_category = dbo_military
+    law_country_group = TUR
+    dbo_military_army_infantry_yeniceri_ocagi_policy = {
+        unique = yes
+        country_modifier = {
+            army_infantry_power = 0.1
+            army_infantry_build_cost_modifier = -0.1
+            army_infantry_maintenance_cost_modifier = -0.1
+            army_infantry_reinforce_cost_modifier = -0.1
+        }
+    }
+}
+
+dbo_military_army_cavalry_law = {
+    law_category = dbo_military
+    law_country_group = TUR
+    dbo_military_army_cavalry_lessons_from_mongols_policy = {
+        unique = yes
+        country_modifier = {
+            army_cavalry_power = 0.1
+            army_cavalry_maintenance_cost_modifier = -0.1
+        }
+    }
+    dbo_military_army_cavalry_timariot_system_policy = {
+        unique = yes
+        country_modifier = {
+            army_cavalry_power = 0.1
+            army_cavalry_build_cost_modifier = -0.1
+            army_cavalry_maintenance_cost_modifier = -0.1
+            army_cavalry_reinforce_cost_modifier = -0.1
+        }
+    }
+}
+
+dbo_military_army_artillery_law = {
+    law_category = dbo_military
+    law_country_group = TUR
+    dbo_military_army_artillery_topcu_ocagi_policy = {
+        unique = yes
+        country_modifier = {
+            army_artillery_power = 0.1
+            army_artillery_build_cost_modifier = -0.1
+            army_artillery_maintenance_cost_modifier = -0.1
+            army_artillery_reinforce_cost_modifier = -0.1
+        }
+    }
+}
+
+dbo_military_army_heavy_artillery_law = {
+    law_category = dbo_military
+    law_country_group = TUR
+    dbo_military_army_heavy_artillery_great_bronze_cannon_policy = {
+        unique = yes
+        country_modifier = {
+            dbo_army_heavy_artillery_power = 0.1
+            dbo_army_heavy_artillery_build_cost_modifier = -0.1
+            dbo_army_heavy_artillery_maintenance_cost_modifier = -0.1
+            dbo_army_heavy_artillery_reinforce_cost_modifier = -0.1
+        }
+    }
+}
+
+dbo_military_army_auxiliary_law = {
+    law_category = dbo_military
+    law_country_group = TUR
+    dbo_military_army_auxiliary_cebeci_and_saka_ocagi_policy = {
+        unique = yes
+        country_modifier = {
+            army_auxiliary_power = 0.1
+            army_auxiliary_power_build_cost_modifier = -0.1
+            army_auxiliary_maintenance_cost_modifier = -0.1
+            army_auxiliary_reinforce_cost_modifier = -0.1
+        }
+    }
+}

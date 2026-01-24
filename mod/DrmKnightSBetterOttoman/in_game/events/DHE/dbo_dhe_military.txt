@@ -1,0 +1,97 @@
+namespace = dbo_dhe_military
+
+# dbo_military_alp_and_alperen
+dbo_dhe_military.101 = {
+    type = country_event
+    title = dbo_dhe_military.101.title
+    desc = dbo_dhe_military.101.desc
+    historical_info = dbo_dhe_military.101.historical_info
+    image = "gfx/interface/illustrations/event/backgrounds/dbo_military_alp_and_alperen.dds"
+    fire_only_once = yes
+    outcome = positive
+    dynamic_historical_event = {
+        tag = TUR
+        from = 1338.1.1
+        to = 1837.1.1
+        monthly_chance = 100
+    }
+    trigger = {
+        NOT = {
+            has_reform = government_reform:dbo_military_alp_and_alperen
+        }
+    }
+    option = {
+        name = dbo_dhe_military.1001.a
+        historical_option = yes
+        set_variable = dbo_military_alp_and_alperen_obtained
+        add_reform = government_reform:dbo_military_alp_and_alperen
+        dbo_event_mild_bonus = yes
+    }
+}
+
+
+
+# dbo_military_kapikulu
+dbo_dhe_military.102 = {
+    type = country_event
+    title = dbo_dhe_military.102.title
+    desc = dbo_dhe_military.102.desc
+    historical_info = dbo_dhe_military.102.historical_info
+    image = "gfx/interface/illustrations/event/backgrounds/dbo_military_kapikulu.dds"
+    fire_only_once = yes
+    outcome = positive
+    dynamic_historical_event = {
+        tag = TUR
+        from = 1337.1.1
+        to = 1837.1.1
+        monthly_chance = 100
+    }
+    trigger = {
+        has_policy = dbo_war_slave_tax_and_devshirme_system_policy
+        has_reform = government_reform:dbo_military_alp_and_alperen
+        NOT = {
+            has_reform = government_reform:dbo_military_kapikulu
+        }
+    }
+    option = {
+        name = dbo_dhe_military.1001.a
+        historical_option = yes
+        remove_variable = dbo_military_alp_and_alperen_obtained
+        remove_reform = government_reform:dbo_military_alp_and_alperen
+        set_variable = dbo_military_kapikulu_obtained
+        add_reform = government_reform:dbo_military_kapikulu
+        dbo_event_mild_bonus = yes
+    }
+}
+
+# dbo_military_legacy_of_caka_bey
+dbo_dhe_military.103 = {
+    type = country_event
+    title = dbo_dhe_military.103.title
+    desc = dbo_dhe_military.103.desc
+    historical_info = dbo_dhe_military.103.historical_info
+    image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_legacy_of_caka_bey.dds"
+    fire_only_once = yes
+    outcome = positive
+    dynamic_historical_event = {
+        tag = TUR
+        from = 1337.1.1
+        to = 1837.1.1
+        monthly_chance = 100
+    }
+    trigger = {
+        own_entire_province = province_definition:smyrna_province
+        has_advance = unlock_m_galley_advance
+        has_reform = government_reform:dbo_destiny_legacy_of_seljuks
+        NOT = {
+            has_reform = government_reform:dbo_military_legacy_of_caka_bey
+        }
+    }
+    option = {
+        name = dbo_dhe_military.103.a
+        historical_option = yes
+        set_variable = dbo_destiny_legacy_of_caka_bey_obtained
+        add_reform = government_reform:dbo_military_legacy_of_caka_bey
+        dbo_event_mild_bonus = yes
+    }
+}

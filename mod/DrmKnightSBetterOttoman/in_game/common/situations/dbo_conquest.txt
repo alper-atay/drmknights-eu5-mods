@@ -1,92 +1,17 @@
 ﻿dbo_conquest = {
-	monthly_spawn_chance = monthly_spawn_chance_unique
-	can_start = {
-		current_date > 1337.1.1
-	}
-	can_end = {
-		custom_tooltip = {
-			text = dbo_conquest_anatolian_turks_can_end_tooltip
-			c:TUR = {
-				dbo_conquest_anatolian_turks_check = yes
-			}
-		}
-		custom_tooltip = {
-			text = dbo_conquest_rumelia_can_end_tooltip
-			c:TUR = {
-				dbo_conquest_rumelia_check = yes
-			}
-		}
-		custom_tooltip = {
-			text = dbo_conquest_black_sea_can_end_tooltip
-			c:TUR = {
-				dbo_conquest_black_sea_check = yes
-			}
-		}
-		custom_tooltip = {
-			text = dbo_conquest_fertile_crescent_can_end_tooltip
-			c:TUR = {
-				dbo_conquest_fertile_crescent_check = yes
-			}
-		}
-		custom_tooltip = {
-			text = dbo_conquest_arabian_peninsula_can_end_tooltip
-			c:TUR = {
-				dbo_conquest_arabian_peninsula_check = yes
-			}
-		}
-		custom_tooltip = {
-			text = dbo_conquest_nile_river_can_end_tooltip
-			c:TUR = {
-				dbo_conquest_nile_river_check = yes
-			}
-		}
-		custom_tooltip = {
-			text = dbo_conquest_europe_eastern_gate_can_end_tooltip
-			c:TUR = {
-				dbo_conquest_europe_eastern_gate_check = yes
-			}
-		}
-		custom_tooltip = {
-			text = dbo_conquest_pearl_of_east_can_end_tooltip
-			c:TUR = {
-				dbo_conquest_pearl_of_east_check = yes
-			}
-		}
-		custom_tooltip = {
-			text = dbo_conquest_turkish_renaissance_can_end_tooltip
-			c:TUR = {
-				dbo_conquest_turkish_renaissance_check = yes
-			}
-		}
-		custom_tooltip = {
-			text = dbo_conquest_maghreb_can_end_tooltip
-			c:TUR = {
-				dbo_conquest_maghreb_check = yes
-			}
-		}
-		custom_tooltip = {
-			text = dbo_conquest_steep_mountain_can_end_tooltip
-			c:TUR = {
-				dbo_conquest_steep_mountain_check = yes
-			}
-		}
-		custom_tooltip = {
-			text = dbo_conquest_never_end_can_end_tooltip
-			always = no
-		}
-	}
-	visible = {
-		tag = TUR
-	}
-	on_start = {
-		c:TUR = {
-			trigger_event_non_silently = dbo_conquest.1
-		}
-	}
-	on_ended = {
-		c:TUR = {
-		}
-	}
-	on_monthly = {
-	}
+    monthly_spawn_chance = monthly_spawn_chance_unique
+    can_start = {
+        current_date > 1337.1.1
+    }
+    can_end = {
+        dbo_conquest_can_end = yes
+    }
+    visible = {
+        tag = TUR
+    }
+    on_start = {
+        c:TUR = {
+            trigger_event_non_silently = dbo_conquest.1
+        }
+    }
 }

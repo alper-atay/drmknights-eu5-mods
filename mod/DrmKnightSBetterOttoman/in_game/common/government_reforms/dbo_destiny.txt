@@ -1,507 +1,144 @@
-﻿dbo_destiny_alp_and_alperen = {
-	unique = yes
-	potential = {
-		has_or_had_tag = TUR
-		has_variable = dbo_destiny_alp_and_alperen_obtained
-	}
-	locked = {
-		is_locked_mechanic = {
-			mechanic = government_reform
-			type = dbo_destiny_alp_and_alperen
-		}
-	}
-	country_modifier = {
-		monthly_towards_belligerent = societal_value_monthly_move
-		monthly_towards_quality = societal_value_monthly_move
-		monthly_towards_offensive = societal_value_monthly_move
-		monthly_towards_land = societal_value_monthly_move
-		military_tactics = 1
-		discipline = 0.1
-		global_levy_size_modifier = 0.1
-		levy_combat_efficiency_modifier = 0.1
-		government_reform_slots = 1
-	}
-}
-
-dbo_destiny_cultural_capital_constantinople = {
-	unique = yes
-	potential = {
-		has_or_had_tag = TUR
-		has_variable = dbo_destiny_cultural_capital_constantinople_obtained
-	}
-	locked = {
-		is_locked_mechanic = {
-			mechanic = government_reform
-			type = dbo_destiny_cultural_capital_constantinople
-		}
-	}
-	country_modifier = {
-		artist_monthly_start_chance = 0.1
-		artist_salary_modifier = -0.1
-		artist_salary_modifier_on_character = -0.1
-		artist_skill_level_gain = 10
-		artist_impact = 0.1
-		num_possible_artists = 1
-		skill_of_new_artists = 0.1
-		cultures_capacity = 1
-		cultures_capacity_modifier = 0.25
-		cultural_tradition_modifier = 0.1
-		cultural_influence_modifier = 0.1
-		global_institution_growth_modifier = 0.1
-		government_reform_slots = 1
-	}
+﻿dbo_destiny_cultural_capital_constantinople = {
+    unique = yes
+    potential = {
+        has_or_had_tag = TUR
+        has_variable = dbo_destiny_cultural_capital_constantinople_obtained
+    }
+    locked = {
+        is_locked_mechanic = {
+            mechanic = government_reform
+            type = dbo_destiny_cultural_capital_constantinople
+        }
+    }
+    country_modifier = {
+        artist_monthly_start_chance = 0.1
+        artist_salary_modifier = -0.1
+        artist_salary_modifier_on_character = -0.1
+        artist_skill_level_gain = 10
+        artist_impact = 0.1
+        num_possible_artists = 1
+        skill_of_new_artists = 0.1
+        cultures_capacity = 1
+        cultures_capacity_modifier = 0.25
+        cultural_tradition_modifier = 0.1
+        cultural_influence_modifier = 0.1
+        global_institution_growth_modifier = 0.1
+        government_reform_slots = 1
+    }
 }
 
 dbo_destiny_trade_center_grand_bazaar = {
-	unique = yes
-	potential = {
-		has_or_had_tag = TUR
-		has_variable = dbo_destiny_trade_center_grand_bazaar_obtained
-	}
-	locked = {
-		is_locked_mechanic = {
-			mechanic = government_reform
-			type = dbo_destiny_trade_center_grand_bazaar
-		}
-	}
-	country_modifier = {
-		trade_efficiency = 0.1
-		trade_range_modifier = 0.1
-		trade_land_movement_cost_modifier = -0.1
-		trade_sea_movement_cost_modifier = -0.1
-		merchant_maintenance_cost = -0.1
-		government_reform_slots = 1
-	}
-}
-
-dbo_destiny_great_bronze_cannon = {
-	unique = yes
-	potential = {
-		has_or_had_tag = TUR
-		has_variable = dbo_destiny_great_bronze_cannon_obtained
-	}
-	locked = {
-		is_locked_mechanic = {
-			mechanic = government_reform
-			type = dbo_destiny_great_bronze_cannon
-		}
-	}
-	country_modifier = {
-		dbo_army_heavy_artillery_power = 0.3
-		dbo_army_heavy_artillery_build_cost_modifier = -0.1
-		dbo_army_heavy_artillery_maintenance_cost_modifier = -0.2
-		dbo_army_heavy_artillery_reinforce_cost_modifier = -0.1
-		government_reform_slots = 1
-	}
-}
-
-dbo_destiny_legacy_of_caka_bey = {
-	unique = yes
-	potential = {
-		has_or_had_tag = TUR
-		has_variable = dbo_destiny_legacy_of_caka_bey_obtained
-	}
-	locked = {
-		is_locked_mechanic = {
-			mechanic = government_reform
-			type = dbo_destiny_legacy_of_caka_bey
-		}
-	}
-	country_modifier = {
-		government_reform_slots = 1
-		navy_initiative = 0.1
-		navy_movement_speed = 0.1
-		navy_heavy_ship_power = 0.1
-		navy_galley_power = 0.2
-		naval_damage_done = 0.1
-	}
-}
-
-dbo_destiny_legacy_of_seljuks = {
-	unique = yes
-	potential = {
-		has_or_had_tag = TUR
-		has_variable = dbo_destiny_legacy_of_seljuks_obtained
-	}
-	locked = {
-		is_locked_mechanic = {
-			mechanic = government_reform
-			type = dbo_destiny_legacy_of_seljuks
-		}
-	}
-	country_modifier = {
-		government_reform_slots = 1
-		global_crown_estate_power = 0.1
-		monthly_legitimacy = 0.1
-		monthly_prestige = 0.1
-		stability_investment = 0.1
-		monthly_towards_centralization = societal_value_monthly_move
-	}
-}
-
-dbo_destiny_lessons_from_mongols = {
-	unique = yes
-	potential = {
-		has_or_had_tag = TUR
-		has_variable = dbo_destiny_lessons_from_mongols_obtained
-	}
-	locked = {
-		is_locked_mechanic = {
-			mechanic = government_reform
-			type = dbo_destiny_lessons_from_mongols
-		}
-	}
-	country_modifier = {
-		army_cavalry_power = 0.1
-		army_cavalry_maintenance_cost_modifier = -0.1
-		government_reform_slots = 1
-	}
-}
-
-dbo_destiny_martolos_units = {
-	unique = yes
-	potential = {
-		has_or_had_tag = TUR
-		has_variable = dbo_destiny_martolos_units_obtained
-	}
-	locked = {
-		is_locked_mechanic = {
-			mechanic = government_reform
-			type = dbo_destiny_martolos_units
-		}
-	}
-	country_modifier = {
-		army_initiative = 0.1
-		correct_box_chance = 0.1
-		counter_espionage = 0.1
-		spy_network_construction = 0.1
-		government_reform_slots = 1
-		monthly_rebel_growth = -0.002
-	}
-}
-
-dbo_destiny_advanced_devshirme_system = {
-	unique = yes
-	potential = {
-		has_or_had_tag = TUR
-		has_variable = dbo_destiny_advanced_devshirme_system_obtained
-		has_policy = dbo_advanced_devshirme_system_policy
-	}
-	locked = {
-		is_locked_mechanic = {
-			mechanic = government_reform
-			type = dbo_destiny_advanced_devshirme_system
-		}
-	}
-	country_modifier = {
-		army_infantry_power = 0.3
-		army_infantry_build_cost_modifier = -0.1
-		army_infantry_maintenance_cost_modifier = -0.2
-		army_infantry_reinforce_cost_modifier = -0.1
-		government_reform_slots = 1
-	}
-}
-
-dbo_destiny_modernized_timariot_system = {
-	unique = yes
-	potential = {
-		has_or_had_tag = TUR
-		has_variable = dbo_destiny_modernized_timariot_system_obtained
-	}
-	locked = {
-		is_locked_mechanic = {
-			mechanic = government_reform
-			type = dbo_destiny_modernized_timariot_system
-		}
-	}
-	country_modifier = {
-		army_cavalry_power = 0.3
-		army_cavalry_build_cost_modifier = -0.1
-		army_cavalry_maintenance_cost_modifier = -0.2
-		army_cavalry_reinforce_cost_modifier = -0.1
-		government_reform_slots = 1
-	}
-}
-
-dbo_destiny_piri_reis = {
-	unique = yes
-	potential = {
-		has_or_had_tag = TUR
-		has_variable = dbo_destiny_piri_reis_obtained
-	}
-	locked = {
-		is_locked_mechanic = {
-			mechanic = government_reform
-			type = dbo_destiny_piri_reis
-		}
-	}
-	country_modifier = {
-		government_reform_slots = 1
-		exploration_maintenance_cost = -0.25
-		exploration_mission_speed = 0.25
-		exploration_mission_speed_modifier = 0.25
-		exploration_preparation_time_modifier = -0.25
-		recruit_explorer_cost_modifier = -0.25
-		start_exploration_land_cost_modifier = -0.25
-		start_exploration_sea_cost_modifier = -0.25
-	}
-}
-
-dbo_destiny_ottoman_empire = {
-	unique = yes
-	potential = {
-		has_or_had_tag = TUR
-		has_variable = dbo_destiny_ottoman_empire_obtained
-	}
-	locked = {
-		is_locked_mechanic = {
-			mechanic = government_reform
-			type = dbo_destiny_ottoman_empire
-		}
-	}
-	country_modifier = {
-		power_projection = 5
-		global_integration_speed_modifier = 0.5
-		government_size = 1
-		antagonism_received_modifier = -0.5
-		auto_slave_raid_different_religion = yes
-		government_reform_slots = 1
-		global_monthly_control = 0.1
-		cultures_capacity = 1
-		cultures_capacity_modifier = 0.2
-		global_crown_estate_power = 0.2
-		monthly_legitimacy = 0.1
-		monthly_prestige = 0.1
-		stability_investment = 0.1
-		global_war_score_cost = -0.25
-	}
+    unique = yes
+    potential = {
+        has_or_had_tag = TUR
+        has_variable = dbo_destiny_trade_center_grand_bazaar_obtained
+    }
+    locked = {
+        is_locked_mechanic = {
+            mechanic = government_reform
+            type = dbo_destiny_trade_center_grand_bazaar
+        }
+    }
+    country_modifier = {
+        trade_efficiency = 0.1
+        trade_range_modifier = 0.1
+        trade_land_movement_cost_modifier = -0.1
+        trade_sea_movement_cost_modifier = -0.1
+        merchant_maintenance_cost = -0.1
+        government_reform_slots = 1
+    }
 }
 
 dbo_destiny_mentor_lala = {
-	unique = yes
-	potential = {
-		has_or_had_tag = TUR
-		has_variable = dbo_destiny_mentor_lala_obtained
-	}
-	locked = {
-		is_locked_mechanic = {
-			mechanic = government_reform
-			type = dbo_destiny_mentor_lala
-		}
-	}
-	country_modifier = {
-		government_reform_slots = 1
-		country_child_education = 0.15
-	}
+    unique = yes
+    potential = {
+        has_or_had_tag = TUR
+        has_variable = dbo_destiny_mentor_lala_obtained
+    }
+    locked = {
+        is_locked_mechanic = {
+            mechanic = government_reform
+            type = dbo_destiny_mentor_lala
+        }
+    }
+    country_modifier = {
+        government_reform_slots = 1
+        country_child_education = 0.15
+    }
 }
 
-dbo_destiny_humbaraci = {
-	unique = yes
-	potential = {
-		has_or_had_tag = TUR
-		has_variable = dbo_destiny_humbaraci_obtained
-	}
-	locked = {
-		is_locked_mechanic = {
-			mechanic = government_reform
-			type = dbo_destiny_humbaraci
-		}
-	}
-	country_modifier = {
-		army_artillery_power = 0.3
-		army_artillery_build_cost_modifier = -0.1
-		army_artillery_maintenance_cost_modifier = -0.2
-		army_artillery_reinforce_cost_modifier = -0.1
-		government_reform_slots = 1
-	}
+dbo_destiny_legacy_of_seljuks = {
+    unique = yes
+    potential = {
+        has_or_had_tag = TUR
+        has_variable = dbo_destiny_legacy_of_seljuks_obtained
+    }
+    locked = {
+        is_locked_mechanic = {
+            mechanic = government_reform
+            type = dbo_destiny_legacy_of_seljuks
+        }
+    }
+    country_modifier = {
+        government_reform_slots = 1
+        global_crown_estate_power = 0.1
+        monthly_legitimacy = 0.1
+        monthly_prestige = 0.1
+        stability_investment = 0.1
+        monthly_towards_centralization = societal_value_monthly_move
+    }
 }
 
-dbo_destiny_war_wolf_t1 = {
-	unique = yes
-	potential = {
-		has_or_had_tag = TUR
-		has_variable = dbo_destiny_war_wolf_t1_obtained
-	}
-	locked = {
-		is_locked_mechanic = {
-			mechanic = government_reform
-			type = dbo_destiny_war_wolf_t1
-		}
-	}
-	country_modifier = {
-		government_reform_slots = 1
-		assault_ability = 0.01
-		army_movement_speed = 0.01
-	}
+dbo_destiny_piri_reis = {
+    unique = yes
+    potential = {
+        has_or_had_tag = TUR
+        has_variable = dbo_destiny_piri_reis_obtained
+    }
+    locked = {
+        is_locked_mechanic = {
+            mechanic = government_reform
+            type = dbo_destiny_piri_reis
+        }
+    }
+    country_modifier = {
+        government_reform_slots = 1
+        exploration_maintenance_cost = -0.25
+        exploration_mission_speed = 0.25
+        exploration_mission_speed_modifier = 0.25
+        exploration_preparation_time_modifier = -0.25
+        recruit_explorer_cost_modifier = -0.25
+        start_exploration_land_cost_modifier = -0.25
+        start_exploration_sea_cost_modifier = -0.25
+    }
 }
 
-dbo_destiny_war_wolf_t2 = {
-	unique = yes
-	potential = {
-		has_or_had_tag = TUR
-		has_variable = dbo_destiny_war_wolf_t2_obtained
-	}
-	locked = {
-		is_locked_mechanic = {
-			mechanic = government_reform
-			type = dbo_destiny_war_wolf_t2
-		}
-	}
-	country_modifier = {
-		government_reform_slots = 1
-		assault_ability = 0.02
-		army_movement_speed = 0.02
-	}
-}
-
-dbo_destiny_war_wolf_t3 = {
-	unique = yes
-	potential = {
-		has_or_had_tag = TUR
-		has_variable = dbo_destiny_war_wolf_t3_obtained
-	}
-	locked = {
-		is_locked_mechanic = {
-			mechanic = government_reform
-			type = dbo_destiny_war_wolf_t3
-		}
-	}
-	country_modifier = {
-		government_reform_slots = 1
-		assault_ability = 0.03
-		army_movement_speed = 0.03
-	}
-}
-
-dbo_destiny_war_wolf_t4 = {
-	unique = yes
-	potential = {
-		has_or_had_tag = TUR
-		has_variable = dbo_destiny_war_wolf_t4_obtained
-	}
-	locked = {
-		is_locked_mechanic = {
-			mechanic = government_reform
-			type = dbo_destiny_war_wolf_t4
-		}
-	}
-	country_modifier = {
-		government_reform_slots = 1
-		assault_ability = 0.05
-		army_movement_speed = 0.05
-	}
-}
-
-dbo_destiny_war_wolf_t5 = {
-	unique = yes
-	potential = {
-		has_or_had_tag = TUR
-		has_variable = dbo_destiny_war_wolf_t5_obtained
-	}
-	locked = {
-		is_locked_mechanic = {
-			mechanic = government_reform
-			type = dbo_destiny_war_wolf_t5
-		}
-	}
-	country_modifier = {
-		government_reform_slots = 1
-		assault_ability = 0.08
-		army_movement_speed = 0.08
-	}
-}
-
-dbo_destiny_war_wolf_t6 = {
-	unique = yes
-	potential = {
-		has_or_had_tag = TUR
-		has_variable = dbo_destiny_war_wolf_t6_obtained
-	}
-	locked = {
-		is_locked_mechanic = {
-			mechanic = government_reform
-			type = dbo_destiny_war_wolf_t6
-		}
-	}
-	country_modifier = {
-		government_reform_slots = 1
-		assault_ability = 0.1
-		army_movement_speed = 0.1
-	}
-}
-
-dbo_destiny_war_wolf_t7 = {
-	unique = yes
-	potential = {
-		has_or_had_tag = TUR
-		has_variable = dbo_destiny_war_wolf_t7_obtained
-	}
-	locked = {
-		is_locked_mechanic = {
-			mechanic = government_reform
-			type = dbo_destiny_war_wolf_t7
-		}
-	}
-	country_modifier = {
-		government_reform_slots = 1
-		assault_ability = 0.15
-		army_movement_speed = 0.15
-	}
-}
-
-dbo_destiny_war_wolf_t8 = {
-	unique = yes
-	potential = {
-		has_or_had_tag = TUR
-		has_variable = dbo_destiny_war_wolf_t8_obtained
-	}
-	locked = {
-		is_locked_mechanic = {
-			mechanic = government_reform
-			type = dbo_destiny_war_wolf_t8
-		}
-	}
-	country_modifier = {
-		government_reform_slots = 1
-		assault_ability = 0.2
-		army_movement_speed = 0.2
-	}
-}
-
-dbo_destiny_war_wolf_t9 = {
-	unique = yes
-	potential = {
-		has_or_had_tag = TUR
-		has_variable = dbo_destiny_war_wolf_t9_obtained
-	}
-	locked = {
-		is_locked_mechanic = {
-			mechanic = government_reform
-			type = dbo_destiny_war_wolf_t9
-		}
-	}
-	country_modifier = {
-		government_reform_slots = 1
-		assault_ability = 0.3
-		army_movement_speed = 0.3
-	}
-}
-
-dbo_destiny_war_wolf_t10 = {
-	unique = yes
-	potential = {
-		has_or_had_tag = TUR
-		has_variable = dbo_destiny_war_wolf_t10_obtained
-	}
-	locked = {
-		is_locked_mechanic = {
-			mechanic = government_reform
-			type = dbo_destiny_war_wolf_t10
-		}
-	}
-	country_modifier = {
-		government_reform_slots = 1
-		assault_ability = 0.4
-		army_movement_speed = 0.4
-	}
+dbo_destiny_ottoman_empire = {
+    unique = yes
+    potential = {
+        has_or_had_tag = TUR
+        has_variable = dbo_destiny_ottoman_empire_obtained
+    }
+    locked = {
+        is_locked_mechanic = {
+            mechanic = government_reform
+            type = dbo_destiny_ottoman_empire
+        }
+    }
+    country_modifier = {
+        power_projection = 5
+        global_integration_speed_modifier = 0.5
+        government_size = 1
+        antagonism_received_modifier = -0.5
+        auto_slave_raid_different_religion = yes
+        government_reform_slots = 1
+        global_monthly_control = 0.1
+        cultures_capacity = 1
+        cultures_capacity_modifier = 0.2
+        global_crown_estate_power = 0.2
+        monthly_legitimacy = 0.1
+        monthly_prestige = 0.1
+        stability_investment = 0.1
+        global_war_score_cost = -0.25
+    }
 }

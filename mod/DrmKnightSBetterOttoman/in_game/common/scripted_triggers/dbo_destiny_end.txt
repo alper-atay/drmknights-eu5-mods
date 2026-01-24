@@ -1,0 +1,35 @@
+﻿dbo_destiny_alp_and_alperen_can_end = {
+    custom_tooltip = {
+        text = dbo_destiny_alp_and_alperen_can_end_tooltip
+        c:TUR = {
+            has_variable = dbo_destiny_alp_and_alperen_obtained
+        }
+    }
+}
+
+dbo_destiny_mentor_lala_can_end = {
+    custom_tooltip = {
+        text = dbo_destiny_mentor_lala_can_end_tooltip
+        c:TUR = {
+            has_variable = dbo_destiny_mentor_lala_obtained
+        }
+    }
+}
+
+dbo_destiny_cultural_capital_constantinople_can_end = {
+    custom_tooltip = {
+        text = dbo_destiny_cultural_capital_constantinople_can_end_tooltip
+        c:TUR = {
+            has_variable = dbo_destiny_cultural_capital_constantinople_obtained
+        }
+    }
+}
+
+dbo_destiny_trade_center_grand_bazaar_can_end = {
+    custom_tooltip = {
+        text = dbo_destiny_trade_center_grand_bazaar_can_end_tooltip
+        c:TUR = {
+            has_variable = dbo_destiny_trade_center_grand_bazaar_obtained
+        }
+    }
+}

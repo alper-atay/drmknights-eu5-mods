@@ -1,0 +1,165 @@
+﻿dbo_war_wolf_t1_can_end = {
+    custom_tooltip = {
+        text = dbo_war_wolf_t1_can_end_tooltip
+        c:TUR = {
+            OR = {
+                has_variable = dbo_war_wolf_t1_obtained
+                has_variable = dbo_war_wolf_t2_obtained
+                has_variable = dbo_war_wolf_t3_obtained
+                has_variable = dbo_war_wolf_t4_obtained
+                has_variable = dbo_war_wolf_t5_obtained
+                has_variable = dbo_war_wolf_t6_obtained
+                has_variable = dbo_war_wolf_t7_obtained
+                has_variable = dbo_war_wolf_t8_obtained
+                has_variable = dbo_war_wolf_t9_obtained
+                has_variable = dbo_war_wolf_t10_obtained
+            }
+        }
+    }
+}
+
+dbo_war_wolf_t2_can_end = {
+    custom_tooltip = {
+        text = dbo_war_wolf_t2_can_end_tooltip
+        c:TUR = {
+            OR = {
+                has_variable = dbo_war_wolf_t2_obtained
+                has_variable = dbo_war_wolf_t3_obtained
+                has_variable = dbo_war_wolf_t4_obtained
+                has_variable = dbo_war_wolf_t5_obtained
+                has_variable = dbo_war_wolf_t6_obtained
+                has_variable = dbo_war_wolf_t7_obtained
+                has_variable = dbo_war_wolf_t8_obtained
+                has_variable = dbo_war_wolf_t9_obtained
+                has_variable = dbo_war_wolf_t10_obtained
+            }
+        }
+    }
+}
+
+dbo_war_wolf_t3_can_end = {
+    custom_tooltip = {
+        text = dbo_war_wolf_t3_can_end_tooltip
+        c:TUR = {
+            OR = {
+                has_variable = dbo_war_wolf_t3_obtained
+                has_variable = dbo_war_wolf_t4_obtained
+                has_variable = dbo_war_wolf_t5_obtained
+                has_variable = dbo_war_wolf_t6_obtained
+                has_variable = dbo_war_wolf_t7_obtained
+                has_variable = dbo_war_wolf_t8_obtained
+                has_variable = dbo_war_wolf_t9_obtained
+                has_variable = dbo_war_wolf_t10_obtained
+            }
+        }
+    }
+}
+
+dbo_war_wolf_t4_can_end = {
+    custom_tooltip = {
+        text = dbo_war_wolf_t4_can_end_tooltip
+        c:TUR = {
+            OR = {
+                has_variable = dbo_war_wolf_t4_obtained
+                has_variable = dbo_war_wolf_t5_obtained
+                has_variable = dbo_war_wolf_t6_obtained
+                has_variable = dbo_war_wolf_t7_obtained
+                has_variable = dbo_war_wolf_t8_obtained
+                has_variable = dbo_war_wolf_t9_obtained
+                has_variable = dbo_war_wolf_t10_obtained
+            }
+        }
+    }
+}
+
+dbo_war_wolf_t5_can_end = {
+    custom_tooltip = {
+        text = dbo_war_wolf_t5_can_end_tooltip
+        c:TUR = {
+            OR = {
+                has_variable = dbo_war_wolf_t5_obtained
+                has_variable = dbo_war_wolf_t6_obtained
+                has_variable = dbo_war_wolf_t7_obtained
+                has_variable = dbo_war_wolf_t8_obtained
+                has_variable = dbo_war_wolf_t9_obtained
+                has_variable = dbo_war_wolf_t10_obtained
+            }
+        }
+    }
+}
+
+dbo_war_wolf_t6_can_end = {
+    custom_tooltip = {
+        text = dbo_war_wolf_t6_can_end_tooltip
+        c:TUR = {
+            OR = {
+                has_variable = dbo_war_wolf_t6_obtained
+                has_variable = dbo_war_wolf_t7_obtained
+                has_variable = dbo_war_wolf_t8_obtained
+                has_variable = dbo_war_wolf_t9_obtained
+                has_variable = dbo_war_wolf_t10_obtained
+            }
+        }
+    }
+}
+
+dbo_war_wolf_t7_can_end = {
+    custom_tooltip = {
+        text = dbo_war_wolf_t7_can_end_tooltip
+        c:TUR = {
+            OR = {
+                has_variable = dbo_war_wolf_t7_obtained
+                has_variable = dbo_war_wolf_t8_obtained
+                has_variable = dbo_war_wolf_t9_obtained
+                has_variable = dbo_war_wolf_t10_obtained
+            }
+        }
+    }
+}
+
+dbo_war_wolf_t8_can_end = {
+    custom_tooltip = {
+        text = dbo_war_wolf_t8_can_end_tooltip
+        c:TUR = {
+            OR = {
+                has_variable = dbo_war_wolf_t8_obtained
+                has_variable = dbo_war_wolf_t9_obtained
+                has_variable = dbo_war_wolf_t10_obtained
+            }
+        }
+    }
+}
+
+dbo_war_wolf_t9_can_end = {
+    custom_tooltip = {
+        text = dbo_war_wolf_t9_can_end_tooltip
+        c:TUR = {
+            OR = {
+                has_variable = dbo_war_wolf_t9_obtained
+                has_variable = dbo_war_wolf_t10_obtained
+            }
+        }
+    }
+}
+
+dbo_war_wolf_t10_can_end = {
+    custom_tooltip = {
+        text = dbo_war_wolf_t10_can_end_tooltip
+        c:TUR = {
+            has_variable = dbo_war_wolf_t10_obtained
+        }
+    }
+}
+
+dbo_war_wolf_can_end = {
+    dbo_war_wolf_t1_can_end = yes
+    dbo_war_wolf_t2_can_end = yes
+    dbo_war_wolf_t3_can_end = yes
+    dbo_war_wolf_t4_can_end = yes
+    dbo_war_wolf_t5_can_end = yes
+    dbo_war_wolf_t6_can_end = yes
+    dbo_war_wolf_t7_can_end = yes
+    dbo_war_wolf_t8_can_end = yes
+    dbo_war_wolf_t9_can_end = yes
+    dbo_war_wolf_t10_can_end = yes
+}
