@@ -1,19 +1,38 @@
 ﻿dbo_military_army_fundamental_law = {
     law_category = dbo_military
     law_country_group = TUR
+    unique = yes
+    potential = {
+        OR = {
+            has_variable = dbo_military_army_fundamental_alp_and_alperen_policy_obtained
+            has_variable = dbo_military_army_fundamental_kapikulu_ocaklari_policy_obtained
+        }
+    }
     dbo_military_army_fundamental_alp_and_alperen_policy = {
         unique = yes
+        allow = {
+            has_variable = dbo_military_army_fundamental_alp_and_alperen_policy_obtained
+            NOT = {
+                has_variable = dbo_military_army_fundamental_alp_and_alperen_policy_disposed
+            }
+        }
         country_modifier = {
-            military_tactics = 0.5
+            military_tactics = 1
             discipline = 0.1
-            global_levy_size_modifier = 0.1
-            levy_combat_efficiency_modifier = 0.1
+            global_levy_size_modifier = 0.2
+            levy_combat_efficiency_modifier = 0.2
         }
     }
     dbo_military_army_fundamental_kapikulu_ocaklari_policy = {
         unique = yes
+        allow = {
+            has_variable = dbo_military_army_fundamental_kapikulu_ocaklari_policy_obtained
+            NOT = {
+                has_variable = dbo_military_army_fundamental_kapikulu_ocaklari_policy_disposed
+            }
+        }
         country_modifier = {
-            military_tactics = 1
+            military_tactics = 2
             discipline = 0.2
             global_manpower_modifier = 0.1
         }
@@ -23,8 +42,21 @@
 dbo_military_army_infantry_law = {
     law_category = dbo_military
     law_country_group = TUR
+    unique = yes
+    potential = {
+        OR = {
+            has_variable = dbo_military_army_infantry_yeniceri_ocagi_policy_obtained
+        }
+    }
     dbo_military_army_infantry_yeniceri_ocagi_policy = {
         unique = yes
+        allow = {
+            has_policy = dbo_military_army_fundamental_kapikulu_ocaklari_policy
+            has_variable = dbo_military_army_infantry_yeniceri_ocagi_policy_obtained
+            NOT = {
+                has_variable = dbo_military_army_infantry_yeniceri_ocagi_policy_disposed
+            }
+        }
         country_modifier = {
             army_infantry_power = 0.1
             army_infantry_build_cost_modifier = -0.1
@@ -37,8 +69,21 @@ dbo_military_army_infantry_law = {
 dbo_military_army_cavalry_law = {
     law_category = dbo_military
     law_country_group = TUR
+    unique = yes
+    potential = {
+        OR = {
+            has_variable = dbo_military_army_cavalry_lessons_from_mongols_policy_obtained
+            has_variable = dbo_military_army_cavalry_timariot_system_policy_obtained
+        }
+    }
     dbo_military_army_cavalry_lessons_from_mongols_policy = {
         unique = yes
+        allow = {
+            has_variable = dbo_military_army_cavalry_lessons_from_mongols_policy_obtained
+            NOT = {
+                has_variable = dbo_military_army_cavalry_lessons_from_mongols_policy_disposed
+            }
+        }
         country_modifier = {
             army_cavalry_power = 0.1
             army_cavalry_maintenance_cost_modifier = -0.1
@@ -46,6 +91,12 @@ dbo_military_army_cavalry_law = {
     }
     dbo_military_army_cavalry_timariot_system_policy = {
         unique = yes
+        allow = {
+            has_variable = dbo_military_army_cavalry_timariot_system_policy_obtained
+            NOT = {
+                has_variable = dbo_military_army_cavalry_timariot_system_policy_disposed
+            }
+        }
         country_modifier = {
             army_cavalry_power = 0.1
             army_cavalry_build_cost_modifier = -0.1
@@ -58,8 +109,21 @@ dbo_military_army_cavalry_law = {
 dbo_military_army_artillery_law = {
     law_category = dbo_military
     law_country_group = TUR
+    unique = yes
+    potential = {
+        OR = {
+            has_variable = dbo_military_army_artillery_topcu_ocagi_policy_obtained
+        }
+    }
     dbo_military_army_artillery_topcu_ocagi_policy = {
         unique = yes
+        allow = {
+            has_policy = dbo_military_army_fundamental_kapikulu_ocaklari_policy
+            has_variable = dbo_military_army_artillery_topcu_ocagi_policy_obtained
+            NOT = {
+                has_variable = dbo_military_army_artillery_topcu_ocagi_policy_disposed
+            }
+        }
         country_modifier = {
             army_artillery_power = 0.1
             army_artillery_build_cost_modifier = -0.1
@@ -72,8 +136,21 @@ dbo_military_army_artillery_law = {
 dbo_military_army_heavy_artillery_law = {
     law_category = dbo_military
     law_country_group = TUR
+    unique = yes
+    potential = {
+        OR = {
+            has_variable = dbo_military_army_heavy_artillery_great_bronze_cannon_policy_obtained
+        }
+    }
     dbo_military_army_heavy_artillery_great_bronze_cannon_policy = {
         unique = yes
+        allow = {
+            has_policy = dbo_military_army_fundamental_kapikulu_ocaklari_policy
+            has_variable = dbo_military_army_heavy_artillery_great_bronze_cannon_policy_obtained
+            NOT = {
+                has_variable = dbo_military_army_heavy_artillery_great_bronze_cannon_policy_disposed
+            }
+        }
         country_modifier = {
             dbo_army_heavy_artillery_power = 0.1
             dbo_army_heavy_artillery_build_cost_modifier = -0.1
@@ -86,8 +163,21 @@ dbo_military_army_heavy_artillery_law = {
 dbo_military_army_auxiliary_law = {
     law_category = dbo_military
     law_country_group = TUR
+    unique = yes
+    potential = {
+        OR = {
+            has_variable = dbo_military_army_auxiliary_cebeci_and_saka_ocagi_policy_obtained
+        }
+    }
     dbo_military_army_auxiliary_cebeci_and_saka_ocagi_policy = {
         unique = yes
+        allow = {
+            has_policy = dbo_military_army_fundamental_kapikulu_ocaklari_policy
+            has_variable = dbo_military_army_auxiliary_cebeci_and_saka_ocagi_policy_obtained
+            NOT = {
+                has_variable = dbo_military_army_auxiliary_cebeci_and_saka_ocagi_policy_disposed
+            }
+        }
         country_modifier = {
             army_auxiliary_power = 0.1
             army_auxiliary_power_build_cost_modifier = -0.1
@@ -100,18 +190,35 @@ dbo_military_army_auxiliary_law = {
 dbo_military_navy_fundamental_law = {
     law_category = dbo_military
     law_country_group = TUR
-
+    unique = yes
+    potential = {
+        OR = {
+            has_variable = dbo_military_navy_fundamental_legacy_of_caka_bey_policy_obtained
+            has_variable = dbo_military_navy_fundamental_barbaros_hayrettin_pasha_policy_obtained
+        }
+    }
     dbo_military_navy_fundamental_legacy_of_caka_bey_policy = {
         unique = yes
+        allow = {
+            has_variable = dbo_military_navy_fundamental_legacy_of_caka_bey_policy_obtained
+            NOT = {
+                has_variable = dbo_military_navy_fundamental_legacy_of_caka_bey_policy_disposed
+            }
+        }
         country_modifier = {
             global_sailors_modifier = 0.1
             navy_galley_power = 0.2
             naval_damage_done = 0.1
         }
     }
-
     dbo_military_navy_fundamental_barbaros_hayrettin_pasha_policy = {
         unique = yes
+        allow = {
+            has_variable = dbo_military_navy_fundamental_barbaros_hayrettin_pasha_policy_obtained
+            NOT = {
+                has_variable = dbo_military_navy_fundamental_barbaros_hayrettin_pasha_policy_disposed
+            }
+        }
         country_modifier = {
             global_sailors_modifier = 0.2
             navy_initiative = 0.1
@@ -126,8 +233,21 @@ dbo_military_navy_fundamental_law = {
 dbo_military_gendarme_law = {
     law_category = dbo_military
     law_country_group = TUR
+    unique = yes
+    potential = {
+        OR = {
+            has_variable = dbo_military_gendarme_martolos_units_policy_obtained
+        }
+    }
     dbo_military_gendarme_martolos_units_policy = {
         unique = yes
+        allow = {
+            has_policy = dbo_military_army_fundamental_kapikulu_ocaklari_policy
+            has_variable = dbo_military_gendarme_martolos_units_policy_obtained
+            NOT = {
+                has_variable = dbo_military_gendarme_martolos_units_policy_disposed
+            }
+        }
         country_modifier = {
             counter_espionage = 0.2
             spy_network_construction = 0.2

@@ -1,6 +1,4 @@
 namespace = dbo_dhe_war_wolf
-
-
 # dbo_war_wolf_t1
 dbo_dhe_war_wolf.101 = {
     type = country_event

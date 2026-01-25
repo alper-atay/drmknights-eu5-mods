@@ -6,25 +6,25 @@ dbo_dhe_military.101 = {
     title = dbo_dhe_military.101.title
     desc = dbo_dhe_military.101.desc
     historical_info = dbo_dhe_military.101.historical_info
-    image = "gfx/interface/illustrations/event/backgrounds/dbo_military_alp_and_alperen.dds"
+    image = "gfx/interface/illustrations/event/backgrounds/dbo_military_army_alp_and_alperen.dds"
     fire_only_once = yes
     outcome = positive
     dynamic_historical_event = {
         tag = TUR
-        from = 1338.1.1
+        from = 1337.6.1
         to = 1837.1.1
         monthly_chance = 100
     }
     trigger = {
         NOT = {
-            has_reform = government_reform:dbo_military_alp_and_alperen
+            has_variable = dbo_military_army_fundamental_alp_and_alperen_policy_obtained
         }
     }
     option = {
-        name = dbo_dhe_military.1001.a
+        name = dbo_dhe_military.101.a
         historical_option = yes
-        set_variable = dbo_military_alp_and_alperen_obtained
-        add_reform = government_reform:dbo_military_alp_and_alperen
+        set_variable = dbo_military_army_fundamental_alp_and_alperen_policy_obtained
+        add_policy = policy:dbo_military_army_fundamental_alp_and_alperen_policy
         dbo_event_mild_bonus = yes
     }
 }
