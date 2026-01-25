@@ -97,15 +97,6 @@ dbo_conquest_steep_mountain_can_end = {
     }
 }
 
-dbo_conquest_never_end_can_end = {
-    custom_tooltip = {
-        text = dbo_conquest_never_end_can_end_tooltip
-        c:TUR = {
-            dbo_conquest_never_end_check = yes
-        }
-    }
-}
-
 dbo_conquest_can_end = {
     dbo_conquest_anatolian_turks_can_end = yes
     dbo_conquest_rumelia_can_end = yes
@@ -118,5 +109,4 @@ dbo_conquest_can_end = {
     dbo_conquest_turkish_renaissance_can_end = yes
     dbo_conquest_maghreb_can_end = yes
     dbo_conquest_steep_mountain_can_end = yes
-    dbo_conquest_never_end_can_end = yes
 }

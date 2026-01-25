@@ -1,0 +1,6 @@
+﻿dbo_situation_can_end = {
+    dbo_destiny_can_end = yes
+    dbo_military_can_end = yes
+    dbo_conquest_can_end = yes
+    dbo_war_wolf_can_end = yes
+}

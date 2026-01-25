@@ -1,10 +1,10 @@
-﻿dbo_conquest = {
+﻿dbo_situation = {
     monthly_spawn_chance = monthly_spawn_chance_unique
     can_start = {
         current_date > 1337.1.1
     }
     can_end = {
-        dbo_conquest_can_end = yes
+        dbo_situation_can_end = yes
     }
     visible = {
         tag = TUR
