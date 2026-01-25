@@ -1,6 +1,5 @@
 namespace = dbo_dhe_military
-
-# dbo_military_alp_and_alperen
+# dbo_military_army_fundamental_alp_and_alperen_policy
 dbo_dhe_military.101 = {
     type = country_event
     title = dbo_dhe_military.101.title
@@ -29,15 +28,13 @@ dbo_dhe_military.101 = {
     }
 }
 
-
-
-# dbo_military_kapikulu
+# dbo_military_army_fundamental_kapikulu_ocaklari_policy
 dbo_dhe_military.102 = {
     type = country_event
     title = dbo_dhe_military.102.title
     desc = dbo_dhe_military.102.desc
     historical_info = dbo_dhe_military.102.historical_info
-    image = "gfx/interface/illustrations/event/backgrounds/dbo_military_kapikulu.dds"
+    image = "gfx/interface/illustrations/event/backgrounds/dbo_military_army_kapikulu_ocaklari.dds"
     fire_only_once = yes
     outcome = positive
     dynamic_historical_event = {
@@ -47,19 +44,203 @@ dbo_dhe_military.102 = {
         monthly_chance = 100
     }
     trigger = {
+        has_advance = professional_armies_advance
         has_policy = dbo_war_slave_tax_and_devshirme_system_policy
-        has_reform = government_reform:dbo_military_alp_and_alperen
         NOT = {
-            has_reform = government_reform:dbo_military_kapikulu
+            has_variable = dbo_military_army_fundamental_kapikulu_ocaklari_policy_obtained
         }
     }
     option = {
-        name = dbo_dhe_military.1001.a
+        name = dbo_dhe_military.102.a
         historical_option = yes
-        remove_variable = dbo_military_alp_and_alperen_obtained
-        remove_reform = government_reform:dbo_military_alp_and_alperen
-        set_variable = dbo_military_kapikulu_obtained
-        add_reform = government_reform:dbo_military_kapikulu
+        set_variable = dbo_military_army_fundamental_alp_and_alperen_policy_disposed
+        set_variable = dbo_military_army_fundamental_kapikulu_ocaklari_policy_obtained
+        add_policy = policy:dbo_military_army_fundamental_kapikulu_ocaklari_policy
+        dbo_event_mild_bonus = yes
+    }
+}
+
+# dbo_military_army_infantry_yeniceri_ocagi_policy
+dbo_dhe_military.111 = {
+    type = country_event
+    title = dbo_dhe_military.111.title
+    desc = dbo_dhe_military.111.desc
+    historical_info = dbo_dhe_military.111.historical_info
+    image = "gfx/interface/illustrations/event/backgrounds/dbo_military_army_yeniceri_ocagi.dds"
+    fire_only_once = yes
+    outcome = positive
+    dynamic_historical_event = {
+        tag = TUR
+        from = 1337.1.1
+        to = 1837.1.1
+        monthly_chance = 100
+    }
+    trigger = {
+        has_policy = dbo_military_army_fundamental_kapikulu_ocaklari_policy
+        has_advance = janissaries_advance
+        NOT = {
+            has_variable = dbo_military_army_infantry_yeniceri_ocagi_policy_obtained
+        }
+    }
+    option = {
+        name = dbo_dhe_military.111.a
+        historical_option = yes
+        set_variable = dbo_military_army_infantry_yeniceri_ocagi_policy_obtained
+        add_policy = policy:dbo_military_army_infantry_yeniceri_ocagi_policy
+        dbo_event_mild_bonus = yes
+    }
+}
+
+# dbo_military_army_cavalry_lessons_from_mongols_policy
+dbo_dhe_military.121 = {
+    type = country_event
+    title = dbo_dhe_military.121.title
+    desc = dbo_dhe_military.121.desc
+    historical_info = dbo_dhe_military.121.historical_info
+    image = "gfx/interface/illustrations/event/backgrounds/dbo_military_army_lessons_from_mongols.dds"
+    fire_only_once = yes
+    outcome = positive
+    dynamic_historical_event = {
+        tag = TUR
+        from = 1338.1.1
+        to = 1837.1.1
+        monthly_chance = 100
+    }
+    trigger = {
+        NOT = {
+            has_variable = dbo_military_army_cavalry_lessons_from_mongols_policy_obtained
+        }
+    }
+    option = {
+        name = dbo_dhe_military.121.a
+        historical_option = yes
+        set_variable = dbo_military_army_cavalry_lessons_from_mongols_policy_obtained
+        add_policy = policy:dbo_military_army_cavalry_lessons_from_mongols_policy
+        dbo_event_mild_bonus = yes
+    }
+}
+
+# dbo_military_army_cavalry_timariot_system_policy
+dbo_dhe_military.122 = {
+    type = country_event
+    title = dbo_dhe_military.122.title
+    desc = dbo_dhe_military.122.desc
+    historical_info = dbo_dhe_military.122.historical_info
+    image = "gfx/interface/illustrations/event/backgrounds/dbo_military_army_lessons_from_mongols.dds"
+    fire_only_once = yes
+    outcome = positive
+    dynamic_historical_event = {
+        tag = TUR
+        from = 1337.1.1
+        to = 1837.1.1
+        monthly_chance = 100
+    }
+    trigger = {
+        has_policy = dbo_military_army_cavalry_lessons_from_mongols_policy
+        has_advance = timariots
+        NOT = {
+            has_variable = dbo_military_army_cavalry_timariot_system_policy_obtained
+        }
+    }
+    option = {
+        name = dbo_dhe_military.122.a
+        historical_option = yes
+        set_variable = dbo_military_army_cavalry_lessons_from_mongols_policy_disposed
+        set_variable = dbo_military_army_cavalry_timariot_system_policy_obtained
+        add_policy = policy:dbo_military_army_cavalry_timariot_system_policy
+        dbo_event_mild_bonus = yes
+    }
+}
+
+# dbo_military_army_artillery_topcu_ocagi_policy
+dbo_dhe_military.131 = {
+    type = country_event
+    title = dbo_dhe_military.131.title
+    desc = dbo_dhe_military.131.desc
+    historical_info = dbo_dhe_military.131.historical_info
+    image = "gfx/interface/illustrations/event/backgrounds/dbo_military_army_topcu_ocagi.dds"
+    fire_only_once = yes
+    outcome = positive
+    dynamic_historical_event = {
+        tag = TUR
+        from = 1337.1.1
+        to = 1837.1.1
+        monthly_chance = 100
+    }
+    trigger = {
+        has_policy = dbo_military_army_fundamental_kapikulu_ocaklari_policy
+        has_advance = cannon_maker_advance
+        NOT = {
+            has_variable = dbo_military_army_artillery_topcu_ocagi_policy_obtained
+        }
+    }
+    option = {
+        name = dbo_dhe_military.131.a
+        historical_option = yes
+        set_variable = dbo_military_army_artillery_topcu_ocagi_policy_obtained
+        add_policy = policy:dbo_military_army_artillery_topcu_ocagi_policy
+        dbo_event_mild_bonus = yes
+    }
+}
+
+# dbo_military_army_heavy_artillery_great_bronze_cannon_policy
+dbo_dhe_military.141 = {
+    type = country_event
+    title = dbo_dhe_military.141.title
+    desc = dbo_dhe_military.141.desc
+    historical_info = dbo_dhe_military.141.historical_info
+    image = "gfx/interface/illustrations/event/backgrounds/dbo_military_army_great_bronze_cannon.dds"
+    fire_only_once = yes
+    outcome = positive
+    dynamic_historical_event = {
+        tag = TUR
+        from = 1337.1.1
+        to = 1837.1.1
+        monthly_chance = 100
+    }
+    trigger = {
+        has_policy = dbo_military_army_artillery_topcu_ocagi_policy
+        has_variable = dbo_history_fatih_sultan_mehmet_and_orban_events_completed
+        NOT = {
+            has_variable = dbo_military_army_heavy_artillery_great_bronze_cannon_policy_obtained
+        }
+    }
+    option = {
+        name = dbo_dhe_military.141.a
+        historical_option = yes
+        set_variable = dbo_military_army_heavy_artillery_great_bronze_cannon_policy_obtained
+        add_policy = policy:dbo_military_army_heavy_artillery_great_bronze_cannon_policy
+        dbo_event_mild_bonus = yes
+    }
+}
+
+# dbo_military_army_auxiliary_cebeci_and_saka_ocagi_policy
+dbo_dhe_military.151 = {
+    type = country_event
+    title = dbo_dhe_military.151.title
+    desc = dbo_dhe_military.151.desc
+    historical_info = dbo_dhe_military.151.historical_info
+    image = "gfx/interface/illustrations/event/backgrounds/dbo_military_army_cebeci_and_saka_ocagi.dds"
+    fire_only_once = yes
+    outcome = positive
+    dynamic_historical_event = {
+        tag = TUR
+        from = 1337.1.1
+        to = 1837.1.1
+        monthly_chance = 100
+    }
+    trigger = {
+        has_policy = dbo_military_army_fundamental_kapikulu_ocaklari_policy
+        has_advance = unlock_supply_carts
+        NOT = {
+            has_variable = dbo_military_army_auxiliary_cebeci_and_saka_ocagi_policy_obtained
+        }
+    }
+    option = {
+        name = dbo_dhe_military.151.a
+        historical_option = yes
+        set_variable = dbo_military_army_auxiliary_cebeci_and_saka_ocagi_policy_obtained
+        add_policy = policy:dbo_military_army_auxiliary_cebeci_and_saka_ocagi_policy
         dbo_event_mild_bonus = yes
     }
 }

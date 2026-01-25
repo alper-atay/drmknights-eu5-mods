@@ -26,6 +26,7 @@
     dbo_military_army_fundamental_kapikulu_ocaklari_policy = {
         unique = yes
         allow = {
+            has_policy = dbo_war_slave_tax_and_devshirme_system_policy
             has_variable = dbo_military_army_fundamental_kapikulu_ocaklari_policy_obtained
             NOT = {
                 has_variable = dbo_military_army_fundamental_kapikulu_ocaklari_policy_disposed
@@ -145,7 +146,8 @@ dbo_military_army_heavy_artillery_law = {
     dbo_military_army_heavy_artillery_great_bronze_cannon_policy = {
         unique = yes
         allow = {
-            has_policy = dbo_military_army_fundamental_kapikulu_ocaklari_policy
+            has_policy = dbo_military_army_artillery_topcu_ocagi_policy
+            has_variable = dbo_history_fatih_sultan_mehmet_and_orban_events_completed
             has_variable = dbo_military_army_heavy_artillery_great_bronze_cannon_policy_obtained
             NOT = {
                 has_variable = dbo_military_army_heavy_artillery_great_bronze_cannon_policy_disposed

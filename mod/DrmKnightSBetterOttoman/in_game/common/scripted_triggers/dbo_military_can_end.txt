@@ -61,6 +61,15 @@ dbo_military_army_heavy_artillery_great_bronze_cannon_policy_can_end = {
     }
 }
 
+dbo_military_army_auxiliary_cebeci_and_saka_ocagi_policy_can_end = {
+    custom_tooltip = {
+        text = dbo_military_army_auxiliary_cebeci_and_saka_ocagi_policy_can_end_tooltip
+        c:TUR = {
+            has_variable = dbo_military_army_auxiliary_cebeci_and_saka_ocagi_policy_obtained
+        }
+    }
+}
+
 dbo_military_gendarme_martolos_units_policy_can_end = {
     custom_tooltip = {
         text = dbo_military_gendarme_martolos_units_policy_can_end_tooltip
@@ -96,6 +105,7 @@ dbo_military_can_end = {
     dbo_military_army_cavalry_timariot_system_policy_can_end = yes
     dbo_military_army_artillery_topcu_ocagi_policy_can_end = yes
     dbo_military_army_heavy_artillery_great_bronze_cannon_policy_can_end = yes
+    dbo_military_army_auxiliary_cebeci_and_saka_ocagi_policy_can_end = yes
     dbo_military_gendarme_martolos_units_policy_can_end = yes
     dbo_military_navy_fundamental_legacy_of_caka_bey_policy_can_end = yes
     dbo_military_navy_fundamental_barbaros_hayrettin_pasha_policy_can_end = yes
