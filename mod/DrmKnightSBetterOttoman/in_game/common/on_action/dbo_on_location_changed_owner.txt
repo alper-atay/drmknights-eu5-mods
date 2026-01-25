@@ -1,82 +1,82 @@
 ﻿#root = location  (after winning and losing, for both), scope:winner = new owner country, scope:loser = previous owner country
 on_location_changed_owner = {
-	on_actions = {
-		dbo_on_conquer_any_location
-		dbo_on_conquer_anatolian
-	}
+    on_actions = {
+        dbo_on_conquer_any_location
+        dbo_on_conquer_anatolian
+    }
 }
 
 dbo_on_conquer_any_location = {
-	trigger = {
-		scope:winner = c:TUR
-	}
-	effect = {
-		if = {
-			limit = {
-				culture_percentage = {
-					culture = scope:winner.culture
-					value < 0.2
-				}
-			}
-			add_pop = {
-				culture = scope:winner.culture
-				religion = scope:winner.religion
-				type = pop_type:peasants
-				size = {
-					value = population
-					multiply = 0.1
-					min = 0.4
-					max = 4
-				}
-			}
-		}
-	}
+    trigger = {
+        scope:winner = c:TUR
+    }
+    effect = {
+        if = {
+            limit = {
+                culture_percentage = {
+                    culture = scope:winner.culture
+                    value < 0.2
+                }
+            }
+            add_pop = {
+                culture = scope:winner.culture
+                religion = scope:winner.religion
+                type = pop_type:peasants
+                size = {
+                    value = population
+                    multiply = 0.1
+                    min = 1
+                    max = 5
+                }
+            }
+        }
+    }
 }
 
 #root = location  (after winning and losing, for both), scope:winner = new owner country, scope:loser = previous owner country
 dbo_on_conquer_anatolian = {
-	trigger = {
-		scope:winner = c:TUR
-		OR = {
-			scope:loser = {
-				has_reform = government_reform:anatolian_beylik
-			}
-			OR = {
-				root.area = area:cappadocia_area
-				root.area = area:central_anatolia_area
-				root.area = area:marmara_area
-				root.area = area:pontus_area
-				root.area = area:west_anatolia_area
-				root.province_definition = province_definition:edirne_province
-				root.province_definition = province_definition:dardanelles_province
-				root.province_definition = province_definition:constantinople_province
-				root.province_definition = province_definition:icel_province
-				root.province_definition = province_definition:tarsus_province
-				root.province_definition = province_definition:sis_province
-				root.province_definition = province_definition:adana_province
-				root.province_definition = province_definition:marash_province
-				root.province_definition = province_definition:malatya_province
-				root.province_definition = province_definition:erzurum_province
-				root.province_definition = province_definition:harput_province
-				root.province_definition = province_definition:malazgirt_province
-				root.province_definition = province_definition:meskheti_province
-				root.province_definition = province_definition:kars_province
-				root.province_definition = province_definition:van_province
-				root.province_definition = province_definition:bitlis_province
-				root.province_definition = province_definition:hasankeyf_province
-				root.province_definition = province_definition:diyarbekir_province
-				root.province_definition = province_definition:ar_ruha_province
-				root.province_definition = province_definition:amadiya_province
-				root.province_definition = province_definition:nusaybin_province
-				root.province_definition = province_definition:mardin_province
-				root.province_definition = province_definition:ayntab_province
-				root.province_definition = province_definition:antakya_province
-			}
-		}
-	}
-	effect = {
-		root = {
-			change_integration_level = core
-		}
-	}
+    trigger = {
+        scope:winner = c:TUR
+        OR = {
+            scope:loser = {
+                has_reform = government_reform:anatolian_beylik
+            }
+            OR = {
+                root.area = area:cappadocia_area
+                root.area = area:central_anatolia_area
+                root.area = area:marmara_area
+                root.area = area:pontus_area
+                root.area = area:west_anatolia_area
+                root.province_definition = province_definition:edirne_province
+                root.province_definition = province_definition:dardanelles_province
+                root.province_definition = province_definition:constantinople_province
+                root.province_definition = province_definition:icel_province
+                root.province_definition = province_definition:tarsus_province
+                root.province_definition = province_definition:sis_province
+                root.province_definition = province_definition:adana_province
+                root.province_definition = province_definition:marash_province
+                root.province_definition = province_definition:malatya_province
+                root.province_definition = province_definition:erzurum_province
+                root.province_definition = province_definition:harput_province
+                root.province_definition = province_definition:malazgirt_province
+                root.province_definition = province_definition:meskheti_province
+                root.province_definition = province_definition:kars_province
+                root.province_definition = province_definition:van_province
+                root.province_definition = province_definition:bitlis_province
+                root.province_definition = province_definition:hasankeyf_province
+                root.province_definition = province_definition:diyarbekir_province
+                root.province_definition = province_definition:ar_ruha_province
+                root.province_definition = province_definition:amadiya_province
+                root.province_definition = province_definition:nusaybin_province
+                root.province_definition = province_definition:mardin_province
+                root.province_definition = province_definition:ayntab_province
+                root.province_definition = province_definition:antakya_province
+            }
+        }
+    }
+    effect = {
+        root = {
+            change_integration_level = core
+        }
+    }
 }
