@@ -1,102 +1,102 @@
-﻿dbo_talented_youngest_heir_selection = {
-	traverse_family_tree = yes
-	ignore_ruler = yes
-	allow_children = yes
-	allow_male = yes
-	show_candidates = yes
-	max_possible_candidates = 10
-	potential = {
-		tag = TUR
-	}
-	locked = {
-		tag = TUR
-	}
-	sibling_score = {
-		if = {
-			limit = {
-				exists = root
-			}
-			add = {
-				desc = "HEIR_SELECTION_YOUNGER_HEIR_DESC"
-				value = 100
-				subtract = character_age
-			}
-			add = {
-				desc = "HEIR_SELECTION_ADM_DESC"
-				value = root.adm
-			}
-			add = {
-				desc = "HEIR_SELECTION_DIP_DESC"
-				value = root.dip
-			}
-			add = {
-				desc = "HEIR_SELECTION_MIL_DESC"
-				value = root.mil
-			}
-			if = {
-				limit = {
-					OR = {
-						is_admiral = yes
-						is_general = yes
-					}
-				}
-				add = {
-					desc = "HEIR_SELECTION_GENERAL_OR_ADMIRAL_DESC"
-					value = 50
-				}
-			}
-			if = {
-				limit = {
-					OR = {
-						has_trait_category = admiral
-						has_trait_category = general
-					}
-				}
-				add = {
-					desc = "HEIR_SELECTION_GENERAL_OR_ADMIRAL_TRAIT_DESC"
-					value = 50
-				}
-			}
-			if = {
-				limit = {
-					modifier:blocked_from_being_ruler = yes
-				}
-				add = {
-					desc = "HEIR_SELECTION_IS_UNSUITED_TO_RULE_DESC"
-					value = -1000
-				}
-			}
-		}
-		if = {
-			limit = {
-				not = {
-					exists = root
-				}
-			}
-			add = {
-				desc = "HEIR_SELECTION_YOUNGER_HEIR_DESC"
-				value = 100
-			}
-			add = {
-				desc = "HEIR_SELECTION_ADM_DESC"
-				value = 1
-			}
-			add = {
-				desc = "HEIR_SELECTION_DIP_DESC"
-				value = 1
-			}
-			add = {
-				desc = "HEIR_SELECTION_MIL_DESC"
-				value = 1
-			}
-			add = {
-				desc = "HEIR_SELECTION_GENERAL_OR_ADMIRAL_DESC"
-				value = 50
-			}
-			add = {
-				desc = "HEIR_SELECTION_GENERAL_OR_ADMIRAL_TRAIT_DESC"
-				value = 50
-			}
-		}
-	}
+﻿dbo_destiny_talented_youngest_heir_selection = {
+    traverse_family_tree = yes
+    ignore_ruler = yes
+    allow_children = yes
+    allow_male = yes
+    show_candidates = yes
+    max_possible_candidates = 10
+    potential = {
+        tag = TUR
+    }
+    locked = {
+        tag = TUR
+    }
+    sibling_score = {
+        if = {
+            limit = {
+                exists = root
+            }
+            add = {
+                desc = "HEIR_SELECTION_YOUNGER_HEIR_DESC"
+                value = 100
+                subtract = character_age
+            }
+            add = {
+                desc = "HEIR_SELECTION_ADM_DESC"
+                value = root.adm
+            }
+            add = {
+                desc = "HEIR_SELECTION_DIP_DESC"
+                value = root.dip
+            }
+            add = {
+                desc = "HEIR_SELECTION_MIL_DESC"
+                value = root.mil
+            }
+            if = {
+                limit = {
+                    OR = {
+                        is_admiral = yes
+                        is_general = yes
+                    }
+                }
+                add = {
+                    desc = "HEIR_SELECTION_GENERAL_OR_ADMIRAL_DESC"
+                    value = 50
+                }
+            }
+            if = {
+                limit = {
+                    OR = {
+                        has_trait_category = admiral
+                        has_trait_category = general
+                    }
+                }
+                add = {
+                    desc = "HEIR_SELECTION_GENERAL_OR_ADMIRAL_TRAIT_DESC"
+                    value = 50
+                }
+            }
+            if = {
+                limit = {
+                    modifier:blocked_from_being_ruler = yes
+                }
+                add = {
+                    desc = "HEIR_SELECTION_IS_UNSUITED_TO_RULE_DESC"
+                    value = -1000
+                }
+            }
+        }
+        if = {
+            limit = {
+                not = {
+                    exists = root
+                }
+            }
+            add = {
+                desc = "HEIR_SELECTION_YOUNGER_HEIR_DESC"
+                value = 100
+            }
+            add = {
+                desc = "HEIR_SELECTION_ADM_DESC"
+                value = 1
+            }
+            add = {
+                desc = "HEIR_SELECTION_DIP_DESC"
+                value = 1
+            }
+            add = {
+                desc = "HEIR_SELECTION_MIL_DESC"
+                value = 1
+            }
+            add = {
+                desc = "HEIR_SELECTION_GENERAL_OR_ADMIRAL_DESC"
+                value = 50
+            }
+            add = {
+                desc = "HEIR_SELECTION_GENERAL_OR_ADMIRAL_TRAIT_DESC"
+                value = 50
+            }
+        }
+    }
 }

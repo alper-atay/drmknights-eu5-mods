@@ -26,3 +26,9 @@
 # dbo_destiny_war_slave_tax_and_devshirme_system_policy
  dbo_destiny_war_slave_tax_and_devshirme_system_policy: "Pençik Vergisi ve Devşirme Sistemi"
  dbo_destiny_war_slave_tax_and_devshirme_system_policy_desc: "Osmanlı İmparatorluğu'nun insan gücü ve bürokrasi yönetiminin temel taşıdır. Balkanlar ve Anadolu'daki gayrimüslim tebaanın yetenekli çocuklarının seçilerek devlet hizmetine alınması esasına dayanır. Sıkı bir eğitimden geçen bu gençler; askerlik yeteneklerine göre Yeniçeri Ocağı'na, idari zekalarına göre ise Enderun Mektebi'ne gönderilerek imparatorluğun en üst düzey yönetici kadrolarını oluştururlar. Bu sistem, hanedana sadık, toprak sahibi soylulardan bağımsız bir yönetici sınıfı yaratarak merkezi otoriteyi güçlendirir."
+# dbo_destiny_crown_command_policy
+ dbo_destiny_crown_command_policy: "Hanedan Komutanları"
+ dbo_destiny_crown_command_policy_desc: "Ordunun sevk ve idaresini yalnızca hanedan kanı taşıyan isimlere emanet eden bu kanun, askeri liderliği bir aile imtiyazı haline getirir. Stratejik kararlar artık liyakat salonlarında değil, saray dehlizlerinde ve aile meclislerinde alınır."
+# dbo_destiny_talented_youngest_heir_selection
+ dbo_destiny_talented_youngest_heir_selection: "En Genç ve Tam Yetenek Esası"
+ dbo_destiny_talented_youngest_heir_selection_desc: "Kıdem maziye hürmettir, liyakat ise istikbale hükmetmektir; bu sebeple devletin bekâsı, hanedanın en yaşlısı yerine kılıcı en keskin, zihni en berrak ve enerjisi en yüksek olan en genç şehzadenin iradesine emanet edilmelidir. Gençlik, işlenmeyi bekleyen en kıymetli cevher; liyakat ise cihan hâkimiyeti ülkümüzün yegâne anahtarıdır. İhtiyar heyetlerin sükûneti yerine genç fatihlerin sarsılmaz azminin esas alındığı bu nizam, imparatorluğun asırlar boyu sürecek olan ihtişamının en büyük teminatı olacaktır."

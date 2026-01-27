@@ -63,7 +63,7 @@
  dbo_dhe_destiny.3001.desc: "$dbo_dhe_destiny.1009.desc$"
  dbo_dhe_destiny.3001.historical_info: "$dbo_dhe_destiny.1009.historical_info$"
  dbo_dhe_destiny.3001.a: "$dbo_dhe_destiny.1009.a$"
- # dbo_talented_youngest_heir_selection
- dbo_dhe_destiny.3002.title: "[ShowHeirSelectionName('dbo_talented_youngest_heir_selection')]\n[Concept('heir_selection', 'Veliaht Seçimi')|e]"
- dbo_dhe_destiny.3002.desc: "$dbo_talented_youngest_heir_selection_desc$"
+ # dbo_destiny_talented_youngest_heir_selection
+ dbo_dhe_destiny.3002.title: "[ShowHeirSelectionName('dbo_destiny_talented_youngest_heir_selection')]\n[Concept('heir_selection', 'Veliaht Seçimi')|e]"
+ dbo_dhe_destiny.3002.desc: "$dbo_destiny_talented_youngest_heir_selection_desc$"
  dbo_dhe_destiny.3002.a: "Geleceğimiz budur!"
