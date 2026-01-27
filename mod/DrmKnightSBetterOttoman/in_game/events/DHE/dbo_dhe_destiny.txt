@@ -72,10 +72,10 @@ dbo_dhe_destiny.102 = {
 }
 
 # Winner Ottoman get all Beyliks
-dbo_dhe_common.103 = {
+dbo_dhe_destiny.103 = {
     type = country_event
-    title = dbo_dhe_common.103.title
-    desc = dbo_dhe_common.103.desc
+    title = dbo_dhe_destiny.103.title
+    desc = dbo_dhe_destiny.103.desc
     image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_anatolian_beyliks_forced_annex.dds"
     fire_only_once = yes
     outcome = positive
@@ -95,7 +95,7 @@ dbo_dhe_common.103 = {
         }
     }
     option = {
-        name = dbo_dhe_common.103.a
+        name = dbo_dhe_destiny.103.a
         historical_option = yes
         every_country = {
             limit = {
@@ -113,7 +113,7 @@ dbo_dhe_common.103 = {
         }
     }
     option = {
-        name = dbo_dhe_common.103.b
+        name = dbo_dhe_destiny.103.b
     }
 }
 
