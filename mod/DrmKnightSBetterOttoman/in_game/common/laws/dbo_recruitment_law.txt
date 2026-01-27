@@ -1,5 +1,5 @@
 ﻿INJECT:recruitment_law = {
-    dbo_war_slave_tax_and_devshirme_system_policy = {
+    dbo_destiny_war_slave_tax_and_devshirme_system_policy = {
         unique = yes
         potential = {
             has_or_had_tag = TUR

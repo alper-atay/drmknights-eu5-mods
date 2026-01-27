@@ -1,2 +1,0 @@
-﻿INJECT:legal_code_law = {
-}

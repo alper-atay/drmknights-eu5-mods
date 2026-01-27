@@ -8,7 +8,7 @@
 ### Toprakları fethederek elde edilen Hükûmet Islahatları
 * Anadolu Türk Birliği – Tek Yurt, Tek İrade -> Anadolu Türk Birliği Damgası
 * Rumeli’nin Fethi – İki Kıta, Tek Devlet -> Rumeli Damgası
-* Verimli Hilal’in Hâkimiyeti – Medeniyetin Kalbi -> Verimli Hilal Damgası
+* Bereketli Hilâl’in Hâkimiyeti – Medeniyetin Kalbi -> Bereketli Hilâl Damgası
 * Arap Yarımadası’nın Hâkimiyeti – Kutsal Toprakların Muhafızı -> Kutsal Toprakların Muhafızı Damgası
 * Karadeniz’in Hâkimiyeti – Türk Gölü -> Karadeniz Damgası
 * Mısır’ın Fethi – İmparatorluğun Kilit Taşı -> Nil Nehri Damgası

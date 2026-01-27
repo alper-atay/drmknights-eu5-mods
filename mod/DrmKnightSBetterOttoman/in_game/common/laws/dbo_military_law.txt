@@ -26,7 +26,7 @@
     dbo_military_army_fundamental_kapikulu_ocaklari_policy = {
         unique = yes
         allow = {
-            has_policy = dbo_war_slave_tax_and_devshirme_system_policy
+            has_policy = dbo_destiny_war_slave_tax_and_devshirme_system_policy
             has_variable = dbo_military_army_fundamental_kapikulu_ocaklari_policy_obtained
             NOT = {
                 has_variable = dbo_military_army_fundamental_kapikulu_ocaklari_policy_disposed
@@ -189,6 +189,32 @@ dbo_military_army_auxiliary_law = {
     }
 }
 
+dbo_military_army_gendarme_law = {
+    law_category = dbo_military
+    law_country_group = TUR
+    unique = yes
+    potential = {
+        OR = {
+            has_variable = dbo_military_army_gendarme_martolos_units_policy_obtained
+        }
+    }
+    dbo_military_army_gendarme_martolos_units_policy = {
+        unique = yes
+        allow = {
+            has_policy = dbo_military_army_fundamental_kapikulu_ocaklari_policy
+            has_variable = dbo_military_army_gendarme_martolos_units_policy_obtained
+            NOT = {
+                has_variable = dbo_military_army_gendarme_martolos_units_policy_disposed
+            }
+        }
+        country_modifier = {
+            counter_espionage = 0.2
+            spy_network_construction = 0.2
+            monthly_rebel_growth = -0.002
+        }
+    }
+}
+
 dbo_military_navy_fundamental_law = {
     law_category = dbo_military
     law_country_group = TUR
@@ -228,32 +254,6 @@ dbo_military_navy_fundamental_law = {
             navy_heavy_ship_power = 0.2
             navy_galley_power = 0.2
             naval_damage_done = 0.2
-        }
-    }
-}
-
-dbo_military_gendarme_law = {
-    law_category = dbo_military
-    law_country_group = TUR
-    unique = yes
-    potential = {
-        OR = {
-            has_variable = dbo_military_gendarme_martolos_units_policy_obtained
-        }
-    }
-    dbo_military_gendarme_martolos_units_policy = {
-        unique = yes
-        allow = {
-            has_policy = dbo_military_army_fundamental_kapikulu_ocaklari_policy
-            has_variable = dbo_military_gendarme_martolos_units_policy_obtained
-            NOT = {
-                has_variable = dbo_military_gendarme_martolos_units_policy_disposed
-            }
-        }
-        country_modifier = {
-            counter_espionage = 0.2
-            spy_network_construction = 0.2
-            monthly_rebel_growth = -0.002
         }
     }
 }

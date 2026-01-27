@@ -45,7 +45,7 @@ dbo_dhe_military.102 = {
     }
     trigger = {
         has_advance = professional_armies_advance
-        has_policy = dbo_war_slave_tax_and_devshirme_system_policy
+        has_policy = dbo_destiny_war_slave_tax_and_devshirme_system_policy
         NOT = {
             has_variable = dbo_military_army_fundamental_kapikulu_ocaklari_policy_obtained
         }
@@ -245,13 +245,44 @@ dbo_dhe_military.151 = {
     }
 }
 
-# dbo_military_legacy_of_caka_bey
-dbo_dhe_military.103 = {
+# dbo_military_army_gendarme_martolos_units_policy
+dbo_dhe_military.161 = {
     type = country_event
-    title = dbo_dhe_military.103.title
-    desc = dbo_dhe_military.103.desc
-    historical_info = dbo_dhe_military.103.historical_info
-    image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_legacy_of_caka_bey.dds"
+    title = dbo_dhe_military.161.title
+    desc = dbo_dhe_military.161.desc
+    historical_info = dbo_dhe_military.161.historical_info
+    image = "gfx/interface/illustrations/event/backgrounds/dbo_military_army_gendarme_martolos_units.dds"
+    fire_only_once = yes
+    outcome = positive
+    dynamic_historical_event = {
+        tag = TUR
+        from = 1337.1.1
+        to = 1837.1.1
+        monthly_chance = 100
+    }
+    trigger = {
+        has_policy = dbo_military_army_infantry_yeniceri_ocagi_policy
+        has_advance = millets
+        NOT = {
+            has_variable = dbo_military_army_gendarme_martolos_units_policy_obtained
+        }
+    }
+    option = {
+        name = dbo_dhe_military.161.a
+        historical_option = yes
+        set_variable = dbo_military_army_gendarme_martolos_units_policy_obtained
+        add_policy = policy:dbo_military_army_gendarme_martolos_units_policy
+        dbo_event_mild_bonus = yes
+    }
+}
+
+# dbo_military_legacy_of_caka_bey
+dbo_dhe_military.201 = {
+    type = country_event
+    title = dbo_dhe_military.201.title
+    desc = dbo_dhe_military.201.desc
+    historical_info = dbo_dhe_military.201.historical_info
+    image = "gfx/interface/illustrations/event/backgrounds/dbo_military_navy_fundamental_legacy_of_caka_bey.dds"
     fire_only_once = yes
     outcome = positive
     dynamic_historical_event = {
@@ -262,17 +293,46 @@ dbo_dhe_military.103 = {
     }
     trigger = {
         own_entire_province = province_definition:smyrna_province
-        has_advance = unlock_m_galley_advance
         has_reform = government_reform:dbo_destiny_legacy_of_seljuks
         NOT = {
-            has_reform = government_reform:dbo_military_legacy_of_caka_bey
+            has_variable = dbo_military_navy_fundamental_legacy_of_caka_bey_policy_obtained
         }
     }
     option = {
-        name = dbo_dhe_military.103.a
+        name = dbo_dhe_military.201.a
         historical_option = yes
-        set_variable = dbo_destiny_legacy_of_caka_bey_obtained
-        add_reform = government_reform:dbo_military_legacy_of_caka_bey
+        set_variable = dbo_military_navy_fundamental_legacy_of_caka_bey_policy_obtained
+        add_policy = policy:dbo_military_navy_fundamental_legacy_of_caka_bey_policy
+        dbo_event_mild_bonus = yes
+    }
+}
+
+# dbo_military_navy_fundamental_barbaros_hayrettin_pasha_policy
+dbo_dhe_military.202 = {
+    type = country_event
+    title = dbo_dhe_military.202.title
+    desc = dbo_dhe_military.202.desc
+    historical_info = dbo_dhe_military.202.historical_info
+    image = "gfx/interface/illustrations/event/backgrounds/dbo_military_navy_fundamental_barbaros_hayrettin_pasha.dds"
+    fire_only_once = yes
+    outcome = positive
+    dynamic_historical_event = {
+        tag = TUR
+        from = 1537.1.1
+        to = 1837.1.1
+        monthly_chance = 100
+    }
+    trigger = {
+        has_policy = dbo_military_navy_fundamental_legacy_of_caka_bey_policy
+        NOT = {
+            has_variable = dbo_military_navy_fundamental_barbaros_hayrettin_pasha_policy_obtained
+        }
+    }
+    option = {
+        name = dbo_dhe_military.202.a
+        historical_option = yes
+        set_variable = dbo_military_navy_fundamental_barbaros_hayrettin_pasha_policy_obtained
+        add_policy = policy:dbo_military_navy_fundamental_barbaros_hayrettin_pasha_policy
         dbo_event_mild_bonus = yes
     }
 }
