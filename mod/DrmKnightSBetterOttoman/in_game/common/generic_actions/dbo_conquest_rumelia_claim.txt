@@ -103,7 +103,7 @@
             custom_tooltip = {
                 text = dbo_conquest_rumelia_claim
                 scope:actor = {
-                    trigger_event_silently = dbo_conquest.100
+                    trigger_event_silently = dbo_conquest.102
                 }
             }
         }

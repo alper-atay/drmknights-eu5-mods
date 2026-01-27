@@ -105,7 +105,7 @@
             custom_tooltip = {
                 text = dbo_conquest_turkish_renaissance_claim
                 scope:actor = {
-                    trigger_event_silently = dbo_conquest.100
+                    trigger_event_silently = dbo_conquest.108
                 }
             }
         }

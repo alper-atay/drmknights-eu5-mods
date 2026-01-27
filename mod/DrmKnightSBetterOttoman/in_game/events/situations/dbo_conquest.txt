@@ -1,43 +1,6 @@
 ﻿namespace = dbo_conquest
-dbo_conquest.1 = {
-    type = country_event
-    category = situation_event
-    title = dbo_conquest.1.title
-    desc = dbo_conquest.1.desc
-    image = "gfx/interface/illustrations/situation/dbo_conquest.dds"
-    option = {
-        name = dbo_conquest.1.a
-    }
-}
 
-dbo_conquest.100 = {
-    type = country_event
-    category = situation_event
-    title = dbo_conquest.100.title
-    desc = dbo_conquest.100.desc
-    immediate = {
-        ruler_or_regent ?= {
-            save_scope_as = target_character1
-        }
-        scope:target.owner = {
-            save_scope_as = target_country
-            ruler_or_regent ?= {
-                save_scope_as = target_character2
-            }
-        }
-    }
-    option = {
-        name = dbo_conquest.100.a
-        add_casus_belli = {
-            target = scope:target.owner
-            type = casus_belli:cb_conquer_province
-            province = scope:target
-        }
-        refresh_map_colors = yes
-    }
-}
-
-# dbo_conquest_anatolian_turks_claim event chain
+# dbo_conquest_anatolian_turks_claim
 dbo_conquest.101 = {
     type = country_event
     category = situation_event
@@ -65,3 +28,282 @@ dbo_conquest.101 = {
     }
 }
 
+# dbo_conquest_rumelia_claim
+dbo_conquest.101 = {
+    type = country_event
+    category = situation_event
+    title = dbo_conquest_common_title
+    desc = dbo_conquest_common_desc
+    immediate = {
+        ruler_or_regent ?= {
+            save_scope_as = target_character1
+        }
+        scope:target.owner = {
+            save_scope_as = target_country
+            ruler_or_regent ?= {
+                save_scope_as = target_character2
+            }
+        }
+    }
+    option = {
+        name = dbo_conquest_common_option
+        add_casus_belli = {
+            target = scope:target.owner
+            type = casus_belli:dbo_cb_conquest_rumelia
+            province = scope:target
+        }
+        refresh_map_colors = yes
+    }
+}
+
+# dbo_conquest_fertile_crescent_claim
+dbo_conquest.103 = {
+    type = country_event
+    category = situation_event
+    title = dbo_conquest_common_title
+    desc = dbo_conquest_common_desc
+    immediate = {
+        ruler_or_regent ?= {
+            save_scope_as = target_character1
+        }
+        scope:target.owner = {
+            save_scope_as = target_country
+            ruler_or_regent ?= {
+                save_scope_as = target_character2
+            }
+        }
+    }
+    option = {
+        name = dbo_conquest_common_option
+        add_casus_belli = {
+            target = scope:target.owner
+            type = casus_belli:dbo_cb_conquest_fertile_crescent
+            province = scope:target
+        }
+        refresh_map_colors = yes
+    }
+}
+
+# dbo_conquest_arabian_peninsula_claim
+dbo_conquest.104 = {
+    type = country_event
+    category = situation_event
+    title = dbo_conquest_common_title
+    desc = dbo_conquest_common_desc
+    immediate = {
+        ruler_or_regent ?= {
+            save_scope_as = target_character1
+        }
+        scope:target.owner = {
+            save_scope_as = target_country
+            ruler_or_regent ?= {
+                save_scope_as = target_character2
+            }
+        }
+    }
+    option = {
+        name = dbo_conquest_common_option
+        add_casus_belli = {
+            target = scope:target.owner
+            type = casus_belli:dbo_cb_conquest_arabian_peninsula
+            province = scope:target
+        }
+        refresh_map_colors = yes
+    }
+}
+
+# dbo_conquest_black_sea_claim
+dbo_conquest.105 = {
+    type = country_event
+    category = situation_event
+    title = dbo_conquest_common_title
+    desc = dbo_conquest_common_desc
+    immediate = {
+        ruler_or_regent ?= {
+            save_scope_as = target_character1
+        }
+        scope:target.owner = {
+            save_scope_as = target_country
+            ruler_or_regent ?= {
+                save_scope_as = target_character2
+            }
+        }
+    }
+    option = {
+        name = dbo_conquest_common_option
+        add_casus_belli = {
+            target = scope:target.owner
+            type = casus_belli:dbo_cb_conquest_black_sea
+            province = scope:target
+        }
+        refresh_map_colors = yes
+    }
+}
+
+# dbo_conquest_nile_river_claim
+dbo_conquest.106 = {
+    type = country_event
+    category = situation_event
+    title = dbo_conquest_common_title
+    desc = dbo_conquest_common_desc
+    immediate = {
+        ruler_or_regent ?= {
+            save_scope_as = target_character1
+        }
+        scope:target.owner = {
+            save_scope_as = target_country
+            ruler_or_regent ?= {
+                save_scope_as = target_character2
+            }
+        }
+    }
+    option = {
+        name = dbo_conquest_common_option
+        add_casus_belli = {
+            target = scope:target.owner
+            type = casus_belli:dbo_cb_conquest_nile_river
+            province = scope:target
+        }
+        refresh_map_colors = yes
+    }
+}
+
+# dbo_conquest_europe_eastern_gate
+dbo_conquest.107 = {
+    type = country_event
+    category = situation_event
+    title = dbo_conquest_common_title
+    desc = dbo_conquest_common_desc
+    immediate = {
+        ruler_or_regent ?= {
+            save_scope_as = target_character1
+        }
+        scope:target.owner = {
+            save_scope_as = target_country
+            ruler_or_regent ?= {
+                save_scope_as = target_character2
+            }
+        }
+    }
+    option = {
+        name = dbo_conquest_common_option
+        add_casus_belli = {
+            target = scope:target.owner
+            type = casus_belli:dbo_cb_conquest_europe_eastern_gate
+            province = scope:target
+        }
+        refresh_map_colors = yes
+    }
+}
+
+# dbo_conquest_turkish_renaissance_claim
+dbo_conquest.108 = {
+    type = country_event
+    category = situation_event
+    title = dbo_conquest_common_title
+    desc = dbo_conquest_common_desc
+    immediate = {
+        ruler_or_regent ?= {
+            save_scope_as = target_character1
+        }
+        scope:target.owner = {
+            save_scope_as = target_country
+            ruler_or_regent ?= {
+                save_scope_as = target_character2
+            }
+        }
+    }
+    option = {
+        name = dbo_conquest_common_option
+        add_casus_belli = {
+            target = scope:target.owner
+            type = casus_belli:dbo_cb_conquest_turkish_renaissance
+            province = scope:target
+        }
+        refresh_map_colors = yes
+    }
+}
+
+# dbo_conquest_pearl_of_east_claim
+dbo_conquest.109 = {
+    type = country_event
+    category = situation_event
+    title = dbo_conquest_common_title
+    desc = dbo_conquest_common_desc
+    immediate = {
+        ruler_or_regent ?= {
+            save_scope_as = target_character1
+        }
+        scope:target.owner = {
+            save_scope_as = target_country
+            ruler_or_regent ?= {
+                save_scope_as = target_character2
+            }
+        }
+    }
+    option = {
+        name = dbo_conquest_common_option
+        add_casus_belli = {
+            target = scope:target.owner
+            type = casus_belli:dbo_cb_conquest_pearl_of_east
+            province = scope:target
+        }
+        refresh_map_colors = yes
+    }
+}
+
+# dbo_conquest_maghreb_claim
+dbo_conquest.110 = {
+    type = country_event
+    category = situation_event
+    title = dbo_conquest_common_title
+    desc = dbo_conquest_common_desc
+    immediate = {
+        ruler_or_regent ?= {
+            save_scope_as = target_character1
+        }
+        scope:target.owner = {
+            save_scope_as = target_country
+            ruler_or_regent ?= {
+                save_scope_as = target_character2
+            }
+        }
+    }
+    option = {
+        name = dbo_conquest_common_option
+        add_casus_belli = {
+            target = scope:target.owner
+            type = casus_belli:dbo_cb_conquest_maghreb
+            province = scope:target
+        }
+        refresh_map_colors = yes
+    }
+}
+
+# dbo_conquest_steep_mountain_claim
+dbo_conquest.111 = {
+    type = country_event
+    category = situation_event
+    title = dbo_conquest_common_title
+    desc = dbo_conquest_common_desc
+    immediate = {
+        ruler_or_regent ?= {
+            save_scope_as = target_character1
+        }
+        scope:target.owner = {
+            save_scope_as = target_country
+            ruler_or_regent ?= {
+                save_scope_as = target_character2
+            }
+        }
+    }
+    option = {
+        name = dbo_conquest_common_option
+        add_casus_belli = {
+            target = scope:target.owner
+            type = casus_belli:dbo_cb_conquest_steep_mountain
+            province = scope:target
+        }
+        refresh_map_colors = yes
+    }
+}

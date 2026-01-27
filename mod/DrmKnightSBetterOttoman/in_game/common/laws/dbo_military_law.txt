@@ -182,7 +182,7 @@ dbo_military_army_auxiliary_law = {
         }
         country_modifier = {
             army_auxiliary_power = 0.1
-            army_auxiliary_power_build_cost_modifier = -0.1
+            army_auxiliary_build_cost_modifier = -0.1
             army_auxiliary_maintenance_cost_modifier = -0.1
             army_auxiliary_reinforce_cost_modifier = -0.1
         }

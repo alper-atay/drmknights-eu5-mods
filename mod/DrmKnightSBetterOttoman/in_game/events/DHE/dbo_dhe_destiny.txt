@@ -1,9 +1,128 @@
-﻿# dbo_destiny_cultural_capital_constantinople
+﻿namespace = dbo_dhe_destiny
+
+# dbo_destiny_talented_youngest_heir_selection
 dbo_dhe_destiny.101 = {
-    type = country_event
     title = dbo_dhe_destiny.101.title
     desc = dbo_dhe_destiny.101.desc
-    historical_info = dbo_dhe_destiny.101.historical_info
+    image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_talented_youngest_heir_selection.dds"
+    fire_only_once = yes
+    dynamic_historical_event = {
+        tag = TUR
+        from = 1337.1.1
+        to = 1837.1.1
+        monthly_chance = 100
+    }
+    trigger = {
+        has_ruler = yes
+        has_heir = yes
+        at_war = no
+        stability > 0
+        legitimacy > 50
+        NOT = {
+            succession_law = heir_selection:dbo_destiny_talented_youngest_heir_selection
+        }
+    }
+    option = {
+        name = dbo_dhe_destiny.3002.a
+        historical_option = yes
+        change_heir_selection = heir_selection:dbo_destiny_talented_youngest_heir_selection
+        dbo_event_severe_bonus = yes
+    }
+}
+
+# dbo_destiny_war_slave_tax_and_devshirme_system_policy
+dbo_dhe_destiny.102 = {
+    title = dbo_dhe_destiny.102.title
+    desc = dbo_dhe_destiny.102.desc
+    historical_info = dbo_dhe_destiny.102.historical_info
+    image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_war_slave_tax_and_devshirme_system.dds"
+    fire_only_once = yes
+    dynamic_historical_event = {
+        tag = TUR
+        from = 1337.1.1
+        to = 1837.1.1
+        monthly_chance = 100
+    }
+    trigger = {
+        has_slavery = yes
+        has_law = recruitment_law
+        OR = {
+            OR = {
+                has_policy = ottoman_war_slave_tax
+                has_policy = devshirme_system_policy
+            }
+            current_age_or_later = {
+                age = age_3_discovery
+            }
+        }
+        NOT = {
+            has_policy = dbo_destiny_war_slave_tax_and_devshirme_system_policy
+        }
+        NOT = {
+            has_variable = devshirme_abolished
+        }
+    }
+    option = {
+        name = dbo_dhe_destiny.102.a
+        historical_option = yes
+        set_variable = dbo_destiny_war_slave_tax_and_devshirme_system_policy_obtained
+        add_policy = policy:dbo_destiny_war_slave_tax_and_devshirme_system_policy
+        dbo_event_severe_bonus = yes
+    }
+}
+
+# Winner Ottoman get all Beyliks
+dbo_dhe_common.103 = {
+    type = country_event
+    title = dbo_dhe_common.103.title
+    desc = dbo_dhe_common.103.desc
+    image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_anatolian_beyliks_forced_annex.dds"
+    fire_only_once = yes
+    outcome = positive
+    dynamic_historical_event = {
+        tag = TUR
+        from = 1338.1.1
+        to = 1837.1.1
+        monthly_chance = 100
+    }
+    trigger = {
+        has_variable = rise_of_the_ottomans_winner_variable
+        any_country = {
+            has_reform = government_reform:anatolian_beylik
+            NOT = {
+                tag = TUR
+            }
+        }
+    }
+    option = {
+        name = dbo_dhe_common.103.a
+        historical_option = yes
+        every_country = {
+            limit = {
+                has_reform = government_reform:anatolian_beylik
+                NOT = {
+                    tag = TUR
+                }
+            }
+            root = {
+                annex_country = {
+                    country = prev
+                    reason = Diplomatic
+                }
+            }
+        }
+    }
+    option = {
+        name = dbo_dhe_common.103.b
+    }
+}
+
+# dbo_destiny_cultural_capital_constantinople
+dbo_dhe_destiny.201 = {
+    type = country_event
+    title = dbo_dhe_destiny.201.title
+    desc = dbo_dhe_destiny.201.desc
+    historical_info = dbo_dhe_destiny.201.historical_info
     image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_cultural_capital_constantinople.dds"
     fire_only_once = yes
     outcome = positive
@@ -20,7 +139,7 @@ dbo_dhe_destiny.101 = {
         }
     }
     option = {
-        name = dbo_dhe_destiny.101.a
+        name = dbo_dhe_destiny.201.a
         historical_option = yes
         set_variable = dbo_destiny_cultural_capital_constantinople_obtained
         add_reform = government_reform:dbo_destiny_cultural_capital_constantinople
@@ -29,11 +148,11 @@ dbo_dhe_destiny.101 = {
 }
 
 # dbo_destiny_trade_center_grand_bazaar
-dbo_dhe_destiny.102 = {
+dbo_dhe_destiny.202 = {
     type = country_event
-    title = dbo_dhe_destiny.102.title
-    desc = dbo_dhe_destiny.102.desc
-    historical_info = dbo_dhe_destiny.102.historical_info
+    title = dbo_dhe_destiny.202.title
+    desc = dbo_dhe_destiny.202.desc
+    historical_info = dbo_dhe_destiny.202.historical_info
     image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_trade_center_grand_bazaar.dds"
     fire_only_once = yes
     outcome = positive
@@ -50,7 +169,7 @@ dbo_dhe_destiny.102 = {
         }
     }
     option = {
-        name = dbo_dhe_destiny.102.a
+        name = dbo_dhe_destiny.202.a
         historical_option = yes
         set_variable = dbo_destiny_trade_center_grand_bazaar_obtained
         add_reform = government_reform:dbo_destiny_trade_center_grand_bazaar
@@ -59,11 +178,11 @@ dbo_dhe_destiny.102 = {
 }
 
 # dbo_destiny_legacy_of_seljuks
-dbo_dhe_destiny.1006 = {
+dbo_dhe_destiny.203 = {
     type = country_event
-    title = dbo_dhe_destiny.1006.title
-    desc = dbo_dhe_destiny.1006.desc
-    historical_info = dbo_dhe_destiny.1006.historical_info
+    title = dbo_dhe_destiny.203.title
+    desc = dbo_dhe_destiny.203.desc
+    historical_info = dbo_dhe_destiny.203.historical_info
     image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_legacy_of_seljuks.dds"
     fire_only_once = yes
     outcome = positive
@@ -89,7 +208,7 @@ dbo_dhe_destiny.1006 = {
         }
     }
     option = {
-        name = dbo_dhe_destiny.1006.a
+        name = dbo_dhe_destiny.203.a
         historical_option = yes
         set_variable = dbo_destiny_legacy_of_seljuks_obtained
         add_reform = government_reform:dbo_destiny_legacy_of_seljuks
@@ -97,54 +216,12 @@ dbo_dhe_destiny.1006 = {
     }
 }
 
-# dbo_advanced_devshirme_system_policy
-dbo_dhe_destiny.3001 = {
-    title = dbo_dhe_destiny.3001.title
-    desc = dbo_dhe_destiny.3001.desc
-    historical_info = dbo_dhe_destiny.3001.historical_info
-    image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_advanced_devshirme_system.dds"
-    fire_only_once = yes
-    dynamic_historical_event = {
-        tag = TUR
-        from = 1337.1.1
-        to = 1837.1.1
-        monthly_chance = 100
-    }
-    trigger = {
-        has_slavery = yes
-        has_law = recruitment_law
-        OR = {
-            OR = {
-                has_policy = ottoman_war_slave_tax
-                has_policy = devshirme_system_policy
-            }
-            current_age_or_later = {
-                age = age_3_discovery
-            }
-        }
-        NOT = {
-            has_policy = dbo_war_slave_tax_and_devshirme_system_policy
-        }
-        NOT = {
-            has_variable = devshirme_abolished
-        }
-    }
-    option = {
-        name = dbo_dhe_destiny.3001.a
-        historical_option = yes
-        add_policy = policy:dbo_war_slave_tax_and_devshirme_system_policy
-        dbo_event_severe_bonus = yes
-    }
-}
-
-
-
 # dbo_destiny_piri_reis
-dbo_dhe_destiny.1011 = {
+dbo_dhe_destiny.204 = {
     type = country_event
-    title = dbo_dhe_destiny.1011.title
-    desc = dbo_dhe_destiny.1011.desc
-    historical_info = dbo_dhe_destiny.1011.historical_info
+    title = dbo_dhe_destiny.204.title
+    desc = dbo_dhe_destiny.204.desc
+    historical_info = dbo_dhe_destiny.204.historical_info
     image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_piri_reis.dds"
     fire_only_once = yes
     outcome = positive
@@ -163,7 +240,7 @@ dbo_dhe_destiny.1011 = {
         }
     }
     option = {
-        name = dbo_dhe_destiny.1011.a
+        name = dbo_dhe_destiny.204.a
         historical_option = yes
         set_variable = dbo_destiny_piri_reis_obtained
         add_reform = government_reform:dbo_destiny_piri_reis
@@ -172,11 +249,11 @@ dbo_dhe_destiny.1011 = {
 }
 
 # dbo_destiny_ottoman_empire
-dbo_dhe_destiny.1012 = {
+dbo_dhe_destiny.205 = {
     type = country_event
-    title = dbo_dhe_destiny.1012.title
-    desc = dbo_dhe_destiny.1012.desc
-    historical_info = dbo_dhe_destiny.1012.historical_info
+    title = dbo_dhe_destiny.205.title
+    desc = dbo_dhe_destiny.205.desc
+    historical_info = dbo_dhe_destiny.205.historical_info
     image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_ottoman_empire.dds"
     fire_only_once = yes
     outcome = positive
@@ -197,7 +274,7 @@ dbo_dhe_destiny.1012 = {
         }
     }
     option = {
-        name = dbo_dhe_destiny.1012.a
+        name = dbo_dhe_destiny.205.a
         historical_option = yes
         if = {
             limit = {
@@ -224,10 +301,10 @@ dbo_dhe_destiny.1012 = {
 }
 
 # dbo_destiny_mentor_lala
-dbo_dhe_destiny.1013 = {
-    title = dbo_dhe_destiny.1013.title
-    desc = dbo_dhe_destiny.1013.desc
-    historical_info = dbo_dhe_destiny.1013.historical_info
+dbo_dhe_destiny.206 = {
+    title = dbo_dhe_destiny.206.title
+    desc = dbo_dhe_destiny.206.desc
+    historical_info = dbo_dhe_destiny.206.historical_info
     image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_elite_prince_education_with_lala.dds"
     fire_only_once = yes
     dynamic_historical_event = {
@@ -244,40 +321,10 @@ dbo_dhe_destiny.1013 = {
         }
     }
     option = {
-        name = dbo_dhe_destiny.1013.a
+        name = dbo_dhe_destiny.206.a
         historical_option = yes
         set_variable = dbo_destiny_mentor_lala_obtained
         add_reform = government_reform:dbo_destiny_mentor_lala
         dbo_event_mild_bonus = yes
-    }
-}
-
-# dbo_talented_youngest_heir_selection
-dbo_dhe_destiny.101 = {
-    title = dbo_dhe_destiny.101.title
-    desc = dbo_dhe_destiny.101.desc
-    image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_talented_youngest_heir_selection.dds"
-    fire_only_once = yes
-    dynamic_historical_event = {
-        tag = TUR
-        from = 1337.1.1
-        to = 1837.1.1
-        monthly_chance = 100
-    }
-    trigger = {
-        has_ruler = yes
-        has_heir = yes
-        at_war = no
-        stability > 0
-        legitimacy > 50
-        NOT = {
-            succession_law = heir_selection:dbo_talented_youngest_heir_selection
-        }
-    }
-    option = {
-        name = dbo_dhe_destiny.3002.a
-        historical_option = yes
-        change_heir_selection = heir_selection:dbo_talented_youngest_heir_selection
-        dbo_event_severe_bonus = yes
     }
 }

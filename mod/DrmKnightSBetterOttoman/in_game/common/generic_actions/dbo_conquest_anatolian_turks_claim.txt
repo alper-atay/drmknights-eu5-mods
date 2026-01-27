@@ -13,7 +13,6 @@
                     situation_has_ended = yes
                 }
                 has_variable = dbo_conquest_anatolian_turks_challenged
-                always = yes
             }
             NOT = {
                 has_variable = dbo_conquest_anatolian_turks_obtained
