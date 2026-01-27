@@ -64,3 +64,4 @@ dbo_conquest.101 = {
         refresh_map_colors = yes
     }
 }
+

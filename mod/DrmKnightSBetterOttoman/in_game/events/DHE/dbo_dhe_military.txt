@@ -5,7 +5,7 @@ dbo_dhe_military.101 = {
     title = dbo_dhe_military.101.title
     desc = dbo_dhe_military.101.desc
     historical_info = dbo_dhe_military.101.historical_info
-    image = "gfx/interface/illustrations/event/backgrounds/dbo_military_army_alp_and_alperen.dds"
+    image = "gfx/interface/illustrations/event/backgrounds/dbo_military_army_fundamental_alp_and_alperen.dds"
     fire_only_once = yes
     outcome = positive
     dynamic_historical_event = {
@@ -34,7 +34,7 @@ dbo_dhe_military.102 = {
     title = dbo_dhe_military.102.title
     desc = dbo_dhe_military.102.desc
     historical_info = dbo_dhe_military.102.historical_info
-    image = "gfx/interface/illustrations/event/backgrounds/dbo_military_army_kapikulu_ocaklari.dds"
+    image = "gfx/interface/illustrations/event/backgrounds/dbo_military_army_fundamental_kapikulu_ocaklari.dds"
     fire_only_once = yes
     outcome = positive
     dynamic_historical_event = {
@@ -66,7 +66,7 @@ dbo_dhe_military.111 = {
     title = dbo_dhe_military.111.title
     desc = dbo_dhe_military.111.desc
     historical_info = dbo_dhe_military.111.historical_info
-    image = "gfx/interface/illustrations/event/backgrounds/dbo_military_army_yeniceri_ocagi.dds"
+    image = "gfx/interface/illustrations/event/backgrounds/dbo_military_army_infantry_yeniceri_ocagi.dds"
     fire_only_once = yes
     outcome = positive
     dynamic_historical_event = {
@@ -97,7 +97,7 @@ dbo_dhe_military.121 = {
     title = dbo_dhe_military.121.title
     desc = dbo_dhe_military.121.desc
     historical_info = dbo_dhe_military.121.historical_info
-    image = "gfx/interface/illustrations/event/backgrounds/dbo_military_army_lessons_from_mongols.dds"
+    image = "gfx/interface/illustrations/event/backgrounds/dbo_military_army_cavalry_lessons_from_mongols.dds"
     fire_only_once = yes
     outcome = positive
     dynamic_historical_event = {
@@ -126,7 +126,7 @@ dbo_dhe_military.122 = {
     title = dbo_dhe_military.122.title
     desc = dbo_dhe_military.122.desc
     historical_info = dbo_dhe_military.122.historical_info
-    image = "gfx/interface/illustrations/event/backgrounds/dbo_military_army_lessons_from_mongols.dds"
+    image = "gfx/interface/illustrations/event/backgrounds/dbo_military_army_cavalry_timariot_system.dds"
     fire_only_once = yes
     outcome = positive
     dynamic_historical_event = {
@@ -158,7 +158,7 @@ dbo_dhe_military.131 = {
     title = dbo_dhe_military.131.title
     desc = dbo_dhe_military.131.desc
     historical_info = dbo_dhe_military.131.historical_info
-    image = "gfx/interface/illustrations/event/backgrounds/dbo_military_army_topcu_ocagi.dds"
+    image = "gfx/interface/illustrations/event/backgrounds/dbo_military_army_artillery_topcu_ocagi.dds"
     fire_only_once = yes
     outcome = positive
     dynamic_historical_event = {
@@ -189,7 +189,7 @@ dbo_dhe_military.141 = {
     title = dbo_dhe_military.141.title
     desc = dbo_dhe_military.141.desc
     historical_info = dbo_dhe_military.141.historical_info
-    image = "gfx/interface/illustrations/event/backgrounds/dbo_military_army_great_bronze_cannon.dds"
+    image = "gfx/interface/illustrations/event/backgrounds/dbo_military_army_heavy_artillery_great_bronze_cannon.dds"
     fire_only_once = yes
     outcome = positive
     dynamic_historical_event = {
@@ -220,7 +220,7 @@ dbo_dhe_military.151 = {
     title = dbo_dhe_military.151.title
     desc = dbo_dhe_military.151.desc
     historical_info = dbo_dhe_military.151.historical_info
-    image = "gfx/interface/illustrations/event/backgrounds/dbo_military_army_cebeci_and_saka_ocagi.dds"
+    image = "gfx/interface/illustrations/event/backgrounds/dbo_military_army_auxiliary_cebeci_and_saka_ocagi.dds"
     fire_only_once = yes
     outcome = positive
     dynamic_historical_event = {
@@ -276,12 +276,12 @@ dbo_dhe_military.161 = {
     }
 }
 
-# dbo_military_legacy_of_caka_bey
-dbo_dhe_military.201 = {
+# dbo_military_navy_fundamental_legacy_of_caka_bey_policy
+dbo_dhe_military.171 = {
     type = country_event
-    title = dbo_dhe_military.201.title
-    desc = dbo_dhe_military.201.desc
-    historical_info = dbo_dhe_military.201.historical_info
+    title = dbo_dhe_military.171.title
+    desc = dbo_dhe_military.171.desc
+    historical_info = dbo_dhe_military.171.historical_info
     image = "gfx/interface/illustrations/event/backgrounds/dbo_military_navy_fundamental_legacy_of_caka_bey.dds"
     fire_only_once = yes
     outcome = positive
@@ -299,7 +299,7 @@ dbo_dhe_military.201 = {
         }
     }
     option = {
-        name = dbo_dhe_military.201.a
+        name = dbo_dhe_military.171.a
         historical_option = yes
         set_variable = dbo_military_navy_fundamental_legacy_of_caka_bey_policy_obtained
         add_policy = policy:dbo_military_navy_fundamental_legacy_of_caka_bey_policy
@@ -308,11 +308,11 @@ dbo_dhe_military.201 = {
 }
 
 # dbo_military_navy_fundamental_barbaros_hayrettin_pasha_policy
-dbo_dhe_military.202 = {
+dbo_dhe_military.172 = {
     type = country_event
-    title = dbo_dhe_military.202.title
-    desc = dbo_dhe_military.202.desc
-    historical_info = dbo_dhe_military.202.historical_info
+    title = dbo_dhe_military.172.title
+    desc = dbo_dhe_military.172.desc
+    historical_info = dbo_dhe_military.172.historical_info
     image = "gfx/interface/illustrations/event/backgrounds/dbo_military_navy_fundamental_barbaros_hayrettin_pasha.dds"
     fire_only_once = yes
     outcome = positive
@@ -329,7 +329,7 @@ dbo_dhe_military.202 = {
         }
     }
     option = {
-        name = dbo_dhe_military.202.a
+        name = dbo_dhe_military.172.a
         historical_option = yes
         set_variable = dbo_military_navy_fundamental_barbaros_hayrettin_pasha_policy_obtained
         add_policy = policy:dbo_military_navy_fundamental_barbaros_hayrettin_pasha_policy

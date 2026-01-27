@@ -1,10 +1,5 @@
 ﻿namespace = dbo_dhe_history
 # dbo_dhe_history
-# 1-100 are reserved for the base events
-# 101-1000 are reserved Ottomans DHE
-# 1001-1100 are reserved for the core destiny government reforms
-# --
-# ---
 # Yildirim Bayezid https://tr.wikipedia.org/wiki/I._Bayezid
 dbo_dhe_history.1001 = {
     type = country_event
@@ -137,7 +132,6 @@ dbo_dhe_history.1004 = {
     }
     option = {
         name = dbo_dhe_history.1004.a
-        set_variable = dbo_conquest_anatolian_turks_challenged
     }
 }
 
@@ -170,7 +164,6 @@ dbo_dhe_history.1005 = {
     }
     option = {
         name = dbo_dhe_history.1005.a
-        set_variable = dbo_conquest_anatolian_turks_challenged
     }
 }
 
