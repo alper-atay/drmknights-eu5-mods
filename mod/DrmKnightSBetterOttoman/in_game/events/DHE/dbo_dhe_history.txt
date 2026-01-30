@@ -28,19 +28,13 @@ dbo_dhe_history.1001 = {
             age = 0
             culture = culture:turkish_culture
             religion = religion:sunni
-            adm = 20
-            dip = 20
-            mil = 20
+            adm = 5
+            dip = 5
+            mil = 5
             add_trait = trait:child_prodigy
             add_trait = trait:bold_fighter
             add_trait = trait:conqueror
             add_trait = trait:hussar_commander
-            timed_modifier = {
-                modifier = "healthy_character"
-                start_date = 1330.1.1
-                date = 9999.1.1
-                size = 2
-            }
             script = dbo_yildirim_bayezid
         }
     }
