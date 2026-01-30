@@ -11,12 +11,6 @@
                 NOT = { has_variable = devshirme_abolished }
             }
         }
-        locked = {
-            has_slavery = yes
-            NOT = {
-                has_variable = devshirme_abolished
-            }
-        }
         country_modifier = {
             global_slaves_goods_output_modifier = 0.2
             wrong_culture_levy_size = 0.2

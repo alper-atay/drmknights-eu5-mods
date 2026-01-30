@@ -4,7 +4,7 @@ dbo_situation.1 = {
     category = situation_event
     title = dbo_situation.1.title
     desc = dbo_situation.1.desc
-    image = "gfx/interface/illustrations/situation/dbo_conquest.dds"
+    image = "gfx/interface/illustrations/situation/dbo_situation.dds"
     option = {
         name = dbo_situation.1.a
     }

@@ -1,18 +1,16 @@
 ﻿dbo_cb_conquest_rise_of_the_ottomans = {
     allow_creation = {
-        tag = TUR
+        can_declare_war_on = scope:target
+        is_neighbor_of = scope:target
     }
     allow_declaration = {
-        can_declare_no_cb_war_on = scope:target
+        can_declare_war_on = scope:target
+        is_neighbor_of = scope:target
     }
-    no_cb = yes
+    can_expire = no
     visible = {
-        OR = {
-            situation:rise_of_the_ottomans = {
-                situation_is_active = yes
-                situation_has_ended = yes
-            }
-        }
+        tag = TUR
+        is_situation_active = situation:rise_of_the_ottomans
         scope:target = {
             any_owned_location = {
                 OR = {
@@ -282,15 +280,16 @@ dbo_cb_conquest_europe_eastern_gate = {
         scope:target = {
             any_owned_location = {
                 OR = {
+                    this.area = area:north_alfold_area
+                    this.area = area:south_alfold_area
+                    this.area = area:transdanubia_area
+                    this.area = area:moldavia_area
+                    this.area = area:slovakia_area
                     this.area = area:transylvania_area
                     this.area = area:wallachia_area
-                    this.area = area:moldavia_area
-                    this.area = area:bulgaria_area
-                    this.area = area:serbia_area
                     this.area = area:croatia_area
+                    this.area = area:slavonia_area
                     this.area = area:slovenia_area
-                    this.area = area:slovakia_area
-                    this.area = area:habsburg_area
                 }
             }
         }

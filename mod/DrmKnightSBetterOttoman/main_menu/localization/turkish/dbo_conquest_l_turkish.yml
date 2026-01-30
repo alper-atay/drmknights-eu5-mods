@@ -74,6 +74,8 @@
  dbo_conquest_maghreb_map_info: "[Concept('areas', 'Alanlar')|e]; [ShowAreaName('algiers_area')], [ShowAreaName('atlas_high_plateau')], [ShowAreaName('desert_area')], [ShowAreaName('morocco_area')], [ShowAreaName('sus_area')], [ShowAreaName('tripolitania_area')], [ShowAreaName('tunis_area')]."
  dbo_conquest_steep_mountain_map_info: "[Concept('areas', 'Alanlar')|e]; [ShowAreaName('armenia_area')], [ShowAreaName('georgia_area')], [ShowAreaName('northern_caucasus_area')], [ShowAreaName('shirvan_area')]."
 # Casus Belli Descriptions
+ dbo_cb_conquest_rise_of_the_ottomans: "$rise_of_the_ottomans$ için Hak İddiası"
+ dbo_cb_conquest_rise_of_the_ottomans_desc: "$rise_of_the_ottomans_desc$"
  dbo_cb_conquest_anatolian_turks: "$dbo_conquest_anatolian_turks$ için Hak İddiası" 
  dbo_cb_conquest_anatolian_turks_desc: "Anadolu toprakları, tarih boyunca birçok Türk beyliği ve devleti için yurt olmuştur. Osmanlı İmparatorluğu'nun mirasçısı olarak, bu toprakların birleştirilmesi ve Türk birliğinin sağlanması bizim ulusal davamızdır. Bu hak iddiası, Anadolu'nun çeşitli bölgelerinde bulunan vilayetleri kapsar ve bu toprakların Osmanlı yönetimi altına alınmasını amaçlar."
  dbo_cb_conquest_anatolian_turks_PROV: "[PROVINCE.GetName] vilayeti ve çevresindeki topraklar, tarih boyunca Anadolu Türklerinin yurdu olmuştur. Bu topraklar üzerindeki haklarımızı geri almak için harekete geçmeliyiz."
@@ -108,6 +110,8 @@
  dbo_cb_conquest_steep_mountain_desc: "Kafkasya, Osmanlı İmparatorluğu'nun Akdeniz'deki en önemli topraklarından biridir. Bu toprakların birleştirilmesi ve Osmanlı yönetimi altına alınması, imparatorluğumuzun bölgedeki etkisini artıracaktır. Bu hak iddiası, Ermenistan, Gürcistan, Kuzey Kafkasya ve Şirvan bölgelerini kapsar."
  dbo_cb_conquest_steep_mountain_PROV: "[PROVINCE.GetName] vilayeti ve çevresindeki topraklar, Kafkasya'nın önemli bir parçasıdır. Bu topraklar üzerindeki haklarımızı geri almak için harekete geçmeliyiz."
 # War Goals
+ war_goal_dbo_conquest_rise_of_the_ottomans: "$rise_of_the_ottomans$ için Savaş Hedefimiz"
+ war_goal_dbo_conquest_rise_of_the_ottomans_desc: "$rise_of_the_ottomans_desc$"
  war_goal_dbo_conquest_anatolian_turks: "$dbo_conquest_anatolian_turks$ için Savaş Hedefimiz"
  war_goal_dbo_conquest_anatolian_turks_desc: "Anadolu topraklarının Osmanlı İmparatorluğu'nun yönetimi altına alınması.\n$dbo_conquest_anatolian_turks_map_info$"
  war_goal_dbo_conquest_rumelia: "$dbo_conquest_rumelia$ için Savaş Hedefimiz"

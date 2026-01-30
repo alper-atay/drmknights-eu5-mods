@@ -4,6 +4,8 @@
  dbo_army_heavy_artillery_build: "$dbo_army_heavy_artillery$ Yapım Maliyeti"
  dbo_army_heavy_artillery_reinforce: "$dbo_army_heavy_artillery$ Takviye Maliyeti"
  dbo_army_heavy_artillery_maintenance: "$dbo_army_heavy_artillery$ Bakım Maliyeti"
+ dbo_heavy_artillery_maintenance: "$dbo_army_heavy_artillery$ Bakım Maliyeti"
+ dbo_heavy_artillery_construction: "$dbo_army_heavy_artillery$ İnşaat Maliyeti"
  dbo_a_great_bronze_cannon_sahi_t1: "$dbo_army_heavy_artillery$ ([ShowAgeName('age_2_renaissance')])"
  dbo_a_great_bronze_cannon_sahi_t1_desc: "$dbo_army_heavy_artillery_desc$"
  dbo_a_great_bronze_cannon_sahi_t2: "$dbo_army_heavy_artillery$ ([ShowAgeName('age_4_reformation')])"

@@ -201,15 +201,16 @@ dbo_conquest_europe_eastern_gate = {
         antagonism = 0.25
         allowed_locations = {
             OR = {
+                scope:location.area = area:north_alfold_area
+                scope:location.area = area:south_alfold_area
+                scope:location.area = area:transdanubia_area
+                scope:location.area = area:moldavia_area
+                scope:location.area = area:slovakia_area
                 scope:location.area = area:transylvania_area
                 scope:location.area = area:wallachia_area
-                scope:location.area = area:moldavia_area
-                scope:location.area = area:bulgaria_area
-                scope:location.area = area:serbia_area
                 scope:location.area = area:croatia_area
+                scope:location.area = area:slavonia_area
                 scope:location.area = area:slovenia_area
-                scope:location.area = area:slovakia_area
-                scope:location.area = area:habsburg_area
             }
         }
     }

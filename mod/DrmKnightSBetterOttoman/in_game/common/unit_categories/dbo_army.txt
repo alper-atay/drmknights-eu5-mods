@@ -1,32 +1,27 @@
 ﻿dbo_army_heavy_artillery = {
-	is_army = yes
-	bombard = yes
-	movement_speed = 2
-	build_time = 180
-	supply_weight = 1
-	max_strength = 0
-	attrition_loss = 0.5
-	food_storage_per_strength = 4
-	food_consumption_per_strength = 2
-	damage_taken = 1.5
-	frontage = 1
-	initiative = 1
-	combat_speed = 0.5
-	flanking_ability = 0
-	secure_flanks_defense = 0
-	maintenance_demand = dbo_heavy_artillery_maintenance
-	construction_demand = dbo_heavy_artillery_construction
-	minimum_levy_size = 0.5
-	impact = {
-		jungle = 0.5
-		wetlands = 0.5
-		mountains = 0.5
-	}
-	combat = {
-		jungle = -0.5
-		wetlands = -0.5
-		mountains = -0.5
-	}
-	ai_weight = 0.4
-	startup_amount = 1
+    is_army = yes
+    bombard = yes
+    movement_speed = 2
+    build_time = 180
+    supply_weight = 1
+    max_strength = 0
+    attrition_loss = 0.5
+    food_storage_per_strength = 4
+    food_consumption_per_strength = 2
+    damage_taken = 1.5
+    frontage = 1
+    initiative = 1
+    combat_speed = 0.5
+    flanking_ability = 0
+    secure_flanks_defense = 0
+    maintenance_demand = dbo_heavy_artillery_maintenance
+    construction_demand = dbo_heavy_artillery_construction
+    minimum_levy_size = 0.5
+    combat = {
+        jungle = -0.5
+        wetlands = -0.5
+        mountains = -0.5
+    }
+    ai_weight = 0.4
+    startup_amount = 1
 }

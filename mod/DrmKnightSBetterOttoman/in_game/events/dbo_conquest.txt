@@ -29,7 +29,7 @@ dbo_conquest.101 = {
 }
 
 # dbo_conquest_rumelia_claim
-dbo_conquest.101 = {
+dbo_conquest.102 = {
     type = country_event
     category = situation_event
     title = dbo_conquest_common_title

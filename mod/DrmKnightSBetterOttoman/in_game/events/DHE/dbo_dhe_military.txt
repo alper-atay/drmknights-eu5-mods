@@ -1,4 +1,4 @@
-namespace = dbo_dhe_military
+﻿namespace = dbo_dhe_military
 # dbo_military_army_fundamental_alp_and_alperen_policy
 dbo_dhe_military.101 = {
     type = country_event
