@@ -1,4 +1,4 @@
-dbo_heavy_artillery_maintenance = {
+﻿dbo_heavy_artillery_maintenance = {
 	cannons = 1
 	copper = 0.2
 	tin = 0.1

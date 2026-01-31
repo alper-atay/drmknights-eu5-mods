@@ -1,0 +1,6 @@
+﻿dbo_yildirim_bayezid = {
+	game_data = {
+		category = country
+	}
+	
+}

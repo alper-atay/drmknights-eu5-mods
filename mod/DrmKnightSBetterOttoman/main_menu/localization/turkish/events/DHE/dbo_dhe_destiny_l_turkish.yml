@@ -1,8 +1,8 @@
 ﻿l_turkish:
  # dbo_destiny_talented_youngest_heir_selection
- dbo_dhe_destiny.3002.title: "[ShowHeirSelectionName('dbo_destiny_talented_youngest_heir_selection')]\n[Concept('heir_selection', 'Veliaht Seçimi')|e]"
- dbo_dhe_destiny.3002.desc: "$dbo_destiny_talented_youngest_heir_selection_desc$"
- dbo_dhe_destiny.3002.a: "Geleceğimiz budur!"
+ dbo_dhe_destiny.101.title: "[ShowHeirSelectionName('dbo_destiny_talented_youngest_heir_selection')]\n[Concept('heir_selection', 'Veliaht Seçimi')|e]"
+ dbo_dhe_destiny.101.desc: "$dbo_destiny_talented_youngest_heir_selection_desc$"
+ dbo_dhe_destiny.101.a: "Geleceğimiz budur!"
  # dbo_destiny_war_slave_tax_and_devshirme_system_policy
  dbo_dhe_destiny.102.title: "[ShowPolicyName('dbo_destiny_war_slave_tax_and_devshirme_system_policy')]\n[Concept('policy', 'Politikası')|e]"
  dbo_dhe_destiny.102.desc: "$dbo_destiny_war_slave_tax_and_devshirme_system_policy_desc$"

@@ -1,24 +1,24 @@
 ﻿namespace = dbo_dhe_history
 # dbo_dhe_history
 # Yildirim Bayezid https://tr.wikipedia.org/wiki/I._Bayezid
-dbo_dhe_history.1001 = {
+dbo_dhe_history.101 = {
     type = country_event
-    title = dbo_dhe_history.1001.title
-    desc = dbo_dhe_history.1001.desc
-    historical_info = dbo_dhe_history.1001.historical_info
+    title = dbo_dhe_history.101.title
+    desc = dbo_dhe_history.101.desc
+    historical_info = dbo_dhe_history.101.historical_info
     image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_bayezid_born.dds"
     fire_only_once = yes
     dynamic_historical_event = {
         tag = TUR
         from = 1353.1.1
-        to = 1363.1.1
-        monthly_chance = 10
+        to = 1355.1.1
+        monthly_chance = 100
     }
     trigger = {
         has_ruler = yes
     }
     option = {
-        name = dbo_dhe_history.1001.a
+        name = dbo_dhe_history.101.a
         create_character = {
             first_name = Bayezid
             nickname = nick_Yildirim
@@ -41,18 +41,18 @@ dbo_dhe_history.1001 = {
 }
 
 # Rise Yildirim Bayezid
-dbo_dhe_history.1002 = {
+dbo_dhe_history.102 = {
     type = country_event
-    title = dbo_dhe_history.1002.title
-    desc = dbo_dhe_history.1002.desc
-    historical_info = dbo_dhe_history.1002.historical_info
+    title = dbo_dhe_history.102.title
+    desc = dbo_dhe_history.102.desc
+    historical_info = dbo_dhe_history.102.historical_info
     image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_bayezid_rise.dds"
     fire_only_once = yes
     dynamic_historical_event = {
         tag = TUR
         from = 1370.1.1
         to = 1380.1.1
-        monthly_chance = 20
+        monthly_chance = 100
     }
     trigger = {
         exists = character:dbo_yildirim_bayezid
@@ -64,7 +64,7 @@ dbo_dhe_history.1002 = {
         }
     }
     option = {
-        name = dbo_dhe_history.1002.a
+        name = dbo_dhe_history.102.a
         set_new_ruler = character:dbo_yildirim_bayezid
     }
 }

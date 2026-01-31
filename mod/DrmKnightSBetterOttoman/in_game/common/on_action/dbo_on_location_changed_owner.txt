@@ -25,8 +25,8 @@ dbo_on_conquer_any_location = {
                 size = {
                     value = population
                     multiply = 0.1
-                    min = 1
-                    max = 5
+                    min = 0.5
+                    max = 2
                 }
             }
         }
@@ -47,15 +47,10 @@ dbo_on_conquer_anatolian = {
                 root.area = area:marmara_area
                 root.area = area:pontus_area
                 root.area = area:west_anatolia_area
+                root.area = area:cilicia_area
                 root.province_definition = province_definition:edirne_province
                 root.province_definition = province_definition:dardanelles_province
                 root.province_definition = province_definition:constantinople_province
-                root.province_definition = province_definition:icel_province
-                root.province_definition = province_definition:tarsus_province
-                root.province_definition = province_definition:sis_province
-                root.province_definition = province_definition:adana_province
-                root.province_definition = province_definition:marash_province
-                root.province_definition = province_definition:malatya_province
                 root.province_definition = province_definition:erzurum_province
                 root.province_definition = province_definition:harput_province
                 root.province_definition = province_definition:malazgirt_province
