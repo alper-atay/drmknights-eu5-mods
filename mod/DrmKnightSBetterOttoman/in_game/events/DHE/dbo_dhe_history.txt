@@ -1,24 +1,35 @@
 ﻿namespace = dbo_dhe_history
 # dbo_dhe_history
-# Yildirim Bayezid https://tr.wikipedia.org/wiki/I._Bayezid
+
+
 dbo_dhe_history.101 = {
     type = country_event
     title = dbo_dhe_history.101.title
     desc = dbo_dhe_history.101.desc
-    historical_info = dbo_dhe_history.101.historical_info
+}
+
+# Yildirim Bayezid https://tr.wikipedia.org/wiki/I._Bayezid
+dbo_dhe_history.1101 = {
+    type = country_event
+    title = dbo_dhe_history.1101.title
+    desc = dbo_dhe_history.1101.desc
+    historical_info = dbo_dhe_history.1101.historical_info
     image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_bayezid_born.dds"
     fire_only_once = yes
     dynamic_historical_event = {
         tag = TUR
-        from = 1353.1.1
-        to = 1355.1.1
+        from = 1351.1.1
+        to = 1358.1.1
         monthly_chance = 100
     }
     trigger = {
         has_ruler = yes
+        ruler ?= {
+            is_adult = yes
+        }
     }
     option = {
-        name = dbo_dhe_history.101.a
+        name = dbo_dhe_history.1101.a
         create_character = {
             first_name = Bayezid
             nickname = nick_Yildirim
@@ -28,6 +39,7 @@ dbo_dhe_history.101 = {
             age = 0
             culture = culture:turkish_culture
             religion = religion:sunni
+            fertility = 100
             adm = 5
             dip = 5
             mil = 5
@@ -41,11 +53,11 @@ dbo_dhe_history.101 = {
 }
 
 # Rise Yildirim Bayezid
-dbo_dhe_history.102 = {
+dbo_dhe_history.1102 = {
     type = country_event
-    title = dbo_dhe_history.102.title
-    desc = dbo_dhe_history.102.desc
-    historical_info = dbo_dhe_history.102.historical_info
+    title = dbo_dhe_history.1102.title
+    desc = dbo_dhe_history.1102.desc
+    historical_info = dbo_dhe_history.1102.historical_info
     image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_bayezid_rise.dds"
     fire_only_once = yes
     dynamic_historical_event = {
@@ -64,17 +76,17 @@ dbo_dhe_history.102 = {
         }
     }
     option = {
-        name = dbo_dhe_history.102.a
+        name = dbo_dhe_history.1102.a
         set_new_ruler = character:dbo_yildirim_bayezid
     }
 }
 
 # Yildirim Bayezid changelling to Anatolian Turks Union
-dbo_dhe_history.1003 = {
+dbo_dhe_history.1103 = {
     type = country_event
-    title = dbo_dhe_history.1003.title
-    desc = dbo_dhe_history.1003.desc
-    historical_info = dbo_dhe_history.1003.historical_info
+    title = dbo_dhe_history.1103.title
+    desc = dbo_dhe_history.1103.desc
+    historical_info = dbo_dhe_history.1103.historical_info
     image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_bayezid_challenge.dds"
     fire_only_once = yes
     dynamic_historical_event = {
@@ -92,17 +104,17 @@ dbo_dhe_history.1003 = {
         }
     }
     option = {
-        name = dbo_dhe_history.1003.a
+        name = dbo_dhe_history.1103.a
         set_variable = dbo_conquest_anatolian_turks_challenged
     }
 }
 
 # Yildirim Bayezid Dream
-dbo_dhe_history.1004 = {
+dbo_dhe_history.1104 = {
     type = country_event
-    title = dbo_dhe_history.1004.title
-    desc = dbo_dhe_history.1004.desc
-    historical_info = dbo_dhe_history.1004.historical_info
+    title = dbo_dhe_history.1104.title
+    desc = dbo_dhe_history.1104.desc
+    historical_info = dbo_dhe_history.1104.historical_info
     image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_bayezid_defeated_by_timur.dds"
     fire_only_once = yes
     dynamic_historical_event = {
@@ -125,16 +137,16 @@ dbo_dhe_history.1004 = {
         }
     }
     option = {
-        name = dbo_dhe_history.1004.a
+        name = dbo_dhe_history.1104.a
     }
 }
 
 # Yildirim Bayezid Nightmare
-dbo_dhe_history.1005 = {
+dbo_dhe_history.1105 = {
     type = country_event
-    title = dbo_dhe_history.1005.title
-    desc = dbo_dhe_history.1005.desc
-    historical_info = dbo_dhe_history.1005.historical_info
+    title = dbo_dhe_history.1105.title
+    desc = dbo_dhe_history.1105.desc
+    historical_info = dbo_dhe_history.1105.historical_info
     image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_bayezid_nightmare.dds"
     fire_only_once = yes
     dynamic_historical_event = {
@@ -157,16 +169,16 @@ dbo_dhe_history.1005 = {
         }
     }
     option = {
-        name = dbo_dhe_history.1005.a
+        name = dbo_dhe_history.1105.a
     }
 }
 
 # Yildirim Bayezid Dead
-dbo_dhe_history.1006 = {
+dbo_dhe_history.1106 = {
     type = country_event
-    title = dbo_dhe_history.1006.title
-    desc = dbo_dhe_history.1006.desc
-    historical_info = dbo_dhe_history.1006.historical_info
+    title = dbo_dhe_history.1106.title
+    desc = dbo_dhe_history.1106.desc
+    historical_info = dbo_dhe_history.1106.historical_info
     image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_bayezid_died.dds"
     fire_only_once = yes
     dynamic_historical_event = {
@@ -189,7 +201,7 @@ dbo_dhe_history.1006 = {
         }
     }
     option = {
-        name = dbo_dhe_history.1006.a
+        name = dbo_dhe_history.1106.a
         kill_character = {
             target = character:dbo_yildirim_bayezid
             reason = sudden_illness
@@ -197,6 +209,9 @@ dbo_dhe_history.1006 = {
         dbo_event_extreme_penalty = yes
     }
 }
+
+#
+
 
 # Fatih Sultan Mehmed https://tr.wikipedia.org/wiki/II._Mehmed
 dbo_dhe_history.1011 = {

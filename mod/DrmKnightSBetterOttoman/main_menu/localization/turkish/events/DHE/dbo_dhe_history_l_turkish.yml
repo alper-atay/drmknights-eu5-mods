@@ -1,11 +1,11 @@
 ﻿l_turkish:
 # Born Yildirim Bayezid
- dbo_dhe_history.101.title: "Yıldırım Bayezid'in Doğumu"
- dbo_dhe_history.101.desc: "1354 yılında, Osmanlı İmparatorluğu'nun gelecekteki padişahı Yıldırım Bayezid dünyaya geldi. Babası I. Murad'ın izinden giderek, genç yaşta askeri ve idari becerilerini geliştirmeye başladı."
- dbo_dhe_history.101.historical_info: "Yıldırım Bayezid, Osmanlı İmparatorluğu'nun en önemli padişahlarından biri olarak kabul edilir. 1389 yılında I. Murad'ın Kosova Savaşı'nda şehit düşmesinin ardından tahta geçti. Hükümdarlığı sırasında Balkanlar'da genişlemeyi sürdürdü ve Anadolu'da beylikleri Osmanlı topraklarına kattı. Ancak, 1402 yılında Timur ile yapılan Ankara Savaşı'nda yenilgiye uğrayarak esir düştü ve bu olay Osmanlı tarihinde önemli bir dönüm noktası oldu."
- dbo_dhe_history.101.a: "Bir fatih doğdu!"
+ dbo_dhe_history.1101.title: "Yıldırım Bayezid'in Doğumu"
+ dbo_dhe_history.1101.desc: "1354 yılında, Osmanlı İmparatorluğu'nun gelecekteki padişahı Yıldırım Bayezid dünyaya geldi. Babası I. Murad'ın izinden giderek, genç yaşta askeri ve idari becerilerini geliştirmeye başladı."
+ dbo_dhe_history.1101.historical_info: "Yıldırım Bayezid, Osmanlı İmparatorluğu'nun en önemli padişahlarından biri olarak kabul edilir. 1389 yılında I. Murad'ın Kosova Savaşı'nda şehit düşmesinin ardından tahta geçti. Hükümdarlığı sırasında Balkanlar'da genişlemeyi sürdürdü ve Anadolu'da beylikleri Osmanlı topraklarına kattı. Ancak, 1402 yılında Timur ile yapılan Ankara Savaşı'nda yenilgiye uğrayarak esir düştü ve bu olay Osmanlı tarihinde önemli bir dönüm noktası oldu."
+ dbo_dhe_history.1101.a: "Bir fatih doğdu!"
 # Rise Yildirim Bayezid
- dbo_dhe_history.102.title: "Yıldırım Bayezid'in Yükselişi"
- dbo_dhe_history.102.desc: "1389 yılında, I. Murad'ın Kosova Savaşı'nda şehit düşmesinin ardından, Yıldırım Bayezid Osmanlı tahtına geçti. Genç yaşta tahta çıkmasına rağmen, kararlı liderliği ve askeri dehası sayesinde imparatorluğu genişletmeye devam etti."
- dbo_dhe_history.102.historical_info: "Yıldırım Bayezid, Anadolu'da beylikleri Osmanlı topraklarına katarken, Balkanlar'da da ilerlemeye devam etti. 1396 yılında Niğbolu Savaşı'nda Haçlı ordusunu yenilgiye uğratarak Avrupa'daki Osmanlı varlığını pekiştirdi. Ancak, 1402 yılında Timur ile yapılan Ankara Savaşı'nda yenilgiye uğrayarak esir düştü ve bu olay Osmanlı tarihinde önemli bir dönüm noktası oldu."
- dbo_dhe_history.102.a: "Yeni padişahımız Yıldırım Bayezid!"
+ dbo_dhe_history.1102.title: "Yıldırım Bayezid'in Yükselişi"
+ dbo_dhe_history.1102.desc: "1389 yılında, I. Murad'ın Kosova Savaşı'nda şehit düşmesinin ardından, Yıldırım Bayezid Osmanlı tahtına geçti. Genç yaşta tahta çıkmasına rağmen, kararlı liderliği ve askeri dehası sayesinde imparatorluğu genişletmeye devam etti."
+ dbo_dhe_history.1102.historical_info: "Yıldırım Bayezid, Anadolu'da beylikleri Osmanlı topraklarına katarken, Balkanlar'da da ilerlemeye devam etti. 1396 yılında Niğbolu Savaşı'nda Haçlı ordusunu yenilgiye uğratarak Avrupa'daki Osmanlı varlığını pekiştirdi. Ancak, 1402 yılında Timur ile yapılan Ankara Savaşı'nda yenilgiye uğrayarak esir düştü ve bu olay Osmanlı tarihinde önemli bir dönüm noktası oldu."
+ dbo_dhe_history.1102.a: "Yeni padişahımız Yıldırım Bayezid!"
