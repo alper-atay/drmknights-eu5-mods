@@ -2,12 +2,6 @@
 # dbo_dhe_history
 
 
-dbo_dhe_history.101 = {
-    type = country_event
-    title = dbo_dhe_history.101.title
-    desc = dbo_dhe_history.101.desc
-}
-
 # Yildirim Bayezid https://tr.wikipedia.org/wiki/I._Bayezid
 dbo_dhe_history.1101 = {
     type = country_event
@@ -119,7 +113,7 @@ dbo_dhe_history.1104 = {
     fire_only_once = yes
     dynamic_historical_event = {
         tag = TUR
-        from = 1390.1.1
+        from = 1400.1.1
         to = 1402.1.1
         monthly_chance = 20
     }
@@ -248,13 +242,7 @@ dbo_dhe_history.1011 = {
             add_trait = trait:bold_fighter
             add_trait = trait:conqueror
             add_trait = trait:siege_specialist
-            timed_modifier = {
-                modifier = "healthy_character"
-                start_date = 1330.1.1
-                date = 9999.1.1
-                size = 2
-            }
-            script = dbo_yildirim_bayezid
+            script = dbo_fatih_sultan_mehmed
         }
     }
 }

@@ -15,7 +15,6 @@ dbo_dhe_destiny.101 = {
     trigger = {
         has_ruler = yes
         has_heir = yes
-        at_war = no
         stability > 0
         legitimacy > 50
         NOT = {
@@ -23,7 +22,7 @@ dbo_dhe_destiny.101 = {
         }
     }
     option = {
-        name = dbo_dhe_destiny.3002.a
+        name = dbo_dhe_destiny.101.a
         historical_option = yes
         change_heir_selection = heir_selection:dbo_destiny_talented_youngest_heir_selection
         dbo_event_severe_bonus = yes
