@@ -137,7 +137,12 @@ dbo_dhe_military.122 = {
 	}
 	trigger = {
 		has_policy = dbo_military_army_cavalry_lessons_from_mongols_policy
-		has_advance = timariots
+		OR = {
+			has_advance = timariots
+			current_age_or_later = {
+				age = age_3_discovery
+			}
+		}
 		NOT = {
 			has_variable = dbo_military_army_cavalry_timariot_system_policy_obtained
 		}
@@ -214,6 +219,96 @@ dbo_dhe_military.141 = {
 	}
 }
 
+# dbo_a_great_bronze_cannon_sahi_t1
+dbo_dhe_military.1411 = {
+	type = country_event
+	title = dbo_dhe_military.1411.title
+	desc = dbo_dhe_military.1411.desc
+	historical_info = dbo_dhe_military.1411.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_military_army_heavy_artillery_great_bronze_cannon.dds"
+	fire_only_once = yes
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		has_policy = dbo_military_army_heavy_artillery_great_bronze_cannon_policy
+		current_age_or_later = {
+			age = age_2_renaissance
+		}
+	}
+	option = {
+		name = dbo_dhe_military.1411.a
+		historical_option = yes
+		unlock_unit_effect = {
+			type = dbo_a_great_bronze_cannon_sahi_t1
+		}
+	}
+}
+
+# dbo_a_great_bronze_cannon_sahi_t2
+dbo_dhe_military.1412 = {
+	type = country_event
+	title = dbo_dhe_military.1412.title
+	desc = dbo_dhe_military.1412.desc
+	historical_info = dbo_dhe_military.1412.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_military_army_heavy_artillery_great_bronze_cannon.dds"
+	fire_only_once = yes
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		has_policy = dbo_military_army_heavy_artillery_great_bronze_cannon_policy
+		current_age_or_later = {
+			age = age_4_reformation
+		}
+	}
+	option = {
+		name = dbo_dhe_military.1412.a
+		historical_option = yes
+		unlock_unit_effect = {
+			type = dbo_a_great_bronze_cannon_sahi_t2
+		}
+	}
+}
+
+# dbo_a_great_bronze_cannon_sahi_t3
+dbo_dhe_military.1413 = {
+	type = country_event
+	title = dbo_dhe_military.1413.title
+	desc = dbo_dhe_military.1413.desc
+	historical_info = dbo_dhe_military.1413.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_military_army_heavy_artillery_great_bronze_cannon.dds"
+	fire_only_once = yes
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		has_policy = dbo_military_army_heavy_artillery_great_bronze_cannon_policy
+		current_age_or_later = {
+			age = age_6_revolutions
+		}
+	}
+	option = {
+		name = dbo_dhe_military.1413.a
+		historical_option = yes
+		unlock_unit_effect = {
+			type = dbo_a_great_bronze_cannon_sahi_t3
+		}
+	}
+}
+
 # dbo_military_army_auxiliary_cebeci_and_saka_ocagi_policy
 dbo_dhe_military.151 = {
 	type = country_event
@@ -262,7 +357,12 @@ dbo_dhe_military.161 = {
 	}
 	trigger = {
 		has_policy = dbo_military_army_infantry_yeniceri_ocagi_policy
-		has_advance = millets
+		OR = {
+			has_advance = millets
+			current_age_or_later = {
+				age = age_3_discovery
+			}
+		}
 		NOT = {
 			has_variable = dbo_military_army_gendarme_martolos_units_policy_obtained
 		}

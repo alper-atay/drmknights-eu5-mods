@@ -37,6 +37,13 @@ dbo_dhe_history.101 = {
 			add_trait = trait:child_prodigy
 			script = dbo_yildirim_bayezid
 		}
+		character:dbo_yildirim_bayezid = {
+			add_character_modifier = {
+				modifier = healthy_character
+				years = 40
+				mode = add_and_extend
+			}
+		}
 	}
 	option = {
 		name = dbo_dhe_history.101.a
@@ -93,7 +100,7 @@ dbo_dhe_history.103 = {
 	title = dbo_dhe_history.103.title
 	desc = dbo_dhe_history.103.desc
 	historical_info = dbo_dhe_history.103.historical_info
-	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_bayezid_challenge.dds"
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_bayezid_challenged_anatolian_turks_union.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
@@ -260,8 +267,7 @@ dbo_dhe_history.201 = {
 	trigger = {
 		has_ruler = yes
 	}
-	option = {
-		name = dbo_dhe_history.201.a
+	immediate = {
 		create_character = {
 			first_name = name_muhammad
 			nickname = nick_the_conquerer
@@ -277,6 +283,16 @@ dbo_dhe_history.201 = {
 			add_trait = trait:child_prodigy
 			script = dbo_fatih_sultan_mehmed
 		}
+		character:dbo_fatih_sultan_mehmed = {
+			add_character_modifier = {
+				modifier = healthy_character
+				years = 40
+				mode = add_and_extend
+			}
+		}
+	}
+	option = {
+		name = dbo_dhe_history.201.a
 	}
 }
 
@@ -290,7 +306,7 @@ dbo_dhe_history.202 = {
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
-		from = 1451.1.1
+		from = 1450.1.1
 		to = 1460.1.1
 		monthly_chance = 10
 	}
@@ -314,12 +330,9 @@ dbo_dhe_history.202 = {
 			add_trait = trait:military_theorist
 		}
 		# Fatih Sultan Mehmed and Orban Events
-		trigger_event_non_silently = {
+		trigger_event_silently = {
 			id = dbo_history.101
-			months = {
-				3,
-				6
-			}
+			months = 3
 		}
 	}
 }
@@ -330,7 +343,7 @@ dbo_dhe_history.203 = {
 	title = dbo_dhe_history.203.title
 	desc = dbo_dhe_history.203.desc
 	historical_info = dbo_dhe_history.203.historical_info
-	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_fatih_sultan_mehmed_challenge.dds"
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_fatih_sultan_mehmed_challenged_rumelia.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
@@ -350,5 +363,34 @@ dbo_dhe_history.203 = {
 	option = {
 		name = dbo_dhe_history.203.a
 		set_variable = dbo_conquest_rumelia_challenged
+	}
+}
+
+# Fatih Sultan Mehmet Changelling to Conquest Black Sea
+dbo_dhe_history.204 = {
+	type = country_event
+	title = dbo_dhe_history.204.title
+	desc = dbo_dhe_history.204.desc
+	historical_info = dbo_dhe_history.204.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_fatih_sultan_mehmed_challenged_black_sea.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1451.1.1
+		to = 1470.1.1
+		monthly_chance = 10
+	}
+	trigger = {
+		exists = character:dbo_fatih_sultan_mehmed
+		character:dbo_fatih_sultan_mehmed = {
+			is_alive = yes
+			is_adult = yes
+			is_ruler = yes
+		}
+		has_variable = dbo_conquest_rumelia_challenged
+	}
+	option = {
+		name = dbo_dhe_history.204.a
+		set_variable = dbo_conquest_black_sea_challenged
 	}
 }

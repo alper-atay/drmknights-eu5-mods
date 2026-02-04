@@ -1,23 +1,33 @@
 ﻿dbo_a_great_bronze_cannon_sahi_t1 = {
 	category = dbo_army_heavy_artillery
 	age = "age_2_renaissance"
+	buildable = yes
 	country_potential = {
 		tag = TUR
+		has_policy = dbo_military_army_heavy_artillery_great_bronze_cannon_policy
+		has_unlocked_unit_trigger = {
+			type = dbo_a_great_bronze_cannon_sahi_t1
+		}
 	}
 	upgrades_to_only = dbo_a_great_bronze_cannon_sahi_t2
-	max_strength = 0.4
+	max_strength = 0.2
 	combat_power = 4
 	bombard_efficiency = 0.2
 	strength_damage_done = 0.25
-	combat_speed = 0
-	artillery_barrage = 5
+	combat_speed = 0.1
+	artillery_barrage = 7
 }
 
 dbo_a_great_bronze_cannon_sahi_t2 = {
 	category = dbo_army_heavy_artillery
 	age = "age_4_reformation"
+	buildable = yes
 	country_potential = {
 		tag = TUR
+		has_policy = dbo_military_army_heavy_artillery_great_bronze_cannon_policy
+		has_unlocked_unit_trigger = {
+			type = dbo_a_great_bronze_cannon_sahi_t2
+		}
 	}
 	upgrades_to_only = dbo_a_great_bronze_cannon_sahi_t3
 	max_strength = 0.8
@@ -25,20 +35,25 @@ dbo_a_great_bronze_cannon_sahi_t2 = {
 	strength_damage_done = 0.25
 	bombard_efficiency = 0.3
 	combat_speed = 0.25
-	artillery_barrage = 7
+	artillery_barrage = 9
 }
 
 dbo_a_great_bronze_cannon_sahi_t3 = {
 	category = dbo_army_heavy_artillery
 	age = "age_6_revolutions"
+	buildable = yes
 	country_potential = {
 		tag = TUR
+		has_policy = dbo_military_army_heavy_artillery_great_bronze_cannon_policy
+		has_unlocked_unit_trigger = {
+			type = dbo_a_great_bronze_cannon_sahi_t3
+		}
 	}
 	upgrades_to_only = dbo_a_great_bronze_cannon_sahi_t3
-	max_strength = 1.6
+	max_strength = 1.2
 	combat_power = 12
 	strength_damage_done = 0.3
 	bombard_efficiency = 0.4
 	combat_speed = 0.5
-	artillery_barrage = 9
+	artillery_barrage = 11
 }

@@ -8,14 +8,10 @@ dbo_history.101 = {
 	historical_info = dbo_history.101.historical_info
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_fatih_sultan_mehmed_and_orban.dds"
 	option = {
-		name = dbo_history.1113.a
-		set_new_ruler = character:dbo_fatih_sultan_mehmed
-		trigger_event_non_silently = {
+		name = dbo_history.101.a
+		trigger_event_silently = {
 			id = dbo_history.102
-			months = {
-				3,
-				6
-			}
+			months = 3
 		}
 	}
 }
@@ -29,12 +25,9 @@ dbo_history.102 = {
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_fatih_sultan_mehmed_and_orban_metal_melting.dds"
 	option = {
 		name = dbo_history.102.a
-		trigger_event_non_silently = {
+		trigger_event_silently = {
 			id = dbo_history.103
-			months = {
-				3,
-				6
-			}
+			months = 6
 		}
 	}
 }

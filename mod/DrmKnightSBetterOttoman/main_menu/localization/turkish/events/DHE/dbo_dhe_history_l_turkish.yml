@@ -7,11 +7,12 @@
  dbo_dhe_history.101.title: "[ShowCharacterInteractionName('dbo_yildirim_bayezid')]\nDoğdu"
  dbo_dhe_history.101.desc: "1354 yılında, Osmanlı İmparatorluğu'nun gelecekteki padişahı Yıldırım Bayezid dünyaya geldi. Babası I. Murad'ın izinden giderek, genç yaşta askeri ve idari becerilerini geliştirmeye başladı."
  dbo_dhe_history.101.historical_info: "$dbo_yildirim_bayezid_historical_info_common$"
- dbo_dhe_history.101.a: "Bir fatih doğdu!"
+ dbo_dhe_history.101.a: "Bir yıldırım çaktı!"
 # Yildirim Bayezid Rise
  dbo_dhe_history.102.title: "Yıldırım Bayezid'in Yükselişi"
  dbo_dhe_history.102.desc: "1389 yılında, I. Murad'ın Kosova Savaşı'nda şehit düşmesinin ardından, Yıldırım Bayezid Osmanlı tahtına geçti. Genç yaşta tahta çıkmasına rağmen, kararlı liderliği ve askeri dehası sayesinde imparatorluğu genişletmeye devam etti."
  dbo_dhe_history.102.historical_info: "$dbo_yildirim_bayezid_historical_info_common$"
+ dbo_dhe_history.102.a: "Devlet-i Aliyye yükseliyor!"
 # Yildirim Bayezid Changelling to Anatolian Turks Union
  dbo_dhe_history.103.title: "Yıldırım Bayezid'in Anadolu Topraklarına Meydan Okudu"
  dbo_dhe_history.103.desc: "1389 yılında, I. Murad'ın Kosova Savaşı'nda şehit düşmesinin ardından, Yıldırım Bayezid Osmanlı tahtına geçti. Genç yaşta tahta çıkmasına rağmen, kararlı liderliği ve askeri dehası sayesinde imparatorluğu genişletmeye devam etti. Anadolu'da beyliklere meydan okuyarak Osmanlı topraklarını genişletti."
@@ -31,18 +32,26 @@
  dbo_dhe_history.106.title: "Yıldırım Bayezid Öldü"
  dbo_dhe_history.106.desc: "..."
  dbo_dhe_history.106.historical_info: "$$dbo_yildirim_bayezid_historical_info_fetret_devri$$"
+ dbo_dhe_history.106.a: "Zor günler geliyor!"
 # Fatih Sultan Mehmed
- dbo_fatih_sultan_mehmed_historical_info_common: ""
+ dbo_fatih_sultan_mehmed_historical_info_common: "Fatih Sultan Mehmed, sadece bir fatih değil, aynı zamanda Doğu ve Batı kültürlerini şahsında birleştiren entelektüel bir deha ve modern Osmanlı İmparatorluğu'nun gerçek kurucusudur. 1453 yılında, henüz 21 yaşındayken 'aşılmaz' denilen Bizans surlarını devasa şahi toplarıyla yerle bir ederek İstanbul'u fethetmiş, bir çağı kapatıp yeni bir çağı açmıştır. Kendisini 'Kayser-i Rum' (Roma İmparatoru) ilan ederek Roma'nın mirasına sahip çıkmış, devlet teşkilatını Kanunname-i Âl-i Osman ile hukuki bir temele oturtmuştur. Karadeniz'i bir Türk gölü haline getiren, Balkanlar'da Osmanlı hakimiyetini perçinleyen ve Otranto seferiyle Roma'nın kapılarına dayanan Fatih, askeri başarılarının yanı sıra bilim, sanat ve felsefeye verdiği önemle imparatorluğu bir kültür merkezi haline getirmiştir."
 # Fatih Sultan Mehmed Born
- dbo_dhe_history.201.title: "Fatih Sultan Mehmet'in Doğumu"
- dbo_dhe_history.201.desc: "1354 yılında, Osmanlı İmparatorluğu'nun gelecekteki padişahı Fatih Sultan Mehmet dünyaya geldi. Babası II. Murad'ın izinden giderek, genç yaşta askeri ve idari becerilerini geliştirmeye başladı."
- dbo_dhe_history.201.historical_info: "Fatih Sultan Mehmet, Osmanlı İmparatorluğu'nun en önemli padişahlarından biri olarak kabul edilir. 1451 yılında II. Murad'ın vefatının ardından tahta geçti. Hükümdarlığı sırasında 1453 yılında İstanbul'u fethederek Bizans İmparatorluğu'na son verdi ve Osmanlı İmparatorluğu'nu büyük bir güç haline getirdi. Ayrıca, Balkanlar'da ve Anadolu'da genişlemeyi sürdürdü ve imparatorluğun sınırlarını önemli ölçüde genişletti."
+ dbo_dhe_history.201.title: "Fatih Sultan Mehmed'in Doğumu"
+ dbo_dhe_history.201.desc: "1432 yılında, Osmanlı İmparatorluğu'nun kaderini değiştirecek olan Şehzade Mehmed dünyaya geldi. Babası II. Murad'ın titiz eğitimi altında, hem kılıç kuşanmada hem de yedi dilde yetkinlik kazanarak cihan şümul bir hükümdar olarak yetişti."
+ dbo_dhe_history.201.historical_info: "$dbo_fatih_sultan_mehmed_historical_info_common$"
  dbo_dhe_history.201.a: "Bir fatih doğdu!"
-# Fatih Sultan Mehmet Rise
- dbo_dhe_history.202.title: "Fatih Sultan Mehmet'in Yükselişi"
- dbo_dhe_history.202.desc: "1451 yılında, II. Murad'ın vefatının ardından, Fatih Sultan Mehmet Osmanlı tahtına geçti. Genç yaşta tahta çıkmasına rağmen, kararlı liderliği ve askeri dehası sayesinde imparatorluğu genişletmeye devam etti."
- dbo_dhe_history.202.historical_info: "Fatih Sultan Mehmet, 1453 yılında İstanbul'u fethederek Bizans İmparatorluğu'na son verdi ve Osmanlı İmparatorluğu'nu büyük bir güç haline getirdi. Ayrıca, Balkanlar'da ve Anadolu'da genişlemeyi sürdürdü ve imparatorluğun sınırlarını önemli ölçüde genişletti."
- dbo_dhe_history.202.a: "Yeni padişahımız Fatih Sultan Mehmet!"
-# Fatih Sultan Mehmet Changelling to Conquest Rumelia
- dbo_dhe_history.203.title: "Fatih Sultan Mehmet'in Anadolu Topraklarına Meydan Okudu"
- dbo_dhe_history.203.desc: ""
+# Fatih Sultan Mehmed Rise
+ dbo_dhe_history.202.title: "Fatih Sultan Mehmed'in Yükselişi"
+ dbo_dhe_history.202.desc: "1451 yılında, II. Murad'ın vefatının ardından, Fatih Sultan Mehmed Osmanlı tahtına geçti. Genç yaşta tahta çıkmasına rağmen, kararlı liderliği ve askeri dehası sayesinde imparatorluğu genişletmeye devam etti."
+ dbo_dhe_history.202.historical_info: "$dbo_fatih_sultan_mehmed_historical_info_common$"
+ dbo_dhe_history.202.a: "Yeni padişahımız Fatih Sultan Mehmed!"
+# Fatih Sultan Mehmed Changelling to Conquest Rumelia
+ dbo_dhe_history.203.title: "Fatih Sultan Mehmed ve Rumeli Fetihleri"
+ dbo_dhe_history.203.desc: "İstanbul'un fethinden sonra gözünü Batı'ya diken Fatih Sultan Mehmed, Rumeli'deki hakimiyetini pekiştirmek için harekete geçti. Sırbistan, Mora, Eflak ve Bosna üzerine düzenlenen seferlerle Balkanlar'daki Osmanlı varlığı sarsılmaz bir hale getirildi."
+ dbo_dhe_history.203.historical_info: "Fatih'in Rumeli seferleri sadece toprak kazanımı değil, aynı zamanda Avrupa siyasetine doğrudan müdahale etme stratejisinin bir parçasıydı. Sırbistan'ın ilhakı, Mora Despotluğu'nun ortadan kaldırılması ve Bosna'nın fethi ile Adriyatik kıyılarına ulaşan Osmanlı, Venedik ve Papalık için en büyük tehdit haline gelmiştir. Bu fetihler, Osmanlı'nın Balkanlar'daki kalıcılığını asırlarca sürecek şekilde mühürlemiştir."
+ dbo_dhe_history.203.a: "Hedef Rumeli!"
+# Fatih Sultan Mehmed Changelling to Conquest Blacksea
+ dbo_dhe_history.204.title: "Fatih Sultan Mehmed ve Karadeniz Fetihleri"
+ dbo_dhe_history.204.desc: "Karadeniz'i bir Türk gölü haline getirmeyi hedefleyen Fatih Sultan Mehmed, stratejik limanları ve ticaret yollarını ele geçirmek için büyük bir harekat başlattı. Amasra, Sinop ve Trabzon'un fethiyle Anadolu kıyılarında tam hakimiyet sağlarken, Kırım'ın ilhakıyla Karadeniz'in kuzeyini de imparatorluğa bağladı."
+ dbo_dhe_history.204.historical_info: "Fatih Sultan Mehmed'in Karadeniz stratejisi, İpek Yolu'nun kuzey hattını kontrol altına almayı ve İstanbul'un iaşesini güvence altına almayı amaçlıyordu. 1461'de Trabzon Rum İmparatorluğu'nun fethiyle Bizans'ın son kalıntıları temizlenmiş, Kırım Hanlığı'nın Osmanlı himayesine girmesiyle Karadeniz tam anlamıyla bir Osmanlı iç denizi haline gelmiştir."
+ dbo_dhe_history.204.a: "Hedef Karadeniz!"
