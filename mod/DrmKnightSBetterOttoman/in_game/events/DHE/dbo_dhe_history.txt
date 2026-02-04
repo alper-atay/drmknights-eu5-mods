@@ -263,7 +263,7 @@ dbo_dhe_history.201 = {
 	option = {
 		name = dbo_dhe_history.201.a
 		create_character = {
-			first_name = Nehmed
+			first_name = name_muhammad
 			nickname = nick_the_conquerer
 			dynasty = dynasty:ottomans_dynasty
 			father = root.ruler
@@ -275,11 +275,6 @@ dbo_dhe_history.201 = {
 			dip = 5
 			mil = 5
 			add_trait = trait:child_prodigy
-			add_trait = trait:scholar
-			add_trait = trait:free_thinker
-			add_trait = trait:conqueror
-			add_trait = trait:strategist
-			add_trait = trait:military_theorist
 			script = dbo_fatih_sultan_mehmed
 		}
 	}
@@ -297,10 +292,9 @@ dbo_dhe_history.202 = {
 		tag = TUR
 		from = 1451.1.1
 		to = 1460.1.1
-		monthly_chance = 100
+		monthly_chance = 10
 	}
 	trigger = {
-		at_war = no
 		has_ruler = yes
 		exists = character:dbo_fatih_sultan_mehmed
 		character:dbo_fatih_sultan_mehmed = {
@@ -312,6 +306,13 @@ dbo_dhe_history.202 = {
 	option = {
 		name = dbo_dhe_history.202.a
 		set_new_ruler = character:dbo_fatih_sultan_mehmed
+		character:dbo_fatih_sultan_mehmed = {
+			add_trait = trait:scholar
+			add_trait = trait:free_thinker
+			add_trait = trait:conqueror
+			add_trait = trait:strategist
+			add_trait = trait:military_theorist
+		}
 		# Fatih Sultan Mehmed and Orban Events
 		trigger_event_non_silently = {
 			id = dbo_history.101
@@ -334,11 +335,10 @@ dbo_dhe_history.203 = {
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1451.1.1
-		to = 1460.1.1
-		monthly_chance = 100
+		to = 1470.1.1
+		monthly_chance = 10
 	}
 	trigger = {
-		has_ruler = yes
 		exists = character:dbo_fatih_sultan_mehmed
 		character:dbo_fatih_sultan_mehmed = {
 			is_alive = yes

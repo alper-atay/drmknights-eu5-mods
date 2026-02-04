@@ -1,325 +1,325 @@
 ﻿dbo_conquest_rise_of_the_ottomans = {
-    type = superiority
-    attacker = {
-        conquer_cost = 0.5
-        antagonism = 0.5
-        allowed_locations = {
-            OR = {
-                scope:location.area = area:cappadocia_area
-                scope:location.area = area:central_anatolia_area
-                scope:location.area = area:marmara_area
-                scope:location.area = area:pontus_area
-                scope:location.area = area:west_anatolia_area
-                scope:location.area = area:cilicia_area
-                scope:location.area = area:thrace_area
-            }
-        }
-    }
-    defender = {
-        conquer_cost = 1
-        subjugate_cost = 1
-    }
-    ticking_war_score = 0.5
+	type = superiority
+	attacker = {
+		conquer_cost = 0.5
+		antagonism = 0.5
+		allowed_locations = {
+			OR = {
+				scope:location.area = area:cappadocia_area
+				scope:location.area = area:central_anatolia_area
+				scope:location.area = area:marmara_area
+				scope:location.area = area:pontus_area
+				scope:location.area = area:west_anatolia_area
+				scope:location.area = area:cilicia_area
+				scope:location.area = area:thrace_area
+			}
+		}
+	}
+	defender = {
+		conquer_cost = 1
+		subjugate_cost = 1
+	}
+	ticking_war_score = 0.5
 }
 
 dbo_conquest_anatolian_turks = {
-    type = superiority
-    attacker = {
-        conquer_cost = 0.25
-        antagonism = 0.25
-        allowed_locations = {
-            OR = {
-                scope:location.area = area:cappadocia_area
-                scope:location.area = area:central_anatolia_area
-                scope:location.area = area:marmara_area
-                scope:location.area = area:pontus_area
-                scope:location.area = area:west_anatolia_area
-                scope:location.area = area:cilicia_area
-                scope:location.province = province_definition:edirne_province
-                scope:location.province = province_definition:dardanelles_province
-                scope:location.province = province_definition:constantinople_province
-                scope:location.province = province_definition:erzurum_province
-                scope:location.province = province_definition:harput_province
-                scope:location.province = province_definition:malazgirt_province
-                scope:location.province = province_definition:meskheti_province
-                scope:location.province = province_definition:kars_province
-                scope:location.province = province_definition:van_province
-                scope:location.province = province_definition:bitlis_province
-                scope:location.province = province_definition:hasankeyf_province
-                scope:location.province = province_definition:diyarbekir_province
-                scope:location.province = province_definition:ar_ruha_province
-                scope:location.province = province_definition:amadiya_province
-                scope:location.province = province_definition:nusaybin_province
-                scope:location.province = province_definition:mardin_province
-                scope:location.province = province_definition:ayntab_province
-                scope:location.province = province_definition:antakya_province
-            }
-        }
-    }
-    defender = {
-        conquer_cost = 1
-        subjugate_cost = 1
-    }
-    ticking_war_score = 0.5
+	type = superiority
+	attacker = {
+		conquer_cost = 0.25
+		antagonism = 0.25
+		allowed_locations = {
+			OR = {
+				scope:location.area = area:cappadocia_area
+				scope:location.area = area:central_anatolia_area
+				scope:location.area = area:marmara_area
+				scope:location.area = area:pontus_area
+				scope:location.area = area:west_anatolia_area
+				scope:location.area = area:cilicia_area
+				scope:location.province_definition = province_definition:edirne_province
+				scope:location.province_definition = province_definition:dardanelles_province
+				scope:location.province_definition = province_definition:constantinople_province
+				scope:location.province_definition = province_definition:erzurum_province
+				scope:location.province_definition = province_definition:harput_province
+				scope:location.province_definition = province_definition:malazgirt_province
+				scope:location.province_definition = province_definition:meskheti_province
+				scope:location.province_definition = province_definition:kars_province
+				scope:location.province_definition = province_definition:van_province
+				scope:location.province_definition = province_definition:bitlis_province
+				scope:location.province_definition = province_definition:hasankeyf_province
+				scope:location.province_definition = province_definition:diyarbekir_province
+				scope:location.province_definition = province_definition:ar_ruha_province
+				scope:location.province_definition = province_definition:amadiya_province
+				scope:location.province_definition = province_definition:nusaybin_province
+				scope:location.province_definition = province_definition:mardin_province
+				scope:location.province_definition = province_definition:ayntab_province
+				scope:location.province_definition = province_definition:antakya_province
+			}
+		}
+	}
+	defender = {
+		conquer_cost = 1
+		subjugate_cost = 1
+	}
+	ticking_war_score = 0.5
 }
 
 dbo_conquest_rumelia = {
-    type = superiority
-    attacker = {
-        conquer_cost = 0.25
-        antagonism = 0.25
-        allowed_locations = {
-            OR = {
-                scope:location.area = area:bosnia_area
-                scope:location.area = area:albania_area
-                scope:location.area = area:bulgaria_area
-                scope:location.area = area:macedonia_area
-                scope:location.area = area:morea_area
-                scope:location.area = area:northern_greece_area
-                scope:location.area = area:serbia_area
-                scope:location.area = area:thrace_area
-            }
-        }
-    }
-    defender = {
-        conquer_cost = 1
-        subjugate_cost = 1
-    }
-    ticking_war_score = 0.5
+	type = superiority
+	attacker = {
+		conquer_cost = 0.25
+		antagonism = 0.25
+		allowed_locations = {
+			OR = {
+				scope:location.area = area:bosnia_area
+				scope:location.area = area:albania_area
+				scope:location.area = area:bulgaria_area
+				scope:location.area = area:macedonia_area
+				scope:location.area = area:morea_area
+				scope:location.area = area:northern_greece_area
+				scope:location.area = area:serbia_area
+				scope:location.area = area:thrace_area
+			}
+		}
+	}
+	defender = {
+		conquer_cost = 1
+		subjugate_cost = 1
+	}
+	ticking_war_score = 0.5
 }
 
 dbo_conquest_fertile_crescent = {
-    type = superiority
-    attacker = {
-        conquer_cost = 0.25
-        antagonism = 0.25
-        allowed_locations = {
-            OR = {
-                scope:location.area = area:iraq_arabi_area
-                scope:location.area = area:jazira_area
-                scope:location.area = area:levant_area
-            }
-        }
-    }
-    defender = {
-        conquer_cost = 1
-        subjugate_cost = 1
-    }
-    ticking_war_score = 0.5
+	type = superiority
+	attacker = {
+		conquer_cost = 0.25
+		antagonism = 0.25
+		allowed_locations = {
+			OR = {
+				scope:location.area = area:iraq_arabi_area
+				scope:location.area = area:jazira_area
+				scope:location.area = area:levant_area
+			}
+		}
+	}
+	defender = {
+		conquer_cost = 1
+		subjugate_cost = 1
+	}
+	ticking_war_score = 0.5
 }
 
 dbo_conquest_arabian_peninsula = {
-    type = superiority
-    attacker = {
-        conquer_cost = 0.25
-        antagonism = 0.25
-        allowed_locations = {
-            OR = {
-                scope:location.area = area:bahrein_area
-                scope:location.area = area:hedjaz_area
-                scope:location.area = area:najd_area
-                scope:location.area = area:oman_area
-                scope:location.area = area:hail_area
-                scope:location.area = area:north_yemen_area
-                scope:location.area = area:south_yemen_area
-            }
-        }
-    }
-    defender = {
-        conquer_cost = 1
-        subjugate_cost = 1
-    }
-    ticking_war_score = 0.5
+	type = superiority
+	attacker = {
+		conquer_cost = 0.25
+		antagonism = 0.25
+		allowed_locations = {
+			OR = {
+				scope:location.area = area:bahrein_area
+				scope:location.area = area:hedjaz_area
+				scope:location.area = area:najd_area
+				scope:location.area = area:oman_area
+				scope:location.area = area:hail_area
+				scope:location.area = area:north_yemen_area
+				scope:location.area = area:south_yemen_area
+			}
+		}
+	}
+	defender = {
+		conquer_cost = 1
+		subjugate_cost = 1
+	}
+	ticking_war_score = 0.5
 }
 
 dbo_conquest_black_sea = {
-    type = superiority
-    attacker = {
-        conquer_cost = 0.25
-        antagonism = 0.25
-        allowed_locations = {
-            OR = {
-                scope:location.area = area:pontus_area
-                scope:location.area = area:crimea_area
-                scope:location.province = province_definition:bolu_province
-                scope:location.province = province_definition:kocaeli_province
-                scope:location.province = province_definition:constantinople_province
-                scope:location.province = province_definition:edirne_province
-                scope:location.province = province_definition:burgas_province
-                scope:location.province = province_definition:preslav_province
-                scope:location.province = province_definition:south_dobruja_province
-                scope:location.province = province_definition:north_dobruja_province
-                scope:location.province = province_definition:basarabia_province
-                scope:location.province = province_definition:khadjibey_province
-                scope:location.province = province_definition:boh_province
-                scope:location.province = province_definition:oleshia_province
-                scope:location.province = province_definition:qalancak_province
-                scope:location.province = province_definition:berda_province
-                scope:location.province = province_definition:kalmius_province
-                scope:location.province = province_definition:tana_province
-                scope:location.province = province_definition:azov_province
-                scope:location.province = province_definition:akhtar_province
-                scope:location.province = province_definition:taman_province
-                scope:location.province = province_definition:tuapse_province
-                scope:location.province = province_definition:abkhazia_province
-                scope:location.province = province_definition:samegrelo_province
-            }
-        }
-    }
-    defender = {
-        conquer_cost = 1
-        subjugate_cost = 1
-    }
-    ticking_war_score = 0.5
+	type = superiority
+	attacker = {
+		conquer_cost = 0.25
+		antagonism = 0.25
+		allowed_locations = {
+			OR = {
+				scope:location.area = area:pontus_area
+				scope:location.area = area:crimea_area
+				scope:location.province_definition = province_definition:bolu_province
+				scope:location.province_definition = province_definition:kocaeli_province
+				scope:location.province_definition = province_definition:constantinople_province
+				scope:location.province_definition = province_definition:edirne_province
+				scope:location.province_definition = province_definition:burgas_province
+				scope:location.province_definition = province_definition:preslav_province
+				scope:location.province_definition = province_definition:south_dobruja_province
+				scope:location.province_definition = province_definition:north_dobruja_province
+				scope:location.province_definition = province_definition:basarabia_province
+				scope:location.province_definition = province_definition:khadjibey_province
+				scope:location.province_definition = province_definition:boh_province
+				scope:location.province_definition = province_definition:oleshia_province
+				scope:location.province_definition = province_definition:qalancak_province
+				scope:location.province_definition = province_definition:berda_province
+				scope:location.province_definition = province_definition:kalmius_province
+				scope:location.province_definition = province_definition:tana_province
+				scope:location.province_definition = province_definition:azov_province
+				scope:location.province_definition = province_definition:akhtar_province
+				scope:location.province_definition = province_definition:taman_province
+				scope:location.province_definition = province_definition:tuapse_province
+				scope:location.province_definition = province_definition:abkhazia_province
+				scope:location.province_definition = province_definition:samegrelo_province
+			}
+		}
+	}
+	defender = {
+		conquer_cost = 1
+		subjugate_cost = 1
+	}
+	ticking_war_score = 0.5
 }
 
 dbo_conquest_nile_river = {
-    type = superiority
-    attacker = {
-        conquer_cost = 0.25
-        antagonism = 0.25
-        allowed_locations = {
-            OR = {
-                scope:location.area = area:lower_egypt_area
-                scope:location.area = area:upper_egypt_area
-                scope:location.area = area:sinai_area
-                scope:location.area = area:cyrenaica_area
-            }
-        }
-    }
-    defender = {
-        conquer_cost = 1
-        subjugate_cost = 1
-    }
-    ticking_war_score = 0.5
+	type = superiority
+	attacker = {
+		conquer_cost = 0.25
+		antagonism = 0.25
+		allowed_locations = {
+			OR = {
+				scope:location.area = area:lower_egypt_area
+				scope:location.area = area:upper_egypt_area
+				scope:location.area = area:sinai_area
+				scope:location.area = area:cyrenaica_area
+			}
+		}
+	}
+	defender = {
+		conquer_cost = 1
+		subjugate_cost = 1
+	}
+	ticking_war_score = 0.5
 }
 
 dbo_conquest_europe_eastern_gate = {
-    type = superiority
-    attacker = {
-        conquer_cost = 0.25
-        antagonism = 0.25
-        allowed_locations = {
-            OR = {
-                scope:location.area = area:north_alfold_area
-                scope:location.area = area:south_alfold_area
-                scope:location.area = area:transdanubia_area
-                scope:location.area = area:moldavia_area
-                scope:location.area = area:slovakia_area
-                scope:location.area = area:transylvania_area
-                scope:location.area = area:wallachia_area
-                scope:location.area = area:croatia_area
-                scope:location.area = area:slavonia_area
-                scope:location.area = area:slovenia_area
-            }
-        }
-    }
-    defender = {
-        conquer_cost = 1
-        subjugate_cost = 1
-    }
-    ticking_war_score = 0.5
+	type = superiority
+	attacker = {
+		conquer_cost = 0.25
+		antagonism = 0.25
+		allowed_locations = {
+			OR = {
+				scope:location.area = area:north_alfold_area
+				scope:location.area = area:south_alfold_area
+				scope:location.area = area:transdanubia_area
+				scope:location.area = area:moldavia_area
+				scope:location.area = area:slovakia_area
+				scope:location.area = area:transylvania_area
+				scope:location.area = area:wallachia_area
+				scope:location.area = area:croatia_area
+				scope:location.area = area:slavonia_area
+				scope:location.area = area:slovenia_area
+			}
+		}
+	}
+	defender = {
+		conquer_cost = 1
+		subjugate_cost = 1
+	}
+	ticking_war_score = 0.5
 }
 
 dbo_conquest_turkish_renaissance = {
-    type = superiority
-    attacker = {
-        conquer_cost = 0.25
-        antagonism = 0.25
-        allowed_locations = {
-            OR = {
-                scope:location.area = area:abruzzo_area
-                scope:location.area = area:apulia_area
-                scope:location.area = area:basilicata_area
-                scope:location.area = area:campania_area
-                scope:location.area = area:emilia_area
-                scope:location.area = area:lazio_area
-                scope:location.area = area:liguria_area
-                scope:location.area = area:lombardy_area
-                scope:location.area = area:marche_area
-                scope:location.area = area:piemonte_area
-                scope:location.area = area:sardinia_area
-                scope:location.area = area:sicily_area
-                scope:location.area = area:tuscany_area
-                scope:location.area = area:veneto_area
-            }
-        }
-    }
-    defender = {
-        conquer_cost = 1
-        subjugate_cost = 1
-    }
-    ticking_war_score = 0.5
+	type = superiority
+	attacker = {
+		conquer_cost = 0.25
+		antagonism = 0.25
+		allowed_locations = {
+			OR = {
+				scope:location.area = area:abruzzo_area
+				scope:location.area = area:apulia_area
+				scope:location.area = area:basilicata_area
+				scope:location.area = area:campania_area
+				scope:location.area = area:emilia_area
+				scope:location.area = area:lazio_area
+				scope:location.area = area:liguria_area
+				scope:location.area = area:lombardy_area
+				scope:location.area = area:marche_area
+				scope:location.area = area:piemonte_area
+				scope:location.area = area:sardinia_area
+				scope:location.area = area:sicily_area
+				scope:location.area = area:tuscany_area
+				scope:location.area = area:veneto_area
+			}
+		}
+	}
+	defender = {
+		conquer_cost = 1
+		subjugate_cost = 1
+	}
+	ticking_war_score = 0.5
 }
 
 dbo_conquest_pearl_of_east = {
-    type = superiority
-    attacker = {
-        conquer_cost = 0.25
-        antagonism = 0.25
-        allowed_locations = {
-            OR = {
-                scope:location.area = area:azerbaijan_area
-                scope:location.area = area:baluchistan_area
-                scope:location.area = area:fars_area
-                scope:location.area = area:iraq_ajam_area
-                scope:location.area = area:kerman_area
-                scope:location.area = area:khuzestan_area
-                scope:location.area = area:kordestan_area
-                scope:location.area = area:mazandaran_area
-                scope:location.area = area:quhestan_area
-                scope:location.area = area:sistan_area
-            }
-        }
-    }
-    defender = {
-        conquer_cost = 1
-        subjugate_cost = 1
-    }
-    ticking_war_score = 0.5
+	type = superiority
+	attacker = {
+		conquer_cost = 0.25
+		antagonism = 0.25
+		allowed_locations = {
+			OR = {
+				scope:location.area = area:azerbaijan_area
+				scope:location.area = area:baluchistan_area
+				scope:location.area = area:fars_area
+				scope:location.area = area:iraq_ajam_area
+				scope:location.area = area:kerman_area
+				scope:location.area = area:khuzestan_area
+				scope:location.area = area:kordestan_area
+				scope:location.area = area:mazandaran_area
+				scope:location.area = area:quhestan_area
+				scope:location.area = area:sistan_area
+			}
+		}
+	}
+	defender = {
+		conquer_cost = 1
+		subjugate_cost = 1
+	}
+	ticking_war_score = 0.5
 }
 
 dbo_conquest_maghreb = {
-    type = superiority
-    attacker = {
-        conquer_cost = 0.25
-        antagonism = 0.25
-        allowed_locations = {
-            OR = {
-                scope:location.area = area:algiers_area
-                scope:location.area = area:atlas_high_plateau
-                scope:location.area = area:desert_area
-                scope:location.area = area:morocco_area
-                scope:location.area = area:sus_area
-                scope:location.area = area:tripolitania_area
-                scope:location.area = area:tunis_area
-            }
-        }
-    }
-    defender = {
-        conquer_cost = 1
-        subjugate_cost = 1
-    }
-    ticking_war_score = 0.5
+	type = superiority
+	attacker = {
+		conquer_cost = 0.25
+		antagonism = 0.25
+		allowed_locations = {
+			OR = {
+				scope:location.area = area:algiers_area
+				scope:location.area = area:atlas_high_plateau
+				scope:location.area = area:desert_area
+				scope:location.area = area:morocco_area
+				scope:location.area = area:sus_area
+				scope:location.area = area:tripolitania_area
+				scope:location.area = area:tunis_area
+			}
+		}
+	}
+	defender = {
+		conquer_cost = 1
+		subjugate_cost = 1
+	}
+	ticking_war_score = 0.5
 }
 
 dbo_conquest_steep_mountain = {
-    type = superiority
-    attacker = {
-        conquer_cost = 0.25
-        antagonism = 0.25
-        allowed_locations = {
-            OR = {
-                scope:location.area = area:armenia_area
-                scope:location.area = area:georgia_area
-                scope:location.area = area:northern_caucasus_area
-                scope:location.area = area:shirvan_area
-            }
-        }
-    }
-    defender = {
-        conquer_cost = 1
-        subjugate_cost = 1
-    }
-    ticking_war_score = 0.5
+	type = superiority
+	attacker = {
+		conquer_cost = 0.25
+		antagonism = 0.25
+		allowed_locations = {
+			OR = {
+				scope:location.area = area:armenia_area
+				scope:location.area = area:georgia_area
+				scope:location.area = area:northern_caucasus_area
+				scope:location.area = area:shirvan_area
+			}
+		}
+	}
+	defender = {
+		conquer_cost = 1
+		subjugate_cost = 1
+	}
+	ticking_war_score = 0.5
 }

@@ -1,448 +1,448 @@
 ﻿dbo_cb_conquest_rise_of_the_ottomans = {
-    allow_creation = {
-        can_declare_war_on = scope:target
-        is_neighbor_of = scope:target
-    }
-    allow_declaration = {
-        can_declare_war_on = scope:target
-        is_neighbor_of = scope:target
-    }
-    can_expire = no
-    visible = {
-        tag = TUR
-        is_situation_active = situation:rise_of_the_ottomans
-        scope:target = {
-            any_owned_location = {
-                OR = {
-                    this.area = area:cappadocia_area
-                    this.area = area:central_anatolia_area
-                    this.area = area:marmara_area
-                    this.area = area:pontus_area
-                    this.area = area:west_anatolia_area
-                    this.area = area:cilicia_area
-                    this.area = area:thrace_area
-                }
-            }
-        }
-    }
-    war_goal_type = dbo_conquest_rise_of_the_ottomans
-    ai_selection_desire = 1000
-    ai_subjugation_desire = -100
+	allow_creation = {
+		can_declare_war_on = scope:target
+		is_neighbor_of = scope:target
+	}
+	allow_declaration = {
+		can_declare_war_on = scope:target
+		is_neighbor_of = scope:target
+	}
+	can_expire = no
+	visible = {
+		tag = TUR
+		is_situation_active = situation:rise_of_the_ottomans
+		scope:target = {
+			any_owned_location = {
+				OR = {
+					this.area = area:cappadocia_area
+					this.area = area:central_anatolia_area
+					this.area = area:marmara_area
+					this.area = area:pontus_area
+					this.area = area:west_anatolia_area
+					this.area = area:cilicia_area
+					this.area = area:thrace_area
+				}
+			}
+		}
+	}
+	war_goal_type = dbo_conquest_rise_of_the_ottomans
+	ai_selection_desire = 1000
+	ai_subjugation_desire = -100
 }
 
 dbo_cb_conquest_anatolian_turks = {
-    allow_creation = {
-        tag = TUR
-    }
-    visible = {
-        OR = {
-            situation:rise_of_the_ottomans = {
-                situation_is_active = no
-                situation_has_ended = yes
-            }
-            has_variable = dbo_conquest_anatolian_turks_challenged
-        }
-        NOT = {
-            has_variable = dbo_conquest_anatolian_turks_obtained
-        }
-        scope:target = {
-            any_owned_location = {
-                OR = {
-                    this.area = area:cappadocia_area
-                    this.area = area:central_anatolia_area
-                    this.area = area:marmara_area
-                    this.area = area:pontus_area
-                    this.area = area:west_anatolia_area
-                    this.area = area:cilicia_area
-                    this.province_definition = province_definition:edirne_province
-                    this.province_definition = province_definition:dardanelles_province
-                    this.province_definition = province_definition:constantinople_province
-                    this.province_definition = province_definition:erzurum_province
-                    this.province_definition = province_definition:harput_province
-                    this.province_definition = province_definition:malazgirt_province
-                    this.province_definition = province_definition:meskheti_province
-                    this.province_definition = province_definition:kars_province
-                    this.province_definition = province_definition:van_province
-                    this.province_definition = province_definition:bitlis_province
-                    this.province_definition = province_definition:hasankeyf_province
-                    this.province_definition = province_definition:diyarbekir_province
-                    this.province_definition = province_definition:ar_ruha_province
-                    this.province_definition = province_definition:amadiya_province
-                    this.province_definition = province_definition:nusaybin_province
-                    this.province_definition = province_definition:mardin_province
-                    this.province_definition = province_definition:ayntab_province
-                    this.province_definition = province_definition:antakya_province
-                }
-            }
-        }
-    }
-    war_goal_type = dbo_conquest_anatolian_turks
-    ai_selection_desire = 500
-    ai_subjugation_desire = -100
+	allow_creation = {
+		tag = TUR
+	}
+	visible = {
+		OR = {
+			situation:rise_of_the_ottomans = {
+				situation_is_active = no
+				situation_has_ended = yes
+			}
+			has_variable = dbo_conquest_anatolian_turks_challenged
+		}
+		NOT = {
+			has_variable = dbo_conquest_anatolian_turks_obtained
+		}
+		scope:target = {
+			any_owned_location = {
+				OR = {
+					this.area = area:cappadocia_area
+					this.area = area:central_anatolia_area
+					this.area = area:marmara_area
+					this.area = area:pontus_area
+					this.area = area:west_anatolia_area
+					this.area = area:cilicia_area
+					this.province_definition = province_definition:edirne_province
+					this.province_definition = province_definition:dardanelles_province
+					this.province_definition = province_definition:constantinople_province
+					this.province_definition = province_definition:erzurum_province
+					this.province_definition = province_definition:harput_province
+					this.province_definition = province_definition:malazgirt_province
+					this.province_definition = province_definition:meskheti_province
+					this.province_definition = province_definition:kars_province
+					this.province_definition = province_definition:van_province
+					this.province_definition = province_definition:bitlis_province
+					this.province_definition = province_definition:hasankeyf_province
+					this.province_definition = province_definition:diyarbekir_province
+					this.province_definition = province_definition:ar_ruha_province
+					this.province_definition = province_definition:amadiya_province
+					this.province_definition = province_definition:nusaybin_province
+					this.province_definition = province_definition:mardin_province
+					this.province_definition = province_definition:ayntab_province
+					this.province_definition = province_definition:antakya_province
+				}
+			}
+		}
+	}
+	war_goal_type = dbo_conquest_anatolian_turks
+	ai_selection_desire = 500
+	ai_subjugation_desire = -100
 }
 
 dbo_cb_conquest_rumelia = {
-    allow_creation = {
-        tag = TUR
-    }
-    visible = {
-        OR = {
-            situation:rise_of_the_ottomans = {
-                situation_is_active = no
-                situation_has_ended = yes
-            }
-            has_variable = dbo_conquest_rumelia_challenged
-        }
-        NOT = {
-            has_variable = dbo_conquest_rumelia_obtained
-        }
-        scope:target = {
-            any_owned_location = {
-                OR = {
-                    this.area = area:bosnia_area
-                    this.area = area:albania_area
-                    this.area = area:bulgaria_area
-                    this.area = area:macedonia_area
-                    this.area = area:morea_area
-                    this.area = area:northern_greece_area
-                    this.area = area:serbia_area
-                    this.area = area:thrace_area
-                }
-            }
-        }
-    }
-    war_goal_type = dbo_conquest_rumelia
-    ai_selection_desire = 400
-    ai_subjugation_desire = -100
+	allow_creation = {
+		tag = TUR
+	}
+	visible = {
+		OR = {
+			situation:rise_of_the_ottomans = {
+				situation_is_active = no
+				situation_has_ended = yes
+			}
+			has_variable = dbo_conquest_rumelia_challenged
+		}
+		NOT = {
+			has_variable = dbo_conquest_rumelia_obtained
+		}
+		scope:target = {
+			any_owned_location = {
+				OR = {
+					this.area = area:bosnia_area
+					this.area = area:albania_area
+					this.area = area:bulgaria_area
+					this.area = area:macedonia_area
+					this.area = area:morea_area
+					this.area = area:northern_greece_area
+					this.area = area:serbia_area
+					this.area = area:thrace_area
+				}
+			}
+		}
+	}
+	war_goal_type = dbo_conquest_rumelia
+	ai_selection_desire = 400
+	ai_subjugation_desire = -100
 }
 
 dbo_cb_conquest_fertile_crescent = {
-    allow_creation = {
-        tag = TUR
-    }
-    visible = {
-        OR = {
-            situation:rise_of_the_ottomans = {
-                situation_is_active = no
-                situation_has_ended = yes
-            }
-            has_variable = dbo_conquest_fertile_crescent_challenged
-        }
-        NOT = {
-            has_variable = dbo_conquest_fertile_crescent_obtained
-        }
-        scope:target = {
-            any_owned_location = {
-                OR = {
-                    this.area = area:iraq_arabi_area
-                    this.area = area:jazira_area
-                    this.area = area:levant_area
-                }
-            }
-        }
-    }
-    war_goal_type = dbo_conquest_fertile_crescent
-    ai_selection_desire = 300
+	allow_creation = {
+		tag = TUR
+	}
+	visible = {
+		OR = {
+			situation:rise_of_the_ottomans = {
+				situation_is_active = no
+				situation_has_ended = yes
+			}
+			has_variable = dbo_conquest_fertile_crescent_challenged
+		}
+		NOT = {
+			has_variable = dbo_conquest_fertile_crescent_obtained
+		}
+		scope:target = {
+			any_owned_location = {
+				OR = {
+					this.area = area:iraq_arabi_area
+					this.area = area:jazira_area
+					this.area = area:levant_area
+				}
+			}
+		}
+	}
+	war_goal_type = dbo_conquest_fertile_crescent
+	ai_selection_desire = 300
 }
 
 dbo_cb_conquest_arabian_peninsula = {
-    allow_creation = {
-        tag = TUR
-    }
-    visible = {
-        OR = {
-            situation:rise_of_the_ottomans = {
-                situation_is_active = no
-                situation_has_ended = yes
-            }
-            has_variable = dbo_conquest_arabian_peninsula_challenged
-        }
-        has_variable = dbo_conquest_fertile_crescent_obtained
-        NOT = {
-            has_variable = dbo_conquest_arabian_peninsula_obtained
-        }
-        scope:target = {
-            any_owned_location = {
-                OR = {
-                    this.area = area:bahrein_area
-                    this.area = area:hedjaz_area
-                    this.area = area:najd_area
-                    this.area = area:oman_area
-                    this.area = area:hail_area
-                    this.area = area:north_yemen_area
-                    this.area = area:south_yemen_area
-                }
-            }
-        }
-    }
-    war_goal_type = dbo_conquest_arabian_peninsula
-    ai_selection_desire = 200
+	allow_creation = {
+		tag = TUR
+	}
+	visible = {
+		OR = {
+			situation:rise_of_the_ottomans = {
+				situation_is_active = no
+				situation_has_ended = yes
+			}
+			has_variable = dbo_conquest_arabian_peninsula_challenged
+		}
+		has_variable = dbo_conquest_fertile_crescent_obtained
+		NOT = {
+			has_variable = dbo_conquest_arabian_peninsula_obtained
+		}
+		scope:target = {
+			any_owned_location = {
+				OR = {
+					this.area = area:bahrein_area
+					this.area = area:hedjaz_area
+					this.area = area:najd_area
+					this.area = area:oman_area
+					this.area = area:hail_area
+					this.area = area:north_yemen_area
+					this.area = area:south_yemen_area
+				}
+			}
+		}
+	}
+	war_goal_type = dbo_conquest_arabian_peninsula
+	ai_selection_desire = 200
 }
 
 dbo_cb_conquest_black_sea = {
-    allow_creation = {
-        tag = TUR
-    }
-    visible = {
-        OR = {
-            situation:rise_of_the_ottomans = {
-                situation_is_active = no
-                situation_has_ended = yes
-            }
-            has_variable = dbo_conquest_black_sea_challenged
-        }
-        has_variable = dbo_conquest_rumelia_obtained
-        NOT = {
-            has_variable = dbo_conquest_black_sea_obtained
-        }
-        scope:target = {
-            any_owned_location = {
-                OR = {
-                    this.area = area:pontus_area
-                    this.area = area:crimea_area
-                    this.province_definition = province_definition:bolu_province
-                    this.province_definition = province_definition:kocaeli_province
-                    this.province_definition = province_definition:constantinople_province
-                    this.province_definition = province_definition:edirne_province
-                    this.province_definition = province_definition:burgas_province
-                    this.province_definition = province_definition:preslav_province
-                    this.province_definition = province_definition:south_dobruja_province
-                    this.province_definition = province_definition:north_dobruja_province
-                    this.province_definition = province_definition:basarabia_province
-                    this.province_definition = province_definition:khadjibey_province
-                    this.province_definition = province_definition:boh_province
-                    this.province_definition = province_definition:oleshia_province
-                    this.province_definition = province_definition:qalancak_province
-                    this.province_definition = province_definition:berda_province
-                    this.province_definition = province_definition:kalmius_province
-                    this.province_definition = province_definition:tana_province
-                    this.province_definition = province_definition:azov_province
-                    this.province_definition = province_definition:akhtar_province
-                    this.province_definition = province_definition:taman_province
-                    this.province_definition = province_definition:tuapse_province
-                    this.province_definition = province_definition:abkhazia_province
-                    this.province_definition = province_definition:samegrelo_province
-                }
-            }
-        }
-    }
-    war_goal_type = dbo_conquest_black_sea
-    ai_selection_desire = 250
+	allow_creation = {
+		tag = TUR
+	}
+	visible = {
+		OR = {
+			situation:rise_of_the_ottomans = {
+				situation_is_active = no
+				situation_has_ended = yes
+			}
+			has_variable = dbo_conquest_black_sea_challenged
+		}
+		has_variable = dbo_conquest_rumelia_obtained
+		NOT = {
+			has_variable = dbo_conquest_black_sea_obtained
+		}
+		scope:target = {
+			any_owned_location = {
+				OR = {
+					this.area = area:pontus_area
+					this.area = area:crimea_area
+					this.province_definition = province_definition:bolu_province
+					this.province_definition = province_definition:kocaeli_province
+					this.province_definition = province_definition:constantinople_province
+					this.province_definition = province_definition:edirne_province
+					this.province_definition = province_definition:burgas_province
+					this.province_definition = province_definition:preslav_province
+					this.province_definition = province_definition:south_dobruja_province
+					this.province_definition = province_definition:north_dobruja_province
+					this.province_definition = province_definition:basarabia_province
+					this.province_definition = province_definition:khadjibey_province
+					this.province_definition = province_definition:boh_province
+					this.province_definition = province_definition:oleshia_province
+					this.province_definition = province_definition:qalancak_province
+					this.province_definition = province_definition:berda_province
+					this.province_definition = province_definition:kalmius_province
+					this.province_definition = province_definition:tana_province
+					this.province_definition = province_definition:azov_province
+					this.province_definition = province_definition:akhtar_province
+					this.province_definition = province_definition:taman_province
+					this.province_definition = province_definition:tuapse_province
+					this.province_definition = province_definition:abkhazia_province
+					this.province_definition = province_definition:samegrelo_province
+				}
+			}
+		}
+	}
+	war_goal_type = dbo_conquest_black_sea
+	ai_selection_desire = 250
 }
 
 dbo_cb_conquest_nile_river = {
-    allow_creation = {
-        tag = TUR
-    }
-    visible = {
-        OR = {
-            situation:rise_of_the_ottomans = {
-                situation_is_active = no
-                situation_has_ended = yes
-            }
-            has_variable = dbo_conquest_nile_river_challenged
-        }
-        has_variable = dbo_conquest_fertile_crescent_obtained
-        NOT = {
-            has_variable = dbo_conquest_nile_river_obtained
-        }
-        scope:target = {
-            any_owned_location = {
-                OR = {
-                    this.area = area:lower_egypt_area
-                    this.area = area:upper_egypt_area
-                    this.area = area:sinai_area
-                    this.area = area:cyrenaica_area
-                }
-            }
-        }
-    }
-    war_goal_type = dbo_conquest_nile_river
-    ai_selection_desire = 150
+	allow_creation = {
+		tag = TUR
+	}
+	visible = {
+		OR = {
+			situation:rise_of_the_ottomans = {
+				situation_is_active = no
+				situation_has_ended = yes
+			}
+			has_variable = dbo_conquest_nile_river_challenged
+		}
+		has_variable = dbo_conquest_fertile_crescent_obtained
+		NOT = {
+			has_variable = dbo_conquest_nile_river_obtained
+		}
+		scope:target = {
+			any_owned_location = {
+				OR = {
+					this.area = area:lower_egypt_area
+					this.area = area:upper_egypt_area
+					this.area = area:sinai_area
+					this.area = area:cyrenaica_area
+				}
+			}
+		}
+	}
+	war_goal_type = dbo_conquest_nile_river
+	ai_selection_desire = 150
 }
 
 dbo_cb_conquest_europe_eastern_gate = {
-    allow_creation = {
-        tag = TUR
-    }
-    visible = {
-        OR = {
-            situation:rise_of_the_ottomans = {
-                situation_is_active = no
-                situation_has_ended = yes
-            }
-            has_variable = dbo_conquest_europe_eastern_gate_challenged
-        }
-        has_variable = dbo_conquest_rumelia_obtained
-        NOT = {
-            has_variable = dbo_conquest_europe_eastern_gate_obtained
-        }
-        scope:target = {
-            any_owned_location = {
-                OR = {
-                    this.area = area:north_alfold_area
-                    this.area = area:south_alfold_area
-                    this.area = area:transdanubia_area
-                    this.area = area:moldavia_area
-                    this.area = area:slovakia_area
-                    this.area = area:transylvania_area
-                    this.area = area:wallachia_area
-                    this.area = area:croatia_area
-                    this.area = area:slavonia_area
-                    this.area = area:slovenia_area
-                }
-            }
-        }
-    }
-    war_goal_type = dbo_conquest_europe_eastern_gate
-    ai_selection_desire = 250
+	allow_creation = {
+		tag = TUR
+	}
+	visible = {
+		OR = {
+			situation:rise_of_the_ottomans = {
+				situation_is_active = no
+				situation_has_ended = yes
+			}
+			has_variable = dbo_conquest_europe_eastern_gate_challenged
+		}
+		has_variable = dbo_conquest_rumelia_obtained
+		NOT = {
+			has_variable = dbo_conquest_europe_eastern_gate_obtained
+		}
+		scope:target = {
+			any_owned_location = {
+				OR = {
+					this.area = area:north_alfold_area
+					this.area = area:south_alfold_area
+					this.area = area:transdanubia_area
+					this.area = area:moldavia_area
+					this.area = area:slovakia_area
+					this.area = area:transylvania_area
+					this.area = area:wallachia_area
+					this.area = area:croatia_area
+					this.area = area:slavonia_area
+					this.area = area:slovenia_area
+				}
+			}
+		}
+	}
+	war_goal_type = dbo_conquest_europe_eastern_gate
+	ai_selection_desire = 250
 }
 
 dbo_cb_conquest_turkish_renaissance = {
-    allow_creation = {
-        tag = TUR
-    }
-    visible = {
-        OR = {
-            situation:rise_of_the_ottomans = {
-                situation_is_active = no
-                situation_has_ended = yes
-            }
-            has_variable = dbo_conquest_turkish_renaissance_challenged
-        }
-        OR = {
-            has_variable = dbo_conquest_europe_eastern_gate_obtained
-            has_variable = dbo_conquest_maghreb_obtained
-        }
-        NOT = {
-            has_variable = dbo_conquest_turkish_renaissance_obtained
-        }
-        scope:target = {
-            any_owned_location = {
-                OR = {
-                    this.area = area:abruzzo_area
-                    this.area = area:apulia_area
-                    this.area = area:basilicata_area
-                    this.area = area:campania_area
-                    this.area = area:emilia_area
-                    this.area = area:lazio_area
-                    this.area = area:liguria_area
-                    this.area = area:lombardy_area
-                    this.area = area:piemonte_area
-                    this.area = area:sardinia_area
-                    this.area = area:marche_area
-                    this.area = area:sardinia_area
-                    this.area = area:sicily_area
-                    this.area = area:tuscany_area
-                    this.area = area:veneto_area
-                }
-            }
-        }
-    }
-    war_goal_type = dbo_conquest_turkish_renaissance
-    ai_selection_desire = 100
+	allow_creation = {
+		tag = TUR
+	}
+	visible = {
+		OR = {
+			situation:rise_of_the_ottomans = {
+				situation_is_active = no
+				situation_has_ended = yes
+			}
+			has_variable = dbo_conquest_turkish_renaissance_challenged
+		}
+		OR = {
+			has_variable = dbo_conquest_europe_eastern_gate_obtained
+			has_variable = dbo_conquest_maghreb_obtained
+		}
+		NOT = {
+			has_variable = dbo_conquest_turkish_renaissance_obtained
+		}
+		scope:target = {
+			any_owned_location = {
+				OR = {
+					this.area = area:abruzzo_area
+					this.area = area:apulia_area
+					this.area = area:basilicata_area
+					this.area = area:campania_area
+					this.area = area:emilia_area
+					this.area = area:lazio_area
+					this.area = area:liguria_area
+					this.area = area:lombardy_area
+					this.area = area:piemonte_area
+					this.area = area:sardinia_area
+					this.area = area:marche_area
+					this.area = area:sardinia_area
+					this.area = area:sicily_area
+					this.area = area:tuscany_area
+					this.area = area:veneto_area
+				}
+			}
+		}
+	}
+	war_goal_type = dbo_conquest_turkish_renaissance
+	ai_selection_desire = 100
 }
 
 dbo_cb_conquest_pearl_of_east = {
-    allow_creation = {
-        tag = TUR
-    }
-    visible = {
-        OR = {
-            situation:rise_of_the_ottomans = {
-                situation_is_active = no
-                situation_has_ended = yes
-            }
-            has_variable = dbo_conquest_pearl_of_east_challenged
-        }
-        NOT = {
-            has_variable = dbo_conquest_pearl_of_east_obtained
-        }
-        scope:target = {
-            any_owned_location = {
-                OR = {
-                    this.area = area:azerbaijan_area
-                    this.area = area:baluchistan_area
-                    this.area = area:fars_area
-                    this.area = area:iraq_ajam_area
-                    this.area = area:kerman_area
-                    this.area = area:khuzestan_area
-                    this.area = area:kordestan_area
-                    this.area = area:mazandaran_area
-                    this.area = area:quhestan_area
-                    this.area = area:sistan_area
-                }
-            }
-        }
-    }
-    war_goal_type = dbo_conquest_pearl_of_east
-    ai_selection_desire = 100
+	allow_creation = {
+		tag = TUR
+	}
+	visible = {
+		OR = {
+			situation:rise_of_the_ottomans = {
+				situation_is_active = no
+				situation_has_ended = yes
+			}
+			has_variable = dbo_conquest_pearl_of_east_challenged
+		}
+		NOT = {
+			has_variable = dbo_conquest_pearl_of_east_obtained
+		}
+		scope:target = {
+			any_owned_location = {
+				OR = {
+					this.area = area:azerbaijan_area
+					this.area = area:baluchistan_area
+					this.area = area:fars_area
+					this.area = area:iraq_ajam_area
+					this.area = area:kerman_area
+					this.area = area:khuzestan_area
+					this.area = area:kordestan_area
+					this.area = area:mazandaran_area
+					this.area = area:quhestan_area
+					this.area = area:sistan_area
+				}
+			}
+		}
+	}
+	war_goal_type = dbo_conquest_pearl_of_east
+	ai_selection_desire = 100
 }
 
 dbo_cb_conquest_maghreb = {
-    allow_creation = {
-        tag = TUR
-    }
-    visible = {
-        OR = {
-            situation:rise_of_the_ottomans = {
-                situation_is_active = no
-                situation_has_ended = yes
-            }
-            has_variable = dbo_conquest_maghreb_challenged
-        }
-        OR = {
-            has_variable = dbo_conquest_turkish_renaissance_obtained
-            has_variable = dbo_conquest_nile_river_obtained
-        }
-        NOT = {
-            has_variable = dbo_conquest_maghreb_obtained
-        }
-        scope:target = {
-            any_owned_location = {
-                OR = {
-                    this.area = area:algiers_area
-                    this.area = area:atlas_high_plateau
-                    this.area = area:desert_area
-                    this.area = area:morocco_area
-                    this.area = area:sus_area
-                    this.area = area:tripolitania_area
-                    this.area = area:tunis_area
-                }
-            }
-        }
-    }
-    war_goal_type = dbo_conquest_maghreb
-    ai_selection_desire = 150
+	allow_creation = {
+		tag = TUR
+	}
+	visible = {
+		OR = {
+			situation:rise_of_the_ottomans = {
+				situation_is_active = no
+				situation_has_ended = yes
+			}
+			has_variable = dbo_conquest_maghreb_challenged
+		}
+		OR = {
+			has_variable = dbo_conquest_turkish_renaissance_obtained
+			has_variable = dbo_conquest_nile_river_obtained
+		}
+		NOT = {
+			has_variable = dbo_conquest_maghreb_obtained
+		}
+		scope:target = {
+			any_owned_location = {
+				OR = {
+					this.area = area:algiers_area
+					this.area = area:atlas_high_plateau
+					this.area = area:desert_area
+					this.area = area:morocco_area
+					this.area = area:sus_area
+					this.area = area:tripolitania_area
+					this.area = area:tunis_area
+				}
+			}
+		}
+	}
+	war_goal_type = dbo_conquest_maghreb
+	ai_selection_desire = 150
 }
 
 dbo_cb_conquest_steep_mountain = {
-    allow_creation = {
-        tag = TUR
-    }
-    visible = {
-        OR = {
-            situation:rise_of_the_ottomans = {
-                situation_is_active = no
-                situation_has_ended = yes
-            }
-            has_variable = dbo_conquest_steep_mountain_challenged
-        }
-        has_variable = dbo_conquest_anatolian_turks_obtained
-        NOT = {
-            has_variable = dbo_conquest_steep_mountain_obtained
-        }
-        scope:target = {
-            any_owned_location = {
-                OR = {
-                    this.area = area:armenia_area
-                    this.area = area:georgia_area
-                    this.area = area:northern_caucasus_area
-                    this.area = area:shirvan_area
-                }
-            }
-        }
-    }
-    war_goal_type = dbo_conquest_steep_mountain
-    ai_selection_desire = 250
+	allow_creation = {
+		tag = TUR
+	}
+	visible = {
+		OR = {
+			situation:rise_of_the_ottomans = {
+				situation_is_active = no
+				situation_has_ended = yes
+			}
+			has_variable = dbo_conquest_steep_mountain_challenged
+		}
+		has_variable = dbo_conquest_anatolian_turks_obtained
+		NOT = {
+			has_variable = dbo_conquest_steep_mountain_obtained
+		}
+		scope:target = {
+			any_owned_location = {
+				OR = {
+					this.area = area:armenia_area
+					this.area = area:georgia_area
+					this.area = area:northern_caucasus_area
+					this.area = area:shirvan_area
+				}
+			}
+		}
+	}
+	war_goal_type = dbo_conquest_steep_mountain
+	ai_selection_desire = 250
 }
