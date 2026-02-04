@@ -85,6 +85,7 @@
 						}
 					}
 					age = 16
+					fertility = 100
 					add_character_modifier = {
 						modifier = banned_from_cabinet
 						years = modifier_duration_permanent

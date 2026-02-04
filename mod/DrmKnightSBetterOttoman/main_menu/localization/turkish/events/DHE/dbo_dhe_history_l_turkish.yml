@@ -1,27 +1,48 @@
 ﻿l_turkish:
-# Born Yildirim Bayezid
- dbo_dhe_history.1101.title: "Yıldırım Bayezid'in Doğumu"
- dbo_dhe_history.1101.desc: "1354 yılında, Osmanlı İmparatorluğu'nun gelecekteki padişahı Yıldırım Bayezid dünyaya geldi. Babası I. Murad'ın izinden giderek, genç yaşta askeri ve idari becerilerini geliştirmeye başladı."
- dbo_dhe_history.1101.historical_info: "Yıldırım Bayezid, Osmanlı İmparatorluğu'nun en önemli padişahlarından biri olarak kabul edilir. 1389 yılında I. Murad'ın Kosova Savaşı'nda şehit düşmesinin ardından tahta geçti. Hükümdarlığı sırasında Balkanlar'da genişlemeyi sürdürdü ve Anadolu'da beylikleri Osmanlı topraklarına kattı. Ancak, 1402 yılında Timur ile yapılan Ankara Savaşı'nda yenilgiye uğrayarak esir düştü ve bu olay Osmanlı tarihinde önemli bir dönüm noktası oldu."
- dbo_dhe_history.1101.a: "Bir fatih doğdu!"
-# Rise Yildirim Bayezid
- dbo_dhe_history.1102.title: "Yıldırım Bayezid'in Yükselişi"
- dbo_dhe_history.1102.desc: "1389 yılında, I. Murad'ın Kosova Savaşı'nda şehit düşmesinin ardından, Yıldırım Bayezid Osmanlı tahtına geçti. Genç yaşta tahta çıkmasına rağmen, kararlı liderliği ve askeri dehası sayesinde imparatorluğu genişletmeye devam etti."
- dbo_dhe_history.1102.historical_info: "Yıldırım Bayezid, Anadolu'da beylikleri Osmanlı topraklarına katarken, Balkanlar'da da ilerlemeye devam etti. 1396 yılında Niğbolu Savaşı'nda Haçlı ordusunu yenilgiye uğratarak Avrupa'daki Osmanlı varlığını pekiştirdi. Ancak, 1402 yılında Timur ile yapılan Ankara Savaşı'nda yenilgiye uğrayarak esir düştü ve bu olay Osmanlı tarihinde önemli bir dönüm noktası oldu."
- dbo_dhe_history.1102.a: "Yeni padişahımız Yıldırım Bayezid!"
- dbo_dhe_history.1103.title: "Yıldırım Bayezid'in Anadolu Topraklarına Meydan Okudu"
- dbo_dhe_history.1103.desc: "1389 yılında, I. Murad'ın Kosova Savaşı'nda şehit düşmesinin ardından, Yıldırım Bayezid Osmanlı tahtına geçti. Genç yaşta tahta çıkmasına rağmen, kararlı liderliği ve askeri dehası sayesinde imparatorluğu genişletmeye devam etti. Anadolu'da beyliklere meydan okuyarak Osmanlı topraklarını genişletti."
- dbo_dhe_history.1103.historical_info: "Yıldırım Bayezid, Anadolu'da beylikleri Osmanlı topraklarına katarken, Balkanlar'da da ilerlemeye devam etti. 1396 yılında Niğbolu Savaşı'nda Haçlı ordusunu yenilgiye uğratarak Avrupa'daki Osmanlı varlığını pekiştirdi. Ancak, 1402 yılında Timur ile yapılan Ankara Savaşı'nda yenilgiye uğrayarak esir düştü ve bu olay Osmanlı tarihinde önemli bir dönüm noktası oldu."
- dbo_dhe_history.1103.a: "Çok Yaşa!"
- dbo_dhe_history.1104.title: "Yıldırım Bayezid'in Rüyası"
- dbo_dhe_history.1104.desc: "Yıldırım Bayezid, rüyasında Timur tarafından esir alınacağını görmüştü. Bu rüya, onun gelecekteki zorluklara karşı hazırlıklı olmasını sağladı."
- dbo_dhe_history.1104.historical_info: "Yıldırım Bayezid, Anadolu'da beylikleri Osmanlı topraklarına katarken, Balkanlar'da da ilerlemeye devam etti. 1396 yılında Niğbolu Savaşı'nda Haçlı ordusunu yenilgiye uğratarak Avrupa'daki Osmanlı varlığını pekiştirdi. Ancak, 1402 yılında Timur ile yapılan Ankara Savaşı'nda yenilgiye uğrayarak esir düştü ve bu olay Osmanlı tarihinde önemli bir dönüm noktası oldu."
- dbo_dhe_history.1104.a: "Rüyalar bazen gerçeğe dönüşür."
- dbo_dhe_history.1105.title: "Yıldırım Bayezid Kâbusunu Yaşıyor"
- dbo_dhe_history.1105.desc: "Yıldırım Bayezid, kâbusunda öleceğini görmüştü. Bu kâbus, onun gelecekteki zorluklara karşı hazırlıklı olmasını sağladı."
- dbo_dhe_history.1105.historical_info: "Yıldırım Bayezid, Anadolu'da beylikleri Osmanlı topraklarına katarken, Balkanlar'da da ilerlemeye devam etti. 1396 yılında Niğbolu Savaşı'nda Haçlı ordusunu yenilgiye uğratarak Avrupa'daki Osmanlı varlığını pekiştirdi. Ancak, 1402 yılında Timur ile yapılan Ankara Savaşı'nda yenilgiye uğrayarak esir düştü ve bu olay Osmanlı tarihinde önemli bir dönüm noktası oldu."
- dbo_dhe_history.1105.a: "Kâbuslar bazen gerçeğe dönüşür."
- dbo_dhe_history.1106.title: "Yıldırım Bayezid Öldü"
- dbo_dhe_history.1106.desc: "..."
- dbo_dhe_history.1106.historical_info: "Yıldırım Bayezid, Anadolu'da beylikleri Osmanlı topraklarına katarken, Balkanlar'da da ilerlemeye devam etti. 1396 yılında Niğbolu Savaşı'nda Haçlı ordusunu yenilgiye uğratarak Avrupa'daki Osmanlı varlığını pekiştirdi. Ancak, 1402 yılında Timur ile yapılan Ankara Savaşı'nda yenilgiye uğrayarak esir düştü ve bu olay Osmanlı tarihinde önemli bir dönüm noktası oldu."
- dbo_dhe_history.1106.a: "Yıldırım Bayezid sonsuza dek hatırlanacak!"
+# Yildirim Bayezid
+ dbo_yildirim_bayezid_historical_info_common: "Yıldırım Bayezid, sadece askeri hızıyla değil, aynı zamanda Osmanlı vizyonunu bütünüyle değiştiren sarsılmaz iradesiyle tarihin akışına yön vermiş muazzam bir hükümdardır. 1389 yılında, babası I. Murad’ın şehit düştüğü Kosova Meydan Muharebesi’nin toz dumanı içinde, savaş meydanında tahta geçerek orduyu mutlak bir zaferle buluşturan Bayezid, hükümdarlığı süresince Anadolu ve Rumeli arasında adeta bir fırtına gibi esmiş ve bu eşsiz askeri çevikliği sayesinde tarihe \"Yıldırım\" namıyla kazınmıştır. Devletin sınırlarını Fırat’tan Tuna’ya kadar genişletirken, 1396’da Niğbolu önlerinde Avrupa’nın gördüğü en büyük Haçlı ittifakını darmadağın ederek İslam dünyasının yegane koruyucusu olduğunu kanıtlamış ve bu zaferin ardından Abbasi Halifesi tarafından kendisine resmen \"Sultan-ı İklim-i Rum\" unvanı tevdi edilmiştir. İstanbul’u tam dört kez kuşatarak Bizans’ı can çekişen bir şehir devletine dönüştüren, Boğaz'ın güvenliği için Güzelce Hisar'ı inşa ettiren ve Anadolu Türk birliğini neredeyse tam manasıyla tesis eden Bayezid, Batı’ya karşı kazandığı bu mutlak üstünlüğü, 1402’de Ankara Savaşı’nda bir başka Türk-İslam hakanı olan Emir Timur ile karşı karşıya geldiğinde talihsiz bir yenilgiyle kaybetmiştir. Bu savaşın ardından başlayan esaret dönemi ve devletin içine düştüğü Fetret Devri, onun inşa ettiği muazzam yapının ne kadar hayati olduğunu gösterirken, geride bıraktığı askeri ve idari miras Osmanlı’nın küllerinden yeniden doğmasını sağlayan en güçlü temel taşı olmuştur."
+ dbo_yildirim_bayezid_historical_info_timur: "1402 Ankara Savaşı, Türk tarihinin en dramatik kırılma noktalarından biri olarak iki devasa askeri dehayı, Emir Timur ile Yıldırım Bayezid'i karşı karşıya getirmiştir.\nSavaşın temelinde yatan sert mektuplaşmalar ve karşılıklı hakaretler, Çubuk Ovası'nda kaçınılmaz bir hesaplaşmaya dönüşmüştür.\nTimur'un Hindistan'dan getirdiği zırhlı filler ve su kuyularını kontrol altına alarak Osmanlı ordusunu susuz bırakan taktiksel hamleleri savaşın gidişatını belirlemiştir.\nAncak asıl darbe, Anadolu beyliklerine bağlı askerlerin savaş meydanında taraf değiştirerek kendi beylerinin yanına geçmesiyle vurulmuş ve Osmanlı merkez ordusu savunmasız kalmıştır.\nYıldırım Bayezid'in esir düşmesiyle sonuçlanan bu trajik yenilgi, Osmanlı'yı 11 yıl sürecek olan Fetret Devri'ne sürüklemiş ve İstanbul'un fethini yaklaşık yarım asır geciktirmiştir."
+ dbo_yildirim_bayezid_historical_info_fetret_devri: "Kaderin Dönüşü: Yıldırım’ın Esareti ve Fetret’in Karanlığı\n1402 Ankara Savaşı’nın toz dumanı Çubuk Ovası üzerinde dağılırken, Osmanlı İmparatorluğu tarihinin en büyük varoluş sınavıyla karşı karşıya kalmıştır.\nSultan Yıldırım Bayezid’in Emir Timur’un eline esir düşmesi, devletin kalbine inen ağır bir darbe olmuş ve merkezi otoriteyi tamamen felç ederek \"Cihan Hâkimiyeti\" ülküsünü büyük bir belirsizliğe sürüklemiştir.\nAnadolu beyliklerinin yeniden bağımsızlıklarını ilan etmesiyle topraklar paramparça olurken, Bayezid’in oğulları arasında on bir yıl sürecek kanlı bir taht kavgası ve iç savaş dönemi resmen başlamıştır.\nBabanın esareti, kardeşlerin rekabeti ve düşmanların artan iştahı arasında Osmanlı Devleti, küllerinden yeniden doğup doğmayacağının karar verileceği o karanlık \"Fetret Devri\" dehlizine girmiştir.\nŞimdi mülkün bekası, en dirayetli ve sarsılmaz iradeye sahip olan şehzadenin kılıcının ucundadır."
+# Yildirim Bayezid Born
+ dbo_dhe_history.101.title: "[ShowCharacterInteractionName('dbo_yildirim_bayezid')]\nDoğdu"
+ dbo_dhe_history.101.desc: "1354 yılında, Osmanlı İmparatorluğu'nun gelecekteki padişahı Yıldırım Bayezid dünyaya geldi. Babası I. Murad'ın izinden giderek, genç yaşta askeri ve idari becerilerini geliştirmeye başladı."
+ dbo_dhe_history.101.historical_info: "$dbo_yildirim_bayezid_historical_info_common$"
+ dbo_dhe_history.101.a: "Bir fatih doğdu!"
+# Yildirim Bayezid Rise
+ dbo_dhe_history.102.title: "Yıldırım Bayezid'in Yükselişi"
+ dbo_dhe_history.102.desc: "1389 yılında, I. Murad'ın Kosova Savaşı'nda şehit düşmesinin ardından, Yıldırım Bayezid Osmanlı tahtına geçti. Genç yaşta tahta çıkmasına rağmen, kararlı liderliği ve askeri dehası sayesinde imparatorluğu genişletmeye devam etti."
+ dbo_dhe_history.102.historical_info: "$dbo_yildirim_bayezid_historical_info_common$"
+# Yildirim Bayezid Changelling to Anatolian Turks Union
+ dbo_dhe_history.103.title: "Yıldırım Bayezid'in Anadolu Topraklarına Meydan Okudu"
+ dbo_dhe_history.103.desc: "1389 yılında, I. Murad'ın Kosova Savaşı'nda şehit düşmesinin ardından, Yıldırım Bayezid Osmanlı tahtına geçti. Genç yaşta tahta çıkmasına rağmen, kararlı liderliği ve askeri dehası sayesinde imparatorluğu genişletmeye devam etti. Anadolu'da beyliklere meydan okuyarak Osmanlı topraklarını genişletti."
+ dbo_dhe_history.103.historical_info: "$dbo_yildirim_bayezid_historical_info_common$"
+ dbo_dhe_history.103.a: "Çok Yaşa!"
+# Yildirim Bayezid Bad Dream
+ dbo_dhe_history.104.title: "Yıldırım Bayezid'in Kâbusu"
+ dbo_dhe_history.104.desc: "Yıldırım Bayezid, rüyasında Timur tarafından esir alınacağını görmüştü. Bu rüya, onun gelecekteki zorluklara karşı hazırlıklı olmasını sağladı."
+ dbo_dhe_history.104.historical_info: "$dbo_yildirim_bayezid_historical_info_timur$"
+ dbo_dhe_history.104.a: "Kâbuslar bazen gerçeğe dönüşür."
+# Yildirim Bayezid Nightmare
+ dbo_dhe_history.105.title: "Yıldırım Bayezid Kâbusunu Yaşıyor"
+ dbo_dhe_history.105.desc: "Yıldırım Bayezid, kâbusunda öleceğini görmüştü. Bu kâbus, onun gelecekteki zorluklara karşı hazırlıklı olmasını sağladı."
+ dbo_dhe_history.105.historical_info: "$dbo_yildirim_bayezid_historical_info_timur$"
+ dbo_dhe_history.105.a: "Kâbuslar bazen gerçeğe dönüşür."
+# Yildirim Bayezid Dead
+ dbo_dhe_history.106.title: "Yıldırım Bayezid Öldü"
+ dbo_dhe_history.106.desc: "..."
+ dbo_dhe_history.106.historical_info: "$$dbo_yildirim_bayezid_historical_info_fetret_devri$$"
+# Fatih Sultan Mehmed
+ dbo_fatih_sultan_mehmed_historical_info_common: ""
+# Fatih Sultan Mehmed Born
+ dbo_dhe_history.201.title: "Fatih Sultan Mehmet'in Doğumu"
+ dbo_dhe_history.201.desc: "1354 yılında, Osmanlı İmparatorluğu'nun gelecekteki padişahı Fatih Sultan Mehmet dünyaya geldi. Babası II. Murad'ın izinden giderek, genç yaşta askeri ve idari becerilerini geliştirmeye başladı."
+ dbo_dhe_history.201.historical_info: "Fatih Sultan Mehmet, Osmanlı İmparatorluğu'nun en önemli padişahlarından biri olarak kabul edilir. 1451 yılında II. Murad'ın vefatının ardından tahta geçti. Hükümdarlığı sırasında 1453 yılında İstanbul'u fethederek Bizans İmparatorluğu'na son verdi ve Osmanlı İmparatorluğu'nu büyük bir güç haline getirdi. Ayrıca, Balkanlar'da ve Anadolu'da genişlemeyi sürdürdü ve imparatorluğun sınırlarını önemli ölçüde genişletti."
+ dbo_dhe_history.201.a: "Bir fatih doğdu!"
+# Fatih Sultan Mehmet Rise
+ dbo_dhe_history.202.title: "Fatih Sultan Mehmet'in Yükselişi"
+ dbo_dhe_history.202.desc: "1451 yılında, II. Murad'ın vefatının ardından, Fatih Sultan Mehmet Osmanlı tahtına geçti. Genç yaşta tahta çıkmasına rağmen, kararlı liderliği ve askeri dehası sayesinde imparatorluğu genişletmeye devam etti."
+ dbo_dhe_history.202.historical_info: "Fatih Sultan Mehmet, 1453 yılında İstanbul'u fethederek Bizans İmparatorluğu'na son verdi ve Osmanlı İmparatorluğu'nu büyük bir güç haline getirdi. Ayrıca, Balkanlar'da ve Anadolu'da genişlemeyi sürdürdü ve imparatorluğun sınırlarını önemli ölçüde genişletti."
+ dbo_dhe_history.202.a: "Yeni padişahımız Fatih Sultan Mehmet!"
+# Fatih Sultan Mehmet Changelling to Conquest Rumelia
+ dbo_dhe_history.203.title: "Fatih Sultan Mehmet'in Anadolu Topraklarına Meydan Okudu"
+ dbo_dhe_history.203.desc: ""

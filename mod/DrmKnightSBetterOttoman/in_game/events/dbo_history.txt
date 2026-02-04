@@ -1,0 +1,53 @@
+﻿namespace = dbo_history
+# Fatih Sultan Mehmed
+#  Fatih Sultan Mehmed and Orban
+dbo_history.101 = {
+	type = country_event
+	title = dbo_history.101.title
+	desc = dbo_history.101.desc
+	historical_info = dbo_history.101.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_fatih_sultan_mehmed_and_orban.dds"
+	option = {
+		name = dbo_history.1113.a
+		set_new_ruler = character:dbo_fatih_sultan_mehmed
+		trigger_event_non_silently = {
+			id = dbo_history.102
+			months = {
+				3,
+				6
+			}
+		}
+	}
+}
+
+#  Fatih Sultan Mehmed and Orban Metal Melting
+dbo_history.102 = {
+	type = country_event
+	title = dbo_history.102.title
+	desc = dbo_history.102.desc
+	historical_info = dbo_history.102.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_fatih_sultan_mehmed_and_orban_metal_melting.dds"
+	option = {
+		name = dbo_history.102.a
+		trigger_event_non_silently = {
+			id = dbo_history.103
+			months = {
+				3,
+				6
+			}
+		}
+	}
+}
+
+#  Fatih Sultan Mehmed and Orban Cast into Mold
+dbo_history.103 = {
+	type = country_event
+	title = dbo_history.103.title
+	desc = dbo_history.103.desc
+	historical_info = dbo_history.103.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_fatih_sultan_mehmed_and_orban_cast_into_mold.dds"
+	option = {
+		name = dbo_history.103.a
+		set_variable = dbo_history_fatih_sultan_mehmet_and_orban_events_completed
+	}
+}

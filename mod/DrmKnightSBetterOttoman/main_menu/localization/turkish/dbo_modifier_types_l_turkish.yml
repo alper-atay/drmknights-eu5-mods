@@ -1,6 +1,6 @@
 ﻿l_turkish:
  MODIFIER_TYPE_NAME_dbo_casus_belli_price_cost_modifier: "Hak İddiasında Bulunma Maliyet Etkeni"
- MODIFIER_TYPE_DESC_dbo_casus_belli_price_cost_modifier: "[ShowSituationName('dbo_conquest')] eylemlerinin [Concept('costs', 'Maliyetini')|e] düzenler."
+ MODIFIER_TYPE_DESC_dbo_casus_belli_price_cost_modifier: "[ShowSituationName('dbo_situation')] eylemlerinin [Concept('costs', 'Maliyetini')|e] düzenler."
  MODIFIER_TYPE_NAME_dbo_army_heavy_artillery_power: "$dbo_army_heavy_artillery$ Gücü"
  MODIFIER_TYPE_DESC_dbo_army_heavy_artillery_power: "[ShowUnitCategoryName('dbo_army_heavy_artillery')] [Concept('regiments', 'Alaylarının')|e] [combat|e] becerisini düzenler."
  MODIFIER_TYPE_NAME_dbo_army_heavy_artillery_build_cost_modifier: "$dbo_army_heavy_artillery$ Yapım Maliyeti"

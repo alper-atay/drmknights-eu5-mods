@@ -1,248 +1,354 @@
 ﻿namespace = dbo_dhe_history
 # dbo_dhe_history
-
-
-# Yildirim Bayezid https://tr.wikipedia.org/wiki/I._Bayezid
-dbo_dhe_history.1101 = {
-    type = country_event
-    title = dbo_dhe_history.1101.title
-    desc = dbo_dhe_history.1101.desc
-    historical_info = dbo_dhe_history.1101.historical_info
-    image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_bayezid_born.dds"
-    fire_only_once = yes
-    dynamic_historical_event = {
-        tag = TUR
-        from = 1351.1.1
-        to = 1358.1.1
-        monthly_chance = 100
-    }
-    trigger = {
-        has_ruler = yes
-        ruler ?= {
-            is_adult = yes
-        }
-    }
-    option = {
-        name = dbo_dhe_history.1101.a
-        create_character = {
-            first_name = Bayezid
-            nickname = nick_Yildirim
-            dynasty = dynasty:ottomans_dynasty
-            father = root.ruler
-            birth_location = root.capital
-            age = 0
-            culture = culture:turkish_culture
-            religion = religion:sunni
-            fertility = 100
-            adm = 5
-            dip = 5
-            mil = 5
-            add_trait = trait:child_prodigy
-            add_trait = trait:bold_fighter
-            add_trait = trait:conqueror
-            add_trait = trait:hussar_commander
-            script = dbo_yildirim_bayezid
-        }
-    }
+# Yildirim Bayezid Born
+dbo_dhe_history.101 = {
+	type = country_event
+	title = dbo_dhe_history.101.title
+	desc = dbo_dhe_history.101.desc
+	historical_info = dbo_dhe_history.101.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_bayezid_born.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1351.1.1
+		to = 1358.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		has_ruler = yes
+		ruler = {
+			is_adult = yes
+		}
+	}
+	immediate = {
+		create_character = {
+			first_name = Bayezid
+			nickname = nick_Yildirim
+			dynasty = dynasty:ottomans_dynasty
+			father = root.ruler
+			birth_location = root.capital
+			age = 0
+			culture = culture:turkish_culture
+			religion = religion:sunni
+			fertility = 100
+			adm = 5
+			dip = 5
+			mil = 5
+			add_trait = trait:child_prodigy
+			script = dbo_yildirim_bayezid
+		}
+	}
+	option = {
+		name = dbo_dhe_history.101.a
+		set_variable = {
+			name = dbo_var_yildirim_bayezid_case
+			value = 1
+		}
+	}
 }
 
-# Rise Yildirim Bayezid
-dbo_dhe_history.1102 = {
-    type = country_event
-    title = dbo_dhe_history.1102.title
-    desc = dbo_dhe_history.1102.desc
-    historical_info = dbo_dhe_history.1102.historical_info
-    image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_bayezid_rise.dds"
-    fire_only_once = yes
-    dynamic_historical_event = {
-        tag = TUR
-        from = 1370.1.1
-        to = 1380.1.1
-        monthly_chance = 100
-    }
-    trigger = {
-        exists = character:dbo_yildirim_bayezid
-        has_ruler = yes
-        character:dbo_yildirim_bayezid = {
-            is_alive = yes
-            is_adult = yes
-            is_ruler = no
-        }
-    }
-    option = {
-        name = dbo_dhe_history.1102.a
-        set_new_ruler = character:dbo_yildirim_bayezid
-    }
+# Yildirim Bayezid Rise
+dbo_dhe_history.102 = {
+	type = country_event
+	title = dbo_dhe_history.102.title
+	desc = dbo_dhe_history.102.desc
+	historical_info = dbo_dhe_history.102.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_bayezid_rise.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1370.1.1
+		to = 1380.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		exists = character:dbo_yildirim_bayezid
+		has_variable = dbo_var_yildirim_bayezid_case
+		var:dbo_var_yildirim_bayezid_case = 1
+		has_ruler = yes
+		character:dbo_yildirim_bayezid = {
+			is_alive = yes
+			is_adult = yes
+			is_ruler = no
+		}
+	}
+	option = {
+		name = dbo_dhe_history.102.a
+		set_new_ruler = character:dbo_yildirim_bayezid
+		character:dbo_yildirim_bayezid = {
+			add_trait = trait:bold_fighter
+			add_trait = trait:conqueror
+			add_trait = trait:hussar_commander
+		}
+		change_variable = {
+			name = dbo_var_yildirim_bayezid_case
+			add = 1
+		}
+	}
 }
 
-# Yildirim Bayezid changelling to Anatolian Turks Union
-dbo_dhe_history.1103 = {
-    type = country_event
-    title = dbo_dhe_history.1103.title
-    desc = dbo_dhe_history.1103.desc
-    historical_info = dbo_dhe_history.1103.historical_info
-    image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_bayezid_challenge.dds"
-    fire_only_once = yes
-    dynamic_historical_event = {
-        tag = TUR
-        from = 1380.1.1
-        to = 1390.1.1
-        monthly_chance = 20
-    }
-    trigger = {
-        exists = character:dbo_yildirim_bayezid
-        has_ruler = yes
-        character:dbo_yildirim_bayezid = {
-            is_ruler = yes
-            character_age > 30
-        }
-    }
-    option = {
-        name = dbo_dhe_history.1103.a
-        set_variable = dbo_conquest_anatolian_turks_challenged
-    }
-}
-
-# Yildirim Bayezid Dream
-dbo_dhe_history.1104 = {
-    type = country_event
-    title = dbo_dhe_history.1104.title
-    desc = dbo_dhe_history.1104.desc
-    historical_info = dbo_dhe_history.1104.historical_info
-    image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_bayezid_defeated_by_timur.dds"
-    fire_only_once = yes
-    dynamic_historical_event = {
-        tag = TUR
-        from = 1400.1.1
-        to = 1402.1.1
-        monthly_chance = 20
-    }
-    trigger = {
-        exists = character:dbo_yildirim_bayezid
-        has_ruler = yes
-        character:dbo_yildirim_bayezid = {
-            is_ruler = yes
-        }
-        country_exists = c:TIM
-        NOT = {
-            any_neighbor_country = {
-                tag = TIM
-            }
-        }
-    }
-    option = {
-        name = dbo_dhe_history.1104.a
-    }
+# Yildirim Bayezid Changelling to Anatolian Turks Union
+dbo_dhe_history.103 = {
+	type = country_event
+	title = dbo_dhe_history.103.title
+	desc = dbo_dhe_history.103.desc
+	historical_info = dbo_dhe_history.103.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_bayezid_challenge.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1380.1.1
+		to = 1390.1.1
+		monthly_chance = 20
+	}
+	trigger = {
+		exists = character:dbo_yildirim_bayezid
+		has_variable = dbo_var_yildirim_bayezid_case
+		var:dbo_var_yildirim_bayezid_case = 2
+		has_ruler = yes
+		character:dbo_yildirim_bayezid = {
+			is_ruler = yes
+			character_age > 30
+		}
+	}
+	option = {
+		name = dbo_dhe_history.103.a
+		set_variable = dbo_conquest_anatolian_turks_challenged
+		change_variable = {
+			name = dbo_var_yildirim_bayezid_case
+			add = 1
+		}
+	}
 }
 
 # Yildirim Bayezid Nightmare
-dbo_dhe_history.1105 = {
-    type = country_event
-    title = dbo_dhe_history.1105.title
-    desc = dbo_dhe_history.1105.desc
-    historical_info = dbo_dhe_history.1105.historical_info
-    image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_bayezid_nightmare.dds"
-    fire_only_once = yes
-    dynamic_historical_event = {
-        tag = TUR
-        from = 1402.1.1
-        to = 1403.1.1
-        monthly_chance = 100
-    }
-    trigger = {
-        exists = character:dbo_yildirim_bayezid
-        has_ruler = yes
-        character:dbo_yildirim_bayezid = {
-            is_ruler = yes
-        }
-        country_exists = c:TIM
-        NOT = {
-            any_neighbor_country = {
-                tag = TIM
-            }
-        }
-    }
-    option = {
-        name = dbo_dhe_history.1105.a
-    }
+dbo_dhe_history.104 = {
+	type = country_event
+	title = dbo_dhe_history.104.title
+	desc = dbo_dhe_history.104.desc
+	historical_info = dbo_dhe_history.104.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_bayezid_defeated_by_timur.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1400.1.1
+		to = 1410.1.1
+		monthly_chance = 20
+	}
+	trigger = {
+		at_war = no
+		has_ruler = yes
+		exists = character:dbo_yildirim_bayezid
+		character:dbo_yildirim_bayezid = {
+			is_ruler = yes
+		}
+		country_exists = c:TIM
+		NOT = {
+			any_neighbor_country = {
+				tag = TIM
+			}
+		}
+		has_variable = dbo_var_yildirim_bayezid_case
+		var:dbo_var_yildirim_bayezid_case = 3
+	}
+	option = {
+		name = dbo_dhe_history.104.a
+		change_variable = {
+			name = dbo_var_yildirim_bayezid_case
+			add = 1
+		}
+	}
+}
+
+# Yildirim Bayezid Nightmare
+dbo_dhe_history.105 = {
+	type = country_event
+	title = dbo_dhe_history.105.title
+	desc = dbo_dhe_history.105.desc
+	historical_info = dbo_dhe_history.105.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_bayezid_nightmare.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1400.1.1
+		to = 1420.1.1
+		monthly_chance = 20
+	}
+	trigger = {
+		at_war = no
+		exists = character:dbo_yildirim_bayezid
+		has_ruler = yes
+		character:dbo_yildirim_bayezid = {
+			is_ruler = yes
+		}
+		country_exists = c:TIM
+		NOT = {
+			any_neighbor_country = {
+				tag = TIM
+			}
+		}
+		has_variable = dbo_var_yildirim_bayezid_case
+		var:dbo_var_yildirim_bayezid_case = 4
+	}
+	option = {
+		name = dbo_dhe_history.105.a
+		change_variable = {
+			name = dbo_var_yildirim_bayezid_case
+			add = 1
+		}
+	}
 }
 
 # Yildirim Bayezid Dead
-dbo_dhe_history.1106 = {
-    type = country_event
-    title = dbo_dhe_history.1106.title
-    desc = dbo_dhe_history.1106.desc
-    historical_info = dbo_dhe_history.1106.historical_info
-    image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_bayezid_died.dds"
-    fire_only_once = yes
-    dynamic_historical_event = {
-        tag = TUR
-        from = 1404.1.1
-        to = 1405.1.1
-        monthly_chance = 100
-    }
-    trigger = {
-        exists = character:dbo_yildirim_bayezid
-        has_ruler = yes
-        character:dbo_yildirim_bayezid = {
-            is_ruler = yes
-        }
-        country_exists = c:TIM
-        NOT = {
-            any_neighbor_country = {
-                tag = TIM
-            }
-        }
-    }
-    option = {
-        name = dbo_dhe_history.1106.a
-        kill_character = {
-            target = character:dbo_yildirim_bayezid
-            reason = sudden_illness
-        }
-        dbo_event_extreme_penalty = yes
-    }
+dbo_dhe_history.106 = {
+	type = country_event
+	title = dbo_dhe_history.106.title
+	desc = dbo_dhe_history.106.desc
+	historical_info = dbo_dhe_history.106.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_bayezid_died.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1400.1.1
+		to = 1420.1.1
+		monthly_chance = 20
+	}
+	trigger = {
+		at_war = no
+		has_ruler = yes
+		exists = character:dbo_yildirim_bayezid
+		character:dbo_yildirim_bayezid = {
+			is_ruler = yes
+		}
+		country_exists = c:TIM
+		NOT = {
+			any_neighbor_country = {
+				tag = TIM
+			}
+		}
+		has_variable = dbo_var_yildirim_bayezid_case
+		var:dbo_var_yildirim_bayezid_case = 5
+	}
+	option = {
+		name = dbo_dhe_history.106.a
+		kill_character = {
+			target = character:dbo_yildirim_bayezid
+			reason = sudden_illness
+		}
+		dbo_event_extreme_penalty = yes
+		change_variable = {
+			name = dbo_var_yildirim_bayezid_case
+			add = 1
+		}
+	}
 }
 
-#
+# Fatih Sultan Mehmed Born
+dbo_dhe_history.201 = {
+	type = country_event
+	title = dbo_dhe_history.201.title
+	desc = dbo_dhe_history.201.desc
+	historical_info = dbo_dhe_history.201.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_fatih_sultan_mehmed_born.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1432.1.1
+		to = 1440.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		has_ruler = yes
+	}
+	option = {
+		name = dbo_dhe_history.201.a
+		create_character = {
+			first_name = Nehmed
+			nickname = nick_the_conquerer
+			dynasty = dynasty:ottomans_dynasty
+			father = root.ruler
+			birth_location = root.capital
+			age = 0
+			culture = culture:turkish_culture
+			religion = religion:sunni
+			adm = 5
+			dip = 5
+			mil = 5
+			add_trait = trait:child_prodigy
+			add_trait = trait:scholar
+			add_trait = trait:free_thinker
+			add_trait = trait:conqueror
+			add_trait = trait:strategist
+			add_trait = trait:military_theorist
+			script = dbo_fatih_sultan_mehmed
+		}
+	}
+}
 
+# Fatih Sultan Mehmed Rise
+dbo_dhe_history.202 = {
+	type = country_event
+	title = dbo_dhe_history.202.title
+	desc = dbo_dhe_history.202.desc
+	historical_info = dbo_dhe_history.202.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_fatih_sultan_mehmed_rise.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1451.1.1
+		to = 1460.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		at_war = no
+		has_ruler = yes
+		exists = character:dbo_fatih_sultan_mehmed
+		character:dbo_fatih_sultan_mehmed = {
+			is_alive = yes
+			is_adult = yes
+			is_ruler = no
+		}
+	}
+	option = {
+		name = dbo_dhe_history.202.a
+		set_new_ruler = character:dbo_fatih_sultan_mehmed
+		# Fatih Sultan Mehmed and Orban Events
+		trigger_event_non_silently = {
+			id = dbo_history.101
+			months = {
+				3,
+				6
+			}
+		}
+	}
+}
 
-# Fatih Sultan Mehmed https://tr.wikipedia.org/wiki/II._Mehmed
-dbo_dhe_history.1011 = {
-    type = country_event
-    title = dbo_dhe_history.1011.title
-    desc = dbo_dhe_history.1011.desc
-    historical_info = dbo_dhe_history.1011.historical_info
-    image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_bayezid_born.dds"
-    fire_only_once = yes
-    dynamic_historical_event = {
-        tag = TUR
-        from = 1432.1.1
-        to = 1440.1.1
-        monthly_chance = 10
-    }
-    trigger = {
-        has_ruler = yes
-    }
-    option = {
-        name = dbo_dhe_history.1011.a
-        create_character = {
-            first_name = Nehmed
-            nickname = nick_the_conquerer
-            dynasty = dynasty:ottomans_dynasty
-            father = root.ruler
-            birth_location = root.capital
-            age = 0
-            culture = culture:turkish_culture
-            religion = religion:sunni
-            adm = 20
-            dip = 20
-            mil = 20
-            add_trait = trait:child_prodigy
-            add_trait = trait:bold_fighter
-            add_trait = trait:conqueror
-            add_trait = trait:siege_specialist
-            script = dbo_fatih_sultan_mehmed
-        }
-    }
+# Fatih Sultan Mehmet Changelling to Conquest Rumelia
+dbo_dhe_history.203 = {
+	type = country_event
+	title = dbo_dhe_history.203.title
+	desc = dbo_dhe_history.203.desc
+	historical_info = dbo_dhe_history.203.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_fatih_sultan_mehmed_challenge.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1451.1.1
+		to = 1460.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		has_ruler = yes
+		exists = character:dbo_fatih_sultan_mehmed
+		character:dbo_fatih_sultan_mehmed = {
+			is_alive = yes
+			is_adult = yes
+			is_ruler = yes
+		}
+		has_variable = dbo_history_fatih_sultan_mehmet_and_orban_events_completed
+	}
+	option = {
+		name = dbo_dhe_history.203.a
+		set_variable = dbo_conquest_rumelia_challenged
+	}
 }
