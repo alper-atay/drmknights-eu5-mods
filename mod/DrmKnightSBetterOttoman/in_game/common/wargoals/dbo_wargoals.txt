@@ -1,5 +1,5 @@
 ﻿dbo_conquest_rise_of_the_ottomans = {
-	type = superiority
+	type = take_province
 	attacker = {
 		conquer_cost = 0.5
 		antagonism = 0.5
@@ -23,7 +23,7 @@
 }
 
 dbo_conquest_anatolian_turks = {
-	type = superiority
+	type = take_province
 	attacker = {
 		conquer_cost = 0.25
 		antagonism = 0.25
@@ -64,7 +64,7 @@ dbo_conquest_anatolian_turks = {
 }
 
 dbo_conquest_rumelia = {
-	type = superiority
+	type = take_province
 	attacker = {
 		conquer_cost = 0.25
 		antagonism = 0.25
@@ -89,7 +89,7 @@ dbo_conquest_rumelia = {
 }
 
 dbo_conquest_fertile_crescent = {
-	type = superiority
+	type = take_province
 	attacker = {
 		conquer_cost = 0.25
 		antagonism = 0.25
@@ -109,7 +109,7 @@ dbo_conquest_fertile_crescent = {
 }
 
 dbo_conquest_arabian_peninsula = {
-	type = superiority
+	type = take_province
 	attacker = {
 		conquer_cost = 0.25
 		antagonism = 0.25
@@ -133,7 +133,7 @@ dbo_conquest_arabian_peninsula = {
 }
 
 dbo_conquest_black_sea = {
-	type = superiority
+	type = take_province
 	attacker = {
 		conquer_cost = 0.25
 		antagonism = 0.25
@@ -174,7 +174,7 @@ dbo_conquest_black_sea = {
 }
 
 dbo_conquest_nile_river = {
-	type = superiority
+	type = take_province
 	attacker = {
 		conquer_cost = 0.25
 		antagonism = 0.25
@@ -195,7 +195,7 @@ dbo_conquest_nile_river = {
 }
 
 dbo_conquest_europe_eastern_gate = {
-	type = superiority
+	type = take_province
 	attacker = {
 		conquer_cost = 0.25
 		antagonism = 0.25
@@ -222,7 +222,7 @@ dbo_conquest_europe_eastern_gate = {
 }
 
 dbo_conquest_turkish_renaissance = {
-	type = superiority
+	type = take_province
 	attacker = {
 		conquer_cost = 0.25
 		antagonism = 0.25
@@ -253,7 +253,7 @@ dbo_conquest_turkish_renaissance = {
 }
 
 dbo_conquest_pearl_of_east = {
-	type = superiority
+	type = take_province
 	attacker = {
 		conquer_cost = 0.25
 		antagonism = 0.25
@@ -280,7 +280,7 @@ dbo_conquest_pearl_of_east = {
 }
 
 dbo_conquest_maghreb = {
-	type = superiority
+	type = take_province
 	attacker = {
 		conquer_cost = 0.25
 		antagonism = 0.25
@@ -304,7 +304,7 @@ dbo_conquest_maghreb = {
 }
 
 dbo_conquest_steep_mountain = {
-	type = superiority
+	type = take_province
 	attacker = {
 		conquer_cost = 0.25
 		antagonism = 0.25

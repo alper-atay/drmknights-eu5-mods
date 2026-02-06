@@ -1,3 +1,5 @@
 ﻿l_turkish:
  STATIC_MODIFIER_NAME_dbo_ottoman_interregnum: "Fetret Devri"
  STATIC_MODIFIER_DESC_dbo_ottoman_interregnum: "Ankara Savaşı'nda alınan ağır yenilgi sonrası Yıldırım Bayezid'in oğulları arasında on bir yıl süren taht kavgalarıyla geçen, devletin birliğinin sarsıldığı, Anadolu beyliklerinin yeniden bağımsızlık kazandığı ve imparatorluğun parçalanma eşiğine geldiği büyük kaos ve iç savaş dönemi."
+ STATIC_MODIFIER_NAME_dbo_ottoman_interregnum_recovery: "Fetret Devri Sonrası Toparlanma Dönemi"
+ STATIC_MODIFIER_DESC_dbo_ottoman_interregnum_recovery: "Fetret Devri'nin sona ermesiyle birlikte devletin yeniden birliğini sağladığı, merkezi otoritenin güçlendiği ve kaybedilen toprakların geri kazanılmaya başlandığı toparlanma süreci."

@@ -1,11 +1,24 @@
 ﻿dbo_ottoman_interregnum = {
-    game_data = {
-        category = country
-    }
+	game_data = {
+		category = country
+	}
+	monthly_war_exhaustion = 0.05
+	global_crown_estate_power = -0.2
+	monthly_legitimacy = -0.05
+	monthly_prestige = -0.05
+	stability_investment = -0.05
+	pop_join_rebel_threshold = 0.1
+	pop_leave_rebels_threshold = 0.05
+}
 
-    monthly_war_exhaustion = 0.05
-    global_crown_estate_power = -0.2
-    monthly_legitimacy = -0.05
-    monthly_prestige = -0.05
-    stability_investment = -0.05
+dbo_ottoman_interregnum_recovery = {
+	game_data = {
+		category = country
+	}
+	global_crown_estate_power = 0.2
+	monthly_legitimacy = 0.05
+	monthly_prestige = 0.05
+	stability_investment = 0.05
+	pop_join_rebel_threshold = -0.1
+	pop_leave_rebels_threshold = -0.05
 }

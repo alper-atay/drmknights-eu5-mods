@@ -10,8 +10,8 @@ dbo_dhe_history.101 = {
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
-		from = 1351.1.1
-		to = 1358.1.1
+		from = 1350.1.1
+		to = 1360.1.1
 		monthly_chance = 100
 	}
 	trigger = {
@@ -24,33 +24,28 @@ dbo_dhe_history.101 = {
 		create_character = {
 			first_name = Bayezid
 			nickname = nick_Yildirim
-			dynasty = dynasty:ottomans_dynasty
+			dynasty = root.ruler.dynasty
 			father = root.ruler
 			birth_location = root.capital
 			age = 0
-			culture = culture:turkish_culture
-			religion = religion:sunni
+			culture = root.ruler.culture
+			religion = root.ruler.religion
 			fertility = 100
-			adm = 5
-			dip = 5
-			mil = 5
+			no_stats = yes
 			add_trait = trait:child_prodigy
 			script = dbo_yildirim_bayezid
 		}
 		character:dbo_yildirim_bayezid = {
 			add_character_modifier = {
 				modifier = healthy_character
-				years = 40
+				years = modifier_duration_permanent
 				mode = add_and_extend
 			}
 		}
 	}
 	option = {
 		name = dbo_dhe_history.101.a
-		set_variable = {
-			name = dbo_var_yildirim_bayezid_case
-			value = 1
-		}
+		historical_option = yes
 	}
 }
 
@@ -64,32 +59,33 @@ dbo_dhe_history.102 = {
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
-		from = 1370.1.1
+		from = 1360.1.1
 		to = 1380.1.1
 		monthly_chance = 100
 	}
 	trigger = {
-		exists = character:dbo_yildirim_bayezid
-		has_variable = dbo_var_yildirim_bayezid_case
-		var:dbo_var_yildirim_bayezid_case = 1
 		has_ruler = yes
+		exists = character:dbo_yildirim_bayezid
 		character:dbo_yildirim_bayezid = {
 			is_alive = yes
 			is_adult = yes
-			is_ruler = no
 		}
 	}
 	option = {
 		name = dbo_dhe_history.102.a
-		set_new_ruler = character:dbo_yildirim_bayezid
+		historical_option = yes
+		if = {
+			limit = {
+				character:dbo_yildirim_bayezid = {
+					is_ruler = no
+				}
+			}
+			set_new_ruler = character:dbo_yildirim_bayezid
+		}
 		character:dbo_yildirim_bayezid = {
 			add_trait = trait:bold_fighter
 			add_trait = trait:conqueror
 			add_trait = trait:hussar_commander
-		}
-		change_variable = {
-			name = dbo_var_yildirim_bayezid_case
-			add = 1
 		}
 	}
 }
@@ -105,14 +101,11 @@ dbo_dhe_history.103 = {
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1380.1.1
-		to = 1390.1.1
-		monthly_chance = 20
+		to = 1400.1.1
+		monthly_chance = 100
 	}
 	trigger = {
 		exists = character:dbo_yildirim_bayezid
-		has_variable = dbo_var_yildirim_bayezid_case
-		var:dbo_var_yildirim_bayezid_case = 2
-		has_ruler = yes
 		character:dbo_yildirim_bayezid = {
 			is_ruler = yes
 			character_age > 30
@@ -120,11 +113,8 @@ dbo_dhe_history.103 = {
 	}
 	option = {
 		name = dbo_dhe_history.103.a
+		historical_option = yes
 		set_variable = dbo_conquest_anatolian_turks_challenged
-		change_variable = {
-			name = dbo_var_yildirim_bayezid_case
-			add = 1
-		}
 	}
 }
 
@@ -140,29 +130,28 @@ dbo_dhe_history.104 = {
 		tag = TUR
 		from = 1400.1.1
 		to = 1410.1.1
-		monthly_chance = 20
+		monthly_chance = 10
 	}
 	trigger = {
 		at_war = no
-		has_ruler = yes
 		exists = character:dbo_yildirim_bayezid
 		character:dbo_yildirim_bayezid = {
 			is_ruler = yes
 		}
 		country_exists = c:TIM
-		NOT = {
-			any_neighbor_country = {
+		any_neighbor_country = {
+			OR = {
 				tag = TIM
+				is_subject_or_below_of = c:TIM
 			}
 		}
-		has_variable = dbo_var_yildirim_bayezid_case
-		var:dbo_var_yildirim_bayezid_case = 3
 	}
 	option = {
 		name = dbo_dhe_history.104.a
-		change_variable = {
-			name = dbo_var_yildirim_bayezid_case
-			add = 1
+		historical_option = yes
+		set_variable = {
+			name = dbo_yildirim_bayezid_nightmare
+			value = 1
 		}
 	}
 }
@@ -179,28 +168,29 @@ dbo_dhe_history.105 = {
 		tag = TUR
 		from = 1400.1.1
 		to = 1420.1.1
-		monthly_chance = 20
+		monthly_chance = 10
 	}
 	trigger = {
 		at_war = no
 		exists = character:dbo_yildirim_bayezid
-		has_ruler = yes
 		character:dbo_yildirim_bayezid = {
 			is_ruler = yes
 		}
 		country_exists = c:TIM
-		NOT = {
-			any_neighbor_country = {
+		any_neighbor_country = {
+			OR = {
 				tag = TIM
+				is_subject_or_below_of = c:TIM
 			}
 		}
-		has_variable = dbo_var_yildirim_bayezid_case
-		var:dbo_var_yildirim_bayezid_case = 4
+		has_variable = dbo_yildirim_bayezid_nightmare
+		var:dbo_yildirim_bayezid_nightmare = 1
 	}
 	option = {
 		name = dbo_dhe_history.105.a
+		historical_option = yes
 		change_variable = {
-			name = dbo_var_yildirim_bayezid_case
+			name = dbo_yildirim_bayezid_nightmare
 			add = 1
 		}
 	}
@@ -218,34 +208,143 @@ dbo_dhe_history.106 = {
 		tag = TUR
 		from = 1400.1.1
 		to = 1420.1.1
-		monthly_chance = 20
+		monthly_chance = 10
 	}
 	trigger = {
 		at_war = no
-		has_ruler = yes
 		exists = character:dbo_yildirim_bayezid
 		character:dbo_yildirim_bayezid = {
 			is_ruler = yes
 		}
 		country_exists = c:TIM
-		NOT = {
-			any_neighbor_country = {
+		any_neighbor_country = {
+			OR = {
 				tag = TIM
+				is_subject_or_below_of = c:TIM
 			}
 		}
-		has_variable = dbo_var_yildirim_bayezid_case
-		var:dbo_var_yildirim_bayezid_case = 5
+		has_variable = dbo_yildirim_bayezid_nightmare
+		var:dbo_yildirim_bayezid_nightmare = 2
 	}
 	option = {
 		name = dbo_dhe_history.106.a
+		historical_option = yes
 		kill_character = {
 			target = character:dbo_yildirim_bayezid
 			reason = sudden_illness
 		}
-		dbo_event_extreme_penalty = yes
 		change_variable = {
-			name = dbo_var_yildirim_bayezid_case
+			name = dbo_yildirim_bayezid_nightmare
 			add = 1
+		}
+	}
+}
+
+# Ottoman Interregnum Begin
+dbo_dhe_history.107 = {
+	type = country_event
+	title = dbo_dhe_history.107.title
+	desc = dbo_dhe_history.107.desc
+	historical_info = dbo_dhe_history.107.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_bayezid_interregnum.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1400.1.1
+		to = 1430.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		exists = character:dbo_yildirim_bayezid
+		any_character = {
+			father = character:dbo_yildirim_bayezid
+			is_female = no
+			is_adult = yes
+			count > 1
+		}
+		OR = {
+			character:dbo_yildirim_bayezid = {
+				is_alive = no
+			}
+			AND = {
+				has_variable = dbo_yildirim_bayezid_nightmare
+				var:dbo_yildirim_bayezid_nightmare = 3
+			}
+		}
+	}
+	option = {
+		name = dbo_dhe_history.107.a
+		historical_option = yes
+		dbo_event_extreme_penalty = yes
+		add_country_modifier = {
+			modifier = dbo_ottoman_interregnum
+			years = 11
+			mode = add_and_extend
+		}
+		custom_tooltip = {
+			text = dbo_history_ottoman_interregnum_rebel_tt
+			every_rebel = {
+				add_rebel_progress = rebel_progress_severe_penalty
+			}
+		}
+		custom_tooltip = {
+			text = dbo_history_ottoman_interregnum_tt
+			every_pop = {
+				limit = {
+					owner = root
+				}
+				add_pop_satisfaction = pop_satisfaction_severe_penalty
+			}
+		}
+		set_variable = {
+			name = dbo_ottoman_interregnum_end_year
+			value = {
+				value = current_year
+				add = 11
+			}
+		}
+	}
+}
+
+# Ottoman Interregnum End
+dbo_dhe_history.108 = {
+	type = country_event
+	title = dbo_dhe_history.108.title
+	desc = dbo_dhe_history.108.desc
+	historical_info = dbo_dhe_history.108.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_ottoman_interregnum_end.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1400.1.1
+		to = 1430.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		in_civil_war = no
+		has_variable = dbo_ottoman_interregnum_end_year
+		current_year > var:dbo_ottoman_interregnum_end_year
+		NOT = {
+			has_country_modifier = dbo_ottoman_interregnum
+		}
+	}
+	option = {
+		name = dbo_dhe_history.108.a
+		historical_option = yes
+		dbo_event_extreme_bonus = yes
+		add_country_modifier = {
+			modifier = dbo_ottoman_interregnum_recovery
+			years = 11
+			mode = add_and_extend
+		}
+		custom_tooltip = {
+			text = dbo_history_ottoman_interregnum_end_tt
+			every_pop = {
+				limit = {
+					owner = root
+				}
+				add_pop_satisfaction = pop_satisfaction_severe_bonus
+			}
 		}
 	}
 }
@@ -260,7 +359,7 @@ dbo_dhe_history.201 = {
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
-		from = 1432.1.1
+		from = 1430.1.1
 		to = 1440.1.1
 		monthly_chance = 100
 	}
@@ -277,22 +376,21 @@ dbo_dhe_history.201 = {
 			age = 0
 			culture = culture:turkish_culture
 			religion = religion:sunni
-			adm = 5
-			dip = 5
-			mil = 5
+			no_stats = yes
 			add_trait = trait:child_prodigy
 			script = dbo_fatih_sultan_mehmed
 		}
 		character:dbo_fatih_sultan_mehmed = {
 			add_character_modifier = {
 				modifier = healthy_character
-				years = 40
+				years = modifier_duration_permanent
 				mode = add_and_extend
 			}
 		}
 	}
 	option = {
 		name = dbo_dhe_history.201.a
+		historical_option = yes
 	}
 }
 
@@ -306,7 +404,7 @@ dbo_dhe_history.202 = {
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
-		from = 1450.1.1
+		from = 1440.1.1
 		to = 1460.1.1
 		monthly_chance = 10
 	}
@@ -316,17 +414,22 @@ dbo_dhe_history.202 = {
 		character:dbo_fatih_sultan_mehmed = {
 			is_alive = yes
 			is_adult = yes
-			is_ruler = no
 		}
 	}
 	option = {
 		name = dbo_dhe_history.202.a
-		set_new_ruler = character:dbo_fatih_sultan_mehmed
+		historical_option = yes
+		if = {
+			limit = {
+				character:dbo_fatih_sultan_mehmed = {
+					is_ruler = no
+				}
+			}
+			set_new_ruler = character:dbo_fatih_sultan_mehmed
+		}
 		character:dbo_fatih_sultan_mehmed = {
 			add_trait = trait:scholar
 			add_trait = trait:free_thinker
-			add_trait = trait:conqueror
-			add_trait = trait:strategist
 			add_trait = trait:military_theorist
 		}
 		# Fatih Sultan Mehmed and Orban Events
@@ -353,6 +456,7 @@ dbo_dhe_history.203 = {
 	}
 	trigger = {
 		exists = character:dbo_fatih_sultan_mehmed
+		historical_option = yes
 		character:dbo_fatih_sultan_mehmed = {
 			is_alive = yes
 			is_adult = yes
@@ -382,6 +486,7 @@ dbo_dhe_history.204 = {
 	}
 	trigger = {
 		exists = character:dbo_fatih_sultan_mehmed
+		historical_option = yes
 		character:dbo_fatih_sultan_mehmed = {
 			is_alive = yes
 			is_adult = yes
@@ -391,6 +496,38 @@ dbo_dhe_history.204 = {
 	}
 	option = {
 		name = dbo_dhe_history.204.a
+		historical_option = yes
 		set_variable = dbo_conquest_black_sea_challenged
+	}
+}
+
+# Fatih Sultan Mehmet Working on Legal Code
+dbo_dhe_history.205 = {
+	type = country_event
+	title = dbo_dhe_history.205.title
+	desc = dbo_dhe_history.205.desc
+	historical_info = dbo_dhe_history.205.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_fatih_sultan_mehmed_legal_code.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1451.1.1
+		to = 1470.1.1
+		monthly_chance = 10
+	}
+	trigger = {
+		exists = character:dbo_fatih_sultan_mehmed
+		character:dbo_fatih_sultan_mehmed = {
+			is_alive = yes
+			is_adult = yes
+			is_ruler = yes
+		}
+	}
+	option = {
+		name = dbo_dhe_history.205.a
+		historical_option = yes
+		set_variable = dbo_destiny_legal_code_kanunname_i_al_i_osman_policy_obtained
+		add_policy = policy:dbo_destiny_legal_code_kanunname_i_al_i_osman_policy
+		dbo_event_severe_bonus = yes
 	}
 }
