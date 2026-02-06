@@ -6,7 +6,7 @@ dbo_dhe_history.101 = {
 	title = dbo_dhe_history.101.title
 	desc = dbo_dhe_history.101.desc
 	historical_info = dbo_dhe_history.101.historical_info
-	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_bayezid_born.dds"
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_sultan_bayezid_born.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
@@ -33,9 +33,9 @@ dbo_dhe_history.101 = {
 			fertility = 100
 			no_stats = yes
 			add_trait = trait:child_prodigy
-			script = dbo_yildirim_bayezid
+			script = dbo_yildirim_sultan_bayezid
 		}
-		character:dbo_yildirim_bayezid = {
+		character:dbo_yildirim_sultan_bayezid = {
 			add_character_modifier = {
 				modifier = healthy_character
 				years = modifier_duration_permanent
@@ -55,7 +55,7 @@ dbo_dhe_history.102 = {
 	title = dbo_dhe_history.102.title
 	desc = dbo_dhe_history.102.desc
 	historical_info = dbo_dhe_history.102.historical_info
-	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_bayezid_rise.dds"
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_sultan_bayezid_rise.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
@@ -65,8 +65,8 @@ dbo_dhe_history.102 = {
 	}
 	trigger = {
 		has_ruler = yes
-		exists = character:dbo_yildirim_bayezid
-		character:dbo_yildirim_bayezid = {
+		exists = character:dbo_yildirim_sultan_bayezid
+		character:dbo_yildirim_sultan_bayezid = {
 			is_alive = yes
 			is_adult = yes
 		}
@@ -76,13 +76,17 @@ dbo_dhe_history.102 = {
 		historical_option = yes
 		if = {
 			limit = {
-				character:dbo_yildirim_bayezid = {
+				character:dbo_yildirim_sultan_bayezid = {
 					is_ruler = no
 				}
 			}
-			set_new_ruler = character:dbo_yildirim_bayezid
+			set_new_ruler = character:dbo_yildirim_sultan_bayezid
 		}
-		character:dbo_yildirim_bayezid = {
+		character:dbo_yildirim_sultan_bayezid = {
+			hidden_effect = {
+				remove_traits_of_category = ruler
+				remove_traits_of_category = general
+			}
 			add_trait = trait:bold_fighter
 			add_trait = trait:conqueror
 			add_trait = trait:hussar_commander
@@ -96,7 +100,7 @@ dbo_dhe_history.103 = {
 	title = dbo_dhe_history.103.title
 	desc = dbo_dhe_history.103.desc
 	historical_info = dbo_dhe_history.103.historical_info
-	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_bayezid_challenged_anatolian_turks_union.dds"
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_sultan_bayezid_challenged_anatolian_turks_union.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
@@ -105,8 +109,8 @@ dbo_dhe_history.103 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		exists = character:dbo_yildirim_bayezid
-		character:dbo_yildirim_bayezid = {
+		exists = character:dbo_yildirim_sultan_bayezid
+		character:dbo_yildirim_sultan_bayezid = {
 			is_ruler = yes
 			character_age > 30
 		}
@@ -124,7 +128,7 @@ dbo_dhe_history.104 = {
 	title = dbo_dhe_history.104.title
 	desc = dbo_dhe_history.104.desc
 	historical_info = dbo_dhe_history.104.historical_info
-	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_bayezid_defeated_by_timur.dds"
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_sultan_bayezid_defeated_by_timur.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
@@ -134,8 +138,8 @@ dbo_dhe_history.104 = {
 	}
 	trigger = {
 		at_war = no
-		exists = character:dbo_yildirim_bayezid
-		character:dbo_yildirim_bayezid = {
+		exists = character:dbo_yildirim_sultan_bayezid
+		character:dbo_yildirim_sultan_bayezid = {
 			is_ruler = yes
 		}
 		country_exists = c:TIM
@@ -150,7 +154,7 @@ dbo_dhe_history.104 = {
 		name = dbo_dhe_history.104.a
 		historical_option = yes
 		set_variable = {
-			name = dbo_yildirim_bayezid_nightmare
+			name = dbo_yildirim_sultan_bayezid_nightmare
 			value = 1
 		}
 	}
@@ -162,7 +166,7 @@ dbo_dhe_history.105 = {
 	title = dbo_dhe_history.105.title
 	desc = dbo_dhe_history.105.desc
 	historical_info = dbo_dhe_history.105.historical_info
-	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_bayezid_nightmare.dds"
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_sultan_bayezid_nightmare.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
@@ -172,8 +176,8 @@ dbo_dhe_history.105 = {
 	}
 	trigger = {
 		at_war = no
-		exists = character:dbo_yildirim_bayezid
-		character:dbo_yildirim_bayezid = {
+		exists = character:dbo_yildirim_sultan_bayezid
+		character:dbo_yildirim_sultan_bayezid = {
 			is_ruler = yes
 		}
 		country_exists = c:TIM
@@ -183,14 +187,14 @@ dbo_dhe_history.105 = {
 				is_subject_or_below_of = c:TIM
 			}
 		}
-		has_variable = dbo_yildirim_bayezid_nightmare
-		var:dbo_yildirim_bayezid_nightmare = 1
+		has_variable = dbo_yildirim_sultan_bayezid_nightmare
+		var:dbo_yildirim_sultan_bayezid_nightmare = 1
 	}
 	option = {
 		name = dbo_dhe_history.105.a
 		historical_option = yes
 		change_variable = {
-			name = dbo_yildirim_bayezid_nightmare
+			name = dbo_yildirim_sultan_bayezid_nightmare
 			add = 1
 		}
 	}
@@ -202,7 +206,7 @@ dbo_dhe_history.106 = {
 	title = dbo_dhe_history.106.title
 	desc = dbo_dhe_history.106.desc
 	historical_info = dbo_dhe_history.106.historical_info
-	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_bayezid_died.dds"
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_sultan_bayezid_died.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
@@ -212,8 +216,8 @@ dbo_dhe_history.106 = {
 	}
 	trigger = {
 		at_war = no
-		exists = character:dbo_yildirim_bayezid
-		character:dbo_yildirim_bayezid = {
+		exists = character:dbo_yildirim_sultan_bayezid
+		character:dbo_yildirim_sultan_bayezid = {
 			is_ruler = yes
 		}
 		country_exists = c:TIM
@@ -223,18 +227,18 @@ dbo_dhe_history.106 = {
 				is_subject_or_below_of = c:TIM
 			}
 		}
-		has_variable = dbo_yildirim_bayezid_nightmare
-		var:dbo_yildirim_bayezid_nightmare = 2
+		has_variable = dbo_yildirim_sultan_bayezid_nightmare
+		var:dbo_yildirim_sultan_bayezid_nightmare = 2
 	}
 	option = {
 		name = dbo_dhe_history.106.a
 		historical_option = yes
 		kill_character = {
-			target = character:dbo_yildirim_bayezid
+			target = character:dbo_yildirim_sultan_bayezid
 			reason = sudden_illness
 		}
 		change_variable = {
-			name = dbo_yildirim_bayezid_nightmare
+			name = dbo_yildirim_sultan_bayezid_nightmare
 			add = 1
 		}
 	}
@@ -246,7 +250,7 @@ dbo_dhe_history.107 = {
 	title = dbo_dhe_history.107.title
 	desc = dbo_dhe_history.107.desc
 	historical_info = dbo_dhe_history.107.historical_info
-	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_bayezid_interregnum.dds"
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_sultan_bayezid_interregnum.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
@@ -255,20 +259,20 @@ dbo_dhe_history.107 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		exists = character:dbo_yildirim_bayezid
+		exists = character:dbo_yildirim_sultan_bayezid
 		any_character = {
-			father = character:dbo_yildirim_bayezid
+			father = character:dbo_yildirim_sultan_bayezid
 			is_female = no
 			is_adult = yes
 			count > 1
 		}
 		OR = {
-			character:dbo_yildirim_bayezid = {
+			character:dbo_yildirim_sultan_bayezid = {
 				is_alive = no
 			}
 			AND = {
-				has_variable = dbo_yildirim_bayezid_nightmare
-				var:dbo_yildirim_bayezid_nightmare = 3
+				has_variable = dbo_yildirim_sultan_bayezid_nightmare
+				var:dbo_yildirim_sultan_bayezid_nightmare = 3
 			}
 		}
 	}
@@ -406,7 +410,7 @@ dbo_dhe_history.202 = {
 		tag = TUR
 		from = 1440.1.1
 		to = 1460.1.1
-		monthly_chance = 10
+		monthly_chance = 100
 	}
 	trigger = {
 		has_ruler = yes
@@ -428,8 +432,13 @@ dbo_dhe_history.202 = {
 			set_new_ruler = character:dbo_fatih_sultan_mehmed
 		}
 		character:dbo_fatih_sultan_mehmed = {
+			hidden_effect = {
+				remove_traits_of_category = ruler
+				remove_traits_of_category = general
+			}
 			add_trait = trait:scholar
 			add_trait = trait:free_thinker
+			add_trait = trait:conqueror
 			add_trait = trait:military_theorist
 		}
 		# Fatih Sultan Mehmed and Orban Events
@@ -529,5 +538,230 @@ dbo_dhe_history.205 = {
 		set_variable = dbo_destiny_legal_code_kanunname_i_al_i_osman_policy_obtained
 		add_policy = policy:dbo_destiny_legal_code_kanunname_i_al_i_osman_policy
 		dbo_event_severe_bonus = yes
+	}
+}
+
+# Fatih Sultan Mehmet Die
+dbo_dhe_history.206 = {
+	type = country_event
+	title = dbo_dhe_history.206.title
+	desc = dbo_dhe_history.206.desc
+	historical_info = dbo_dhe_history.206.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_fatih_sultan_mehmed_die.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1480.1.1
+		to = 1490.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		exists = character:dbo_fatih_sultan_mehmed
+		character:dbo_fatih_sultan_mehmed = {
+			is_alive = yes
+			is_ruler = yes
+			num_of_children > 1
+			any_child = {
+				is_alive = yes
+				is_adult = yes
+				is_female = no
+			}
+		}
+		has_variable = dbo_history_fatih_sultan_mehmet_and_orban_events_completed
+		has_variable = dbo_conquest_rumelia_challenged
+		has_variable = dbo_conquest_black_sea_challenged
+		has_variable = dbo_destiny_legal_code_kanunname_i_al_i_osman_policy_obtained
+	}
+	option = {
+		name = dbo_dhe_history.206.a
+		historical_option = yes
+	}
+}
+
+# Yavuz Sultan Selim Born
+dbo_dhe_history.301 = {
+	type = country_event
+	title = dbo_dhe_history.301.title
+	desc = dbo_dhe_history.301.desc
+	historical_info = dbo_dhe_history.301.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yavuz_sultan_selim_born.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1470.1.1
+		to = 1480.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		exists = character:dbo_fatih_sultan_mehmed
+		OR = {
+			AND = {
+				has_ruler = yes
+				ruler = {
+					father = character:dbo_fatih_sultan_mehmed
+				}
+			}
+			AND = {
+				has_heir = yes
+				heir = {
+					father = character:dbo_fatih_sultan_mehmed
+				}
+			}
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				has_ruler = yes
+				ruler = {
+					father = character:dbo_fatih_sultan_mehmed
+				}
+			}
+			ruler = {
+				save_temporary_scope_as = target_father
+			}
+		}
+		else_if = {
+			limit = {
+				has_heir = yes
+				heir = {
+					father = character:dbo_fatih_sultan_mehmed
+				}
+			}
+			heir = {
+				save_temporary_scope_as = target_father
+			}
+		}
+		else = {
+			create_character = {
+				first_name = Bayezid
+				dynasty = character:dbo_fatih_sultan_mehmed.dynasty
+				father = character:dbo_fatih_sultan_mehmed
+				birth_location = root.capital
+				age = {
+					min = 16
+					max = 30
+				}
+				culture = root.culture
+				religion = root.religion
+				fertility = 100
+				adm = {
+					50
+					70
+				}
+				dip = {
+					50
+					70
+				}
+				mil = {
+					50
+					70
+				}
+				save_temporary_scope_as = target_father
+			}
+		}
+		create_character = {
+			first_name = Selim
+			nickname = nick_Yavuz
+			dynasty = root.ruler.dynasty
+			father = scope:target_father
+			birth_location = root.capital
+			age = 0
+			culture = root.ruler.culture
+			religion = root.ruler.religion
+			fertility = 100
+			no_stats = yes
+			add_trait = trait:child_prodigy
+			script = dbo_yavuz_sultan_selim
+		}
+		character:dbo_yavuz_sultan_selim = {
+			add_character_modifier = {
+				modifier = healthy_character
+				years = modifier_duration_permanent
+				mode = add_and_extend
+			}
+		}
+	}
+	option = {
+		name = dbo_dhe_history.301.a
+		historical_option = yes
+	}
+}
+
+# Yavuz Sultan Selim Grow
+dbo_dhe_history.302 = {
+	type = country_event
+	title = dbo_dhe_history.302.title
+	desc = dbo_dhe_history.302.desc
+	historical_info = dbo_dhe_history.302.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yavuz_sultan_selim_grow.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1490.1.1
+		to = 1510.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		exists = character:dbo_yavuz_sultan_selim
+		character:dbo_yavuz_sultan_selim = {
+			is_alive = yes
+			is_adult = yes
+		}
+	}
+	option = {
+		name = dbo_dhe_history.302.a
+		historical_option = yes
+		character:dbo_yavuz_sultan_selim = {
+			hidden_effect = {
+				remove_traits_of_category = ruler
+				remove_traits_of_category = general
+			}
+			add_trait = trait:conqueror
+			add_trait = trait:tactical_genius
+			add_trait = trait:conqueror
+			add_trait = trait:military_theorist
+		}
+		add_character_modifier = {
+			modifier = dbo_yss_ideal_of_world_domination
+			days = -1
+			mode = add_and_extend
+		}
+	}
+}
+
+# Yavuz Sultan Selim Rise
+dbo_dhe_history.303 = {
+	type = country_event
+	title = dbo_dhe_history.303.title
+	desc = dbo_dhe_history.303.desc
+	historical_info = dbo_dhe_history.303.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yavuz_sultan_selim_rise.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1510.1.1
+		to = 1520.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		has_ruler = yes
+		exists = character:dbo_yavuz_sultan_selim
+		character:dbo_yavuz_sultan_selim = {
+			is_alive = yes
+			is_adult = yes
+		}
+	}
+	option = {
+		name = dbo_dhe_history.303.a
+		historical_option = yes
+		if = {
+			limit = {
+				character:dbo_yavuz_sultan_selim = {
+					is_ruler = no
+				}
+			}
+			set_new_ruler = character:dbo_yavuz_sultan_selim
+		}
 	}
 }

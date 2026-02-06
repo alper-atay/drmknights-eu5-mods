@@ -1,42 +1,42 @@
 ﻿l_turkish:
-# Yildirim Bayezid
- dbo_yildirim_bayezid_historical_info_common: "Yıldırım Bayezid, sadece askeri hızıyla değil, aynı zamanda Osmanlı vizyonunu bütünüyle değiştiren sarsılmaz iradesiyle tarihin akışına yön vermiş muazzam bir hükümdardır. 1389 yılında, babası I. Murad’ın şehit düştüğü Kosova Meydan Muharebesi’nin toz dumanı içinde, savaş meydanında tahta geçerek orduyu mutlak bir zaferle buluşturan Bayezid, hükümdarlığı süresince Anadolu ve Rumeli arasında adeta bir fırtına gibi esmiş ve bu eşsiz askeri çevikliği sayesinde tarihe \"Yıldırım\" namıyla kazınmıştır. Devletin sınırlarını Fırat’tan Tuna’ya kadar genişletirken, 1396’da Niğbolu önlerinde Avrupa’nın gördüğü en büyük Haçlı ittifakını darmadağın ederek İslam dünyasının yegane koruyucusu olduğunu kanıtlamış ve bu zaferin ardından Abbasi Halifesi tarafından kendisine resmen \"Sultan-ı İklim-i Rum\" unvanı tevdi edilmiştir. İstanbul’u tam dört kez kuşatarak Bizans’ı can çekişen bir şehir devletine dönüştüren, Boğaz'ın güvenliği için Güzelce Hisar'ı inşa ettiren ve Anadolu Türk birliğini neredeyse tam manasıyla tesis eden Bayezid, Batı’ya karşı kazandığı bu mutlak üstünlüğü, 1402’de Ankara Savaşı’nda bir başka Türk-İslam hakanı olan Emir Timur ile karşı karşıya geldiğinde talihsiz bir yenilgiyle kaybetmiştir. Bu savaşın ardından başlayan esaret dönemi ve devletin içine düştüğü Fetret Devri, onun inşa ettiği muazzam yapının ne kadar hayati olduğunu gösterirken, geride bıraktığı askeri ve idari miras Osmanlı’nın küllerinden yeniden doğmasını sağlayan en güçlü temel taşı olmuştur."
- dbo_yildirim_bayezid_historical_info_timur: "1402 Ankara Savaşı, Türk tarihinin en dramatik kırılma noktalarından biri olarak iki devasa askeri dehayı, Emir Timur ile Yıldırım Bayezid'i karşı karşıya getirmiştir.\nSavaşın temelinde yatan sert mektuplaşmalar ve karşılıklı hakaretler, Çubuk Ovası'nda kaçınılmaz bir hesaplaşmaya dönüşmüştür.\nTimur'un Hindistan'dan getirdiği zırhlı filler ve su kuyularını kontrol altına alarak Osmanlı ordusunu susuz bırakan taktiksel hamleleri savaşın gidişatını belirlemiştir.\nAncak asıl darbe, Anadolu beyliklerine bağlı askerlerin savaş meydanında taraf değiştirerek kendi beylerinin yanına geçmesiyle vurulmuş ve Osmanlı merkez ordusu savunmasız kalmıştır.\nYıldırım Bayezid'in esir düşmesiyle sonuçlanan bu trajik yenilgi, Osmanlı'yı 11 yıl sürecek olan Fetret Devri'ne sürüklemiş ve İstanbul'un fethini yaklaşık yarım asır geciktirmiştir."
- dbo_yildirim_bayezid_historical_info_fetret_devri: "Kaderin Dönüşü: Yıldırım’ın Esareti ve Fetret’in Karanlığı\n1402 Ankara Savaşı’nın toz dumanı Çubuk Ovası üzerinde dağılırken, Osmanlı İmparatorluğu tarihinin en büyük varoluş sınavıyla karşı karşıya kalmıştır.\nSultan Yıldırım Bayezid’in Emir Timur’un eline esir düşmesi, devletin kalbine inen ağır bir darbe olmuş ve merkezi otoriteyi tamamen felç ederek \"Cihan Hâkimiyeti\" ülküsünü büyük bir belirsizliğe sürüklemiştir.\nAnadolu beyliklerinin yeniden bağımsızlıklarını ilan etmesiyle topraklar paramparça olurken, Bayezid’in oğulları arasında on bir yıl sürecek kanlı bir taht kavgası ve iç savaş dönemi resmen başlamıştır.\nBabanın esareti, kardeşlerin rekabeti ve düşmanların artan iştahı arasında Osmanlı Devleti, küllerinden yeniden doğup doğmayacağının karar verileceği o karanlık \"Fetret Devri\" dehlizine girmiştir.\nŞimdi mülkün bekası, en dirayetli ve sarsılmaz iradeye sahip olan şehzadenin kılıcının ucundadır."
-# Yildirim Bayezid Born
- dbo_dhe_history.101.title: "[GetCharacter('dbo_yildirim_bayezid').GetName]\nDoğdu"
- dbo_dhe_history.101.desc: "[GetCharacter('dbo_yildirim_bayezid').GetBirthDate] yılında, Osmanlı İmparatorluğu'nun gelecekteki padişahı [GetCharacter('dbo_yildirim_bayezid').GetName] dünyaya geldi. Babası [GetCharacter('dbo_yildirim_bayezid').GetFather.GetName] izinden giderek, genç yaşta Devlet-i Aliyye'nin başına geçecektir!"
- dbo_dhe_history.101.historical_info: "$dbo_yildirim_bayezid_historical_info_common$"
+# dbo_yildirim_sultan_bayezid
+ dbo_yildirim_sultan_bayezid_historical_info_common: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName], sadece askeri hızıyla değil, aynı zamanda Osmanlı vizyonunu bütünüyle değiştiren sarsılmaz iradesiyle tarihin akışına yön vermiş muazzam bir hükümdardır. 1389 yılında, babası I. Murad’ın şehit düştüğü Kosova Meydan Muharebesi’nin toz dumanı içinde, savaş meydanında tahta geçerek orduyu mutlak bir zaferle buluşturan Bayezid, hükümdarlığı süresince Anadolu ve Rumeli arasında adeta bir fırtına gibi esmiş ve bu eşsiz askeri çevikliği sayesinde tarihe \"Yıldırım\" namıyla kazınmıştır. Devletin sınırlarını Fırat’tan Tuna’ya kadar genişletirken, 1396’da Niğbolu önlerinde Avrupa’nın gördüğü en büyük Haçlı ittifakını darmadağın ederek İslam dünyasının yegane koruyucusu olduğunu kanıtlamış ve bu zaferin ardından Abbasi Halifesi tarafından kendisine resmen \"Sultan-ı İklim-i Rum\" unvanı tevdi edilmiştir. İstanbul’u tam dört kez kuşatarak Bizans’ı can çekişen bir şehir devletine dönüştüren, Boğaz'ın güvenliği için Güzelce Hisar'ı inşa ettiren ve Anadolu Türk birliğini neredeyse tam manasıyla tesis eden Bayezid, Batı’ya karşı kazandığı bu mutlak üstünlüğü, 1402’de Ankara Savaşı’nda bir başka Türk-İslam hakanı olan Emir Timur ile karşı karşıya geldiğinde talihsiz bir yenilgiyle kaybetmiştir. Bu savaşın ardından başlayan esaret dönemi ve devletin içine düştüğü Fetret Devri, onun inşa ettiği muazzam yapının ne kadar hayati olduğunu gösterirken, geride bıraktığı askeri ve idari miras Osmanlı’nın küllerinden yeniden doğmasını sağlayan en güçlü temel taşı olmuştur."
+ dbo_yildirim_sultan_bayezid_historical_info_timur: "1402 Ankara Savaşı, Türk tarihinin en dramatik kırılma noktalarından biri olarak iki devasa askeri dehayı, Emir Timur ile [GetCharacter('dbo_yildirim_sultan_bayezid').GetName]'i karşı karşıya getirmiştir.\nSavaşın temelinde yatan sert mektuplaşmalar ve karşılıklı hakaretler, Çubuk Ovası'nda kaçınılmaz bir hesaplaşmaya dönüşmüştür.\nTimur'un Hindistan'dan getirdiği zırhlı filler ve su kuyularını kontrol altına alarak Osmanlı ordusunu susuz bırakan taktiksel hamleleri savaşın gidişatını belirlemiştir.\nAncak asıl darbe, Anadolu beyliklerine bağlı askerlerin savaş meydanında taraf değiştirerek kendi beylerinin yanına geçmesiyle vurulmuş ve Osmanlı merkez ordusu savunmasız kalmıştır.\n[GetCharacter('dbo_yildirim_sultan_bayezid').GetName]'in esir düşmesiyle sonuçlanan bu trajik yenilgi, Osmanlı'yı 11 yıl sürecek olan Fetret Devri'ne sürüklemiş ve İstanbul'un fethini yaklaşık yarım asır geciktirmiştir."
+ dbo_yildirim_sultan_bayezid_historical_info_fetret_devri: "Kaderin Dönüşü: Yıldırım’ın Esareti ve Fetret’in Karanlığı\n1402 Ankara Savaşı’nın toz dumanı Çubuk Ovası üzerinde dağılırken, Osmanlı İmparatorluğu tarihinin en büyük varoluş sınavıyla karşı karşıya kalmıştır.\nSultan [GetCharacter('dbo_yildirim_sultan_bayezid').GetName]’in Emir Timur’un eline esir düşmesi, devletin kalbine inen ağır bir darbe olmuş ve merkezi otoriteyi tamamen felç ederek \"Cihan Hâkimiyeti\" ülküsünü büyük bir belirsizliğe sürüklemiştir.\nAnadolu beyliklerinin yeniden bağımsızlıklarını ilan etmesiyle topraklar paramparça olurken, Bayezid’in oğulları arasında on bir yıl sürecek kanlı bir taht kavgası ve iç savaş dönemi resmen başlamıştır.\nBabanın esareti, kardeşlerin rekabeti ve düşmanların artan iştahı arasında Osmanlı Devleti, küllerinden yeniden doğup doğmayacağının karar verileceği o karanlık \"Fetret Devri\" dehlizine girmiştir.\nŞimdi mülkün bekası, en dirayetli ve sarsılmaz iradeye sahip olan şehzadenin kılıcının ucundadır."
+# dbo_yildirim_sultan_bayezid Born
+ dbo_dhe_history.101.title: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName]\nDoğdu"
+ dbo_dhe_history.101.desc: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetBirthDate] yılında, Osmanlı İmparatorluğu'nun gelecekteki padişahı [GetCharacter('dbo_yildirim_sultan_bayezid').GetName] dünyaya geldi. Babası [GetCharacter('dbo_yildirim_sultan_bayezid').GetFather.GetName] izinden giderek, genç yaşta Devlet-i Aliyye'nin başına geçecektir!"
+ dbo_dhe_history.101.historical_info: "$dbo_yildirim_sultan_bayezid_historical_info_common$"
  dbo_dhe_history.101.a: "Bir yıldırım çaktı!"
-# Yildirim Bayezid Rise
- dbo_dhe_history.102.title: "[GetCharacter('dbo_yildirim_bayezid').GetName]\nYükseliş"
- dbo_dhe_history.102.desc: "[GetCharacter('dbo_yildirim_bayezid').GetName], [GetCharacter('dbo_yildirim_bayezid').GetAgeInYears] yaşına geldi ve artık Devlet-i Aliyye'nin başına geçecektir! Hiç bir güç engelleyemez."
- dbo_dhe_history.102.historical_info: "$dbo_yildirim_bayezid_historical_info_common$"
+# dbo_yildirim_sultan_bayezid Rise
+ dbo_dhe_history.102.title: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName]\nYükseliş"
+ dbo_dhe_history.102.desc: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName], [GetCharacter('dbo_yildirim_sultan_bayezid').GetAgeInYears] yaşına geldi ve artık Devlet-i Aliyye'nin başına geçecektir! Hiç bir güç engelleyemez."
+ dbo_dhe_history.102.historical_info: "$dbo_yildirim_sultan_bayezid_historical_info_common$"
  dbo_dhe_history.102.a: "Devlet-i Aliyye yükseliyor!"
-# Yildirim Bayezid Changelling to Anatolian Turks Union
- dbo_dhe_history.103.title: "[GetCharacter('dbo_yildirim_bayezid').GetName]\nAnadolu Topraklarına Meydan Okudu"
- dbo_dhe_history.103.desc: "1389 yılında, I. Murad'ın Kosova Savaşı'nda şehit düşmesinin ardından, Yıldırım Bayezid Osmanlı tahtına geçti. Genç yaşta tahta çıkmasına rağmen, kararlı liderliği ve askeri dehası sayesinde imparatorluğu genişletmeye devam etti. Anadolu'da beyliklere meydan okuyarak Osmanlı topraklarını genişletti."
- dbo_dhe_history.103.historical_info: "$dbo_yildirim_bayezid_historical_info_common$"
+# dbo_yildirim_sultan_bayezid Changelling to Anatolian Turks Union
+ dbo_dhe_history.103.title: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName]\nAnadolu Topraklarına Meydan Okudu"
+ dbo_dhe_history.103.desc: "1389 yılında, I. Murad'ın Kosova Savaşı'nda şehit düşmesinin ardından, [GetCharacter('dbo_yildirim_sultan_bayezid').GetName] Osmanlı tahtına geçti. Genç yaşta tahta çıkmasına rağmen, kararlı liderliği ve askeri dehası sayesinde imparatorluğu genişletmeye devam etti. Anadolu'da beyliklere meydan okuyarak Osmanlı topraklarını genişletti."
+ dbo_dhe_history.103.historical_info: "$dbo_yildirim_sultan_bayezid_historical_info_common$"
  dbo_dhe_history.103.a: "Çok Yaşa!"
-# Yildirim Bayezid Bad Dream
- dbo_dhe_history.104.title: "[GetCharacter('dbo_yildirim_bayezid').GetName]\nKâbusu"
- dbo_dhe_history.104.desc: "[GetCharacter('dbo_yildirim_bayezid').GetName], rüyasında Timur tarafından esir alınacağını görmüştü. Bu rüya, onun gelecekteki zorluklara karşı hazırlıklı olmasını sağladı."
- dbo_dhe_history.104.historical_info: "$dbo_yildirim_bayezid_historical_info_timur$"
+# dbo_yildirim_sultan_bayezid Bad Dream
+ dbo_dhe_history.104.title: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName]\nKâbusu"
+ dbo_dhe_history.104.desc: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName], rüyasında Timur tarafından esir alınacağını görmüştü. Bu rüya, onun gelecekteki zorluklara karşı hazırlıklı olmasını sağladı."
+ dbo_dhe_history.104.historical_info: "$dbo_yildirim_sultan_bayezid_historical_info_timur$"
  dbo_dhe_history.104.a: "Kâbuslar bazen gerçeğe dönüşür."
-# Yildirim Bayezid Nightmare
- dbo_dhe_history.105.title: "[GetCharacter('dbo_yildirim_bayezid').GetName]\nKâbusunu Yaşıyor"
- dbo_dhe_history.105.desc: "[GetCharacter('dbo_yildirim_bayezid').GetName], kâbusunda öleceğini görmüştü. Bu kâbus, onun gelecekteki zorluklara karşı hazırlıklı olmasını sağladı."
- dbo_dhe_history.105.historical_info: "$dbo_yildirim_bayezid_historical_info_timur$"
+# dbo_yildirim_sultan_bayezid Nightmare
+ dbo_dhe_history.105.title: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName]\nKâbusunu Yaşıyor"
+ dbo_dhe_history.105.desc: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName], kâbusunda öleceğini görmüştü. Bu kâbus, onun gelecekteki zorluklara karşı hazırlıklı olmasını sağladı."
+ dbo_dhe_history.105.historical_info: "$dbo_yildirim_sultan_bayezid_historical_info_timur$"
  dbo_dhe_history.105.a: "Kâbuslar bazen gerçeğe dönüşür."
-# Yildirim Bayezid Dead
- dbo_dhe_history.106.title: "[GetCharacter('dbo_yildirim_bayezid').GetName]\nÖlüm Döşeğinde"
- dbo_dhe_history.106.desc: "[GetCharacter('dbo_yildirim_bayezid').GetName] ölüm döşeğinde. Âlimler çaresizlik içinde deva aramakta..."
- dbo_dhe_history.106.historical_info: "$dbo_yildirim_bayezid_historical_info_fetret_devri$"
+# dbo_yildirim_sultan_bayezid Dead
+ dbo_dhe_history.106.title: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName]\nVefat Etti"
+ dbo_dhe_history.106.desc: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName] ölüm döşeğinde gözlerini yumdu. Âlimler çaresizlik içinde deva aradı ama..."
+ dbo_dhe_history.106.historical_info: "$dbo_yildirim_sultan_bayezid_historical_info_fetret_devri$"
  dbo_dhe_history.106.a: "Bazı kâbuslar gerçek olur!"
 # Interregnum Begin
  dbo_dhe_history.107.title: "Fetret Devri"    
- dbo_dhe_history.107.desc: "[GetCharacter('dbo_yildirim_bayezid').GetName] ölümünün ardından, Osmanlı İmparatorluğu karanlık bir döneme girmiştir. Oğulları arasında taht kavgası başlamış, devlet içinde kaos ve belirsizlik hüküm sürmüştür. Bu on bir yıllık dönem, Osmanlı tarihinin en kritik dönemidir."
- dbo_dhe_history.107.historical_info: "$dbo_yildirim_bayezid_historical_info_fetret_devri$"
+ dbo_dhe_history.107.desc: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName] ölümünün ardından, Osmanlı İmparatorluğu karanlık bir döneme girmiştir. Oğulları arasında taht kavgası başlamış, devlet içinde kaos ve belirsizlik hüküm sürmüştür. Bu on bir yıllık dönem, Osmanlı tarihinin en kritik dönemidir."
+ dbo_dhe_history.107.historical_info: "$dbo_yildirim_sultan_bayezid_historical_info_fetret_devri$"
  dbo_dhe_history.107.a: "Devlet-i Aliyye yeniden toparlanacak!"
  dbo_history_ottoman_interregnum_tt: "Tüm [rebel|e] [pops|e] [ShowNamedValue('pop_satisfaction_severe_penalty')|+=2%] [pop_satisfaction|e] kaybeder."
  dbo_history_ottoman_interregnum_rebel_tt: "Tüm [rebels|e] [ShowNamedValue('rebel_progress_severe_penalty')|-=2%] ilerler."
@@ -46,30 +46,40 @@
  dbo_dhe_history.108.historical_info: "1413 yılında Çamurlu Derbent Muharebesi ile kardeşlerini mağlup eden I. Mehmed (Çelebi), Osmanlı Devleti'nin ikinci kurucusu olarak kabul edilir. Fetret Devri'ni bitirerek Anadolu ve Rumeli'yi tekrar tek bir bayrak altında toplamış, devletin idari ve askeri yapısını hızla onarmıştır."
  dbo_dhe_history.108.a: "Devlet-i Aliyye yeniden tek vücut!"
  dbo_history_ottoman_interregnum_end_tt: "Tüm [pops|e] [ShowNamedValue('pop_satisfaction_severe_bonus')|+=2%] [pop_satisfaction|e] kazanır."
-# Fatih Sultan Mehmed
- dbo_fatih_sultan_mehmed_historical_info_common: "Fatih Sultan Mehmed, sadece bir fatih değil, aynı zamanda Doğu ve Batı kültürlerini şahsında birleştiren entelektüel bir deha ve modern Osmanlı İmparatorluğu'nun gerçek kurucusudur. 1453 yılında, henüz 21 yaşındayken 'aşılmaz' denilen Bizans surlarını devasa şahi toplarıyla yerle bir ederek İstanbul'u fethetmiş, bir çağı kapatıp yeni bir çağı açmıştır. Kendisini 'Kayser-i Rum' (Roma İmparatoru) ilan ederek Roma'nın mirasına sahip çıkmış, devlet teşkilatını Kanunname-i Âl-i Osman ile hukuki bir temele oturtmuştur. Karadeniz'i bir Türk gölü haline getiren, Balkanlar'da Osmanlı hakimiyetini perçinleyen ve Otranto seferiyle Roma'nın kapılarına dayanan Fatih, askeri başarılarının yanı sıra bilim, sanat ve felsefeye verdiği önemle imparatorluğu bir kültür merkezi haline getirmiştir."
-# Fatih Sultan Mehmed Born
- dbo_dhe_history.201.title: "Fatih Sultan Mehmed'in Doğumu"
+# dbo_fatih_sultan_mehmed
+ dbo_fatih_sultan_mehmed_historical_info_common: "[GetCharacter('dbo_fatih_sultan_mehmed').GetName], sadece bir fatih değil, aynı zamanda Doğu ve Batı kültürlerini şahsında birleştiren entelektüel bir deha ve modern Osmanlı İmparatorluğu'nun gerçek kurucusudur. 1453 yılında, henüz 21 yaşındayken 'aşılmaz' denilen Bizans surlarını devasa şahi toplarıyla yerle bir ederek İstanbul'u fethetmiş, bir çağı kapatıp yeni bir çağı açmıştır. Kendisini 'Kayser-i Rum' (Roma İmparatoru) ilan ederek Roma'nın mirasına sahip çıkmış, devlet teşkilatını Kanunname-i Âl-i Osman ile hukuki bir temele oturtmuştur. Karadeniz'i bir Türk gölü haline getiren, Balkanlar'da Osmanlı hakimiyetini perçinleyen ve Otranto seferiyle Roma'nın kapılarına dayanan Fatih, askeri başarılarının yanı sıra bilim, sanat ve felsefeye verdiği önemle imparatorluğu bir kültür merkezi haline getirmiştir."
+# dbo_fatih_sultan_mehmed Born
+ dbo_dhe_history.201.title: "[GetCharacter('dbo_fatih_sultan_mehmed').GetName]'in Doğumu"
  dbo_dhe_history.201.desc: "1432 yılında, Osmanlı İmparatorluğu'nun kaderini değiştirecek olan Şehzade Mehmed dünyaya geldi. Babası II. Murad'ın titiz eğitimi altında, hem kılıç kuşanmada hem de yedi dilde yetkinlik kazanarak cihan şümul bir hükümdar olarak yetişti."
  dbo_dhe_history.201.historical_info: "$dbo_fatih_sultan_mehmed_historical_info_common$"
  dbo_dhe_history.201.a: "Bir fatih doğdu!"
-# Fatih Sultan Mehmed Rise
- dbo_dhe_history.202.title: "Fatih Sultan Mehmed'in Yükselişi"
- dbo_dhe_history.202.desc: "1451 yılında, II. Murad'ın vefatının ardından, Fatih Sultan Mehmed Osmanlı tahtına geçti. Genç yaşta tahta çıkmasına rağmen, kararlı liderliği ve askeri dehası sayesinde imparatorluğu genişletmeye devam etti."
+# dbo_fatih_sultan_mehmed Rise
+ dbo_dhe_history.202.title: "[GetCharacter('dbo_fatih_sultan_mehmed').GetName]'in Yükselişi"
+ dbo_dhe_history.202.desc: "1451 yılında, II. Murad'ın vefatının ardından, [GetCharacter('dbo_fatih_sultan_mehmed').GetName] Osmanlı tahtına geçti. Genç yaşta tahta çıkmasına rağmen, kararlı liderliği ve askeri dehası sayesinde imparatorluğu genişletmeye devam etti."
  dbo_dhe_history.202.historical_info: "$dbo_fatih_sultan_mehmed_historical_info_common$"
- dbo_dhe_history.202.a: "Yeni padişahımız Fatih Sultan Mehmed!"
-# Fatih Sultan Mehmed Changelling to Conquest Rumelia
- dbo_dhe_history.203.title: "Fatih Sultan Mehmed ve Rumeli Fetihleri"
- dbo_dhe_history.203.desc: "İstanbul'un fethinden sonra gözünü Batı'ya diken Fatih Sultan Mehmed, Rumeli'deki hakimiyetini pekiştirmek için harekete geçti. Sırbistan, Mora, Eflak ve Bosna üzerine düzenlenen seferlerle Balkanlar'daki Osmanlı varlığı sarsılmaz bir hale getirildi."
+ dbo_dhe_history.202.a: "Yeni padişahımız [GetCharacter('dbo_fatih_sultan_mehmed').GetName]!"
+# dbo_fatih_sultan_mehmed Changelling to Conquest Rumelia
+ dbo_dhe_history.203.title: "[GetCharacter('dbo_fatih_sultan_mehmed').GetName] ve Rumeli Fetihleri"
+ dbo_dhe_history.203.desc: "İstanbul'un fethinden sonra gözünü Batı'ya diken [GetCharacter('dbo_fatih_sultan_mehmed').GetName], Rumeli'deki hakimiyetini pekiştirmek için harekete geçti. Sırbistan, Mora, Eflak ve Bosna üzerine düzenlenen seferlerle Balkanlar'daki Osmanlı varlığı sarsılmaz bir hale getirildi."
  dbo_dhe_history.203.historical_info: "Fatih'in Rumeli seferleri sadece toprak kazanımı değil, aynı zamanda Avrupa siyasetine doğrudan müdahale etme stratejisinin bir parçasıydı. Sırbistan'ın ilhakı, Mora Despotluğu'nun ortadan kaldırılması ve Bosna'nın fethi ile Adriyatik kıyılarına ulaşan Osmanlı, Venedik ve Papalık için en büyük tehdit haline gelmiştir. Bu fetihler, Osmanlı'nın Balkanlar'daki kalıcılığını asırlarca sürecek şekilde mühürlemiştir."
  dbo_dhe_history.203.a: "Hedef Rumeli!"
-# Fatih Sultan Mehmed Changelling to Conquest Blacksea
- dbo_dhe_history.204.title: "Fatih Sultan Mehmed ve Karadeniz Fetihleri"
- dbo_dhe_history.204.desc: "Karadeniz'i bir Türk gölü haline getirmeyi hedefleyen Fatih Sultan Mehmed, stratejik limanları ve ticaret yollarını ele geçirmek için büyük bir harekat başlattı. Amasra, Sinop ve Trabzon'un fethiyle Anadolu kıyılarında tam hakimiyet sağlarken, Kırım'ın ilhakıyla Karadeniz'in kuzeyini de imparatorluğa bağladı."
- dbo_dhe_history.204.historical_info: "Fatih Sultan Mehmed'in Karadeniz stratejisi, İpek Yolu'nun kuzey hattını kontrol altına almayı ve İstanbul'un iaşesini güvence altına almayı amaçlıyordu. 1461'de Trabzon Rum İmparatorluğu'nun fethiyle Bizans'ın son kalıntıları temizlenmiş, Kırım Hanlığı'nın Osmanlı himayesine girmesiyle Karadeniz tam anlamıyla bir Osmanlı iç denizi haline gelmiştir."
+# dbo_fatih_sultan_mehmed Changelling to Conquest Blacksea
+ dbo_dhe_history.204.title: "[GetCharacter('dbo_fatih_sultan_mehmed').GetName] ve Karadeniz Fetihleri"
+ dbo_dhe_history.204.desc: "Karadeniz'i bir Türk gölü haline getirmeyi hedefleyen [GetCharacter('dbo_fatih_sultan_mehmed').GetName], stratejik limanları ve ticaret yollarını ele geçirmek için büyük bir harekat başlattı. Amasra, Sinop ve Trabzon'un fethiyle Anadolu kıyılarında tam hakimiyet sağlarken, Kırım'ın ilhakıyla Karadeniz'in kuzeyini de imparatorluğa bağladı."
+ dbo_dhe_history.204.historical_info: "[GetCharacter('dbo_fatih_sultan_mehmed').GetName]'in Karadeniz stratejisi, İpek Yolu'nun kuzey hattını kontrol altına almayı ve İstanbul'un iaşesini güvence altına almayı amaçlıyordu. 1461'de Trabzon Rum İmparatorluğu'nun fethiyle Bizans'ın son kalıntıları temizlenmiş, Kırım Hanlığı'nın Osmanlı himayesine girmesiyle Karadeniz tam anlamıyla bir Osmanlı iç denizi haline gelmiştir."
  dbo_dhe_history.204.a: "Hedef Karadeniz!"
-# Fatih Sultan Mehmed Legal Code Kanunname-i Âl-i Osman
- dbo_dhe_history.205.title: "Kanunname-i Âl-i Osman"
- dbo_dhe_history.205.desc: "Fatih Sultan Mehmed, devletin bekası ve merkezi otoritenin güçlendirilmesi amacıyla Osmanlı hukuk sistemini sistematik bir yapıya kavuşturan Kanunname-i Âl-i Osman'ı yürürlüğe koydu. Bu kanunname ile devlet teşkilatı, protokol kuralları ve veraset sistemi hukuki bir zemine oturtuldu."
- dbo_dhe_history.205.historical_info: "Kanunname-i Âl-i Osman, Osmanlı Devleti'nin örfi hukukunu yazılı hale getiren ilk büyük kanun külliyatıdır. Fatih, bu düzenleme ile 'Nizam-ı Alem' (dünya düzeni) için kardeş katline izin vermiş, devletin bölünmez bütünlüğünü her şeyin üstünde tutmuştur. Ayrıca sadrazamlık makamının yetkilerini artırarak ve saray hiyerarşisini belirleyerek, Osmanlı'yı bir kabile devletinden cihanşümul bir imparatorluğa dönüştüren idari temelleri atmıştır."
+# dbo_fatih_sultan_mehmed Legal Code Kanunname-i Âl-i Osman
+ dbo_dhe_history.205.title: "[ShowPolicyName('dbo_destiny_legal_code_kanunname_i_al_i_osman_policy')]\n[Concept('policy', 'Politikası')|e]"
+ dbo_dhe_history.205.desc: "[GetCharacter('dbo_fatih_sultan_mehmed').GetName], devletin bekası ve merkezi otoritenin güçlendirilmesi amacıyla Osmanlı hukuk sistemini sistematik bir yapıya kavuşturan [ShowPolicyName('dbo_destiny_legal_code_kanunname_i_al_i_osman_policy')] [Concept('policy', 'Politikası')|e] yürürlüğe koydu. Bu kanunname ile devlet teşkilatı, protokol kuralları ve veraset sistemi hukuki bir zemine oturtuldu."
+ dbo_dhe_history.205.historical_info: "[ShowPolicyName('dbo_destiny_legal_code_kanunname_i_al_i_osman_policy')] [Concept('policy', 'Politikası')|e], Osmanlı Devleti'nin örfi hukukunu yazılı hale getiren ilk büyük kanun külliyatıdır. Fatih, bu düzenleme ile 'Nizam-ı Alem' (dünya düzeni) için kardeş katline izin vermiş, devletin bölünmez bütünlüğünü her şeyin üstünde tutmuştur. Ayrıca sadrazamlık makamının yetkilerini artırarak ve saray hiyerarşisini belirleyerek, Osmanlı'yı bir kabile devletinden cihanşümul bir imparatorluğa dönüştüren idari temelleri atmıştır."
  dbo_dhe_history.205.a: "Devletin bekası için!"
+# dbo_fatih_sultan_mehmed Die
+ dbo_dhe_history.206.title: "[GetCharacter('dbo_fatih_sultan_mehmed').GetName]'in Vefatı"
+ dbo_dhe_history.206.desc: "'Ebu'l-Feth' (Fetihlerin Babası) [GetCharacter('dbo_fatih_sultan_mehmed').GetName] hayata gözlerini yumdu. Ölümü, hem Doğu'da hem Batı'da büyük bir yankı uyandırdı."
+ dbo_dhe_history.206.historical_info: "3 Mayıs 1481'de, yeni bir sefere çıkmak üzereyken Gebze yakınlarındaki Hünkar Çayırı'nda 'Ebu'l-Feth' (Fetihlerin Babası) [GetCharacter('dbo_fatih_sultan_mehmed').GetName] hayata gözlerini yumdu. Ölümü, hem Doğu'da hem Batı'da büyük bir yankı uyandırdı. Fatih'in ölümüyle Avrupa'da kiliseler çan çalarak 'Büyük Kartal Öldü!' nidalarıyla kutlamalar yapmış olsa da, o geride sarsılmaz bir imparatorluk, modern bir ordu ve köklü bir idari yapı bırakmıştır. Naaşı, kendi yaptırdığı Fatih Camii'ndeki türbesine defnedilmiştir."
+ dbo_dhe_history.206.a: "Bir devir kapandı."
+# Yavuz Sultan Selim Born
+ dbo_dhe_history.301.title: "[GetCharacter('dbo_yavuz_sultan_selim').GetName]'in Doğumu"
+ dbo_dhe_history.301.desc: "1470 yılında Amasya'da, Osmanlı tarihinin en sert ve kararlı hükümdarlarından biri olacak olan Şehzade Selim dünyaya geldi. Babası II. Bayezid'in döneminde yetişen Selim, genç yaşlarından itibaren askeri yeteneği ve devlet yönetimine olan ilgisiyle dikkatleri üzerine çekti."
+ dbo_dhe_history.301.historical_info: "[GetCharacter('dbo_yavuz_sultan_selim').GetName], Osmanlı İmparatorluğu'nun 9. padişahı ve 88. İslam halifesidir. 'Yavuz' lakabını kararlılığı, cesareti ve sert mizacı sayesinde almıştır. Hükümdarlığı süresince rotasını Doğu'ya çevirerek Safevi ve Memlük tehlikelerini bertaraf etmiş, imparatorluk topraklarını sekiz yıl gibi kısa bir sürede iki buçuk katına çıkararak Osmanlı'yı İslam dünyasının lideri konumuna taşımıştır."
+ dbo_dhe_history.301.a: "Yavuz bir aslan doğuyor!"
