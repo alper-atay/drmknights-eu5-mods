@@ -1,0 +1,16 @@
+﻿l_turkish:
+ dbo_yildirim_sultan_bayezid_historical_info_interregnum: "Kaderin Dönüşü: Yıldırım’ın Esareti ve Fetret’in Karanlığı\n1402 Ankara Savaşı’nın toz dumanı Çubuk Ovası üzerinde dağılırken, Osmanlı İmparatorluğu tarihinin en büyük varoluş sınavıyla karşı karşıya kalmıştır.\nSultan [GetCharacter('dbo_yildirim_sultan_bayezid').GetName]’in Emir Timur’un eline esir düşmesi, devletin kalbine inen ağır bir darbe olmuş ve merkezi otoriteyi tamamen felç ederek 'Cihan Hâkimiyeti' ülküsünü büyük bir belirsizliğe sürüklemiştir.\nAnadolu beyliklerinin yeniden bağımsızlıklarını ilan etmesiyle topraklar paramparça olurken, Bayezid’in oğulları arasında on bir yıl sürecek kanlı bir taht kavgası ve iç savaş dönemi resmen başlamıştır.\nBabanın esareti, kardeşlerin rekabeti ve düşmanların artan iştahı arasında Osmanlı Devleti, küllerinden yeniden doğup doğmayacağının karar verileceği o karanlık 'Fetret Devri' dehlizine girmiştir.\nŞimdi mülkün bekası, en dirayetli ve sarsılmaz iradeye sahip olan şehzadenin kılıcının ucundadır."
+ dbo_yildirim_sultan_bayezid_historical_info_interregnum_end: "Fetret Devri'nin Sonu: Devletin Yeniden Doğuşu\n1402'den 1413'e kadar süren ve Osmanlı Devleti'ni uçurumun kenarına getiren kardeşler arası taht kavgaları, Çelebi Mehmed'in rakiplerini tek tek saf dışı bırakmasıyla nihayete ermiştir.\nAnadolu'da ve Rumeli'de sarsılan otoriteyi yeniden tesis eden I. Mehmed, parçalanmış beylikleri ve eyaletleri tekrar merkezi yönetime bağlayarak devletin 'ikinci kurucusu' unvanını hak etmiştir.\nBu zorlu süreçten sağ çıkan Osmanlı, sadece topraklarını geri kazanmakla kalmamış, aynı zamanda iç sarsıntılara karşı ne kadar dirençli olduğunu tüm dünyaya kanıtlayarak cihan devleti olma yolundaki yürüyüşüne kaldığı yerden devam etmiştir."
+ # Interregnum Begin
+ dbo_dhe_history_ottoman.101.title: "Fetret Devri"    
+ dbo_dhe_history_ottoman.101.desc: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName] ölümünün ardından, Osmanlı İmparatorluğu karanlık bir döneme girmiştir. Oğulları arasında taht kavgası başlamış, devlet içinde kaos ve belirsizlik hüküm sürmüştür. Bu on bir yıllık dönem, Osmanlı tarihinin en kritik dönemidir."
+ dbo_dhe_history_ottoman.101.historical_info: "$dbo_yildirim_sultan_bayezid_historical_info_interregnum$"
+ dbo_dhe_history_ottoman.101.a: "Devlet-i Aliyye yeniden toparlanacak!"
+ dbo_history_ottoman_interregnum_tt: "Tüm [rebel|e] [pops|e] [ShowNamedValue('pop_satisfaction_severe_penalty')|+=2%] [pop_satisfaction|e] kaybeder."
+ dbo_history_ottoman_interregnum_rebel_tt: "Tüm [rebels|e] [ShowNamedValue('rebel_progress_severe_penalty')|-=2%] ilerler."
+# Interregnum End
+ dbo_dhe_history_ottoman.102.title: "Fetret Devri Sona Erdi"
+ dbo_dhe_history_ottoman.102.desc: "On bir yıl süren kaos, kardeş kavgası ve belirsizliğin ardından, [GetCountry('TUR').GetGovernment.GetRuler.GetName] rakiplerini bertaraf ederek Osmanlı tahtına tek başına sahip oldu. Devlet-i Aliyye, parçalanmanın eşiğinden dönerek yeniden birleşti ve sarsılan otorite yeniden tesis edildi."
+ dbo_dhe_history_ottoman.102.historical_info: "$dbo_yildirim_sultan_bayezid_historical_info_interregnum_end$"
+ dbo_dhe_history_ottoman.102.a: "Devlet-i Aliyye yeniden tek vücut!"
+ dbo_history_ottoman_interregnum_end_tt: "Tüm [pops|e] [ShowNamedValue('pop_satisfaction_severe_bonus')|+=2%] [pop_satisfaction|e] kazanır."

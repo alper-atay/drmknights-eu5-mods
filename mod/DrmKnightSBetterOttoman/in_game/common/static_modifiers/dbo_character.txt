@@ -3,16 +3,24 @@ dbo_character_yildirim_sultan_bayezid = {
 		category = character
 	}
 	force_allow_as_leader = yes
-	auto_conquer_at_war = yes
 	character_life_expectancy = 20
 }
 
-dbo_yss_ideal_of_world_domination = {
+dbo_character_fatih_sultan_mehmed = {
+	game_data = {
+		category = character
+	}
+	force_allow_as_leader = yes
+	character_life_expectancy = 20
+}
+
+dbo_character_yavuz_sultan_selim = {
 	game_data = {
 		category = character
 	}
 	force_allow_as_leader = yes
 	auto_conquer_at_war = yes
+	character_life_expectancy = 20
 	max_war_exhaustion = -5
 	aggressiveness_modifier = 1
 }

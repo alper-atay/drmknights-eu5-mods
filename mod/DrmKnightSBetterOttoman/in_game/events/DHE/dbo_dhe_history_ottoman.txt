@@ -1,0 +1,103 @@
+﻿namespace = dbo_dhe_history_ottoman
+# Ottoman Interregnum Begin
+dbo_dhe_history_ottoman.101 = {
+	type = country_event
+	title = dbo_dhe_history_ottoman.101.title
+	desc = dbo_dhe_history_ottoman.101.desc
+	historical_info = dbo_dhe_history_ottoman.101.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_ottoman_interregnum_begin.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1400.1.1
+		to = 1430.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		exists = character:dbo_yildirim_sultan_bayezid
+		character:dbo_yildirim_sultan_bayezid = {
+			is_alive = no
+		}
+		any_character = {
+			father = character:dbo_yildirim_sultan_bayezid
+			is_female = no
+			is_adult = yes
+			count > 1
+		}
+	}
+	option = {
+		name = dbo_dhe_history_ottoman.101.a
+		historical_option = yes
+		dbo_event_extreme_penalty = yes
+		add_country_modifier = {
+			modifier = dbo_ottoman_interregnum
+			years = 11
+			mode = add_and_extend
+		}
+		custom_tooltip = {
+			text = dbo_history_ottoman_interregnum_rebel_tt
+			every_rebel = {
+				add_rebel_progress = rebel_progress_severe_penalty
+			}
+		}
+		custom_tooltip = {
+			text = dbo_history_ottoman_interregnum_tt
+			every_pop = {
+				limit = {
+					owner = root
+				}
+				add_pop_satisfaction = pop_satisfaction_severe_penalty
+			}
+		}
+		set_variable = {
+			name = dbo_ottoman_interregnum_end_year
+			value = {
+				value = current_year
+				add = 11
+			}
+		}
+	}
+}
+
+# Ottoman Interregnum End
+dbo_dhe_history_ottoman.102 = {
+	type = country_event
+	title = dbo_dhe_history_ottoman.102.title
+	desc = dbo_dhe_history_ottoman.102.desc
+	historical_info = dbo_dhe_history_ottoman.102.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_ottoman_interregnum_end.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1400.1.1
+		to = 1450.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		in_civil_war = no
+		has_variable = dbo_ottoman_interregnum_end_year
+		current_year > var:dbo_ottoman_interregnum_end_year
+		NOT = {
+			has_country_modifier = dbo_ottoman_interregnum
+		}
+	}
+	option = {
+		name = dbo_dhe_history_ottoman.102.a
+		historical_option = yes
+		dbo_event_extreme_bonus = yes
+		add_country_modifier = {
+			modifier = dbo_ottoman_interregnum_recovery
+			years = 11
+			mode = add_and_extend
+		}
+		custom_tooltip = {
+			text = dbo_history_ottoman_interregnum_end_tt
+			every_pop = {
+				limit = {
+					owner = root
+				}
+				add_pop_satisfaction = pop_satisfaction_severe_bonus
+			}
+		}
+	}
+}
