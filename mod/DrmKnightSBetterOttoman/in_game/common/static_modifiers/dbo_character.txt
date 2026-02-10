@@ -1,4 +1,4 @@
-dbo_character_yildirim_sultan_bayezid = {
+﻿dbo_character_yildirim_sultan_bayezid = {
 	game_data = {
 		category = character
 	}
@@ -21,6 +21,16 @@ dbo_character_yavuz_sultan_selim = {
 	force_allow_as_leader = yes
 	auto_conquer_at_war = yes
 	character_life_expectancy = 20
+	max_war_exhaustion = -5
+	aggressiveness_modifier = 1
+}
+
+dbo_character_kanuni_sultan_suleiman = {
+	game_data = {
+		category = character
+	}
+	force_allow_as_leader = yes
+	character_life_expectancy = 40
 	max_war_exhaustion = -5
 	aggressiveness_modifier = 1
 }

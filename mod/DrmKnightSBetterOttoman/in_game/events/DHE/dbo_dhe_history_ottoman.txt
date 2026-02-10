@@ -9,8 +9,8 @@ dbo_dhe_history_ottoman.101 = {
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
-		from = 1400.1.1
-		to = 1430.1.1
+		from = 1354.1.1
+		to = 9999.1.1
 		monthly_chance = 100
 	}
 	trigger = {
@@ -53,7 +53,7 @@ dbo_dhe_history_ottoman.101 = {
 			name = dbo_ottoman_interregnum_end_year
 			value = {
 				value = current_year
-				add = 11
+				add = 10
 			}
 		}
 	}
@@ -69,8 +69,8 @@ dbo_dhe_history_ottoman.102 = {
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
-		from = 1400.1.1
-		to = 1450.1.1
+		from = 1354.1.1
+		to = 9999.1.1
 		monthly_chance = 100
 	}
 	trigger = {

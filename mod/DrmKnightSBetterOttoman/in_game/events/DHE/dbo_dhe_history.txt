@@ -10,28 +10,92 @@ dbo_dhe_history.101 = {
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
-		from = 1350.1.1
+		from = 1354.1.1
 		to = 1360.1.1
 		monthly_chance = 100
 	}
 	trigger = {
-		has_ruler = yes
-		ruler = {
-			is_adult = yes
+		OR = {
+			AND = {
+				has_ruler = yes
+				ruler = {
+					is_adult = yes
+					father = character:tur_orhan
+				}
+			}
+			AND = {
+				has_heir = yes
+				heir = {
+					is_adult = yes
+					father = character:tur_orhan
+				}
+			}
+			any_character = {
+				father = character:tur_orhan
+				is_female = no
+				is_adult = yes
+			}
 		}
 	}
 	immediate = {
+		if = {
+			limit = {
+				has_ruler = yes
+				ruler = {
+					father = character:tur_orhan
+				}
+			}
+			ruler = {
+				save_temporary_scope_as = target_father
+			}
+		}
+		else_if = {
+			limit = {
+				has_heir = yes
+				heir = {
+					father = character:tur_orhan
+				}
+			}
+			heir = {
+				save_temporary_scope_as = target_father
+			}
+		}
+		else = {
+			create_character = {
+				first_name = name_murad
+				father = tur_orhan
+				birth_location = root.capital
+				age = {
+					min = 16
+					max = 30
+				}
+				culture = root.culture
+				religion = root.religion
+				fertility = 100
+				adm = {
+					60
+					80
+				}
+				dip = {
+					60
+					80
+				}
+				mil = {
+					60
+					80
+				}
+				save_temporary_scope_as = target_father
+			}
+		}
 		create_character = {
 			first_name = Bayezid
 			nickname = nick_Yildirim
-			dynasty = root.ruler.dynasty
-			father = root.ruler
+			father = target_father
 			birth_location = root.capital
 			age = 0
-			culture = root.ruler.culture
-			religion = root.ruler.religion
+			culture = root.culture
+			religion = root.religion
 			fertility = 100
-			no_stats = yes
 			add_trait = trait:child_prodigy
 			script = dbo_yildirim_sultan_bayezid
 		}
@@ -57,8 +121,8 @@ dbo_dhe_history.102 = {
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
-		from = 1360.1.1
-		to = 1370.1.1
+		from = 1354.1.1
+		to = 1380.1.1
 		monthly_chance = 100
 	}
 	trigger = {
@@ -76,6 +140,7 @@ dbo_dhe_history.102 = {
 				remove_traits_of_category = ruler
 				remove_traits_of_category = general
 			}
+			add_trait = trait:drunkard
 			add_trait = trait:bold_fighter
 			add_trait = trait:conqueror
 			add_trait = trait:hussar_commander
@@ -93,16 +158,16 @@ dbo_dhe_history.103 = {
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
-		from = 1370.1.1
+		from = 1354.1.1
 		to = 1380.1.1
 		monthly_chance = 100
 	}
 	trigger = {
-		has_ruler = yes
 		exists = character:dbo_yildirim_sultan_bayezid
 		character:dbo_yildirim_sultan_bayezid = {
 			is_alive = yes
 			is_adult = yes
+			character_age > 19
 		}
 	}
 	option = {
@@ -130,7 +195,7 @@ dbo_dhe_history.104 = {
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1380.1.1
-		to = 1390.1.1
+		to = 1400.1.1
 		monthly_chance = 100
 	}
 	trigger = {
@@ -157,9 +222,9 @@ dbo_dhe_history.105 = {
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
-		from = 1390.1.1
+		from = 1400.1.1
 		to = 1410.1.1
-		monthly_chance = 10
+		monthly_chance = 20
 	}
 	trigger = {
 		at_war = no
@@ -196,8 +261,8 @@ dbo_dhe_history.106 = {
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1400.1.1
-		to = 1420.1.1
-		monthly_chance = 10
+		to = 1410.1.1
+		monthly_chance = 20
 	}
 	trigger = {
 		at_war = no
@@ -236,8 +301,8 @@ dbo_dhe_history.107 = {
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1400.1.1
-		to = 1420.1.1
-		monthly_chance = 10
+		to = 1410.1.1
+		monthly_chance = 20
 	}
 	trigger = {
 		at_war = no
@@ -290,13 +355,11 @@ dbo_dhe_history.201 = {
 		create_character = {
 			first_name = name_muhammad
 			nickname = nick_the_conquerer
-			dynasty = dynasty:ottomans_dynasty
 			father = root.ruler
 			birth_location = root.capital
 			age = 0
-			culture = culture:turkish_culture
-			religion = religion:sunni
-			no_stats = yes
+			culture = root.culture
+			religion = root.religion
 			add_trait = trait:child_prodigy
 			script = dbo_fatih_sultan_mehmed
 		}
@@ -379,11 +442,11 @@ dbo_dhe_history.203 = {
 		historical_option = yes
 		if = {
 			limit = {
-				character:dbo_yildirim_sultan_bayezid = {
+				character:dbo_fatih_sultan_mehmed = {
 					is_ruler = no
 				}
 			}
-			set_new_ruler = character:dbo_yildirim_sultan_bayezid
+			set_new_ruler = character:dbo_fatih_sultan_mehmed
 		}
 		# dbo_fatih_sultan_mehmed and Orban Events
 		custom_tooltip = {
@@ -610,14 +673,12 @@ dbo_dhe_history.301 = {
 		create_character = {
 			first_name = Selim
 			nickname = nick_Yavuz
-			dynasty = root.ruler.dynasty
 			father = scope:target_father
 			birth_location = root.capital
 			age = 0
-			culture = root.ruler.culture
-			religion = root.ruler.religion
+			culture = root.culture
+			religion = root.religion
 			fertility = 100
-			no_stats = yes
 			add_trait = trait:child_prodigy
 			script = dbo_yavuz_sultan_selim
 		}
@@ -785,5 +846,51 @@ dbo_dhe_history.306 = {
 		name = dbo_dhe_history.306.a
 		historical_option = yes
 		set_variable = dbo_conquest_nile_river_challenged
+	}
+}
+
+# dbo_kanuni_sultan_suleiman born
+dbo_dhe_history.401 = {
+	type = country_event
+	title = dbo_dhe_history.401.title
+	desc = dbo_dhe_history.401.desc
+	historical_info = dbo_dhe_history.401.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_kanuni_sultan_suleiman_born.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1494.1.1
+		to = 1500.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		has_ruler = yes
+		ruler = {
+			is_adult = yes
+		}
+		ruler = character:dbo_yavuz_sultan_selim
+	}
+	immediate = {
+		create_character = {
+			first_name = name_salomon
+			nickname = nick_lawgiver
+			father = character:dbo_yavuz_sultan_selim
+			birth_location = root.capital
+			age = 0
+			culture = root.culture
+			religion = root.religion
+			fertility = 100
+			add_trait = trait:child_prodigy
+			script = dbo_kanuni_sultan_suleiman
+		}
+		add_character_modifier = {
+			modifier = dbo_character_kanuni_sultan_suleiman
+			years = modifier_duration_permanent
+			mode = add_and_extend
+		}
+	}
+	option = {
+		name = dbo_dhe_history.401.a
+		historical_option = yes
 	}
 }
