@@ -1,0 +1,48 @@
+﻿scripted_effect
+dbo_add_scaling_character_abilities = {
+	if = {
+		limit = {
+			NOT = {
+				adm = 100
+			}
+		}
+		add_adm = {
+			value = {
+				add = 100
+				subtract = adm
+				divide = 5
+				ceiling = yes
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				dip = 100
+			}
+		}
+		add_dip = {
+			value = {
+				add = 100
+				subtract = dip
+				divide = 5
+				ceiling = yes
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				mil = 100
+			}
+		}
+		add_mil = {
+			value = {
+				add = 100
+				subtract = mil
+				divide = 5
+				ceiling = yes
+			}
+		}
+	}
+}

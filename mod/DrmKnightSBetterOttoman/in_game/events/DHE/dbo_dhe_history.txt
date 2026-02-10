@@ -140,10 +140,10 @@ dbo_dhe_history.102 = {
 				remove_traits_of_category = ruler
 				remove_traits_of_category = general
 			}
-			add_trait = trait:drunkard
 			add_trait = trait:bold_fighter
 			add_trait = trait:conqueror
 			add_trait = trait:hussar_commander
+			dbo_add_scaling_character_abilities = yes
 		}
 	}
 }
@@ -407,10 +407,10 @@ dbo_dhe_history.202 = {
 				remove_traits_of_category = ruler
 				remove_traits_of_category = general
 			}
-			add_trait = trait:scholar
 			add_trait = trait:free_thinker
 			add_trait = trait:conqueror
 			add_trait = trait:military_theorist
+			dbo_add_scaling_character_abilities = yes
 		}
 	}
 }
@@ -599,7 +599,7 @@ dbo_dhe_history.301 = {
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1470.1.1
-		to = 1480.1.1
+		to = 9999.1.1
 		monthly_chance = 100
 	}
 	trigger = {
@@ -704,8 +704,8 @@ dbo_dhe_history.302 = {
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
-		from = 1490.1.1
-		to = 1510.1.1
+		from = 1470.1.1
+		to = 9999.1.1
 		monthly_chance = 100
 	}
 	trigger = {
@@ -723,10 +723,10 @@ dbo_dhe_history.302 = {
 				remove_traits_of_category = ruler
 				remove_traits_of_category = general
 			}
-			add_trait = trait:conqueror
 			add_trait = trait:tactical_genius
 			add_trait = trait:conqueror
 			add_trait = trait:military_theorist
+			dbo_add_scaling_character_abilities = yes
 		}
 	}
 }
@@ -741,8 +741,8 @@ dbo_dhe_history.303 = {
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
-		from = 1510.1.1
-		to = 1520.1.1
+		from = 1512.1.1
+		to = 9999.1.1
 		monthly_chance = 100
 	}
 	trigger = {
@@ -777,8 +777,8 @@ dbo_dhe_history.304 = {
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
-		from = 1510.1.1
-		to = 1520.1.1
+		from = 1470.1.1
+		to = 9999.1.1
 		monthly_chance = 20
 	}
 	trigger = {
@@ -804,8 +804,8 @@ dbo_dhe_history.305 = {
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
-		from = 1510.1.1
-		to = 1520.1.1
+		from = 1470.1.1
+		to = 9999.1.1
 		monthly_chance = 20
 	}
 	trigger = {
@@ -831,8 +831,8 @@ dbo_dhe_history.306 = {
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
-		from = 1510.1.1
-		to = 1520.1.1
+		from = 1470.1.1
+		to = 9999.1.1
 		monthly_chance = 20
 	}
 	trigger = {
@@ -860,7 +860,7 @@ dbo_dhe_history.401 = {
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1494.1.1
-		to = 1500.1.1
+		to = 9999.1.1
 		monthly_chance = 100
 	}
 	trigger = {
@@ -892,5 +892,81 @@ dbo_dhe_history.401 = {
 	option = {
 		name = dbo_dhe_history.401.a
 		historical_option = yes
+	}
+}
+
+# dbo_kanuni_sultan_suleiman rise
+dbo_dhe_history.402 = {
+	type = country_event
+	title = dbo_dhe_history.402.title
+	desc = dbo_dhe_history.402.desc
+	historical_info = dbo_dhe_history.402.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_kanuni_sultan_suleiman_rise.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1494.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		exists = character:dbo_kanuni_sultan_suleiman
+		character:dbo_kanuni_sultan_suleiman = {
+			is_alive = yes
+			is_adult = yes
+		}
+	}
+	option = {
+		name = dbo_dhe_history.402.a
+		historical_option = yes
+		character:dbo_kanuni_sultan_suleiman = {
+			hidden_effect = {
+				remove_traits_of_category = ruler
+				remove_traits_of_category = general
+			}
+			add_trait = trait:lawgiver
+			add_trait = trait:conqueror
+			add_trait = trait:strategist
+			dbo_add_scaling_character_abilities = yes
+		}
+	}
+}
+
+# dbo_kanuni_sultan_suleiman ascend
+dbo_dhe_history.403 = {
+	type = country_event
+	title = dbo_dhe_history.403.title
+	desc = dbo_dhe_history.403.desc
+	historical_info = dbo_dhe_history.403.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_kanuni_sultan_suleiman_ascend.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1512.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		exists = character:dbo_yavuz_sultan_selim
+		character:dbo_yavuz_sultan_selim = {
+			is_alive = no
+		}
+		exists = character:dbo_kanuni_sultan_suleiman
+		character:dbo_kanuni_sultan_suleiman = {
+			is_alive = yes
+			is_adult = yes
+		}
+	}
+	option = {
+		name = dbo_dhe_history.403.a
+		historical_option = yes
+		if = {
+			limit = {
+				character:dbo_yavuz_sultan_selim = {
+					is_ruler = no
+				}
+			}
+			set_new_ruler = character:dbo_kanuni_sultan_suleiman
+		}
 	}
 }

@@ -9,3 +9,5 @@
  STATIC_MODIFIER_DESC_dbo_character_fatih_sultan_mehmed: "İstanbul'u fethederek bir çağı kapatıp yeni bir çağ açan, Roma İmparatorluğu'nun varisi olma iddiasıyla devleti cihanşümul bir imparatorluğa dönüştüren, bilim ve sanata önem veren büyük hükümdarın vizyonu."
  STATIC_MODIFIER_NAME_dbo_character_yavuz_sultan_selim: "[GetCharacter('dbo_yavuz_sultan_selim').GetName]'in $dbo_situation$"
  STATIC_MODIFIER_DESC_dbo_character_yavuz_sultan_selim: "Yavuz Sultan Selim'in sekiz yıllık kısa saltanatına sığdırdığı devasa fetihlerle, İslam dünyasını tek bir sancak altında toplama ve Osmanlı'yı mutlak bir küresel güç haline getirme vizyonu."
+ STATIC_MODIFIER_NAME_dbo_character_kanuni_sultan_suleiman: "[GetCharacter('dbo_kanuni_sultan_suleiman').GetName]'in $dbo_situation$"
+ STATIC_MODIFIER_DESC_dbo_character_kanuni_sultan_suleiman: "Osmanlı İmparatorluğu'nun en uzun süre tahtta kalan hükümdarı olan Kanuni Sultan Süleyman'ın, devleti askeri, hukuki ve kültürel açıdan zirveye taşıdığı, Avrupa içlerinden Hint Okyanusu'na kadar uzanan cihan hakimiyeti vizyonu."

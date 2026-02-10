@@ -115,3 +115,18 @@
  dbo_dhe_history.306.desc: "Kahire'nin düşüşüyle birlikte [GetCharacter('dbo_yavuz_sultan_selim').GetName], Nil Nehri'nin ve Mısır'ın kadim zenginliklerinin mutlak hakimi oldu. Memlük Sultanlığı tarihe karışırken, halifelik unvanı ve kutsal emanetler Osmanlı hanedanına geçti. Artık Selim Han, sadece bir padişah değil, tüm Müslümanların lideridir."
  dbo_dhe_history.306.historical_info: "Ridaniye Zaferi'nin ardından Mısır'a giren Yavuz Sultan Selim, bölgedeki Memlük direnişini tamamen kırmıştır. Nil Nehri üzerindeki ticaret yollarının kontrolünü ele geçirmesi, Osmanlı hazinesini tarihin en yüksek seviyesine ulaştırmıştır. Bu zaferle birlikte Venedikliler, Kıbrıs için Memlüklere ödedikleri vergiyi artık Osmanlılara ödemeye başlamış ve Doğu Akdeniz bir Türk gölü haline gelmiştir."
  dbo_dhe_history.306.a: "Hâdimü'l-Haremeyn!"
+# dbo_kanuni_sultan_suleiman born
+ dbo_dhe_history.401.title: "[GetCharacter('dbo_kanuni_sultan_suleiman').GetName]'in\n$dbo_history_common_born$"
+ dbo_dhe_history.401.desc: "1494 yılında Trabzon'da, cihanın 'Muhteşem' olarak tanıyacağı, adaletiyle 'Kanuni' unvanını alacak olan Şehzade Süleyman dünyaya geldi. Babası [GetCharacter('dbo_yavuz_sultan_selim').GetName]'in sert ve disiplinli yönetiminde yetişen Süleyman, Osmanlı'nın en parlak döneminin mimarı olacaktır."
+ dbo_dhe_history.401.historical_info: "[GetCharacter('dbo_kanuni_sultan_suleiman').GetName], Osmanlı İmparatorluğu'nun onuncu padişahı ve en uzun süre tahtta kalan hükümdarıdır. Batı'da 'Muhteşem', Doğu'da ise devlet yapısını hukuki temellere oturtması nedeniyle 'Kanuni' olarak anılır. Saltanatı boyunca imparatorluk hem askeri hem de kültürel ve ekonomik olarak zirve noktasına ulaşmıştır."
+ dbo_dhe_history.401.a: "Cihanın sultanı doğdu!"
+# dbo_kanuni_sultan_suleiman rise
+ dbo_dhe_history.402.title: "[GetCharacter('dbo_kanuni_sultan_suleiman').GetName]'in Yükselişi"
+ dbo_dhe_history.402.desc: "[GetCharacter('dbo_kanuni_sultan_suleiman').GetName], [GetCharacter('dbo_kanuni_sultan_suleiman').GetAgeInYears] yaşına geldi ve artık Devlet-i Aliyye'nin başına geçecektir! Hiç bir güç engelleyemez."
+ dbo_dhe_history.402.historical_info: "[GetCharacter('dbo_kanuni_sultan_suleiman').GetName], Manisa sancakbeyliği döneminde devlet idaresini ve askeri stratejileri bizzat tecrübe ederek tahta hazırlanmıştır. Babası Yavuz Sultan Selim'in vefatıyla rakipsiz bir şekilde tahta çıkan Süleyman, saltanatının ilk yıllarında Belgrad ve Rodos gibi stratejik noktaları fethederek Avrupa'nın içlerine doğru uzanacak olan muazzam fetihlerin işaretini vermiştir."
+ dbo_dhe_history.402.a: "$dbo_history_common_rise_option$"
+# dbo_kanuni_sultan_suleiman ascend
+ dbo_dhe_history.403.title: "[GetCharacter('dbo_kanuni_sultan_suleiman').GetName]'in\n$dbo_history_common_ascend$"
+ dbo_dhe_history.403.desc: "[GetCharacter('dbo_kanuni_sultan_suleiman').GetName], [GetCharacter('dbo_kanuni_sultan_suleiman').GetAgeInYears] yaşına geldi ve artık Devlet-i Aliyye'nin başına geçecektir! Hiç bir güç engelleyemez."
+ dbo_dhe_history.403.historical_info: "[GetCharacter('dbo_kanuni_sultan_suleiman').GetName], 1520 yılında babası Yavuz Sultan Selim'in vefatı üzerine Osmanlı tahtına rakipsiz bir şekilde oturmuştur. Saltanatının ilk yıllarında Belgrad ve Rodos'u fethederek Avrupa'ya Osmanlı'nın yeni gücünü ilan etmiş, adaleti ve kanunlarıyla imparatorluğun altın çağını başlatmıştır."
+ dbo_dhe_history.403.a: "$dbo_history_common_ascend_option$"
