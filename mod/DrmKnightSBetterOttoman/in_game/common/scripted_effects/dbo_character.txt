@@ -1,5 +1,4 @@
-﻿scripted_effect
-dbo_add_scaling_character_abilities = {
+﻿dbo_add_scaling_character_abilities = {
 	if = {
 		limit = {
 			NOT = {
@@ -10,7 +9,7 @@ dbo_add_scaling_character_abilities = {
 			value = {
 				add = 100
 				subtract = adm
-				divide = 5
+				divide = 2
 				ceiling = yes
 			}
 		}
@@ -25,7 +24,7 @@ dbo_add_scaling_character_abilities = {
 			value = {
 				add = 100
 				subtract = dip
-				divide = 5
+				divide = 2
 				ceiling = yes
 			}
 		}
@@ -40,7 +39,7 @@ dbo_add_scaling_character_abilities = {
 			value = {
 				add = 100
 				subtract = mil
-				divide = 5
+				divide = 2
 				ceiling = yes
 			}
 		}

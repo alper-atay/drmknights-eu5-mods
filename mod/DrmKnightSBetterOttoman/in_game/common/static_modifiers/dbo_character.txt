@@ -3,6 +3,7 @@
 		category = character
 	}
 	force_allow_as_leader = yes
+	auto_conquer_at_war = yes
 	character_life_expectancy = 20
 }
 
@@ -11,6 +12,7 @@ dbo_character_fatih_sultan_mehmed = {
 		category = character
 	}
 	force_allow_as_leader = yes
+	auto_conquer_at_war = yes
 	character_life_expectancy = 20
 }
 
@@ -30,6 +32,7 @@ dbo_character_kanuni_sultan_suleiman = {
 		category = character
 	}
 	force_allow_as_leader = yes
+	auto_conquer_at_war = yes
 	character_life_expectancy = 40
 	max_war_exhaustion = -5
 	aggressiveness_modifier = 1

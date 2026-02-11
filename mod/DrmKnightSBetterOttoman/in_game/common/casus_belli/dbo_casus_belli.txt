@@ -26,6 +26,9 @@
 		}
 	}
 	war_goal_type = dbo_conquest_rise_of_the_ottomans
+	province = {
+		always = yes
+	}
 	ai_selection_desire = 1000
 	ai_subjugation_desire = -100
 }
@@ -77,6 +80,9 @@ dbo_cb_conquest_anatolian_turks = {
 		}
 	}
 	war_goal_type = dbo_conquest_anatolian_turks
+	province = {
+		always = yes
+	}
 	ai_selection_desire = 500
 	ai_subjugation_desire = -100
 }
@@ -112,6 +118,9 @@ dbo_cb_conquest_rumelia = {
 		}
 	}
 	war_goal_type = dbo_conquest_rumelia
+	province = {
+		always = yes
+	}
 	ai_selection_desire = 400
 	ai_subjugation_desire = -100
 }
@@ -142,6 +151,9 @@ dbo_cb_conquest_fertile_crescent = {
 		}
 	}
 	war_goal_type = dbo_conquest_fertile_crescent
+	province = {
+		always = yes
+	}
 	ai_selection_desire = 300
 }
 
@@ -176,7 +188,11 @@ dbo_cb_conquest_arabian_peninsula = {
 		}
 	}
 	war_goal_type = dbo_conquest_arabian_peninsula
+	province = {
+		always = yes
+	}
 	ai_selection_desire = 200
+	ai_subjugation_desire = -100
 }
 
 dbo_cb_conquest_black_sea = {
@@ -227,6 +243,9 @@ dbo_cb_conquest_black_sea = {
 		}
 	}
 	war_goal_type = dbo_conquest_black_sea
+	province = {
+		always = yes
+	}
 	ai_selection_desire = 250
 }
 
@@ -258,6 +277,9 @@ dbo_cb_conquest_nile_river = {
 		}
 	}
 	war_goal_type = dbo_conquest_nile_river
+	province = {
+		always = yes
+	}
 	ai_selection_desire = 150
 }
 
@@ -295,6 +317,9 @@ dbo_cb_conquest_europe_eastern_gate = {
 		}
 	}
 	war_goal_type = dbo_conquest_europe_eastern_gate
+	province = {
+		always = yes
+	}
 	ai_selection_desire = 250
 }
 
@@ -340,6 +365,9 @@ dbo_cb_conquest_turkish_renaissance = {
 		}
 	}
 	war_goal_type = dbo_conquest_turkish_renaissance
+	province = {
+		always = yes
+	}
 	ai_selection_desire = 100
 }
 
@@ -376,6 +404,9 @@ dbo_cb_conquest_pearl_of_east = {
 		}
 	}
 	war_goal_type = dbo_conquest_pearl_of_east
+	province = {
+		always = yes
+	}
 	ai_selection_desire = 100
 }
 
@@ -413,6 +444,9 @@ dbo_cb_conquest_maghreb = {
 		}
 	}
 	war_goal_type = dbo_conquest_maghreb
+	province = {
+		always = yes
+	}
 	ai_selection_desire = 150
 }
 
@@ -444,5 +478,8 @@ dbo_cb_conquest_steep_mountain = {
 		}
 	}
 	war_goal_type = dbo_conquest_steep_mountain
+	province = {
+		always = yes
+	}
 	ai_selection_desire = 250
 }

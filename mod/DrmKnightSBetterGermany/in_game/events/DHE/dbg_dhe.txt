@@ -1,0 +1,107 @@
+﻿namespace = dbg_dhe
+# Annexing and coring all germans
+dbg_dhe.101 = {
+    type = country_event
+    title = dbg_dhe.101.title
+    desc = dbg_dhe.101.desc
+    fire_only_once = yes
+    dynamic_historical_event = {
+        tag = BRA
+        from = 1337.1.1
+        to = 1837.1.1
+        monthly_chance = 100
+    }
+    trigger = {
+        is_ai = no
+    }
+    option = {
+        name = dbg_dhe.101.a
+        historical_option = yes
+        custom_tooltip = {
+            text = dbg_annex_all_german_countries_tt
+            every_country = {
+                limit = {
+                    is_ai = yes
+                    culture = {
+                        has_culture_group = culture_group:german_group
+                    }
+                    culture_group_percentage = {
+                        culture_group = culture_group:german_group
+                        value > 0.5
+                    }
+                }
+                root = {
+                    annex_country = {
+                        country = prev
+                        reason = Diplomatic
+                        transfer = yes
+                    }
+                }
+            }
+        }
+        custom_tooltip = {
+            text = dbg_tt
+            every_owned_location = {
+                add_core = root
+                change_control = control_radical_bonus
+            }
+        }
+        custom_tooltip = {
+            text = dbg_increase_development_and_prosperity_tt
+            every_owned_location = {
+                change_development = development_ultimate_bonus
+                change_prosperity = prosperity_radical_bonus
+            }
+        }
+        custom_tooltip = {
+            text = dbg_remove_tt
+            every_owned_location = {
+                every_buildings_in_location = {
+                    limit = {
+                        building_category = defense_category
+                    }
+                    location = {
+                        destroy_building = prev
+                    }
+                }
+            }
+        }
+        form_country = formable_country:GER_f
+        merge_culture_group = german_group
+        form_new_culture = yes
+        custom_tooltip = {
+            text = dbg_add_pop_satisfaction_all_german_group_tt
+            every_pop = {
+                limit = {
+                    culture = {
+                        has_culture_group = culture_group:german_group
+                    }
+                }
+                change_pop_culture = root.culture
+                set_variable = dbg_german_culture_group_merged
+            }
+        }
+    }
+}
+
+dbg_dhe.102 = {
+    type = country_event
+    title = dbg_dhe.102.title
+    desc = dbg_dhe.102.desc
+    fire_only_once = yes
+    dynamic_historical_event = {
+        tag = GER
+        from = 1337.1.1
+        to = 1837.1.1
+        monthly_chance = 100
+    }
+    trigger = {
+        is_ai = no
+    }
+    option = {
+        name = dbg_dhe.102.a
+        historical_option = yes
+        set_variable = dbg_german_empire_stamp_obtained
+        add_reform = government_reform:dbg_german_empire_stamp
+    }
+}
