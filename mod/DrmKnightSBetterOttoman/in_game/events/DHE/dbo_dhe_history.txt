@@ -619,7 +619,6 @@ dbo_dhe_history.301 = {
 		else = {
 			create_character = {
 				first_name = Bayezid
-				dynasty = ottomans_dynasty
 				father = character:dbo_fatih_sultan_mehmed
 				birth_location = root.capital
 				age = {

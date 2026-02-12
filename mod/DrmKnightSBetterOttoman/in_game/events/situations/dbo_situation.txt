@@ -1,11 +1,21 @@
 ﻿namespace = dbo_situation
 dbo_situation.1 = {
-    type = country_event
-    category = situation_event
-    title = dbo_situation.1.title
-    desc = dbo_situation.1.desc
-    image = "gfx/interface/illustrations/situation/dbo_situation.dds"
-    option = {
-        name = dbo_situation.1.a
-    }
+	type = country_event
+	category = situation_event
+	title = dbo_situation.1.title
+	desc = dbo_situation.1.desc
+	image = "gfx/interface/illustrations/situation/dbo_situation.dds"
+	option = {
+		name = dbo_situation.1.a
+		custom_tooltip = {
+			text = dbo_every_owned_location_add_dbo_ottoman_miracle_tt
+			every_owned_location = {
+				add_location_modifier = {
+					modifier = dbo_ottoman_miracle
+					years = 20
+					mode = replace
+				}
+			}
+		}
+	}
 }
