@@ -33,6 +33,12 @@ dbo_on_conquer_any_location = {
 				}
 			}
 		}
+		if = {
+			limit = {
+				has_location_modifier = dbo_ottoman_scare
+			}
+			remove_location_modifier = dbo_ottoman_scare
+		}
 		add_location_modifier = {
 			modifier = dbo_ottoman_miracle
 			years = 20

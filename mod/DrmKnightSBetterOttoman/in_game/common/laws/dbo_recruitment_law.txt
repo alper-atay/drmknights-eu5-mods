@@ -1,21 +1,23 @@
 ﻿INJECT:recruitment_law = {
-    dbo_destiny_war_slave_tax_and_devshirme_system_policy = {
-        unique = yes
-        potential = {
-            has_or_had_tag = TUR
-        }
-        allow = {
-            has_slavery = yes
-            custom_tooltip = {
-                text = devshirme_system_policy_why_tt
-                NOT = { has_variable = devshirme_abolished }
-            }
-        }
-        country_modifier = {
-            global_slaves_goods_output_modifier = 0.2
-            wrong_culture_levy_size = 0.2
-            peasants_estate_levy_size = -0.2
-            global_peasants_estate_power = 0.2
-        }
-    }
+	dbo_destiny_war_slave_tax_and_devshirme_system_policy = {
+		unique = yes
+		potential = {
+			has_or_had_tag = TUR
+		}
+		allow = {
+			has_slavery = yes
+			custom_tooltip = {
+				text = devshirme_system_policy_why_tt
+				NOT = {
+					has_variable = devshirme_abolished
+				}
+			}
+		}
+		country_modifier = {
+			global_slaves_goods_output_modifier = 0.5
+			wrong_culture_levy_size = 0.2
+			peasants_estate_levy_size = -0.2
+			global_peasants_estate_power = 0.2
+		}
+	}
 }

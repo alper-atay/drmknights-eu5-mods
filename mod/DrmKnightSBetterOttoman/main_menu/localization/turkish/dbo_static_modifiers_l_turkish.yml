@@ -12,4 +12,6 @@
  STATIC_MODIFIER_NAME_dbo_character_kanuni_sultan_suleiman: "[GetCharacter('dbo_kanuni_sultan_suleiman').GetName]'in $dbo_situation$"
  STATIC_MODIFIER_DESC_dbo_character_kanuni_sultan_suleiman: "Osmanlı İmparatorluğu'nun en uzun süre tahtta kalan hükümdarı olan Kanuni Sultan Süleyman'ın, devleti askeri, hukuki ve kültürel açıdan zirveye taşıdığı, Avrupa içlerinden Hint Okyanusu'na kadar uzanan cihan hakimiyeti vizyonu."
  STATIC_MODIFIER_NAME_dbo_ottoman_miracle: "Osmanlı Mucizesi"
- STATIC_MODIFIER_DESC_dbo_ottoman_miracle: "Osmanlı Devleti'nin kuruluş dönemindeki hızlı büyümesini, sağlam idari yapısını ve askeri dehasını temsil eden, küçük bir uç beyliğinden cihan imparatorluğuna dönüşmesini sağlayan eşsiz dinamizm. Bu il, [ShowModifier('dbo_ottoman_miracle')] bu topraklarda."
+ STATIC_MODIFIER_DESC_dbo_ottoman_miracle: "[GetCountry('TUR').GetName] kuruluş dönemindeki hızlı büyümesini, sağlam idari yapısını ve askeri dehasını temsil eden, küçük bir uç beyliğinden cihan imparatorluğuna dönüşmesini sağlayan eşsiz dinamizm. [ShowModifier('dbo_ottoman_miracle')] bu topraklarda."
+ STATIC_MODIFIER_NAME_dbo_ottoman_scare: "Osmanlı Korkusu"
+ STATIC_MODIFIER_DESC_dbo_ottoman_scare: "Bu il, [GetCountry('TUR').GetName] tarafından bu toprakları fethetmek ve yoluna çıkan herkesi yok etmek istediği için tamamen korku içinde."
