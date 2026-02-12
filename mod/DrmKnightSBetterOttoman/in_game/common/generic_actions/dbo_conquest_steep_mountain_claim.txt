@@ -1,225 +1,108 @@
 ﻿dbo_conquest_steep_mountain_claim = {
-    type = situation
-    show_message = no
-    potential = {
-    }
-    allow = {
-        scope:actor = {
-            at_war = no
-            has_raised_levies = no
-            OR = {
-                situation:rise_of_the_ottomans = {
-                    situation_is_active = no
-                    situation_has_ended = yes
-                }
-                has_variable = dbo_conquest_steep_mountain_challenged
-            }
-            has_variable = dbo_conquest_anatolian_turks_obtained
-            NOT = {
-                has_variable = dbo_conquest_steep_mountain_obtained
-            }
-        }
-    }
-    ai_tick = monthly
-    ai_tick_frequency = 3
-    automation_tick = never
-    automation_tick_frequency = 12
-    price = price:dbo_casus_belli_price
-    cooldown = {
-        type = dbo_conquest_steep_mountain_claim_cooldown_key
-        years = 1
-    }
-    select_trigger = {
-        looking_for_a = situation
-        interaction_source_list = {
-            situation:dbo_situation = {
-                add_to_list = source
-            }
-        }
-        target_flag = recipient
-        name = "choose_situation"
-        column = {
-            data = name
-        }
-        visible = {
-            situation:dbo_situation = this
-            situation_is_active = yes
-        }
-    }
-    select_trigger = {
-        looking_for_a = province
-        target_flag = target
-        name = "choose_province"
-        none_available_msg_key = "no_provinces_available"
-        column = {
-            data = owner_flag
-        }
-        column = {
-            data = name
-        }
-        column = {
-            data = population
-        }
-        visible = {
-            scope:actor = {
-                can_declare_war_on = root.owner
-            }
-            trigger_if = {
-                OR = {
-                    area = area:armenia_area
-                    area = area:georgia_area
-                    area = area:northern_caucasus_area
-                    area = area:shirvan_area
-                }
-            }
-            any_location_in_province = {
-                is_neighbor_of = scope:actor
-            }
-            NOT = {
-                owner = {
-                    OR = {
-                        this = scope:actor
-                        overlord ?= scope:actor
-                        has_mutual_scripted_relation = {
-                            type = relation_type:alliance
-                            target = scope:actor
-                        }
-                    }
-                }
-            }
-        }
-    }
-    effect = {
-        if = {
-            limit = {
-                exists = scope:target
-            }
-            custom_tooltip = {
-                text = dbo_conquest_steep_mountain_claim
-                scope:actor = {
-                    trigger_event_silently = dbo_conquest.111
-                }
-            }
-        }
-    }
-    ai_will_do = {
-        if = {
-            limit = {
-                exists = scope:target
-            }
-            if = {
-                limit = {
-                    scope:target.owner = {
-                        is_subject = yes
-                        top_overlord ?= scope:actor
-                    }
-                }
-                add = {
-                    value = -1000
-                    desc = "our subject"
-                }
-            }
-            if = {
-                limit = {
-                    scope:actor = {
-                        is_during_bankruptcy = yes
-                    }
-                }
-                add = {
-                    value = -1000
-                    desc = "[bankruptcy|e]"
-                }
-            }
-            if = {
-                limit = {
-                    scope:actor = {
-                        num_loans > 0
-                    }
-                }
-                add = {
-                    value = -1000
-                    desc = "loans"
-                }
-            }
-            if = {
-                limit = {
-                    scope:actor = {
-                        stability < 0
-                    }
-                }
-                add = {
-                    value = -1000
-                    desc = "low stability"
-                }
-            }
-            if = {
-                limit = {
-                    scope:actor = {
-                        has_truce_with = scope:target.owner
-                    }
-                }
-                add = {
-                    value = -1000
-                    desc = "truce"
-                }
-            }
-            if = {
-                limit = {
-                    scope:actor = {
-                        wants_to_subjugate = scope:target.owner
-                    }
-                }
-                add = {
-                    value = -1000
-                    desc = "wants to subjugate"
-                }
-            }
-            if = {
-                limit = {
-                    scope:actor = {
-                        has_casus_belli_on = scope:target.owner
-                    }
-                }
-                add = {
-                    value = -1000
-                    desc = "We already have a cb on them"
-                }
-            }
-            add = {
-                desc = "RELATIVE_STRENGTH"
-                value = "scope:actor.relative_defensive_alliance_strength(scope:target.owner)"
-                multiply = 100
-                subtract = 60
-            }
-            add = {
-                desc = "we want their land"
-                value = "scope:actor.conquer_desire(scope:target.owner)"
-                divide = 5
-            }
-            if = {
-                limit = {
-                    scope:target = location:constantinople.province
-                }
-                add = -1
-                desc = "Though to siege constantinople"
-            }
-            if = {
-                limit = {
-                    scope:actor = {
-                        wants_casus_belli_with = scope:target.owner
-                    }
-                }
-                add = {
-                    value = 50
-                    desc = "wants casus belli on target owner"
-                }
-            }
-        }
-        else = {
-            add = {
-                value = 25
-                desc = BASE_VALUE
-            }
-        }
-    }
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			OR = {
+				situation:rise_of_the_ottomans = {
+					situation_is_active = no
+					situation_has_ended = yes
+				}
+				has_variable = dbo_conquest_steep_mountain_challenged
+			}
+			has_variable = dbo_conquest_anatolian_turks_obtained
+			NOT = {
+				has_variable = dbo_conquest_steep_mountain_obtained
+			}
+		}
+	}
+	ai_tick = monthly
+	ai_tick_frequency = 3
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:dbo_casus_belli_price
+	cooldown = {
+		type = dbo_conquest_steep_mountain_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:dbo_situation = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:dbo_situation = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				OR = {
+					area = area:armenia_area
+					area = area:georgia_area
+					area = area:northern_caucasus_area
+					area = area:shirvan_area
+				}
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:dbo_cb_conquest_steep_mountain
+					province = scope:target
+				}
+			}
+		}
+	}
+	ai_will_do = {
+	}
 }

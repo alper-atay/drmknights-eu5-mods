@@ -1027,7 +1027,7 @@ dbo_dhe_history.406 = {
 	}
 }
 
-# dbo_history_kanuni_sultan_suleiman lawcode_of_suleiman
+# dbo_history_kanuni_sultan_suleiman dbo_destiny_legal_code_kanunname_i_al_i_osman_policy_developed
 dbo_dhe_history.407 = {
 	type = country_event
 	title = dbo_dhe_history.407.title
@@ -1051,9 +1051,15 @@ dbo_dhe_history.407 = {
 	option = {
 		name = dbo_dhe_history.407.a
 		historical_option = yes
-		unlock_policy_effect = {
-			type = tur_kanum_i_osmani
+		if = {
+			limit = {
+				NOT = {
+					has_policy = dbo_destiny_legal_code_kanunname_i_al_i_osman_policy
+				}
+			}
+			add_policy = policy:dbo_destiny_legal_code_kanunname_i_al_i_osman_policy
 		}
-		add_policy = policy:tur_kanum_i_osmani
+		set_variable = dbo_destiny_legal_code_kanunname_i_al_i_osman_policy_developed
+		dbo_event_severe_bonus = yes
 	}
 }

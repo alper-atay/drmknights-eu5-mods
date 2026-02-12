@@ -34,6 +34,7 @@
 }
 
 dbo_cb_conquest_anatolian_turks = {
+	can_expire = no
 	allow_creation = {
 		tag = TUR
 	}
@@ -44,9 +45,6 @@ dbo_cb_conquest_anatolian_turks = {
 				situation_has_ended = yes
 			}
 			has_variable = dbo_conquest_anatolian_turks_challenged
-		}
-		NOT = {
-			has_variable = dbo_conquest_anatolian_turks_obtained
 		}
 		scope:target = {
 			any_owned_location = {

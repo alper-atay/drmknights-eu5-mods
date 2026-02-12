@@ -10,3 +10,16 @@
 	local_pop_conversion_speed = 0.01
 	local_pop_assimilation_speed = 0.01
 }
+
+dbo_ottoman_scare = {
+	game_data = {
+		category = location
+		decaying = yes
+	}
+	local_defensive = -0.5
+	occupation_time = -0.5
+	local_garrison_growth = -0.5
+	local_levy_size_modifier = -0.25
+	local_manpower_modifier = -0.25
+	local_sailors_modifier = -0.25
+}
