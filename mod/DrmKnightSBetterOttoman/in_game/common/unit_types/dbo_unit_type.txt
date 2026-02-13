@@ -10,7 +10,7 @@
 		}
 	}
 	upgrades_to_only = dbo_a_great_bronze_cannon_sahi_t2
-	max_strength = 0.2
+	max_strength = 0.4
 	combat_power = 4
 	bombard_efficiency = 0.2
 	strength_damage_done = 0.25

@@ -1,6 +1,6 @@
 ﻿namespace = dbo_dhe_history
 # dbo_dhe_history
-# dbo_yildirim_sultan_bayezid born
+# dbo_history_yildirim_sultan_bayezid_born
 dbo_dhe_history.101 = {
 	type = country_event
 	title = dbo_dhe_history.101.title
@@ -89,7 +89,7 @@ dbo_dhe_history.101 = {
 	}
 }
 
-# dbo_yildirim_sultan_bayezid rise
+# dbo_history_yildirim_sultan_bayezid_rise
 dbo_dhe_history.102 = {
 	type = country_event
 	title = dbo_dhe_history.102.title
@@ -131,7 +131,7 @@ dbo_dhe_history.102 = {
 	}
 }
 
-# dbo_yildirim_sultan_bayezid ascend
+# dbo_history_yildirim_sultan_bayezid_ascend
 dbo_dhe_history.103 = {
 	type = country_event
 	title = dbo_dhe_history.103.title
@@ -167,7 +167,7 @@ dbo_dhe_history.103 = {
 	}
 }
 
-# dbo_yildirim_sultan_bayezid dbo_conquest_anatolian_turks_challenged
+# dbo_history_yildirim_sultan_bayezid_challenge_anatolian_turks_union
 dbo_dhe_history.104 = {
 	type = country_event
 	title = dbo_dhe_history.104.title
@@ -195,7 +195,7 @@ dbo_dhe_history.104 = {
 	}
 }
 
-# dbo_yildirim_sultan_bayezid dbo_yildirim_sultan_bayezid_nightmare_1
+# dbo_history_yildirim_sultan_bayezid_defeated_by_timur
 dbo_dhe_history.105 = {
 	type = country_event
 	title = dbo_dhe_history.105.title
@@ -215,6 +215,10 @@ dbo_dhe_history.105 = {
 		character:dbo_yildirim_sultan_bayezid = {
 			is_ruler = yes
 		}
+		has_global_variable = timur_character
+		global_var:timur_character = {
+			is_alive = yes
+		}
 		country_exists = c:TIM
 		any_neighbor_country = {
 			OR = {
@@ -233,7 +237,7 @@ dbo_dhe_history.105 = {
 	}
 }
 
-# dbo_yildirim_sultan_bayezid dbo_history_yildirim_sultan_bayezid_nightmare
+# dbo_history_yildirim_sultan_bayezid_nightmare
 dbo_dhe_history.106 = {
 	type = country_event
 	title = dbo_dhe_history.106.title
@@ -273,7 +277,7 @@ dbo_dhe_history.106 = {
 	}
 }
 
-# dbo_yildirim_sultan_bayezid dbo_history_yildirim_sultan_bayezid_die
+# dbo_history_yildirim_sultan_bayezid_die
 dbo_dhe_history.107 = {
 	type = country_event
 	title = dbo_dhe_history.107.title
@@ -317,7 +321,7 @@ dbo_dhe_history.107 = {
 	}
 }
 
-# dbo_fatih_sultan_mehmed born
+# dbo_history_fatih_sultan_mehmed_born
 dbo_dhe_history.201 = {
 	type = country_event
 	title = dbo_dhe_history.201.title
@@ -440,7 +444,7 @@ dbo_dhe_history.203 = {
 	}
 }
 
-# dbo_fatih_sultan_mehmed dbo_conquest_rumelia_challenged
+# dbo_history_fatih_sultan_mehmed_challenge_rumelia
 dbo_dhe_history.204 = {
 	type = country_event
 	title = dbo_dhe_history.204.title
@@ -555,6 +559,12 @@ dbo_dhe_history.207 = {
 		has_variable = dbo_conquest_rumelia_challenged
 		has_variable = dbo_conquest_black_sea_challenged
 		has_variable = dbo_destiny_legal_code_kanunname_i_al_i_osman_policy_obtained
+	}
+	immediate = {
+		kill_character = {
+			target = character:dbo_fatih_sultan_mehmed
+			reason = sudden_illness
+		}
 	}
 	option = {
 		name = dbo_dhe_history.207.a
@@ -821,7 +831,50 @@ dbo_dhe_history.306 = {
 	}
 }
 
-# dbo_kanuni_sultan_suleiman born
+# dbo_history_yavuz_sultan_selim_die
+dbo_dhe_history.307 = {
+	type = country_event
+	title = dbo_dhe_history.307.title
+	desc = dbo_dhe_history.307.desc
+	historical_info = dbo_dhe_history.307.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yavuz_sultan_selim_die.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1520.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		exists = character:dbo_yavuz_sultan_selim
+		character:dbo_yavuz_sultan_selim = {
+			is_alive = yes
+			is_ruler = yes
+			num_of_children > 1
+			any_child = {
+				is_alive = yes
+				is_adult = yes
+				is_female = no
+			}
+		}
+		has_variable = dbo_conquest_steep_mountain_challenged
+		has_variable = dbo_conquest_fertile_crescent_challenged
+		has_variable = dbo_conquest_nile_river_challenged
+		has_variable = dbo_conquest_nile_river_obtained
+	}
+	immediate = {
+		kill_character = {
+			target = character:dbo_yavuz_sultan_selim
+			reason = sudden_illness
+		}
+	}
+	option = {
+		name = dbo_dhe_history.207.a
+		historical_option = yes
+	}
+}
+
+# dbo_history_kanuni_sultan_suleiman_born
 dbo_dhe_history.401 = {
 	type = country_event
 	title = dbo_dhe_history.401.title
@@ -862,7 +915,7 @@ dbo_dhe_history.401 = {
 	}
 }
 
-# dbo_kanuni_sultan_suleiman rise
+# dbo_history_kanuni_sultan_suleiman_rise
 dbo_dhe_history.402 = {
 	type = country_event
 	title = dbo_dhe_history.402.title
@@ -872,7 +925,7 @@ dbo_dhe_history.402 = {
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
-		from = 1494.1.1
+		from = 1512.1.1
 		to = 9999.1.1
 		monthly_chance = 100
 	}
@@ -904,7 +957,7 @@ dbo_dhe_history.402 = {
 	}
 }
 
-# dbo_kanuni_sultan_suleiman ascend
+# dbo_history_kanuni_sultan_suleiman_ascend
 dbo_dhe_history.403 = {
 	type = country_event
 	title = dbo_dhe_history.403.title
@@ -914,7 +967,7 @@ dbo_dhe_history.403 = {
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
-		from = 1512.1.1
+		from = 1520.1.1
 		to = 9999.1.1
 		monthly_chance = 100
 	}

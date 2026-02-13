@@ -41,7 +41,7 @@ dbo_on_conquer_any_location = {
 		}
 		add_location_modifier = {
 			modifier = dbo_ottoman_miracle
-			years = 20
+			years = 40
 			mode = replace
 		}
 	}

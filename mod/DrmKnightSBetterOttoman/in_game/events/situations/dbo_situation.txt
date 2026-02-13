@@ -12,7 +12,7 @@ dbo_situation.1 = {
 			every_owned_location = {
 				add_location_modifier = {
 					modifier = dbo_ottoman_miracle
-					years = 20
+					years = 40
 					mode = replace
 				}
 			}
