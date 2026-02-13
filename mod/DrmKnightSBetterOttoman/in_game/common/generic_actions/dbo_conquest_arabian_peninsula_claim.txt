@@ -103,7 +103,13 @@
 	ai_will_do = {
 		if = {
 			limit = {
+				exists = scope:actor
 				exists = scope:target
+				scope:actor = {
+					NOT = {
+						has_variable = dbo_conquest_arabian_peninsula_obtained
+					}
+				}
 			}
 			if = {
 				limit = {
@@ -194,15 +200,20 @@
 					}
 				}
 				add = {
-					value = 1000
+					value = 100
 					desc = "We want to hedjaz while own levant"
 				}
 			}
-		}
-		else = {
-			add = {
-				value = 100
-				desc = BASE_VALUE
+			if = {
+				limit = {
+					scope:actor = {
+						has_variable = dbo_conquest_fertile_crescent_obtained
+					}
+				}
+				add = {
+					value = 100
+					desc = "dbo_conquest_fertile_crescent_obtained"
+				}
 			}
 		}
 	}

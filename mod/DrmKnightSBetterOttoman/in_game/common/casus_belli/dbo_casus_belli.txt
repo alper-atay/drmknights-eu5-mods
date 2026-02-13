@@ -1,44 +1,12 @@
-﻿dbo_cb_conquest_rise_of_the_ottomans = {
-	allow_creation = {
-		can_declare_war_on = scope:target
-		is_neighbor_of = scope:target
-	}
-	allow_declaration = {
-		can_declare_war_on = scope:target
-		is_neighbor_of = scope:target
-	}
+﻿dbo_cb_conquest_anatolian_turks = {
 	can_expire = no
-	visible = {
+	allow_creation = {
 		tag = TUR
-		is_situation_active = situation:rise_of_the_ottomans
-		scope:target = {
-			any_owned_location = {
-				OR = {
-					this.area = area:cappadocia_area
-					this.area = area:central_anatolia_area
-					this.area = area:marmara_area
-					this.area = area:pontus_area
-					this.area = area:west_anatolia_area
-					this.area = area:cilicia_area
-					this.area = area:thrace_area
-				}
-			}
+	}
+	visible = {
+		NOT = {
+			has_variable = dbo_conquest_anatolian_turks_obtained
 		}
-	}
-	war_goal_type = dbo_conquest_rise_of_the_ottomans
-	province = {
-		always = yes
-	}
-	ai_selection_desire = 1000
-	ai_subjugation_desire = -100
-}
-
-dbo_cb_conquest_anatolian_turks = {
-	can_expire = no
-	allow_creation = {
-		tag = TUR
-	}
-	visible = {
 		OR = {
 			situation:rise_of_the_ottomans = {
 				situation_is_active = no
@@ -90,15 +58,15 @@ dbo_cb_conquest_rumelia = {
 		tag = TUR
 	}
 	visible = {
+		NOT = {
+			has_variable = dbo_conquest_rumelia_obtained
+		}
 		OR = {
 			situation:rise_of_the_ottomans = {
 				situation_is_active = no
 				situation_has_ended = yes
 			}
 			has_variable = dbo_conquest_rumelia_challenged
-		}
-		NOT = {
-			has_variable = dbo_conquest_rumelia_obtained
 		}
 		scope:target = {
 			any_owned_location = {
@@ -128,15 +96,15 @@ dbo_cb_conquest_fertile_crescent = {
 		tag = TUR
 	}
 	visible = {
+		NOT = {
+			has_variable = dbo_conquest_fertile_crescent_obtained
+		}
 		OR = {
 			situation:rise_of_the_ottomans = {
 				situation_is_active = no
 				situation_has_ended = yes
 			}
 			has_variable = dbo_conquest_fertile_crescent_challenged
-		}
-		NOT = {
-			has_variable = dbo_conquest_fertile_crescent_obtained
 		}
 		scope:target = {
 			any_owned_location = {
@@ -160,6 +128,9 @@ dbo_cb_conquest_arabian_peninsula = {
 		tag = TUR
 	}
 	visible = {
+		NOT = {
+			has_variable = dbo_conquest_arabian_peninsula_obtained
+		}
 		OR = {
 			situation:rise_of_the_ottomans = {
 				situation_is_active = no
@@ -168,9 +139,6 @@ dbo_cb_conquest_arabian_peninsula = {
 			has_variable = dbo_conquest_arabian_peninsula_challenged
 		}
 		has_variable = dbo_conquest_fertile_crescent_obtained
-		NOT = {
-			has_variable = dbo_conquest_arabian_peninsula_obtained
-		}
 		scope:target = {
 			any_owned_location = {
 				OR = {
@@ -198,6 +166,9 @@ dbo_cb_conquest_black_sea = {
 		tag = TUR
 	}
 	visible = {
+		NOT = {
+			has_variable = dbo_conquest_black_sea_obtained
+		}
 		OR = {
 			situation:rise_of_the_ottomans = {
 				situation_is_active = no
@@ -206,9 +177,6 @@ dbo_cb_conquest_black_sea = {
 			has_variable = dbo_conquest_black_sea_challenged
 		}
 		has_variable = dbo_conquest_rumelia_obtained
-		NOT = {
-			has_variable = dbo_conquest_black_sea_obtained
-		}
 		scope:target = {
 			any_owned_location = {
 				OR = {
@@ -252,6 +220,9 @@ dbo_cb_conquest_nile_river = {
 		tag = TUR
 	}
 	visible = {
+		NOT = {
+			has_variable = dbo_conquest_nile_river_obtained
+		}
 		OR = {
 			situation:rise_of_the_ottomans = {
 				situation_is_active = no
@@ -260,9 +231,6 @@ dbo_cb_conquest_nile_river = {
 			has_variable = dbo_conquest_nile_river_challenged
 		}
 		has_variable = dbo_conquest_fertile_crescent_obtained
-		NOT = {
-			has_variable = dbo_conquest_nile_river_obtained
-		}
 		scope:target = {
 			any_owned_location = {
 				OR = {
@@ -286,6 +254,9 @@ dbo_cb_conquest_europe_eastern_gate = {
 		tag = TUR
 	}
 	visible = {
+		NOT = {
+			has_variable = dbo_conquest_europe_eastern_gate_obtained
+		}
 		OR = {
 			situation:rise_of_the_ottomans = {
 				situation_is_active = no
@@ -294,9 +265,6 @@ dbo_cb_conquest_europe_eastern_gate = {
 			has_variable = dbo_conquest_europe_eastern_gate_challenged
 		}
 		has_variable = dbo_conquest_rumelia_obtained
-		NOT = {
-			has_variable = dbo_conquest_europe_eastern_gate_obtained
-		}
 		scope:target = {
 			any_owned_location = {
 				OR = {
@@ -326,6 +294,9 @@ dbo_cb_conquest_turkish_renaissance = {
 		tag = TUR
 	}
 	visible = {
+		NOT = {
+			has_variable = dbo_conquest_turkish_renaissance_obtained
+		}
 		OR = {
 			situation:rise_of_the_ottomans = {
 				situation_is_active = no
@@ -336,9 +307,6 @@ dbo_cb_conquest_turkish_renaissance = {
 		OR = {
 			has_variable = dbo_conquest_europe_eastern_gate_obtained
 			has_variable = dbo_conquest_maghreb_obtained
-		}
-		NOT = {
-			has_variable = dbo_conquest_turkish_renaissance_obtained
 		}
 		scope:target = {
 			any_owned_location = {
@@ -374,15 +342,15 @@ dbo_cb_conquest_pearl_of_east = {
 		tag = TUR
 	}
 	visible = {
+		NOT = {
+			has_variable = dbo_conquest_pearl_of_east_obtained
+		}
 		OR = {
 			situation:rise_of_the_ottomans = {
 				situation_is_active = no
 				situation_has_ended = yes
 			}
 			has_variable = dbo_conquest_pearl_of_east_challenged
-		}
-		NOT = {
-			has_variable = dbo_conquest_pearl_of_east_obtained
 		}
 		scope:target = {
 			any_owned_location = {
@@ -413,6 +381,9 @@ dbo_cb_conquest_maghreb = {
 		tag = TUR
 	}
 	visible = {
+		NOT = {
+			has_variable = dbo_conquest_maghreb_obtained
+		}
 		OR = {
 			situation:rise_of_the_ottomans = {
 				situation_is_active = no
@@ -423,9 +394,6 @@ dbo_cb_conquest_maghreb = {
 		OR = {
 			has_variable = dbo_conquest_turkish_renaissance_obtained
 			has_variable = dbo_conquest_nile_river_obtained
-		}
-		NOT = {
-			has_variable = dbo_conquest_maghreb_obtained
 		}
 		scope:target = {
 			any_owned_location = {
@@ -453,6 +421,9 @@ dbo_cb_conquest_steep_mountain = {
 		tag = TUR
 	}
 	visible = {
+		NOT = {
+			has_variable = dbo_conquest_steep_mountain_obtained
+		}
 		OR = {
 			situation:rise_of_the_ottomans = {
 				situation_is_active = no
@@ -461,9 +432,6 @@ dbo_cb_conquest_steep_mountain = {
 			has_variable = dbo_conquest_steep_mountain_challenged
 		}
 		has_variable = dbo_conquest_anatolian_turks_obtained
-		NOT = {
-			has_variable = dbo_conquest_steep_mountain_obtained
-		}
 		scope:target = {
 			any_owned_location = {
 				OR = {

@@ -132,7 +132,13 @@
 	ai_will_do = {
 		if = {
 			limit = {
+				exists = scope:actor
 				exists = scope:target
+				scope:actor = {
+					NOT = {
+						has_variable = dbo_conquest_anatolian_turks_obtained
+					}
+				}
 			}
 			if = {
 				limit = {
@@ -220,15 +226,9 @@
 					}
 				}
 				add = {
-					value = 100
+					value = 1000
 					desc = "dbo_conquest_anatolian_turks_challenged"
 				}
-			}
-		}
-		else = {
-			add = {
-				value = 100
-				desc = BASE_VALUE
 			}
 		}
 	}

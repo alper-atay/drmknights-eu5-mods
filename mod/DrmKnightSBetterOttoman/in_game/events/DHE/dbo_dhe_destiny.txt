@@ -1,329 +1,328 @@
 ﻿namespace = dbo_dhe_destiny
-
 # dbo_destiny_talented_youngest_heir_selection
 dbo_dhe_destiny.101 = {
-    title = dbo_dhe_destiny.101.title
-    desc = dbo_dhe_destiny.101.desc
-    image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_talented_youngest_heir_selection.dds"
-    fire_only_once = yes
-    dynamic_historical_event = {
-        tag = TUR
-        from = 1337.1.1
-        to = 1837.1.1
-        monthly_chance = 100
-    }
-    trigger = {
-        has_ruler = yes
-        has_heir = yes
-        stability > 0
-        legitimacy > 50
-        NOT = {
-            succession_law = heir_selection:dbo_destiny_talented_youngest_heir_selection
-        }
-    }
-    option = {
-        name = dbo_dhe_destiny.101.a
-        historical_option = yes
-        change_heir_selection = heir_selection:dbo_destiny_talented_youngest_heir_selection
-        dbo_event_severe_bonus = yes
-    }
+	title = dbo_dhe_destiny.101.title
+	desc = dbo_dhe_destiny.101.desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_talented_youngest_heir_selection.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		has_ruler = yes
+		has_heir = yes
+		stability > 0
+		legitimacy > 50
+		NOT = {
+			succession_law = heir_selection:dbo_destiny_talented_youngest_heir_selection
+		}
+	}
+	option = {
+		name = dbo_dhe_destiny.101.a
+		historical_option = yes
+		change_heir_selection = heir_selection:dbo_destiny_talented_youngest_heir_selection
+		dbo_event_severe_bonus = yes
+	}
 }
 
 # dbo_destiny_war_slave_tax_and_devshirme_system_policy
 dbo_dhe_destiny.102 = {
-    title = dbo_dhe_destiny.102.title
-    desc = dbo_dhe_destiny.102.desc
-    historical_info = dbo_dhe_destiny.102.historical_info
-    image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_war_slave_tax_and_devshirme_system.dds"
-    fire_only_once = yes
-    dynamic_historical_event = {
-        tag = TUR
-        from = 1337.1.1
-        to = 1837.1.1
-        monthly_chance = 100
-    }
-    trigger = {
-        has_slavery = yes
-        has_law = recruitment_law
-        OR = {
-            OR = {
-                has_policy = ottoman_war_slave_tax
-                has_policy = devshirme_system_policy
-            }
-            current_age_or_later = {
-                age = age_3_discovery
-            }
-        }
-        NOT = {
-            has_policy = dbo_destiny_war_slave_tax_and_devshirme_system_policy
-        }
-        NOT = {
-            has_variable = devshirme_abolished
-        }
-    }
-    option = {
-        name = dbo_dhe_destiny.102.a
-        historical_option = yes
-        set_variable = dbo_destiny_war_slave_tax_and_devshirme_system_policy_obtained
-        add_policy = policy:dbo_destiny_war_slave_tax_and_devshirme_system_policy
-        dbo_event_severe_bonus = yes
-    }
+	title = dbo_dhe_destiny.102.title
+	desc = dbo_dhe_destiny.102.desc
+	historical_info = dbo_dhe_destiny.102.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_war_slave_tax_and_devshirme_system.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		has_slavery = yes
+		has_law = recruitment_law
+		OR = {
+			OR = {
+				has_policy = ottoman_war_slave_tax
+				has_policy = devshirme_system_policy
+			}
+			current_age_or_later = {
+				age = age_3_discovery
+			}
+		}
+		NOT = {
+			has_policy = dbo_destiny_war_slave_tax_and_devshirme_system_policy
+		}
+		NOT = {
+			has_variable = devshirme_abolished
+		}
+	}
+	option = {
+		name = dbo_dhe_destiny.102.a
+		historical_option = yes
+		set_variable = dbo_destiny_war_slave_tax_and_devshirme_system_policy_obtained
+		add_policy = policy:dbo_destiny_war_slave_tax_and_devshirme_system_policy
+		dbo_event_severe_bonus = yes
+	}
 }
 
 # Winner Ottoman get all Beyliks
 dbo_dhe_destiny.103 = {
-    type = country_event
-    title = dbo_dhe_destiny.103.title
-    desc = dbo_dhe_destiny.103.desc
-    image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_anatolian_beyliks_forced_annex.dds"
-    fire_only_once = yes
-    outcome = positive
-    dynamic_historical_event = {
-        tag = TUR
-        from = 1338.1.1
-        to = 1837.1.1
-        monthly_chance = 100
-    }
-    trigger = {
-        has_variable = rise_of_the_ottomans_winner_variable
-        any_country = {
-            has_reform = government_reform:anatolian_beylik
-            NOT = {
-                tag = TUR
-            }
-        }
-    }
-    option = {
-        name = dbo_dhe_destiny.103.a
-        historical_option = yes
-        every_country = {
-            limit = {
-                has_reform = government_reform:anatolian_beylik
-                NOT = {
-                    tag = TUR
-                }
-            }
-            root = {
-                annex_country = {
-                    country = prev
-                    reason = Diplomatic
-                }
-            }
-        }
-    }
-    option = {
-        name = dbo_dhe_destiny.103.b
-    }
+	type = country_event
+	title = dbo_dhe_destiny.103.title
+	desc = dbo_dhe_destiny.103.desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_anatolian_beyliks_forced_annex.dds"
+	fire_only_once = yes
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1338.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		has_variable = rise_of_the_ottomans_winner_variable
+		any_country = {
+			has_reform = government_reform:anatolian_beylik
+			NOT = {
+				tag = TUR
+			}
+		}
+	}
+	option = {
+		name = dbo_dhe_destiny.103.a
+		historical_option = yes
+		every_country = {
+			limit = {
+				has_reform = government_reform:anatolian_beylik
+				NOT = {
+					tag = TUR
+				}
+			}
+			root = {
+				annex_country = {
+					country = prev
+					reason = Diplomatic
+				}
+			}
+		}
+	}
+	option = {
+		name = dbo_dhe_destiny.103.b
+	}
 }
 
 # dbo_destiny_cultural_capital_constantinople
 dbo_dhe_destiny.201 = {
-    type = country_event
-    title = dbo_dhe_destiny.201.title
-    desc = dbo_dhe_destiny.201.desc
-    historical_info = dbo_dhe_destiny.201.historical_info
-    image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_cultural_capital_constantinople.dds"
-    fire_only_once = yes
-    outcome = positive
-    dynamic_historical_event = {
-        tag = TUR
-        from = 1337.1.1
-        to = 1837.1.1
-        monthly_chance = 100
-    }
-    trigger = {
-        own_entire_province = province_definition:constantinople_province
-        NOT = {
-            has_reform = government_reform:dbo_destiny_cultural_capital_constantinople
-        }
-    }
-    option = {
-        name = dbo_dhe_destiny.201.a
-        historical_option = yes
-        set_variable = dbo_destiny_cultural_capital_constantinople_obtained
-        add_reform = government_reform:dbo_destiny_cultural_capital_constantinople
-        dbo_event_mild_bonus = yes
-    }
+	type = country_event
+	title = dbo_dhe_destiny.201.title
+	desc = dbo_dhe_destiny.201.desc
+	historical_info = dbo_dhe_destiny.201.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_cultural_capital_constantinople.dds"
+	fire_only_once = yes
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		own_entire_province = province_definition:constantinople_province
+		NOT = {
+			has_reform = government_reform:dbo_destiny_cultural_capital_constantinople
+		}
+	}
+	option = {
+		name = dbo_dhe_destiny.201.a
+		historical_option = yes
+		set_variable = dbo_destiny_cultural_capital_constantinople_obtained
+		add_reform = government_reform:dbo_destiny_cultural_capital_constantinople
+		dbo_event_mild_bonus = yes
+	}
 }
 
 # dbo_destiny_trade_center_grand_bazaar
 dbo_dhe_destiny.202 = {
-    type = country_event
-    title = dbo_dhe_destiny.202.title
-    desc = dbo_dhe_destiny.202.desc
-    historical_info = dbo_dhe_destiny.202.historical_info
-    image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_trade_center_grand_bazaar.dds"
-    fire_only_once = yes
-    outcome = positive
-    dynamic_historical_event = {
-        tag = TUR
-        from = 1337.1.1
-        to = 1837.1.1
-        monthly_chance = 100
-    }
-    trigger = {
-        own_entire_province = province_definition:constantinople_province
-        NOT = {
-            has_reform = government_reform:dbo_destiny_trade_center_grand_bazaar
-        }
-    }
-    option = {
-        name = dbo_dhe_destiny.202.a
-        historical_option = yes
-        set_variable = dbo_destiny_trade_center_grand_bazaar_obtained
-        add_reform = government_reform:dbo_destiny_trade_center_grand_bazaar
-        dbo_event_mild_bonus = yes
-    }
+	type = country_event
+	title = dbo_dhe_destiny.202.title
+	desc = dbo_dhe_destiny.202.desc
+	historical_info = dbo_dhe_destiny.202.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_trade_center_grand_bazaar.dds"
+	fire_only_once = yes
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		own_entire_province = province_definition:constantinople_province
+		NOT = {
+			has_reform = government_reform:dbo_destiny_trade_center_grand_bazaar
+		}
+	}
+	option = {
+		name = dbo_dhe_destiny.202.a
+		historical_option = yes
+		set_variable = dbo_destiny_trade_center_grand_bazaar_obtained
+		add_reform = government_reform:dbo_destiny_trade_center_grand_bazaar
+		dbo_event_mild_bonus = yes
+	}
 }
 
 # dbo_destiny_legacy_of_seljuks
 dbo_dhe_destiny.203 = {
-    type = country_event
-    title = dbo_dhe_destiny.203.title
-    desc = dbo_dhe_destiny.203.desc
-    historical_info = dbo_dhe_destiny.203.historical_info
-    image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_legacy_of_seljuks.dds"
-    fire_only_once = yes
-    outcome = positive
-    dynamic_historical_event = {
-        tag = TUR
-        from = 1337.1.1
-        to = 1837.1.1
-        monthly_chance = 100
-    }
-    trigger = {
-        OR = {
-            AND = {
-                has_advance = seljuk_heritage
-                has_advance = seljuk_roots
-                has_advance = heirs_of_rum
-            }
-            current_age_or_later = {
-                age = age_3_discovery
-            }
-        }
-        NOT = {
-            has_reform = government_reform:dbo_destiny_legacy_of_seljuks
-        }
-    }
-    option = {
-        name = dbo_dhe_destiny.203.a
-        historical_option = yes
-        set_variable = dbo_destiny_legacy_of_seljuks_obtained
-        add_reform = government_reform:dbo_destiny_legacy_of_seljuks
-        dbo_event_mild_bonus = yes
-    }
+	type = country_event
+	title = dbo_dhe_destiny.203.title
+	desc = dbo_dhe_destiny.203.desc
+	historical_info = dbo_dhe_destiny.203.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_legacy_of_seljuks.dds"
+	fire_only_once = yes
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		OR = {
+			AND = {
+				has_advance = seljuk_heritage
+				has_advance = seljuk_roots
+				has_advance = heirs_of_rum
+			}
+			current_age_or_later = {
+				age = age_3_discovery
+			}
+		}
+		NOT = {
+			has_reform = government_reform:dbo_destiny_legacy_of_seljuks
+		}
+	}
+	option = {
+		name = dbo_dhe_destiny.203.a
+		historical_option = yes
+		set_variable = dbo_destiny_legacy_of_seljuks_obtained
+		add_reform = government_reform:dbo_destiny_legacy_of_seljuks
+		dbo_event_mild_bonus = yes
+	}
 }
 
 # dbo_destiny_piri_reis
 dbo_dhe_destiny.204 = {
-    type = country_event
-    title = dbo_dhe_destiny.204.title
-    desc = dbo_dhe_destiny.204.desc
-    historical_info = dbo_dhe_destiny.204.historical_info
-    image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_piri_reis.dds"
-    fire_only_once = yes
-    outcome = positive
-    dynamic_historical_event = {
-        tag = TUR
-        from = 1500.1.1
-        to = 1837.1.1
-        monthly_chance = 100
-    }
-    trigger = {
-        character:tur_piri_reis = {
-            is_alive = yes
-        }
-        NOT = {
-            has_reform = government_reform:dbo_destiny_piri_reis
-        }
-    }
-    option = {
-        name = dbo_dhe_destiny.204.a
-        historical_option = yes
-        set_variable = dbo_destiny_piri_reis_obtained
-        add_reform = government_reform:dbo_destiny_piri_reis
-        dbo_event_mild_bonus = yes
-    }
+	type = country_event
+	title = dbo_dhe_destiny.204.title
+	desc = dbo_dhe_destiny.204.desc
+	historical_info = dbo_dhe_destiny.204.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_piri_reis.dds"
+	fire_only_once = yes
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1500.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		character:tur_piri_reis = {
+			is_alive = yes
+		}
+		NOT = {
+			has_reform = government_reform:dbo_destiny_piri_reis
+		}
+	}
+	option = {
+		name = dbo_dhe_destiny.204.a
+		historical_option = yes
+		set_variable = dbo_destiny_piri_reis_obtained
+		add_reform = government_reform:dbo_destiny_piri_reis
+		dbo_event_mild_bonus = yes
+	}
 }
 
 # dbo_destiny_ottoman_empire
 dbo_dhe_destiny.205 = {
-    type = country_event
-    title = dbo_dhe_destiny.205.title
-    desc = dbo_dhe_destiny.205.desc
-    historical_info = dbo_dhe_destiny.205.historical_info
-    image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_ottoman_empire.dds"
-    fire_only_once = yes
-    outcome = positive
-    dynamic_historical_event = {
-        tag = TUR
-        from = 1337.1.1
-        to = 1837.1.1
-        monthly_chance = 100
-    }
-    trigger = {
-        country_rank = country_rank:rank_empire
-        NOT = {
-            has_reform = government_reform:dbo_destiny_ottoman_empire
-        }
-        OR = {
-            has_reform = government_reform:legacy_of_the_ottomans
-            has_reform = government_reform:turkish_pashas
-        }
-    }
-    option = {
-        name = dbo_dhe_destiny.205.a
-        historical_option = yes
-        if = {
-            limit = {
-                has_reform = government_reform:legacy_of_the_ottomans
-            }
-            remove_reform = government_reform:legacy_of_the_ottomans
-        }
-        if = {
-            limit = {
-                has_reform = government_reform:turkish_pashas
-            }
-            remove_reform = government_reform:turkish_pashas
-        }
-        lock_government_reform_effect = {
-            type = legacy_of_the_ottomans
-        }
-        lock_government_reform_effect = {
-            type = turkish_pashas
-        }
-        set_variable = dbo_destiny_ottoman_empire_obtained
-        add_reform = government_reform:dbo_destiny_ottoman_empire
-        dbo_event_ultimate_bonus = yes
-    }
+	type = country_event
+	title = dbo_dhe_destiny.205.title
+	desc = dbo_dhe_destiny.205.desc
+	historical_info = dbo_dhe_destiny.205.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_ottoman_empire.dds"
+	fire_only_once = yes
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		country_rank = country_rank:rank_empire
+		NOT = {
+			has_reform = government_reform:dbo_destiny_ottoman_empire
+		}
+		OR = {
+			has_reform = government_reform:legacy_of_the_ottomans
+			has_reform = government_reform:turkish_pashas
+		}
+	}
+	option = {
+		name = dbo_dhe_destiny.205.a
+		historical_option = yes
+		if = {
+			limit = {
+				has_reform = government_reform:legacy_of_the_ottomans
+			}
+			remove_reform = government_reform:legacy_of_the_ottomans
+		}
+		if = {
+			limit = {
+				has_reform = government_reform:turkish_pashas
+			}
+			remove_reform = government_reform:turkish_pashas
+		}
+		lock_government_reform_effect = {
+			type = legacy_of_the_ottomans
+		}
+		lock_government_reform_effect = {
+			type = turkish_pashas
+		}
+		set_variable = dbo_destiny_ottoman_empire_obtained
+		add_reform = government_reform:dbo_destiny_ottoman_empire
+		dbo_event_ultimate_bonus = yes
+	}
 }
 
 # dbo_destiny_mentor_lala
 dbo_dhe_destiny.206 = {
-    title = dbo_dhe_destiny.206.title
-    desc = dbo_dhe_destiny.206.desc
-    historical_info = dbo_dhe_destiny.206.historical_info
-    image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_mentor_lala.dds"
-    fire_only_once = yes
-    dynamic_historical_event = {
-        tag = TUR
-        from = 1337.1.1
-        to = 1837.1.1
-        monthly_chance = 100
-    }
-    trigger = {
-        num_locations >= 100
-        num_of_non_rural >= 10
-        NOT = {
-            has_reform = government_reform:dbo_destiny_mentor_lala
-        }
-    }
-    option = {
-        name = dbo_dhe_destiny.206.a
-        historical_option = yes
-        set_variable = dbo_destiny_mentor_lala_obtained
-        add_reform = government_reform:dbo_destiny_mentor_lala
-        dbo_event_mild_bonus = yes
-    }
+	title = dbo_dhe_destiny.206.title
+	desc = dbo_dhe_destiny.206.desc
+	historical_info = dbo_dhe_destiny.206.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_mentor_lala.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		num_locations >= 100
+		num_of_non_rural >= 10
+		NOT = {
+			has_reform = government_reform:dbo_destiny_mentor_lala
+		}
+	}
+	option = {
+		name = dbo_dhe_destiny.206.a
+		historical_option = yes
+		set_variable = dbo_destiny_mentor_lala_obtained
+		add_reform = government_reform:dbo_destiny_mentor_lala
+		dbo_event_mild_bonus = yes
+	}
 }

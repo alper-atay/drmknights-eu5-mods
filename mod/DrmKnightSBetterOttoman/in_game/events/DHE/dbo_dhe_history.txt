@@ -860,7 +860,6 @@ dbo_dhe_history.307 = {
 		has_variable = dbo_conquest_steep_mountain_challenged
 		has_variable = dbo_conquest_fertile_crescent_challenged
 		has_variable = dbo_conquest_nile_river_challenged
-		has_variable = dbo_conquest_nile_river_obtained
 	}
 	immediate = {
 		kill_character = {
@@ -985,14 +984,7 @@ dbo_dhe_history.403 = {
 	option = {
 		name = dbo_dhe_history.403.a
 		historical_option = yes
-		if = {
-			limit = {
-				character:dbo_yavuz_sultan_selim = {
-					is_ruler = no
-				}
-			}
-			set_new_ruler = character:dbo_kanuni_sultan_suleiman
-		}
+		set_new_ruler = character:dbo_kanuni_sultan_suleiman
 	}
 }
 

@@ -114,5 +114,109 @@
 		}
 	}
 	ai_will_do = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			if = {
+				limit = {
+					exists = scope:actor
+					exists = scope:target
+					scope:actor = {
+						NOT = {
+							has_variable = dbo_conquest_turkish_renaissance_obtained
+						}
+					}
+				}
+				add = {
+					value = -10000
+					desc = "our subject"
+				}
+			}
+			if = {
+				limit = {
+					scope:actor = {
+						is_during_bankruptcy = yes
+					}
+				}
+				add = {
+					value = -10000
+					desc = "[bankruptcy|e]"
+				}
+			}
+			if = {
+				limit = {
+					scope:actor = {
+						has_truce_with = scope:target.owner
+					}
+				}
+				add = {
+					value = -10000
+					desc = "truce"
+				}
+			}
+			if = {
+				limit = {
+					scope:actor = {
+						is_allied_with = {
+							target = scope:target.owner
+						}
+					}
+				}
+				add = {
+					value = -10000
+					desc = "Our ally"
+				}
+			}
+			if = {
+				limit = {
+					scope:actor = {
+						has_casus_belli_on = scope:target.owner
+					}
+				}
+				add = {
+					value = -10000
+					desc = "We already have a cb on them"
+				}
+			}
+			add = {
+				desc = "RELATIVE_STRENGTH"
+				value = "scope:actor.relative_defensive_alliance_strength(scope:target.owner)"
+				multiply = 100
+				subtract = 60
+			}
+			add = {
+				desc = "we want their land"
+				value = "scope:actor.conquer_desire(scope:target.owner)"
+			}
+			if = {
+				limit = {
+					scope:actor = {
+						wants_to_attack = scope:target.owner
+					}
+				}
+				add = {
+					value = 2000
+					desc = "We want to attack them"
+				}
+			}
+			if = {
+				limit = {
+					scope:actor = {
+						has_variable = dbo_conquest_anatolian_turks_obtained
+						has_variable = dbo_conquest_rumelia_obtained
+						OR = {
+							has_variable = dbo_conquest_europe_eastern_gate_obtained
+							has_variable = dbo_conquest_maghreb_obtained
+							has_variable = dbo_conquest_nile_river_obtained
+						}
+					}
+				}
+				add = {
+					value = 100
+					desc = "dbo_conquest_rumelia_obtained"
+				}
+			}
+		}
 	}
 }

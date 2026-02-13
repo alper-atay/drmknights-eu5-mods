@@ -1,28 +1,4 @@
-﻿dbo_conquest_rise_of_the_ottomans = {
-	type = take_province
-	attacker = {
-		conquer_cost = 0.5
-		antagonism = 0.5
-		allowed_locations = {
-			OR = {
-				scope:location.area = area:cappadocia_area
-				scope:location.area = area:central_anatolia_area
-				scope:location.area = area:marmara_area
-				scope:location.area = area:pontus_area
-				scope:location.area = area:west_anatolia_area
-				scope:location.area = area:cilicia_area
-				scope:location.area = area:thrace_area
-			}
-		}
-	}
-	defender = {
-		conquer_cost = 1
-		subjugate_cost = 1
-	}
-	ticking_war_score = 0.5
-}
-
-dbo_conquest_anatolian_turks = {
+﻿dbo_conquest_anatolian_turks = {
 	type = take_province
 	attacker = {
 		conquer_cost = 0.25
