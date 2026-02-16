@@ -35,7 +35,7 @@ dbo_dhe_history_ottoman.101 = {
 			mode = add_and_extend
 		}
 		custom_tooltip = {
-			text = dbo_history_ottoman_interregnum_rebel_tt
+			text = dbo_history_ottoman_interregnum_rebel_progress_gain_tt
 			every_rebel = {
 				add_rebel_progress = rebel_progress_severe_penalty
 			}
@@ -99,11 +99,14 @@ dbo_dhe_history_ottoman.102 = {
 				add_pop_satisfaction = pop_satisfaction_severe_bonus
 			}
 		}
-		every_rebel = {
-			limit = {
-				rebel_progress >= 0.5
+		custom_tooltip = {
+			text = dbo_history_ottoman_interregnum_end_rebel_progress_lose_tt
+			every_rebel = {
+				add_rebel_progress = {
+					value = rebel_progress
+					divide = -2
+				}
 			}
-			add_rebel_progress = -0.3
 		}
 	}
 }

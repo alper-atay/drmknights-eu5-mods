@@ -13,3 +13,6 @@
  dbo_grand_bazaar: "Kapalıçarşı"
  dbo_grand_bazaar_desc: "Dünyanın en eski ve en büyük alışveriş merkezlerinden biri olan Kapalıçarşı, Osmanlı ekonomisinin kalbi, ticaretin ve zanaatın merkezidir."
  dbo_grand_bazaar_maintenance: "$dbo_grand_bazaar$"
+ dbo_grand_mosque: "Ulu Cami"
+ dbo_grand_mosque_desc: "İslam mimarisinin en görkemli örneklerinden biri olan Ulu Cami, şehrin manevi merkezidir. Cemaatin bir araya geldiği, ilim ve ibadetin harmanlandığı bu kutsal yapı, devletin ihtişamını ve inancın gücünü simgeler."
+ dbo_grand_mosque_maintenance: "$dbo_grand_mosque$"

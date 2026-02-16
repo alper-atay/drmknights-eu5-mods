@@ -16,7 +16,6 @@
 			has_law = dbo_military_army_gendarme_law
 		}
 	}
-	expensive = yes
 	unique_production_methods = {
 		dbo_karakol_maintenance = {
 			stone = 0.05
@@ -43,6 +42,9 @@ dbo_grand_bazaar = {
 	employment_size = trade_employment
 	category = trade_category
 	city = yes
+	expensive = yes
+	important_for_AI = yes
+	important_for_UI = yes
 	country_potential = {
 		has_reform = government_reform:dbo_destiny_trade_center_grand_bazaar
 	}
@@ -68,11 +70,64 @@ dbo_grand_bazaar = {
 	construction_demand = warehouse_construction
 	unique_production_methods = {
 		dbo_grand_bazaar_maintenance = {
-			books = 0.05
+			tools = 0.2
+			books = 0.1
 			paper = 0.2
-			jewelry = 0.01
-			fine_cloth = 0.01
+			jewelry = 0.1
+			fine_cloth = 0.1
+			produced = goods_gold
+			output = 0.5
 			category = building_maintenance
 		}
+	}
+}
+
+dbo_grand_mosque = {
+	is_foreign = no
+	max_levels = 1
+	pop_type = clergy
+	employment_size = huge_religious_building_employment
+	category = religious_category
+	rural_settlement = no
+	town = no
+	city = yes
+	expensive = yes
+	important_for_AI = yes
+	important_for_UI = yes
+	construction_demand = capital_building_construction
+	build_time = large_capital_build_time
+	graphical_tags = {
+		large_religious
+	}
+	country_potential = {
+		religion.group = religion_group:muslim
+	}
+	unique_production_methods = {
+		dbo_grand_mosque_maintenance = {
+			paper = 0.25
+			books = 0.1
+			fine_cloth = 0.1
+			category = building_maintenance
+		}
+	}
+	remove_if = {
+		location = {
+			owner ?= {
+				religion.group != religion_group:muslim
+			}
+		}
+	}
+	modifier = {
+		local_monthly_literacy = 0.05
+		local_clergy_estate_power = 0.25
+		local_cultural_influence = 0.15
+		local_unrest = -0.1
+		local_pop_conversion_speed_modifier = 0.5
+	}
+	capital_modifier = {
+		local_migration_attraction = 0.1
+	}
+	capital_country_modifier = {
+		cultural_influence_modifier = 0.1
 	}
 }
