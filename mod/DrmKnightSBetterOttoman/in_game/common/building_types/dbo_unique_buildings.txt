@@ -104,9 +104,9 @@ dbo_grand_mosque = {
 	}
 	unique_production_methods = {
 		dbo_grand_mosque_maintenance = {
-			paper = 0.25
-			books = 0.1
-			fine_cloth = 0.1
+			paper = 0.4
+			books = 0.2
+			fine_cloth = 0.2
 			category = building_maintenance
 		}
 	}
@@ -119,10 +119,10 @@ dbo_grand_mosque = {
 	}
 	modifier = {
 		local_monthly_literacy = 0.05
-		local_clergy_estate_power = 0.25
-		local_cultural_influence = 0.15
-		local_unrest = -0.1
-		local_pop_conversion_speed_modifier = 0.5
+		local_clergy_estate_power = 0.5
+		local_cultural_influence = 0.1
+		local_unrest = -0.05
+		local_pop_conversion_speed_modifier = 0.05
 	}
 	capital_modifier = {
 		local_migration_attraction = 0.1

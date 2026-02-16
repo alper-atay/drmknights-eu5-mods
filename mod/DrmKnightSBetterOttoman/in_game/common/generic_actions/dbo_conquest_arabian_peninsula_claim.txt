@@ -213,5 +213,11 @@
 				}
 			}
 		}
+		else = {
+			add = {
+				value = 5
+				desc = BASE_VALUE
+			}
+		}
 	}
 }
