@@ -35,6 +35,7 @@
 		country_modifier = {
 			military_tactics = 2
 			discipline = 0.2
+			regiment_recruit_speed = 0.1
 			global_manpower_modifier = 0.1
 		}
 	}
@@ -158,6 +159,7 @@ dbo_military_army_heavy_artillery_law = {
 			dbo_army_heavy_artillery_build_cost_modifier = -0.1
 			dbo_army_heavy_artillery_maintenance_cost_modifier = -0.1
 			dbo_army_heavy_artillery_reinforce_cost_modifier = -0.1
+			artillery_bonus_vs_fort = 1
 		}
 	}
 }

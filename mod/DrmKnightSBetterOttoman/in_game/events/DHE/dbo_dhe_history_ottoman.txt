@@ -99,5 +99,11 @@ dbo_dhe_history_ottoman.102 = {
 				add_pop_satisfaction = pop_satisfaction_severe_bonus
 			}
 		}
+		every_rebel = {
+			limit = {
+				rebel_progress >= 0.5
+			}
+			add_rebel_progress = -0.3
+		}
 	}
 }

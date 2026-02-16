@@ -25,7 +25,7 @@ dbo_character_yavuz_sultan_selim = {
 		category = character
 	}
 	force_allow_as_leader = yes
-	# auto_conquer_at_war = yes
+	auto_conquer_at_war = yes
 	character_life_expectancy = 20
 	max_war_exhaustion = 5
 	aggressiveness_modifier = 1

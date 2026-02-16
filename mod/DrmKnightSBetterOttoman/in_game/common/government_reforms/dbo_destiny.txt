@@ -41,7 +41,6 @@ dbo_destiny_trade_center_grand_bazaar = {
 	}
 	country_modifier = {
 		trade_efficiency = 0.1
-		trade_range_modifier = 0.1
 		global_trade_center_power = 0.1
 		global_trade_protection_factor = 0.1
 		global_trade_through_owned_territory_cost_modifier = -0.1
@@ -105,13 +104,11 @@ dbo_destiny_piri_reis = {
 	}
 	country_modifier = {
 		government_reform_slots = 1
-		exploration_maintenance_cost = -0.25
-		exploration_mission_speed = 0.25
-		exploration_mission_speed_modifier = 0.25
-		exploration_preparation_time_modifier = -0.25
-		recruit_explorer_cost_modifier = -0.25
-		start_exploration_land_cost_modifier = -0.25
-		start_exploration_sea_cost_modifier = -0.25
+		exploration_maintenance_cost = -0.1
+		exploration_mission_speed_modifier = 0.1
+		exploration_preparation_time_modifier = -0.1
+		start_exploration_land_cost_modifier = -0.1
+		start_exploration_sea_cost_modifier = -0.1
 	}
 }
 

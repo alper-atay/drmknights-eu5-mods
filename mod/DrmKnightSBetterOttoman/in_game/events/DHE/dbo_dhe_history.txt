@@ -470,6 +470,7 @@ dbo_dhe_history.204 = {
 	option = {
 		name = dbo_dhe_history.204.a
 		set_variable = dbo_conquest_rumelia_challenged
+		dbo_event_mild_bonus = yes
 	}
 }
 
@@ -500,6 +501,7 @@ dbo_dhe_history.205 = {
 		name = dbo_dhe_history.205.a
 		historical_option = yes
 		set_variable = dbo_conquest_black_sea_challenged
+		dbo_event_mild_bonus = yes
 	}
 }
 
@@ -773,6 +775,7 @@ dbo_dhe_history.304 = {
 		name = dbo_dhe_history.304.a
 		historical_option = yes
 		set_variable = dbo_conquest_steep_mountain_challenged
+		dbo_event_mild_bonus = yes
 	}
 }
 
@@ -800,6 +803,7 @@ dbo_dhe_history.305 = {
 		name = dbo_dhe_history.305.a
 		historical_option = yes
 		set_variable = dbo_conquest_fertile_crescent_challenged
+		dbo_event_mild_bonus = yes
 	}
 }
 
@@ -828,6 +832,7 @@ dbo_dhe_history.306 = {
 		name = dbo_dhe_history.306.a
 		historical_option = yes
 		set_variable = dbo_conquest_nile_river_challenged
+		dbo_event_mild_bonus = yes
 	}
 }
 
@@ -984,7 +989,14 @@ dbo_dhe_history.403 = {
 	option = {
 		name = dbo_dhe_history.403.a
 		historical_option = yes
-		set_new_ruler = character:dbo_kanuni_sultan_suleiman
+		if = {
+			limit = {
+				character:dbo_kanuni_sultan_suleiman = {
+					is_ruler = no
+				}
+			}
+			set_new_ruler = character:dbo_kanuni_sultan_suleiman
+		}
 	}
 }
 
@@ -1013,6 +1025,7 @@ dbo_dhe_history.404 = {
 		name = dbo_dhe_history.404.a
 		historical_option = yes
 		set_variable = dbo_conquest_europe_eastern_gate_challenged
+		dbo_event_mild_bonus = yes
 	}
 }
 
@@ -1041,6 +1054,7 @@ dbo_dhe_history.405 = {
 		name = dbo_dhe_history.405.a
 		historical_option = yes
 		set_variable = dbo_conquest_turkish_renaissance_challenged
+		dbo_event_mild_bonus = yes
 	}
 }
 
@@ -1069,6 +1083,7 @@ dbo_dhe_history.406 = {
 		name = dbo_dhe_history.406.a
 		historical_option = yes
 		set_variable = dbo_conquest_pearl_of_east_challenged
+		dbo_event_mild_bonus = yes
 	}
 }
 

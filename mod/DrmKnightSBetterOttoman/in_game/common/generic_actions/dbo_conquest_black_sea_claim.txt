@@ -15,9 +15,6 @@
 				has_variable = dbo_conquest_black_sea_challenged
 			}
 			has_variable = dbo_conquest_anatolian_turks_obtained
-			NOT = {
-				has_variable = dbo_conquest_black_sea_obtained
-			}
 		}
 	}
 	ai_tick = monthly
@@ -127,7 +124,7 @@
 			scope:actor = {
 				add_casus_belli = {
 					target = scope:target.owner
-					type = casus_belli:dbo_cb_conquest_anatolian_turks
+					type = casus_belli:dbo_cb_conquest_black_sea
 					province = scope:target
 				}
 			}

@@ -1,0 +1,9 @@
+texticon = {
+	icon = dbo_army_heavy_artillery
+	iconsize = {
+		texture = "gfx/interface/icons/unit_category/dbo_army_heavy_artillery.dds"
+		size = { 20 20 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}

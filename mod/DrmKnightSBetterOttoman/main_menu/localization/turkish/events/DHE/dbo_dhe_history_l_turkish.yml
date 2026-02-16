@@ -115,6 +115,11 @@
  dbo_dhe_history.306.desc: "Kahire'nin düşüşüyle birlikte [GetCharacter('dbo_yavuz_sultan_selim').GetName], Nil Nehri'nin ve Mısır'ın kadim zenginliklerinin mutlak hakimi oldu. Memlük Sultanlığı tarihe karışırken, halifelik unvanı ve kutsal emanetler Osmanlı hanedanına geçti. Artık Selim Han, sadece bir padişah değil, tüm Müslümanların lideridir."
  dbo_dhe_history.306.historical_info: "Ridaniye Zaferi'nin ardından Mısır'a giren Yavuz Sultan Selim, bölgedeki Memlük direnişini tamamen kırmıştır. Nil Nehri üzerindeki ticaret yollarının kontrolünü ele geçirmesi, Osmanlı hazinesini tarihin en yüksek seviyesine ulaştırmıştır. Bu zaferle birlikte Venedikliler, Kıbrıs için Memlüklere ödedikleri vergiyi artık Osmanlılara ödemeye başlamış ve Doğu Akdeniz bir Türk gölü haline gelmiştir."
  dbo_dhe_history.306.a: "Hâdimü'l-Haremeyn!"
+# dbo_history_yavuz_sultan_selim_die
+ dbo_dhe_history.307.title: "[GetCharacter('dbo_yavuz_sultan_selim').GetName]\n$dbo_history_common_die$"
+ dbo_dhe_history.307.desc: "Sekiz yıla seksen yıllık iş sığdıran [GetCharacter('dbo_yavuz_sultan_selim').GetName], Batı'ya yapacağı büyük seferin hazırlıkları içindeyken 'Sirpençe' adı verilen bir çıban yüzünden hayata gözlerini yumdu."
+ dbo_dhe_history.307.historical_info: "22 Eylül 1520'de vefat eden Yavuz Sultan Selim, Osmanlı Devleti'ni bir dünya gücü ve İslam dünyasının lideri olarak oğlu Süleyman'a devretmiştir. Hazinesini ağzına kadar doldurmuş, Safevi ve Memlük tehditlerini tamamen ortadan kaldırmıştır. Naaşı, İstanbul'da kendi adına yaptırılan Yavuz Selim Camii'ndeki türbesine defnedilmiştir."
+ dbo_dhe_history.307.a: "$dbo_history_common_die_option$"
 # dbo_kanuni_sultan_suleiman born
  dbo_dhe_history.401.title: "[GetCharacter('dbo_kanuni_sultan_suleiman').GetName]'in\n$dbo_history_common_born$"
  dbo_dhe_history.401.desc: "1494 yılında Trabzon'da, cihanın 'Muhteşem' olarak tanıyacağı, adaletiyle 'Kanuni' unvanını alacak olan Şehzade Süleyman dünyaya geldi. Babası [GetCharacter('dbo_yavuz_sultan_selim').GetName]'in sert ve disiplinli yönetiminde yetişen Süleyman, Osmanlı'nın en parlak döneminin mimarı olacaktır."
