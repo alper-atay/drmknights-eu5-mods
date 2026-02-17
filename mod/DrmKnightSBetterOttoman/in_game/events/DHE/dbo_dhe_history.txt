@@ -86,6 +86,7 @@ dbo_dhe_history.101 = {
 	option = {
 		name = dbo_dhe_history.101.a
 		historical_option = yes
+		dbo_event_mild_bonus = yes
 	}
 }
 
@@ -128,6 +129,7 @@ dbo_dhe_history.102 = {
 			add_trait = trait:hussar_commander
 			dbo_add_scaling_character_abilities = yes
 		}
+		dbo_event_mild_bonus = yes
 	}
 }
 
@@ -164,6 +166,7 @@ dbo_dhe_history.103 = {
 			}
 			set_new_ruler = character:dbo_yildirim_sultan_bayezid
 		}
+		dbo_event_mild_bonus = yes
 	}
 }
 
@@ -192,6 +195,7 @@ dbo_dhe_history.104 = {
 		name = dbo_dhe_history.104.a
 		historical_option = yes
 		set_variable = dbo_conquest_anatolian_turks_challenged
+		dbo_event_mild_bonus = yes
 	}
 }
 
@@ -354,6 +358,7 @@ dbo_dhe_history.201 = {
 	option = {
 		name = dbo_dhe_history.201.a
 		historical_option = yes
+		dbo_event_mild_bonus = yes
 	}
 }
 
@@ -397,6 +402,7 @@ dbo_dhe_history.202 = {
 			add_trait = trait:military_theorist
 			dbo_add_scaling_character_abilities = yes
 		}
+		dbo_event_mild_bonus = yes
 	}
 }
 
@@ -441,6 +447,7 @@ dbo_dhe_history.203 = {
 				months = 3
 			}
 		}
+		dbo_event_mild_bonus = yes
 	}
 }
 
@@ -527,7 +534,7 @@ dbo_dhe_history.206 = {
 		historical_option = yes
 		set_variable = dbo_destiny_legal_code_kanunname_i_al_i_osman_policy_obtained
 		add_policy = policy:dbo_destiny_legal_code_kanunname_i_al_i_osman_policy
-		dbo_event_severe_bonus = yes
+		dbo_event_mild_bonus = yes
 	}
 }
 
@@ -670,6 +677,7 @@ dbo_dhe_history.301 = {
 	option = {
 		name = dbo_dhe_history.301.a
 		historical_option = yes
+		dbo_event_mild_bonus = yes
 	}
 }
 
@@ -712,6 +720,7 @@ dbo_dhe_history.302 = {
 			add_trait = trait:military_theorist
 			dbo_add_scaling_character_abilities = yes
 		}
+		dbo_event_mild_bonus = yes
 	}
 }
 
@@ -748,6 +757,7 @@ dbo_dhe_history.303 = {
 			}
 			set_new_ruler = character:dbo_yavuz_sultan_selim
 		}
+		dbo_event_mild_bonus = yes
 	}
 }
 
@@ -851,6 +861,7 @@ dbo_dhe_history.307 = {
 		monthly_chance = 100
 	}
 	trigger = {
+		at_war = no
 		exists = character:dbo_yavuz_sultan_selim
 		character:dbo_yavuz_sultan_selim = {
 			is_alive = yes
@@ -865,6 +876,11 @@ dbo_dhe_history.307 = {
 		has_variable = dbo_conquest_steep_mountain_challenged
 		has_variable = dbo_conquest_fertile_crescent_challenged
 		has_variable = dbo_conquest_nile_river_challenged
+		exists = character:dbo_kanuni_sultan_suleiman
+		character:dbo_yavuz_sultan_selim = {
+			is_alive = yes
+			is_adult = yes
+		}
 	}
 	immediate = {
 		kill_character = {
@@ -893,11 +909,12 @@ dbo_dhe_history.401 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		has_ruler = yes
-		ruler = {
+		exists = character:dbo_yavuz_sultan_selim
+		character:dbo_yavuz_sultan_selim = {
+			is_alive = yes
 			is_adult = yes
+			character_age > 24
 		}
-		ruler = character:dbo_yavuz_sultan_selim
 	}
 	immediate = {
 		create_character = {
@@ -916,6 +933,7 @@ dbo_dhe_history.401 = {
 	option = {
 		name = dbo_dhe_history.401.a
 		historical_option = yes
+		dbo_event_mild_bonus = yes
 	}
 }
 
@@ -958,6 +976,7 @@ dbo_dhe_history.402 = {
 			add_trait = trait:strategist
 			dbo_add_scaling_character_abilities = yes
 		}
+		dbo_event_mild_bonus = yes
 	}
 }
 
@@ -996,7 +1015,9 @@ dbo_dhe_history.403 = {
 				}
 			}
 			set_new_ruler = character:dbo_kanuni_sultan_suleiman
+			dbo_event_mild_bonus = yes
 		}
+		dbo_event_mild_bonus = yes
 	}
 }
 
@@ -1120,6 +1141,6 @@ dbo_dhe_history.407 = {
 			add_policy = policy:dbo_destiny_legal_code_kanunname_i_al_i_osman_policy
 		}
 		set_variable = dbo_destiny_legal_code_kanunname_i_al_i_osman_policy_developed
-		dbo_event_severe_bonus = yes
+		dbo_event_mild_bonus = yes
 	}
 }

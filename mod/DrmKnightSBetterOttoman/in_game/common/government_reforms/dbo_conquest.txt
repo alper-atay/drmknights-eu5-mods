@@ -128,7 +128,7 @@ dbo_conquest_black_sea_stamp = {
 	}
 	country_modifier = {
 		power_projection = 5
-		num_naval_governors = 1
+		num_local_governors = 1
 		navy_maintenance_cost = -0.1
 		trade_efficiency = 0.1
 		trade_range_modifier = 0.1
@@ -174,7 +174,7 @@ dbo_conquest_turkish_renaissance_stamp = {
 	}
 	country_modifier = {
 		power_projection = 5
-		num_naval_governors = 1
+		num_local_governors = 1
 		tolerance_heretic = 1
 		bank_interest = -0.03
 		total_loan_capacity_modifier = 0.5
@@ -218,6 +218,7 @@ dbo_conquest_maghreb_stamp = {
 	}
 	country_modifier = {
 		power_projection = 5
+		num_local_governors = 1
 		num_naval_governors = 1
 		colonial_range = 1000
 		colonial_range_modifier = 0.5
@@ -243,10 +244,11 @@ dbo_conquest_steep_mountain_stamp = {
 	}
 	country_modifier = {
 		power_projection = 5
+		num_local_governors = 1
 		global_hostile_attrition = 1
 		land_morale_attrition_cost = -0.002
 		land_morale_movement_cost = -0.0001
-		land_unit_attrition = -0.1
+		land_unit_attrition = -0.2
 		land_morale_recovery = 0.05
 		government_reform_slots = 1
 	}

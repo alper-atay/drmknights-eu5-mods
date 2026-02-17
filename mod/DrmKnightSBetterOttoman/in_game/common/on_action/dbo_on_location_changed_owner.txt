@@ -3,6 +3,7 @@ on_location_changed_owner = {
 	on_actions = {
 		dbo_on_conquer_any_location
 		dbo_on_conquer_anatolian
+		dbo_on_ottoman_miracle
 	}
 }
 
@@ -47,7 +48,23 @@ dbo_on_conquer_any_location = {
 	}
 }
 
-#root = location  (after winning and losing, for both), scope:winner = new owner country, scope:loser = previous owner country
+dbo_on_ottoman_miracle = {
+	trigger = {
+		tag_exists = TUR
+		NOT = {
+			owner = c:TUR
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				has_location_modifier = dbo_ottoman_miracle
+			}
+			remove_location_modifier = dbo_ottoman_miracle
+		}
+	}
+}
+
 dbo_on_conquer_anatolian = {
 	trigger = {
 		tag_exists = TUR

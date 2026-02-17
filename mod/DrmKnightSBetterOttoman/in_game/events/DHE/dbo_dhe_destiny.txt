@@ -28,7 +28,7 @@ dbo_dhe_destiny.101 = {
 	}
 }
 
-# dbo_destiny_war_slave_tax_and_devshirme_system_policy
+# dbo_destiny_war_slave_tax_and_devshirme_system
 dbo_dhe_destiny.102 = {
 	title = dbo_dhe_destiny.102.title
 	desc = dbo_dhe_destiny.102.desc
@@ -45,16 +45,8 @@ dbo_dhe_destiny.102 = {
 		has_slavery = yes
 		has_law = recruitment_law
 		OR = {
-			OR = {
-				has_policy = ottoman_war_slave_tax
-				has_policy = devshirme_system_policy
-			}
-			current_age_or_later = {
-				age = age_3_discovery
-			}
-		}
-		NOT = {
-			has_policy = dbo_destiny_war_slave_tax_and_devshirme_system_policy
+			has_policy = ottoman_war_slave_tax
+			has_policy = devshirme_system_policy
 		}
 		NOT = {
 			has_variable = devshirme_abolished
@@ -63,9 +55,16 @@ dbo_dhe_destiny.102 = {
 	option = {
 		name = dbo_dhe_destiny.102.a
 		historical_option = yes
-		set_variable = dbo_destiny_war_slave_tax_and_devshirme_system_policy_obtained
-		add_policy = policy:dbo_destiny_war_slave_tax_and_devshirme_system_policy
-		dbo_event_severe_bonus = yes
+		add_manpower = {
+			value = monthly_manpower
+			multiply = 12
+		}
+		add_sailors = {
+			value = monthly_sailors
+			multiply = 12
+		}
+		add_government_power = government_power_severe_bonus
+		dbo_event_extreme_bonus = yes
 	}
 }
 
@@ -109,6 +108,7 @@ dbo_dhe_destiny.103 = {
 				}
 			}
 		}
+		dbo_event_severe_bonus = yes
 	}
 	option = {
 		name = dbo_dhe_destiny.103.b

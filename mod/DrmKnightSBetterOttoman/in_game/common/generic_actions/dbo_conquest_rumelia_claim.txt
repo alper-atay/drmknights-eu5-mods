@@ -73,10 +73,14 @@
 					area = area:northern_greece_area
 					area = area:serbia_area
 					area = area:thrace_area
+					area = area:aegean_archipelago_area
 				}
 			}
 			any_location_in_province = {
-				is_neighbor_of = scope:actor
+				OR = {
+					is_neighbor_of = scope:actor
+					area = area:aegean_archipelago_area
+				}
 			}
 			NOT = {
 				owner = {
@@ -221,7 +225,7 @@
 		}
 		else = {
 			add = {
-				value = 20
+				value = 25
 				desc = BASE_VALUE
 			}
 		}

@@ -26,7 +26,6 @@
 	dbo_military_army_fundamental_kapikulu_ocaklari_policy = {
 		unique = yes
 		allow = {
-			has_policy = dbo_destiny_war_slave_tax_and_devshirme_system_policy
 			has_variable = dbo_military_army_fundamental_kapikulu_ocaklari_policy_obtained
 			NOT = {
 				has_variable = dbo_military_army_fundamental_kapikulu_ocaklari_policy_disposed

@@ -50,7 +50,7 @@
  dbo_conquest_maghreb_stamp: "$dbo_conquest_slogan_maghreb$ Damgası"
  dbo_conquest_steep_mountain_stamp: "$dbo_conquest_slogan_steep_mountain$ Damgası"
  # Goverment Reforms Desc
- dbo_conquest_anatolian_turks_stamp_desc: "$dbo_conquest_anatolian_brief$\n\n$dbo_conquest_anatolian_turks$ başarıyla sağlandı ve artık daha güçlüyüz. Tüm [ShowCultureGroupName('turkic_group')] halkı olarak bu topraklara kök salacağız!"
+ dbo_conquest_anatolian_turks_stamp_desc: "$dbo_conquest_anatolian_brief$\n\n$dbo_conquest_anatolian_turks$ başarıyla sağlandı ve artık daha güçlüyüz. Tüm [ShowCultureGroupName('turkic_group')] halkı olarak bu topraklara kök salacağız!\n\n$dbo_conquest_anatolian_turks_map_info$"
  dbo_conquest_rumelia_stamp_desc: "$dbo_conquest_rumelia_brief$\n\n$dbo_conquest_rumelia$ başarıyla sağlandı ve artık daha güçlüyüz. Tüm [ShowCultureGroupName('turkic_group')] halkı olarak bu topraklara kök salacağız!"
  dbo_conquest_fertile_crescent_stamp_desc: "$dbo_conquest_fertile_crescent_brief$\n\n$dbo_conquest_fertile_crescent$ başarıyla sağlandı ve artık daha güçlüyüz. Tüm [ShowCultureGroupName('turkic_group')] halkı olarak bu topraklara kök salacağız!"
  dbo_conquest_arabian_peninsula_stamp_desc: "$dbo_conquest_arabian_peninsula_brief$\n\n$dbo_conquest_arabian_peninsula$ başarıyla sağlandı ve artık daha güçlüyüz. Tüm [ShowCultureGroupName('turkic_group')] halkı olarak bu topraklara kök salacağız!"

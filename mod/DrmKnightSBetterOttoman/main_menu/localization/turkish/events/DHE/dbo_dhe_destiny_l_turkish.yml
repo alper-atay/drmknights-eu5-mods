@@ -4,8 +4,8 @@
  dbo_dhe_destiny.101.desc: "$dbo_destiny_talented_youngest_heir_selection_desc$"
  dbo_dhe_destiny.101.a: "Geleceğimiz budur!"
  # dbo_destiny_war_slave_tax_and_devshirme_system_policy
- dbo_dhe_destiny.102.title: "[ShowPolicyName('dbo_destiny_war_slave_tax_and_devshirme_system_policy')]\n[Concept('policy', 'Politikası')|e]"
- dbo_dhe_destiny.102.desc: "$dbo_destiny_war_slave_tax_and_devshirme_system_policy_desc$"
+ dbo_dhe_destiny.102.title: "[ShowLawName('recruitment_law')]\n[Concept('law', 'Kanunu')|e]"
+ dbo_dhe_destiny.102.desc: "Osmanlı İmparatorluğu'nun insan gücü ve bürokrasi yönetiminin temel taşıdır. Balkanlar ve Anadolu'daki gayrimüslim tebaanın yetenekli çocuklarının seçilerek devlet hizmetine alınması esasına dayanır. Sıkı bir eğitimden geçen bu gençler; askerlik yeteneklerine göre Yeniçeri Ocağı'na, idari zekalarına göre ise Enderun Mektebi'ne gönderilerek imparatorluğun en üst düzey yönetici kadrolarını oluştururlar. Bu sistem, hanedana sadık, toprak sahibi soylulardan bağımsız bir yönetici sınıfı yaratarak merkezi otoriteyi güçlendirir."
  dbo_dhe_destiny.102.historical_info: "Devşirme sistemi, Osmanlı Devleti'nin özellikle Balkanlar'daki Hristiyan tebaanın yetenekli çocuklarını seçerek devlet hizmetine kazandırdığı, imparatorluğun askeri ve idari yapısının temelini oluşturan özgün bir insan kaynağı modelidir.\nBelirli kurallar çerçevesinde (tek erkek çocuk alınmaması, asil ailelerden seçilmesi gibi) toplanan bu çocuklar, önce Türk ailelerin yanına verilerek Türk-İslam kültürünü ve dilini öğrenir, ardından Acemi Ocağı'nda sıkı bir eğitimden geçerlerdi.\nBu süreç sonunda fiziksel yetenekleri ön planda olanlar Yeniçeri Ocağı'na asker olarak alınırken, zihinsel kapasitesi yüksek olanlar Enderun Mektebi'ne seçilerek sadrazamlığa kadar yükselebilen üst düzey devlet bürokratları haline gelirlerdi.\nSistem, padişaha doğrudan bağlı ve yerel çıkar gruplarından bağımsız bir yönetici sınıfı yaratarak merkezi otoritenin korunmasını sağlamış, ancak 17. yüzyıldan itibaren usullerin bozulmasıyla disiplinini kaybederek yerini farklı uygulamalara bırakmıştır."
  dbo_dhe_destiny.102.a: "Geleceğimiz için!"
 # Winner Ottoman get all Beyliks

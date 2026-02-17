@@ -12,16 +12,11 @@
 	}
 	country_modifier = {
 		artist_monthly_start_chance = 0.1
-		artist_salary_modifier = -0.1
-		artist_salary_modifier_on_character = -0.1
 		artist_skill_level_gain = 10
 		artist_impact = 0.1
 		num_possible_artists = 1
-		skill_of_new_artists = 0.1
 		cultures_capacity = 1
 		cultures_capacity_modifier = 0.25
-		cultural_tradition_modifier = 0.1
-		cultural_influence_modifier = 0.1
 		global_institution_growth_modifier = 0.1
 		government_reform_slots = 1
 	}
@@ -104,11 +99,11 @@ dbo_destiny_piri_reis = {
 	}
 	country_modifier = {
 		government_reform_slots = 1
-		exploration_maintenance_cost = -0.1
-		exploration_mission_speed_modifier = 0.1
-		exploration_preparation_time_modifier = -0.1
-		start_exploration_land_cost_modifier = -0.1
-		start_exploration_sea_cost_modifier = -0.1
+		exploration_maintenance_cost = -0.2
+		exploration_mission_speed_modifier = 0.2
+		exploration_preparation_time_modifier = -0.2
+		start_exploration_land_cost_modifier = -0.2
+		start_exploration_sea_cost_modifier = -0.2
 	}
 }
 

@@ -23,6 +23,7 @@
 					this.area = area:pontus_area
 					this.area = area:west_anatolia_area
 					this.area = area:cilicia_area
+					this.area = area:aegean_archipelago_area
 					this.province_definition = province_definition:edirne_province
 					this.province_definition = province_definition:dardanelles_province
 					this.province_definition = province_definition:constantinople_province
@@ -79,6 +80,7 @@ dbo_cb_conquest_rumelia = {
 					this.area = area:northern_greece_area
 					this.area = area:serbia_area
 					this.area = area:thrace_area
+					this.area = area:aegean_archipelago_area
 				}
 			}
 		}

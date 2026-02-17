@@ -12,8 +12,10 @@
 		has_law = dbo_military_army_gendarme_law
 	}
 	remove_if = {
-		NOT = {
-			has_law = dbo_military_army_gendarme_law
+		owner ?= {
+			NOT = {
+				has_law = dbo_military_army_gendarme_law
+			}
 		}
 	}
 	unique_production_methods = {
@@ -57,10 +59,6 @@ dbo_grand_bazaar = {
 		}
 	}
 	build_time = market_build_time
-	modifier = {
-		merchant_power_from_building = 1
-		merchant_capacity_from_building = 1
-	}
 	market_center_modifier = {
 		local_trade_center_power = 0.1
 		local_trade_protection_factor = 0.1
@@ -76,7 +74,8 @@ dbo_grand_bazaar = {
 			jewelry = 0.1
 			fine_cloth = 0.1
 			produced = goods_gold
-			output = 0.5
+			output = 0.4
+			debug_max_profit = 1
 			category = building_maintenance
 		}
 	}

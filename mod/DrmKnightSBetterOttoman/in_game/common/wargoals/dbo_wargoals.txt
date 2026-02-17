@@ -11,6 +11,7 @@
 				scope:location.area = area:pontus_area
 				scope:location.area = area:west_anatolia_area
 				scope:location.area = area:cilicia_area
+				scope:location.area = area:aegean_archipelago_area
 				scope:location.province_definition = province_definition:edirne_province
 				scope:location.province_definition = province_definition:dardanelles_province
 				scope:location.province_definition = province_definition:constantinople_province
@@ -54,6 +55,7 @@ dbo_conquest_rumelia = {
 				scope:location.area = area:northern_greece_area
 				scope:location.area = area:serbia_area
 				scope:location.area = area:thrace_area
+				scope:location.area = area:aegean_archipelago_area
 			}
 		}
 	}
