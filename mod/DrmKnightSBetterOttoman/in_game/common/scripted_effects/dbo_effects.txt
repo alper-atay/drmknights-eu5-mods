@@ -1,0 +1,9 @@
+﻿dbo_change_raw_material_effect = {
+	change_max_raw_material_workers = {
+		value = rgo_workers
+		subtract = 1
+		min = 0
+		multiply = -1
+	}
+	change_raw_material = $goods$
+}

@@ -79,27 +79,15 @@
 					area = area:veneto_area
 				}
 			}
-			OR = {
-				any_location_in_province = {
+			any_location_in_province = {
+				OR = {
 					is_neighbor_of = scope:actor
-				}
-				any_location_in_area = {
-					OR = {
-						area = area:abruzzo_area
-						area = area:apulia_area
-						area = area:basilicata_area
-						area = area:campania_area
-						area = area:emilia_area
-						area = area:lazio_area
-						area = area:liguria_area
-						area = area:lombardy_area
-						area = area:marche_area
-						area = area:piemonte_area
-						area = area:sardinia_area
-						area = area:sicily_area
-						area = area:tuscany_area
-						area = area:veneto_area
-					}
+					province_definition = province_definition:cismonte_province
+					province_definition = province_definition:pumonte_province
+					province_definition = province_definition:arborea_province
+					province_definition = province_definition:cagliari_province
+					province_definition = province_definition:gallura_province
+					province_definition = province_definition:logudoro_province
 				}
 			}
 			NOT = {

@@ -72,14 +72,17 @@ dbo_cb_conquest_rumelia = {
 		scope:target = {
 			any_owned_location = {
 				OR = {
+					this.area = area:slovenia_area
+					this.area = area:slavonia_area
+					this.area = area:croatia_area
 					this.area = area:bosnia_area
-					this.area = area:albania_area
+					this.area = area:serbia_area
 					this.area = area:bulgaria_area
 					this.area = area:macedonia_area
-					this.area = area:morea_area
-					this.area = area:northern_greece_area
-					this.area = area:serbia_area
 					this.area = area:thrace_area
+					this.area = area:albania_area
+					this.area = area:northern_greece_area
+					this.area = area:morea_area
 					this.area = area:aegean_archipelago_area
 				}
 			}
@@ -123,6 +126,7 @@ dbo_cb_conquest_fertile_crescent = {
 		always = yes
 	}
 	ai_selection_desire = 300
+	ai_subjugation_desire = -100
 }
 
 dbo_cb_conquest_arabian_peninsula = {
@@ -215,6 +219,7 @@ dbo_cb_conquest_black_sea = {
 		always = yes
 	}
 	ai_selection_desire = 250
+	ai_subjugation_desire = -100
 }
 
 dbo_cb_conquest_nile_river = {
@@ -249,6 +254,7 @@ dbo_cb_conquest_nile_river = {
 		always = yes
 	}
 	ai_selection_desire = 150
+	ai_subjugation_desire = -100
 }
 
 dbo_cb_conquest_europe_eastern_gate = {
@@ -270,16 +276,13 @@ dbo_cb_conquest_europe_eastern_gate = {
 		scope:target = {
 			any_owned_location = {
 				OR = {
+					this.area = area:moldavia_area
 					this.area = area:north_alfold_area
+					this.area = area:slovakia_area
 					this.area = area:south_alfold_area
 					this.area = area:transdanubia_area
-					this.area = area:moldavia_area
-					this.area = area:slovakia_area
 					this.area = area:transylvania_area
 					this.area = area:wallachia_area
-					this.area = area:croatia_area
-					this.area = area:slavonia_area
-					this.area = area:slovenia_area
 				}
 			}
 		}
@@ -289,6 +292,7 @@ dbo_cb_conquest_europe_eastern_gate = {
 		always = yes
 	}
 	ai_selection_desire = 250
+	ai_subjugation_desire = -100
 }
 
 dbo_cb_conquest_turkish_renaissance = {
@@ -321,9 +325,8 @@ dbo_cb_conquest_turkish_renaissance = {
 					this.area = area:lazio_area
 					this.area = area:liguria_area
 					this.area = area:lombardy_area
-					this.area = area:piemonte_area
-					this.area = area:sardinia_area
 					this.area = area:marche_area
+					this.area = area:piemonte_area
 					this.area = area:sardinia_area
 					this.area = area:sicily_area
 					this.area = area:tuscany_area
@@ -337,6 +340,7 @@ dbo_cb_conquest_turkish_renaissance = {
 		always = yes
 	}
 	ai_selection_desire = 100
+	ai_subjugation_desire = -100
 }
 
 dbo_cb_conquest_pearl_of_east = {
@@ -376,6 +380,7 @@ dbo_cb_conquest_pearl_of_east = {
 		always = yes
 	}
 	ai_selection_desire = 100
+	ai_subjugation_desire = -100
 }
 
 dbo_cb_conquest_maghreb = {
@@ -416,6 +421,7 @@ dbo_cb_conquest_maghreb = {
 		always = yes
 	}
 	ai_selection_desire = 150
+	ai_subjugation_desire = -100
 }
 
 dbo_cb_conquest_steep_mountain = {
@@ -450,4 +456,5 @@ dbo_cb_conquest_steep_mountain = {
 		always = yes
 	}
 	ai_selection_desire = 250
+	ai_subjugation_desire = -100
 }

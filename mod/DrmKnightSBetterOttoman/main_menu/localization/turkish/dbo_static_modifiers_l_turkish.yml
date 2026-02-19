@@ -15,3 +15,6 @@
  STATIC_MODIFIER_DESC_dbo_ottoman_miracle: "[GetCountry('TUR').GetName] kuruluş dönemindeki hızlı büyümesini, sağlam idari yapısını ve askeri dehasını temsil eden, küçük bir uç beyliğinden cihan imparatorluğuna dönüşmesini sağlayan eşsiz dinamizm. [ShowModifier('dbo_ottoman_miracle')] bu topraklarda."
  STATIC_MODIFIER_NAME_dbo_ottoman_scare: "Osmanlı Korkusu"
  STATIC_MODIFIER_DESC_dbo_ottoman_scare: "Bu il, [GetCountry('TUR').GetName] tarafından bu toprakları fethetmek ve yoluna çıkan herkesi yok etmek istediği için tamamen korku içinde."
+# dbo_rize_tea
+ STATIC_MODIFIER_NAME_dbo_rize_tea: "Rize Çay"
+ STATIC_MODIFIER_DESC_dbo_rize_tea: "Rize'nin eşsiz ikliminde yetişen bu bitki, Osmanlı topraklarında kahveye alternatif olarak doğan yeni bir kültürel ve ekonomik güçtür. Doğu Karadeniz'in sarp yamaçlarından gelen bu yeşil mucize, imparatorluğun dört bir yanındaki çayhanelerde halkı birleştiren, zihni açan ve ticareti canlandıran stratejik bir değer haline gelmiştir."

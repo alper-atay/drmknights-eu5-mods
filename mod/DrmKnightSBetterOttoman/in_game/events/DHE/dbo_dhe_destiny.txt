@@ -56,12 +56,21 @@ dbo_dhe_destiny.102 = {
 		name = dbo_dhe_destiny.102.a
 		historical_option = yes
 		add_manpower = {
-			value = monthly_manpower
-			multiply = 12
+			value = max_manpower
+			multiply = 0.2
+			min = 2
+			max = 10
 		}
 		add_sailors = {
-			value = monthly_sailors
-			multiply = 12
+			value = max_sailors
+			multiply = 0.2
+			min = 1
+			max = 5
+		}
+		add_country_modifier = {
+			modifier = recruits_flock
+			years = 10
+			mode = add_and_extend
 		}
 		add_government_power = government_power_severe_bonus
 		dbo_event_extreme_bonus = yes

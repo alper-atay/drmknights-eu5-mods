@@ -31,8 +31,9 @@
 	construction_demand = castle_construction
 	modifier = {
 		local_crown_estate_power = 0.05
-		local_unrest = -0.02
-		pop_join_rebel_threshold = -0.01
+		local_unrest = -0.1
+		local_pop_join_rebel_threshold = -0.05
+		local_pop_leave_rebels_threshold = -0.1
 	}
 }
 
@@ -74,7 +75,7 @@ dbo_grand_bazaar = {
 			jewelry = 0.1
 			fine_cloth = 0.1
 			produced = goods_gold
-			output = 0.4
+			output = 0.5
 			debug_max_profit = 1
 			category = building_maintenance
 		}
@@ -118,10 +119,11 @@ dbo_grand_mosque = {
 	}
 	modifier = {
 		local_monthly_literacy = 0.05
-		local_clergy_estate_power = 0.5
+		local_clergy_estate_power = 0.25
 		local_cultural_influence = 0.1
 		local_unrest = -0.05
-		local_pop_conversion_speed_modifier = 0.05
+		local_pop_assimilation_speed_modifier = 0.1
+		local_pop_conversion_speed_modifier = 0.1
 	}
 	capital_modifier = {
 		local_migration_attraction = 0.1

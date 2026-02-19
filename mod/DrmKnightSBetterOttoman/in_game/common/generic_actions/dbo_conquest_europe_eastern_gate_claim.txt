@@ -63,16 +63,13 @@
 			}
 			trigger_if = {
 				OR = {
+					area = area:moldavia_area
 					area = area:north_alfold_area
+					area = area:slovakia_area
 					area = area:south_alfold_area
 					area = area:transdanubia_area
-					area = area:moldavia_area
-					area = area:slovakia_area
 					area = area:transylvania_area
 					area = area:wallachia_area
-					area = area:croatia_area
-					area = area:slavonia_area
-					area = area:slovenia_area
 				}
 			}
 			any_location_in_province = {

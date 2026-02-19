@@ -100,7 +100,10 @@
 				}
 			}
 			any_location_in_province = {
-				is_neighbor_of = scope:actor
+				OR = {
+					is_neighbor_of = scope:actor
+					area = area:crimea_area
+				}
 			}
 			NOT = {
 				owner = {

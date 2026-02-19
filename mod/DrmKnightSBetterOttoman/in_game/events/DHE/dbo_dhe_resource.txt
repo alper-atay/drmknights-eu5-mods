@@ -1,0 +1,85 @@
+﻿namespace = dbo_dhe_raw_material
+# test
+# Eski tarihi kayıtları araştırırken Osmanlı Çan ilinde çok eskiden kalma altın madenlerinin olduğunu öğrenirler.
+# location:can lumber to gold
+dbo_dhe_raw_material.101 = {
+	type = country_event
+	title = dbo_dhe_raw_material.101.title
+	desc = dbo_dhe_raw_material.101.desc
+	fire_only_once = yes
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.6.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		owns = location:can
+		location:can = {
+			is_core_of = root
+		}
+	}
+	option = {
+		name = dbo_dhe_raw_material.101.a
+		historical_option = yes
+		location:can = {
+			dbo_change_raw_material_effect = {
+				goods = goods:goods_gold
+			}
+		}
+	}
+}
+
+# Tea
+dbo_dhe_raw_material.102 = {
+	type = country_event
+	title = dbo_dhe_raw_material.102.title
+	desc = dbo_dhe_raw_material.102.desc
+	fire_only_once = yes
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.6.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		owns = location:gorele
+		location:gorele = {
+			is_core_of = root
+		}
+		owns = location:rize
+		location:rize = {
+			is_core_of = root
+		}
+		owns = location:artanuji
+		location:artanuji = {
+			is_core_of = root
+		}
+	}
+	option = {
+		name = dbo_dhe_raw_material.102.a
+		historical_option = yes
+		location:gorele = {
+			dbo_change_raw_material_effect = {
+				goods = goods:tea
+			}
+		}
+		location:rize = {
+			dbo_change_raw_material_effect = {
+				goods = goods:tea
+			}
+			add_location_modifier = {
+				modifier = dbo_rize_tea
+				mode = add_and_extend
+				years = -1
+			}
+		}
+		location:artanuji = {
+			dbo_change_raw_material_effect = {
+				goods = goods:tea
+			}
+		}
+	}
+}

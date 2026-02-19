@@ -65,14 +65,17 @@
 			}
 			trigger_if = {
 				OR = {
+					area = area:slovenia_area
+					area = area:slavonia_area
+					area = area:croatia_area
 					area = area:bosnia_area
-					area = area:albania_area
+					area = area:serbia_area
 					area = area:bulgaria_area
 					area = area:macedonia_area
-					area = area:morea_area
-					area = area:northern_greece_area
-					area = area:serbia_area
 					area = area:thrace_area
+					area = area:albania_area
+					area = area:northern_greece_area
+					area = area:morea_area
 					area = area:aegean_archipelago_area
 				}
 			}

@@ -78,7 +78,6 @@
 					area = area:pontus_area
 					area = area:west_anatolia_area
 					area = area:cilicia_area
-					area = area:aegean_archipelago_area
 					province_definition = province_definition:edirne_province
 					province_definition = province_definition:dardanelles_province
 					province_definition = province_definition:constantinople_province
@@ -103,7 +102,6 @@
 				OR = {
 					is_neighbor_of = scope:actor
 					province_definition = province_definition:cyprus_province
-					area = area:aegean_archipelago_area
 				}
 			}
 			NOT = {
