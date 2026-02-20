@@ -62,18 +62,7 @@
 				can_declare_war_on = root.owner
 			}
 			trigger_if = {
-				OR = {
-					area = area:azerbaijan_area
-					area = area:baluchistan_area
-					area = area:fars_area
-					area = area:iraq_ajam_area
-					area = area:kerman_area
-					area = area:khuzestan_area
-					area = area:kordestan_area
-					area = area:mazandaran_area
-					area = area:quhestan_area
-					area = area:sistan_area
-				}
+				region = region:persia_region
 			}
 			any_location_in_province = {
 				is_neighbor_of = scope:actor

@@ -1,0 +1,790 @@
+﻿namespace = dbo_dhe_raw_material
+# 11 amasya_province = { amasya gadegara ladik_pontus merzifon sonisa }
+# 21 bozok_province = { bozok baliseyh candir dinek_keskin sorgun }
+# 31 corum_province = { corum gumus huseyinabad iskilip sungurlu }
+# 41 divrigi_province = { divrigi arapgir arguvan egin east_taurus_1 east_taurus_9 }
+# 51 kayseri_province = { kayseri bogazliyan develi tomarza yahyali hodul_mountains middle_taurus_5 }
+## 51 kayseri bogazliyan develi tomarza -> any to potato
+dbo_dhe_raw_material.51 = {
+	type = country_event
+	title = dbo_dhe_raw_material.51.title
+	desc = dbo_dhe_raw_material.51.desc
+	fire_only_once = yes
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.6.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_location_is_homeland = {
+			location = location:kayseri
+		}
+		dbo_location_is_homeland = {
+			location = location:bogazliyan
+		}
+		dbo_location_is_homeland = {
+			location = location:develi
+		}
+		dbo_location_is_homeland = {
+			location = location:tomarza
+		}
+		dbo_columbian_exchange_situation_active_trigger = yes
+		dbo_columbian_exchange_can_see_goods_trigger = {
+			goods = goods:potato
+		}
+	}
+	option = {
+		name = dbo_dhe_raw_material.51.a
+		historical_option = yes
+		location:kayseri = {
+			dbo_change_raw_material_effect = {
+				goods = goods:potato
+			}
+		}
+		location:bogazliyan = {
+			dbo_change_raw_material_effect = {
+				goods = goods:potato
+			}
+		}
+		location:develi = {
+			dbo_change_raw_material_effect = {
+				goods = goods:potato
+			}
+		}
+		location:tomarza = {
+			dbo_change_raw_material_effect = {
+				goods = goods:potato
+			}
+		}
+	}
+}
+
+# 61 kirsehir_province = { kirsehir hacibektas nevsehir sariyahsi urgup }
+## 61 kirsehir hacibektas nevsehir sariyahsi urgup -> any to potato
+dbo_dhe_raw_material.61 = {
+	type = country_event
+	title = dbo_dhe_raw_material.61.title
+	desc = dbo_dhe_raw_material.61.desc
+	fire_only_once = yes
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.6.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_location_is_homeland = {
+			location = location:kirsehir
+		}
+		dbo_location_is_homeland = {
+			location = location:hacibektas
+		}
+		dbo_location_is_homeland = {
+			location = location:nevsehir
+		}
+		dbo_location_is_homeland = {
+			location = location:sariyahsi
+		}
+		dbo_location_is_homeland = {
+			location = location:urgup
+		}
+		dbo_columbian_exchange_situation_active_trigger = yes
+		dbo_columbian_exchange_can_see_goods_trigger = {
+			goods = goods:potato
+		}
+	}
+	option = {
+		name = dbo_dhe_raw_material.61.a
+		historical_option = yes
+		location:kirsehir = {
+			dbo_change_raw_material_effect = {
+				goods = goods:potato
+			}
+		}
+		location:hacibektas = {
+			dbo_change_raw_material_effect = {
+				goods = goods:potato
+			}
+		}
+		location:nevsehir = {
+			dbo_change_raw_material_effect = {
+				goods = goods:potato
+			}
+		}
+		location:sariyahsi = {
+			dbo_change_raw_material_effect = {
+				goods = goods:potato
+			}
+		}
+		location:urgup = {
+			dbo_change_raw_material_effect = {
+				goods = goods:potato
+			}
+		}
+	}
+}
+
+# 71 nigde_province = { nigde bekarlar bor_tur melendiz_mountains }
+# 81 sivas_province = { sivas darende dasmenda deliktash gemerek gurun hafik sarkisla zara ak_mountains kose_mountains_1 middle_taurus_4 middle_taurus_6 middle_taurus_7 }
+## 89 location:zara wool to sugar
+dbo_dhe_raw_material.89 = {
+	type = country_event
+	title = dbo_dhe_raw_material.89.title
+	desc = dbo_dhe_raw_material.89.desc
+	fire_only_once = yes
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.6.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_location_is_homeland = {
+			location = location:zara
+		}
+	}
+	option = {
+		name = dbo_dhe_raw_material.89.a
+		historical_option = yes
+		location:zara = {
+			dbo_change_raw_material_effect = {
+				goods = goods:sugar
+			}
+		}
+	}
+}
+
+# 91 tokat_province = { tokat akdagmadeni aydincik koyulhisar niksar sulusaray zile }
+# 101 aksaray_province = { aksaray kochisar kulu_turkey insuyu lake_tuz }
+# 111 ankara_province = { ankara cubuk haymana kalecik karakecili polatli }
+# 121 beysehir_province = { beysehir aksehir bolvadin ilgin sarkikaraagac seydisehir yalvac lake_aksehir lake_beysehir lake_eber lake_egirdir lake_sugla erenler_mountains sultan_mountains_1 sultan_mountains_2 sultan_mountains_3 }
+# 131 cankiri_province = { cankiri bayat cerkes kursunlu sabanozu tosya }
+# 141 karahisar_province = { karahisar_i_sahib altintas emirdag sandikli seyitgazi suhut sandikli_mountains }
+# 151 konya_province = { konya altinekin celtik cumra ladik suluklu turgut }
+# 161 larende_province = { larende eregli_kar eskil hatunsaray karapinar obruk pirloganda middle_taurus_1 }
+# 171 sivrihisar_province = { sivrihisar beypazari bozan kaymaz kibrus kizilca mihaliccik koroglu_mountains_1 koroglu_mountains_2 }
+# 181 adana_province = { adana ayas iskenderun kars_armenia nur_mountains_1 nur_mountains_2 }
+# 191 cyprus_province = { nicosia_cyp famagusta kyrenia larnaca limassol morphou paphos }
+# 201 icel_province = { silifke anamur ermenek mut west_taurus_2 }
+# 211 malatya_province = { malatya besni gerger kahta kaysun samsat east_taurus_2 east_taurus_8 }
+# 221 marash_province = { marash afsin elbistan enguzud goksun kapan ulnia middle_taurus_8 }
+# 231 sis_province = { sis anavarza caxud comana_cil hargan middle_taurus_2 middle_taurus_3 }
+# 241 tarsus_province = { tarsus candir_cil corycus molevon }
+# 251 biga_province = { biga ayvacik bandirma bayramic can canakkale gonen lapseki }
+## 251 location:biga sand to millet
+dbo_dhe_raw_material.251 = {
+	type = country_event
+	title = dbo_dhe_raw_material.251.title
+	desc = dbo_dhe_raw_material.251.desc
+	fire_only_once = yes
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.6.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_location_is_homeland = {
+			location = location:biga
+		}
+	}
+	option = {
+		name = dbo_dhe_raw_material.251.a
+		historical_option = yes
+		location:biga = {
+			dbo_change_raw_material_effect = {
+				goods = goods:millet
+			}
+		}
+	}
+}
+
+## 254 location:bayramic wild_game to chili
+dbo_dhe_raw_material.254 = {
+	type = country_event
+	title = dbo_dhe_raw_material.254.title
+	desc = dbo_dhe_raw_material.254.desc
+	fire_only_once = yes
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.6.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_location_is_homeland = {
+			location = location:bayramic
+		}
+		dbo_columbian_exchange_situation_active_trigger = yes
+		dbo_columbian_exchange_can_see_goods_trigger = {
+			goods = goods:chili
+		}
+	}
+	option = {
+		name = dbo_dhe_raw_material.254.a
+		historical_option = yes
+		location:bayramic = {
+			dbo_change_raw_material_effect = {
+				goods = goods:chili
+			}
+		}
+	}
+}
+
+## 255 location:can lumber to gold
+dbo_dhe_raw_material.255 = {
+	type = country_event
+	title = dbo_dhe_raw_material.255.title
+	desc = dbo_dhe_raw_material.255.desc
+	fire_only_once = yes
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.6.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_location_is_homeland = {
+			location = location:can
+		}
+	}
+	option = {
+		name = dbo_dhe_raw_material.255.a
+		historical_option = yes
+		location:can = {
+			dbo_change_raw_material_effect = {
+				goods = goods:goods_gold
+			}
+		}
+	}
+}
+
+# 261 hudavendigar_province = { bursa adranos dursunbey harmancik iznik lake_iznik }
+## 265 location:iznik clay to olives
+dbo_dhe_raw_material.265 = {
+	type = country_event
+	title = dbo_dhe_raw_material.265.title
+	desc = dbo_dhe_raw_material.265.desc
+	fire_only_once = yes
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.6.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_location_is_homeland = {
+			location = location:iznik
+		}
+	}
+	option = {
+		name = dbo_dhe_raw_material.265.a
+		historical_option = yes
+		location:iznik = {
+			dbo_change_raw_material_effect = {
+				goods = goods:olives
+			}
+		}
+	}
+}
+
+# 271 karasi_province = { balikesir balya bergama bigadic edremit manyas mihalic soma susurluk lake_manyas lake_uluabat }
+## 272 balya clay to rice
+dbo_dhe_raw_material.272 = {
+	type = country_event
+	title = dbo_dhe_raw_material.272.title
+	desc = dbo_dhe_raw_material.272.desc
+	fire_only_once = yes
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.6.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+	}
+	option = {
+		name = dbo_dhe_raw_material.272.a
+		historical_option = yes
+		location:balya = {
+			dbo_change_raw_material_effect = {
+				goods = goods:rice
+			}
+		}
+	}
+}
+
+## 274 bigadic clay to tobacco
+dbo_dhe_raw_material.274 = {
+	type = country_event
+	title = dbo_dhe_raw_material.274.title
+	desc = dbo_dhe_raw_material.274.desc
+	fire_only_once = yes
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.6.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_location_is_homeland = {
+			location = location:bigadic
+		}
+		dbo_columbian_exchange_situation_active_trigger = yes
+		dbo_columbian_exchange_can_see_goods_trigger = {
+			goods = goods:tobacco
+		}
+	}
+	option = {
+		name = dbo_dhe_raw_material.274.a
+		historical_option = yes
+		location:bigadic = {
+			dbo_change_raw_material_effect = {
+				goods = goods:tobacco
+			}
+		}
+	}
+}
+
+## 278 soma lumber to coal
+dbo_dhe_raw_material.278 = {
+	type = country_event
+	title = dbo_dhe_raw_material.278.title
+	desc = dbo_dhe_raw_material.278.desc
+	fire_only_once = yes
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.6.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_location_is_homeland = {
+			location = location:soma
+		}
+	}
+	option = {
+		name = dbo_dhe_raw_material.278.a
+		historical_option = yes
+		location:soma = {
+			dbo_change_raw_material_effect = {
+				goods = goods:coal
+			}
+		}
+	}
+}
+
+# 281 kocaeli_province = { izmit atpazari uskudar silli }
+# 291 kutahya_province = { kutahya aslanapa domanic emet simav tavsanli }
+# 301 sultanonu_province = { sultanonu bilecik goynuk eynegol inonu nalli sogut }
+# 311 bolu_province = { bolu akcasehir akyazi eregli konrapa mudurnu }
+# 321 canik_province = { giresun akkus bayramlu mesudiye terme unye west_pontus_mountains_1 west_pontus_mountains_2 }
+## 325 location:terme fish to chili
+dbo_dhe_raw_material.325 = {
+	type = country_event
+	title = dbo_dhe_raw_material.325.title
+	desc = dbo_dhe_raw_material.325.desc
+	fire_only_once = yes
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.6.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_location_is_homeland = {
+			location = location:terme
+		}
+		dbo_columbian_exchange_situation_active_trigger = yes
+		dbo_columbian_exchange_can_see_goods_trigger = {
+			goods = goods:chili
+		}
+	}
+	option = {
+		name = dbo_dhe_raw_material.325.a
+		historical_option = yes
+		location:terme = {
+			dbo_change_raw_material_effect = {
+				goods = goods:chili
+			}
+		}
+	}
+}
+
+# 331 kastamonu_province = { kastamonu arac devrekani inebolu kure_i_mamure taskopru ilgaz_mountains }
+# 341 safranbolu_province = { safranbolu amasra bartin gerede mengen ulus yenicepazari }
+# 351 sinop_province = { sinop bafra boyabat gerze samsun }
+# 361 trebizond_province = { trebizond gorele gumushane khupati rize surmene east_pontus_mountains_1 east_pontus_mountains_2 east_pontus_mountains_3 }
+## 361 trebizond gorele khupati rize surmene -> any to tea
+dbo_dhe_raw_material.361 = {
+	type = country_event
+	title = dbo_dhe_raw_material.385.title
+	desc = dbo_dhe_raw_material.385.desc
+	fire_only_once = yes
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.6.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_location_is_homeland = {
+			location = location:trebizond
+		}
+		dbo_location_is_homeland = {
+			location = location:gorele
+		}
+		dbo_location_is_homeland = {
+			location = location:khupati
+		}
+		dbo_location_is_homeland = {
+			location = location:rize
+		}
+		dbo_location_is_homeland = {
+			location = location:surmene
+		}
+	}
+	option = {
+		name = dbo_dhe_raw_material.385.a
+		historical_option = yes
+		location:trebizond = {
+			dbo_change_raw_material_effect = {
+				goods = goods:tea
+			}
+			add_location_modifier = {
+				modifier = dbo_caykur
+				years = modifier_duration_permanent
+				mode = add_and_extend
+			}
+		}
+		location:gorele = {
+			dbo_change_raw_material_effect = {
+				goods = goods:tea
+			}
+			add_location_modifier = {
+				modifier = dbo_caykur
+				years = modifier_duration_permanent
+				mode = add_and_extend
+			}
+		}
+		location:khupati = {
+			dbo_change_raw_material_effect = {
+				goods = goods:tea
+			}
+			add_location_modifier = {
+				modifier = dbo_caykur
+				years = modifier_duration_permanent
+				mode = add_and_extend
+			}
+		}
+		location:rize = {
+			dbo_change_raw_material_effect = {
+				goods = goods:tea
+			}
+			add_location_modifier = {
+				modifier = dbo_caykur
+				years = modifier_duration_permanent
+				mode = add_and_extend
+			}
+		}
+		location:surmene = {
+			dbo_change_raw_material_effect = {
+				goods = goods:tea
+			}
+			add_location_modifier = {
+				modifier = dbo_caykur
+				years = modifier_duration_permanent
+				mode = add_and_extend
+			}
+		}
+	}
+}
+
+# 371 alaiye_province = { alaiye karahisar_i_teke manavgat selinti west_taurus_3 west_taurus_5 }
+# 381 antalya_province = { antalya elmali finike kas istanoz }
+## 381 antalya wine to chili
+dbo_dhe_raw_material.381 = {
+	type = country_event
+	title = dbo_dhe_raw_material.381.title
+	desc = dbo_dhe_raw_material.381.desc
+	fire_only_once = yes
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.6.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_location_is_homeland = {
+			location = location:antalya
+		}
+		dbo_columbian_exchange_situation_active_trigger = yes
+		dbo_columbian_exchange_can_see_goods_trigger = {
+			goods = goods:chili
+		}
+	}
+	option = {
+		name = dbo_dhe_raw_material.381.a
+		historical_option = yes
+		location:antalya = {
+			dbo_change_raw_material_effect = {
+				goods = goods:chili
+			}
+		}
+	}
+}
+
+## 384 kas fish to chili
+dbo_dhe_raw_material.384 = {
+	type = country_event
+	title = dbo_dhe_raw_material.381.title
+	desc = dbo_dhe_raw_material.381.desc
+	fire_only_once = yes
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.6.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_location_is_homeland = {
+			location = location:kas
+		}
+		dbo_columbian_exchange_situation_active_trigger = yes
+		dbo_columbian_exchange_can_see_goods_trigger = {
+			goods = goods:chili
+		}
+	}
+	option = {
+		name = dbo_dhe_raw_material.381.a
+		historical_option = yes
+		location:kas = {
+			dbo_change_raw_material_effect = {
+				goods = goods:chili
+			}
+		}
+	}
+}
+
+## 385 istanoz clay to chili
+dbo_dhe_raw_material.385 = {
+	type = country_event
+	title = dbo_dhe_raw_material.385.title
+	desc = dbo_dhe_raw_material.385.desc
+	fire_only_once = yes
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.6.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_location_is_homeland = {
+			location = location:istanoz
+		}
+		dbo_columbian_exchange_situation_active_trigger = yes
+		dbo_columbian_exchange_can_see_goods_trigger = {
+			goods = goods:chili
+		}
+	}
+	option = {
+		name = dbo_dhe_raw_material.385.a
+		historical_option = yes
+		location:istanoz = {
+			dbo_change_raw_material_effect = {
+				goods = goods:chili
+			}
+		}
+	}
+}
+
+# 391 aydin_province = { tire alasehir balat birgi cine guzelhisar milas nazilli lake_bafa }
+# 401 hamid_province = { isparta burdur dinar egirdir stefani uluborlu lake_acigol lake_burdur }
+# 411 mugla_province = { mugla bodrum gokabat golhisar marmaris megri tavas yuksekkum lake_koyceghiz west_taurus_1 west_taurus_4 }
+# 421 saruhan_province = { manisa akhisar demirci foca gordes kula lake_marmara }
+# 431 smyrna_province = { smyrna ayasuluk cesme menemen urla }
+# 441 usak_province = { usak banaz gediz honaz lazkiye seyhli }
+# 501 amadiya_province = { amadiya baskale hakkari semdinli zakho east_taurus_4 }
+# 511 bitlis_province = { bitlis bahcesaray catak hizan mus east_taurus_5 east_taurus_7 }
+# 521 erzurum_province = { erzurum bayburt erzincan ilic kelkit kemah sebinkarahisar siran tercan kose_mountains_2 mescit_mountains otlukbeli_mountains }
+## 524 location:bayburt clay to lead
+dbo_dhe_raw_material.522 = {
+	type = country_event
+	title = dbo_dhe_raw_material.522.title
+	desc = dbo_dhe_raw_material.522.desc
+	fire_only_once = yes
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.6.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_location_is_homeland = {
+			location = location:bayburt
+		}
+	}
+	option = {
+		name = dbo_dhe_raw_material.522.a
+		historical_option = yes
+		location:bayburt = {
+			dbo_change_raw_material_effect = {
+				goods = goods:lead
+			}
+		}
+	}
+}
+
+## 524 location:ilic lumber to gold
+dbo_dhe_raw_material.524 = {
+	type = country_event
+	title = dbo_dhe_raw_material.524.title
+	desc = dbo_dhe_raw_material.524.desc
+	fire_only_once = yes
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.6.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_location_is_homeland = {
+			location = location:ilic
+		}
+	}
+	option = {
+		name = dbo_dhe_raw_material.524.a
+		historical_option = yes
+		location:ilic = {
+			dbo_change_raw_material_effect = {
+				goods = goods:goods_gold
+			}
+		}
+	}
+}
+
+## 529 location:ilic lumber to gold
+dbo_dhe_raw_material.529 = {
+	type = country_event
+	title = dbo_dhe_raw_material.529.title
+	desc = dbo_dhe_raw_material.529.desc
+	fire_only_once = yes
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.6.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_location_is_homeland = {
+			location = location:tercan
+		}
+	}
+	option = {
+		name = dbo_dhe_raw_material.529.a
+		historical_option = yes
+		location:tercan = {
+			dbo_change_raw_material_effect = {
+				goods = goods:millet
+			}
+		}
+	}
+}
+
+# 531 harput_province = { harput adakli bingol cemisgezek genc keban kuzucan palu pertek sivrice lake_hazar mercan_mountains_1 mercan_mountains_2 }
+# 541 kars_province = { kars kagizman surmali kars_mountains_2 kars_mountains_3 }
+# 551 malazgirt_province = { malazgirt hinis karakilise hasankale tekman tutak varto aladag_mountains karagol_mountains karasu_aras_mountains }
+# 561 van_province = { van ahlat bargiri ercis hosap tatvan lake_van suphan_mountains }
+# 601 ar_ruha_province = { urfa birecik cermik harran siverek suruc }
+# 611 diyarbekir_province = { diyarbekir egil ergani heni hazro savur karacadag 
+## 615 hazro clay to tobacco
+dbo_dhe_raw_material.615 = {
+	type = country_event
+	title = dbo_dhe_raw_material.615.title
+	desc = dbo_dhe_raw_material.615.desc
+	fire_only_once = yes
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.6.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_location_is_homeland = {
+			location = location:hazro
+		}
+		dbo_columbian_exchange_situation_active_trigger = yes
+		dbo_columbian_exchange_can_see_goods_trigger = {
+			goods = goods:tobacco
+		}
+	}
+	option = {
+		name = dbo_dhe_raw_material.615.a
+		historical_option = yes
+		location:hazro = {
+			dbo_change_raw_material_effect = {
+				goods = goods:tobacco
+			}
+		}
+	}
+}
+
+# 621 furat_province = { anah abu_kemal haditha rahba jazair }
+# 631 hasankeyf_province = { hasankeyf kozluk kulp mayyafariqin sason siirt east_taurus_3 }
+## 634 mayyafariqin clay to tobacco
+dbo_dhe_raw_material.634 = {
+	type = country_event
+	title = dbo_dhe_raw_material.634.title
+	desc = dbo_dhe_raw_material.634.desc
+	fire_only_once = yes
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.6.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_location_is_homeland = {
+			location = location:mayyafariqin
+		}
+		dbo_columbian_exchange_situation_active_trigger = yes
+		dbo_columbian_exchange_can_see_goods_trigger = {
+			goods = goods:tobacco
+		}
+	}
+	option = {
+		name = dbo_dhe_raw_material.634.a
+		historical_option = yes
+		location:mayyafariqin = {
+			dbo_change_raw_material_effect = {
+				goods = goods:tobacco
+			}
+		}
+	}
+}
+
+# 641 mardin_province = { mardin hasakah dunaysir ras_ayn tunanir viransehir }
+# 651 mosul_province = { mosul al_sinn balad duhok qayyarah sinjar tal_afar }
+# 661 nusaybin_province = { nusaybin bara_iraq barqaid cizre eruh midyat sirnak }
+# 671 raqqa_province = { raqqa araban busayrah jabar madinat_far makisin }

@@ -62,9 +62,7 @@
 				can_declare_war_on = root.owner
 			}
 			trigger_if = {
-				OR = {
-					region = region:crescent_region
-				}
+				region = region:crescent_region
 			}
 			any_location_in_province = {
 				is_neighbor_of = scope:actor

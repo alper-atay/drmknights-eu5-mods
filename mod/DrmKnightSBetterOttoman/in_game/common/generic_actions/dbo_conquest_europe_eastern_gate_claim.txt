@@ -62,15 +62,7 @@
 				can_declare_war_on = root.owner
 			}
 			trigger_if = {
-				OR = {
-					area = area:moldavia_area
-					area = area:north_alfold_area
-					area = area:slovakia_area
-					area = area:south_alfold_area
-					area = area:transdanubia_area
-					area = area:transylvania_area
-					area = area:wallachia_area
-				}
+				region = region:carpathia_region
 			}
 			any_location_in_province = {
 				is_neighbor_of = scope:actor

@@ -1,0 +1,20 @@
+﻿dbo_location_is_homeland = {
+	owns = $location$
+	$location$ = {
+		is_core_of = root
+	}
+}
+
+dbo_columbian_exchange_situation_active_trigger = {
+	can_see_situation = situation:columbian_exchange
+	situation:columbian_exchange = {
+		situation_is_active = yes
+	}
+}
+
+dbo_columbian_exchange_can_see_goods_trigger = {
+	any_in_global_list = {
+		variable = new_world_goods
+		this = $goods$
+	}
+}

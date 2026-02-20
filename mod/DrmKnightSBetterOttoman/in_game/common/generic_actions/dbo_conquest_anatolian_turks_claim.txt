@@ -72,22 +72,12 @@
 			}
 			trigger_if = {
 				OR = {
-					area = area:cappadocia_area
-					area = area:central_anatolia_area
-					area = area:marmara_area
-					area = area:pontus_area
-					area = area:west_anatolia_area
-					area = area:cilicia_area
 					province_definition = province_definition:edirne_province
 					province_definition = province_definition:dardanelles_province
 					province_definition = province_definition:constantinople_province
-					province_definition = province_definition:erzurum_province
-					province_definition = province_definition:harput_province
-					province_definition = province_definition:malazgirt_province
 					province_definition = province_definition:meskheti_province
-					province_definition = province_definition:kars_province
-					province_definition = province_definition:van_province
-					province_definition = province_definition:bitlis_province
+					region = region:anatolia_region
+					area = area:armenian_highlands_area
 					province_definition = province_definition:hasankeyf_province
 					province_definition = province_definition:diyarbekir_province
 					province_definition = province_definition:ar_ruha_province

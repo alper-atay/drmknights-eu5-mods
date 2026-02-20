@@ -62,12 +62,13 @@
 				can_declare_war_on = root.owner
 			}
 			trigger_if = {
-				OR = {
-					region = region:egypt_region
-				}
+				region = region:egypt_region
 			}
 			any_location_in_province = {
-				is_neighbor_of = scope:actor
+				OR = {
+					is_neighbor_of = scope:actor
+					province_definition = province_definition:oasis_province
+				}
 			}
 			NOT = {
 				owner = {

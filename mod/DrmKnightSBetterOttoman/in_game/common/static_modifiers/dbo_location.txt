@@ -24,7 +24,7 @@ dbo_ottoman_scare = {
 	local_sailors_modifier = -0.25
 }
 
-dbo_rize_tea = {
+dbo_caykur = {
 	game_data = {
 		category = location
 	}

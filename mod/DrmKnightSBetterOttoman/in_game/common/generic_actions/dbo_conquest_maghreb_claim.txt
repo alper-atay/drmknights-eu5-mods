@@ -65,12 +65,18 @@
 				can_declare_war_on = root.owner
 			}
 			trigger_if = {
-				OR = {
-					region = region:maghreb_region
-				}
+				region = region:maghreb_region
 			}
 			any_location_in_province = {
-				is_neighbor_of = scope:actor
+				OR = {
+					is_neighbor_of = scope:actor
+					province_definition = province_definition:east_fezzan_province
+					province_definition = province_definition:central_sahara
+					province_definition = province_definition:fezzan_province
+					province_definition = province_definition:gourara_province
+					province_definition = province_definition:saoura_province
+					province_definition = province_definition:oued_edhahab_province
+				}
 			}
 			NOT = {
 				owner = {
