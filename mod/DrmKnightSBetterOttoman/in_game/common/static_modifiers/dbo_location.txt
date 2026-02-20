@@ -29,4 +29,6 @@ dbo_caykur = {
 		category = location
 	}
 	local_tea_output_modifier = 0.5
+	local_max_rgo_size = 2
+	local_max_rgo_size_modifier = 0.5
 }

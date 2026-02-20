@@ -5,16 +5,11 @@
 	}
 }
 
-dbo_columbian_exchange_situation_active_trigger = {
-	can_see_situation = situation:columbian_exchange
-	situation:columbian_exchange = {
-		situation_is_active = yes
-	}
-}
-
-dbo_columbian_exchange_can_see_goods_trigger = {
-	any_in_global_list = {
-		variable = new_world_goods
-		this = $goods$
+dbo_in_circulation_new_world_goods_trigger = {
+	any_market_present_in_country = {
+		OR = {
+			is_produced_in_market = $goods$
+			is_traded_in_market = $goods$
+		}
 	}
 }

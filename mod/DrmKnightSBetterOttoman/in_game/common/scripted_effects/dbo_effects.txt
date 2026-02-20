@@ -1,4 +1,4 @@
-﻿dbo_change_raw_material_effect = {
+﻿dbo_change_rgo = {
 	change_max_raw_material_workers = {
 		value = rgo_workers
 		subtract = 1

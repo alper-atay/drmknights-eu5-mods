@@ -1,14 +1,14 @@
-﻿namespace = dbo_dhe_raw_material
+﻿namespace = dbo_dhe_rgo
 # 11 amasya_province = { amasya gadegara ladik_pontus merzifon sonisa }
 # 21 bozok_province = { bozok baliseyh candir dinek_keskin sorgun }
 # 31 corum_province = { corum gumus huseyinabad iskilip sungurlu }
 # 41 divrigi_province = { divrigi arapgir arguvan egin east_taurus_1 east_taurus_9 }
 # 51 kayseri_province = { kayseri bogazliyan develi tomarza yahyali hodul_mountains middle_taurus_5 }
 ## 51 kayseri bogazliyan develi tomarza -> any to potato
-dbo_dhe_raw_material.51 = {
+dbo_dhe_rgo.51 = {
 	type = country_event
-	title = dbo_dhe_raw_material.51.title
-	desc = dbo_dhe_raw_material.51.desc
+	title = dbo_dhe_rgo.51.title
+	desc = dbo_dhe_rgo.51.desc
 	fire_only_once = yes
 	outcome = positive
 	dynamic_historical_event = {
@@ -30,31 +30,30 @@ dbo_dhe_raw_material.51 = {
 		dbo_location_is_homeland = {
 			location = location:tomarza
 		}
-		dbo_columbian_exchange_situation_active_trigger = yes
-		dbo_columbian_exchange_can_see_goods_trigger = {
+		dbo_in_circulation_new_world_goods_trigger = {
 			goods = goods:potato
 		}
 	}
 	option = {
-		name = dbo_dhe_raw_material.51.a
+		name = dbo_dhe_rgo.51.a
 		historical_option = yes
 		location:kayseri = {
-			dbo_change_raw_material_effect = {
+			dbo_change_rgo = {
 				goods = goods:potato
 			}
 		}
 		location:bogazliyan = {
-			dbo_change_raw_material_effect = {
+			dbo_change_rgo = {
 				goods = goods:potato
 			}
 		}
 		location:develi = {
-			dbo_change_raw_material_effect = {
+			dbo_change_rgo = {
 				goods = goods:potato
 			}
 		}
 		location:tomarza = {
-			dbo_change_raw_material_effect = {
+			dbo_change_rgo = {
 				goods = goods:potato
 			}
 		}
@@ -63,10 +62,10 @@ dbo_dhe_raw_material.51 = {
 
 # 61 kirsehir_province = { kirsehir hacibektas nevsehir sariyahsi urgup }
 ## 61 kirsehir hacibektas nevsehir sariyahsi urgup -> any to potato
-dbo_dhe_raw_material.61 = {
+dbo_dhe_rgo.61 = {
 	type = country_event
-	title = dbo_dhe_raw_material.61.title
-	desc = dbo_dhe_raw_material.61.desc
+	title = dbo_dhe_rgo.61.title
+	desc = dbo_dhe_rgo.61.desc
 	fire_only_once = yes
 	outcome = positive
 	dynamic_historical_event = {
@@ -91,36 +90,35 @@ dbo_dhe_raw_material.61 = {
 		dbo_location_is_homeland = {
 			location = location:urgup
 		}
-		dbo_columbian_exchange_situation_active_trigger = yes
-		dbo_columbian_exchange_can_see_goods_trigger = {
+		dbo_in_circulation_new_world_goods_trigger = {
 			goods = goods:potato
 		}
 	}
 	option = {
-		name = dbo_dhe_raw_material.61.a
+		name = dbo_dhe_rgo.61.a
 		historical_option = yes
 		location:kirsehir = {
-			dbo_change_raw_material_effect = {
+			dbo_change_rgo = {
 				goods = goods:potato
 			}
 		}
 		location:hacibektas = {
-			dbo_change_raw_material_effect = {
+			dbo_change_rgo = {
 				goods = goods:potato
 			}
 		}
 		location:nevsehir = {
-			dbo_change_raw_material_effect = {
+			dbo_change_rgo = {
 				goods = goods:potato
 			}
 		}
 		location:sariyahsi = {
-			dbo_change_raw_material_effect = {
+			dbo_change_rgo = {
 				goods = goods:potato
 			}
 		}
 		location:urgup = {
-			dbo_change_raw_material_effect = {
+			dbo_change_rgo = {
 				goods = goods:potato
 			}
 		}
@@ -130,10 +128,10 @@ dbo_dhe_raw_material.61 = {
 # 71 nigde_province = { nigde bekarlar bor_tur melendiz_mountains }
 # 81 sivas_province = { sivas darende dasmenda deliktash gemerek gurun hafik sarkisla zara ak_mountains kose_mountains_1 middle_taurus_4 middle_taurus_6 middle_taurus_7 }
 ## 89 location:zara wool to sugar
-dbo_dhe_raw_material.89 = {
+dbo_dhe_rgo.89 = {
 	type = country_event
-	title = dbo_dhe_raw_material.89.title
-	desc = dbo_dhe_raw_material.89.desc
+	title = dbo_dhe_rgo.89.title
+	desc = dbo_dhe_rgo.89.desc
 	fire_only_once = yes
 	outcome = positive
 	dynamic_historical_event = {
@@ -148,10 +146,10 @@ dbo_dhe_raw_material.89 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_raw_material.89.a
+		name = dbo_dhe_rgo.89.a
 		historical_option = yes
 		location:zara = {
-			dbo_change_raw_material_effect = {
+			dbo_change_rgo = {
 				goods = goods:sugar
 			}
 		}
@@ -162,10 +160,74 @@ dbo_dhe_raw_material.89 = {
 # 101 aksaray_province = { aksaray kochisar kulu_turkey insuyu lake_tuz }
 # 111 ankara_province = { ankara cubuk haymana kalecik karakecili polatli }
 # 121 beysehir_province = { beysehir aksehir bolvadin ilgin sarkikaraagac seydisehir yalvac lake_aksehir lake_beysehir lake_eber lake_egirdir lake_sugla erenler_mountains sultan_mountains_1 sultan_mountains_2 sultan_mountains_3 }
+## 126 location:seydisehir clay to maize
+dbo_dhe_rgo.126 = {
+	type = country_event
+	title = dbo_dhe_rgo.126.title
+	desc = dbo_dhe_rgo.126.desc
+	fire_only_once = yes
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.6.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_location_is_homeland = {
+			location = location:seydisehir
+		}
+		dbo_in_circulation_new_world_goods_trigger = {
+			goods = goods:maize
+		}
+	}
+	option = {
+		name = dbo_dhe_rgo.126.a
+		historical_option = yes
+		location:seydisehir = {
+			dbo_change_rgo = {
+				goods = goods:maize
+			}
+		}
+	}
+}
+
 # 131 cankiri_province = { cankiri bayat cerkes kursunlu sabanozu tosya }
 # 141 karahisar_province = { karahisar_i_sahib altintas emirdag sandikli seyitgazi suhut sandikli_mountains }
 # 151 konya_province = { konya altinekin celtik cumra ladik suluklu turgut }
 # 161 larende_province = { larende eregli_kar eskil hatunsaray karapinar obruk pirloganda middle_taurus_1 }
+## 163 location:eskil clay to maize
+dbo_dhe_rgo.163 = {
+	type = country_event
+	title = dbo_dhe_rgo.163.title
+	desc = dbo_dhe_rgo.163.desc
+	fire_only_once = yes
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.6.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_location_is_homeland = {
+			location = location:eskil
+		}
+		dbo_in_circulation_new_world_goods_trigger = {
+			goods = goods:maize
+		}
+	}
+	option = {
+		name = dbo_dhe_rgo.163.a
+		historical_option = yes
+		location:eskil = {
+			dbo_change_rgo = {
+				goods = goods:maize
+			}
+		}
+	}
+}
+
 # 171 sivrihisar_province = { sivrihisar beypazari bozan kaymaz kibrus kizilca mihaliccik koroglu_mountains_1 koroglu_mountains_2 }
 # 181 adana_province = { adana ayas iskenderun kars_armenia nur_mountains_1 nur_mountains_2 }
 # 191 cyprus_province = { nicosia_cyp famagusta kyrenia larnaca limassol morphou paphos }
@@ -176,10 +238,10 @@ dbo_dhe_raw_material.89 = {
 # 241 tarsus_province = { tarsus candir_cil corycus molevon }
 # 251 biga_province = { biga ayvacik bandirma bayramic can canakkale gonen lapseki }
 ## 251 location:biga sand to millet
-dbo_dhe_raw_material.251 = {
+dbo_dhe_rgo.251 = {
 	type = country_event
-	title = dbo_dhe_raw_material.251.title
-	desc = dbo_dhe_raw_material.251.desc
+	title = dbo_dhe_rgo.251.title
+	desc = dbo_dhe_rgo.251.desc
 	fire_only_once = yes
 	outcome = positive
 	dynamic_historical_event = {
@@ -194,10 +256,10 @@ dbo_dhe_raw_material.251 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_raw_material.251.a
+		name = dbo_dhe_rgo.251.a
 		historical_option = yes
 		location:biga = {
-			dbo_change_raw_material_effect = {
+			dbo_change_rgo = {
 				goods = goods:millet
 			}
 		}
@@ -205,10 +267,10 @@ dbo_dhe_raw_material.251 = {
 }
 
 ## 254 location:bayramic wild_game to chili
-dbo_dhe_raw_material.254 = {
+dbo_dhe_rgo.254 = {
 	type = country_event
-	title = dbo_dhe_raw_material.254.title
-	desc = dbo_dhe_raw_material.254.desc
+	title = dbo_dhe_rgo.254.title
+	desc = dbo_dhe_rgo.254.desc
 	fire_only_once = yes
 	outcome = positive
 	dynamic_historical_event = {
@@ -221,16 +283,15 @@ dbo_dhe_raw_material.254 = {
 		dbo_location_is_homeland = {
 			location = location:bayramic
 		}
-		dbo_columbian_exchange_situation_active_trigger = yes
-		dbo_columbian_exchange_can_see_goods_trigger = {
+		dbo_in_circulation_new_world_goods_trigger = {
 			goods = goods:chili
 		}
 	}
 	option = {
-		name = dbo_dhe_raw_material.254.a
+		name = dbo_dhe_rgo.254.a
 		historical_option = yes
 		location:bayramic = {
-			dbo_change_raw_material_effect = {
+			dbo_change_rgo = {
 				goods = goods:chili
 			}
 		}
@@ -238,10 +299,10 @@ dbo_dhe_raw_material.254 = {
 }
 
 ## 255 location:can lumber to gold
-dbo_dhe_raw_material.255 = {
+dbo_dhe_rgo.255 = {
 	type = country_event
-	title = dbo_dhe_raw_material.255.title
-	desc = dbo_dhe_raw_material.255.desc
+	title = dbo_dhe_rgo.255.title
+	desc = dbo_dhe_rgo.255.desc
 	fire_only_once = yes
 	outcome = positive
 	dynamic_historical_event = {
@@ -256,10 +317,10 @@ dbo_dhe_raw_material.255 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_raw_material.255.a
+		name = dbo_dhe_rgo.255.a
 		historical_option = yes
 		location:can = {
-			dbo_change_raw_material_effect = {
+			dbo_change_rgo = {
 				goods = goods:goods_gold
 			}
 		}
@@ -268,10 +329,10 @@ dbo_dhe_raw_material.255 = {
 
 # 261 hudavendigar_province = { bursa adranos dursunbey harmancik iznik lake_iznik }
 ## 265 location:iznik clay to olives
-dbo_dhe_raw_material.265 = {
+dbo_dhe_rgo.265 = {
 	type = country_event
-	title = dbo_dhe_raw_material.265.title
-	desc = dbo_dhe_raw_material.265.desc
+	title = dbo_dhe_rgo.265.title
+	desc = dbo_dhe_rgo.265.desc
 	fire_only_once = yes
 	outcome = positive
 	dynamic_historical_event = {
@@ -286,10 +347,10 @@ dbo_dhe_raw_material.265 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_raw_material.265.a
+		name = dbo_dhe_rgo.265.a
 		historical_option = yes
 		location:iznik = {
-			dbo_change_raw_material_effect = {
+			dbo_change_rgo = {
 				goods = goods:olives
 			}
 		}
@@ -298,10 +359,10 @@ dbo_dhe_raw_material.265 = {
 
 # 271 karasi_province = { balikesir balya bergama bigadic edremit manyas mihalic soma susurluk lake_manyas lake_uluabat }
 ## 272 balya clay to rice
-dbo_dhe_raw_material.272 = {
+dbo_dhe_rgo.272 = {
 	type = country_event
-	title = dbo_dhe_raw_material.272.title
-	desc = dbo_dhe_raw_material.272.desc
+	title = dbo_dhe_rgo.272.title
+	desc = dbo_dhe_rgo.272.desc
 	fire_only_once = yes
 	outcome = positive
 	dynamic_historical_event = {
@@ -313,10 +374,10 @@ dbo_dhe_raw_material.272 = {
 	trigger = {
 	}
 	option = {
-		name = dbo_dhe_raw_material.272.a
+		name = dbo_dhe_rgo.272.a
 		historical_option = yes
 		location:balya = {
-			dbo_change_raw_material_effect = {
+			dbo_change_rgo = {
 				goods = goods:rice
 			}
 		}
@@ -324,10 +385,10 @@ dbo_dhe_raw_material.272 = {
 }
 
 ## 274 bigadic clay to tobacco
-dbo_dhe_raw_material.274 = {
+dbo_dhe_rgo.274 = {
 	type = country_event
-	title = dbo_dhe_raw_material.274.title
-	desc = dbo_dhe_raw_material.274.desc
+	title = dbo_dhe_rgo.274.title
+	desc = dbo_dhe_rgo.274.desc
 	fire_only_once = yes
 	outcome = positive
 	dynamic_historical_event = {
@@ -340,16 +401,15 @@ dbo_dhe_raw_material.274 = {
 		dbo_location_is_homeland = {
 			location = location:bigadic
 		}
-		dbo_columbian_exchange_situation_active_trigger = yes
-		dbo_columbian_exchange_can_see_goods_trigger = {
+		dbo_in_circulation_new_world_goods_trigger = {
 			goods = goods:tobacco
 		}
 	}
 	option = {
-		name = dbo_dhe_raw_material.274.a
+		name = dbo_dhe_rgo.274.a
 		historical_option = yes
 		location:bigadic = {
-			dbo_change_raw_material_effect = {
+			dbo_change_rgo = {
 				goods = goods:tobacco
 			}
 		}
@@ -357,10 +417,10 @@ dbo_dhe_raw_material.274 = {
 }
 
 ## 278 soma lumber to coal
-dbo_dhe_raw_material.278 = {
+dbo_dhe_rgo.278 = {
 	type = country_event
-	title = dbo_dhe_raw_material.278.title
-	desc = dbo_dhe_raw_material.278.desc
+	title = dbo_dhe_rgo.278.title
+	desc = dbo_dhe_rgo.278.desc
 	fire_only_once = yes
 	outcome = positive
 	dynamic_historical_event = {
@@ -375,10 +435,10 @@ dbo_dhe_raw_material.278 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_raw_material.278.a
+		name = dbo_dhe_rgo.278.a
 		historical_option = yes
 		location:soma = {
-			dbo_change_raw_material_effect = {
+			dbo_change_rgo = {
 				goods = goods:coal
 			}
 		}
@@ -390,11 +450,111 @@ dbo_dhe_raw_material.278 = {
 # 301 sultanonu_province = { sultanonu bilecik goynuk eynegol inonu nalli sogut }
 # 311 bolu_province = { bolu akcasehir akyazi eregli konrapa mudurnu }
 # 321 canik_province = { giresun akkus bayramlu mesudiye terme unye west_pontus_mountains_1 west_pontus_mountains_2 }
-## 325 location:terme fish to chili
-dbo_dhe_raw_material.325 = {
+## 321 location:giresun olives to tea
+dbo_dhe_rgo.321 = {
 	type = country_event
-	title = dbo_dhe_raw_material.325.title
-	desc = dbo_dhe_raw_material.325.desc
+	title = dbo_dhe_rgo.321.title
+	desc = dbo_dhe_rgo.321.desc
+	fire_only_once = yes
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.6.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_location_is_homeland = {
+			location = location:giresun
+		}
+	}
+	option = {
+		name = dbo_dhe_rgo.321.a
+		historical_option = yes
+		location:giresun = {
+			dbo_change_rgo = {
+				goods = goods:tea
+			}
+			add_location_modifier = {
+				modifier = dbo_caykur
+				years = modifier_duration_permanent
+				mode = add_and_extend
+			}
+		}
+	}
+}
+
+## 322 location:akkus wild_game to maize
+dbo_dhe_rgo.322 = {
+	type = country_event
+	title = dbo_dhe_rgo.322.title
+	desc = dbo_dhe_rgo.322.desc
+	fire_only_once = yes
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.6.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_location_is_homeland = {
+			location = location:akkus
+		}
+		dbo_in_circulation_new_world_goods_trigger = {
+			goods = goods:maize
+		}
+	}
+	option = {
+		name = dbo_dhe_rgo.322.a
+		historical_option = yes
+		location:akkus = {
+			dbo_change_rgo = {
+				goods = goods:maize
+			}
+		}
+	}
+}
+
+## 323 location:bayramlu beeswax to tea
+dbo_dhe_rgo.323 = {
+	type = country_event
+	title = dbo_dhe_rgo.323.title
+	desc = dbo_dhe_rgo.323.desc
+	fire_only_once = yes
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.6.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_location_is_homeland = {
+			location = location:bayramlu
+		}
+	}
+	option = {
+		name = dbo_dhe_rgo.323.a
+		historical_option = yes
+		location:bayramlu = {
+			dbo_change_rgo = {
+				goods = goods:tea
+			}
+			add_location_modifier = {
+				modifier = dbo_caykur
+				years = modifier_duration_permanent
+				mode = add_and_extend
+			}
+		}
+	}
+}
+
+## 324 location:mesudiye stone to maize
+dbo_dhe_rgo.324 = {
+	type = country_event
+	title = dbo_dhe_rgo.324.title
+	desc = dbo_dhe_rgo.324.desc
 	fire_only_once = yes
 	outcome = positive
 	dynamic_historical_event = {
@@ -407,17 +567,80 @@ dbo_dhe_raw_material.325 = {
 		dbo_location_is_homeland = {
 			location = location:terme
 		}
-		dbo_columbian_exchange_situation_active_trigger = yes
-		dbo_columbian_exchange_can_see_goods_trigger = {
+		dbo_in_circulation_new_world_goods_trigger = {
+			goods = goods:maize
+		}
+	}
+	option = {
+		name = dbo_dhe_rgo.324.a
+		historical_option = yes
+		location:terme = {
+			dbo_change_rgo = {
+				goods = goods:maize
+			}
+		}
+	}
+}
+
+## 325 location:terme fish to chili
+dbo_dhe_rgo.325 = {
+	type = country_event
+	title = dbo_dhe_rgo.325.title
+	desc = dbo_dhe_rgo.325.desc
+	fire_only_once = yes
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.6.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_location_is_homeland = {
+			location = location:terme
+		}
+		dbo_in_circulation_new_world_goods_trigger = {
 			goods = goods:chili
 		}
 	}
 	option = {
-		name = dbo_dhe_raw_material.325.a
+		name = dbo_dhe_rgo.325.a
 		historical_option = yes
 		location:terme = {
-			dbo_change_raw_material_effect = {
+			dbo_change_rgo = {
 				goods = goods:chili
+			}
+		}
+	}
+}
+
+## 326 location:unye lumber to maize
+dbo_dhe_rgo.326 = {
+	type = country_event
+	title = dbo_dhe_rgo.326.title
+	desc = dbo_dhe_rgo.326.desc
+	fire_only_once = yes
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.6.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_location_is_homeland = {
+			location = location:unye
+		}
+		dbo_in_circulation_new_world_goods_trigger = {
+			goods = goods:maize
+		}
+	}
+	option = {
+		name = dbo_dhe_rgo.326.a
+		historical_option = yes
+		location:unye = {
+			dbo_change_rgo = {
+				goods = goods:maize
 			}
 		}
 	}
@@ -428,10 +651,10 @@ dbo_dhe_raw_material.325 = {
 # 351 sinop_province = { sinop bafra boyabat gerze samsun }
 # 361 trebizond_province = { trebizond gorele gumushane khupati rize surmene east_pontus_mountains_1 east_pontus_mountains_2 east_pontus_mountains_3 }
 ## 361 trebizond gorele khupati rize surmene -> any to tea
-dbo_dhe_raw_material.361 = {
+dbo_dhe_rgo.361 = {
 	type = country_event
-	title = dbo_dhe_raw_material.385.title
-	desc = dbo_dhe_raw_material.385.desc
+	title = dbo_dhe_rgo.385.title
+	desc = dbo_dhe_rgo.385.desc
 	fire_only_once = yes
 	outcome = positive
 	dynamic_historical_event = {
@@ -458,10 +681,10 @@ dbo_dhe_raw_material.361 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_raw_material.385.a
+		name = dbo_dhe_rgo.385.a
 		historical_option = yes
 		location:trebizond = {
-			dbo_change_raw_material_effect = {
+			dbo_change_rgo = {
 				goods = goods:tea
 			}
 			add_location_modifier = {
@@ -471,7 +694,7 @@ dbo_dhe_raw_material.361 = {
 			}
 		}
 		location:gorele = {
-			dbo_change_raw_material_effect = {
+			dbo_change_rgo = {
 				goods = goods:tea
 			}
 			add_location_modifier = {
@@ -481,7 +704,7 @@ dbo_dhe_raw_material.361 = {
 			}
 		}
 		location:khupati = {
-			dbo_change_raw_material_effect = {
+			dbo_change_rgo = {
 				goods = goods:tea
 			}
 			add_location_modifier = {
@@ -491,7 +714,7 @@ dbo_dhe_raw_material.361 = {
 			}
 		}
 		location:rize = {
-			dbo_change_raw_material_effect = {
+			dbo_change_rgo = {
 				goods = goods:tea
 			}
 			add_location_modifier = {
@@ -501,7 +724,7 @@ dbo_dhe_raw_material.361 = {
 			}
 		}
 		location:surmene = {
-			dbo_change_raw_material_effect = {
+			dbo_change_rgo = {
 				goods = goods:tea
 			}
 			add_location_modifier = {
@@ -516,10 +739,10 @@ dbo_dhe_raw_material.361 = {
 # 371 alaiye_province = { alaiye karahisar_i_teke manavgat selinti west_taurus_3 west_taurus_5 }
 # 381 antalya_province = { antalya elmali finike kas istanoz }
 ## 381 antalya wine to chili
-dbo_dhe_raw_material.381 = {
+dbo_dhe_rgo.381 = {
 	type = country_event
-	title = dbo_dhe_raw_material.381.title
-	desc = dbo_dhe_raw_material.381.desc
+	title = dbo_dhe_rgo.381.title
+	desc = dbo_dhe_rgo.381.desc
 	fire_only_once = yes
 	outcome = positive
 	dynamic_historical_event = {
@@ -532,16 +755,15 @@ dbo_dhe_raw_material.381 = {
 		dbo_location_is_homeland = {
 			location = location:antalya
 		}
-		dbo_columbian_exchange_situation_active_trigger = yes
-		dbo_columbian_exchange_can_see_goods_trigger = {
+		dbo_in_circulation_new_world_goods_trigger = {
 			goods = goods:chili
 		}
 	}
 	option = {
-		name = dbo_dhe_raw_material.381.a
+		name = dbo_dhe_rgo.381.a
 		historical_option = yes
 		location:antalya = {
-			dbo_change_raw_material_effect = {
+			dbo_change_rgo = {
 				goods = goods:chili
 			}
 		}
@@ -549,10 +771,10 @@ dbo_dhe_raw_material.381 = {
 }
 
 ## 384 kas fish to chili
-dbo_dhe_raw_material.384 = {
+dbo_dhe_rgo.384 = {
 	type = country_event
-	title = dbo_dhe_raw_material.381.title
-	desc = dbo_dhe_raw_material.381.desc
+	title = dbo_dhe_rgo.381.title
+	desc = dbo_dhe_rgo.381.desc
 	fire_only_once = yes
 	outcome = positive
 	dynamic_historical_event = {
@@ -565,16 +787,15 @@ dbo_dhe_raw_material.384 = {
 		dbo_location_is_homeland = {
 			location = location:kas
 		}
-		dbo_columbian_exchange_situation_active_trigger = yes
-		dbo_columbian_exchange_can_see_goods_trigger = {
+		dbo_in_circulation_new_world_goods_trigger = {
 			goods = goods:chili
 		}
 	}
 	option = {
-		name = dbo_dhe_raw_material.381.a
+		name = dbo_dhe_rgo.381.a
 		historical_option = yes
 		location:kas = {
-			dbo_change_raw_material_effect = {
+			dbo_change_rgo = {
 				goods = goods:chili
 			}
 		}
@@ -582,10 +803,10 @@ dbo_dhe_raw_material.384 = {
 }
 
 ## 385 istanoz clay to chili
-dbo_dhe_raw_material.385 = {
+dbo_dhe_rgo.385 = {
 	type = country_event
-	title = dbo_dhe_raw_material.385.title
-	desc = dbo_dhe_raw_material.385.desc
+	title = dbo_dhe_rgo.385.title
+	desc = dbo_dhe_rgo.385.desc
 	fire_only_once = yes
 	outcome = positive
 	dynamic_historical_event = {
@@ -598,16 +819,15 @@ dbo_dhe_raw_material.385 = {
 		dbo_location_is_homeland = {
 			location = location:istanoz
 		}
-		dbo_columbian_exchange_situation_active_trigger = yes
-		dbo_columbian_exchange_can_see_goods_trigger = {
+		dbo_in_circulation_new_world_goods_trigger = {
 			goods = goods:chili
 		}
 	}
 	option = {
-		name = dbo_dhe_raw_material.385.a
+		name = dbo_dhe_rgo.385.a
 		historical_option = yes
 		location:istanoz = {
-			dbo_change_raw_material_effect = {
+			dbo_change_rgo = {
 				goods = goods:chili
 			}
 		}
@@ -623,11 +843,11 @@ dbo_dhe_raw_material.385 = {
 # 501 amadiya_province = { amadiya baskale hakkari semdinli zakho east_taurus_4 }
 # 511 bitlis_province = { bitlis bahcesaray catak hizan mus east_taurus_5 east_taurus_7 }
 # 521 erzurum_province = { erzurum bayburt erzincan ilic kelkit kemah sebinkarahisar siran tercan kose_mountains_2 mescit_mountains otlukbeli_mountains }
-## 524 location:bayburt clay to lead
-dbo_dhe_raw_material.522 = {
+## 522 location:bayburt clay to millet
+dbo_dhe_rgo.522 = {
 	type = country_event
-	title = dbo_dhe_raw_material.522.title
-	desc = dbo_dhe_raw_material.522.desc
+	title = dbo_dhe_rgo.522.title
+	desc = dbo_dhe_rgo.522.desc
 	fire_only_once = yes
 	outcome = positive
 	dynamic_historical_event = {
@@ -642,21 +862,50 @@ dbo_dhe_raw_material.522 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_raw_material.522.a
+		name = dbo_dhe_rgo.522.a
 		historical_option = yes
 		location:bayburt = {
-			dbo_change_raw_material_effect = {
-				goods = goods:lead
+			dbo_change_rgo = {
+				goods = goods:millet
+			}
+		}
+	}
+}
+
+## 523 location:erzincan livestock to sugar
+dbo_dhe_rgo.522 = {
+	type = country_event
+	title = dbo_dhe_rgo.522.title
+	desc = dbo_dhe_rgo.522.desc
+	fire_only_once = yes
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.6.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_location_is_homeland = {
+			location = location:erzincan
+		}
+	}
+	option = {
+		name = dbo_dhe_rgo.522.a
+		historical_option = yes
+		location:erzincan = {
+			dbo_change_rgo = {
+				goods = goods:sugar
 			}
 		}
 	}
 }
 
 ## 524 location:ilic lumber to gold
-dbo_dhe_raw_material.524 = {
+dbo_dhe_rgo.524 = {
 	type = country_event
-	title = dbo_dhe_raw_material.524.title
-	desc = dbo_dhe_raw_material.524.desc
+	title = dbo_dhe_rgo.524.title
+	desc = dbo_dhe_rgo.524.desc
 	fire_only_once = yes
 	outcome = positive
 	dynamic_historical_event = {
@@ -671,21 +920,50 @@ dbo_dhe_raw_material.524 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_raw_material.524.a
+		name = dbo_dhe_rgo.524.a
 		historical_option = yes
 		location:ilic = {
-			dbo_change_raw_material_effect = {
+			dbo_change_rgo = {
 				goods = goods:goods_gold
 			}
 		}
 	}
 }
 
-## 529 location:tercan wool to millet
-dbo_dhe_raw_material.529 = {
+## 528 location:siran clay to millet
+dbo_dhe_rgo.529 = {
 	type = country_event
-	title = dbo_dhe_raw_material.529.title
-	desc = dbo_dhe_raw_material.529.desc
+	title = dbo_dhe_rgo.529.title
+	desc = dbo_dhe_rgo.529.desc
+	fire_only_once = yes
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.6.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_location_is_homeland = {
+			location = location:siran
+		}
+	}
+	option = {
+		name = dbo_dhe_rgo.529.a
+		historical_option = yes
+		location:siran = {
+			dbo_change_rgo = {
+				goods = goods:millet
+			}
+		}
+	}
+}
+
+## 529 location:tercan wool to millet
+dbo_dhe_rgo.529 = {
+	type = country_event
+	title = dbo_dhe_rgo.529.title
+	desc = dbo_dhe_rgo.529.desc
 	fire_only_once = yes
 	outcome = positive
 	dynamic_historical_event = {
@@ -700,10 +978,10 @@ dbo_dhe_raw_material.529 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_raw_material.529.a
+		name = dbo_dhe_rgo.529.a
 		historical_option = yes
 		location:tercan = {
-			dbo_change_raw_material_effect = {
+			dbo_change_rgo = {
 				goods = goods:millet
 			}
 		}
@@ -712,10 +990,10 @@ dbo_dhe_raw_material.529 = {
 
 # 531 harput_province = { harput adakli bingol cemisgezek genc keban kuzucan palu pertek sivrice lake_hazar mercan_mountains_1 mercan_mountains_2 }
 ## 535 location:genc clay to lead
-dbo_dhe_raw_material.535 = {
+dbo_dhe_rgo.535 = {
 	type = country_event
-	title = dbo_dhe_raw_material.535.title
-	desc = dbo_dhe_raw_material.535.desc
+	title = dbo_dhe_rgo.535.title
+	desc = dbo_dhe_rgo.535.desc
 	fire_only_once = yes
 	outcome = positive
 	dynamic_historical_event = {
@@ -730,10 +1008,10 @@ dbo_dhe_raw_material.535 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_raw_material.535.a
+		name = dbo_dhe_rgo.535.a
 		historical_option = yes
 		location:genc = {
-			dbo_change_raw_material_effect = {
+			dbo_change_rgo = {
 				goods = goods:lead
 			}
 		}
@@ -746,10 +1024,10 @@ dbo_dhe_raw_material.535 = {
 # 601 ar_ruha_province = { urfa birecik cermik harran siverek suruc }
 # 611 diyarbekir_province = { diyarbekir egil ergani heni hazro savur karacadag 
 ## 615 hazro clay to tobacco
-dbo_dhe_raw_material.615 = {
+dbo_dhe_rgo.615 = {
 	type = country_event
-	title = dbo_dhe_raw_material.615.title
-	desc = dbo_dhe_raw_material.615.desc
+	title = dbo_dhe_rgo.615.title
+	desc = dbo_dhe_rgo.615.desc
 	fire_only_once = yes
 	outcome = positive
 	dynamic_historical_event = {
@@ -762,16 +1040,15 @@ dbo_dhe_raw_material.615 = {
 		dbo_location_is_homeland = {
 			location = location:hazro
 		}
-		dbo_columbian_exchange_situation_active_trigger = yes
-		dbo_columbian_exchange_can_see_goods_trigger = {
+		dbo_in_circulation_new_world_goods_trigger = {
 			goods = goods:tobacco
 		}
 	}
 	option = {
-		name = dbo_dhe_raw_material.615.a
+		name = dbo_dhe_rgo.615.a
 		historical_option = yes
 		location:hazro = {
-			dbo_change_raw_material_effect = {
+			dbo_change_rgo = {
 				goods = goods:tobacco
 			}
 		}
@@ -781,10 +1058,10 @@ dbo_dhe_raw_material.615 = {
 # 621 furat_province = { anah abu_kemal haditha rahba jazair }
 # 631 hasankeyf_province = { hasankeyf kozluk kulp mayyafariqin sason siirt east_taurus_3 }
 ## 634 mayyafariqin clay to tobacco
-dbo_dhe_raw_material.634 = {
+dbo_dhe_rgo.634 = {
 	type = country_event
-	title = dbo_dhe_raw_material.634.title
-	desc = dbo_dhe_raw_material.634.desc
+	title = dbo_dhe_rgo.634.title
+	desc = dbo_dhe_rgo.634.desc
 	fire_only_once = yes
 	outcome = positive
 	dynamic_historical_event = {
@@ -797,16 +1074,15 @@ dbo_dhe_raw_material.634 = {
 		dbo_location_is_homeland = {
 			location = location:mayyafariqin
 		}
-		dbo_columbian_exchange_situation_active_trigger = yes
-		dbo_columbian_exchange_can_see_goods_trigger = {
+		dbo_in_circulation_new_world_goods_trigger = {
 			goods = goods:tobacco
 		}
 	}
 	option = {
-		name = dbo_dhe_raw_material.634.a
+		name = dbo_dhe_rgo.634.a
 		historical_option = yes
 		location:mayyafariqin = {
-			dbo_change_raw_material_effect = {
+			dbo_change_rgo = {
 				goods = goods:tobacco
 			}
 		}
@@ -817,3 +1093,45 @@ dbo_dhe_raw_material.634 = {
 # 651 mosul_province = { mosul al_sinn balad duhok qayyarah sinjar tal_afar }
 # 661 nusaybin_province = { nusaybin bara_iraq barqaid cizre eruh midyat sirnak }
 # 671 raqqa_province = { raqqa araban busayrah jabar madinat_far makisin }
+# 701 abkhazia_province = { sukhumi anacopia lata_georgia pitsunda }
+# 711 hereti_province = { hereti balakan bodbe khornabuji qakh }
+# 721 imereti_province = { kutaisi lentekhi skande shorapani tsageri tsesi ushguli vartsikhe greater_caucasus_mountains2 greater_caucasus_mountains3 }
+# 731 kakheti_province = { telavi alaverdi dusheti gremi rustavi shatili greater_caucasus_mountains5 }
+# 741 kartli_province = { tbilisi dmanisi gori kasriskari kldekari kvenipnevi mtskheta tsagvli greater_caucasus_mountains4 }
+# 751 meskheti_province = { artanuji ispir khikhani oltu panaskerti parkhali savsat tortum kars_mountains_1 yalnizcam_mountains }
+## 751 location:artanuji stone to tea
+dbo_dhe_rgo.751 = {
+	type = country_event
+	title = dbo_dhe_rgo.751.title
+	desc = dbo_dhe_rgo.751.desc
+	fire_only_once = yes
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.6.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_location_is_homeland = {
+			location = location:artanuji
+		}
+	}
+	option = {
+		name = dbo_dhe_rgo.751.a
+		historical_option = yes
+		location:artanuji = {
+			dbo_change_rgo = {
+				goods = goods:tea
+			}
+			add_location_modifier = {
+				modifier = dbo_caykur
+				years = modifier_duration_permanent
+				mode = add_and_extend
+			}
+		}
+	}
+}
+
+# 761 samegrelo_province = { bedia anaklia batumi ozurgeti poti_caucasus tsalenjikha }
+# 771 samtskhe_province = { akhaltsikhe akhalkalaki ardahan tmogvi lake_cildir lesser_caucasus_mountains1 lesser_caucasus_mountains2 lesser_caucasus_mountains3 lesser_caucasus_mountains4 }
