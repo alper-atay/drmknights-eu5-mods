@@ -681,7 +681,7 @@ dbo_dhe_raw_material.524 = {
 	}
 }
 
-## 529 location:ilic lumber to gold
+## 529 location:tercan wool to millet
 dbo_dhe_raw_material.529 = {
 	type = country_event
 	title = dbo_dhe_raw_material.529.title
@@ -711,6 +711,35 @@ dbo_dhe_raw_material.529 = {
 }
 
 # 531 harput_province = { harput adakli bingol cemisgezek genc keban kuzucan palu pertek sivrice lake_hazar mercan_mountains_1 mercan_mountains_2 }
+## 535 location:genc clay to lead
+dbo_dhe_raw_material.535 = {
+	type = country_event
+	title = dbo_dhe_raw_material.535.title
+	desc = dbo_dhe_raw_material.535.desc
+	fire_only_once = yes
+	outcome = positive
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.6.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_location_is_homeland = {
+			location = location:genc
+		}
+	}
+	option = {
+		name = dbo_dhe_raw_material.535.a
+		historical_option = yes
+		location:genc = {
+			dbo_change_raw_material_effect = {
+				goods = goods:lead
+			}
+		}
+	}
+}
+
 # 541 kars_province = { kars kagizman surmali kars_mountains_2 kars_mountains_3 }
 # 551 malazgirt_province = { malazgirt hinis karakilise hasankale tekman tutak varto aladag_mountains karagol_mountains karasu_aras_mountains }
 # 561 van_province = { van ahlat bargiri ercis hosap tatvan lake_van suphan_mountains }
