@@ -335,3 +335,96 @@ dbo_dhe_destiny.206 = {
 		dbo_event_mild_bonus = yes
 	}
 }
+
+dbo_dhe_destiny.1001 = {
+	type = country_event
+	title = dbo_dhe_destiny.1001.title
+	desc = dbo_dhe_destiny.1001.desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_tengri_children.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		NOT = {
+			religion = religion:tengri
+		}
+	}
+	option = {
+		name = dbo_dhe_destiny.1001.a
+		historical_option = yes
+		change_religion = religion:tengri
+		change_religion_for_ruler_and_family = {
+			country = root
+			religion = religion:tengri
+		}
+		set_liturgical_language = culture.dialect
+		add_policy = policy:monogamous_marriage
+		add_policy = policy:heir_same_religion
+		add_policy = policy:balanced_court_policy
+		unlock_policy_effect = {
+			type = law_of_the_pious_emperor
+		}
+		add_policy = policy:law_of_the_pious_emperor
+		add_reform = government_reform:dbo_destiny_tengri_children
+		custom_tooltip = {
+			text = dbo_every_turkic_group_pop_change_religion_tt
+			every_pop = {
+				limit = {
+					NOT = {
+						religion = religion:tengri
+					}
+					culture = {
+						has_culture_group = culture_group:turkic_group
+					}
+				}
+				split_pop = {
+					fraction = 0.5
+					religion = religion:tengri
+				}
+			}
+		}
+		custom_tooltip = {
+			text = dbo_every_owned_location_construct_otag_tt
+			every_owned_location = {
+				construct_building = {
+					building_type = building_type:dbo_otag
+					instant = yes
+				}
+			}
+		}
+		dbo_event_extreme_bonus = yes
+		custom_tooltip = {
+			text = dbo_remove_accepted_and_tolerated_every_culture_except_turkic_group_tt
+			every_culture = {
+				limit = {
+					is_accepted_in = root
+					NOT = {
+						has_culture_group = culture_group:turkic_group
+					}
+				}
+				root = {
+					remove_accepted_culture = PREV
+				}
+			}
+			every_culture = {
+				limit = {
+					is_tolerated_in = root
+					NOT = {
+						has_culture_group = culture_group:turkic_group
+					}
+				}
+				root = {
+					remove_tolerated_culture = PREV
+				}
+			}
+		}
+		add_gold = 1000
+		hidden_effect = {
+			change_country_color = map_karamanids
+		}
+	}
+}

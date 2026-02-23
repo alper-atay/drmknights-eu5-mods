@@ -1,5 +1,4 @@
 ﻿dbo_cb_conquest_anatolian_turks = {
-	can_expire = no
 	allow_creation = {
 		tag = TUR
 	}
