@@ -45,21 +45,7 @@ dbo_conquest_rumelia = {
 		conquer_cost = 0.25
 		antagonism = 0.25
 		allowed_locations = {
-			OR = {
-				scope:location.area = area:bosnia_area
-				scope:location.area = area:slovenia_area
-				scope:location.area = area:slavonia_area
-				scope:location.area = area:croatia_area
-				scope:location.area = area:bosnia_area
-				scope:location.area = area:serbia_area
-				scope:location.area = area:bulgaria_area
-				scope:location.area = area:macedonia_area
-				scope:location.area = area:thrace_area
-				scope:location.area = area:albania_area
-				scope:location.area = area:northern_greece_area
-				scope:location.area = area:morea_area
-				scope:location.area = area:aegean_archipelago_area
-			}
+			scope:location.region = region:balkan_region
 		}
 	}
 	defender = {
@@ -75,11 +61,7 @@ dbo_conquest_fertile_crescent = {
 		conquer_cost = 0.25
 		antagonism = 0.25
 		allowed_locations = {
-			OR = {
-				scope:location.area = area:iraq_arabi_area
-				scope:location.area = area:jazira_area
-				scope:location.area = area:levant_area
-			}
+			scope:location.region = region:crescent_region
 		}
 	}
 	defender = {
@@ -95,15 +77,7 @@ dbo_conquest_arabian_peninsula = {
 		conquer_cost = 0.25
 		antagonism = 0.25
 		allowed_locations = {
-			OR = {
-				scope:location.area = area:bahrein_area
-				scope:location.area = area:hedjaz_area
-				scope:location.area = area:najd_area
-				scope:location.area = area:oman_area
-				scope:location.area = area:hail_area
-				scope:location.area = area:north_yemen_area
-				scope:location.area = area:south_yemen_area
-			}
+			scope:location.region = region:arabia_region
 		}
 	}
 	defender = {
@@ -160,12 +134,7 @@ dbo_conquest_nile_river = {
 		conquer_cost = 0.25
 		antagonism = 0.25
 		allowed_locations = {
-			OR = {
-				scope:location.area = area:lower_egypt_area
-				scope:location.area = area:upper_egypt_area
-				scope:location.area = area:sinai_area
-				scope:location.area = area:cyrenaica_area
-			}
+			scope:location.region = region:egypt_region
 		}
 	}
 	defender = {
@@ -181,15 +150,7 @@ dbo_conquest_europe_eastern_gate = {
 		conquer_cost = 0.25
 		antagonism = 0.25
 		allowed_locations = {
-			OR = {
-				scope:location.area = area:moldavia_area
-				scope:location.area = area:north_alfold_area
-				scope:location.area = area:slovakia_area
-				scope:location.area = area:south_alfold_area
-				scope:location.area = area:transdanubia_area
-				scope:location.area = area:transylvania_area
-				scope:location.area = area:wallachia_area
-			}
+			scope:location.region = region:carpathia_region
 		}
 	}
 	defender = {
@@ -205,22 +166,7 @@ dbo_conquest_turkish_renaissance = {
 		conquer_cost = 0.25
 		antagonism = 0.25
 		allowed_locations = {
-			OR = {
-				scope:location.area = area:abruzzo_area
-				scope:location.area = area:apulia_area
-				scope:location.area = area:basilicata_area
-				scope:location.area = area:campania_area
-				scope:location.area = area:emilia_area
-				scope:location.area = area:lazio_area
-				scope:location.area = area:liguria_area
-				scope:location.area = area:lombardy_area
-				scope:location.area = area:marche_area
-				scope:location.area = area:piemonte_area
-				scope:location.area = area:sardinia_area
-				scope:location.area = area:sicily_area
-				scope:location.area = area:tuscany_area
-				scope:location.area = area:veneto_area
-			}
+			scope:location.region = region:italy_region
 		}
 	}
 	defender = {
@@ -236,18 +182,7 @@ dbo_conquest_pearl_of_east = {
 		conquer_cost = 0.25
 		antagonism = 0.25
 		allowed_locations = {
-			OR = {
-				scope:location.area = area:azerbaijan_area
-				scope:location.area = area:baluchistan_area
-				scope:location.area = area:fars_area
-				scope:location.area = area:iraq_ajam_area
-				scope:location.area = area:kerman_area
-				scope:location.area = area:khuzestan_area
-				scope:location.area = area:kordestan_area
-				scope:location.area = area:mazandaran_area
-				scope:location.area = area:quhestan_area
-				scope:location.area = area:sistan_area
-			}
+			scope:location.region = region:persia_region
 		}
 	}
 	defender = {
@@ -263,15 +198,7 @@ dbo_conquest_maghreb = {
 		conquer_cost = 0.25
 		antagonism = 0.25
 		allowed_locations = {
-			OR = {
-				scope:location.area = area:algiers_area
-				scope:location.area = area:atlas_high_plateau
-				scope:location.area = area:desert_area
-				scope:location.area = area:morocco_area
-				scope:location.area = area:sus_area
-				scope:location.area = area:tripolitania_area
-				scope:location.area = area:tunis_area
-			}
+			scope:location.region = region:maghreb_region
 		}
 	}
 	defender = {
@@ -287,12 +214,7 @@ dbo_conquest_steep_mountain = {
 		conquer_cost = 0.25
 		antagonism = 0.25
 		allowed_locations = {
-			OR = {
-				scope:location.area = area:armenia_area
-				scope:location.area = area:georgia_area
-				scope:location.area = area:northern_caucasus_area
-				scope:location.area = area:shirvan_area
-			}
+			scope:location.region = region:caucasus_region
 		}
 	}
 	defender = {
