@@ -36,6 +36,15 @@ dbo_on_conquer_any_location = {
 		}
 		if = {
 			limit = {
+				c:TUR.religion = religion:tengri
+			}
+			construct_building = {
+				building_type = building_type:dbo_otag
+				instant = yes
+			}
+		}
+		if = {
+			limit = {
 				has_location_modifier = dbo_ottoman_scare
 			}
 			remove_location_modifier = dbo_ottoman_scare
@@ -76,21 +85,11 @@ dbo_on_conquer_anatolian = {
 				has_reform = government_reform:anatolian_beylik
 			}
 			OR = {
-				root.area = area:cappadocia_area
-				root.area = area:central_anatolia_area
-				root.area = area:marmara_area
-				root.area = area:pontus_area
-				root.area = area:west_anatolia_area
-				root.area = area:cilicia_area
 				root.area = area:thrace_area
 				root.area = area:macedonia_area
-				root.province_definition = province_definition:erzurum_province
-				root.province_definition = province_definition:harput_province
-				root.province_definition = province_definition:malazgirt_province
+				root.area = area:armenian_highlands_area
+				root.region = region:anatolia_region
 				root.province_definition = province_definition:meskheti_province
-				root.province_definition = province_definition:kars_province
-				root.province_definition = province_definition:van_province
-				root.province_definition = province_definition:bitlis_province
 				root.province_definition = province_definition:hasankeyf_province
 				root.province_definition = province_definition:diyarbekir_province
 				root.province_definition = province_definition:ar_ruha_province

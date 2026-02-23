@@ -16,3 +16,6 @@
  dbo_grand_mosque: "Ulu Cami"
  dbo_grand_mosque_desc: "İslam mimarisinin en görkemli örneklerinden biri olan Ulu Cami, şehrin manevi merkezidir. Cemaatin bir araya geldiği, ilim ve ibadetin harmanlandığı bu kutsal yapı, devletin ihtişamını ve inancın gücünü simgeler."
  dbo_grand_mosque_maintenance: "$dbo_grand_mosque$"
+ dbo_otag: "Otağ"
+ dbo_otag_desc: "Han'ın seferlerde veya törenlerde kullandığı, devletin gücünü ve hükümdarın otoritesini temsil eden görkemli saltanat çadırıdır. Savaş meydanında ordunun yönetim merkezi, barışta ise devletin ihtişamlı bir simgesidir."
+ dbo_otag_maintenance: "$dbo_otag$"

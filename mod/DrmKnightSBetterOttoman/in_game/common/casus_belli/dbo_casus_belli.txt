@@ -20,9 +20,9 @@
 					this.province_definition = province_definition:edirne_province
 					this.province_definition = province_definition:dardanelles_province
 					this.province_definition = province_definition:constantinople_province
-					this.province_definition = province_definition:meskheti_province
 					this.region = region:anatolia_region
 					this.area = area:armenian_highlands_area
+					this.province_definition = province_definition:meskheti_province
 					this.province_definition = province_definition:hasankeyf_province
 					this.province_definition = province_definition:diyarbekir_province
 					this.province_definition = province_definition:ar_ruha_province

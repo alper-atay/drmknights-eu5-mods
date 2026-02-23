@@ -72,16 +72,15 @@
 			}
 			trigger_if = {
 				OR = {
-					region = region:anatolia_region
-					area = area:armenian_highlands_area
 					province_definition = province_definition:edirne_province
 					province_definition = province_definition:dardanelles_province
 					province_definition = province_definition:constantinople_province
+					region = region:anatolia_region
+					area = area:armenian_highlands_area
 					province_definition = province_definition:meskheti_province
 					province_definition = province_definition:hasankeyf_province
 					province_definition = province_definition:diyarbekir_province
 					province_definition = province_definition:ar_ruha_province
-					province_definition = province_definition:amadiya_province
 					province_definition = province_definition:nusaybin_province
 					province_definition = province_definition:mardin_province
 					province_definition = province_definition:ayntab_province
