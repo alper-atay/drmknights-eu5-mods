@@ -1,112 +1,134 @@
 ﻿dbo_military_army_fundamental_alp_and_alperen_policy_can_end = {
-    custom_tooltip = {
-        text = dbo_military_army_fundamental_alp_and_alperen_policy_can_end_tooltip
-        c:TUR = {
-            has_variable = dbo_military_army_fundamental_alp_and_alperen_policy_obtained
-        }
-    }
+	custom_tooltip = {
+		text = dbo_military_army_fundamental_alp_and_alperen_policy_can_end_tooltip
+		c:TUR = {
+			has_unlocked_policy_trigger = {
+				type = dbo_military_army_fundamental_alp_and_alperen_policy
+			}
+		}
+	}
 }
 
 dbo_military_army_fundamental_kapikulu_ocaklari_policy_can_end = {
-    custom_tooltip = {
-        text = dbo_military_army_fundamental_kapikulu_ocaklari_policy_can_end_tooltip
-        c:TUR = {
-            has_variable = dbo_military_army_fundamental_kapikulu_ocaklari_policy_obtained
-        }
-    }
+	custom_tooltip = {
+		text = dbo_military_army_fundamental_kapikulu_ocaklari_policy_can_end_tooltip
+		c:TUR = {
+			has_unlocked_policy_trigger = {
+				type = dbo_military_army_fundamental_kapikulu_ocaklari_policy
+			}
+		}
+	}
 }
 
 dbo_military_army_infantry_yeniceri_ocagi_policy_can_end = {
-    custom_tooltip = {
-        text = dbo_military_army_infantry_yeniceri_ocagi_policy_can_end_tooltip
-        c:TUR = {
-            has_variable = dbo_military_army_infantry_yeniceri_ocagi_policy_obtained
-        }
-    }
+	custom_tooltip = {
+		text = dbo_military_army_infantry_yeniceri_ocagi_policy_can_end_tooltip
+		c:TUR = {
+			has_unlocked_policy_trigger = {
+				type = dbo_military_army_infantry_yeniceri_ocagi_policy
+			}
+		}
+	}
 }
 
 dbo_military_army_cavalry_lessons_from_mongols_policy_can_end = {
-    custom_tooltip = {
-        text = dbo_military_army_cavalry_lessons_from_mongols_policy_can_end_tooltip
-        c:TUR = {
-            has_variable = dbo_military_army_cavalry_lessons_from_mongols_policy_obtained
-        }
-    }
+	custom_tooltip = {
+		text = dbo_military_army_cavalry_lessons_from_mongols_policy_can_end_tooltip
+		c:TUR = {
+			has_unlocked_policy_trigger = {
+				type = dbo_military_army_cavalry_lessons_from_mongols_policy
+			}
+		}
+	}
 }
 
 dbo_military_army_cavalry_timariot_system_policy_can_end = {
-    custom_tooltip = {
-        text = dbo_military_army_cavalry_timariot_system_policy_can_end_tooltip
-        c:TUR = {
-            has_variable = dbo_military_army_cavalry_timariot_system_policy_obtained
-        }
-    }
+	custom_tooltip = {
+		text = dbo_military_army_cavalry_timariot_system_policy_can_end_tooltip
+		c:TUR = {
+			has_unlocked_policy_trigger = {
+				type = dbo_military_army_cavalry_timariot_system_policy
+			}
+		}
+	}
 }
 
 dbo_military_army_artillery_topcu_ocagi_policy_can_end = {
-    custom_tooltip = {
-        text = dbo_military_army_artillery_topcu_ocagi_policy_can_end_tooltip
-        c:TUR = {
-            has_variable = dbo_military_army_artillery_topcu_ocagi_policy_obtained
-        }
-    }
+	custom_tooltip = {
+		text = dbo_military_army_artillery_topcu_ocagi_policy_can_end_tooltip
+		c:TUR = {
+			has_unlocked_policy_trigger = {
+				type = dbo_military_army_artillery_topcu_ocagi_policy
+			}
+		}
+	}
 }
 
 dbo_military_army_heavy_artillery_great_bronze_cannon_policy_can_end = {
-    custom_tooltip = {
-        text = dbo_military_army_heavy_artillery_great_bronze_cannon_policy_can_end_tooltip
-        c:TUR = {
-            has_variable = dbo_military_army_heavy_artillery_great_bronze_cannon_policy_obtained
-        }
-    }
+	custom_tooltip = {
+		text = dbo_military_army_heavy_artillery_great_bronze_cannon_policy_can_end_tooltip
+		c:TUR = {
+			has_unlocked_policy_trigger = {
+				type = dbo_military_army_heavy_artillery_great_bronze_cannon_policy
+			}
+		}
+	}
 }
 
 dbo_military_army_auxiliary_cebeci_and_saka_ocagi_policy_can_end = {
-    custom_tooltip = {
-        text = dbo_military_army_auxiliary_cebeci_and_saka_ocagi_policy_can_end_tooltip
-        c:TUR = {
-            has_variable = dbo_military_army_auxiliary_cebeci_and_saka_ocagi_policy_obtained
-        }
-    }
+	custom_tooltip = {
+		text = dbo_military_army_auxiliary_cebeci_and_saka_ocagi_policy_can_end_tooltip
+		c:TUR = {
+			has_unlocked_policy_trigger = {
+				type = dbo_military_army_auxiliary_cebeci_and_saka_ocagi_policy
+			}
+		}
+	}
 }
 
 dbo_military_army_gendarme_martolos_units_policy_can_end = {
-    custom_tooltip = {
-        text = dbo_military_army_gendarme_martolos_units_policy_can_end_tooltip
-        c:TUR = {
-            has_variable = dbo_military_army_gendarme_martolos_units_policy_obtained
-        }
-    }
+	custom_tooltip = {
+		text = dbo_military_army_gendarme_martolos_units_policy_can_end_tooltip
+		c:TUR = {
+			has_unlocked_policy_trigger = {
+				type = dbo_military_army_gendarme_martolos_units_policy
+			}
+		}
+	}
 }
 
 dbo_military_navy_fundamental_legacy_of_caka_bey_policy_can_end = {
-    custom_tooltip = {
-        text = dbo_military_navy_fundamental_legacy_of_caka_bey_policy_can_end_tooltip
-        c:TUR = {
-            has_variable = dbo_military_navy_fundamental_legacy_of_caka_bey_policy_obtained
-        }
-    }
+	custom_tooltip = {
+		text = dbo_military_navy_fundamental_legacy_of_caka_bey_policy_can_end_tooltip
+		c:TUR = {
+			has_unlocked_policy_trigger = {
+				type = dbo_military_navy_fundamental_legacy_of_caka_bey_policy
+			}
+		}
+	}
 }
 
 dbo_military_navy_fundamental_barbaros_hayrettin_pasha_policy_can_end = {
-    custom_tooltip = {
-        text = dbo_military_navy_fundamental_barbaros_hayrettin_pasha_policy_can_end_tooltip
-        c:TUR = {
-            has_variable = dbo_military_navy_fundamental_barbaros_hayrettin_pasha_policy_obtained
-        }
-    }
+	custom_tooltip = {
+		text = dbo_military_navy_fundamental_barbaros_hayrettin_pasha_policy_can_end_tooltip
+		c:TUR = {
+			has_unlocked_policy_trigger = {
+				type = dbo_military_navy_fundamental_barbaros_hayrettin_pasha_policy
+			}
+		}
+	}
 }
 
 dbo_military_can_end = {
-    dbo_military_army_fundamental_alp_and_alperen_policy_can_end = yes
-    dbo_military_army_fundamental_kapikulu_ocaklari_policy_can_end = yes
-    dbo_military_army_infantry_yeniceri_ocagi_policy_can_end = yes
-    dbo_military_army_cavalry_lessons_from_mongols_policy_can_end = yes
-    dbo_military_army_cavalry_timariot_system_policy_can_end = yes
-    dbo_military_army_artillery_topcu_ocagi_policy_can_end = yes
-    dbo_military_army_heavy_artillery_great_bronze_cannon_policy_can_end = yes
-    dbo_military_army_auxiliary_cebeci_and_saka_ocagi_policy_can_end = yes
-    dbo_military_army_gendarme_martolos_units_policy_can_end = yes
-    dbo_military_navy_fundamental_legacy_of_caka_bey_policy_can_end = yes
-    dbo_military_navy_fundamental_barbaros_hayrettin_pasha_policy_can_end = yes
+	dbo_military_army_fundamental_alp_and_alperen_policy_can_end = yes
+	dbo_military_army_fundamental_kapikulu_ocaklari_policy_can_end = yes
+	dbo_military_army_infantry_yeniceri_ocagi_policy_can_end = yes
+	dbo_military_army_cavalry_lessons_from_mongols_policy_can_end = yes
+	dbo_military_army_cavalry_timariot_system_policy_can_end = yes
+	dbo_military_army_artillery_topcu_ocagi_policy_can_end = yes
+	dbo_military_army_heavy_artillery_great_bronze_cannon_policy_can_end = yes
+	dbo_military_army_auxiliary_cebeci_and_saka_ocagi_policy_can_end = yes
+	dbo_military_army_gendarme_martolos_units_policy_can_end = yes
+	dbo_military_navy_fundamental_legacy_of_caka_bey_policy_can_end = yes
+	dbo_military_navy_fundamental_barbaros_hayrettin_pasha_policy_can_end = yes
 }

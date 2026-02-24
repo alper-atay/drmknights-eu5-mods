@@ -1,8 +1,9 @@
 ﻿dbo_destiny_cultural_capital_constantinople = {
 	unique = yes
 	potential = {
-		has_or_had_tag = TUR
-		has_variable = dbo_destiny_cultural_capital_constantinople_obtained
+		has_unlocked_government_reform_trigger = {
+			type = dbo_destiny_cultural_capital_constantinople
+		}
 	}
 	locked = {
 		is_locked_mechanic = {
@@ -25,8 +26,9 @@
 dbo_destiny_trade_center_grand_bazaar = {
 	unique = yes
 	potential = {
-		has_or_had_tag = TUR
-		has_variable = dbo_destiny_trade_center_grand_bazaar_obtained
+		has_unlocked_government_reform_trigger = {
+			type = dbo_destiny_trade_center_grand_bazaar
+		}
 	}
 	locked = {
 		is_locked_mechanic = {
@@ -47,8 +49,9 @@ dbo_destiny_trade_center_grand_bazaar = {
 dbo_destiny_mentor_lala = {
 	unique = yes
 	potential = {
-		has_or_had_tag = TUR
-		has_variable = dbo_destiny_mentor_lala_obtained
+		has_unlocked_government_reform_trigger = {
+			type = dbo_destiny_mentor_lala
+		}
 	}
 	locked = {
 		is_locked_mechanic = {
@@ -65,8 +68,9 @@ dbo_destiny_mentor_lala = {
 dbo_destiny_legacy_of_seljuks = {
 	unique = yes
 	potential = {
-		has_or_had_tag = TUR
-		has_variable = dbo_destiny_legacy_of_seljuks_obtained
+		has_unlocked_government_reform_trigger = {
+			type = dbo_destiny_legacy_of_seljuks
+		}
 	}
 	locked = {
 		is_locked_mechanic = {
@@ -88,8 +92,9 @@ dbo_destiny_legacy_of_seljuks = {
 dbo_destiny_piri_reis = {
 	unique = yes
 	potential = {
-		has_or_had_tag = TUR
-		has_variable = dbo_destiny_piri_reis_obtained
+		has_unlocked_government_reform_trigger = {
+			type = dbo_destiny_piri_reis
+		}
 	}
 	locked = {
 		is_locked_mechanic = {
@@ -110,8 +115,9 @@ dbo_destiny_piri_reis = {
 dbo_destiny_ottoman_empire = {
 	unique = yes
 	potential = {
-		has_or_had_tag = TUR
-		has_variable = dbo_destiny_ottoman_empire_obtained
+		has_unlocked_government_reform_trigger = {
+			type = dbo_destiny_ottoman_empire
+		}
 	}
 	locked = {
 		is_locked_mechanic = {
@@ -140,7 +146,9 @@ dbo_destiny_ottoman_empire = {
 dbo_destiny_tengri_children = {
 	unique = yes
 	potential = {
-		has_or_had_tag = TUR
+		has_unlocked_government_reform_trigger = {
+			type = dbo_destiny_tengri_children
+		}
 		religion = religion:tengri
 	}
 	locked = {

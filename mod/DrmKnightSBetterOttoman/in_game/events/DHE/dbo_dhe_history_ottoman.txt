@@ -102,6 +102,9 @@ dbo_dhe_history_ottoman.102 = {
 		custom_tooltip = {
 			text = dbo_history_ottoman_interregnum_end_rebel_progress_lose_tt
 			every_rebel = {
+				limit = {
+					rebel_progress > 0
+				}
 				add_rebel_progress = {
 					value = rebel_progress
 					divide = -2

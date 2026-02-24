@@ -43,13 +43,9 @@ dbo_dhe_destiny.102 = {
 	}
 	trigger = {
 		has_slavery = yes
-		has_law = recruitment_law
 		OR = {
 			has_policy = ottoman_war_slave_tax
 			has_policy = devshirme_system_policy
-		}
-		NOT = {
-			has_variable = devshirme_abolished
 		}
 	}
 	option = {
@@ -117,7 +113,7 @@ dbo_dhe_destiny.103 = {
 				}
 			}
 		}
-		dbo_event_severe_bonus = yes
+		dbo_event_extreme_bonus = yes
 	}
 	option = {
 		name = dbo_dhe_destiny.103.b
@@ -141,16 +137,15 @@ dbo_dhe_destiny.201 = {
 	}
 	trigger = {
 		own_entire_province = province_definition:constantinople_province
-		NOT = {
-			has_reform = government_reform:dbo_destiny_cultural_capital_constantinople
-		}
 	}
 	option = {
 		name = dbo_dhe_destiny.201.a
 		historical_option = yes
-		set_variable = dbo_destiny_cultural_capital_constantinople_obtained
+		unlock_government_reform_effect = {
+			type = dbo_destiny_cultural_capital_constantinople
+		}
 		add_reform = government_reform:dbo_destiny_cultural_capital_constantinople
-		dbo_event_mild_bonus = yes
+		dbo_event_severe_bonus = yes
 	}
 }
 
@@ -171,16 +166,15 @@ dbo_dhe_destiny.202 = {
 	}
 	trigger = {
 		own_entire_province = province_definition:constantinople_province
-		NOT = {
-			has_reform = government_reform:dbo_destiny_trade_center_grand_bazaar
-		}
 	}
 	option = {
 		name = dbo_dhe_destiny.202.a
 		historical_option = yes
-		set_variable = dbo_destiny_trade_center_grand_bazaar_obtained
+		unlock_government_reform_effect = {
+			type = dbo_destiny_trade_center_grand_bazaar
+		}
 		add_reform = government_reform:dbo_destiny_trade_center_grand_bazaar
-		dbo_event_mild_bonus = yes
+		dbo_event_severe_bonus = yes
 	}
 }
 
@@ -210,16 +204,15 @@ dbo_dhe_destiny.203 = {
 				age = age_3_discovery
 			}
 		}
-		NOT = {
-			has_reform = government_reform:dbo_destiny_legacy_of_seljuks
-		}
 	}
 	option = {
 		name = dbo_dhe_destiny.203.a
 		historical_option = yes
-		set_variable = dbo_destiny_legacy_of_seljuks_obtained
+		unlock_government_reform_effect = {
+			type = dbo_destiny_legacy_of_seljuks
+		}
 		add_reform = government_reform:dbo_destiny_legacy_of_seljuks
-		dbo_event_mild_bonus = yes
+		dbo_event_severe_bonus = yes
 	}
 }
 
@@ -239,19 +232,16 @@ dbo_dhe_destiny.204 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		character:tur_piri_reis = {
-			is_alive = yes
-		}
-		NOT = {
-			has_reform = government_reform:dbo_destiny_piri_reis
-		}
+		has_country_modifier = maps_of_piri_reis_modifier
 	}
 	option = {
 		name = dbo_dhe_destiny.204.a
 		historical_option = yes
-		set_variable = dbo_destiny_piri_reis_obtained
+		unlock_government_reform_effect = {
+			type = dbo_destiny_piri_reis
+		}
 		add_reform = government_reform:dbo_destiny_piri_reis
-		dbo_event_mild_bonus = yes
+		dbo_event_severe_bonus = yes
 	}
 }
 
@@ -272,9 +262,6 @@ dbo_dhe_destiny.205 = {
 	}
 	trigger = {
 		country_rank = country_rank:rank_empire
-		NOT = {
-			has_reform = government_reform:dbo_destiny_ottoman_empire
-		}
 		OR = {
 			has_reform = government_reform:legacy_of_the_ottomans
 			has_reform = government_reform:turkish_pashas
@@ -301,7 +288,9 @@ dbo_dhe_destiny.205 = {
 		lock_government_reform_effect = {
 			type = turkish_pashas
 		}
-		set_variable = dbo_destiny_ottoman_empire_obtained
+		unlock_government_reform_effect = {
+			type = dbo_destiny_ottoman_empire
+		}
 		add_reform = government_reform:dbo_destiny_ottoman_empire
 		dbo_event_ultimate_bonus = yes
 	}
@@ -323,16 +312,15 @@ dbo_dhe_destiny.206 = {
 	trigger = {
 		num_locations >= 100
 		num_of_non_rural >= 10
-		NOT = {
-			has_reform = government_reform:dbo_destiny_mentor_lala
-		}
 	}
 	option = {
 		name = dbo_dhe_destiny.206.a
 		historical_option = yes
-		set_variable = dbo_destiny_mentor_lala_obtained
+		unlock_government_reform_effect = {
+			type = dbo_destiny_mentor_lala
+		}
 		add_reform = government_reform:dbo_destiny_mentor_lala
-		dbo_event_mild_bonus = yes
+		dbo_event_severe_bonus = yes
 	}
 }
 
@@ -369,6 +357,9 @@ dbo_dhe_destiny.1001 = {
 			type = law_of_the_pious_emperor
 		}
 		add_policy = policy:law_of_the_pious_emperor
+		unlock_government_reform_effect = {
+			type = dbo_destiny_tengri_children
+		}
 		add_reform = government_reform:dbo_destiny_tengri_children
 		custom_tooltip = {
 			text = dbo_every_turkic_group_pop_change_religion_tt
@@ -396,7 +387,7 @@ dbo_dhe_destiny.1001 = {
 				}
 			}
 		}
-		dbo_event_extreme_bonus = yes
+		dbo_event_ultimate_bonus = yes
 		custom_tooltip = {
 			text = dbo_remove_accepted_and_tolerated_every_culture_except_turkic_group_tt
 			every_culture = {

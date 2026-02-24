@@ -1,62 +1,62 @@
 ﻿dbo_destiny_cultural_capital_constantinople_can_end = {
-    custom_tooltip = {
-        text = dbo_destiny_cultural_capital_constantinople_can_end_tooltip
-        c:TUR = {
-            has_variable = dbo_destiny_cultural_capital_constantinople_obtained
-        }
-    }
+	custom_tooltip = {
+		text = dbo_destiny_cultural_capital_constantinople_can_end_tooltip
+		c:TUR = {
+			has_reform = government_reform:dbo_destiny_cultural_capital_constantinople
+		}
+	}
 }
 
 dbo_destiny_trade_center_grand_bazaar_can_end = {
-    custom_tooltip = {
-        text = dbo_destiny_trade_center_grand_bazaar_can_end_tooltip
-        c:TUR = {
-            has_variable = dbo_destiny_trade_center_grand_bazaar_obtained
-        }
-    }
+	custom_tooltip = {
+		text = dbo_destiny_trade_center_grand_bazaar_can_end_tooltip
+		c:TUR = {
+			has_reform = government_reform:dbo_destiny_trade_center_grand_bazaar
+		}
+	}
 }
 
 dbo_destiny_mentor_lala_can_end = {
-    custom_tooltip = {
-        text = dbo_destiny_mentor_lala_can_end_tooltip
-        c:TUR = {
-            has_variable = dbo_destiny_mentor_lala_obtained
-        }
-    }
+	custom_tooltip = {
+		text = dbo_destiny_mentor_lala_can_end_tooltip
+		c:TUR = {
+			has_reform = government_reform:dbo_destiny_mentor_lala
+		}
+	}
 }
 
 dbo_destiny_legacy_of_seljuks_can_end = {
-    custom_tooltip = {
-        text = dbo_destiny_legacy_of_seljuks_can_end_tooltip
-        c:TUR = {
-            has_variable = dbo_destiny_legacy_of_seljuks_obtained
-        }
-    }
+	custom_tooltip = {
+		text = dbo_destiny_legacy_of_seljuks_can_end_tooltip
+		c:TUR = {
+			has_reform = government_reform:dbo_destiny_legacy_of_seljuks
+		}
+	}
 }
 
 dbo_destiny_piri_reis_can_end = {
-    custom_tooltip = {
-        text = dbo_destiny_piri_reis_can_end_tooltip
-        c:TUR = {
-            has_variable = dbo_destiny_piri_reis_obtained
-        }
-    }
+	custom_tooltip = {
+		text = dbo_destiny_piri_reis_can_end_tooltip
+		c:TUR = {
+			has_reform = government_reform:dbo_destiny_piri_reis
+		}
+	}
 }
 
 dbo_destiny_ottoman_empire_can_end = {
-    custom_tooltip = {
-        text = dbo_destiny_ottoman_empire_can_end_tooltip
-        c:TUR = {
-            has_variable = dbo_destiny_ottoman_empire_obtained
-        }
-    }
+	custom_tooltip = {
+		text = dbo_destiny_ottoman_empire_can_end_tooltip
+		c:TUR = {
+			has_reform = government_reform:dbo_destiny_ottoman_empire
+		}
+	}
 }
 
 dbo_destiny_can_end = {
-    dbo_destiny_cultural_capital_constantinople_can_end = yes
-    dbo_destiny_trade_center_grand_bazaar_can_end = yes
-    dbo_destiny_mentor_lala_can_end = yes
-    dbo_destiny_legacy_of_seljuks_can_end = yes
-    dbo_destiny_piri_reis_can_end = yes
-    dbo_destiny_ottoman_empire_can_end = yes
+	dbo_destiny_cultural_capital_constantinople_can_end = yes
+	dbo_destiny_trade_center_grand_bazaar_can_end = yes
+	dbo_destiny_mentor_lala_can_end = yes
+	dbo_destiny_legacy_of_seljuks_can_end = yes
+	dbo_destiny_piri_reis_can_end = yes
+	dbo_destiny_ottoman_empire_can_end = yes
 }

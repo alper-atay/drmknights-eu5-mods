@@ -2,16 +2,14 @@
 	dbo_destiny_legal_code_kanunname_i_al_i_osman_policy = {
 		unique = yes
 		potential = {
-			has_or_had_tag = TUR
-			has_variable = dbo_destiny_legal_code_kanunname_i_al_i_osman_policy_obtained
-			NOT = {
-				has_variable = dbo_destiny_legal_code_kanunname_i_al_i_osman_policy_disposed
+			has_unlocked_policy_trigger = {
+				type = dbo_destiny_legal_code_kanunname_i_al_i_osman_policy
 			}
 		}
 		country_modifier = {
 			global_monthly_control = 0.005
-			tax_income_efficiency = large_tax_income_efficiency_bonus
-			global_distance_from_capital_speed_propagation = 0.1
+			tax_income_efficiency = medium_tax_income_efficiency_bonus
+			global_distance_from_capital_speed_propagation = 0.05
 		}
 		country_modifier = {
 			potential_trigger = {
@@ -22,13 +20,13 @@
 			}
 			global_max_control = 0.05
 			global_monthly_control = 0.005
-			tax_income_efficiency = large_tax_income_efficiency_bonus
-			global_distance_from_capital_speed_propagation = 0.1
+			tax_income_efficiency = tiny_tax_income_efficiency_bonus
+			global_distance_from_capital_speed_propagation = 0.05
 			scale = {
 				value = 1
 				add = {
 					value = "estate_power(estate_type:crown_estate)"
-					multiply = 1.5
+					multiply = 2
 					max = 1
 				}
 			}

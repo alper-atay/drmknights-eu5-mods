@@ -152,9 +152,10 @@ dbo_otag = {
 	}
 	unique_production_methods = {
 		dbo_otag_maintenance = {
-			weaponry = 0.1
-			horses = 0.05
-			cloth = 0.05
+			weaponry = 0.01
+			horses = 0.01
+			cloth = 0.01
+			incense = 0.01
 			category = building_maintenance
 		}
 	}
@@ -169,10 +170,10 @@ dbo_otag = {
 		local_max_control = 0.05
 		local_distance_from_capital_speed_propagation = 0.05
 		local_manpower = 0.001
-		local_pop_conversion_speed = 0.005
-		local_pop_assimilation_speed = 0.005
-		local_pop_assimilation_speed_modifier = 0.1
-		local_pop_conversion_speed_modifier = 0.1
+		local_pop_conversion_speed = 0.001
+		local_pop_assimilation_speed = 0.001
+		local_pop_assimilation_speed_modifier = 0.05
+		local_pop_conversion_speed_modifier = 0.05
 		can_recruit_regiment_in_this_location = yes
 	}
 }
