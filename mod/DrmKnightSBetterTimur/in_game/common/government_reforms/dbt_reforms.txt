@@ -1,85 +1,61 @@
-﻿
-dbt_destiny_tengri_children = {
-    unique = yes
-    potential = {
-        has_unlocked_government_reform_trigger = {
-            type = dbt_destiny_tengri_children
-        }
-        religion = religion:tengri
-    }
-    locked = {
-        is_locked_mechanic = {
-            mechanic = government_reform
-            type = dbt_destiny_tengri_children
-        }
-    }
-    country_modifier = {
-        government_reform_slots = 1
-        government_size = 1
-        global_crown_estate_power = 0.4
-        country_child_education = 0.4
-        tolerance_own = 5
-        tolerance_heretic = -5
-        tolerance_heathen = -5
-        cultures_capacity_modifier = -0.9
-        global_pop_assimilation_speed_modifier = 0.25
-        global_pop_conversion_speed_modifier = 0.25
-        global_clergy_estate_power = 0.2
-        monthly_legitimacy = 0.4
-        monthly_horde_unity = 0.4
-        monthly_tribal_cohesion = 0.4
-        monthly_republican_tradition = 0.4
-        monthly_prestige = 0.4
-        stability_investment = 0.4
-        global_institution_growth_modifier = 0.4
-    }
-}
-
-dbt_destiny_grace_of_tengri = {
-    unique = yes
-    potential = {
-        has_unlocked_government_reform_trigger = {
-            type = dbt_destiny_grace_of_tengri
-        }
-        religion = religion:tengri
-    }
-    locked = {
-        is_locked_mechanic = {
-            mechanic = government_reform
-            type = dbt_destiny_grace_of_tengri
-        }
-    }
-    country_modifier = {
-        government_reform_slots = 1
-        counter_espionage = 0.4
-        monthly_rebel_growth = -0.004
-        pop_join_rebel_threshold = -0.4
-        pop_leave_rebels_threshold = -0.4
-    }
+﻿dbt_destiny_tengri_children = {
+	unique = yes
+	potential = {
+		has_unlocked_government_reform_trigger = {
+			type = dbt_destiny_tengri_children
+		}
+		religion = religion:tengri
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = government_reform
+			type = dbt_destiny_tengri_children
+		}
+	}
+	country_modifier = {
+		government_reform_slots = 1
+		government_size = 1
+		global_crown_estate_power = 0.4
+		country_child_education = 0.4
+		tolerance_own = 5
+		tolerance_heretic = -5
+		tolerance_heathen = -5
+		cultures_capacity_modifier = -0.9
+		global_pop_assimilation_speed_modifier = 0.25
+		global_pop_conversion_speed_modifier = 0.25
+		global_clergy_estate_power = 0.2
+		monthly_legitimacy = 0.4
+		monthly_horde_unity = 0.4
+		monthly_tribal_cohesion = 0.4
+		monthly_republican_tradition = 0.4
+		monthly_prestige = 0.4
+		stability_investment = 0.4
+		global_institution_growth_modifier = 0.4
+	}
 }
 
 dbt_destiny_wing_of_turk = {
-    unique = yes
-    potential = {
-        has_unlocked_government_reform_trigger = {
-            type = dbt_destiny_wing_of_turk
-        }
-        religion = religion:tengri
-    }
-    locked = {
-        is_locked_mechanic = {
-            mechanic = government_reform
-            type = dbt_destiny_wing_of_turk
-        }
-    }
-    country_modifier = {
-        government_reform_slots = 1
-        global_horses_output_modifier = 0.4
-        army_cavalry_power = 0.4
-        army_cavalry_build_cost_modifier = -0.4
-        army_cavalry_maintenance_cost_modifier = -0.4
-        army_cavalry_reinforce_cost_modifier = -0.4
-        assault_ability = 0.4
-        army_movement_speed = 0.4
-    }
+	unique = yes
+	potential = {
+		has_unlocked_government_reform_trigger = {
+			type = dbt_destiny_wing_of_turk
+		}
+		religion = religion:tengri
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = government_reform
+			type = dbt_destiny_wing_of_turk
+		}
+	}
+	country_modifier = {
+		government_reform_slots = 1
+		global_horses_output_modifier = 0.4
+		army_cavalry_power = 0.4
+		army_cavalry_build_cost_modifier = -0.4
+		army_cavalry_maintenance_cost_modifier = -0.4
+		army_cavalry_reinforce_cost_modifier = -0.4
+		assault_ability = 0.4
+		army_movement_speed = 0.4
+	}
 }
