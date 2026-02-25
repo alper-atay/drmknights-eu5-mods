@@ -15,13 +15,51 @@ dbo_dhe_timur.1 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_destiny.206.a
+		name = dbo_dhe_timur.1.a
 		historical_option = yes
 		character:chg_timur_lame_borjigin = {
 			add_character_modifier = {
-				modifier = dbo_character_kanuni_sultan_suleiman
+				modifier = dbo_character_timur_leng
 				years = modifier_duration_permanent
 				mode = add_and_extend
+			}
+		}
+		change_religion = religion:tengri
+		change_religion_for_ruler_and_family = {
+			country = root
+			religion = religion:tengri
+		}
+		set_liturgical_language = culture.dialect
+		add_policy = policy:polygyny
+		add_policy = policy:heir_same_religion
+		add_policy = policy:balanced_court_policy
+		unlock_policy_effect = {
+			type = law_of_the_pious_emperor
+		}
+		add_policy = policy:law_of_the_pious_emperor
+		unlock_government_reform_effect = {
+			type = dbo_destiny_tengri_children
+		}
+		add_reform = government_reform:dbo_destiny_tengri_children
+		unlock_government_reform_effect = {
+			type = dbo_destiny_grace_of_tengri
+		}
+		add_reform = government_reform:dbo_destiny_grace_of_tengri
+		custom_tooltip = {
+			text = dbo_every_turkic_group_pop_change_religion_tt
+			every_pop = {
+				limit = {
+					NOT = {
+						religion = religion:tengri
+					}
+					culture = {
+						has_culture_group = culture_group:turkic_group
+					}
+				}
+				split_pop = {
+					fraction = 0.5
+					religion = religion:tengri
+				}
 			}
 		}
 		custom_tooltip = {
@@ -35,6 +73,72 @@ dbo_dhe_timur.1 = {
 				}
 			}
 		}
+		custom_tooltip = {
+			text = dbo_remove_accepted_and_tolerated_every_culture_except_turkic_group_tt
+			every_culture = {
+				limit = {
+					is_accepted_in = root
+					NOT = {
+						has_culture_group = culture_group:turkic_group
+					}
+				}
+				root = {
+					remove_accepted_culture = PREV
+				}
+			}
+			every_culture = {
+				limit = {
+					is_tolerated_in = root
+					NOT = {
+						has_culture_group = culture_group:turkic_group
+					}
+				}
+				root = {
+					remove_tolerated_culture = PREV
+				}
+			}
+		}
+		add_estate_satisfaction = {
+			type = estate_type:nobles_estate
+			value = estate_satisfaction_radical_bonus
+		}
+		add_estate_satisfaction = {
+			type = estate_type:clergy_estate
+			value = estate_satisfaction_radical_bonus
+		}
+		add_estate_satisfaction = {
+			type = estate_type:peasants_estate
+			value = estate_satisfaction_radical_bonus
+		}
+		add_estate_satisfaction = {
+			type = estate_type:burghers_estate
+			value = estate_satisfaction_radical_bonus
+		}
+		add_gold = 40000
+		dbo_event_ultimate_bonus = yes
+	}
+}
+
+dbo_dhe_timur.2 = {
+	title = dbo_dhe_timur.2.title
+	desc = dbo_dhe_timur.2.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TIM
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		religion = religion:tengri
+	}
+	option = {
+		name = dbo_dhe_timur.2.a
+		historical_option = yes
+		unlock_government_reform_effect = {
+			type = dbo_destiny_wing_of_turk
+		}
+		add_reform = government_reform:dbo_destiny_wing_of_turk
 		dbo_event_ultimate_bonus = yes
 	}
 }

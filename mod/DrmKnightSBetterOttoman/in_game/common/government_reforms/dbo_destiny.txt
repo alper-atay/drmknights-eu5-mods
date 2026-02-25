@@ -142,29 +142,3 @@ dbo_destiny_ottoman_empire = {
 		global_war_score_cost = -0.25
 	}
 }
-
-dbo_destiny_tengri_children = {
-	unique = yes
-	potential = {
-		has_unlocked_government_reform_trigger = {
-			type = dbo_destiny_tengri_children
-		}
-		religion = religion:tengri
-	}
-	locked = {
-		is_locked_mechanic = {
-			mechanic = government_reform
-			type = dbo_destiny_tengri_children
-		}
-	}
-	country_modifier = {
-		government_reform_slots = 1
-		tolerance_own = 5
-		tolerance_heretic = -5
-		tolerance_heathen = -5
-		cultures_capacity_modifier = -0.9
-		global_pop_assimilation_speed_modifier = 0.25
-		global_pop_conversion_speed_modifier = 0.25
-		global_clergy_estate_power = 0.2
-	}
-}

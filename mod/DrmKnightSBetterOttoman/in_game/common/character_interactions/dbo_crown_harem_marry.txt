@@ -8,7 +8,10 @@
 	ai_tick_frequency = 40
 	potential = {
 		scope:actor = {
-			tag = TUR
+			OR = {
+				tag = TUR
+				tag = TIM
+			}
 		}
 	}
 	allow = {

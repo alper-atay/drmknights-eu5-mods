@@ -11,7 +11,7 @@ on_location_changed_owner = {
 dbo_on_conquer_any_location = {
 	trigger = {
 		tag_exists = TUR
-		scope:winner = {
+		scope:winner ?= {
 			tag = TUR
 		}
 	}
@@ -58,7 +58,7 @@ dbo_on_conquer_any_location = {
 dbo_on_timur_conquer_any_location = {
 	trigger = {
 		tag_exists = TIM
-		scope:winner = {
+		scope:winner ?= {
 			tag = TIM
 		}
 	}
@@ -93,6 +93,7 @@ dbo_on_timur_conquer_any_location = {
 			add_gold = {
 				value = root.location_tax_base
 				multiply = 0.25
+				add = 40
 			}
 		}
 	}
@@ -102,7 +103,7 @@ dbo_on_ottoman_miracle = {
 	trigger = {
 		tag_exists = TUR
 		NOT = {
-			owner = c:TUR
+			owner ?= c:TUR
 		}
 	}
 	effect = {

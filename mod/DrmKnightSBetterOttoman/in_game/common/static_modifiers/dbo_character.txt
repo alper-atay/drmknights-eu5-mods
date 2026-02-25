@@ -41,10 +41,3 @@ dbo_character_kanuni_sultan_suleiman = {
 	max_war_exhaustion = 5
 	aggressiveness_modifier = 1
 }
-
-dbo_character_timur_leng = {
-	game_data = {
-		category = character
-	}
-	character_life_expectancy = 30
-}

@@ -1,0 +1,50 @@
+﻿#root = location  (after winning and losing, for both), scope:winner = new owner country, scope:loser = previous owner country
+on_location_changed_owner = {
+    on_actions = {
+        dbo_on_timur_conquer_any_location
+    }
+}
+
+
+dbo_on_timur_conquer_any_location = {
+    trigger = {
+        tag_exists = TIM
+        scope:winner ?= {
+            tag = TIM
+        }
+    }
+    effect = {
+        if = {
+            limit = {
+                culture_percentage = {
+                    culture = scope:winner.culture
+                    value < 0.2
+                }
+            }
+            add_pop = {
+                culture = scope:winner.culture
+                religion = scope:winner.religion
+                type = pop_type:peasants
+                size = {
+                    value = population
+                    multiply = 0.1
+                    min = 0.2
+                    max = 1
+                }
+            }
+        }
+        construct_building = {
+            building_type = building_type:dbo_otag
+            cost_multiplier = 0
+            cost_multiplier_reason = "otag_must_be_free"
+            instant = yes
+        }
+        change_integration_level = integrated
+        scope:winner = {
+            add_gold = {
+                value = root.location_tax_base
+                add = 40
+            }
+        }
+    }
+}
