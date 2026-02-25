@@ -148,21 +148,30 @@ dbo_otag = {
 	construction_demand = soldier_building_construction
 	build_time = super_fast_temporary_house
 	country_potential = {
-		religion = religion:tengri
+		culture = {
+			OR = {
+				has_culture_group = culture_group:turkic_group
+				has_culture_group = culture_group:mongolian_group
+			}
+		}
 	}
 	unique_production_methods = {
 		dbo_otag_maintenance = {
 			weaponry = 0.01
 			horses = 0.01
 			cloth = 0.01
-			incense = 0.01
 			category = building_maintenance
 		}
 	}
 	remove_if = {
 		location = {
 			owner ?= {
-				religion != religion:tengri
+				culture = {
+					NOR = {
+						has_culture_group = culture_group:turkic_group
+						has_culture_group = culture_group:mongolian_group
+					}
+				}
 			}
 		}
 	}

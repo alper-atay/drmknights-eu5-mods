@@ -82,6 +82,13 @@ dbo_dhe_history.101 = {
 			add_trait = trait:child_prodigy
 			script = dbo_yildirim_sultan_bayezid
 		}
+		character:dbo_yildirim_sultan_bayezid = {
+			add_character_modifier = {
+				modifier = blocked_from_being_ruler
+				years = modifier_duration_permanent
+				mode = add_and_extend
+			}
+		}
 	}
 	option = {
 		name = dbo_dhe_history.101.a
@@ -118,6 +125,7 @@ dbo_dhe_history.102 = {
 			hidden_effect = {
 				remove_traits_of_category = ruler
 				remove_traits_of_category = general
+				remove_character_modifier = blocked_from_being_ruler
 			}
 			add_character_modifier = {
 				modifier = dbo_character_yildirim_sultan_bayezid
@@ -150,9 +158,11 @@ dbo_dhe_history.103 = {
 	trigger = {
 		exists = character:dbo_yildirim_sultan_bayezid
 		character:dbo_yildirim_sultan_bayezid = {
-			is_alive = yes
-			is_adult = yes
-			character_age > 18
+			can_become_a_ruler = yes
+			OR = {
+				character_age > 35
+				is_ruler = yes
+			}
 		}
 	}
 	option = {
@@ -188,7 +198,6 @@ dbo_dhe_history.104 = {
 		exists = character:dbo_yildirim_sultan_bayezid
 		character:dbo_yildirim_sultan_bayezid = {
 			is_ruler = yes
-			character_age > 30
 		}
 	}
 	option = {
@@ -354,6 +363,13 @@ dbo_dhe_history.201 = {
 			add_trait = trait:child_prodigy
 			script = dbo_fatih_sultan_mehmed
 		}
+		character:dbo_fatih_sultan_mehmed = {
+			add_character_modifier = {
+				modifier = blocked_from_being_ruler
+				years = modifier_duration_permanent
+				mode = add_and_extend
+			}
+		}
 	}
 	option = {
 		name = dbo_dhe_history.201.a
@@ -381,7 +397,7 @@ dbo_dhe_history.202 = {
 		exists = character:dbo_fatih_sultan_mehmed
 		character:dbo_fatih_sultan_mehmed = {
 			is_alive = yes
-			is_adult = yes
+			character_age > 14
 		}
 	}
 	option = {
@@ -391,6 +407,7 @@ dbo_dhe_history.202 = {
 			hidden_effect = {
 				remove_traits_of_category = ruler
 				remove_traits_of_category = general
+				remove_character_modifier = blocked_from_being_ruler
 			}
 			add_character_modifier = {
 				modifier = dbo_character_fatih_sultan_mehmed
@@ -424,8 +441,30 @@ dbo_dhe_history.203 = {
 		has_ruler = yes
 		exists = character:dbo_fatih_sultan_mehmed
 		character:dbo_fatih_sultan_mehmed = {
-			is_alive = yes
-			is_adult = yes
+			OR = {
+				can_become_a_ruler = yes
+				is_ruler = yes
+			}
+		}
+	}
+	immediate = {
+		create_character = {
+			first_name = Gulbahar
+			birth_location = root.capital
+			age = 16
+			culture = root.culture
+			religion = root.religion
+			female = yes
+			fertility = 100
+			adm = 100
+			dip = 100
+			mil = 100
+			add_character_modifier = {
+				modifier = banned_from_cabinet
+				years = modifier_duration_permanent
+				mode = add_and_extend
+			}
+			marry_character = character:dbo_fatih_sultan_mehmed
 		}
 	}
 	option = {
@@ -469,7 +508,6 @@ dbo_dhe_history.204 = {
 		exists = character:dbo_fatih_sultan_mehmed
 		character:dbo_fatih_sultan_mehmed = {
 			is_alive = yes
-			is_adult = yes
 			is_ruler = yes
 		}
 		has_variable = dbo_history_fatih_sultan_mehmet_and_orban_events_completed
@@ -499,7 +537,6 @@ dbo_dhe_history.205 = {
 		exists = character:dbo_fatih_sultan_mehmed
 		character:dbo_fatih_sultan_mehmed = {
 			is_alive = yes
-			is_adult = yes
 			is_ruler = yes
 		}
 		has_variable = dbo_conquest_rumelia_challenged
@@ -522,17 +559,22 @@ dbo_dhe_history.206 = {
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
-		from = 1460.1.1
+		from = 1451.1.1
 		to = 9999.1.1
 		monthly_chance = 10
 	}
 	trigger = {
 		exists = character:dbo_fatih_sultan_mehmed
+		character:dbo_fatih_sultan_mehmed = {
+			character_age > 35
+		}
 	}
 	option = {
 		name = dbo_dhe_history.206.a
 		historical_option = yes
-		set_variable = dbo_destiny_legal_code_kanunname_i_al_i_osman_policy_obtained
+		unlock_policy_effect = {
+			type = dbo_destiny_legal_code_kanunname_i_al_i_osman_policy
+		}
 		add_policy = policy:dbo_destiny_legal_code_kanunname_i_al_i_osman_policy
 		dbo_event_mild_bonus = yes
 	}
@@ -553,21 +595,22 @@ dbo_dhe_history.207 = {
 		monthly_chance = 100
 	}
 	trigger = {
+		has_heir = yes
 		exists = character:dbo_fatih_sultan_mehmed
 		character:dbo_fatih_sultan_mehmed = {
 			is_alive = yes
 			is_ruler = yes
-			num_of_children > 1
 			any_child = {
 				is_alive = yes
 				is_adult = yes
 				is_female = no
+				count > 1
 			}
 		}
 		has_variable = dbo_history_fatih_sultan_mehmet_and_orban_events_completed
 		has_variable = dbo_conquest_rumelia_challenged
 		has_variable = dbo_conquest_black_sea_challenged
-		has_variable = dbo_destiny_legal_code_kanunname_i_al_i_osman_policy_obtained
+		has_policy = dbo_destiny_legal_code_kanunname_i_al_i_osman_policy
 	}
 	immediate = {
 		kill_character = {
@@ -673,6 +716,13 @@ dbo_dhe_history.301 = {
 			add_trait = trait:child_prodigy
 			script = dbo_yavuz_sultan_selim
 		}
+		character:dbo_yavuz_sultan_selim = {
+			add_character_modifier = {
+				modifier = blocked_from_being_ruler
+				years = modifier_duration_permanent
+				mode = add_and_extend
+			}
+		}
 	}
 	option = {
 		name = dbo_dhe_history.301.a
@@ -709,10 +759,11 @@ dbo_dhe_history.302 = {
 			hidden_effect = {
 				remove_traits_of_category = ruler
 				remove_traits_of_category = general
+				remove_character_modifier = blocked_from_being_ruler
 			}
 			add_character_modifier = {
 				modifier = dbo_character_yavuz_sultan_selim
-				days = -1
+				days = modifier_duration_permanent
 				mode = add_and_extend
 			}
 			add_trait = trait:tactical_genius
@@ -734,7 +785,7 @@ dbo_dhe_history.303 = {
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
-		from = 1512.1.1
+		from = 1470.1.1
 		to = 9999.1.1
 		monthly_chance = 100
 	}
@@ -742,8 +793,11 @@ dbo_dhe_history.303 = {
 		has_ruler = yes
 		exists = character:dbo_yavuz_sultan_selim
 		character:dbo_yavuz_sultan_selim = {
-			is_alive = yes
-			is_adult = yes
+			can_become_a_ruler = yes
+			OR = {
+				character_age > 42
+				is_ruler = yes
+			}
 		}
 	}
 	option = {
@@ -861,23 +915,24 @@ dbo_dhe_history.307 = {
 		monthly_chance = 100
 	}
 	trigger = {
+		has_heir = yes
 		at_war = no
 		exists = character:dbo_yavuz_sultan_selim
 		character:dbo_yavuz_sultan_selim = {
 			is_alive = yes
 			is_ruler = yes
-			num_of_children > 1
 			any_child = {
 				is_alive = yes
 				is_adult = yes
 				is_female = no
+				count > 1
 			}
 		}
 		has_variable = dbo_conquest_steep_mountain_challenged
 		has_variable = dbo_conquest_fertile_crescent_challenged
 		has_variable = dbo_conquest_nile_river_challenged
 		exists = character:dbo_kanuni_sultan_suleiman
-		character:dbo_yavuz_sultan_selim = {
+		character:dbo_kanuni_sultan_suleiman = {
 			is_alive = yes
 			is_adult = yes
 		}
@@ -929,6 +984,13 @@ dbo_dhe_history.401 = {
 			add_trait = trait:child_prodigy
 			script = dbo_kanuni_sultan_suleiman
 		}
+		character:dbo_kanuni_sultan_suleiman = {
+			add_character_modifier = {
+				modifier = blocked_from_being_ruler
+				years = modifier_duration_permanent
+				mode = add_and_extend
+			}
+		}
 	}
 	option = {
 		name = dbo_dhe_history.401.a
@@ -947,7 +1009,7 @@ dbo_dhe_history.402 = {
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
-		from = 1512.1.1
+		from = 1494.1.1
 		to = 9999.1.1
 		monthly_chance = 100
 	}
@@ -965,6 +1027,7 @@ dbo_dhe_history.402 = {
 			hidden_effect = {
 				remove_traits_of_category = ruler
 				remove_traits_of_category = general
+				remove_character_modifier = blocked_from_being_ruler
 			}
 			add_character_modifier = {
 				modifier = dbo_character_kanuni_sultan_suleiman
@@ -1001,8 +1064,10 @@ dbo_dhe_history.403 = {
 		}
 		exists = character:dbo_kanuni_sultan_suleiman
 		character:dbo_kanuni_sultan_suleiman = {
-			is_alive = yes
-			is_adult = yes
+			OR = {
+				can_become_a_ruler = yes
+				is_ruler = yes
+			}
 		}
 	}
 	option = {
@@ -1039,7 +1104,7 @@ dbo_dhe_history.404 = {
 		exists = character:dbo_kanuni_sultan_suleiman
 		character:dbo_kanuni_sultan_suleiman = {
 			is_ruler = yes
-			character_age > 25
+			character_age > 30
 		}
 	}
 	option = {
@@ -1097,7 +1162,7 @@ dbo_dhe_history.406 = {
 		exists = character:dbo_kanuni_sultan_suleiman
 		character:dbo_kanuni_sultan_suleiman = {
 			is_ruler = yes
-			character_age > 45
+			character_age > 40
 		}
 	}
 	option = {

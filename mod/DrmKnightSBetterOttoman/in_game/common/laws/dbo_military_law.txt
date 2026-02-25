@@ -45,6 +45,9 @@ dbo_military_army_infantry_law = {
 	law_category = dbo_military
 	unique = yes
 	potential = {
+		has_unlocked_policy_trigger = {
+			type = dbo_military_army_infantry_yeniceri_ocagi_policy
+		}
 	}
 	dbo_military_army_infantry_yeniceri_ocagi_policy = {
 		unique = yes

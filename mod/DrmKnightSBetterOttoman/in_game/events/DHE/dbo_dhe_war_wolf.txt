@@ -14,17 +14,15 @@ dbo_dhe_war_wolf.101 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		NOT = {
-			has_reform = government_reform:dbo_war_wolf_t1
-			has_variable = dbo_war_wolf_t1_obtained
-		}
 		num_locations >= 50
 		num_of_non_rural >= 5
 	}
 	option = {
 		name = dbo_dhe_war_wolf_common_option
 		historical_option = yes
-		set_variable = dbo_war_wolf_t1_obtained
+		unlock_government_reform_effect = {
+			type = dbo_war_wolf_t1
+		}
 		add_reform = government_reform:dbo_war_wolf_t1
 		dbo_event_severe_bonus = yes
 	}
@@ -46,11 +44,6 @@ dbo_dhe_war_wolf.102 = {
 	}
 	trigger = {
 		has_reform = government_reform:dbo_war_wolf_t1
-		has_variable = dbo_war_wolf_t1_obtained
-		NOT = {
-			has_reform = government_reform:dbo_war_wolf_t2
-			has_variable = dbo_war_wolf_t2_obtained
-		}
 		num_locations >= 100
 		num_of_non_rural >= 10
 	}
@@ -58,9 +51,13 @@ dbo_dhe_war_wolf.102 = {
 		name = dbo_dhe_war_wolf_common_option
 		historical_option = yes
 		remove_reform = government_reform:dbo_war_wolf_t1
-		remove_variable = dbo_war_wolf_t1_obtained
+		lock_government_reform_effect = {
+			type = dbo_war_wolf_t1
+		}
+		unlock_government_reform_effect = {
+			type = dbo_war_wolf_t2
+		}
 		add_reform = government_reform:dbo_war_wolf_t2
-		set_variable = dbo_war_wolf_t2_obtained
 		dbo_event_severe_bonus = yes
 	}
 }
@@ -81,11 +78,6 @@ dbo_dhe_war_wolf.103 = {
 	}
 	trigger = {
 		has_reform = government_reform:dbo_war_wolf_t2
-		has_variable = dbo_war_wolf_t2_obtained
-		NOT = {
-			has_reform = government_reform:dbo_war_wolf_t3
-			has_variable = dbo_war_wolf_t3_obtained
-		}
 		num_locations >= 250
 		num_of_non_rural >= 25
 	}
@@ -93,9 +85,13 @@ dbo_dhe_war_wolf.103 = {
 		name = dbo_dhe_war_wolf_common_option
 		historical_option = yes
 		remove_reform = government_reform:dbo_war_wolf_t2
-		remove_variable = dbo_war_wolf_t2_obtained
+		lock_government_reform_effect = {
+			type = dbo_war_wolf_t2
+		}
+		unlock_government_reform_effect = {
+			type = dbo_war_wolf_t3
+		}
 		add_reform = government_reform:dbo_war_wolf_t3
-		set_variable = dbo_war_wolf_t3_obtained
 		dbo_event_severe_bonus = yes
 	}
 }
@@ -116,11 +112,6 @@ dbo_dhe_war_wolf.104 = {
 	}
 	trigger = {
 		has_reform = government_reform:dbo_war_wolf_t3
-		has_variable = dbo_war_wolf_t3_obtained
-		NOT = {
-			has_reform = government_reform:dbo_war_wolf_t4
-			has_variable = dbo_war_wolf_t4_obtained
-		}
 		num_locations >= 400
 		num_of_non_rural >= 50
 	}
@@ -128,9 +119,13 @@ dbo_dhe_war_wolf.104 = {
 		name = dbo_dhe_war_wolf_common_option
 		historical_option = yes
 		remove_reform = government_reform:dbo_war_wolf_t3
-		remove_variable = dbo_war_wolf_t3_obtained
+		lock_government_reform_effect = {
+			type = dbo_war_wolf_t3
+		}
+		unlock_government_reform_effect = {
+			type = dbo_war_wolf_t4
+		}
 		add_reform = government_reform:dbo_war_wolf_t4
-		set_variable = dbo_war_wolf_t4_obtained
 		dbo_event_severe_bonus = yes
 	}
 }
@@ -151,11 +146,6 @@ dbo_dhe_war_wolf.105 = {
 	}
 	trigger = {
 		has_reform = government_reform:dbo_war_wolf_t4
-		has_variable = dbo_war_wolf_t4_obtained
-		NOT = {
-			has_reform = government_reform:dbo_war_wolf_t5
-			has_variable = dbo_war_wolf_t5_obtained
-		}
 		num_locations >= 600
 		num_of_non_rural >= 100
 	}
@@ -163,9 +153,13 @@ dbo_dhe_war_wolf.105 = {
 		name = dbo_dhe_war_wolf_common_option
 		historical_option = yes
 		remove_reform = government_reform:dbo_war_wolf_t4
-		remove_variable = dbo_war_wolf_t4_obtained
+		lock_government_reform_effect = {
+			type = dbo_war_wolf_t4
+		}
+		unlock_government_reform_effect = {
+			type = dbo_war_wolf_t5
+		}
 		add_reform = government_reform:dbo_war_wolf_t5
-		set_variable = dbo_war_wolf_t5_obtained
 		dbo_event_severe_bonus = yes
 	}
 }
@@ -186,11 +180,6 @@ dbo_dhe_war_wolf.106 = {
 	}
 	trigger = {
 		has_reform = government_reform:dbo_war_wolf_t5
-		has_variable = dbo_war_wolf_t5_obtained
-		NOT = {
-			has_reform = government_reform:dbo_war_wolf_t6
-			has_variable = dbo_war_wolf_t6_obtained
-		}
 		num_locations >= 800
 		num_of_non_rural >= 150
 	}
@@ -198,9 +187,13 @@ dbo_dhe_war_wolf.106 = {
 		name = dbo_dhe_war_wolf_common_option
 		historical_option = yes
 		remove_reform = government_reform:dbo_war_wolf_t5
-		remove_variable = dbo_war_wolf_t5_obtained
+		lock_government_reform_effect = {
+			type = dbo_war_wolf_t5
+		}
+		unlock_government_reform_effect = {
+			type = dbo_war_wolf_t6
+		}
 		add_reform = government_reform:dbo_war_wolf_t6
-		set_variable = dbo_war_wolf_t6_obtained
 		dbo_event_severe_bonus = yes
 	}
 }
@@ -221,11 +214,6 @@ dbo_dhe_war_wolf.107 = {
 	}
 	trigger = {
 		has_reform = government_reform:dbo_war_wolf_t6
-		has_variable = dbo_war_wolf_t6_obtained
-		NOT = {
-			has_reform = government_reform:dbo_war_wolf_t7
-			has_variable = dbo_war_wolf_t7_obtained
-		}
 		num_locations >= 1000
 		num_of_non_rural >= 200
 	}
@@ -233,9 +221,13 @@ dbo_dhe_war_wolf.107 = {
 		name = dbo_dhe_war_wolf_common_option
 		historical_option = yes
 		remove_reform = government_reform:dbo_war_wolf_t6
-		remove_variable = dbo_war_wolf_t6_obtained
+		lock_government_reform_effect = {
+			type = dbo_war_wolf_t6
+		}
+		unlock_government_reform_effect = {
+			type = dbo_war_wolf_t7
+		}
 		add_reform = government_reform:dbo_war_wolf_t7
-		set_variable = dbo_war_wolf_t7_obtained
 		dbo_event_severe_bonus = yes
 	}
 }
@@ -256,11 +248,6 @@ dbo_dhe_war_wolf.108 = {
 	}
 	trigger = {
 		has_reform = government_reform:dbo_war_wolf_t7
-		has_variable = dbo_war_wolf_t7_obtained
-		NOT = {
-			has_reform = government_reform:dbo_war_wolf_t8
-			has_variable = dbo_war_wolf_t8_obtained
-		}
 		num_locations >= 1200
 		num_of_non_rural >= 300
 	}
@@ -268,9 +255,13 @@ dbo_dhe_war_wolf.108 = {
 		name = dbo_dhe_war_wolf_common_option
 		historical_option = yes
 		remove_reform = government_reform:dbo_war_wolf_t7
-		remove_variable = dbo_war_wolf_t7_obtained
+		lock_government_reform_effect = {
+			type = dbo_war_wolf_t7
+		}
+		unlock_government_reform_effect = {
+			type = dbo_war_wolf_t8
+		}
 		add_reform = government_reform:dbo_war_wolf_t8
-		set_variable = dbo_war_wolf_t8_obtained
 		dbo_event_severe_bonus = yes
 	}
 }
@@ -291,11 +282,6 @@ dbo_dhe_war_wolf.109 = {
 	}
 	trigger = {
 		has_reform = government_reform:dbo_war_wolf_t8
-		has_variable = dbo_war_wolf_t8_obtained
-		NOT = {
-			has_reform = government_reform:dbo_war_wolf_t9
-			has_variable = dbo_war_wolf_t9_obtained
-		}
 		num_locations >= 1600
 		num_of_non_rural >= 400
 	}
@@ -303,9 +289,13 @@ dbo_dhe_war_wolf.109 = {
 		name = dbo_dhe_war_wolf_common_option
 		historical_option = yes
 		remove_reform = government_reform:dbo_war_wolf_t8
-		remove_variable = dbo_war_wolf_t8_obtained
+		lock_government_reform_effect = {
+			type = dbo_war_wolf_t8
+		}
+		unlock_government_reform_effect = {
+			type = dbo_war_wolf_t9
+		}
 		add_reform = government_reform:dbo_war_wolf_t9
-		set_variable = dbo_war_wolf_t9_obtained
 		dbo_event_severe_bonus = yes
 	}
 }
@@ -326,11 +316,6 @@ dbo_dhe_war_wolf.110 = {
 	}
 	trigger = {
 		has_reform = government_reform:dbo_war_wolf_t9
-		has_variable = dbo_war_wolf_t9_obtained
-		NOT = {
-			has_reform = government_reform:dbo_war_wolf_t10
-			has_variable = dbo_war_wolf_t10_obtained
-		}
 		num_locations >= 2000
 		num_of_non_rural >= 500
 	}
@@ -338,9 +323,13 @@ dbo_dhe_war_wolf.110 = {
 		name = dbo_dhe_war_wolf_common_option
 		historical_option = yes
 		remove_reform = government_reform:dbo_war_wolf_t9
-		remove_variable = dbo_war_wolf_t9_obtained
+		lock_government_reform_effect = {
+			type = dbo_war_wolf_t9
+		}
+		unlock_government_reform_effect = {
+			type = dbo_war_wolf_t10
+		}
 		add_reform = government_reform:dbo_war_wolf_t10
-		set_variable = dbo_war_wolf_t10_obtained
 		dbo_event_severe_bonus = yes
 	}
 }

@@ -14,7 +14,6 @@
 				}
 				has_variable = dbo_conquest_turkish_renaissance_challenged
 			}
-			has_variable = dbo_conquest_rumelia_obtained
 		}
 	}
 	ai_tick = monthly
@@ -112,11 +111,6 @@
 				limit = {
 					exists = scope:actor
 					exists = scope:target
-					scope:actor = {
-						NOT = {
-							has_variable = dbo_conquest_turkish_renaissance_obtained
-						}
-					}
 				}
 				add = {
 					value = -10000
@@ -188,23 +182,6 @@
 				add = {
 					value = 2000
 					desc = "We want to attack them"
-				}
-			}
-			if = {
-				limit = {
-					scope:actor = {
-						has_variable = dbo_conquest_anatolian_turks_obtained
-						has_variable = dbo_conquest_rumelia_obtained
-						OR = {
-							has_variable = dbo_conquest_europe_eastern_gate_obtained
-							has_variable = dbo_conquest_maghreb_obtained
-							has_variable = dbo_conquest_nile_river_obtained
-						}
-					}
-				}
-				add = {
-					value = 100
-					desc = "dbo_conquest_rumelia_obtained"
 				}
 			}
 		}

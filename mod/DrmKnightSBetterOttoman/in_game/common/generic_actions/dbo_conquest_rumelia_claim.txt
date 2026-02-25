@@ -105,11 +105,6 @@
 			limit = {
 				exists = scope:actor
 				exists = scope:target
-				scope:actor = {
-					NOT = {
-						has_variable = dbo_conquest_rumelia_obtained
-					}
-				}
 			}
 			if = {
 				limit = {
@@ -193,23 +188,12 @@
 			if = {
 				limit = {
 					scope:actor = {
-						has_variable = dbo_conquest_anatolian_turks_obtained
-					}
-				}
-				add = {
-					value = 200
-					desc = "dbo_conquest_anatolian_turks_obtained"
-				}
-			}
-			if = {
-				limit = {
-					scope:actor = {
 						has_variable = dbo_conquest_rumelia_challenged
 					}
 				}
 				add = {
-					value = 800
-					desc = "dbo_conquest_anatolian_turks_challenged"
+					value = 1000
+					desc = "dbo_conquest_rumelia_challenged"
 				}
 			}
 		}

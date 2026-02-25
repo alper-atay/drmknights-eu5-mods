@@ -12,9 +12,7 @@
 					situation_is_active = no
 					situation_has_ended = yes
 				}
-				has_variable = dbo_conquest_arabian_peninsula_challenged
 			}
-			has_variable = dbo_conquest_fertile_crescent_obtained
 		}
 	}
 	ai_tick = monthly
@@ -100,11 +98,6 @@
 			limit = {
 				exists = scope:actor
 				exists = scope:target
-				scope:actor = {
-					NOT = {
-						has_variable = dbo_conquest_arabian_peninsula_obtained
-					}
-				}
 			}
 			if = {
 				limit = {
@@ -197,17 +190,6 @@
 				add = {
 					value = 100
 					desc = "We want to hedjaz while own levant"
-				}
-			}
-			if = {
-				limit = {
-					scope:actor = {
-						has_variable = dbo_conquest_fertile_crescent_obtained
-					}
-				}
-				add = {
-					value = 100
-					desc = "dbo_conquest_fertile_crescent_obtained"
 				}
 			}
 		}

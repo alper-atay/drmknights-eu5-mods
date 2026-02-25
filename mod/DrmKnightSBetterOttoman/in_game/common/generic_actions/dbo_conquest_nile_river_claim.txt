@@ -14,7 +14,6 @@
 				}
 				has_variable = dbo_conquest_nile_river_challenged
 			}
-			has_variable = dbo_conquest_fertile_crescent_obtained
 		}
 	}
 	ai_tick = monthly
@@ -103,11 +102,6 @@
 			limit = {
 				exists = scope:actor
 				exists = scope:target
-				scope:actor = {
-					NOT = {
-						has_variable = dbo_conquest_nile_river_obtained
-					}
-				}
 			}
 			if = {
 				limit = {
@@ -191,35 +185,12 @@
 			if = {
 				limit = {
 					scope:actor = {
-						has_variable = dbo_conquest_anatolian_turks_obtained
-						has_variable = dbo_conquest_rumelia_obtained
-					}
-				}
-				add = {
-					value = 100
-					desc = "dbo_conquest_anatolian_turks_and_rumelia_obtained"
-				}
-			}
-			if = {
-				limit = {
-					scope:actor = {
 						own_entire_area = area:levant_area
 					}
 				}
 				add = {
-					value = 100
-					desc = "We want to hedjaz while own levant"
-				}
-			}
-			if = {
-				limit = {
-					scope:actor = {
-						has_variable = dbo_conquest_fertile_crescent_obtained
-					}
-				}
-				add = {
-					value = 100
-					desc = "dbo_conquest_fertile_crescent_obtained"
+					value = 1000
+					desc = "We want to nile while own levant"
 				}
 			}
 		}

@@ -126,11 +126,6 @@
 			limit = {
 				exists = scope:actor
 				exists = scope:target
-				scope:actor = {
-					NOT = {
-						has_variable = dbo_conquest_anatolian_turks_obtained
-					}
-				}
 			}
 			if = {
 				limit = {

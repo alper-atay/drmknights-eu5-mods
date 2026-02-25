@@ -12,11 +12,6 @@
 					situation_is_active = no
 					situation_has_ended = yes
 				}
-				has_variable = dbo_conquest_maghreb_challenged
-			}
-			OR = {
-				has_variable = dbo_conquest_nile_river_obtained
-				has_variable = dbo_conquest_turkish_renaissance_obtained
 			}
 		}
 	}
@@ -111,11 +106,6 @@
 			limit = {
 				exists = scope:actor
 				exists = scope:target
-				scope:actor = {
-					NOT = {
-						has_variable = dbo_conquest_maghreb_obtained
-					}
-				}
 			}
 			if = {
 				limit = {
@@ -194,20 +184,6 @@
 				add = {
 					value = 2000
 					desc = "We want to attack them"
-				}
-			}
-			if = {
-				limit = {
-					scope:actor = {
-						OR = {
-							has_variable = dbo_conquest_nile_river_obtained
-							has_variable = dbo_conquest_turkish_renaissance_obtained
-						}
-					}
-				}
-				add = {
-					value = 100
-					desc = "dbo_conquest_nile_river_or_turkish_renaissance_obtained"
 				}
 			}
 		}

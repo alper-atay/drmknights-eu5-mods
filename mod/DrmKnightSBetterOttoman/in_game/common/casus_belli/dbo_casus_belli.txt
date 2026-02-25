@@ -1,9 +1,8 @@
 ﻿dbo_cb_conquest_anatolian_turks = {
 	allow_creation = {
-		tag = TUR
+		always = no
 	}
 	visible = {
-		has_variable = dbo_conquest_anatolian_turks_challenged
 		scope:target = {
 			any_owned_location = {
 				OR = {
@@ -27,17 +26,18 @@
 	}
 	war_goal_type = dbo_conquest_anatolian_turks
 	province = {
-		always = yes
+		any_location_in_province = {
+			always = yes
+		}
 	}
 	ai_subjugation_desire = -100
 }
 
 dbo_cb_conquest_rumelia = {
 	allow_creation = {
-		tag = TUR
+		always = no
 	}
 	visible = {
-		has_variable = dbo_conquest_rumelia_challenged
 		scope:target = {
 			any_owned_location = {
 				this.region = region:balkan_region
@@ -46,17 +46,18 @@ dbo_cb_conquest_rumelia = {
 	}
 	war_goal_type = dbo_conquest_rumelia
 	province = {
-		always = yes
+		any_location_in_province = {
+			always = yes
+		}
 	}
 	ai_subjugation_desire = -100
 }
 
 dbo_cb_conquest_fertile_crescent = {
 	allow_creation = {
-		tag = TUR
+		always = no
 	}
 	visible = {
-		has_variable = dbo_conquest_fertile_crescent_challenged
 		scope:target = {
 			any_owned_location = {
 				this.region = region:crescent_region
@@ -65,18 +66,18 @@ dbo_cb_conquest_fertile_crescent = {
 	}
 	war_goal_type = dbo_conquest_fertile_crescent
 	province = {
-		always = yes
+		any_location_in_province = {
+			always = yes
+		}
 	}
 	ai_subjugation_desire = -100
 }
 
 dbo_cb_conquest_arabian_peninsula = {
 	allow_creation = {
-		tag = TUR
+		always = no
 	}
 	visible = {
-		has_variable = dbo_conquest_arabian_peninsula_challenged
-		has_variable = dbo_conquest_fertile_crescent_obtained
 		scope:target = {
 			any_owned_location = {
 				this.region = region:arabia_region
@@ -85,17 +86,18 @@ dbo_cb_conquest_arabian_peninsula = {
 	}
 	war_goal_type = dbo_conquest_arabian_peninsula
 	province = {
-		always = yes
+		any_location_in_province = {
+			always = yes
+		}
 	}
 	ai_subjugation_desire = -100
 }
 
 dbo_cb_conquest_black_sea = {
 	allow_creation = {
-		tag = TUR
+		always = no
 	}
 	visible = {
-		has_variable = dbo_conquest_black_sea_challenged
 		scope:target = {
 			any_owned_location = {
 				OR = {
@@ -129,27 +131,18 @@ dbo_cb_conquest_black_sea = {
 	}
 	war_goal_type = dbo_conquest_black_sea
 	province = {
-		always = yes
+		any_location_in_province = {
+			always = yes
+		}
 	}
 	ai_subjugation_desire = -100
 }
 
 dbo_cb_conquest_nile_river = {
 	allow_creation = {
-		tag = TUR
+		always = no
 	}
 	visible = {
-		NOT = {
-			has_variable = dbo_conquest_nile_river_obtained
-		}
-		OR = {
-			situation:rise_of_the_ottomans = {
-				situation_is_active = no
-				situation_has_ended = yes
-			}
-			has_variable = dbo_conquest_nile_river_challenged
-		}
-		has_variable = dbo_conquest_fertile_crescent_obtained
 		scope:target = {
 			any_owned_location = {
 				this.region = region:egypt_region
@@ -158,28 +151,18 @@ dbo_cb_conquest_nile_river = {
 	}
 	war_goal_type = dbo_conquest_nile_river
 	province = {
-		always = yes
+		any_location_in_province = {
+			always = yes
+		}
 	}
-	ai_selection_desire = 150
 	ai_subjugation_desire = -100
 }
 
 dbo_cb_conquest_europe_eastern_gate = {
 	allow_creation = {
-		tag = TUR
+		always = no
 	}
 	visible = {
-		NOT = {
-			has_variable = dbo_conquest_europe_eastern_gate_obtained
-		}
-		OR = {
-			situation:rise_of_the_ottomans = {
-				situation_is_active = no
-				situation_has_ended = yes
-			}
-			has_variable = dbo_conquest_europe_eastern_gate_challenged
-		}
-		has_variable = dbo_conquest_rumelia_obtained
 		scope:target = {
 			any_owned_location = {
 				this.region = region:carpathia_region
@@ -188,30 +171,18 @@ dbo_cb_conquest_europe_eastern_gate = {
 	}
 	war_goal_type = dbo_conquest_europe_eastern_gate
 	province = {
-		always = yes
+		any_location_in_province = {
+			always = yes
+		}
 	}
 	ai_subjugation_desire = -100
 }
 
 dbo_cb_conquest_turkish_renaissance = {
 	allow_creation = {
-		tag = TUR
+		always = no
 	}
 	visible = {
-		NOT = {
-			has_variable = dbo_conquest_turkish_renaissance_obtained
-		}
-		OR = {
-			situation:rise_of_the_ottomans = {
-				situation_is_active = no
-				situation_has_ended = yes
-			}
-			has_variable = dbo_conquest_turkish_renaissance_challenged
-		}
-		OR = {
-			has_variable = dbo_conquest_europe_eastern_gate_obtained
-			has_variable = dbo_conquest_maghreb_obtained
-		}
 		scope:target = {
 			any_owned_location = {
 				this.region = region:italy_region
@@ -220,26 +191,18 @@ dbo_cb_conquest_turkish_renaissance = {
 	}
 	war_goal_type = dbo_conquest_turkish_renaissance
 	province = {
-		always = yes
+		any_location_in_province = {
+			always = yes
+		}
 	}
 	ai_subjugation_desire = -100
 }
 
 dbo_cb_conquest_pearl_of_east = {
 	allow_creation = {
-		tag = TUR
+		always = no
 	}
 	visible = {
-		NOT = {
-			has_variable = dbo_conquest_pearl_of_east_obtained
-		}
-		OR = {
-			situation:rise_of_the_ottomans = {
-				situation_is_active = no
-				situation_has_ended = yes
-			}
-			has_variable = dbo_conquest_pearl_of_east_challenged
-		}
 		scope:target = {
 			any_owned_location = {
 				this.region = region:persia_region
@@ -248,30 +211,18 @@ dbo_cb_conquest_pearl_of_east = {
 	}
 	war_goal_type = dbo_conquest_pearl_of_east
 	province = {
-		always = yes
+		any_location_in_province = {
+			always = yes
+		}
 	}
 	ai_subjugation_desire = -100
 }
 
 dbo_cb_conquest_maghreb = {
 	allow_creation = {
-		tag = TUR
+		always = no
 	}
 	visible = {
-		NOT = {
-			has_variable = dbo_conquest_maghreb_obtained
-		}
-		OR = {
-			situation:rise_of_the_ottomans = {
-				situation_is_active = no
-				situation_has_ended = yes
-			}
-			has_variable = dbo_conquest_maghreb_challenged
-		}
-		OR = {
-			has_variable = dbo_conquest_turkish_renaissance_obtained
-			has_variable = dbo_conquest_nile_river_obtained
-		}
 		scope:target = {
 			any_owned_location = {
 				this.region = region:maghreb_region
@@ -280,27 +231,18 @@ dbo_cb_conquest_maghreb = {
 	}
 	war_goal_type = dbo_conquest_maghreb
 	province = {
-		always = yes
+		any_location_in_province = {
+			always = yes
+		}
 	}
 	ai_subjugation_desire = -100
 }
 
 dbo_cb_conquest_steep_mountain = {
 	allow_creation = {
-		tag = TUR
+		always = no
 	}
 	visible = {
-		NOT = {
-			has_variable = dbo_conquest_steep_mountain_obtained
-		}
-		OR = {
-			situation:rise_of_the_ottomans = {
-				situation_is_active = no
-				situation_has_ended = yes
-			}
-			has_variable = dbo_conquest_steep_mountain_challenged
-		}
-		has_variable = dbo_conquest_anatolian_turks_obtained
 		scope:target = {
 			any_owned_location = {
 				this.region = region:caucasus_region
@@ -309,7 +251,9 @@ dbo_cb_conquest_steep_mountain = {
 	}
 	war_goal_type = dbo_conquest_steep_mountain
 	province = {
-		always = yes
+		any_location_in_province = {
+			always = yes
+		}
 	}
 	ai_subjugation_desire = -100
 }
