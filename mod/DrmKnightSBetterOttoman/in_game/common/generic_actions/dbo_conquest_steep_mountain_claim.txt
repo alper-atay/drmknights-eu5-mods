@@ -179,6 +179,18 @@
 					desc = "We want to attack them"
 				}
 			}
+			if = {
+				limit = {
+					scope:actor = {
+						has_reform = government_reform:dbo_conquest_anatolian_turks_stamp
+						has_reform = government_reform:dbo_conquest_rumelia_stamp
+					}
+				}
+				add = {
+					value = 1000
+					desc = "Anatolia, Rumelia conquered then Caucasus must be conquer"
+				}
+			}
 		}
 		else = {
 			add = {

@@ -181,15 +181,15 @@
 			if = {
 				limit = {
 					scope:actor = {
-						own_entire_area = area:levant_area
-						NOT = {
-							own_entire_area = area:hedjaz_area
+						NOR = {
+							has_reform = government_reform:dbo_conquest_anatolian_turks_stamp
+							has_reform = government_reform:dbo_conquest_fertile_crescent_stamp
 						}
 					}
 				}
 				add = {
-					value = 100
-					desc = "We want to hedjaz while own levant"
+					value = -10000
+					desc = "Anatolia and Crescent must be conquered"
 				}
 			}
 		}

@@ -179,6 +179,21 @@
 					desc = "We want to attack them"
 				}
 			}
+			if = {
+				limit = {
+					scope:actor = {
+						NOR = {
+							has_reform = government_reform:dbo_conquest_anatolian_turks_stamp
+							has_reform = government_reform:dbo_conquest_steep_mountain_stamp
+							own_entire_area = area:iraq_arabi_area
+						}
+					}
+				}
+				add = {
+					value = -10000
+					desc = "Anatolia, Caucasus and iraq_arabi_area must be conquered"
+				}
+			}
 		}
 		else = {
 			add = {

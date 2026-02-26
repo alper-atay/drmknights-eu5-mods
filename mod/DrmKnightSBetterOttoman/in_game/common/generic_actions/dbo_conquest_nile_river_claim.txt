@@ -185,12 +185,15 @@
 			if = {
 				limit = {
 					scope:actor = {
-						own_entire_area = area:levant_area
+						NOR = {
+							has_reform = government_reform:dbo_conquest_anatolian_turks_stamp
+							own_entire_area = area:levant_area
+						}
 					}
 				}
 				add = {
-					value = 1000
-					desc = "We want to nile while own levant"
+					value = -10000
+					desc = "Anatolia and levant_area must be conquered"
 				}
 			}
 		}

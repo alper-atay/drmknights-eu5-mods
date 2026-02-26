@@ -186,6 +186,20 @@
 					desc = "We want to attack them"
 				}
 			}
+			if = {
+				limit = {
+					scope:actor = {
+						NOR = {
+							has_reform = government_reform:dbo_conquest_nile_river_stamp
+							has_reform = government_reform:dbo_conquest_turkish_renaissance_stamp
+						}
+					}
+				}
+				add = {
+					value = -10000
+					desc = "Egypt or Italy must be conquered"
+				}
+			}
 		}
 		else = {
 			add = {

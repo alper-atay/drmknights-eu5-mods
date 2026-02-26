@@ -179,6 +179,19 @@
 					desc = "We want to attack them"
 				}
 			}
+			if = {
+				limit = {
+					scope:actor = {
+						NOR = {
+							has_reform = government_reform:dbo_conquest_rumelia_stamp
+						}
+					}
+				}
+				add = {
+					value = -10000
+					desc = "Rumelia must be conquered"
+				}
+			}
 		}
 		else = {
 			add = {

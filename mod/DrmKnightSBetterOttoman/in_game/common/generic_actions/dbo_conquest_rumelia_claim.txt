@@ -196,6 +196,17 @@
 					desc = "dbo_conquest_rumelia_challenged"
 				}
 			}
+			if = {
+				limit = {
+					scope:actor = {
+						has_reform = government_reform:dbo_conquest_anatolian_turks_stamp
+					}
+				}
+				add = {
+					value = 1000
+					desc = "Anatolia conquered then Rumelia must be conquer"
+				}
+			}
 		}
 		else = {
 			add = {
