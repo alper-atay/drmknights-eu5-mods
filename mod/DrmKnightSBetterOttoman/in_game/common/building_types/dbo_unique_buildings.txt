@@ -34,6 +34,8 @@
 		local_unrest = -0.05
 		local_pop_join_rebel_threshold = -0.05
 		local_pop_leave_rebels_threshold = -0.05
+		local_max_control = 0.05
+		local_distance_from_capital_speed_propagation = 0.05
 	}
 }
 
@@ -130,5 +132,57 @@ dbo_grand_mosque = {
 	}
 	capital_country_modifier = {
 		cultural_influence_modifier = 0.1
+	}
+}
+
+dbo_otag = {
+	is_special = yes
+	is_foreign = no
+	max_levels = 5
+	pop_type = clergy
+	employment_size = religious_building_employment
+	category = religious_category
+	town = yes
+	city = yes
+	rural_settlement = yes
+	important_for_AI = yes
+	important_for_UI = yes
+	construction_demand = soldier_building_construction
+	build_time = super_fast_temporary_house
+	country_potential = {
+		religion = religion:tengri
+		culture = {
+			has_culture_group = culture_group:turkic_group
+		}
+	}
+	unique_production_methods = {
+		dbo_otag_maintenance = {
+			weaponry = 0.01
+			horses = 0.01
+			cloth = 0.01
+			category = building_maintenance
+		}
+	}
+	remove_if = {
+		location = {
+			owner ?= {
+				NOR = {
+					religion = religion:tengri
+					culture = {
+						has_culture_group = culture_group:turkic_group
+					}
+				}
+			}
+		}
+	}
+	modifier = {
+		local_clergy_estate_power = 0.05
+		local_clergy_food_consumption = 0.05
+		local_manpower = 0.001
+		local_pop_conversion_speed = 0.001
+		local_pop_conversion_speed_modifier = 0.05
+		local_pop_assimilation_speed = 0.001
+		local_pop_assimilation_speed_modifier = 0.05
+		can_recruit_regiment_in_this_location = yes
 	}
 }

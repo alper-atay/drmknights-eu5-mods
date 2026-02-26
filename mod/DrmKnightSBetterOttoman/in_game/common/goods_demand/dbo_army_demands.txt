@@ -1,4 +1,12 @@
-﻿dbo_heavy_artillery_maintenance = {
+﻿dbo_heavy_artillery_construction = {
+	cannons = 2
+	copper = 0.2
+	tin = 0.2
+	horses = 0.2
+	category = regiment_construction
+}
+
+dbo_heavy_artillery_maintenance = {
 	cannons = 1
 	copper = 0.1
 	tin = 0.1
@@ -6,10 +14,94 @@
 	category = regiment_maintenance
 }
 
-dbo_heavy_artillery_construction = {
-	cannons = 2
-	copper = 0.2
-	tin = 0.2
-	horses = 0.2
+dbo_metehans_cavalry_age_1_construction = {
+	leather = 0.1
+	horses = 1
+	weaponry = 0.1
 	category = regiment_construction
+}
+
+dbo_metehans_cavalry_age_1_maintenance = {
+	leather = 0.01
+	horses = 0.2
+	weaponry = 0.01
+	category = regiment_maintenance
+}
+
+dbo_metehans_cavalry_age_2_construction = {
+	leather = 0.2
+	horses = 1
+	weaponry = 0.2
+	category = regiment_construction
+}
+
+dbo_metehans_cavalry_age_2_maintenance = {
+	leather = 0.02
+	horses = 0.2
+	weaponry = 0.02
+	category = regiment_maintenance
+}
+
+dbo_metehans_cavalry_age_3_construction = {
+	leather = 0.3
+	horses = 1
+	weaponry = 0.2
+	firearms = 0.1
+	category = regiment_construction
+}
+
+dbo_metehans_cavalry_age_3_maintenance = {
+	leather = 0.03
+	horses = 0.2
+	weaponry = 0.02
+	firearms = 0.01
+	category = regiment_maintenance
+}
+
+dbo_metehans_cavalry_age_4_construction = {
+	leather = 0.4
+	horses = 1
+	weaponry = 0.2
+	firearms = 0.2
+	category = regiment_construction
+}
+
+dbo_metehans_cavalry_age_4_maintenance = {
+	leather = 0.03
+	horses = 0.2
+	weaponry = 0.02
+	firearms = 0.02
+	category = regiment_maintenance
+}
+
+dbo_metehans_cavalry_age_5_construction = {
+	leather = 0.6
+	horses = 1.5
+	weaponry = 0.3
+	firearms = 0.3
+	category = regiment_construction
+}
+
+dbo_metehans_cavalry_age_5_maintenance = {
+	leather = 0.06
+	horses = 0.3
+	weaponry = 0.03
+	firearms = 0.03
+	category = regiment_maintenance
+}
+
+dbo_metehans_cavalry_age_6_construction = {
+	leather = 0.6
+	horses = 2
+	weaponry = 0.4
+	firearms = 0.5
+	category = regiment_construction
+}
+
+dbo_metehans_cavalry_age_6_maintenance = {
+	leather = 0.06
+	horses = 0.4
+	weaponry = 0.04
+	firearms = 0.05
+	category = regiment_maintenance
 }

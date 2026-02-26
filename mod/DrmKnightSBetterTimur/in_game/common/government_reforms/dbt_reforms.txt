@@ -57,5 +57,7 @@ dbt_destiny_wing_of_turk = {
 		army_cavalry_reinforce_cost_modifier = -0.4
 		assault_ability = 0.4
 		army_movement_speed = 0.4
+		food_consumption_modifier = -0.1
+		movement_speed_if_no_road = 0.1
 	}
 }

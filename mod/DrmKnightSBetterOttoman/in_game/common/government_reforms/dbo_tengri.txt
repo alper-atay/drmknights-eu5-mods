@@ -1,0 +1,30 @@
+﻿dbo_tengri_children = {
+	unique = yes
+	potential = {
+		has_unlocked_government_reform_trigger = {
+			type = dbt_destiny_tengri_children
+		}
+		religion = religion:tengri
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = government_reform
+			type = dbt_destiny_tengri_children
+		}
+	}
+	country_modifier = {
+		government_reform_slots = 1
+		government_size = 1
+		global_crown_estate_power = 0.2
+		tolerance_own = 5
+		tolerance_heretic = -5
+		tolerance_heathen = -5
+		cultures_capacity_modifier = -0.9
+		monthly_legitimacy = 0.1
+		monthly_horde_unity = 0.1
+		monthly_tribal_cohesion = 0.1
+		monthly_republican_tradition = 0.1
+		monthly_prestige = 0.1
+		stability_investment = 0.1
+	}
+}

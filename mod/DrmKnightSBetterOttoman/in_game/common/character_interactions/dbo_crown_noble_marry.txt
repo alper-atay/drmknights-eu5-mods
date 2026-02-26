@@ -1,4 +1,4 @@
-﻿dbo_crown_harem_marry = {
+﻿dbo_crown_noble_marry = {
 	sound = UI_action_character_marry_noble
 	is_consort_action = yes
 	on_own_nation = yes
@@ -41,7 +41,7 @@
 	}
 	effect = {
 		scope:actor = {
-			custom_tooltip = "dbo_crown_harem_marry_tt"
+			custom_tooltip = "dbo_crown_noble_marry_tt"
 			hidden_effect = {
 				create_character = {
 					culture = scope:actor.culture

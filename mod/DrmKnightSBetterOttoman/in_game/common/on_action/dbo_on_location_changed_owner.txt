@@ -1,17 +1,17 @@
 ﻿#root = location  (after winning and losing, for both), scope:winner = new owner country, scope:loser = previous owner country
 on_location_changed_owner = {
 	on_actions = {
-		dbo_on_conquer_any_location
-		dbo_on_conquer_anatolian
+		dbo_on_ottoman_conquer_any_location
+		dbo_on_ottoman_conquer_anatolian
 		dbo_on_ottoman_miracle
-		dbo_on_timur_conquer_any_location
 	}
 }
 
-dbo_on_conquer_any_location = {
+dbo_on_ottoman_conquer_any_location = {
 	trigger = {
+		exists = scope:winner
 		tag_exists = TUR
-		scope:winner ?= {
+		scope:winner = {
 			tag = TUR
 		}
 	}
@@ -30,100 +30,45 @@ dbo_on_conquer_any_location = {
 				size = {
 					value = population
 					multiply = 0.1
-					min = 0.5
-					max = 2
+					min = 0.2
+					max = 1
 				}
 			}
-		}
-		if = {
-			limit = {
-				has_location_modifier = dbo_ottoman_scare
-			}
-			remove_location_modifier = dbo_ottoman_scare
 		}
 		add_location_modifier = {
 			modifier = dbo_ottoman_miracle
 			years = 40
 			mode = replace
 		}
-		construct_building = {
-			building_type = building_type:dbo_otag
-			cost_multiplier = 0
-			cost_multiplier_reason = "otag_must_be_free"
-			instant = yes
+		if = {
+			limit = {
+				scope:winner = {
+					religion = religion:tengri
+					culture = {
+						has_culture_group = culture_group:turkic_group
+					}
+				}
+			}
+			construct_building = {
+				building_type = building_type:dbo_otag
+				cost_multiplier = 0
+				cost_multiplier_reason = "otag_must_be_free"
+				instant = yes
+			}
 		}
 	}
 }
 
-dbo_on_timur_conquer_any_location = {
+dbo_on_ottoman_conquer_anatolian = {
 	trigger = {
-		tag_exists = TIM
-		scope:winner ?= {
-			tag = TIM
-		}
-	}
-	effect = {
-		if = {
-			limit = {
-				culture_percentage = {
-					culture = scope:winner.culture
-					value < 0.2
-				}
-			}
-			add_pop = {
-				culture = scope:winner.culture
-				religion = scope:winner.religion
-				type = pop_type:peasants
-				size = {
-					value = population
-					multiply = 0.1
-					min = 0.5
-					max = 2
-				}
-			}
-		}
-		construct_building = {
-			building_type = building_type:dbo_otag
-			cost_multiplier = 0
-			cost_multiplier_reason = "otag_must_be_free"
-			instant = yes
-		}
-		change_integration_level = integrated
+		exists = scope:winner
+		exists = scope:loser
+		tag_exists = TUR
 		scope:winner = {
-			add_gold = {
-				value = root.location_tax_base
-				multiply = 0.25
-				add = 40
-			}
-		}
-	}
-}
-
-dbo_on_ottoman_miracle = {
-	trigger = {
-		tag_exists = TUR
-		NOT = {
-			owner ?= c:TUR
-		}
-	}
-	effect = {
-		if = {
-			limit = {
-				has_location_modifier = dbo_ottoman_miracle
-			}
-			remove_location_modifier = dbo_ottoman_miracle
-		}
-	}
-}
-
-dbo_on_conquer_anatolian = {
-	trigger = {
-		tag_exists = TUR
-		scope:winner ?= {
 			tag = TUR
 		}
 		OR = {
-			scope:loser ?= {
+			scope:loser = {
 				has_reform = government_reform:anatolian_beylik
 			}
 			OR = {
@@ -144,8 +89,26 @@ dbo_on_conquer_anatolian = {
 		}
 	}
 	effect = {
-		root = {
-			change_integration_level = core
+		change_integration_level = core
+	}
+}
+
+dbo_on_ottoman_miracle = {
+	trigger = {
+		exists = owner
+		tag_exists = TUR
+		owner = {
+			NOT = {
+				tag = TUR
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				has_location_modifier = dbo_ottoman_miracle
+			}
+			remove_location_modifier = dbo_ottoman_miracle
 		}
 	}
 }

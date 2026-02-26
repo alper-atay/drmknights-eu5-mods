@@ -1,29 +1,19 @@
-﻿namespace = dbo_dhe_timur
-dbo_dhe_timur.1 = {
-	title = dbo_dhe_timur.1.title
-	desc = dbo_dhe_timur.1.desc
+﻿namespace = dbo_dhe_tengri
+dbo_dhe_tengri.1 = {
+	title = dbo_dhe_tengri.1.title
+	desc = dbo_dhe_tengri.1.desc
 	fire_only_once = yes
 	dynamic_historical_event = {
-		tag = TIM
+		tag = TUR
 		from = 1337.1.1
 		to = 1837.1.1
 		monthly_chance = 100
 	}
 	trigger = {
-		character:chg_timur_lame_borjigin = {
-			is_alive = yes
-		}
 	}
 	option = {
-		name = dbo_dhe_timur.1.a
+		name = dbo_dhe_tengri.1.a
 		historical_option = yes
-		character:chg_timur_lame_borjigin = {
-			add_character_modifier = {
-				modifier = dbo_character_timur_leng
-				years = modifier_duration_permanent
-				mode = add_and_extend
-			}
-		}
 		change_religion = religion:tengri
 		change_religion_for_ruler_and_family = {
 			country = root
@@ -41,10 +31,6 @@ dbo_dhe_timur.1 = {
 			type = dbo_destiny_tengri_children
 		}
 		add_reform = government_reform:dbo_destiny_tengri_children
-		unlock_government_reform_effect = {
-			type = dbo_destiny_grace_of_tengri
-		}
-		add_reform = government_reform:dbo_destiny_grace_of_tengri
 		custom_tooltip = {
 			text = dbo_every_turkic_group_pop_change_religion_tt
 			every_pop = {
@@ -119,9 +105,9 @@ dbo_dhe_timur.1 = {
 	}
 }
 
-dbo_dhe_timur.2 = {
-	title = dbo_dhe_timur.2.title
-	desc = dbo_dhe_timur.2.desc
+dbo_dhe_tengri.2 = {
+	title = dbo_dhe_tengri.2.title
+	desc = dbo_dhe_tengri.2.desc
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TIM
@@ -133,7 +119,7 @@ dbo_dhe_timur.2 = {
 		religion = religion:tengri
 	}
 	option = {
-		name = dbo_dhe_timur.2.a
+		name = dbo_dhe_tengri.2.a
 		historical_option = yes
 		unlock_government_reform_effect = {
 			type = dbo_destiny_wing_of_turk

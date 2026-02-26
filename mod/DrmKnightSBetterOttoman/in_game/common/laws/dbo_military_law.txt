@@ -9,6 +9,9 @@
 			has_unlocked_policy_trigger = {
 				type = dbo_military_army_fundamental_kapikulu_ocaklari_policy
 			}
+			has_unlocked_policy_trigger = {
+				type = dbo_military_army_fundamental_metehan_policy
+			}
 		}
 	}
 	dbo_military_army_fundamental_alp_and_alperen_policy = {
@@ -19,10 +22,10 @@
 			}
 		}
 		country_modifier = {
-			military_tactics = 1
-			discipline = 0.1
-			global_levy_size_modifier = 0.2
-			levy_combat_efficiency_modifier = 0.2
+			military_tactics = 0.5
+			discipline = 0.05
+			global_levy_size_modifier = 0.1
+			levy_combat_efficiency_modifier = 0.1
 		}
 	}
 	dbo_military_army_fundamental_kapikulu_ocaklari_policy = {
@@ -33,10 +36,24 @@
 			}
 		}
 		country_modifier = {
-			military_tactics = 2
-			discipline = 0.2
+			military_tactics = 1
+			discipline = 0.1
 			regiment_recruit_speed = 0.1
 			global_manpower_modifier = 0.1
+		}
+	}
+	dbo_military_army_fundamental_metehan_policy = {
+		unique = yes
+		allow = {
+			has_unlocked_policy_trigger = {
+				type = dbo_military_army_fundamental_metehan_policy
+			}
+		}
+		country_modifier = {
+			military_tactics = 2
+			discipline = 0.2
+			army_movement_speed = 0.1
+			ignore_zone_of_control = yes
 		}
 	}
 }
@@ -99,9 +116,24 @@ dbo_military_army_cavalry_law = {
 			}
 		}
 		country_modifier = {
-			army_cavalry_power = 0.1
+			army_cavalry_power = 0.05
+			army_cavalry_build_cost_modifier = -0.05
+			army_cavalry_maintenance_cost_modifier = -0.2
+			army_cavalry_reinforce_cost_modifier = -0.05
+		}
+	}
+	dbo_military_army_cavalry_metehans_policy = {
+		unique = yes
+		allow = {
+			has_policy = dbo_military_army_fundamental_metehan_policy
+			has_unlocked_policy_trigger = {
+				type = dbo_military_army_cavalry_metehans_policy
+			}
+		}
+		country_modifier = {
+			army_cavalry_power = 0.2
 			army_cavalry_build_cost_modifier = -0.1
-			army_cavalry_maintenance_cost_modifier = -0.1
+			army_cavalry_maintenance_cost_modifier = -0.4
 			army_cavalry_reinforce_cost_modifier = -0.1
 		}
 	}
@@ -208,10 +240,26 @@ dbo_military_army_gendarme_law = {
 		}
 		country_modifier = {
 			counter_espionage = 0.2
+			spy_network_construction = 0.1
+			monthly_rebel_growth = -0.001
+			pop_join_rebel_threshold = -0.05
+			pop_leave_rebels_threshold = -0.05
+		}
+	}
+	dbo_military_army_gendarme_yargan = {
+		unique = yes
+		allow = {
+			has_policy = dbo_military_army_fundamental_metehan_policy
+			has_unlocked_policy_trigger = {
+				type = dbo_military_army_gendarme_yargan
+			}
+		}
+		country_modifier = {
+			counter_espionage = 0.1
 			spy_network_construction = 0.2
-			monthly_rebel_growth = -0.002
-			pop_join_rebel_threshold = -0.1
-			pop_leave_rebels_threshold = -0.1
+			monthly_rebel_growth = -0.001
+			pop_join_rebel_threshold = -0.05
+			pop_leave_rebels_threshold = -0.05
 		}
 	}
 }
