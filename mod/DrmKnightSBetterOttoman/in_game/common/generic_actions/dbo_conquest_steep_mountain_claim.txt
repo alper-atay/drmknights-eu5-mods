@@ -182,6 +182,20 @@
 			if = {
 				limit = {
 					scope:actor = {
+						NOR = {
+							has_reform = government_reform:dbo_conquest_anatolian_turks_stamp
+							has_reform = government_reform:dbo_conquest_rumelia_stamp
+						}
+					}
+				}
+				add = {
+					value = -10000
+					desc = "Anatolia and Rumelia must be conquered"
+				}
+			}
+			if = {
+				limit = {
+					scope:actor = {
 						has_reform = government_reform:dbo_conquest_anatolian_turks_stamp
 						has_reform = government_reform:dbo_conquest_rumelia_stamp
 					}
