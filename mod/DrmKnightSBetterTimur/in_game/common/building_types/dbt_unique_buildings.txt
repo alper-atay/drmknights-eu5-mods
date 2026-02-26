@@ -1,4 +1,4 @@
-﻿dbo_otag = {
+﻿dbt_otag = {
 	is_special = yes
 	is_foreign = no
 	max_levels = 5
@@ -19,7 +19,7 @@
 		}
 	}
 	unique_production_methods = {
-		dbo_otag_maintenance = {
+		dbt_otag_maintenance = {
 			weaponry = 0.01
 			horses = 0.01
 			cloth = 0.01

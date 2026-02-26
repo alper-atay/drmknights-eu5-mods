@@ -1,9 +1,9 @@
 ﻿{
-	"name": "Almanya",
-	"id": "drmknights.bettergermany",
+	"name": "Tengri Timur",
+	"id": "drmknights.bettertimur",
 	"version": "1.0",
 	"supported_game_version": "1.1",
-	"short_description": "Almanya",
+	"short_description": "Timur, eski Türk inancı olan Tengriliği benimser ve bu inanç doğrultusunda hareket eder. Timur, genç yaşta büyük bir liderlik potansiyeli gösterir ve sonunda büyük bir imparatorluk kurar. Timur, savaşlarda büyük başarılar elde eder ve birçok bölgeyi fetheder. Ancak, aynı zamanda acımasız bir lider olarak da bilinir ve birçok insanın ölümüne neden olur.",
 	"tags": [
 		"Gameplay"
 	],

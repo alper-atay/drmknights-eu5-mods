@@ -1,0 +1,11 @@
+﻿l_turkish:
+ dbt_dhe_timur.1.title: "Kutsal Rüya"
+ dbt_dhe_timur.1.desc: "Timur rüyasında Altay dağlarının zirvesinde, uluyan bir kurdun, ona sonsuz gökyüzünden Tengri'nin kutsal bir suretinde fısıldadığını duyar. Bu rüya, onun kaderini şekillendirecek ve onu tarihin en büyük fatihlerinden biri yapacak olan bir vizyonun başlangıcıdır. Timur, bu kutsal mesajı alır ve Türklerin kadim ruhunu yeniden canlandırmak için yola çıkar. Bu kadim ruh onu eski inancına dönmeye ve Türklerin gökyüzüyle olan kutsal bağını yeniden kurmaya yönlendirir. Timur'un bu yolculuğu, sadece bir fatih olmanın ötesinde, Türklerin manevi mirasını yeniden canlandırmak ve onları cihanın dört bir yanına yaymak için bir görevdir."
+ dbt_dhe_timur.1.a: "Kutsal gökyüzünün rehberliğinde, Türklerin kadim ruhunu yeniden canlandırmak için yola çık."
+ dbt_every_turkic_group_pop_change_religion_tt: "Tüm [ShowCultureGroupName('turkic_group')] [pops|e] [ShowReligionName('tengri')] inancına geçer"
+ dbt_every_owned_location_construct_otag_tt: "Sahip olunan her [Concept('location', 'ile')|e] [ShowBuildingTypeName('dbt_otag')] inşa edilir"
+ dbt_remove_accepted_and_tolerated_every_culture_except_turkic_group_tt: "[ShowCultureGroupName('turkic_group')] [Concept('culture_group', 'Kültür Grubuna')|e] dahil olmayan [cultures] dışlanır"
+ # dbt_destiny_talented_youngest_heir_selection
+ dbt_dhe_timur.2.title: "[ShowHeirSelectionName('dbt_destiny_talented_youngest_heir_selection')]\n[Concept('heir_selection', 'Veliaht Seçimi')|e]"
+ dbt_dhe_timur.2.desc: "$dbt_destiny_talented_youngest_heir_selection_desc$"
+ dbt_dhe_timur.2.a: "Geleceğimiz budur!"

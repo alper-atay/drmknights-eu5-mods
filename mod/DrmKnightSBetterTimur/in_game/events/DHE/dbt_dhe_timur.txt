@@ -1,7 +1,7 @@
-﻿namespace = dbo_dhe_timur
-dbo_dhe_timur.1 = {
-	title = dbo_dhe_timur.1.title
-	desc = dbo_dhe_timur.1.desc
+﻿namespace = dbt_dhe_timur
+dbt_dhe_timur.1 = {
+	title = dbt_dhe_timur.1.title
+	desc = dbt_dhe_timur.1.desc
 	image = "gfx/interface/illustrations/event/backgrounds/dbt_destiny_beginning.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -16,11 +16,11 @@ dbo_dhe_timur.1 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_timur.1.a
+		name = dbt_dhe_timur.1.a
 		historical_option = yes
 		character:chg_timur_lame_borjigin = {
 			add_character_modifier = {
-				modifier = dbo_character_timur_leng
+				modifier = dbt_character_timur_leng
 				years = modifier_duration_permanent
 				mode = add_and_extend
 			}
@@ -39,15 +39,15 @@ dbo_dhe_timur.1 = {
 		}
 		add_policy = policy:law_of_the_pious_emperor
 		unlock_government_reform_effect = {
-			type = dbo_destiny_tengri_children
+			type = dbt_destiny_tengri_children
 		}
-		add_reform = government_reform:dbo_destiny_tengri_children
+		add_reform = government_reform:dbt_destiny_tengri_children
 		unlock_government_reform_effect = {
-			type = dbo_destiny_wing_of_turk
+			type = dbt_destiny_wing_of_turk
 		}
-		add_reform = government_reform:dbo_destiny_wing_of_turk
+		add_reform = government_reform:dbt_destiny_wing_of_turk
 		custom_tooltip = {
-			text = dbo_every_turkic_group_pop_change_religion_tt
+			text = dbt_every_turkic_group_pop_change_religion_tt
 			every_pop = {
 				limit = {
 					NOT = {
@@ -64,10 +64,10 @@ dbo_dhe_timur.1 = {
 			}
 		}
 		custom_tooltip = {
-			text = dbo_every_owned_location_construct_otag_tt
+			text = dbt_every_owned_location_construct_otag_tt
 			every_owned_location = {
 				construct_building = {
-					building_type = building_type:dbo_otag
+					building_type = building_type:dbt_otag
 					cost_multiplier = 0
 					cost_multiplier_reason = "otag_must_be_free"
 					instant = yes
@@ -75,7 +75,7 @@ dbo_dhe_timur.1 = {
 			}
 		}
 		custom_tooltip = {
-			text = dbo_remove_accepted_and_tolerated_every_culture_except_turkic_group_tt
+			text = dbt_remove_accepted_and_tolerated_every_culture_except_turkic_group_tt
 			every_culture = {
 				limit = {
 					is_accepted_in = root
@@ -119,5 +119,59 @@ dbo_dhe_timur.1 = {
 		add_legitimacy = legitimacy_ultimate_bonus
 		add_stability = stability_ultimate_bonus
 		add_prestige = prestige_ultimate_bonus
+	}
+}
+
+# dbo_destiny_talented_youngest_heir_selection
+dbt_dhe_timur.2 = {
+	title = dbt_dhe_timur.2.title
+	desc = dbt_dhe_timur.2.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TIM
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		has_ruler = yes
+		government_type = government_type:monarchy
+		NOT = {
+			succession_law = heir_selection:dbt_destiny_talented_youngest_heir_selection
+		}
+	}
+	option = {
+		name = dbt_dhe_timur.2.a
+		historical_option = yes
+		change_heir_selection = heir_selection:dbt_destiny_talented_youngest_heir_selection
+	}
+}
+
+dbt_dhe_timur.3 = {
+	title = dbt_dhe_timur.3.title
+	desc = dbt_dhe_timur.3.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TIM
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		religion = religion:tengri
+	}
+	option = {
+		name = dbt_dhe_timur.3.a
+		historical_option = yes
+		every_neighbor_country = {
+			limit = {
+				NOT = {
+					religion = religion:tengri
+				}
+				has_culture_group = culture_group:turkic_group
+				has_culture_group = mon
+			}
+			add_to_list = source
+		}
 	}
 }

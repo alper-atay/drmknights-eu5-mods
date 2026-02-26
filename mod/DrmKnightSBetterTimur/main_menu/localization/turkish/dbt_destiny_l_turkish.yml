@@ -1,5 +1,5 @@
 ﻿l_turkish:
-# dbo_destiny_tengri_children
+# dbt_destiny_tengri_children
  dbt_destiny_tengri_children: "Tengri'nin Çocukları"
  dbt_destiny_tengri_children_desc: "Bozkırın kadim ruhu ve göklerin kutsal iradesi, Osmanlı'nın damarlarında akan asil kanda yaşamaya devam ediyor. Atalarımızdan miras kalan bu sarsılmaz irade, sadece bir inanç değil, aynı zamanda bir yaşam biçimi ve fetih ruhudur. Tengri'nin çocukları olarak, bozkırın disiplinini ve gökyüzünün sonsuzluğunu devletimizin temellerine nakşediyoruz. Bu kadim miras, ordularımıza cesaret, hükümdarlarımıza bilgelik ve halkımıza birlik ruhu aşılayarak, imparatorluğumuzu cihanın dört bir yanına taşıyacak olan en büyük manevi güçtür."
 # dbt_destiny_wing_of_turk
@@ -8,6 +8,7 @@
 # dbt_destiny_talented_youngest_heir_selection
  dbt_destiny_talented_youngest_heir_selection: "En Genç ve Tam Yetenek Esası"
  dbt_destiny_talented_youngest_heir_selection_desc: "Kıdem maziye hürmettir, liyakat ise istikbale hükmetmektir; bu sebeple devletin bekâsı, hanedanın en yaşlısı yerine kılıcı en keskin, zihni en berrak ve enerjisi en yüksek olan en genç şehzadenin iradesine emanet edilmelidir. Gençlik, işlenmeyi bekleyen en kıymetli cevher; liyakat ise cihan hâkimiyeti ülkümüzün yegâne anahtarıdır. İhtiyar heyetlerin sükûneti yerine genç fatihlerin sarsılmaz azminin esas alındığı bu nizam, imparatorluğun asırlar boyu sürecek olan ihtişamının en büyük teminatı olacaktır."
+# dbt_crown_noble_marry
  dbt_crown_noble_marry: "Soylu Bir Hanımefendiyle Evlendir"
  dbt_crown_noble_marry_concept: "[marriage|E]"
  dbt_crown_noble_marry_act: "$dbt_crown_noble_marry$"
@@ -16,3 +17,7 @@
  dbt_crown_noble_marry_past: "[SCOPE.sCharacter('recipient').GetName] [SCOPE.sCharacter('recipient').GetHerselfHimself] evlendi!"
  dbt_crown_noble_marry_act_past: "[SCOPE.sCharacter('recipient').GetName], soylu bir hanımefendi ile evlendi."
  dbt_crown_noble_marry_tt: "Bu karakter, soylu bir hanımefendi ile evlendirilecektir."
+# dbt_otag
+ dbt_otag: "Otağ"
+ dbt_otag_desc: "Han'ın seferlerde veya törenlerde kullandığı, devletin gücünü ve hükümdarın otoritesini temsil eden görkemli saltanat çadırıdır. Savaş meydanında ordunun yönetim merkezi, barışta ise devletin ihtişamlı bir simgesidir."
+ dbt_otag_maintenance: "$dbt_otag$"
