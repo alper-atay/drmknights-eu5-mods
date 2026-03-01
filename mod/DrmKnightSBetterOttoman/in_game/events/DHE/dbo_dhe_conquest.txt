@@ -1,10 +1,38 @@
 ﻿namespace = dbo_dhe_conquest
-# dbo_conquest_anatolian_turks_stamp
-dbo_dhe_conquest.1 = {
+# dbo_conquest_anatolian_turks_challenged
+dbo_dhe_history.11 = {
 	type = country_event
-	title = dbo_dhe_conquest.1.title
-	desc = dbo_dhe_conquest.1.desc
-	historical_info = dbo_dhe_conquest.1.historical_info
+	title = dbo_dhe_history.11.title
+	desc = dbo_dhe_history.11.desc
+	historical_info = dbo_dhe_history.11.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_anatolian_turks_challenged.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		own_entire_province = province_definition:edirne_province
+		own_entire_province = province_definition:dardanelles_province
+		own_entire_province = province_definition:constantinople_province
+		num_locations >= 250
+	}
+	option = {
+		name = dbo_dhe_history.11.a
+		historical_option = yes
+		set_variable = dbo_conquest_anatolian_turks_challenged
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_conquest_anatolian_turks_stamp
+dbo_dhe_conquest.12 = {
+	type = country_event
+	title = dbo_dhe_conquest.12.title
+	desc = dbo_dhe_conquest.12.desc
+	historical_info = dbo_dhe_conquest.12.historical_info
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_anatolian_turks.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -27,12 +55,38 @@ dbo_dhe_conquest.1 = {
 	}
 }
 
-# dbo_conquest_rumelia_stamp
-dbo_dhe_conquest.2 = {
+# dbo_conquest_rumelia_challenged
+dbo_dhe_history.21 = {
 	type = country_event
-	title = dbo_dhe_conquest.2.title
-	desc = dbo_dhe_conquest.2.desc
-	historical_info = dbo_dhe_conquest.2.historical_info
+	title = dbo_dhe_history.21.title
+	desc = dbo_dhe_history.21.desc
+	historical_info = dbo_dhe_history.21.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_rumelia_challenged.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 102
+	}
+	trigger = {
+		own_entire_province = province_definition:edirne_province
+		own_entire_province = province_definition:dardanelles_province
+		own_entire_province = province_definition:constantinople_province
+	}
+	option = {
+		name = dbo_dhe_history.21.a
+		set_variable = dbo_conquest_rumelia_challenged
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_conquest_rumelia_stamp
+dbo_dhe_conquest.22 = {
+	type = country_event
+	title = dbo_dhe_conquest.22.title
+	desc = dbo_dhe_conquest.22.desc
+	historical_info = dbo_dhe_conquest.22.historical_info
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_rumelia.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -55,12 +109,38 @@ dbo_dhe_conquest.2 = {
 	}
 }
 
-# dbo_conquest_fertile_crescent_stamp
-dbo_dhe_conquest.3 = {
+# dbo_conquest_fertile_crescent_challenged
+dbo_dhe_history.31 = {
 	type = country_event
-	title = dbo_dhe_conquest.3.title
-	desc = dbo_dhe_conquest.3.desc
-	historical_info = dbo_dhe_conquest.3.historical_info
+	title = dbo_dhe_history.31.title
+	desc = dbo_dhe_history.31.desc
+	historical_info = dbo_dhe_history.31.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_fertile_crescent_challenged.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 20
+	}
+	trigger = {
+		has_reform = government_reform:dbo_conquest_anatolian_turks_stamp
+		has_reform = government_reform:dbo_conquest_rumelia_stamp
+	}
+	option = {
+		name = dbo_dhe_history.31.a
+		historical_option = yes
+		set_variable = dbo_conquest_fertile_crescent_challenged
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_conquest_fertile_crescent_stamp
+dbo_dhe_conquest.32 = {
+	type = country_event
+	title = dbo_dhe_conquest.32.title
+	desc = dbo_dhe_conquest.32.desc
+	historical_info = dbo_dhe_conquest.32.historical_info
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_fertile_crescent.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -83,12 +163,39 @@ dbo_dhe_conquest.3 = {
 	}
 }
 
-# dbo_conquest_arabian_peninsula_stamp
-dbo_dhe_conquest.4 = {
+# dbo_conquest_arabian_peninsula_challenged
+dbo_dhe_history.41 = {
 	type = country_event
-	title = dbo_dhe_conquest.4.title
-	desc = dbo_dhe_conquest.4.desc
-	historical_info = dbo_dhe_conquest.4.historical_info
+	title = dbo_dhe_history.41.title
+	desc = dbo_dhe_history.41.desc
+	historical_info = dbo_dhe_history.41.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_arabian_peninsula_challenged.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 20
+	}
+	trigger = {
+		has_reform = government_reform:dbo_conquest_anatolian_turks_stamp
+		has_reform = government_reform:dbo_conquest_rumelia_stamp
+		has_reform = government_reform:dbo_conquest_fertile_crescent_stamp
+	}
+	option = {
+		name = dbo_dhe_history.31.a
+		historical_option = yes
+		set_variable = dbo_conquest_arabian_peninsula_challenged
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_conquest_arabian_peninsula_stamp
+dbo_dhe_conquest.42 = {
+	type = country_event
+	title = dbo_dhe_conquest.42.title
+	desc = dbo_dhe_conquest.42.desc
+	historical_info = dbo_dhe_conquest.42.historical_info
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_arabian_peninsula.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -111,12 +218,39 @@ dbo_dhe_conquest.4 = {
 	}
 }
 
-# dbo_conquest_nile_river_stamp
-dbo_dhe_conquest.5 = {
+# dbo_conquest_nile_river_challenged
+dbo_dhe_history.51 = {
 	type = country_event
-	title = dbo_dhe_conquest.5.title
-	desc = dbo_dhe_conquest.5.desc
-	historical_info = dbo_dhe_conquest.5.historical_info
+	title = dbo_dhe_history.51.title
+	desc = dbo_dhe_history.51.desc
+	historical_info = dbo_dhe_history.51.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_nile_river_challenged.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 20
+	}
+	trigger = {
+		has_reform = government_reform:dbo_conquest_anatolian_turks_stamp
+		has_reform = government_reform:dbo_conquest_rumelia_stamp
+		has_reform = government_reform:dbo_conquest_fertile_crescent_stamp
+	}
+	option = {
+		name = dbo_dhe_history.51.a
+		historical_option = yes
+		set_variable = dbo_conquest_nile_river_challenged
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_conquest_nile_river_stamp
+dbo_dhe_conquest.52 = {
+	type = country_event
+	title = dbo_dhe_conquest.52.title
+	desc = dbo_dhe_conquest.52.desc
+	historical_info = dbo_dhe_conquest.52.historical_info
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_nile_river.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -139,12 +273,37 @@ dbo_dhe_conquest.5 = {
 	}
 }
 
-# dbo_conquest_black_sea_stamp
-dbo_dhe_conquest.6 = {
+# dbo_conquest_black_sea_challenged
+dbo_dhe_history.61 = {
 	type = country_event
-	title = dbo_dhe_conquest.6.title
-	desc = dbo_dhe_conquest.6.desc
-	historical_info = dbo_dhe_conquest.6.historical_info
+	title = dbo_dhe_history.61.title
+	desc = dbo_dhe_history.61.desc
+	historical_info = dbo_dhe_history.61.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_black_sea_challenged.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 102
+	}
+	trigger = {
+		has_reform = government_reform:dbo_conquest_anatolian_turks_stamp
+	}
+	option = {
+		name = dbo_dhe_history.61.a
+		historical_option = yes
+		set_variable = dbo_conquest_black_sea_challenged
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_conquest_black_sea_stamp
+dbo_dhe_conquest.62 = {
+	type = country_event
+	title = dbo_dhe_conquest.62.title
+	desc = dbo_dhe_conquest.62.desc
+	historical_info = dbo_dhe_conquest.62.historical_info
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_black_sea.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -167,11 +326,38 @@ dbo_dhe_conquest.6 = {
 	}
 }
 
-# dbo_conquest_europe_eastern_gate_stamp
-dbo_dhe_conquest.7 = {
+# dbo_conquest_europe_eastern_gate_challenged
+dbo_dhe_history.71 = {
 	type = country_event
-	title = dbo_dhe_conquest.7.title
-	desc = dbo_dhe_conquest.7.desc
+	title = dbo_dhe_history.71.title
+	desc = dbo_dhe_history.71.desc
+	historical_info = dbo_dhe_history.71.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_europe_eastern_gate_challenged.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1520.1.1
+		to = 9999.1.1
+		monthly_chance = 20
+	}
+	trigger = {
+		has_reform = government_reform:dbo_conquest_rumelia_stamp
+		has_reform = government_reform:dbo_conquest_black_sea_stamp
+	}
+	option = {
+		name = dbo_dhe_history.71.a
+		historical_option = yes
+		set_variable = dbo_conquest_europe_eastern_gate_challenged
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_conquest_europe_eastern_gate_stamp
+dbo_dhe_conquest.72 = {
+	type = country_event
+	title = dbo_dhe_conquest.72.title
+	desc = dbo_dhe_conquest.72.desc
+	historical_info = dbo_dhe_conquest.72.historical_info
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_europe_eastern_gate.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -194,11 +380,36 @@ dbo_dhe_conquest.7 = {
 	}
 }
 
-# dbo_conquest_turkish_renaissance_stamp
-dbo_dhe_conquest.8 = {
+# dbo_conquest_turkish_renaissance_challenged
+dbo_dhe_history.81 = {
 	type = country_event
-	title = dbo_dhe_conquest.8.title
-	desc = dbo_dhe_conquest.8.desc
+	title = dbo_dhe_history.81.title
+	desc = dbo_dhe_history.81.desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_turkish_renaissance_challenged.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1520.1.1
+		to = 9999.1.1
+		monthly_chance = 20
+	}
+	trigger = {
+		has_reform = government_reform:dbo_conquest_anatolian_turks_stamp
+		has_reform = government_reform:dbo_conquest_rumelia_stamp
+	}
+	option = {
+		name = dbo_dhe_history.81.a
+		historical_option = yes
+		set_variable = dbo_conquest_turkish_renaissance_challenged
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_conquest_turkish_renaissance_stamp
+dbo_dhe_conquest.82 = {
+	type = country_event
+	title = dbo_dhe_conquest.82.title
+	desc = dbo_dhe_conquest.82.desc
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_turkish_renaissance.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -221,11 +432,39 @@ dbo_dhe_conquest.8 = {
 	}
 }
 
-# dbo_conquest_pearl_of_east_stamp
-dbo_dhe_conquest.9 = {
+# dbo_conquest_pearl_of_east_challenged
+dbo_dhe_history.91 = {
 	type = country_event
-	title = dbo_dhe_conquest.9.title
-	desc = dbo_dhe_conquest.9.desc
+	title = dbo_dhe_history.91.title
+	desc = dbo_dhe_history.91.desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_pearl_of_east_challenged.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1520.1.1
+		to = 9999.1.1
+		monthly_chance = 20
+	}
+	trigger = {
+		has_reform = government_reform:dbo_conquest_anatolian_turks_stamp
+		has_reform = government_reform:dbo_conquest_rumelia_stamp
+		has_reform = government_reform:dbo_conquest_black_sea_stamp
+		has_reform = government_reform:dbo_conquest_steep_mountain_stamp
+		has_reform = government_reform:dbo_conquest_fertile_crescent_stamp
+	}
+	option = {
+		name = dbo_dhe_history.91.a
+		historical_option = yes
+		set_variable = dbo_conquest_pearl_of_east_challenged
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_conquest_pearl_of_east_stamp
+dbo_dhe_conquest.92 = {
+	type = country_event
+	title = dbo_dhe_conquest.92.title
+	desc = dbo_dhe_conquest.92.desc
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_pearl_of_east.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -248,11 +487,39 @@ dbo_dhe_conquest.9 = {
 	}
 }
 
-# dbo_conquest_maghreb_stamp
-dbo_dhe_conquest.10 = {
+# dbo_conquest_maghreb_challenged
+dbo_dhe_history.101 = {
 	type = country_event
-	title = dbo_dhe_conquest.10.title
-	desc = dbo_dhe_conquest.10.desc
+	title = dbo_dhe_history.101.title
+	desc = dbo_dhe_history.101.desc
+	historical_info = dbo_dhe_history.101.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_maghreb_challenged.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 20
+	}
+	trigger = {
+		has_reform = government_reform:dbo_conquest_anatolian_turks_stamp
+		has_reform = government_reform:dbo_conquest_fertile_crescent_stamp
+		has_reform = government_reform:dbo_conquest_nile_river_stamp
+	}
+	option = {
+		name = dbo_dhe_history.101.a
+		historical_option = yes
+		set_variable = dbo_conquest_maghreb_challenged
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_conquest_maghreb_stamp
+dbo_dhe_conquest.102 = {
+	type = country_event
+	title = dbo_dhe_conquest.102.title
+	desc = dbo_dhe_conquest.102.desc
+	historical_info = dbo_dhe_conquest.102.historical_info
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_maghreb.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -275,12 +542,38 @@ dbo_dhe_conquest.10 = {
 	}
 }
 
-# dbo_conquest_steep_mountain_stamp
-dbo_dhe_conquest.11 = {
+# dbo_conquest_steep_mountain_challenged
+dbo_dhe_history.111 = {
 	type = country_event
-	title = dbo_dhe_conquest.11.title
-	desc = dbo_dhe_conquest.11.desc
-	historical_info = dbo_dhe_conquest.11.historical_info
+	title = dbo_dhe_history.111.title
+	desc = dbo_dhe_history.111.desc
+	historical_info = dbo_dhe_history.111.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_steep_mountain_challenged.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 20
+	}
+	trigger = {
+		has_reform = government_reform:dbo_conquest_anatolian_turks_stamp
+		has_reform = government_reform:dbo_conquest_black_sea_stamp
+	}
+	option = {
+		name = dbo_dhe_history.111.a
+		historical_option = yes
+		set_variable = dbo_conquest_steep_mountain_challenged
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_conquest_steep_mountain_stamp
+dbo_dhe_conquest.112 = {
+	type = country_event
+	title = dbo_dhe_conquest.112.title
+	desc = dbo_dhe_conquest.112.desc
+	historical_info = dbo_dhe_conquest.112.historical_info
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_steep_mountain.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -300,240 +593,5 @@ dbo_dhe_conquest.11 = {
 		}
 		add_reform = government_reform:dbo_conquest_steep_mountain_stamp
 		dbo_event_extreme_bonus = yes
-	}
-}
-
-# dbo_conquest_anatolian_turks_challenged
-dbo_dhe_history.101 = {
-	type = country_event
-	title = dbo_dhe_history.101.title
-	desc = dbo_dhe_history.101.desc
-	historical_info = dbo_dhe_history.101.historical_info
-	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_anatolian_turks_challenged.dds"
-	fire_only_once = yes
-	dynamic_historical_event = {
-		tag = TUR
-		from = 1337.1.1
-		to = 9999.1.1
-		monthly_chance = 100
-	}
-	trigger = {
-		own_entire_province = province_definition:edirne_province
-		own_entire_province = province_definition:dardanelles_province
-		own_entire_province = province_definition:constantinople_province
-		num_locations >= 250
-	}
-	option = {
-		name = dbo_dhe_history.104.a
-		historical_option = yes
-		set_variable = dbo_conquest_anatolian_turks_challenged
-		dbo_event_mild_bonus = yes
-	}
-}
-
-# dbo_conquest_rumelia_challenged
-dbo_dhe_history.102 = {
-	type = country_event
-	title = dbo_dhe_history.102.title
-	desc = dbo_dhe_history.102.desc
-	historical_info = dbo_dhe_history.102.historical_info
-	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_rumelia_challenged.dds"
-	fire_only_once = yes
-	dynamic_historical_event = {
-		tag = TUR
-		from = 1337.1.1
-		to = 9999.1.1
-		monthly_chance = 10
-	}
-	trigger = {
-		own_entire_province = province_definition:edirne_province
-		own_entire_province = province_definition:dardanelles_province
-		own_entire_province = province_definition:constantinople_province
-	}
-	option = {
-		name = dbo_dhe_history.102.a
-		set_variable = dbo_conquest_rumelia_challenged
-		dbo_event_mild_bonus = yes
-	}
-}
-
-# dbo_conquest_black_sea_challenged
-dbo_dhe_history.103 = {
-	type = country_event
-	title = dbo_dhe_history.103.title
-	desc = dbo_dhe_history.103.desc
-	historical_info = dbo_dhe_history.103.historical_info
-	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_black_sea_challenged.dds"
-	fire_only_once = yes
-	dynamic_historical_event = {
-		tag = TUR
-		from = 1337.1.1
-		to = 9999.1.1
-		monthly_chance = 10
-	}
-	trigger = {
-		has_reform = government_reform:dbo_conquest_anatolian_turks_stamp
-	}
-	option = {
-		name = dbo_dhe_history.103.a
-		historical_option = yes
-		set_variable = dbo_conquest_black_sea_challenged
-		dbo_event_mild_bonus = yes
-	}
-}
-
-# dbo_conquest_steep_mountain_challenged
-dbo_dhe_history.104 = {
-	type = country_event
-	title = dbo_dhe_history.104.title
-	desc = dbo_dhe_history.104.desc
-	historical_info = dbo_dhe_history.104.historical_info
-	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_steep_mountain_challenged.dds"
-	fire_only_once = yes
-	dynamic_historical_event = {
-		tag = TUR
-		from = 1337.1.1
-		to = 9999.1.1
-		monthly_chance = 20
-	}
-	trigger = {
-		has_reform = government_reform:dbo_conquest_anatolian_turks_stamp
-		has_reform = government_reform:dbo_conquest_black_sea_stamp
-	}
-	option = {
-		name = dbo_dhe_history.104.a
-		historical_option = yes
-		set_variable = dbo_conquest_steep_mountain_challenged
-		dbo_event_mild_bonus = yes
-	}
-}
-
-# dbo_conquest_fertile_crescent_challenged
-dbo_dhe_history.105 = {
-	type = country_event
-	title = dbo_dhe_history.105.title
-	desc = dbo_dhe_history.105.desc
-	historical_info = dbo_dhe_history.105.historical_info
-	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_fertile_crescent_challenged.dds"
-	fire_only_once = yes
-	dynamic_historical_event = {
-		tag = TUR
-		from = 1337.1.1
-		to = 9999.1.1
-		monthly_chance = 20
-	}
-	trigger = {
-		has_reform = government_reform:dbo_conquest_anatolian_turks_stamp
-		has_reform = government_reform:dbo_conquest_rumelia_stamp
-	}
-	option = {
-		name = dbo_dhe_history.105.a
-		historical_option = yes
-		set_variable = dbo_conquest_fertile_crescent_challenged
-		dbo_event_mild_bonus = yes
-	}
-}
-
-# dbo_conquest_nile_river_challenged
-dbo_dhe_history.106 = {
-	type = country_event
-	title = dbo_dhe_history.106.title
-	desc = dbo_dhe_history.106.desc
-	historical_info = dbo_dhe_history.106.historical_info
-	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_nile_river_challenged.dds"
-	fire_only_once = yes
-	dynamic_historical_event = {
-		tag = TUR
-		from = 1337.1.1
-		to = 9999.1.1
-		monthly_chance = 20
-	}
-	trigger = {
-		has_reform = government_reform:dbo_conquest_fertile_crescent_stamp
-	}
-	option = {
-		name = dbo_dhe_history.106.a
-		historical_option = yes
-		set_variable = dbo_conquest_nile_river_challenged
-		dbo_event_mild_bonus = yes
-	}
-}
-
-# dbo_conquest_europe_eastern_gate_challenged
-dbo_dhe_history.404 = {
-	type = country_event
-	title = dbo_dhe_history.404.title
-	desc = dbo_dhe_history.404.desc
-	historical_info = dbo_dhe_history.404.historical_info
-	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_europe_eastern_gate_challenged.dds"
-	fire_only_once = yes
-	dynamic_historical_event = {
-		tag = TUR
-		from = 1520.1.1
-		to = 9999.1.1
-		monthly_chance = 20
-	}
-	trigger = {
-		has_reform = government_reform:dbo_conquest_rumelia_stamp
-	}
-	option = {
-		name = dbo_dhe_history.404.a
-		historical_option = yes
-		set_variable = dbo_conquest_europe_eastern_gate_challenged
-		dbo_event_mild_bonus = yes
-	}
-}
-
-# dbo_history_kanuni_sultan_suleiman_challenge_turkish_renaissance
-dbo_dhe_history.405 = {
-	type = country_event
-	title = dbo_dhe_history.405.title
-	desc = dbo_dhe_history.405.desc
-	historical_info = dbo_dhe_history.405.historical_info
-	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_kanuni_sultan_suleiman_challenge_turkish_renaissance.dds"
-	fire_only_once = yes
-	dynamic_historical_event = {
-		tag = TUR
-		from = 1520.1.1
-		to = 9999.1.1
-		monthly_chance = 20
-	}
-	trigger = {
-		has_reform = government_reform:dbo_conquest_rumelia_stamp
-	}
-	option = {
-		name = dbo_dhe_history.405.a
-		historical_option = yes
-		set_variable = dbo_conquest_turkish_renaissance_challenged
-		dbo_event_mild_bonus = yes
-	}
-}
-
-# dbo_history_kanuni_sultan_suleiman_challenge_pearl_of_east
-dbo_dhe_history.406 = {
-	type = country_event
-	title = dbo_dhe_history.406.title
-	desc = dbo_dhe_history.406.desc
-	historical_info = dbo_dhe_history.406.historical_info
-	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_kanuni_sultan_suleiman_challenge_pearl_of_east.dds"
-	fire_only_once = yes
-	dynamic_historical_event = {
-		tag = TUR
-		from = 1520.1.1
-		to = 9999.1.1
-		monthly_chance = 20
-	}
-	trigger = {
-		exists = character:dbo_kanuni_sultan_suleiman
-		character:dbo_kanuni_sultan_suleiman = {
-			is_ruler = yes
-			character_age > 40
-		}
-	}
-	option = {
-		name = dbo_dhe_history.406.a
-		historical_option = yes
-		set_variable = dbo_conquest_pearl_of_east_challenged
-		dbo_event_mild_bonus = yes
 	}
 }
