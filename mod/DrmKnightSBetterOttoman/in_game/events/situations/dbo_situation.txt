@@ -12,6 +12,8 @@ dbo_situation.1 = {
 			every_owned_location = {
 				construct_building = {
 					building_type = building_type:dbo_otag
+					cost_multiplier = 0
+					cost_multiplier_reason = "otag_must_be_free"
 					instant = yes
 				}
 			}

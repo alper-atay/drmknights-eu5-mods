@@ -1,0 +1,48 @@
+﻿provincial_capital = {
+	is_foreign = no
+	pop_type = nobles
+	max_levels = 1
+	category = government_category
+	employment_size = large_noble_employment
+	town = yes
+	city = yes
+	expensive = yes
+	important_for_AI = yes
+	important_for_UI = yes
+	build_time = large_capital_build_time
+	allow = {
+		is_province_capital = yes
+	}
+	location_potential = {
+		is_capital = no
+	}
+	country_potential = {
+		OR = {
+			government_type = government_type:monarchy
+			government_type = government_type:theocracy
+			government_type = government_type:republic
+		}
+	}
+	modifier = {
+		local_proximity_source = 20
+		local_nobles_estate_power = 1
+		local_crown_estate_power = 0.1
+		local_monthly_development_modifier = 0.05
+		local_nobles_max_literacy = 10
+		local_max_control = 0.1
+	}
+	possible_production_methods = {
+		provincial_capital_maintenance = {
+			tools = 1
+			masonry = 1
+			weaponry = 0.5
+			paper = 3
+			books = 1
+			goods_gold = 1
+			furniture = 2
+			fine_cloth = 1
+			category = building_maintenance
+		}
+	}
+	construction_demand = local_governor_construction
+}

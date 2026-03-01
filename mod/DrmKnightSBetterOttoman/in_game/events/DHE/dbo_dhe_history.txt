@@ -180,34 +180,6 @@ dbo_dhe_history.103 = {
 	}
 }
 
-# dbo_history_yildirim_sultan_bayezid_challenge_anatolian_turks_union
-dbo_dhe_history.104 = {
-	type = country_event
-	title = dbo_dhe_history.104.title
-	desc = dbo_dhe_history.104.desc
-	historical_info = dbo_dhe_history.104.historical_info
-	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_sultan_bayezid_challenge_anatolian_turks_union.dds"
-	fire_only_once = yes
-	dynamic_historical_event = {
-		tag = TUR
-		from = 1380.1.1
-		to = 9999.1.1
-		monthly_chance = 100
-	}
-	trigger = {
-		exists = character:dbo_yildirim_sultan_bayezid
-		character:dbo_yildirim_sultan_bayezid = {
-			is_ruler = yes
-		}
-	}
-	option = {
-		name = dbo_dhe_history.104.a
-		historical_option = yes
-		set_variable = dbo_conquest_anatolian_turks_challenged
-		dbo_event_mild_bonus = yes
-	}
-}
-
 # dbo_history_yildirim_sultan_bayezid_defeated_by_timur
 dbo_dhe_history.105 = {
 	type = country_event
@@ -606,6 +578,7 @@ dbo_dhe_history.207 = {
 				is_female = no
 				count > 1
 			}
+			character_age > 49
 		}
 		has_variable = dbo_history_fatih_sultan_mehmet_and_orban_events_completed
 		has_variable = dbo_conquest_rumelia_challenged
@@ -927,6 +900,7 @@ dbo_dhe_history.307 = {
 				is_female = no
 				count > 1
 			}
+			character_age > 50
 		}
 		has_variable = dbo_conquest_steep_mountain_challenged
 		has_variable = dbo_conquest_fertile_crescent_challenged
@@ -944,7 +918,7 @@ dbo_dhe_history.307 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_history.207.a
+		name = dbo_dhe_history.307.a
 		historical_option = yes
 	}
 }

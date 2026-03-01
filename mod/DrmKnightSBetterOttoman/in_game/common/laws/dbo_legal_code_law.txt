@@ -7,7 +7,7 @@
 			}
 		}
 		country_modifier = {
-			global_monthly_control = 0.005
+			global_max_control = 0.05
 			tax_income_efficiency = medium_tax_income_efficiency_bonus
 			global_distance_from_capital_speed_propagation = 0.05
 		}
@@ -19,8 +19,7 @@
 				}
 			}
 			global_max_control = 0.05
-			global_monthly_control = 0.005
-			tax_income_efficiency = tiny_tax_income_efficiency_bonus
+			tax_income_efficiency = medium_tax_income_efficiency_bonus
 			global_distance_from_capital_speed_propagation = 0.05
 			scale = {
 				value = 1

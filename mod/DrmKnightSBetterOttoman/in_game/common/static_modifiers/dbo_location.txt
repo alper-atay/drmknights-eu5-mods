@@ -6,7 +6,7 @@
 	local_separatism = -0.05
 	local_devastation_recovery = 0.005
 	local_monthly_prosperity = 0.001
-	local_monthly_development = 0.005
+	local_monthly_development = 0.001
 	local_pop_conversion_speed = 0.005
 	local_pop_assimilation_speed = 0.005
 }
@@ -16,6 +16,15 @@ dbo_caykur = {
 		category = location
 	}
 	local_tea_output_modifier = 0.5
+	local_max_rgo_size = 2
+	local_max_rgo_size_modifier = 0.5
+}
+
+dbo_isparta_cloves = {
+	game_data = {
+		category = location
+	}
+	local_cloves_output_modifier = 1
 	local_max_rgo_size = 2
 	local_max_rgo_size_modifier = 0.5
 }

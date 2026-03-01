@@ -30,6 +30,12 @@
 			always = yes
 		}
 	}
+	ai_will_do = {
+		add = {
+			desc = "CB_REASON_IMPORTANT_CB"
+			value = 1000
+		}
+	}
 	ai_subjugation_desire = -100
 }
 
@@ -48,6 +54,12 @@ dbo_cb_conquest_rumelia = {
 	province = {
 		any_location_in_province = {
 			always = yes
+		}
+	}
+	ai_will_do = {
+		add = {
+			desc = "CB_REASON_IMPORTANT_CB"
+			value = 1000
 		}
 	}
 	ai_subjugation_desire = -100
@@ -70,6 +82,12 @@ dbo_cb_conquest_fertile_crescent = {
 			always = yes
 		}
 	}
+	ai_will_do = {
+		add = {
+			desc = "CB_REASON_IMPORTANT_CB"
+			value = 1000
+		}
+	}
 	ai_subjugation_desire = -100
 }
 
@@ -88,6 +106,12 @@ dbo_cb_conquest_arabian_peninsula = {
 	province = {
 		any_location_in_province = {
 			always = yes
+		}
+	}
+	ai_will_do = {
+		add = {
+			desc = "CB_REASON_IMPORTANT_CB"
+			value = 1000
 		}
 	}
 	ai_subjugation_desire = -100
@@ -135,6 +159,12 @@ dbo_cb_conquest_black_sea = {
 			always = yes
 		}
 	}
+	ai_will_do = {
+		add = {
+			desc = "CB_REASON_IMPORTANT_CB"
+			value = 1000
+		}
+	}
 	ai_subjugation_desire = -100
 }
 
@@ -153,6 +183,12 @@ dbo_cb_conquest_nile_river = {
 	province = {
 		any_location_in_province = {
 			always = yes
+		}
+	}
+	ai_will_do = {
+		add = {
+			desc = "CB_REASON_IMPORTANT_CB"
+			value = 1000
 		}
 	}
 	ai_subjugation_desire = -100
@@ -175,6 +211,12 @@ dbo_cb_conquest_europe_eastern_gate = {
 			always = yes
 		}
 	}
+	ai_will_do = {
+		add = {
+			desc = "CB_REASON_IMPORTANT_CB"
+			value = 1000
+		}
+	}
 	ai_subjugation_desire = -100
 }
 
@@ -193,6 +235,12 @@ dbo_cb_conquest_turkish_renaissance = {
 	province = {
 		any_location_in_province = {
 			always = yes
+		}
+	}
+	ai_will_do = {
+		add = {
+			desc = "CB_REASON_IMPORTANT_CB"
+			value = 1000
 		}
 	}
 	ai_subjugation_desire = -100
@@ -215,6 +263,12 @@ dbo_cb_conquest_pearl_of_east = {
 			always = yes
 		}
 	}
+	ai_will_do = {
+		add = {
+			desc = "CB_REASON_IMPORTANT_CB"
+			value = 1000
+		}
+	}
 	ai_subjugation_desire = -100
 }
 
@@ -235,6 +289,12 @@ dbo_cb_conquest_maghreb = {
 			always = yes
 		}
 	}
+	ai_will_do = {
+		add = {
+			desc = "CB_REASON_IMPORTANT_CB"
+			value = 1000
+		}
+	}
 	ai_subjugation_desire = -100
 }
 
@@ -253,6 +313,12 @@ dbo_cb_conquest_steep_mountain = {
 	province = {
 		any_location_in_province = {
 			always = yes
+		}
+	}
+	ai_will_do = {
+		add = {
+			desc = "CB_REASON_IMPORTANT_CB"
+			value = 1000
 		}
 	}
 	ai_subjugation_desire = -100

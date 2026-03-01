@@ -302,3 +302,28 @@ dbo_dhe_conquest.11 = {
 		dbo_event_extreme_bonus = yes
 	}
 }
+
+# dbo_conquest_anatolian_turks_challenge
+dbo_dhe_history.101 = {
+	type = country_event
+	title = dbo_dhe_history.101.title
+	desc = dbo_dhe_history.101.desc
+	historical_info = dbo_dhe_history.101.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_anatolian_turks_challenge.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		num_locations >= 250
+	}
+	option = {
+		name = dbo_dhe_history.104.a
+		historical_option = yes
+		set_variable = dbo_conquest_anatolian_turks_challenged
+		dbo_event_mild_bonus = yes
+	}
+}

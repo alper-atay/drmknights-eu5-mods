@@ -89,7 +89,18 @@ dbo_on_ottoman_conquer_anatolian = {
 		}
 	}
 	effect = {
-		change_integration_level = core
+		change_integration_level = integrated
+		if = {
+			limit = {
+				can_build_building = building_type:dbo_otag
+			}
+			construct_building = {
+				building_type = building_type:dbo_otag
+				cost_multiplier = 0
+				cost_multiplier_reason = "otag_must_be_free"
+				instant = yes
+			}
+		}
 	}
 }
 

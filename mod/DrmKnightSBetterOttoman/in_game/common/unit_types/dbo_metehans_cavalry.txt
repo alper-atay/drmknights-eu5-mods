@@ -1,4 +1,4 @@
-dbo_metehans_cavalry_age_1 = {
+﻿dbo_metehans_cavalry_age_1 = {
 	is_special = yes
 	category = army_cavalry
 	copy_from = a_age_1_traditions_cavalry
