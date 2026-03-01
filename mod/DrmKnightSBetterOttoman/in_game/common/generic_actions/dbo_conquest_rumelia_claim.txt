@@ -7,16 +7,7 @@
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			OR = {
-				situation:rise_of_the_ottomans = {
-					situation_is_active = no
-					situation_has_ended = yes
-				}
-				has_variable = dbo_conquest_rumelia_challenged
-			}
-			own_entire_province = province_definition:edirne_province
-			own_entire_province = province_definition:dardanelles_province
-			own_entire_province = province_definition:constantinople_province
+			has_variable = dbo_conquest_rumelia_challenged
 		}
 	}
 	ai_tick = monthly

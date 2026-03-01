@@ -303,13 +303,13 @@ dbo_dhe_conquest.11 = {
 	}
 }
 
-# dbo_conquest_anatolian_turks_challenge
+# dbo_conquest_anatolian_turks_challenged
 dbo_dhe_history.101 = {
 	type = country_event
 	title = dbo_dhe_history.101.title
 	desc = dbo_dhe_history.101.desc
 	historical_info = dbo_dhe_history.101.historical_info
-	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_anatolian_turks_challenge.dds"
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_anatolian_turks_challenged.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
@@ -318,12 +318,222 @@ dbo_dhe_history.101 = {
 		monthly_chance = 100
 	}
 	trigger = {
+		own_entire_province = province_definition:edirne_province
+		own_entire_province = province_definition:dardanelles_province
+		own_entire_province = province_definition:constantinople_province
 		num_locations >= 250
 	}
 	option = {
 		name = dbo_dhe_history.104.a
 		historical_option = yes
 		set_variable = dbo_conquest_anatolian_turks_challenged
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_conquest_rumelia_challenged
+dbo_dhe_history.102 = {
+	type = country_event
+	title = dbo_dhe_history.102.title
+	desc = dbo_dhe_history.102.desc
+	historical_info = dbo_dhe_history.102.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_rumelia_challenged.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 10
+	}
+	trigger = {
+		own_entire_province = province_definition:edirne_province
+		own_entire_province = province_definition:dardanelles_province
+		own_entire_province = province_definition:constantinople_province
+	}
+	option = {
+		name = dbo_dhe_history.102.a
+		set_variable = dbo_conquest_rumelia_challenged
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_conquest_black_sea_challenged
+dbo_dhe_history.103 = {
+	type = country_event
+	title = dbo_dhe_history.103.title
+	desc = dbo_dhe_history.103.desc
+	historical_info = dbo_dhe_history.103.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_black_sea_challenged.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 10
+	}
+	trigger = {
+		has_reform = government_reform:dbo_conquest_anatolian_turks_stamp
+	}
+	option = {
+		name = dbo_dhe_history.103.a
+		historical_option = yes
+		set_variable = dbo_conquest_black_sea_challenged
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_conquest_steep_mountain_challenged
+dbo_dhe_history.104 = {
+	type = country_event
+	title = dbo_dhe_history.104.title
+	desc = dbo_dhe_history.104.desc
+	historical_info = dbo_dhe_history.104.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_steep_mountain_challenged.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 20
+	}
+	trigger = {
+		has_reform = government_reform:dbo_conquest_anatolian_turks_stamp
+		has_reform = government_reform:dbo_conquest_black_sea_stamp
+	}
+	option = {
+		name = dbo_dhe_history.104.a
+		historical_option = yes
+		set_variable = dbo_conquest_steep_mountain_challenged
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_conquest_fertile_crescent_challenged
+dbo_dhe_history.105 = {
+	type = country_event
+	title = dbo_dhe_history.105.title
+	desc = dbo_dhe_history.105.desc
+	historical_info = dbo_dhe_history.105.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_fertile_crescent_challenged.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 20
+	}
+	trigger = {
+		has_reform = government_reform:dbo_conquest_anatolian_turks_stamp
+		has_reform = government_reform:dbo_conquest_rumelia_stamp
+	}
+	option = {
+		name = dbo_dhe_history.105.a
+		historical_option = yes
+		set_variable = dbo_conquest_fertile_crescent_challenged
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_conquest_nile_river_challenged
+dbo_dhe_history.106 = {
+	type = country_event
+	title = dbo_dhe_history.106.title
+	desc = dbo_dhe_history.106.desc
+	historical_info = dbo_dhe_history.106.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_nile_river_challenged.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 20
+	}
+	trigger = {
+		has_reform = government_reform:dbo_conquest_fertile_crescent_stamp
+	}
+	option = {
+		name = dbo_dhe_history.106.a
+		historical_option = yes
+		set_variable = dbo_conquest_nile_river_challenged
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_conquest_europe_eastern_gate_challenged
+dbo_dhe_history.404 = {
+	type = country_event
+	title = dbo_dhe_history.404.title
+	desc = dbo_dhe_history.404.desc
+	historical_info = dbo_dhe_history.404.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_europe_eastern_gate_challenged.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1520.1.1
+		to = 9999.1.1
+		monthly_chance = 20
+	}
+	trigger = {
+		has_reform = government_reform:dbo_conquest_rumelia_stamp
+	}
+	option = {
+		name = dbo_dhe_history.404.a
+		historical_option = yes
+		set_variable = dbo_conquest_europe_eastern_gate_challenged
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_history_kanuni_sultan_suleiman_challenge_turkish_renaissance
+dbo_dhe_history.405 = {
+	type = country_event
+	title = dbo_dhe_history.405.title
+	desc = dbo_dhe_history.405.desc
+	historical_info = dbo_dhe_history.405.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_kanuni_sultan_suleiman_challenge_turkish_renaissance.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1520.1.1
+		to = 9999.1.1
+		monthly_chance = 20
+	}
+	trigger = {
+		has_reform = government_reform:dbo_conquest_rumelia_stamp
+	}
+	option = {
+		name = dbo_dhe_history.405.a
+		historical_option = yes
+		set_variable = dbo_conquest_turkish_renaissance_challenged
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_history_kanuni_sultan_suleiman_challenge_pearl_of_east
+dbo_dhe_history.406 = {
+	type = country_event
+	title = dbo_dhe_history.406.title
+	desc = dbo_dhe_history.406.desc
+	historical_info = dbo_dhe_history.406.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_kanuni_sultan_suleiman_challenge_pearl_of_east.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1520.1.1
+		to = 9999.1.1
+		monthly_chance = 20
+	}
+	trigger = {
+		exists = character:dbo_kanuni_sultan_suleiman
+		character:dbo_kanuni_sultan_suleiman = {
+			is_ruler = yes
+			character_age > 40
+		}
+	}
+	option = {
+		name = dbo_dhe_history.406.a
+		historical_option = yes
+		set_variable = dbo_conquest_pearl_of_east_challenged
 		dbo_event_mild_bonus = yes
 	}
 }

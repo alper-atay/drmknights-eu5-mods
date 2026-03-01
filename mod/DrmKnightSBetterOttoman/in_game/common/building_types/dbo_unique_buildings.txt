@@ -144,21 +144,25 @@ dbo_otag = {
 	construction_demand = soldier_building_construction
 	build_time = super_fast_temporary_house
 	country_potential = {
-		country_rank_level <= 2
+		OR = {
+			government = steppe_horde
+			government = monarchy
+		}
 		OR = {
 			religion = religion:tengri
-			AND = {
-				has_or_had_tag = TUR
-				culture ?= {
+			culture ?= {
+				OR = {
 					has_culture_group = culture_group:turkic_group
+					has_culture_group = culture_group:mongolian_group
+					has_culture_group = culture_group:steppe_group
 				}
 			}
 		}
 	}
 	unique_production_methods = {
 		dbo_otag_maintenance = {
-			weaponry = 0.02
-			horses = 0.02
+			weaponry = 0.01
+			horses = 0.01
 			cloth = 0.01
 			category = building_maintenance
 		}
@@ -169,13 +173,19 @@ dbo_otag = {
 				location_rank = location_rank:rural_settlement
 			}
 			owner ?= {
-				country_rank_level > 2
-				NOR = {
-					religion = religion:tengri
-					AND = {
-						has_or_had_tag = TUR
+				NAND = {
+					OR = {
+						government = steppe_horde
+						government = monarchy
+					}
+					OR = {
+						religion = religion:tengri
 						culture ?= {
-							has_culture_group = culture_group:turkic_group
+							OR = {
+								has_culture_group = culture_group:turkic_group
+								has_culture_group = culture_group:mongolian_group
+								has_culture_group = culture_group:steppe_group
+							}
 						}
 					}
 				}
@@ -185,6 +195,7 @@ dbo_otag = {
 	modifier = {
 		movement_cost = -0.02
 		local_manpower = 0.001
+		local_proximity_source = 2
 		local_max_control = 0.02
 		local_distance_from_capital_speed_propagation = 0.02
 		local_cultural_tradition = 0.01
