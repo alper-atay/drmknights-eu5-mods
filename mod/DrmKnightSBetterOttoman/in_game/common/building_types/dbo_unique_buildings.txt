@@ -3,16 +3,19 @@
 	is_foreign = no
 	pop_type = soldiers
 	max_levels = 1
-	employment_size = 0.2
+	employment_size = stockade_employment
 	category = defense_category
 	city = yes
 	town = yes
+	important_for_AI = yes
+	important_for_UI = yes
+	construction_demand = castle_construction
 	build_time = small_fort_building
 	country_potential = {
 		has_law = dbo_military_army_gendarme_law
 	}
 	remove_if = {
-		owner ?= {
+		location.owner ?= {
 			NOT = {
 				has_law = dbo_military_army_gendarme_law
 			}
@@ -25,10 +28,11 @@
 			horses = 0.1
 			weaponry = 0.1
 			tar = 0.05
+			paper = 0.1
+			leather = 0.05
 			category = building_maintenance
 		}
 	}
-	construction_demand = castle_construction
 	modifier = {
 		local_crown_estate_power = 0.1
 		local_unrest = -0.05
@@ -47,40 +51,46 @@ dbo_grand_bazaar = {
 	employment_size = trade_employment
 	category = trade_category
 	city = yes
+	town = yes
 	expensive = yes
 	important_for_AI = yes
 	important_for_UI = yes
+	construction_demand = prestige_building_construction
 	build_time = market_build_time
 	country_potential = {
 		has_reform = government_reform:dbo_destiny_trade_center_grand_bazaar
 	}
 	location_potential = {
-		is_market_center = yes
+		is_province_capital = yes
 	}
 	remove_if = {
-		location = {
-			is_market_center = no
+		location.owner ?= {
+			NOT = {
+				has_reform = government_reform:dbo_destiny_trade_center_grand_bazaar
+			}
 		}
 	}
-	market_center_modifier = {
-		local_pop_assimilation_speed_modifier = 0.01
-		local_burghers_estate_power = 0.1
-		local_market_access = 0.01
+	modifier = {
+		local_burghers_estate_power = 0.25
+		local_pop_assimilation_speed_modifier = 0.1
+		local_market_access = 0.1
 		local_merchant_power = 1
-		local_trades_per_burgher = 0.8
-		local_merchant_capacity = 5
+		local_trades_per_burgher = 0.1
+		local_merchant_capacity = 1
 	}
-	construction_demand = prestige_building_construction
 	unique_production_methods = {
 		dbo_grand_bazaar_maintenance = {
 			tools = 0.2
+			leather = 0.1
+			pottery = 0.1
 			books = 0.1
+			furniture = 0.1
 			paper = 0.2
 			jewelry = 0.1
+			cloth = 0.2
 			fine_cloth = 0.1
 			produced = goods_gold
 			output = 0.5
-			debug_max_profit = 1
 			category = building_maintenance
 		}
 	}
@@ -92,9 +102,8 @@ dbo_grand_mosque = {
 	pop_type = clergy
 	employment_size = huge_religious_building_employment
 	category = religious_category
-	rural_settlement = no
-	town = no
 	city = yes
+	town = yes
 	expensive = yes
 	important_for_AI = yes
 	important_for_UI = yes
@@ -109,19 +118,18 @@ dbo_grand_mosque = {
 	country_potential = {
 		has_or_had_tag = TUR
 	}
-	unique_production_methods = {
-		dbo_grand_mosque_maintenance = {
-			paper = 0.4
-			books = 0.2
-			fine_cloth = 0.2
-			category = building_maintenance
+	remove_if = {
+		location.owner ?= {
+			has_or_had_tag = TUR
 		}
 	}
-	remove_if = {
-		location = {
-			owner ?= {
-				religion.group != religion_group:muslim
-			}
+	unique_production_methods = {
+		dbo_grand_mosque_maintenance = {
+			paper = 0.2
+			books = 0.1
+			cloth = 0.2
+			fine_cloth = 0.1
+			category = building_maintenance
 		}
 	}
 	modifier = {
@@ -140,8 +148,8 @@ dbo_otag = {
 	pop_type = soldiers
 	employment_size = religious_building_employment
 	category = military_category
-	town = no
-	city = no
+	town = yes
+	city = yes
 	rural_settlement = yes
 	important_for_AI = yes
 	important_for_UI = yes
@@ -153,6 +161,7 @@ dbo_otag = {
 	unique_production_methods = {
 		dbo_otag_maintenance = {
 			weaponry = 0.01
+			leather = 0.01
 			horses = 0.01
 			cloth = 0.01
 			category = building_maintenance
@@ -178,12 +187,12 @@ dbo_ulu_otag = {
 	category = government_category
 	town = yes
 	city = yes
+	expensive = yes
 	important_for_AI = yes
 	important_for_UI = yes
 	construction_demand = prestige_building_construction
 	build_time = small_capital_build_time
 	location_potential = {
-		is_capital = no
 		is_province_capital = yes
 	}
 	country_potential = {
@@ -192,6 +201,7 @@ dbo_ulu_otag = {
 	unique_production_methods = {
 		dbo_ulu_otag_maintenance = {
 			weaponry = 0.1
+			leather = 0.1
 			horses = 0.1
 			cloth = 0.1
 			furniture = 0.1
@@ -248,10 +258,12 @@ dbo_beylerbeyi = {
 			furniture = 0.1
 			tools = 0.05
 			glass = 0.05
-			fine_cloth = 0.1
-			books = 0.05
 			goods_gold = 0.05
 			marble = 0.05
+			paper = 0.1
+			books = 0.05
+			cloth = 0.1
+			fine_cloth = 0.05
 			category = building_maintenance
 		}
 	}
