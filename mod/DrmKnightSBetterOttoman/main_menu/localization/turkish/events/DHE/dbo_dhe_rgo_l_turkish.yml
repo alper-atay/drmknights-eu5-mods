@@ -1,0 +1,41 @@
+﻿l_turkish:
+ ## 51 kayseri bogazliyan develi tomarza -> any to potato
+ dbo_dhe_rgo.51.title: "[ShowProvinceDefinitionName('kayseri_province')] bölgesinde, [ShowGoodsName('potato')] yetiştiriciliği"
+ dbo_dhe_rgo.51.desc: "[ShowProvinceDefinitionName('kayseri_province')] [Concept('province', 'vilayetinde ki')|e] bazı [locations|e] [ShowGoodsName('potato')] yetiştiriciliği için uygun bir bölgedir. [ROOT.GetCountry.GetName] olarak, bu bölgeyi [ShowGoodsName('potato')] üretimi için kullanabiliriz. [ShowProvinceDefinitionName('kayseri_province')] bölgesinde [ShowGoodsName('potato')] yetiştiriciliği yaparak, ekonomimizi güçlendirebilir ve halkımızın refahını artırabiliriz."
+ dbo_dhe_rgo.51.a: "Bu bölgeyi [ShowGoodsName('potato')] üretimi için kullan."
+ dbo_dhe_rgo.51.b: "Bu bölgeyi [ShowGoodsName('potato')] üretimi için kullanma."
+ ## 61 kirsehir hacibektas nevsehir sariyahsi urgup -> any to potato
+ dbo_dhe_rgo.61.title: "[ShowProvinceDefinitionName('kirsehir_province')] bölgesinde, [ShowGoodsName('potato')] yetiştiriciliği"
+ dbo_dhe_rgo.61.desc: "[ShowProvinceDefinitionName('kirsehir_province')] [Concept('province', 'vilayetinde ki')|e] bazı [locations|e] [ShowGoodsName('potato')] yetiştiriciliği için uygun bir bölgedir. [ROOT.GetCountry.GetName] olarak, bu bölgeyi [ShowGoodsName('potato')] üretimi için kullanabiliriz. [ShowProvinceDefinitionName('kirsehir_province')] bölgesinde [ShowGoodsName('potato')] yetiştiriciliği yaparak, ekonomimizi güçlendirebilir ve halkımızın refahını artırabiliriz."
+ dbo_dhe_rgo.61.a: "Bu bölgeyi [ShowGoodsName('potato')] üretimi için kullan."
+ dbo_dhe_rgo.61.b: "Bu bölgeyi [ShowGoodsName('potato')] üretimi için kullanma."
+ ## 89 location:zara wool to sugar
+ dbo_dhe_rgo.89.title: "[ShowLocationName('zara')] [Concept('location', 'ilinde')], Şeker Pancarı yetiştiriciliği"
+ dbo_dhe_rgo.89.desc: "[ShowLocationName('zara')] [Concept('location', 'ilinde')|e] Şeker Pancarı yetiştiriciliği için uygun bir bölgedir. [ROOT.GetCountry.GetName] olarak, bu ili Şeker Pancarı üretimi için kullanabiliriz. [ShowLocationName('zara')] ilinde Şeker Pancarı yetiştiriciliği yaparak, ekonomimizi güçlendirebilir ve halkımızın refahını artırabiliriz."
+ dbo_dhe_rgo.89.a: "Bu bölgeyi Şeker Pancarı üretimi için kullan."
+ dbo_dhe_rgo.89.b: "Bu bölgeyi Şeker Pancarı üretimi için kullanma."
+ ## 122 location:aksehir clay to wheat
+ dbo_dhe_rgo.122.title: "[ShowLocationName('aksehir')] [Concept('location', 'ilinde')], [ShowGoodsName('wheat')] yetiştiriciliği"
+ dbo_dhe_rgo.122.desc: "[ShowLocationName('aksehir')] [Concept('location', 'ilinde')|e] [ShowGoodsName('wheat')] yetiştiriciliği için uygun bir bölgedir. [ROOT.GetCountry.GetName] olarak, bu ili [ShowGoodsName('wheat')] üretimi için kullanabiliriz. [ShowLocationName('aksehir')] ilinde [ShowGoodsName('wheat')] yetiştiriciliği yaparak, ekonomimizi güçlendirebilir ve halkımızın refahını artırabiliriz."
+ dbo_dhe_rgo.122.a: "Bu bölgeyi [ShowGoodsName('wheat')] üretimi için kullan."
+ dbo_dhe_rgo.122.b: "Bu bölgeyi [ShowGoodsName('wheat')] üretimi için kullanma."
+ ## 126 location:seydisehir clay to wheat
+ dbo_dhe_rgo.126.title: "[ShowLocationName('seydisehir')] [Concept('location', 'ilinde')], [ShowGoodsName('wheat')] yetiştiriciliği"
+ dbo_dhe_rgo.126.desc: "[ShowLocationName('seydisehir')] [Concept('location', 'ilinde')|e] [ShowGoodsName('wheat')] yetiştiriciliği için uygun bir bölgedir. [ROOT.GetCountry.GetName] olarak, bu ili [ShowGoodsName('wheat')] üretimi için kullanabiliriz. [ShowLocationName('seydisehir')] ilinde [ShowGoodsName('wheat')] yetiştiriciliği yaparak, ekonomimizi güçlendirebilir ve halkımızın refahını artırabiliriz."
+ dbo_dhe_rgo.126.a: "Bu bölgeyi [ShowGoodsName('wheat')] üretimi için kullan."
+ dbo_dhe_rgo.126.b: "Bu bölgeyi [ShowGoodsName('wheat')] üretimi için kullanma."
+ ## 163 location:eskil clay to maize
+ dbo_dhe_rgo.163.title: "[ShowLocationName('eskil')] [Concept('location', 'ilinde')], [ShowGoodsName('maize')] yetiştiriciliği"
+ dbo_dhe_rgo.163.desc: "[ShowLocationName('eskil')] [Concept('location', 'ilinde')|e] [ShowGoodsName('maize')] yetiştiriciliği için uygun bir bölgedir. [ROOT.GetCountry.GetName] olarak, bu ili [ShowGoodsName('maize')] üretimi için kullanabiliriz. [ShowLocationName('eskil')] ilinde [ShowGoodsName('maize')] yetiştiriciliği yaparak, ekonomimizi güçlendirebilir ve halkımızın refahını artırabiliriz."
+ dbo_dhe_rgo.163.a: "Bu bölgeyi [ShowGoodsName('maize')] üretimi için kullan."
+ dbo_dhe_rgo.163.b: "Bu bölgeyi [ShowGoodsName('maize')] üretimi için kullanma."
+ ## 177 location:mihaliccik clay to wheat
+ dbo_dhe_rgo.177.title: "[ShowLocationName('mihaliccik')] [Concept('location', 'ilinde')], [ShowGoodsName('wheat')] yetiştiriciliği"
+ dbo_dhe_rgo.177.desc: "[ShowLocationName('mihaliccik')] [Concept('location', 'ilinde')|e] [ShowGoodsName('wheat')] yetiştiriciliği için uygun bir bölgedir. [ROOT.GetCountry.GetName] olarak, bu ili [ShowGoodsName('wheat')] üretimi için kullanabiliriz. [ShowLocationName('mihaliccik')] ilinde [ShowGoodsName('wheat')] yetiştiriciliği yaparak, ekonomimizi güçlendirebilir ve halkımızın refahını artırabiliriz."
+ dbo_dhe_rgo.177.a: "Bu bölgeyi [ShowGoodsName('wheat')] üretimi için kullan."
+ dbo_dhe_rgo.177.b: "Bu bölgeyi [ShowGoodsName('wheat')] üretimi için kullanma."
+ ## 181 location:adana clay to maize
+ dbo_dhe_rgo.181.title: "[ShowLocationName('adana')] [Concept('location', 'ilinde')], [ShowGoodsName('maize')] yetiştiriciliği"
+ dbo_dhe_rgo.181.desc: "[ShowLocationName('adana')] [Concept('location', 'ilinde')|e] [ShowGoodsName('maize')] yetiştiriciliği için uygun bir bölgedir. [ROOT.GetCountry.GetName] olarak, bu ili [ShowGoodsName('maize')] üretimi için kullanabiliriz. [ShowLocationName('adana')] ilinde [ShowGoodsName('maize')] yetiştiriciliği yaparak, ekonomimizi güçlendirebilir ve halkımızın refahını artırabiliriz."
+ dbo_dhe_rgo.181.a: "Bu bölgeyi [ShowGoodsName('maize')] üretimi için kullan."
+ dbo_dhe_rgo.181.b: "Bu bölgeyi [ShowGoodsName('maize')] üretimi için kullanma."

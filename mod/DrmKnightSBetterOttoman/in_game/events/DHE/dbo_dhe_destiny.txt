@@ -8,7 +8,7 @@ dbo_dhe_destiny.101 = {
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.1.1
-		to = 1837.1.1
+		to = 9999.1.1
 		monthly_chance = 100
 	}
 	trigger = {
@@ -38,7 +38,7 @@ dbo_dhe_destiny.102 = {
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.1.1
-		to = 1837.1.1
+		to = 9999.1.1
 		monthly_chance = 100
 	}
 	trigger = {
@@ -83,8 +83,8 @@ dbo_dhe_destiny.103 = {
 	outcome = positive
 	dynamic_historical_event = {
 		tag = TUR
-		from = 1338.1.1
-		to = 1837.1.1
+		from = 1337.1.1
+		to = 9999.1.1
 		monthly_chance = 100
 	}
 	trigger = {
@@ -132,7 +132,7 @@ dbo_dhe_destiny.201 = {
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.1.1
-		to = 1837.1.1
+		to = 9999.1.1
 		monthly_chance = 100
 	}
 	trigger = {
@@ -161,7 +161,7 @@ dbo_dhe_destiny.202 = {
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.1.1
-		to = 1837.1.1
+		to = 9999.1.1
 		monthly_chance = 100
 	}
 	trigger = {
@@ -190,7 +190,7 @@ dbo_dhe_destiny.203 = {
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.1.1
-		to = 1837.1.1
+		to = 9999.1.1
 		monthly_chance = 100
 	}
 	trigger = {
@@ -228,7 +228,7 @@ dbo_dhe_destiny.204 = {
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1500.1.1
-		to = 1837.1.1
+		to = 9999.1.1
 		monthly_chance = 100
 	}
 	trigger = {
@@ -257,7 +257,7 @@ dbo_dhe_destiny.205 = {
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.1.1
-		to = 1837.1.1
+		to = 9999.1.1
 		monthly_chance = 100
 	}
 	trigger = {
@@ -306,7 +306,7 @@ dbo_dhe_destiny.206 = {
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.1.1
-		to = 1837.1.1
+		to = 9999.1.1
 		monthly_chance = 100
 	}
 	trigger = {

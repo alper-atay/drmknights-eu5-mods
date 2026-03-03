@@ -9,8 +9,8 @@ dbo_dhe_rgo.51 = {
 	type = country_event
 	title = dbo_dhe_rgo.51.title
 	desc = dbo_dhe_rgo.51.desc
+	image = "gfx/interface/icons/trade_goods/illustrations/icon_goods_potato.dds"
 	fire_only_once = yes
-	hidden = yes
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.6.1
@@ -34,7 +34,9 @@ dbo_dhe_rgo.51 = {
 			goods = goods:potato
 		}
 	}
-	immediate = {
+	option = {
+		name = dbo_dhe_rgo.51.a
+		historical_option = yes
 		location:kayseri = {
 			dbo_change_rgo = {
 				goods = goods:potato
@@ -57,7 +59,7 @@ dbo_dhe_rgo.51 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_rgo.51.a
+		name = dbo_dhe_rgo.51.b
 	}
 }
 
@@ -67,8 +69,8 @@ dbo_dhe_rgo.61 = {
 	type = country_event
 	title = dbo_dhe_rgo.61.title
 	desc = dbo_dhe_rgo.61.desc
+	image = "gfx/interface/icons/trade_goods/illustrations/icon_goods_potato.dds"
 	fire_only_once = yes
-	hidden = yes
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.6.1
@@ -95,7 +97,9 @@ dbo_dhe_rgo.61 = {
 			goods = goods:potato
 		}
 	}
-	immediate = {
+	option = {
+		name = dbo_dhe_rgo.61.a
+		historical_option = yes
 		location:kirsehir = {
 			dbo_change_rgo = {
 				goods = goods:potato
@@ -123,7 +127,7 @@ dbo_dhe_rgo.61 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_rgo.61.a
+		name = dbo_dhe_rgo.61.b
 	}
 }
 
@@ -134,8 +138,8 @@ dbo_dhe_rgo.89 = {
 	type = country_event
 	title = dbo_dhe_rgo.89.title
 	desc = dbo_dhe_rgo.89.desc
+	image = "gfx/interface/icons/trade_goods/illustrations/dbo_rgo_sugar_beet.dds"
 	fire_only_once = yes
-	hidden = yes
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.6.1
@@ -147,7 +151,9 @@ dbo_dhe_rgo.89 = {
 			location = location:zara
 		}
 	}
-	immediate = {
+	option = {
+		name = dbo_dhe_rgo.89.a
+		historical_option = yes
 		location:zara = {
 			dbo_change_rgo = {
 				goods = goods:sugar
@@ -155,7 +161,7 @@ dbo_dhe_rgo.89 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_rgo.89.a
+		name = dbo_dhe_rgo.89.b
 	}
 }
 
@@ -168,8 +174,8 @@ dbo_dhe_rgo.122 = {
 	type = country_event
 	title = dbo_dhe_rgo.122.title
 	desc = dbo_dhe_rgo.122.desc
+	image = "gfx/interface/icons/trade_goods/illustrations/icon_goods_wheat.dds"
 	fire_only_once = yes
-	hidden = yes
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.6.1
@@ -181,7 +187,9 @@ dbo_dhe_rgo.122 = {
 			location = location:aksehir
 		}
 	}
-	immediate = {
+	option = {
+		name = dbo_dhe_rgo.122.a
+		historical_option = yes
 		location:aksehir = {
 			dbo_change_rgo = {
 				goods = goods:wheat
@@ -189,7 +197,7 @@ dbo_dhe_rgo.122 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_rgo.122.a
+		name = dbo_dhe_rgo.122.b
 	}
 }
 
@@ -198,8 +206,8 @@ dbo_dhe_rgo.126 = {
 	type = country_event
 	title = dbo_dhe_rgo.126.title
 	desc = dbo_dhe_rgo.126.desc
+	image = "gfx/interface/icons/trade_goods/illustrations/icon_goods_wheat.dds"
 	fire_only_once = yes
-	hidden = yes
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.6.1
@@ -211,7 +219,9 @@ dbo_dhe_rgo.126 = {
 			location = location:seydisehir
 		}
 	}
-	immediate = {
+	option = {
+		name = dbo_dhe_rgo.126.a
+		historical_option = yes
 		location:seydisehir = {
 			dbo_change_rgo = {
 				goods = goods:wheat
@@ -219,7 +229,7 @@ dbo_dhe_rgo.126 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_rgo.126.a
+		name = dbo_dhe_rgo.122.b
 	}
 }
 
@@ -232,8 +242,8 @@ dbo_dhe_rgo.163 = {
 	type = country_event
 	title = dbo_dhe_rgo.163.title
 	desc = dbo_dhe_rgo.163.desc
+	image = "gfx/interface/icons/trade_goods/illustrations/icon_goods_maize.dds"
 	fire_only_once = yes
-	hidden = yes
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.6.1
@@ -248,7 +258,9 @@ dbo_dhe_rgo.163 = {
 			goods = goods:maize
 		}
 	}
-	immediate = {
+	option = {
+		name = dbo_dhe_rgo.163.a
+		historical_option = yes
 		location:eskil = {
 			dbo_change_rgo = {
 				goods = goods:maize
@@ -256,7 +268,7 @@ dbo_dhe_rgo.163 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_rgo.163.a
+		name = dbo_dhe_rgo.163.b
 	}
 }
 
@@ -266,8 +278,8 @@ dbo_dhe_rgo.177 = {
 	type = country_event
 	title = dbo_dhe_rgo.177.title
 	desc = dbo_dhe_rgo.177.desc
+	image = "gfx/interface/icons/trade_goods/illustrations/icon_goods_wheat.dds"
 	fire_only_once = yes
-	hidden = yes
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.6.1
@@ -279,7 +291,9 @@ dbo_dhe_rgo.177 = {
 			location = location:mihaliccik
 		}
 	}
-	immediate = {
+	option = {
+		name = dbo_dhe_rgo.177.a
+		historical_option = yes
 		location:mihaliccik = {
 			dbo_change_rgo = {
 				goods = goods:wheat
@@ -287,7 +301,7 @@ dbo_dhe_rgo.177 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_rgo.177.a
+		name = dbo_dhe_rgo.177.b
 	}
 }
 
@@ -297,8 +311,8 @@ dbo_dhe_rgo.181 = {
 	type = country_event
 	title = dbo_dhe_rgo.181.title
 	desc = dbo_dhe_rgo.181.desc
+	image = "gfx/interface/icons/trade_goods/illustrations/icon_goods_maize.dds"
 	fire_only_once = yes
-	hidden = yes
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.6.1
@@ -313,7 +327,8 @@ dbo_dhe_rgo.181 = {
 			goods = goods:maize
 		}
 	}
-	immediate = {
+	option = {
+		name = dbo_dhe_rgo.181.a
 		location:adana = {
 			dbo_change_rgo = {
 				goods = goods:maize
@@ -321,7 +336,7 @@ dbo_dhe_rgo.181 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_rgo.181.a
+		name = dbo_dhe_rgo.181.b
 	}
 }
 
@@ -335,8 +350,8 @@ dbo_dhe_rgo.181 = {
 ## 251 location:biga sand to millet
 dbo_dhe_rgo.251 = {
 	type = country_event
-	title = dbo_dhe_rgo.251.title
-	desc = dbo_dhe_rgo.251.desc
+	# title = dbo_dhe_rgo.251.title
+	# desc = dbo_dhe_rgo.251.desc
 	fire_only_once = yes
 	hidden = yes
 	dynamic_historical_event = {
@@ -358,15 +373,15 @@ dbo_dhe_rgo.251 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_rgo.251.a
+		# name = dbo_dhe_rgo.251.a
 	}
 }
 
 ## 254 location:bayramic wild_game to chili
 dbo_dhe_rgo.254 = {
 	type = country_event
-	title = dbo_dhe_rgo.254.title
-	desc = dbo_dhe_rgo.254.desc
+	# title = dbo_dhe_rgo.254.title
+	# desc = dbo_dhe_rgo.254.desc
 	fire_only_once = yes
 	hidden = yes
 	dynamic_historical_event = {
@@ -391,15 +406,15 @@ dbo_dhe_rgo.254 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_rgo.254.a
+		# name = dbo_dhe_rgo.254.a
 	}
 }
 
 ## 255 location:can lumber to gold
 dbo_dhe_rgo.255 = {
 	type = country_event
-	title = dbo_dhe_rgo.255.title
-	desc = dbo_dhe_rgo.255.desc
+	# title = dbo_dhe_rgo.255.title
+	# desc = dbo_dhe_rgo.255.desc
 	fire_only_once = yes
 	hidden = yes
 	dynamic_historical_event = {
@@ -421,7 +436,7 @@ dbo_dhe_rgo.255 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_rgo.255.a
+		# name = dbo_dhe_rgo.255.a
 	}
 }
 
@@ -429,8 +444,8 @@ dbo_dhe_rgo.255 = {
 ## 265 location:iznik clay to olives
 dbo_dhe_rgo.265 = {
 	type = country_event
-	title = dbo_dhe_rgo.265.title
-	desc = dbo_dhe_rgo.265.desc
+	# title = dbo_dhe_rgo.265.title
+	# desc = dbo_dhe_rgo.265.desc
 	fire_only_once = yes
 	hidden = yes
 	dynamic_historical_event = {
@@ -452,7 +467,7 @@ dbo_dhe_rgo.265 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_rgo.265.a
+		# name = dbo_dhe_rgo.265.a
 	}
 }
 
@@ -460,8 +475,8 @@ dbo_dhe_rgo.265 = {
 ## 272 balya clay to rice
 dbo_dhe_rgo.272 = {
 	type = country_event
-	title = dbo_dhe_rgo.272.title
-	desc = dbo_dhe_rgo.272.desc
+	# title = dbo_dhe_rgo.272.title
+	# desc = dbo_dhe_rgo.272.desc
 	fire_only_once = yes
 	hidden = yes
 	dynamic_historical_event = {
@@ -483,15 +498,15 @@ dbo_dhe_rgo.272 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_rgo.272.a
+		# name = dbo_dhe_rgo.272.a
 	}
 }
 
 ## 274 bigadic clay to tobacco
 dbo_dhe_rgo.274 = {
 	type = country_event
-	title = dbo_dhe_rgo.274.title
-	desc = dbo_dhe_rgo.274.desc
+	# title = dbo_dhe_rgo.274.title
+	# desc = dbo_dhe_rgo.274.desc
 	fire_only_once = yes
 	hidden = yes
 	dynamic_historical_event = {
@@ -516,15 +531,15 @@ dbo_dhe_rgo.274 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_rgo.274.a
+		# name = dbo_dhe_rgo.274.a
 	}
 }
 
 ## 278 soma lumber to coal
 dbo_dhe_rgo.278 = {
 	type = country_event
-	title = dbo_dhe_rgo.278.title
-	desc = dbo_dhe_rgo.278.desc
+	# title = dbo_dhe_rgo.278.title
+	# desc = dbo_dhe_rgo.278.desc
 	fire_only_once = yes
 	hidden = yes
 	dynamic_historical_event = {
@@ -546,7 +561,7 @@ dbo_dhe_rgo.278 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_rgo.278.a
+		# name = dbo_dhe_rgo.278.a
 	}
 }
 
@@ -555,8 +570,8 @@ dbo_dhe_rgo.278 = {
 ## 294 emet stone to rice
 dbo_dhe_rgo.294 = {
 	type = country_event
-	title = dbo_dhe_rgo.294.title
-	desc = dbo_dhe_rgo.294.desc
+	# title = dbo_dhe_rgo.294.title
+	# desc = dbo_dhe_rgo.294.desc
 	fire_only_once = yes
 	hidden = yes
 	dynamic_historical_event = {
@@ -578,7 +593,7 @@ dbo_dhe_rgo.294 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_rgo.294.a
+		# name = dbo_dhe_rgo.294.a
 	}
 }
 
@@ -588,8 +603,8 @@ dbo_dhe_rgo.294 = {
 ## 321 location:giresun olives to tea
 dbo_dhe_rgo.321 = {
 	type = country_event
-	title = dbo_dhe_rgo.321.title
-	desc = dbo_dhe_rgo.321.desc
+	# title = dbo_dhe_rgo.321.title
+	# desc = dbo_dhe_rgo.321.desc
 	fire_only_once = yes
 	hidden = yes
 	dynamic_historical_event = {
@@ -616,15 +631,15 @@ dbo_dhe_rgo.321 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_rgo.321.a
+		# name = dbo_dhe_rgo.321.a
 	}
 }
 
 ## 322 location:akkus wild_game to maize
 dbo_dhe_rgo.322 = {
 	type = country_event
-	title = dbo_dhe_rgo.322.title
-	desc = dbo_dhe_rgo.322.desc
+	# title = dbo_dhe_rgo.322.title
+	# desc = dbo_dhe_rgo.322.desc
 	fire_only_once = yes
 	hidden = yes
 	dynamic_historical_event = {
@@ -649,15 +664,15 @@ dbo_dhe_rgo.322 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_rgo.322.a
+		# name = dbo_dhe_rgo.322.a
 	}
 }
 
 ## 323 location:bayramlu beeswax to tea
 dbo_dhe_rgo.323 = {
 	type = country_event
-	title = dbo_dhe_rgo.323.title
-	desc = dbo_dhe_rgo.323.desc
+	# title = dbo_dhe_rgo.323.title
+	# desc = dbo_dhe_rgo.323.desc
 	fire_only_once = yes
 	hidden = yes
 	dynamic_historical_event = {
@@ -684,15 +699,15 @@ dbo_dhe_rgo.323 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_rgo.323.a
+		# name = dbo_dhe_rgo.323.a
 	}
 }
 
 ## 324 location:mesudiye stone to maize
 dbo_dhe_rgo.324 = {
 	type = country_event
-	title = dbo_dhe_rgo.324.title
-	desc = dbo_dhe_rgo.324.desc
+	# title = dbo_dhe_rgo.324.title
+	# desc = dbo_dhe_rgo.324.desc
 	fire_only_once = yes
 	hidden = yes
 	dynamic_historical_event = {
@@ -717,15 +732,15 @@ dbo_dhe_rgo.324 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_rgo.324.a
+		# name = dbo_dhe_rgo.324.a
 	}
 }
 
 ## 325 location:terme fish to chili
 dbo_dhe_rgo.325 = {
 	type = country_event
-	title = dbo_dhe_rgo.325.title
-	desc = dbo_dhe_rgo.325.desc
+	# title = dbo_dhe_rgo.325.title
+	# desc = dbo_dhe_rgo.325.desc
 	fire_only_once = yes
 	hidden = yes
 	dynamic_historical_event = {
@@ -750,15 +765,15 @@ dbo_dhe_rgo.325 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_rgo.325.a
+		# name = dbo_dhe_rgo.325.a
 	}
 }
 
 ## 326 location:unye lumber to maize
 dbo_dhe_rgo.326 = {
 	type = country_event
-	title = dbo_dhe_rgo.326.title
-	desc = dbo_dhe_rgo.326.desc
+	# title = dbo_dhe_rgo.326.title
+	# desc = dbo_dhe_rgo.326.desc
 	fire_only_once = yes
 	hidden = yes
 	dynamic_historical_event = {
@@ -783,7 +798,7 @@ dbo_dhe_rgo.326 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_rgo.326.a
+		# name = dbo_dhe_rgo.326.a
 	}
 }
 
@@ -794,8 +809,8 @@ dbo_dhe_rgo.326 = {
 ## 361 trebizond gorele khupati rize surmene -> any to tea
 dbo_dhe_rgo.361 = {
 	type = country_event
-	title = dbo_dhe_rgo.385.title
-	desc = dbo_dhe_rgo.385.desc
+	# title = dbo_dhe_rgo.385.title
+	# desc = dbo_dhe_rgo.385.desc
 	fire_only_once = yes
 	hidden = yes
 	dynamic_historical_event = {
@@ -874,7 +889,7 @@ dbo_dhe_rgo.361 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_rgo.385.a
+		# name = dbo_dhe_rgo.385.a
 	}
 }
 
@@ -883,8 +898,8 @@ dbo_dhe_rgo.361 = {
 ## 381 antalya wine to chili
 dbo_dhe_rgo.381 = {
 	type = country_event
-	title = dbo_dhe_rgo.381.title
-	desc = dbo_dhe_rgo.381.desc
+	# title = dbo_dhe_rgo.381.title
+	# desc = dbo_dhe_rgo.381.desc
 	fire_only_once = yes
 	hidden = yes
 	dynamic_historical_event = {
@@ -909,15 +924,15 @@ dbo_dhe_rgo.381 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_rgo.381.a
+		# name = dbo_dhe_rgo.381.a
 	}
 }
 
 ## 384 kas fish to chili
 dbo_dhe_rgo.384 = {
 	type = country_event
-	title = dbo_dhe_rgo.381.title
-	desc = dbo_dhe_rgo.381.desc
+	# title = dbo_dhe_rgo.381.title
+	# desc = dbo_dhe_rgo.381.desc
 	fire_only_once = yes
 	hidden = yes
 	dynamic_historical_event = {
@@ -942,15 +957,15 @@ dbo_dhe_rgo.384 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_rgo.381.a
+		# name = dbo_dhe_rgo.381.a
 	}
 }
 
 ## 385 istanoz clay to chili
 dbo_dhe_rgo.385 = {
 	type = country_event
-	title = dbo_dhe_rgo.385.title
-	desc = dbo_dhe_rgo.385.desc
+	# title = dbo_dhe_rgo.385.title
+	# desc = dbo_dhe_rgo.385.desc
 	fire_only_once = yes
 	hidden = yes
 	dynamic_historical_event = {
@@ -975,7 +990,7 @@ dbo_dhe_rgo.385 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_rgo.385.a
+		# name = dbo_dhe_rgo.385.a
 	}
 }
 
@@ -984,8 +999,8 @@ dbo_dhe_rgo.385 = {
 ## 404 location:egirdir livestock to cloves
 dbo_dhe_rgo.404 = {
 	type = country_event
-	title = dbo_dhe_rgo.404.title
-	desc = dbo_dhe_rgo.404.desc
+	# title = dbo_dhe_rgo.404.title
+	# desc = dbo_dhe_rgo.404.desc
 	fire_only_once = yes
 	hidden = yes
 	dynamic_historical_event = {
@@ -1012,7 +1027,7 @@ dbo_dhe_rgo.404 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_rgo.404.a
+		# name = dbo_dhe_rgo.404.a
 	}
 }
 
@@ -1023,8 +1038,8 @@ dbo_dhe_rgo.404 = {
 ## 441 location:usak clay to sugar
 dbo_dhe_rgo.441 = {
 	type = country_event
-	title = dbo_dhe_rgo.441.title
-	desc = dbo_dhe_rgo.441.desc
+	# title = dbo_dhe_rgo.441.title
+	# desc = dbo_dhe_rgo.441.desc
 	fire_only_once = yes
 	hidden = yes
 	dynamic_historical_event = {
@@ -1046,7 +1061,7 @@ dbo_dhe_rgo.441 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_rgo.441.a
+		# name = dbo_dhe_rgo.441.a
 	}
 }
 
@@ -1056,8 +1071,8 @@ dbo_dhe_rgo.441 = {
 ## 522 location:bayburt clay to millet
 dbo_dhe_rgo.522 = {
 	type = country_event
-	title = dbo_dhe_rgo.522.title
-	desc = dbo_dhe_rgo.522.desc
+	# title = dbo_dhe_rgo.522.title
+	# desc = dbo_dhe_rgo.522.desc
 	fire_only_once = yes
 	hidden = yes
 	dynamic_historical_event = {
@@ -1079,15 +1094,15 @@ dbo_dhe_rgo.522 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_rgo.522.a
+		# name = dbo_dhe_rgo.522.a
 	}
 }
 
 ## 523 location:erzincan livestock to sugar
 dbo_dhe_rgo.523 = {
 	type = country_event
-	title = dbo_dhe_rgo.523.title
-	desc = dbo_dhe_rgo.523.desc
+	# title = dbo_dhe_rgo.523.title
+	# desc = dbo_dhe_rgo.523.desc
 	fire_only_once = yes
 	hidden = yes
 	dynamic_historical_event = {
@@ -1109,15 +1124,15 @@ dbo_dhe_rgo.523 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_rgo.523.a
+		# name = dbo_dhe_rgo.523.a
 	}
 }
 
 ## 524 location:ilic lumber to gold
 dbo_dhe_rgo.524 = {
 	type = country_event
-	title = dbo_dhe_rgo.524.title
-	desc = dbo_dhe_rgo.524.desc
+	# title = dbo_dhe_rgo.524.title
+	# desc = dbo_dhe_rgo.524.desc
 	fire_only_once = yes
 	hidden = yes
 	dynamic_historical_event = {
@@ -1139,15 +1154,15 @@ dbo_dhe_rgo.524 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_rgo.524.a
+		# name = dbo_dhe_rgo.524.a
 	}
 }
 
 ## 528 location:siran clay to millet
 dbo_dhe_rgo.528 = {
 	type = country_event
-	title = dbo_dhe_rgo.528.title
-	desc = dbo_dhe_rgo.528.desc
+	# title = dbo_dhe_rgo.528.title
+	# desc = dbo_dhe_rgo.528.desc
 	fire_only_once = yes
 	hidden = yes
 	dynamic_historical_event = {
@@ -1169,15 +1184,15 @@ dbo_dhe_rgo.528 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_rgo.528.a
+		# name = dbo_dhe_rgo.528.a
 	}
 }
 
 ## 529 location:tercan wool to millet
 dbo_dhe_rgo.529 = {
 	type = country_event
-	title = dbo_dhe_rgo.529.title
-	desc = dbo_dhe_rgo.529.desc
+	# title = dbo_dhe_rgo.529.title
+	# desc = dbo_dhe_rgo.529.desc
 	fire_only_once = yes
 	hidden = yes
 	dynamic_historical_event = {
@@ -1199,7 +1214,7 @@ dbo_dhe_rgo.529 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_rgo.529.a
+		# name = dbo_dhe_rgo.529.a
 	}
 }
 
@@ -1207,8 +1222,8 @@ dbo_dhe_rgo.529 = {
 ## 535 location:genc clay to lead
 dbo_dhe_rgo.535 = {
 	type = country_event
-	title = dbo_dhe_rgo.535.title
-	desc = dbo_dhe_rgo.535.desc
+	# title = dbo_dhe_rgo.535.title
+	# desc = dbo_dhe_rgo.535.desc
 	fire_only_once = yes
 	hidden = yes
 	dynamic_historical_event = {
@@ -1230,7 +1245,7 @@ dbo_dhe_rgo.535 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_rgo.535.a
+		# name = dbo_dhe_rgo.535.a
 	}
 }
 
@@ -1242,8 +1257,8 @@ dbo_dhe_rgo.535 = {
 ## 615 hazro clay to tobacco
 dbo_dhe_rgo.615 = {
 	type = country_event
-	title = dbo_dhe_rgo.615.title
-	desc = dbo_dhe_rgo.615.desc
+	# title = dbo_dhe_rgo.615.title
+	# desc = dbo_dhe_rgo.615.desc
 	fire_only_once = yes
 	hidden = yes
 	dynamic_historical_event = {
@@ -1268,7 +1283,7 @@ dbo_dhe_rgo.615 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_rgo.615.a
+		# name = dbo_dhe_rgo.615.a
 	}
 }
 
@@ -1277,8 +1292,8 @@ dbo_dhe_rgo.615 = {
 ## 634 mayyafariqin clay to tobacco
 dbo_dhe_rgo.634 = {
 	type = country_event
-	title = dbo_dhe_rgo.634.title
-	desc = dbo_dhe_rgo.634.desc
+	# title = dbo_dhe_rgo.634.title
+	# desc = dbo_dhe_rgo.634.desc
 	fire_only_once = yes
 	hidden = yes
 	dynamic_historical_event = {
@@ -1303,15 +1318,15 @@ dbo_dhe_rgo.634 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_rgo.634.a
+		# name = dbo_dhe_rgo.634.a
 	}
 }
 
 ## 636 siirt clay to tobacco
 dbo_dhe_rgo.636 = {
 	type = country_event
-	title = dbo_dhe_rgo.636.title
-	desc = dbo_dhe_rgo.636.desc
+	# title = dbo_dhe_rgo.636.title
+	# desc = dbo_dhe_rgo.636.desc
 	fire_only_once = yes
 	hidden = yes
 	dynamic_historical_event = {
@@ -1336,7 +1351,7 @@ dbo_dhe_rgo.636 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_rgo.636.a
+		# name = dbo_dhe_rgo.636.a
 	}
 }
 
@@ -1353,8 +1368,8 @@ dbo_dhe_rgo.636 = {
 ## 751 location:artanuji stone to tea
 dbo_dhe_rgo.751 = {
 	type = country_event
-	title = dbo_dhe_rgo.751.title
-	desc = dbo_dhe_rgo.751.desc
+	# title = dbo_dhe_rgo.751.title
+	# desc = dbo_dhe_rgo.751.desc
 	fire_only_once = yes
 	hidden = yes
 	dynamic_historical_event = {
@@ -1381,7 +1396,7 @@ dbo_dhe_rgo.751 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_rgo.751.a
+		# name = dbo_dhe_rgo.751.a
 	}
 }
 

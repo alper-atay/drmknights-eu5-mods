@@ -31,16 +31,16 @@
 		local_nobles_max_literacy = 10
 		local_max_control = 0.1
 	}
-	possible_production_methods = {
+	unique_production_methods = {
 		provincial_capital_maintenance = {
-			tools = 1
-			masonry = 1
+			tools = 0.5
+			masonry = 0.5
 			weaponry = 0.5
-			paper = 3
-			books = 1
-			goods_gold = 1
-			furniture = 2
-			fine_cloth = 1
+			paper = 1
+			books = 0.5
+			goods_gold = 0.25
+			furniture = 1
+			fine_cloth = 0.5
 			category = building_maintenance
 		}
 	}

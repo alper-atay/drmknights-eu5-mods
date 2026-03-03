@@ -1,10 +1,10 @@
 ﻿namespace = dbo_dhe_conquest
 # dbo_conquest_anatolian_turks_challenged
-dbo_dhe_history.11 = {
+dbo_dhe_conquest.11 = {
 	type = country_event
-	title = dbo_dhe_history.11.title
-	desc = dbo_dhe_history.11.desc
-	historical_info = dbo_dhe_history.11.historical_info
+	title = dbo_dhe_conquest.11.title
+	desc = dbo_dhe_conquest.11.desc
+	historical_info = dbo_dhe_conquest.11.historical_info
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_anatolian_turks_challenged.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -20,7 +20,7 @@ dbo_dhe_history.11 = {
 		num_locations >= 250
 	}
 	option = {
-		name = dbo_dhe_history.11.a
+		name = dbo_dhe_conquest.11.a
 		historical_option = yes
 		set_variable = dbo_conquest_anatolian_turks_challenged
 		dbo_event_mild_bonus = yes
@@ -56,11 +56,11 @@ dbo_dhe_conquest.12 = {
 }
 
 # dbo_conquest_rumelia_challenged
-dbo_dhe_history.21 = {
+dbo_dhe_conquest.21 = {
 	type = country_event
-	title = dbo_dhe_history.21.title
-	desc = dbo_dhe_history.21.desc
-	historical_info = dbo_dhe_history.21.historical_info
+	title = dbo_dhe_conquest.21.title
+	desc = dbo_dhe_conquest.21.desc
+	historical_info = dbo_dhe_conquest.21.historical_info
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_rumelia_challenged.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -75,7 +75,7 @@ dbo_dhe_history.21 = {
 		own_entire_province = province_definition:constantinople_province
 	}
 	option = {
-		name = dbo_dhe_history.21.a
+		name = dbo_dhe_conquest.21.a
 		set_variable = dbo_conquest_rumelia_challenged
 		dbo_event_mild_bonus = yes
 	}
@@ -110,11 +110,11 @@ dbo_dhe_conquest.22 = {
 }
 
 # dbo_conquest_fertile_crescent_challenged
-dbo_dhe_history.31 = {
+dbo_dhe_conquest.31 = {
 	type = country_event
-	title = dbo_dhe_history.31.title
-	desc = dbo_dhe_history.31.desc
-	historical_info = dbo_dhe_history.31.historical_info
+	title = dbo_dhe_conquest.31.title
+	desc = dbo_dhe_conquest.31.desc
+	historical_info = dbo_dhe_conquest.31.historical_info
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_fertile_crescent_challenged.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -128,7 +128,7 @@ dbo_dhe_history.31 = {
 		has_reform = government_reform:dbo_conquest_rumelia_stamp
 	}
 	option = {
-		name = dbo_dhe_history.31.a
+		name = dbo_dhe_conquest.31.a
 		historical_option = yes
 		set_variable = dbo_conquest_fertile_crescent_challenged
 		dbo_event_mild_bonus = yes
@@ -164,11 +164,11 @@ dbo_dhe_conquest.32 = {
 }
 
 # dbo_conquest_arabian_peninsula_challenged
-dbo_dhe_history.41 = {
+dbo_dhe_conquest.41 = {
 	type = country_event
-	title = dbo_dhe_history.41.title
-	desc = dbo_dhe_history.41.desc
-	historical_info = dbo_dhe_history.41.historical_info
+	title = dbo_dhe_conquest.41.title
+	desc = dbo_dhe_conquest.41.desc
+	historical_info = dbo_dhe_conquest.41.historical_info
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_arabian_peninsula_challenged.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -183,7 +183,7 @@ dbo_dhe_history.41 = {
 		has_reform = government_reform:dbo_conquest_fertile_crescent_stamp
 	}
 	option = {
-		name = dbo_dhe_history.31.a
+		name = dbo_dhe_conquest.31.a
 		historical_option = yes
 		set_variable = dbo_conquest_arabian_peninsula_challenged
 		dbo_event_mild_bonus = yes
@@ -219,11 +219,11 @@ dbo_dhe_conquest.42 = {
 }
 
 # dbo_conquest_nile_river_challenged
-dbo_dhe_history.51 = {
+dbo_dhe_conquest.51 = {
 	type = country_event
-	title = dbo_dhe_history.51.title
-	desc = dbo_dhe_history.51.desc
-	historical_info = dbo_dhe_history.51.historical_info
+	title = dbo_dhe_conquest.51.title
+	desc = dbo_dhe_conquest.51.desc
+	historical_info = dbo_dhe_conquest.51.historical_info
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_nile_river_challenged.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -238,7 +238,7 @@ dbo_dhe_history.51 = {
 		has_reform = government_reform:dbo_conquest_fertile_crescent_stamp
 	}
 	option = {
-		name = dbo_dhe_history.51.a
+		name = dbo_dhe_conquest.51.a
 		historical_option = yes
 		set_variable = dbo_conquest_nile_river_challenged
 		dbo_event_mild_bonus = yes
@@ -274,11 +274,11 @@ dbo_dhe_conquest.52 = {
 }
 
 # dbo_conquest_black_sea_challenged
-dbo_dhe_history.61 = {
+dbo_dhe_conquest.61 = {
 	type = country_event
-	title = dbo_dhe_history.61.title
-	desc = dbo_dhe_history.61.desc
-	historical_info = dbo_dhe_history.61.historical_info
+	title = dbo_dhe_conquest.61.title
+	desc = dbo_dhe_conquest.61.desc
+	historical_info = dbo_dhe_conquest.61.historical_info
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_black_sea_challenged.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -291,7 +291,7 @@ dbo_dhe_history.61 = {
 		has_reform = government_reform:dbo_conquest_anatolian_turks_stamp
 	}
 	option = {
-		name = dbo_dhe_history.61.a
+		name = dbo_dhe_conquest.61.a
 		historical_option = yes
 		set_variable = dbo_conquest_black_sea_challenged
 		dbo_event_mild_bonus = yes
@@ -327,11 +327,11 @@ dbo_dhe_conquest.62 = {
 }
 
 # dbo_conquest_europe_eastern_gate_challenged
-dbo_dhe_history.71 = {
+dbo_dhe_conquest.71 = {
 	type = country_event
-	title = dbo_dhe_history.71.title
-	desc = dbo_dhe_history.71.desc
-	historical_info = dbo_dhe_history.71.historical_info
+	title = dbo_dhe_conquest.71.title
+	desc = dbo_dhe_conquest.71.desc
+	historical_info = dbo_dhe_conquest.71.historical_info
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_europe_eastern_gate_challenged.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -345,7 +345,7 @@ dbo_dhe_history.71 = {
 		has_reform = government_reform:dbo_conquest_black_sea_stamp
 	}
 	option = {
-		name = dbo_dhe_history.71.a
+		name = dbo_dhe_conquest.71.a
 		historical_option = yes
 		set_variable = dbo_conquest_europe_eastern_gate_challenged
 		dbo_event_mild_bonus = yes
@@ -381,10 +381,10 @@ dbo_dhe_conquest.72 = {
 }
 
 # dbo_conquest_turkish_renaissance_challenged
-dbo_dhe_history.81 = {
+dbo_dhe_conquest.81 = {
 	type = country_event
-	title = dbo_dhe_history.81.title
-	desc = dbo_dhe_history.81.desc
+	title = dbo_dhe_conquest.81.title
+	desc = dbo_dhe_conquest.81.desc
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_turkish_renaissance_challenged.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -398,7 +398,7 @@ dbo_dhe_history.81 = {
 		has_reform = government_reform:dbo_conquest_rumelia_stamp
 	}
 	option = {
-		name = dbo_dhe_history.81.a
+		name = dbo_dhe_conquest.81.a
 		historical_option = yes
 		set_variable = dbo_conquest_turkish_renaissance_challenged
 		dbo_event_mild_bonus = yes
@@ -433,10 +433,10 @@ dbo_dhe_conquest.82 = {
 }
 
 # dbo_conquest_pearl_of_east_challenged
-dbo_dhe_history.91 = {
+dbo_dhe_conquest.91 = {
 	type = country_event
-	title = dbo_dhe_history.91.title
-	desc = dbo_dhe_history.91.desc
+	title = dbo_dhe_conquest.91.title
+	desc = dbo_dhe_conquest.91.desc
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_pearl_of_east_challenged.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -453,7 +453,7 @@ dbo_dhe_history.91 = {
 		has_reform = government_reform:dbo_conquest_fertile_crescent_stamp
 	}
 	option = {
-		name = dbo_dhe_history.91.a
+		name = dbo_dhe_conquest.91.a
 		historical_option = yes
 		set_variable = dbo_conquest_pearl_of_east_challenged
 		dbo_event_mild_bonus = yes
@@ -488,11 +488,11 @@ dbo_dhe_conquest.92 = {
 }
 
 # dbo_conquest_maghreb_challenged
-dbo_dhe_history.101 = {
+dbo_dhe_conquest.101 = {
 	type = country_event
-	title = dbo_dhe_history.101.title
-	desc = dbo_dhe_history.101.desc
-	historical_info = dbo_dhe_history.101.historical_info
+	title = dbo_dhe_conquest.101.title
+	desc = dbo_dhe_conquest.101.desc
+	historical_info = dbo_dhe_conquest.101.historical_info
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_maghreb_challenged.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -507,7 +507,7 @@ dbo_dhe_history.101 = {
 		has_reform = government_reform:dbo_conquest_nile_river_stamp
 	}
 	option = {
-		name = dbo_dhe_history.101.a
+		name = dbo_dhe_conquest.101.a
 		historical_option = yes
 		set_variable = dbo_conquest_maghreb_challenged
 		dbo_event_mild_bonus = yes
@@ -543,11 +543,11 @@ dbo_dhe_conquest.102 = {
 }
 
 # dbo_conquest_steep_mountain_challenged
-dbo_dhe_history.111 = {
+dbo_dhe_conquest.111 = {
 	type = country_event
-	title = dbo_dhe_history.111.title
-	desc = dbo_dhe_history.111.desc
-	historical_info = dbo_dhe_history.111.historical_info
+	title = dbo_dhe_conquest.111.title
+	desc = dbo_dhe_conquest.111.desc
+	historical_info = dbo_dhe_conquest.111.historical_info
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_steep_mountain_challenged.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -561,7 +561,7 @@ dbo_dhe_history.111 = {
 		has_reform = government_reform:dbo_conquest_black_sea_stamp
 	}
 	option = {
-		name = dbo_dhe_history.111.a
+		name = dbo_dhe_conquest.111.a
 		historical_option = yes
 		set_variable = dbo_conquest_steep_mountain_challenged
 		dbo_event_mild_bonus = yes

@@ -9,6 +9,7 @@
 	local_monthly_development = 0.001
 	local_pop_conversion_speed = 0.005
 	local_pop_assimilation_speed = 0.005
+	local_integration_speed = 0.25
 }
 
 dbo_caykur = {

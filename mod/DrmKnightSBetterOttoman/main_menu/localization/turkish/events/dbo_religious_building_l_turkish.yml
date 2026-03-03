@@ -1,0 +1,4 @@
+﻿l_turkish: 
+ dbo_religious_building.1.title: "Yeni [ShowBuildingTypeNameWithNoTooltip('great_madrasa')]"
+ dbo_religious_building.1.desc: "Önde gelen [madrassah_province.GetProvince.GetName] vatandaşları [madrassah_province.GetName] bölgesinde yeni bir [ShowBuildingTypeName('great_madrasa')] kurulması için büyük bağışlarda bulundu. Yalnızca [madrassah_province.GetProvince.GetNameWithNoTooltip] ve çevresinde bulunanları değil bizim topraklarımızın diğer kısımlarından âlimleri ve başka ülkelerde bulunan teologları da çağırdılar."
+ dbo_religious_building.1.a: "[ROOT.GetCountry.Custom('common_string_positive')]"

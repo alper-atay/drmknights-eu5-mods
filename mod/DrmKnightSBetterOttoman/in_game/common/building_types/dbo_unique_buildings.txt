@@ -100,7 +100,10 @@ dbo_grand_mosque = {
 		large_religious
 	}
 	country_potential = {
-		religion.group = religion_group:muslim
+		country_rank_level > 2
+		religion ?= {
+			group = religion_group:muslim
+		}
 	}
 	allow = {
 		is_province_capital = yes
@@ -145,8 +148,8 @@ dbo_otag = {
 	build_time = super_fast_temporary_house
 	country_potential = {
 		OR = {
-			government = steppe_horde
-			government = monarchy
+			government_type = government_type:steppe_horde
+			government_type = government_type:monarchy
 		}
 		OR = {
 			religion = religion:tengri
@@ -175,8 +178,8 @@ dbo_otag = {
 			owner ?= {
 				NAND = {
 					OR = {
-						government = steppe_horde
-						government = monarchy
+						government_type = government_type:steppe_horde
+						government_type = government_type:monarchy
 					}
 					OR = {
 						religion = religion:tengri
@@ -201,4 +204,98 @@ dbo_otag = {
 		local_cultural_tradition = 0.01
 		local_cultural_influence = 0.01
 	}
+}
+
+dbo_ulu_otag = {
+	is_special = yes
+	is_foreign = no
+	max_levels = 1
+	pop_type = nobles
+	employment_size = large_noble_employment
+	category = government_category
+	town = yes
+	city = yes
+	important_for_AI = yes
+	important_for_UI = yes
+	construction_demand = soldier_building_construction
+	build_time = super_fast_temporary_house
+	location_potential = {
+		is_capital = yes
+	}
+	country_potential = {
+		OR = {
+			religion = religion:tengri
+			has_or_had_tag = TUR
+		}
+	}
+	unique_production_methods = {
+		dbo_ulu_otag_maintenance = {
+			furniture = 0.15
+			tools = 0.05
+			glass = 0.05
+			fine_cloth = 0.2
+			books = 0.1
+			goods_gold = 0.1
+			marble = 0.05
+			category = building_maintenance
+		}
+	}
+	remove_if = {
+		is_no_longer_capital = yes
+		location.owner ?= {
+			OR = {
+				religion = religion:tengri
+				has_or_had_tag = TUR
+			}
+		}
+	}
+	modifier = {
+		country_cabinet_efficiency = 0.02
+		global_crown_estate_power = 0.1
+		monthly_towards_absolutism = societal_value_tiny_monthly_move
+	}
+}
+
+dbo_beylerbeyi = {
+	is_foreign = no
+	pop_type = nobles
+	max_levels = 1
+	category = government_category
+	employment_size = large_noble_employment
+	town = yes
+	city = yes
+	expensive = yes
+	important_for_AI = yes
+	important_for_UI = yes
+	build_time = large_capital_build_time
+	allow = {
+		is_province_capital = yes
+	}
+	location_potential = {
+		is_capital = no
+	}
+	country_potential = {
+		has_or_had_tag = TUR
+	}
+	modifier = {
+		local_proximity_source = 20
+		local_nobles_estate_power = 0.5
+		local_crown_estate_power = 0.1
+		local_monthly_development_modifier = 0.05
+		local_nobles_max_literacy = 10
+		local_max_control = 0.1
+	}
+	unique_production_methods = {
+		dbo_beylerbeyi_maintenance = {
+			furniture = 0.1
+			tools = 0.05
+			glass = 0.05
+			fine_cloth = 0.1
+			books = 0.05
+			goods_gold = 0.05
+			marble = 0.05
+			category = building_maintenance
+		}
+	}
+	construction_demand = local_governor_construction
 }

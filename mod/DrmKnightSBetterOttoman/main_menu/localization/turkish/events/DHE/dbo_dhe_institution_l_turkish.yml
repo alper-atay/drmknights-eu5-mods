@@ -1,0 +1,13 @@
+﻿l_turkish:
+ dbo_dhe_institution.1.title: "[ShowInstitutionName('professional_armies')]\n[Concept('embrace', 'Benimseyeceğiz')|e]"
+ dbo_dhe_institution.1.desc: "$professional_armies_desc$"
+ dbo_dhe_institution.1.a: "Mutlaka [ShowInstitutionNameWithNoTooltip('professional_armies')] İlerleme Kazanmalıyız."
+ dbo_dhe_institution.2.title: "[ShowInstitutionName('meritocracy')]\n[Concept('embrace', 'Benimseyeceğiz')|e]"
+ dbo_dhe_institution.2.desc: "$meritocracy_advance_desc$"
+ dbo_dhe_institution.2.a: "Mutlaka [ShowInstitutionNameWithNoTooltip('meritocracy')] İlerleme Kazanmalıyız."
+ dbo_dhe_institution.3.title: "[ShowInstitutionName('professional_armies')]\n[Concept('embraced', 'Benimsedik')|e]"
+ dbo_dhe_institution.3.desc: "$professional_armies_desc$"
+ dbo_dhe_institution.3.a: "Daha Çok [ShowInstitutionNameWithNoTooltip('professional_armies')] İlerleme Kazanmalıyız."
+ dbo_dhe_institution.4.title: "[ShowInstitutionName('meritocracy')]\n[Concept('embraced', 'Benimsedik')|e]"
+ dbo_dhe_institution.4.desc: "$meritocracy_advance_desc$"
+ dbo_dhe_institution.4.a: "Daha Çok [ShowInstitutionNameWithNoTooltip('meritocracy')] İlerleme Kazanmalıyız."
