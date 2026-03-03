@@ -63,10 +63,14 @@ dbo_grand_bazaar = {
 		}
 	}
 	market_center_modifier = {
-		local_trade_center_power = 0.1
-		maximum_stockpile_capacity = 200
+		local_pop_assimilation_speed_modifier = 0.01
+		local_burghers_estate_power = 0.1
+		local_market_access = 0.01
+		local_merchant_power = 1
+		local_trades_per_burgher = 0.8
+		local_merchant_capacity = 5
 	}
-	construction_demand = warehouse_construction
+	construction_demand = prestige_building_construction
 	unique_production_methods = {
 		dbo_grand_bazaar_maintenance = {
 			tools = 0.2
@@ -94,19 +98,16 @@ dbo_grand_mosque = {
 	expensive = yes
 	important_for_AI = yes
 	important_for_UI = yes
-	construction_demand = capital_building_construction
+	construction_demand = prestige_building_construction
 	build_time = large_capital_build_time
 	graphical_tags = {
 		large_religious
 	}
-	country_potential = {
-		country_rank_level > 2
-		religion ?= {
-			group = religion_group:muslim
-		}
-	}
-	allow = {
+	location_potential = {
 		is_province_capital = yes
+	}
+	country_potential = {
+		has_or_had_tag = TUR
 	}
 	unique_production_methods = {
 		dbo_grand_mosque_maintenance = {
@@ -147,20 +148,7 @@ dbo_otag = {
 	construction_demand = soldier_building_construction
 	build_time = super_fast_temporary_house
 	country_potential = {
-		OR = {
-			government_type = government_type:steppe_horde
-			government_type = government_type:monarchy
-		}
-		OR = {
-			religion = religion:tengri
-			culture ?= {
-				OR = {
-					has_culture_group = culture_group:turkic_group
-					has_culture_group = culture_group:mongolian_group
-					has_culture_group = culture_group:steppe_group
-				}
-			}
-		}
+		has_or_had_tag = TUR
 	}
 	unique_production_methods = {
 		dbo_otag_maintenance = {
@@ -168,31 +156,6 @@ dbo_otag = {
 			horses = 0.01
 			cloth = 0.01
 			category = building_maintenance
-		}
-	}
-	remove_if = {
-		location = {
-			NOT = {
-				location_rank = location_rank:rural_settlement
-			}
-			owner ?= {
-				NAND = {
-					OR = {
-						government_type = government_type:steppe_horde
-						government_type = government_type:monarchy
-					}
-					OR = {
-						religion = religion:tengri
-						culture ?= {
-							OR = {
-								has_culture_group = culture_group:turkic_group
-								has_culture_group = culture_group:mongolian_group
-								has_culture_group = culture_group:steppe_group
-							}
-						}
-					}
-				}
-			}
 		}
 	}
 	modifier = {
@@ -217,42 +180,39 @@ dbo_ulu_otag = {
 	city = yes
 	important_for_AI = yes
 	important_for_UI = yes
-	construction_demand = soldier_building_construction
-	build_time = super_fast_temporary_house
+	construction_demand = prestige_building_construction
+	build_time = small_capital_build_time
 	location_potential = {
-		is_capital = yes
+		is_capital = no
+		is_province_capital = yes
 	}
 	country_potential = {
-		OR = {
-			religion = religion:tengri
-			has_or_had_tag = TUR
-		}
+		has_or_had_tag = TUR
 	}
 	unique_production_methods = {
 		dbo_ulu_otag_maintenance = {
-			furniture = 0.15
-			tools = 0.05
-			glass = 0.05
-			fine_cloth = 0.2
-			books = 0.1
+			weaponry = 0.1
+			horses = 0.1
+			cloth = 0.1
+			furniture = 0.1
+			fine_cloth = 0.1
 			goods_gold = 0.1
-			marble = 0.05
 			category = building_maintenance
 		}
 	}
 	remove_if = {
-		is_no_longer_capital = yes
 		location.owner ?= {
-			OR = {
-				religion = religion:tengri
-				has_or_had_tag = TUR
-			}
+			has_or_had_tag = TUR
 		}
 	}
 	modifier = {
-		country_cabinet_efficiency = 0.02
-		global_crown_estate_power = 0.1
-		monthly_towards_absolutism = societal_value_tiny_monthly_move
+		movement_cost = -0.1
+		local_manpower = 0.01
+		local_proximity_source = 10
+		local_max_control = 0.1
+		local_distance_from_capital_speed_propagation = 0.1
+		local_cultural_tradition = 0.05
+		local_cultural_influence = 0.05
 	}
 }
 
@@ -268,11 +228,9 @@ dbo_beylerbeyi = {
 	important_for_AI = yes
 	important_for_UI = yes
 	build_time = large_capital_build_time
-	allow = {
-		is_province_capital = yes
-	}
 	location_potential = {
 		is_capital = no
+		is_province_capital = yes
 	}
 	country_potential = {
 		has_or_had_tag = TUR

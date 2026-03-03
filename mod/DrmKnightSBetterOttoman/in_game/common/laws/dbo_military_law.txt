@@ -22,10 +22,10 @@
 			}
 		}
 		country_modifier = {
-			military_tactics = 0.5
+			military_tactics = 1
 			discipline = 0.05
-			global_levy_size_modifier = 0.1
-			levy_combat_efficiency_modifier = 0.1
+			global_levy_size_modifier = 0.2
+			levy_combat_efficiency_modifier = 0.2
 		}
 	}
 	dbo_military_army_fundamental_kapikulu_ocaklari_policy = {
