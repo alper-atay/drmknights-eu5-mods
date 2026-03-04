@@ -15,9 +15,11 @@
 		has_law = dbo_military_army_gendarme_law
 	}
 	remove_if = {
-		location.owner ?= {
-			NOT = {
-				has_law = dbo_military_army_gendarme_law
+		location = {
+			NOR = {
+				owner ?= {
+					has_law = dbo_military_army_gendarme_law
+				}
 			}
 		}
 	}
@@ -57,11 +59,11 @@ dbo_grand_bazaar = {
 	important_for_UI = yes
 	construction_demand = prestige_building_construction
 	build_time = market_build_time
-	country_potential = {
-		has_reform = government_reform:dbo_destiny_trade_center_grand_bazaar
-	}
 	location_potential = {
 		is_province_capital = yes
+	}
+	country_potential = {
+		has_reform = government_reform:dbo_destiny_trade_center_grand_bazaar
 	}
 	remove_if = {
 		location.owner ?= {
@@ -119,8 +121,13 @@ dbo_grand_mosque = {
 		has_or_had_tag = TUR
 	}
 	remove_if = {
-		location.owner ?= {
-			has_or_had_tag = TUR
+		location = {
+			NOR = {
+				is_province_capital = yes
+				owner ?= {
+					has_or_had_tag = TUR
+				}
+			}
 		}
 	}
 	unique_production_methods = {
@@ -154,9 +161,18 @@ dbo_otag = {
 	important_for_AI = yes
 	important_for_UI = yes
 	construction_demand = soldier_building_construction
-	build_time = super_fast_temporary_house
+	build_time = 90
 	country_potential = {
 		has_or_had_tag = TUR
+	}
+	remove_if = {
+		location = {
+			NOR = {
+				owner ?= {
+					has_or_had_tag = TUR
+				}
+			}
+		}
 	}
 	unique_production_methods = {
 		dbo_otag_maintenance = {
@@ -173,8 +189,8 @@ dbo_otag = {
 		local_proximity_source = 2
 		local_max_control = 0.02
 		local_distance_from_capital_speed_propagation = 0.02
-		local_cultural_tradition = 0.01
-		local_cultural_influence = 0.01
+		local_cultural_tradition = 0.02
+		local_cultural_influence = 0.02
 	}
 }
 
@@ -198,6 +214,16 @@ dbo_ulu_otag = {
 	country_potential = {
 		has_or_had_tag = TUR
 	}
+	remove_if = {
+		location = {
+			NOR = {
+				is_province_capital = yes
+				owner ?= {
+					has_or_had_tag = TUR
+				}
+			}
+		}
+	}
 	unique_production_methods = {
 		dbo_ulu_otag_maintenance = {
 			weaponry = 0.1
@@ -208,11 +234,6 @@ dbo_ulu_otag = {
 			fine_cloth = 0.1
 			goods_gold = 0.1
 			category = building_maintenance
-		}
-	}
-	remove_if = {
-		location.owner ?= {
-			has_or_had_tag = TUR
 		}
 	}
 	modifier = {
@@ -245,6 +266,14 @@ dbo_beylerbeyi = {
 	country_potential = {
 		has_or_had_tag = TUR
 	}
+	remove_if = {
+		location = {
+			NOR = {
+				is_capital = no
+				is_province_capital = yes
+			}
+		}
+	}
 	modifier = {
 		local_proximity_source = 20
 		local_nobles_estate_power = 0.5
@@ -260,8 +289,8 @@ dbo_beylerbeyi = {
 			glass = 0.05
 			goods_gold = 0.05
 			marble = 0.05
-			paper = 0.1
-			books = 0.05
+			paper = 0.2
+			books = 0.1
 			cloth = 0.1
 			fine_cloth = 0.05
 			category = building_maintenance

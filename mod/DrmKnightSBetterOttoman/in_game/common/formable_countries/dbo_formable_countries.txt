@@ -1,0 +1,21 @@
+﻿GKTUR_f = {
+	level = 3
+	rule = plausible
+	potential = {
+		tag = TUR
+		culture = {
+			has_culture_group = culture_group:turkic_group
+		}
+	}
+	allow = {
+		tag = TUR
+		culture = {
+			has_culture_group = culture_group:turkic_group
+		}
+	}
+	name = GKTUR
+	flag = GKTUR
+	adjective = GKTUR_ADJ
+	tag = GKTUR
+	color = map_GKTUR
+}

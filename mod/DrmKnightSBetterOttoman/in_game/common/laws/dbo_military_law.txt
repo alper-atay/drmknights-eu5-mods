@@ -246,12 +246,12 @@ dbo_military_army_gendarme_law = {
 			pop_leave_rebels_threshold = -0.05
 		}
 	}
-	dbo_military_army_gendarme_yargan = {
+	dbo_military_army_gendarme_yargan_policy = {
 		unique = yes
 		allow = {
 			has_policy = dbo_military_army_fundamental_metehan_policy
 			has_unlocked_policy_trigger = {
-				type = dbo_military_army_gendarme_yargan
+				type = dbo_military_army_gendarme_yargan_policy
 			}
 		}
 		country_modifier = {

@@ -1,0 +1,21 @@
+﻿GKTUR = {
+	# Ottomans
+	flag_definition = {
+		coa = TUR
+		priority = 1
+	}
+	flag_definition = {
+		coa = TUR_crescents
+		priority = 2
+		trigger = {
+			coa_def_discovery_age_3_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = TUR_crescents_roundel
+		priority = 3
+		trigger = {
+			coa_def_reformation_age_4_trigger = yes
+		}
+	}
+}

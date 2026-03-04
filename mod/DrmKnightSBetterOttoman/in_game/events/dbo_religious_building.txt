@@ -7,28 +7,35 @@ dbo_religious_building.1 = {
 		10 = regular
 		10 = interior
 	}
+	trigger = {
+		tag = TUR
+		country_exists = c:TUR
+		c:TUR = {
+			religion.group = religion_group:muslim
+			any_owned_non_rural_location = {
+				has_building_with_at_least_one_level = temple
+				has_building_with_at_least_one_level = madrasa
+				NOT = {
+					has_building = building_type:great_madrasa
+				}
+			}
+		}
+	}
 	immediate = {
 		event_illustration_estate_effect = {
 			foreground = estate_type:burghers_estate
 			background = estate_type:clergy_estate
 		}
-		hidden_effect = {
-			c:TUR = {
-				random_owned_non_rural_location = {
-					limit = {
-						has_building_with_at_least_one_level = temple
-						has_building_with_at_least_one_level = madrasa
-						is_province_capital = yes
-						OR = {
-							integration_level = integrated
-							integration_level = core
-						}
-						NOT = {
-							has_building = building_type:great_madrasa
-						}
+		c:TUR = {
+			random_owned_non_rural_location = {
+				limit = {
+					has_building_with_at_least_one_level = temple
+					has_building_with_at_least_one_level = madrasa
+					NOT = {
+						has_building = building_type:great_madrasa
 					}
-					save_scope_as = madrassah_province
 				}
+				save_scope_as = madrassah_province
 			}
 		}
 	}

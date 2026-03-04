@@ -1,0 +1,3 @@
+﻿colors = {
+	map_GKTUR = rgb { 48 213 200 }
+}

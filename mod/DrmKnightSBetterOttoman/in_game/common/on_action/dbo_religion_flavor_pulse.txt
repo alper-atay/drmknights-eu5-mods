@@ -1,31 +1,5 @@
 ﻿religion_flavor_pulse = {
-	on_actions = {
-		dbo_on_religion_flavor_pulse_great_madrasa
-	}
-}
-
-dbo_on_religion_flavor_pulse_great_madrasa = {
-	trigger = {
-		country_exists = c:TUR
-		c:TUR ?= {
-			religion.group = religion_group:muslim
-			any_owned_non_rural_location = {
-				has_building_with_at_least_one_level = temple
-				has_building_with_at_least_one_level = madrasa
-				is_province_capital = yes
-				OR = {
-					integration_level = integrated
-					integration_level = core
-				}
-				NOT = {
-					has_building = building_type:great_madrasa
-				}
-			}
-		}
-	}
-	effect = {
-		c:TUR ?= {
-			trigger_event_non_silently = dbo_religious_building.1
-		}
+	events = {
+		dbo_religious_building.1
 	}
 }
