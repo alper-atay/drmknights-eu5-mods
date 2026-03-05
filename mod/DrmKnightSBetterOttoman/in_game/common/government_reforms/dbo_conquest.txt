@@ -135,11 +135,9 @@ dbo_conquest_black_sea_stamp = {
 	country_modifier = {
 		power_projection = 5
 		num_local_governors = 1
-		navy_maintenance_cost = -0.1
 		trade_efficiency = 0.1
 		trade_range_modifier = 0.1
-		trade_land_movement_cost_modifier = -0.1
-		trade_sea_movement_cost_modifier = -0.1
+		global_trade_through_owned_territory_cost_modifier = -0.1
 		government_reform_slots = 1
 	}
 }

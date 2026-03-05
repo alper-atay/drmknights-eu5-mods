@@ -323,3 +323,35 @@ dbo_cb_conquest_steep_mountain = {
 	}
 	ai_subjugation_desire = -100
 }
+
+dbo_cb_conquest_gokturk_union = {
+	allow_creation = {
+		always = no
+	}
+	visible = {
+		scope:target = {
+			any_owned_location = {
+				this.region = region:steppes_region
+				this.region = region:ural_region
+				this.region = region:khorasan_region
+				this.region = region:xinjiang_region
+				this.region = region:mongolia_region
+				this.region = region:east_siberia_region
+				this.region = region:west_siberia_region
+			}
+		}
+	}
+	war_goal_type = dbo_conquest_gokturk_union
+	province = {
+		any_location_in_province = {
+			always = yes
+		}
+	}
+	ai_will_do = {
+		add = {
+			desc = "CB_REASON_IMPORTANT_CB"
+			value = 2000
+		}
+	}
+	ai_subjugation_desire = -100
+}

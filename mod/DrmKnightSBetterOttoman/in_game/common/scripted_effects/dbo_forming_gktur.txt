@@ -1,0 +1,164 @@
+﻿dbo_forming_gktur = {
+	dbo_forming_gktur_religion = yes
+	dbo_forming_gktur_laws_and_policies = yes
+	dbo_forming_gktur_buildings = yes
+	dbo_forming_gktur_unlock_units = yes
+	dbo_forming_gktur_location_add_core = yes
+}
+
+dbo_forming_gktur_religion = {
+	change_religion = religion:tengri
+	change_religion_for_ruler_and_family = {
+		country = root
+		religion = religion:tengri
+	}
+	set_court_language = culture.dialect
+	set_liturgical_language = culture.dialect
+	custom_tooltip = {
+		text = dbo_every_turkic_group_pop_change_religion_tt
+		every_country = {
+			every_pop = {
+				limit = {
+					NOT = {
+						religion = religion:tengri
+					}
+					culture = {
+						OR = {
+							has_culture_group = culture_group:turkic_group
+							has_culture_group = culture_group:mongolian_group
+						}
+					}
+				}
+				split_pop = {
+					fraction = 0.5
+					religion = religion:tengri
+				}
+			}
+		}
+	}
+}
+
+dbo_forming_gktur_laws_and_policies = {
+	add_policy = policy:polygyny
+	add_policy = policy:heir_same_religion
+	add_policy = policy:balanced_court_policy
+	hidden_effect = {
+		lock_policy_effect = {
+			type = dbo_military_army_fundamental_alp_and_alperen_policy
+		}
+		lock_policy_effect = {
+			type = dbo_military_army_fundamental_kapikulu_ocaklari_policy
+		}
+		unlock_policy_effect = {
+			type = dbo_military_army_fundamental_metehan_policy
+		}
+		unlock_policy_effect = {
+			type = dbo_military_army_cavalry_metehans_policy
+		}
+		unlock_policy_effect = {
+			type = dbo_military_army_gendarme_yargan_policy
+		}
+	}
+	add_policy = policy:dbo_military_army_fundamental_metehan_policy
+	add_policy = policy:dbo_military_army_cavalry_metehans_policy
+	add_policy = policy:dbo_military_army_gendarme_yargan_policy
+}
+
+dbo_forming_gktur_buildings = {
+	unlock_building_effect = {
+		type = dbo_otag
+	}
+	unlock_building_effect = {
+		type = dbo_ulu_otag
+	}
+	custom_tooltip = {
+		text = dbo_every_owned_location_construct_otag_tt
+		every_owned_locations = {
+			if = {
+				limit = {
+					can_build_building = building_type:dbo_otag
+				}
+				construct_building = {
+					building_type = building_type:dbo_otag
+					cost_multiplier = 0
+					cost_multiplier_reason = "otag_must_be_free"
+					instant = yes
+				}
+			}
+		}
+	}
+}
+
+dbo_forming_gktur_unlock_units = {
+	if = {
+		limit = {
+			current_age = age_1_traditions
+		}
+		unlock_unit_effect = {
+			type = dbo_metehans_cavalry_age_1
+		}
+	}
+	if = {
+		limit = {
+			current_age = age_2_renaissance
+		}
+		unlock_unit_effect = {
+			type = dbo_metehans_cavalry_age_2
+		}
+	}
+	if = {
+		limit = {
+			current_age = age_3_discovery
+		}
+		unlock_unit_effect = {
+			type = dbo_metehans_cavalry_age_3
+		}
+	}
+	if = {
+		limit = {
+			current_age = age_4_reformation
+		}
+		unlock_unit_effect = {
+			type = dbo_metehans_cavalry_age_4
+		}
+	}
+	if = {
+		limit = {
+			current_age = age_5_absolutism
+		}
+		unlock_unit_effect = {
+			type = dbo_metehans_cavalry_age_5
+		}
+	}
+	if = {
+		limit = {
+			current_age = age_6_revolutions
+		}
+		unlock_unit_effect = {
+			type = dbo_metehans_cavalry_age_6
+		}
+	}
+}
+
+dbo_forming_gktur_location_add_core = {
+	custom_tooltip = {
+		text = dbo_every_asia_locations_add_core_tt
+		every_location_in_the_world = {
+			limit = {
+				is_ownable = yes
+				OR = {
+					region = region:anatolia_region
+					region = region:caucasus_region
+					region = region:steppes_region
+					region = region:ural_region
+					region = region:khorasan_region
+					region = region:xinjiang_region
+					region = region:mongolia_region
+					region = region:east_siberia_region
+					region = region:west_siberia_region
+				}
+			}
+			add_core = root
+		}
+	}
+}

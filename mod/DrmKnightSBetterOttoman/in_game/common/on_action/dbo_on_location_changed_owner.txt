@@ -42,17 +42,6 @@ dbo_on_conquer_any_location = {
 		}
 		if = {
 			limit = {
-				can_build_building = building_type:dbo_otag
-			}
-			construct_building = {
-				building_type = building_type:dbo_otag
-				cost_multiplier = 0
-				cost_multiplier_reason = "otag_must_be_free"
-				instant = yes
-			}
-		}
-		if = {
-			limit = {
 				OR = {
 					scope:loser = {
 						has_reform = government_reform:anatolian_beylik

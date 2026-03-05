@@ -1,17 +1,20 @@
 ﻿dbo_situation = {
-    monthly_spawn_chance = monthly_spawn_chance_unique
-    can_start = {
-        current_date > 1337.1.1
-    }
-    can_end = {
-        dbo_situation_can_end = yes
-    }
-    visible = {
-        tag = TUR
-    }
-    on_start = {
-        c:TUR = {
-            trigger_event_non_silently = dbo_situation.1
-        }
-    }
+	monthly_spawn_chance = monthly_spawn_chance_unique
+	can_start = {
+		current_date > 1337.1.1
+	}
+	can_end = {
+		dbo_situation_can_end = yes
+	}
+	visible = {
+		OR = {
+			tag = TUR
+			tag = GKTUR
+		}
+	}
+	on_start = {
+		c:TUR = {
+			trigger_event_non_silently = dbo_situation.1
+		}
+	}
 }

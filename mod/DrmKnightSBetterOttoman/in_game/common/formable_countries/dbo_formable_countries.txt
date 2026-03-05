@@ -1,21 +1,64 @@
 ﻿GKTUR_f = {
-	level = 3
+	level = 5
 	rule = plausible
-	potential = {
-		tag = TUR
-		culture = {
-			has_culture_group = culture_group:turkic_group
-		}
-	}
-	allow = {
-		tag = TUR
-		culture = {
-			has_culture_group = culture_group:turkic_group
-		}
-	}
 	name = GKTUR
 	flag = GKTUR
 	adjective = GKTUR_ADJ
 	tag = GKTUR
 	color = map_GKTUR
+	potential = {
+		culture = {
+			has_culture_group = culture_group:turkic_group
+		}
+	}
+	allow = {
+		culture = {
+			has_culture_group = culture_group:turkic_group
+		}
+		custom_tooltip = {
+			text = dbo_roto_winner_tt
+			has_variable = rise_of_the_ottomans_winner_variable
+		}
+		has_reform = government_reform:dbo_conquest_anatolian_turks_stamp
+		has_reform = government_reform:dbo_conquest_black_sea_stamp
+		has_reform = government_reform:dbo_conquest_steep_mountain_stamp
+	}
+	provinces = {
+		constantinople_province
+		edirne_province
+		burgas_province
+		hasankeyf_province
+		diyarbekir_province
+		ar_ruha_province
+		nusaybin_province
+		mardin_province
+		ayntab_province
+		antakya_province
+		burgas_province
+		preslav_province
+		south_dobruja_province
+		north_dobruja_province
+		basarabia_province
+		khadjibey_province
+		boh_province
+		oleshia_province
+		qalancak_province
+		berda_province
+		kalmius_province
+		tana_province
+		azov_province
+		akhtar_province
+		taman_province
+		tuapse_province
+	}
+	areas = {
+		crimea_area
+	}
+	regions = {
+		anatolia_region
+		caucasus_region
+	}
+	form_effect = {
+		dbo_forming_gktur
+	}
 }

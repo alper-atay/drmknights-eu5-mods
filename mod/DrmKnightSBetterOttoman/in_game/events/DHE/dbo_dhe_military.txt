@@ -46,11 +46,18 @@ dbo_dhe_military.102 = {
 		monthly_chance = 100
 	}
 	trigger = {
+		has_policy = dbo_military_army_fundamental_alp_and_alperen_policy
 		has_advance = professional_armies_advance
 	}
 	option = {
 		name = dbo_dhe_military.102.a
 		historical_option = yes
+		hidden_effect = {
+			remove_policy = policy:dbo_military_army_fundamental_alp_and_alperen_policy
+			lock_policy_effect = {
+				type = dbo_military_army_fundamental_alp_and_alperen_policy
+			}
+		}
 		unlock_policy_effect = {
 			type = dbo_military_army_fundamental_kapikulu_ocaklari_policy
 		}

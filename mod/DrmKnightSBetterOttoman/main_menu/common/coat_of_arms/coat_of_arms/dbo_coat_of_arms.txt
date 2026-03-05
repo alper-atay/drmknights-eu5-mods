@@ -1,8 +1,8 @@
 ﻿GKTUR = {
 	# Ottomans
 	pattern = "pattern_solid.dds"
-	color1 = "red"
-	color2 = "yellow"
+	color1 = rgb { 48 213 200 }
+	color2 = "white"
 	colored_emblem = {
 		texture = "ce_gokturk_wolf.dds"
 		color1 = color2
@@ -11,10 +11,6 @@
 			position = {
 				0.5
 				0.5
-			}
-			scale = {
-				0.85
-				0.85
 			}
 		}
 	}

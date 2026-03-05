@@ -22,3 +22,14 @@ dbo_ottoman_interregnum_recovery = {
 	pop_join_rebel_threshold = -0.1
 	pop_leave_rebels_threshold = -0.05
 }
+
+dbo_ottoman_golden_age_of_science = {
+	game_data = {
+		category = country
+	}
+	research_speed = 0.5
+	research_speed_modifier = 0.5
+	global_institution_growth_modifier = 0.2
+	global_max_literacy = 5
+	global_monthly_literacy = 0.01
+}

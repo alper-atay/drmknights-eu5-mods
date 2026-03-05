@@ -1,15 +1,15 @@
-﻿dbo_tengri_children = {
+﻿dbo_children_of_tengri = {
 	unique = yes
 	potential = {
 		has_unlocked_government_reform_trigger = {
-			type = dbt_destiny_tengri_children
+			type = dbo_children_of_tengri
 		}
 		religion = religion:tengri
 	}
 	locked = {
 		is_locked_mechanic = {
 			mechanic = government_reform
-			type = dbt_destiny_tengri_children
+			type = dbo_children_of_tengri
 		}
 	}
 	country_modifier = {

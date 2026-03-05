@@ -39,3 +39,28 @@
  dbo_dhe_rgo.181.desc: "[ShowLocationName('adana')] [Concept('location', 'ilinde')|e] [ShowGoodsName('maize')] yetiştiriciliği için uygun bir bölgedir. [ROOT.GetCountry.GetName] olarak, bu ili [ShowGoodsName('maize')] üretimi için kullanabiliriz. [ShowLocationName('adana')] ilinde [ShowGoodsName('maize')] yetiştiriciliği yaparak, ekonomimizi güçlendirebilir ve halkımızın refahını artırabiliriz."
  dbo_dhe_rgo.181.a: "Bu bölgeyi [ShowGoodsName('maize')] üretimi için kullan."
  dbo_dhe_rgo.181.b: "Bu bölgeyi [ShowGoodsName('maize')] üretimi için kullanma."
+ ## 251 location:biga sand to millet
+ dbo_dhe_rgo.251.title: "[ShowLocationName('biga')] [Concept('location', 'ilinde')], [ShowGoodsName('millet')] yetiştiriciliği"
+ dbo_dhe_rgo.251.desc: "[ShowLocationName('biga')] [Concept('location', 'ilinde')|e] [ShowGoodsName('millet')] yetiştiriciliği için uygun bir bölgedir. [ROOT.GetCountry.GetName] olarak, bu ili [ShowGoodsName('millet')] üretimi için kullanabiliriz. [ShowLocationName('biga')] ilinde [ShowGoodsName('millet')] yetiştiriciliği yaparak, ekonomimizi güçlendirebilir ve halkımızın refahını artırabiliriz."
+ dbo_dhe_rgo.251.a: "Bu bölgeyi [ShowGoodsName('millet')] üretimi için kullan."
+ dbo_dhe_rgo.251.b: "Bu bölgeyi [ShowGoodsName('millet')] üretimi için kullanma."
+ ## 254 location:bayramic wild_game to chili
+ dbo_dhe_rgo.254.title: "[ShowLocationName('bayramic')] [Concept('location', 'ilinde')], [ShowGoodsName('chili')] yetiştiriciliği"
+ dbo_dhe_rgo.254.desc: "[ShowLocationName('bayramic')] [Concept('location', 'ilinde')|e] [ShowGoodsName('chili')] yetiştiriciliği için uygun bir bölgedir. [ROOT.GetCountry.GetName] olarak, bu ili [ShowGoodsName('chili')] üretimi için kullanabiliriz. [ShowLocationName('bayramic')] ilinde [ShowGoodsName('chili')] yetiştiriciliği yaparak, ekonomimizi güçlendirebilir ve halkımızın refahını artırabiliriz."
+ dbo_dhe_rgo.254.a: "Bu bölgeyi [ShowGoodsName('chili')] üretimi için kullan."
+ dbo_dhe_rgo.254.b: "Bu bölgeyi [ShowGoodsName('chili')] üretimi için kullanma."
+ ## 255 location:can lumber to gold
+ dbo_dhe_rgo.255.title: "[ShowLocationName('can')] [Concept('location', 'ilinde')], [ShowGoodsName('goods_gold')] madenciliği"
+ dbo_dhe_rgo.255.desc: "[ShowLocationName('can')] [Concept('location', 'ilinde')|e] [ShowGoodsName('goods_gold')] madenciliği için uygun bir bölgedir. [ROOT.GetCountry.GetName] olarak, bu ili [ShowGoodsName('goods_gold')] madenciliği için kullanabiliriz. [ShowLocationName('can')] ilinde [ShowGoodsName('goods_gold')] madenciliği yaparak, ekonomimizi güçlendirebilir ve halkımızın refahını artırabiliriz."
+ dbo_dhe_rgo.255.a: "Bu bölgeyi [ShowGoodsName('goods_gold')] madenciliği için kullan."
+ dbo_dhe_rgo.255.b: "Bu bölgeyi [ShowGoodsName('goods_gold')] madenciliği için kullanma."
+## 265 location:iznik clay to olives
+ dbo_dhe_rgo.265.title: "[ShowLocationName('iznik')] [Concept('location', 'ilinde')], [ShowGoodsName('olives')] yetiştiriciliği"
+ dbo_dhe_rgo.265.desc: "[ShowLocationName('iznik')] [Concept('location', 'ilinde')|e] [ShowGoodsName('olives')] yetiştiriciliği için uygun bir bölgedir. [ROOT.GetCountry.GetName] olarak, bu ili [ShowGoodsName('olives')] üretimi için kullanabiliriz. [ShowLocationName('iznik')] ilinde [ShowGoodsName('olives')] yetiştiriciliği yaparak, ekonomimizi güçlendirebilir ve halkımızın refahını artırabiliriz."
+ dbo_dhe_rgo.265.a: "Bu bölgeyi [ShowGoodsName('olives')] üretimi için kullan."
+ dbo_dhe_rgo.265.b: "Bu bölgeyi [ShowGoodsName('olives')] üretimi için kullanma."
+## 272 balya clay to rice
+ dbo_dhe_rgo.272.title: "[ShowLocationName('balya')] [Concept('location', 'ilinde')], [ShowGoodsName('rice')] yetiştiriciliği"
+ dbo_dhe_rgo.272.desc: "[ShowLocationName('balya')] [Concept('location', 'ilinde')|e] [ShowGoodsName('rice')] yetiştiriciliği için uygun bir bölgedir. [ROOT.GetCountry.GetName] olarak, bu ili [ShowGoodsName('rice')] üretimi için kullanabiliriz. [ShowLocationName('balya')] ilinde [ShowGoodsName('rice')] yetiştiriciliği yaparak, ekonomimizi güçlendirebilir ve halkımızın refahını artırabiliriz."
+ dbo_dhe_rgo.272.a: "Bu bölgeyi [ShowGoodsName('rice')] üretimi için kullan."
+ dbo_dhe_rgo.272.b: "Bu bölgeyi [ShowGoodsName('rice')] üretimi için kullanma."

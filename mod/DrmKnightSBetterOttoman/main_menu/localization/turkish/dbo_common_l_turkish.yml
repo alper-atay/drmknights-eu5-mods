@@ -25,3 +25,4 @@
  dbo_ulu_otag: "Ulu Otağ"
  dbo_ulu_otag_desc: "Ulu Otağ, Tengri inancında gökyüzünün ve göksel düzenin sembolü olan görkemli bir saltanat çadırıdır. Hükümdarın gücünü ve ilahi hakkını vurgulayan Ulu Otağ, savaş meydanında ordunun yönetim merkezi, barışta ise devletin ihtişamlı bir simgesidir."
  dbo_ulu_otag_maintenance: "$dbo_ulu_otag$"
+ dbo_roto_winner_tt: "[ShowSituationName('rise_of_the_ottomans')] [Concept('situation', 'Durumundan')|e], zaferimizle sona erdirdik!"

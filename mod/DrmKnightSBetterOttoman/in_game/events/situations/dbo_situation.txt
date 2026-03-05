@@ -8,17 +8,6 @@ dbo_situation.1 = {
 	option = {
 		name = dbo_situation.1.a
 		custom_tooltip = {
-			text = dbo_every_owned_location_construct_otag_tt
-			every_owned_location = {
-				construct_building = {
-					building_type = building_type:dbo_otag
-					cost_multiplier = 0
-					cost_multiplier_reason = "otag_must_be_free"
-					instant = yes
-				}
-			}
-		}
-		custom_tooltip = {
 			text = dbo_every_owned_location_add_dbo_ottoman_miracle_tt
 			every_owned_location = {
 				add_location_modifier = {

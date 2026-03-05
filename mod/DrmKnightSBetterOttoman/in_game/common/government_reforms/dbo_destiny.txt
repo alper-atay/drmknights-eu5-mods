@@ -18,7 +18,6 @@
 		num_possible_artists = 1
 		cultures_capacity = 1
 		cultures_capacity_modifier = 0.25
-		global_institution_growth_modifier = 0.1
 		government_reform_slots = 1
 	}
 }
