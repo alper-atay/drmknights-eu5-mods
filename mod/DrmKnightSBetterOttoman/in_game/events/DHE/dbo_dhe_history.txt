@@ -36,6 +36,7 @@ dbo_dhe_history.101 = {
 			limit = {
 				has_heir = yes
 				heir = {
+					is_adult = yes
 					father = character:tur_orhan
 				}
 			}
@@ -49,7 +50,7 @@ dbo_dhe_history.101 = {
 				father = character:tur_orhan
 				birth_location = root.capital
 				age = {
-					min = 24
+					min = 32
 					max = 40
 				}
 				culture = root.culture
@@ -66,6 +67,11 @@ dbo_dhe_history.101 = {
 				mil = {
 					60
 					80
+				}
+				add_character_modifier = {
+					modifier = blocked_from_being_ruler
+					years = modifier_duration_permanent
+					mode = add_and_extend
 				}
 				save_temporary_scope_as = target_father
 			}
@@ -282,15 +288,24 @@ dbo_dhe_history.107 = {
 		character:dbo_yildirim_sultan_bayezid = {
 			is_ruler = yes
 		}
-		country_exists = c:TIM
-		any_neighbor_country = {
-			OR = {
-				tag = TIM
-				is_subject_or_below_of = c:TIM
+		OR = {
+			AND = {
+				country_exists = c:TIM
+				any_neighbor_country = {
+					OR = {
+						tag = TIM
+						is_subject_or_below_of = c:TIM
+					}
+				}
+				has_variable = dbo_yildirim_sultan_bayezid_nightmare
+				var:dbo_yildirim_sultan_bayezid_nightmare = 2
+			}
+			AND = {
+				character:dbo_yildirim_sultan_bayezid = {
+					character_age > 60
+				}
 			}
 		}
-		has_variable = dbo_yildirim_sultan_bayezid_nightmare
-		var:dbo_yildirim_sultan_bayezid_nightmare = 2
 	}
 	option = {
 		name = dbo_dhe_history.107.a
@@ -302,6 +317,115 @@ dbo_dhe_history.107 = {
 		change_variable = {
 			name = dbo_yildirim_sultan_bayezid_nightmare
 			add = 1
+		}
+	}
+}
+
+# Ottoman Interregnum Begin
+dbo_dhe_history.108 = {
+	type = country_event
+	title = dbo_dhe_history.108.title
+	desc = dbo_dhe_history.108.desc
+	historical_info = dbo_dhe_history.108.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_ottoman_interregnum_begin.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1402.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		exists = character:dbo_yildirim_sultan_bayezid
+		character:dbo_yildirim_sultan_bayezid = {
+			is_alive = no
+		}
+	}
+	option = {
+		name = dbo_dhe_history.108.a
+		historical_option = yes
+		dbo_event_extreme_penalty = yes
+		add_country_modifier = {
+			modifier = dbo_ottoman_interregnum
+			years = 11
+			mode = add_and_extend
+		}
+		custom_tooltip = {
+			text = dbo_history_ottoman_interregnum_rebel_progress_gain_tt
+			every_rebel = {
+				add_rebel_progress = rebel_progress_severe_penalty
+			}
+		}
+		custom_tooltip = {
+			text = dbo_history_ottoman_interregnum_tt
+			every_pop = {
+				limit = {
+					owner = root
+				}
+				add_pop_satisfaction = pop_satisfaction_severe_penalty
+			}
+		}
+		set_variable = {
+			name = dbo_ottoman_interregnum_end_year
+			value = {
+				value = current_year
+				add = 10
+			}
+		}
+	}
+}
+
+# Ottoman Interregnum End
+dbo_dhe_history.109 = {
+	type = country_event
+	title = dbo_dhe_history.109.title
+	desc = dbo_dhe_history.109.desc
+	historical_info = dbo_dhe_history.109.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_ottoman_interregnum_end.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1402.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		in_civil_war = no
+		has_variable = dbo_ottoman_interregnum_end_year
+		current_year > var:dbo_ottoman_interregnum_end_year
+		NOT = {
+			has_country_modifier = dbo_ottoman_interregnum
+		}
+	}
+	option = {
+		name = dbo_dhe_history.109.a
+		historical_option = yes
+		dbo_event_extreme_bonus = yes
+		add_country_modifier = {
+			modifier = dbo_ottoman_interregnum_recovery
+			years = 11
+			mode = add_and_extend
+		}
+		custom_tooltip = {
+			text = dbo_history_ottoman_interregnum_end_tt
+			every_pop = {
+				limit = {
+					owner = root
+				}
+				add_pop_satisfaction = pop_satisfaction_severe_bonus
+			}
+		}
+		custom_tooltip = {
+			text = dbo_history_ottoman_interregnum_end_rebel_progress_lose_tt
+			every_rebel = {
+				limit = {
+					rebel_progress > 0
+				}
+				add_rebel_progress = {
+					value = rebel_progress
+					divide = -2
+				}
+			}
 		}
 	}
 }

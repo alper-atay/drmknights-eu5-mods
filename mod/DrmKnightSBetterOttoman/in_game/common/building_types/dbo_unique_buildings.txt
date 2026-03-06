@@ -12,16 +12,7 @@
 	construction_demand = castle_construction
 	build_time = small_fort_building
 	country_potential = {
-		has_law = dbo_military_army_gendarme_law
-	}
-	remove_if = {
-		location = {
-			NOR = {
-				owner ?= {
-					has_law = dbo_military_army_gendarme_law
-				}
-			}
-		}
+		has_or_had_tag = TUR
 	}
 	unique_production_methods = {
 		dbo_karakol_maintenance = {
@@ -53,15 +44,11 @@ dbo_grand_bazaar = {
 	employment_size = trade_employment
 	category = trade_category
 	city = yes
-	town = yes
 	expensive = yes
 	important_for_AI = yes
 	important_for_UI = yes
 	construction_demand = prestige_building_construction
 	build_time = market_build_time
-	location_potential = {
-		is_province_capital = yes
-	}
 	country_potential = {
 		has_reform = government_reform:dbo_destiny_trade_center_grand_bazaar
 	}
@@ -74,8 +61,8 @@ dbo_grand_bazaar = {
 	}
 	modifier = {
 		local_burghers_estate_power = 0.25
-		local_market_access = 0.25
-		local_merchant_power = 1
+		local_market_access = 0.2
+		local_merchant_power = 0.5
 		local_trades_per_burgher = 0.1
 		local_merchant_capacity = 1
 	}
@@ -104,7 +91,6 @@ dbo_grand_mosque = {
 	employment_size = large_religious_building_employment
 	category = religious_category
 	city = yes
-	town = yes
 	expensive = yes
 	important_for_AI = yes
 	important_for_UI = yes
@@ -112,9 +98,6 @@ dbo_grand_mosque = {
 	build_time = large_capital_build_time
 	graphical_tags = {
 		large_religious
-	}
-	location_potential = {
-		is_province_capital = yes
 	}
 	country_potential = {
 		has_or_had_tag = TUR
@@ -192,24 +175,15 @@ dbo_ulu_otag = {
 	pop_type = nobles
 	employment_size = large_noble_employment
 	category = government_category
-	town = yes
 	city = yes
 	expensive = yes
 	important_for_AI = yes
 	important_for_UI = yes
 	construction_demand = prestige_building_construction
 	build_time = small_capital_build_time
-	location_potential = {
-		is_province_capital = yes
-	}
 	country_potential = {
 		has_unlocked_building_trigger = {
 			type = dbo_ulu_otag
-		}
-	}
-	remove_if = {
-		location = {
-			is_province_capital = no
 		}
 	}
 	unique_production_methods = {
@@ -245,7 +219,6 @@ dbo_beylerbeyi = {
 	max_levels = 1
 	category = government_category
 	employment_size = large_noble_employment
-	town = yes
 	city = yes
 	expensive = yes
 	important_for_AI = yes
@@ -270,7 +243,8 @@ dbo_beylerbeyi = {
 		local_proximity_source = 20
 		local_nobles_estate_power = 0.5
 		local_crown_estate_power = 0.1
-		local_monthly_development_modifier = 0.05
+		local_monthly_development = 0.001
+		local_monthly_prosperity = 0.001
 		local_nobles_max_literacy = 10
 		local_max_control = 0.1
 	}

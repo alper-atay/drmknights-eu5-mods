@@ -78,8 +78,8 @@ dbo_dhe_institution.3 = {
 		name = dbo_dhe_institution.3.a
 		add_country_modifier = {
 			modifier = dbo_ottoman_golden_age_of_science
-			years = 50
-			mode = add_and_extend
+			years = 40
+			mode = extend
 		}
 		dbo_event_severe_bonus = yes
 	}
@@ -104,8 +104,8 @@ dbo_dhe_institution.4 = {
 		name = dbo_dhe_institution.4.a
 		add_country_modifier = {
 			modifier = dbo_ottoman_golden_age_of_science
-			years = 50
-			mode = add_and_extend
+			years = 40
+			mode = extend
 		}
 		dbo_event_severe_bonus = yes
 	}
