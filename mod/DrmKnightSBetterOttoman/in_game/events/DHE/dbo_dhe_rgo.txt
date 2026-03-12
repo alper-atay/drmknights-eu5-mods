@@ -516,10 +516,10 @@ dbo_dhe_rgo.272 = {
 ## 274 bigadic clay to tobacco
 dbo_dhe_rgo.274 = {
 	type = country_event
-	# title = dbo_dhe_rgo.274.title
-	# desc = dbo_dhe_rgo.274.desc
+	title = dbo_dhe_rgo.274.title
+	desc = dbo_dhe_rgo.274.desc
+	image = "gfx/interface/icons/trade_goods/illustrations/icon_goods_tobacco.dds"
 	fire_only_once = yes
-	hidden = yes
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.6.1
@@ -534,7 +534,9 @@ dbo_dhe_rgo.274 = {
 			goods = goods:tobacco
 		}
 	}
-	immediate = {
+	option = {
+		name = dbo_dhe_rgo.274.a
+		historical_option = yes
 		location:bigadic = {
 			dbo_change_rgo = {
 				goods = goods:tobacco
@@ -542,17 +544,17 @@ dbo_dhe_rgo.274 = {
 		}
 	}
 	option = {
-		# name = dbo_dhe_rgo.274.a
+		name = dbo_dhe_rgo.274.b
 	}
 }
 
 ## 278 soma lumber to coal
 dbo_dhe_rgo.278 = {
 	type = country_event
-	# title = dbo_dhe_rgo.278.title
-	# desc = dbo_dhe_rgo.278.desc
+	title = dbo_dhe_rgo.278.title
+	desc = dbo_dhe_rgo.278.desc
+	image = "gfx/interface/icons/trade_goods/illustrations/icon_goods_coal.dds"
 	fire_only_once = yes
-	hidden = yes
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.6.1
@@ -564,7 +566,9 @@ dbo_dhe_rgo.278 = {
 			location = location:soma
 		}
 	}
-	immediate = {
+	option = {
+		name = dbo_dhe_rgo.278.a
+		historical_option = yes
 		location:soma = {
 			dbo_change_rgo = {
 				goods = goods:coal
@@ -572,7 +576,7 @@ dbo_dhe_rgo.278 = {
 		}
 	}
 	option = {
-		# name = dbo_dhe_rgo.278.a
+		name = dbo_dhe_rgo.278.b
 	}
 }
 

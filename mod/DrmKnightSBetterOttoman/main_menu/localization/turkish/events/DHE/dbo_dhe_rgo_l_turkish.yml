@@ -64,3 +64,13 @@
  dbo_dhe_rgo.272.desc: "[ShowLocationName('balya')] [Concept('location', 'ilinde')|e] [ShowGoodsName('rice')] yetiştiriciliği için uygun bir bölgedir. [ROOT.GetCountry.GetName] olarak, bu ili [ShowGoodsName('rice')] üretimi için kullanabiliriz. [ShowLocationName('balya')] ilinde [ShowGoodsName('rice')] yetiştiriciliği yaparak, ekonomimizi güçlendirebilir ve halkımızın refahını artırabiliriz."
  dbo_dhe_rgo.272.a: "Bu bölgeyi [ShowGoodsName('rice')] üretimi için kullan."
  dbo_dhe_rgo.272.b: "Bu bölgeyi [ShowGoodsName('rice')] üretimi için kullanma."
+## 274 bigadic clay to tobacco
+ dbo_dhe_rgo.274.title: "[ShowLocationName('bigadic')] [Concept('location', 'ilinde')], [ShowGoodsName('tobacco')] yetiştiriciliği"
+ dbo_dhe_rgo.274.desc: "[ShowLocationName('bigadic')] [Concept('location', 'ilinde')|e] [ShowGoodsName('tobacco')] yetiştiriciliği için uygun bir bölgedir. [ROOT.GetCountry.GetName] olarak, bu ili [ShowGoodsName('tobacco')] üretimi için kullanabiliriz. [ShowLocationName('bigadic')] ilinde [ShowGoodsName('tobacco')] yetiştiriciliği yaparak, ekonomimizi güçlendirebilir ve halkımızın refahını artırabiliriz."
+ dbo_dhe_rgo.274.a: "Bu bölgeyi [ShowGoodsName('tobacco')] üretimi için kullan."
+ dbo_dhe_rgo.274.b: "Bu bölgeyi [ShowGoodsName('tobacco')] üretimi için kullanma."
+## 278 soma lumber to coal
+ dbo_dhe_rgo.278.title: "[ShowLocationName('soma')] [Concept('location', 'ilinde')], [ShowGoodsName('coal')] madenciliği"
+ dbo_dhe_rgo.278.desc: "[ShowLocationName('soma')] [Concept('location', 'ilinde')|e] [ShowGoodsName('coal')] madenciliği için uygun bir bölgedir. [ROOT.GetCountry.GetName] olarak, bu ili [ShowGoodsName('coal')] madenciliği için kullanabiliriz. [ShowLocationName('soma')] ilinde [ShowGoodsName('coal')] madenciliği yaparak, ekonomimizi güçlendirebilir ve halkımızın refahını artırabiliriz."
+ dbo_dhe_rgo.278.a: "Bu bölgeyi [ShowGoodsName('coal')] madenciliği için kullan."
+ dbo_dhe_rgo.278.b: "Bu bölgeyi [ShowGoodsName('coal')] madenciliği için kullanma."

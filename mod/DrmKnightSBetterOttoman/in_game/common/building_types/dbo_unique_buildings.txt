@@ -107,15 +107,6 @@ dbo_grand_mosque = {
 	country_potential = {
 		has_or_had_tag = TUR
 	}
-	remove_if = {
-		location = {
-			NOT = {
-				owner ?= {
-					religion.group = religion_group:muslim
-				}
-			}
-		}
-	}
 	unique_production_methods = {
 		dbo_grand_mosque_maintenance = {
 			paper = 0.2
