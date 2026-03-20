@@ -37,56 +37,6 @@
 	}
 }
 
-dbo_grand_bazaar = {
-	is_special = yes
-	is_foreign = no
-	pop_type = burghers
-	max_levels = 1
-	employment_size = trade_employment
-	category = trade_category
-	rural_settlement = no
-	town = no
-	city = yes
-	expensive = yes
-	important_for_AI = yes
-	important_for_UI = yes
-	construction_demand = prestige_building_construction
-	build_time = market_build_time
-	country_potential = {
-		has_reform = government_reform:dbo_destiny_trade_center_grand_bazaar
-	}
-	remove_if = {
-		location.owner ?= {
-			NOT = {
-				has_reform = government_reform:dbo_destiny_trade_center_grand_bazaar
-			}
-		}
-	}
-	modifier = {
-		local_burghers_estate_power = 0.25
-		local_market_access = 0.2
-		local_trades_per_burgher = 0.2
-		local_merchant_power = 0.5
-		local_merchant_capacity = 0.5
-	}
-	unique_production_methods = {
-		dbo_grand_bazaar_maintenance = {
-			tools = 0.2
-			leather = 0.1
-			pottery = 0.1
-			books = 0.1
-			furniture = 0.1
-			paper = 0.2
-			jewelry = 0.1
-			cloth = 0.2
-			fine_cloth = 0.1
-			produced = goods_gold
-			output = 0.5
-			category = building_maintenance
-		}
-	}
-}
-
 dbo_grand_mosque = {
 	is_foreign = no
 	max_levels = 1
@@ -209,59 +159,4 @@ dbo_ulu_otag = {
 		local_pop_conversion_speed = 0.01
 		local_pop_conversion_speed_modifier = 0.1
 	}
-}
-
-dbo_beylerbeyi = {
-	is_foreign = no
-	pop_type = nobles
-	max_levels = 1
-	category = government_category
-	employment_size = large_noble_employment
-	rural_settlement = no
-	town = no
-	city = yes
-	expensive = yes
-	important_for_AI = yes
-	important_for_UI = yes
-	build_time = large_capital_build_time
-	location_potential = {
-		owner.capital != this
-		is_province_capital = yes
-		has_road_to_capital = yes
-	}
-	country_potential = {
-		has_or_had_tag = TUR
-	}
-	remove_if = {
-		location = {
-			NOR = {
-				is_province_capital = yes
-				has_road_to_capital = no
-			}
-		}
-	}
-	modifier = {
-		local_proximity_source = 20
-		local_nobles_estate_power = 0.5
-		local_crown_estate_power = 0.1
-		local_monthly_development = 0.001
-		local_monthly_prosperity = 0.001
-		local_nobles_max_literacy = 10
-		local_max_control = 0.1
-	}
-	unique_production_methods = {
-		dbo_beylerbeyi_maintenance = {
-			furniture = 0.1
-			tools = 0.05
-			glass = 0.05
-			goods_gold = 0.05
-			marble = 0.05
-			paper = 0.2
-			books = 0.1
-			cloth = 0.1
-			fine_cloth = 0.05
-			category = building_maintenance
-		}
-	}
-	construction_demand = local_governor_construction
 }
