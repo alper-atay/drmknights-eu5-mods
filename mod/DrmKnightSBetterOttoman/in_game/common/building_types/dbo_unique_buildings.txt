@@ -160,3 +160,58 @@ dbo_ulu_otag = {
 		local_pop_conversion_speed_modifier = 0.1
 	}
 }
+
+dbo_beylerbeyi = {
+	is_foreign = no
+	pop_type = nobles
+	max_levels = 1
+	category = government_category
+	employment_size = large_noble_employment
+	rural_settlement = no
+	town = no
+	city = yes
+	expensive = yes
+	important_for_AI = yes
+	important_for_UI = yes
+	build_time = large_capital_build_time
+	location_potential = {
+		owner.capital != this
+		is_province_capital = yes
+		has_road_to_capital = yes
+	}
+	country_potential = {
+		has_or_had_tag = TUR
+	}
+	remove_if = {
+		location = {
+			NOR = {
+				is_province_capital = yes
+				has_road_to_capital = no
+			}
+		}
+	}
+	modifier = {
+		local_proximity_source = 20
+		local_nobles_estate_power = 0.5
+		local_crown_estate_power = 0.1
+		local_monthly_development = 0.001
+		local_monthly_prosperity = 0.001
+		local_nobles_max_literacy = 10
+		local_max_control = 0.1
+	}
+	unique_production_methods = {
+		dbo_beylerbeyi_maintenance = {
+			furniture = 0.1
+			tools = 0.05
+			glass = 0.05
+			goods_gold = 0.05
+			marble = 0.05
+			paper = 0.2
+			books = 0.1
+			cloth = 0.1
+			fine_cloth = 0.05
+			category = building_maintenance
+		}
+	}
+	construction_demand = local_governor_construction
+}
