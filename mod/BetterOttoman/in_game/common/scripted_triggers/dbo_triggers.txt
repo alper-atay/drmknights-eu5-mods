@@ -1,0 +1,24 @@
+﻿dbo_location_is_homeland = {
+	owns = $location$
+	$location$ = {
+		is_core_of = root
+	}
+}
+
+dbo_in_circulation_new_world_goods_trigger = {
+	any_market_present_in_country = {
+		OR = {
+			is_produced_in_market = $goods$
+			is_traded_in_market = $goods$
+		}
+	}
+}
+
+dbo_rgo_replaced_goods = {
+	OR = {
+		root = goods:fish
+		root = goods:clay
+		root = goods:sand
+		root = goods:wool
+	}
+}

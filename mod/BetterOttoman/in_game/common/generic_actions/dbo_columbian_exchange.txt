@@ -1,0 +1,101 @@
+﻿dbo_move_nw_good_to_new_region = {
+	type = situation
+	ai_tick = never
+	ai_tick_frequency = 60
+	automation_tick = never
+	automation_tick_frequency = 12
+	maximum_targets_in_one_tick = 20
+	disallowed_duplicates_of_targets_for_ai = {
+		target_location
+	}
+	potential = {
+	}
+	allow = {
+		has_or_had_tag = TUR
+	}
+	price = price:move_good_to_new_location
+	select_trigger = {
+		looking_for_a = situation
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:columbian_exchange = this
+			situation_is_active = yes
+		}
+	}
+	#goods in scope:goods
+	select_trigger = {
+		looking_for_a = goods
+		target_flag = target_good
+		name = "spread_select_goods"
+		none_available_msg_key = "move_nw_good_to_new_location_no_available_good"
+		column = {
+			data = name
+		}
+		visible = {
+			OR = {
+				this = goods:potato
+				this = goods:tea
+			}
+		}
+	}
+	#Select Region
+	select_trigger = {
+		looking_for_a = region
+		source = actor
+		target_flag = target_region
+		name = "choose_a_region"
+		none_available_msg_key = "no_regions_available"
+		column = {
+			data = name
+		}
+		visible = {
+			scope:actor = {
+				owns_or_has_subject_in = prev
+			}
+		}
+	}
+	select_trigger = {
+		looking_for_a = goods
+		source = actor
+		target_flag = target_replaced_good
+		name = "select_replaced_good"
+		column = {
+			data = name
+		}
+		visible = {
+			scope:actor = {
+				every_owned_location = {
+					limit = {
+						region = scope:target_region
+						exists = raw_material
+						raw_material = {
+							dbo_rgo_replaced_goods = yes
+						}
+					}
+					raw_material = {
+						add_to_list = source
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		scope:actor = {
+			every_owned_location = {
+				limit = {
+					region = scope:target_region
+					is_ownable = yes
+					exists = raw_material
+					raw_material = scope:target_replaced_good
+				}
+				dbo_change_rgo = {
+					goods = scope:target_good
+				}
+			}
+		}
+	}
+}

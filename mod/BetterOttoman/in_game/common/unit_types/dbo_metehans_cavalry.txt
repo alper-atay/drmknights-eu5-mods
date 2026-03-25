@@ -1,0 +1,181 @@
+﻿dbo_metehans_cavalry_age_1 = {
+	is_special = yes
+	category = army_cavalry
+	copy_from = a_age_1_traditions_cavalry
+	upgrades_to_only = dbo_metehans_cavalry_age_2
+	light = yes
+	buildable = yes
+	country_potential = {
+		culture = {
+			has_culture_group = culture_group:turkic_group
+		}
+		current_age_or_later = {
+			age = age_1_traditions
+		}
+	}
+	morale_damage_done = 0.2
+	initiative = 10
+	movement_speed = 1
+	combat = {
+		grasslands = 0.4
+		sparse = 0.4
+	}
+	construction_demand = dbo_metehans_cavalry_age_1_construction
+	maintenance_demand = dbo_metehans_cavalry_age_1_maintenance
+	gfx_tags = {
+		archer_tag
+		light_tag
+	}
+}
+
+dbo_metehans_cavalry_age_2 = {
+	is_special = yes
+	category = army_cavalry
+	copy_from = a_age_2_renaissance_cavalry
+	upgrades_to_only = dbo_metehans_cavalry_age_3
+	light = yes
+	buildable = yes
+	country_potential = {
+		culture = {
+			has_culture_group = culture_group:turkic_group
+		}
+		current_age_or_later = {
+			age = age_2_renaissance
+		}
+	}
+	morale_damage_done = 0.25
+	initiative = 10
+	movement_speed = 1.25
+	combat = {
+		grasslands = 0.4
+		sparse = 0.4
+	}
+	construction_demand = dbo_metehans_cavalry_age_2_construction
+	maintenance_demand = dbo_metehans_cavalry_age_2_maintenance
+	gfx_tags = {
+		longbow_tag
+		archer_tag
+		light_tag
+	}
+}
+
+dbo_metehans_cavalry_age_3 = {
+	is_special = yes
+	category = army_cavalry
+	copy_from = a_age_3_discovery_cavalry
+	upgrades_to_only = dbo_metehans_cavalry_age_4
+	light = yes
+	buildable = yes
+	country_potential = {
+		culture = {
+			has_culture_group = culture_group:turkic_group
+		}
+		current_age_or_later = {
+			age = age_3_discovery
+		}
+	}
+	morale_damage_done = 0.3
+	initiative = 10
+	movement_speed = 1.5
+	combat = {
+		grasslands = 0.4
+		sparse = 0.4
+	}
+	construction_demand = dbo_metehans_cavalry_age_3_construction
+	maintenance_demand = dbo_metehans_cavalry_age_3_maintenance
+	gfx_tags = {
+		archer_tag
+		musket_tag
+		light_tag
+	}
+}
+
+dbo_metehans_cavalry_age_4 = {
+	is_special = yes
+	category = army_cavalry
+	copy_from = a_age_4_reformation_cavalry
+	upgrades_to_only = dbo_metehans_cavalry_age_5
+	light = yes
+	buildable = yes
+	country_potential = {
+		culture = {
+			has_culture_group = culture_group:turkic_group
+		}
+		current_age_or_later = {
+			age = age_4_reformation
+		}
+	}
+	morale_damage_done = 0.35
+	initiative = 10
+	movement_speed = 1.75
+	combat = {
+		grasslands = 0.4
+		sparse = 0.4
+	}
+	construction_demand = dbo_metehans_cavalry_age_4_construction
+	maintenance_demand = dbo_metehans_cavalry_age_4_maintenance
+	gfx_tags = {
+		pistol_tag
+		light_tag
+	}
+}
+
+dbo_metehans_cavalry_age_5 = {
+	is_special = yes
+	category = army_cavalry
+	copy_from = a_age_5_absolutism_cavalry
+	upgrades_to_only = dbo_metehans_cavalry_age_6
+	light = yes
+	buildable = yes
+	country_potential = {
+		culture = {
+			has_culture_group = culture_group:turkic_group
+		}
+		current_age_or_later = {
+			age = age_5_absolutism
+		}
+	}
+	morale_damage_done = 0.4
+	initiative = 10
+	movement_speed = 2
+	combat = {
+		grasslands = 0.4
+		sparse = 0.4
+	}
+	construction_demand = dbo_metehans_cavalry_age_5_construction
+	maintenance_demand = dbo_metehans_cavalry_age_5_maintenance
+	gfx_tags = {
+		pistol_tag
+		light_tag
+	}
+}
+
+dbo_metehans_cavalry_age_6 = {
+	is_special = yes
+	category = army_cavalry
+	copy_from = a_age_6_revolutions_cavalry
+	upgrades_to_only = dbo_metehans_cavalry_age_6
+	light = yes
+	buildable = yes
+	country_potential = {
+		culture = {
+			has_culture_group = culture_group:turkic_group
+		}
+		current_age_or_later = {
+			age = age_6_revolutions
+		}
+	}
+	morale_damage_done = 0.5
+	initiative = 10
+	movement_speed = 2
+	combat = {
+		grasslands = 0.4
+		sparse = 0.4
+	}
+	construction_demand = dbo_metehans_cavalry_age_6_construction
+	maintenance_demand = dbo_metehans_cavalry_age_6_maintenance
+	gfx_tags = {
+		rifle_tag
+		light_tag
+	}
+}

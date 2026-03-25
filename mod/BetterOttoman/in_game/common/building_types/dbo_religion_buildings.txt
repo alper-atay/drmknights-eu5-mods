@@ -1,0 +1,49 @@
+﻿dbo_grand_mosque = {
+	is_foreign = no
+	max_levels = 1
+	pop_type = clergy
+	employment_size = large_religious_building_employment
+	category = religious_category
+	rural_settlement = no
+	town = no
+	city = yes
+	expensive = yes
+	important_for_AI = yes
+	important_for_UI = yes
+	construction_demand = prestige_building_construction
+	build_time = large_capital_build_time
+	graphical_tags = {
+		large_religious
+	}
+	location_potential = {
+		is_province_capital = yes
+	}
+	country_potential = {
+		religion.group = religion_group:muslim
+	}
+	remove_if = {
+		location = {
+			NOR = {
+				owner ?= {
+					religion.group = religion_group:muslim
+				}
+				is_province_capital = yes
+			}
+		}
+	}
+	unique_production_methods = {
+		dbo_grand_mosque_maintenance = {
+			paper = 0.2
+			books = 0.1
+			cloth = 0.2
+			fine_cloth = 0.1
+			category = building_maintenance
+		}
+	}
+	modifier = {
+		local_clergy_estate_power = 0.25
+		local_clergy_max_literacy = 10
+		local_pop_conversion_speed = 0.02
+		local_tribal_promotion = 0.1
+	}
+}

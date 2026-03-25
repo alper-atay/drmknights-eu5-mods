@@ -1,0 +1,112 @@
+﻿namespace = dbo_dhe_institution
+dbo_dhe_institution.1 = {
+	type = country_event
+	title = dbo_dhe_institution.1.title
+	desc = dbo_dhe_institution.1.desc
+	image = "gfx/interface/illustrations/institutions/professional_armies.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		knows_about_institution = institution:professional_armies
+		NOT = {
+			has_embraced_institution = institution:professional_armies
+		}
+	}
+	option = {
+		name = dbo_dhe_institution.1.a
+		every_owned_non_rural_location = {
+			change_institution_progress = {
+				type = institution:professional_armies
+				value = institution_progress_extreme_bonus
+			}
+		}
+		dbo_event_severe_bonus = yes
+	}
+}
+
+dbo_dhe_institution.2 = {
+	type = country_event
+	title = dbo_dhe_institution.2.title
+	desc = dbo_dhe_institution.2.desc
+	image = "gfx/interface/illustrations/institutions/meritocracy.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		knows_about_institution = institution:meritocracy
+		NOT = {
+			has_embraced_institution = institution:meritocracy
+		}
+	}
+	option = {
+		name = dbo_dhe_institution.2.a
+		every_owned_non_rural_location = {
+			change_institution_progress = {
+				type = institution:meritocracy
+				value = institution_progress_extreme_bonus
+			}
+		}
+		dbo_event_severe_bonus = yes
+	}
+}
+
+dbo_dhe_institution.3 = {
+	type = country_event
+	title = dbo_dhe_institution.3.title
+	desc = dbo_dhe_institution.3.desc
+	image = "gfx/interface/illustrations/institutions/professional_armies.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		has_embraced_institution = institution:professional_armies
+	}
+	option = {
+		name = dbo_dhe_institution.3.a
+		add_country_modifier = {
+			modifier = dbo_ottoman_golden_age_of_science
+			years = 40
+			mode = extend
+		}
+		dbo_event_severe_bonus = yes
+	}
+}
+
+dbo_dhe_institution.4 = {
+	type = country_event
+	title = dbo_dhe_institution.4.title
+	desc = dbo_dhe_institution.4.desc
+	image = "gfx/interface/illustrations/institutions/meritocracy.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		has_embraced_institution = institution:meritocracy
+	}
+	option = {
+		name = dbo_dhe_institution.4.a
+		add_country_modifier = {
+			modifier = dbo_ottoman_golden_age_of_science
+			years = 40
+			mode = extend
+		}
+		dbo_event_severe_bonus = yes
+	}
+}

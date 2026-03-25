@@ -1,0 +1,96 @@
+﻿dbo_otag = {
+	is_special = yes
+	is_foreign = no
+	max_levels = 10
+	pop_type = soldiers
+	employment_size = religious_building_employment
+	category = military_category
+	rural_settlement = yes
+	town = no
+	city = no
+	important_for_AI = yes
+	important_for_UI = yes
+	construction_demand = soldier_building_construction
+	build_time = 90
+	country_potential = {
+		OR = {
+			religion = religion:tengri
+			has_or_had_tag = TUR
+			has_or_had_tag = TIM
+		}
+	}
+	unique_production_methods = {
+		dbo_otag_maintenance = {
+			weaponry = 0.01
+			leather = 0.01
+			horses = 0.01
+			cloth = 0.01
+			category = building_maintenance
+		}
+	}
+	modifier = {
+		movement_cost = -0.01
+		local_manpower = 0.001
+		local_cultural_tradition = 0.01
+		local_cultural_influence = 0.01
+		local_pop_assimilation_speed = 0.001
+		local_pop_conversion_speed = 0.001
+		scaled_gold_to_building_owner = 0.01
+	}
+}
+
+dbo_ulu_otag = {
+	is_special = yes
+	is_foreign = no
+	max_levels = 1
+	pop_type = nobles
+	employment_size = large_noble_employment
+	category = government_category
+	rural_settlement = no
+	town = no
+	city = yes
+	expensive = yes
+	important_for_AI = yes
+	important_for_UI = yes
+	construction_demand = prestige_building_construction
+	build_time = small_capital_build_time
+	location_potential = {
+		is_province_capital = yes
+	}
+	country_potential = {
+		OR = {
+			religion = religion:tengri
+			has_or_had_tag = TUR
+			has_or_had_tag = TIM
+		}
+	}
+	remove_if = {
+		location = {
+			is_province_capital = no
+		}
+	}
+	unique_production_methods = {
+		dbo_ulu_otag_maintenance = {
+			weaponry = 0.1
+			leather = 0.1
+			horses = 0.1
+			cloth = 0.1
+			furniture = 0.1
+			fine_cloth = 0.1
+			goods_gold = 0.1
+			category = building_maintenance
+		}
+	}
+	modifier = {
+		movement_cost = -0.1
+		local_manpower = 0.01
+		local_proximity_source = 10
+		local_max_control = 0.1
+		local_distance_from_capital_speed_propagation = 0.1
+		local_cultural_tradition = 0.1
+		local_cultural_influence = 0.1
+		local_pop_assimilation_speed = 0.01
+		local_pop_conversion_speed = 0.01
+		scaled_gold_to_building_owner = 0.1
+	}
+}
