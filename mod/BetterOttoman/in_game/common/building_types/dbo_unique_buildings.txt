@@ -21,6 +21,7 @@
 		location = {
 			NOR = {
 				is_province_capital = yes
+				has_reform = government_reform:anatolian_beylik
 			}
 		}
 	}

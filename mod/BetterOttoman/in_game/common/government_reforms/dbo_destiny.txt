@@ -119,14 +119,62 @@ dbo_destiny_ottoman_empire = {
 		}
 	}
 	country_modifier = {
+		government_reform_slots = 1
 		global_integration_speed_modifier = 0.25
 		government_size = 1
 		auto_slave_raid_different_religion = yes
-		government_reform_slots = 1
 		cultures_capacity_modifier = 0.25
 		global_crown_estate_power = 0.1
 		monthly_legitimacy = 0.1
 		monthly_prestige = 0.1
 		stability_investment = 0.1
+	}
+}
+
+dbo_destiny_children_of_tengri = {
+	unique = yes
+	potential = {
+		has_unlocked_government_reform_trigger = {
+			type = dbo_destiny_children_of_tengri
+		}
+		religion = religion:tengri
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = government_reform
+			type = dbo_destiny_children_of_tengri
+		}
+	}
+	country_modifier = {
+		government_reform_slots = 1
+		auto_slave_raid_different_religion = yes
+		government_size = 2
+		tolerance_own = 5
+		tolerance_heretic = -5
+		tolerance_heathen = -5
+		cultures_capacity_modifier = -0.9
+		monthly_legitimacy = 0.1
+		monthly_prestige = 0.1
+		stability_investment = 0.1
+	}
+}
+
+dbo_destiny_wing_of_turk = {
+	unique = yes
+	potential = {
+		has_unlocked_government_reform_trigger = {
+			type = dbo_destiny_wing_of_turk
+		}
+		religion = religion:tengri
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = government_reform
+			type = dbo_destiny_wing_of_turk
+		}
+	}
+	country_modifier = {
+		government_reform_slots = 1
+		global_horses_output_modifier = 1
 	}
 }

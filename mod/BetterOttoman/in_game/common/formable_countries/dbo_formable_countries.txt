@@ -7,11 +7,11 @@
 	tag = TUR
 	color = map_GKTUR
 	potential = {
-		tag = TUR
+		culture = {
+			has_culture_group = culture_group:turkic_group
+		}
 	}
 	allow = {
-		always = no
-		tag = TUR
 		culture = {
 			has_culture_group = culture_group:turkic_group
 		}

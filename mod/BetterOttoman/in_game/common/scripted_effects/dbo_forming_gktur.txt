@@ -1,8 +1,8 @@
 ﻿dbo_forming_gktur = {
 	dbo_forming_gktur_religion = yes
 	dbo_forming_gktur_laws_and_policies = yes
+	dbo_forming_gktur_government_reforms = yes
 	dbo_forming_gktur_buildings = yes
-	dbo_forming_gktur_unlock_units = yes
 	dbo_forming_gktur_location_add_core = yes
 }
 
@@ -15,7 +15,7 @@ dbo_forming_gktur_religion = {
 	set_court_language = culture.dialect
 	set_liturgical_language = culture.dialect
 	custom_tooltip = {
-		text = dbo_every_turkic_group_pop_change_religion_tt
+		text = dbo_every_turkic_and_mongolian_group_pop_change_religion_tt
 		every_country = {
 			every_pop = {
 				limit = {
@@ -49,6 +49,9 @@ dbo_forming_gktur_laws_and_policies = {
 		lock_policy_effect = {
 			type = dbo_military_army_fundamental_kapikulu_ocaklari_policy
 		}
+		lock_policy_effect = {
+			type = dbo_destiny_legal_code_kanunname_i_al_i_osman_policy
+		}
 		unlock_policy_effect = {
 			type = dbo_military_army_fundamental_metehan_policy
 		}
@@ -58,10 +61,47 @@ dbo_forming_gktur_laws_and_policies = {
 		unlock_policy_effect = {
 			type = dbo_military_army_gendarme_yargan_policy
 		}
+		unlock_policy_effect = {
+			type = dbo_destiny_believe_in_tengri_policy
+		}
 	}
 	add_policy = policy:dbo_military_army_fundamental_metehan_policy
 	add_policy = policy:dbo_military_army_cavalry_metehans_policy
 	add_policy = policy:dbo_military_army_gendarme_yargan_policy
+	add_policy = policy:dbo_destiny_believe_in_tengri_policy
+}
+
+dbo_forming_gktur_government_reforms = {
+	hidden_effect = {
+		lock_government_reform_effect = {
+			type = anatolian_beylik
+		}
+		lock_government_reform_effect = {
+			type = dbo_destiny_cultural_capital_constantinople
+		}
+		lock_government_reform_effect = {
+			type = dbo_destiny_trade_center_grand_bazaar
+		}
+		lock_government_reform_effect = {
+			type = dbo_destiny_legacy_of_seljuks
+		}
+		lock_government_reform_effect = {
+			type = dbo_destiny_ottoman_empire
+		}
+		unlock_government_reform_effect = {
+			type = dbo_destiny_children_of_tengri
+		}
+		unlock_government_reform_effect = {
+			type = dbo_destiny_wing_of_turk
+		}
+	}
+	remove_reform = government_reform:anatolian_beylik
+	remove_reform = government_reform:dbo_destiny_cultural_capital_constantinople
+	remove_reform = government_reform:dbo_destiny_trade_center_grand_bazaar
+	remove_reform = government_reform:dbo_destiny_legacy_of_seljuks
+	remove_reform = government_reform:dbo_destiny_ottoman_empire
+	add_reform = government_reform:dbo_destiny_children_of_tengri
+	add_reform = government_reform:dbo_destiny_wing_of_turk
 }
 
 dbo_forming_gktur_buildings = {
@@ -85,57 +125,6 @@ dbo_forming_gktur_buildings = {
 					instant = yes
 				}
 			}
-		}
-	}
-}
-
-dbo_forming_gktur_unlock_units = {
-	if = {
-		limit = {
-			current_age = age_1_traditions
-		}
-		unlock_unit_effect = {
-			type = dbo_metehans_cavalry_age_1
-		}
-	}
-	if = {
-		limit = {
-			current_age = age_2_renaissance
-		}
-		unlock_unit_effect = {
-			type = dbo_metehans_cavalry_age_2
-		}
-	}
-	if = {
-		limit = {
-			current_age = age_3_discovery
-		}
-		unlock_unit_effect = {
-			type = dbo_metehans_cavalry_age_3
-		}
-	}
-	if = {
-		limit = {
-			current_age = age_4_reformation
-		}
-		unlock_unit_effect = {
-			type = dbo_metehans_cavalry_age_4
-		}
-	}
-	if = {
-		limit = {
-			current_age = age_5_absolutism
-		}
-		unlock_unit_effect = {
-			type = dbo_metehans_cavalry_age_5
-		}
-	}
-	if = {
-		limit = {
-			current_age = age_6_revolutions
-		}
-		unlock_unit_effect = {
-			type = dbo_metehans_cavalry_age_6
 		}
 	}
 }
