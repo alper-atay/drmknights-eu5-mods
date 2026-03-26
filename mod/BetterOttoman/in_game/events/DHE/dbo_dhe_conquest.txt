@@ -14,10 +14,7 @@ dbo_dhe_conquest.11 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		own_entire_province = province_definition:edirne_province
-		own_entire_province = province_definition:dardanelles_province
-		own_entire_province = province_definition:constantinople_province
-		num_locations >= 250
+		dbo_conquest_challenge_check_anatolian_turks = yes
 	}
 	option = {
 		name = dbo_dhe_conquest.11.a
@@ -70,9 +67,7 @@ dbo_dhe_conquest.21 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		own_entire_province = province_definition:edirne_province
-		own_entire_province = province_definition:dardanelles_province
-		own_entire_province = province_definition:constantinople_province
+		dbo_conquest_challenge_check_rumelia = yes
 	}
 	option = {
 		name = dbo_dhe_conquest.21.a
@@ -124,8 +119,7 @@ dbo_dhe_conquest.31 = {
 		monthly_chance = 20
 	}
 	trigger = {
-		has_policy = dbo_conquest_stamp_anatolian_turks_policy
-		has_policy = dbo_conquest_stamp_rumelia_policy
+		dbo_conquest_challenge_check_fertile_crescent = yes
 	}
 	option = {
 		name = dbo_dhe_conquest.31.a
@@ -178,9 +172,7 @@ dbo_dhe_conquest.41 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		has_policy = dbo_conquest_stamp_anatolian_turks_policy
-		has_policy = dbo_conquest_stamp_rumelia_policy
-		has_policy = dbo_conquest_stamp_fertile_crescent_policy
+		dbo_conquest_challenge_check_arabian_peninsula = yes
 	}
 	option = {
 		name = dbo_dhe_conquest.31.a
@@ -210,10 +202,10 @@ dbo_dhe_conquest.42 = {
 	option = {
 		name = dbo_dhe_conquest_common_option
 		historical_option = yes
-		unlock_government_reform_effect = {
-			type = dbo_conquest_arabian_peninsula_stamp
+		unlock_policy_effect = {
+			type = dbo_conquest_stamp_fertile_crescent_policy
 		}
-		add_reform = government_reform:dbo_conquest_arabian_peninsula_stamp
+		add_policy = policy:dbo_conquest_stamp_fertile_crescent_policy
 		dbo_event_extreme_bonus = yes
 	}
 }
@@ -233,9 +225,7 @@ dbo_dhe_conquest.51 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		has_reform = government_reform:dbo_conquest_anatolian_turks_stamp
-		has_reform = government_reform:dbo_conquest_rumelia_stamp
-		has_reform = government_reform:dbo_conquest_fertile_crescent_stamp
+		dbo_conquest_challenge_check_nile_river = yes
 	}
 	option = {
 		name = dbo_dhe_conquest.51.a
@@ -265,10 +255,10 @@ dbo_dhe_conquest.52 = {
 	option = {
 		name = dbo_dhe_conquest_common_option
 		historical_option = yes
-		unlock_government_reform_effect = {
-			type = dbo_conquest_nile_river_stamp
+		unlock_policy_effect = {
+			type = dbo_conquest_stamp_nile_river_policy
 		}
-		add_reform = government_reform:dbo_conquest_nile_river_stamp
+		add_policy = policy:dbo_conquest_stamp_nile_river_policy
 		dbo_event_extreme_bonus = yes
 	}
 }
@@ -288,12 +278,11 @@ dbo_dhe_conquest.61 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		has_reform = government_reform:dbo_conquest_anatolian_turks_stamp
+		dbo_conquest_challenge_check_black_sea = yes
 	}
 	option = {
 		name = dbo_dhe_conquest.61.a
 		historical_option = yes
-		set_variable = dbo_conquest_black_sea_challenged
 		dbo_event_mild_bonus = yes
 	}
 }
@@ -318,10 +307,10 @@ dbo_dhe_conquest.62 = {
 	option = {
 		name = dbo_dhe_conquest_common_option
 		historical_option = yes
-		unlock_government_reform_effect = {
-			type = dbo_conquest_black_sea_stamp
+		unlock_policy_effect = {
+			type = dbo_conquest_stamp_black_sea_policy
 		}
-		add_reform = government_reform:dbo_conquest_black_sea_stamp
+		add_policy = policy:dbo_conquest_stamp_black_sea_policy
 		dbo_event_extreme_bonus = yes
 	}
 }
@@ -341,13 +330,11 @@ dbo_dhe_conquest.71 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		has_reform = government_reform:dbo_conquest_rumelia_stamp
-		has_reform = government_reform:dbo_conquest_black_sea_stamp
+		dbo_conquest_challenge_check_eastern_gate = yes
 	}
 	option = {
 		name = dbo_dhe_conquest.71.a
 		historical_option = yes
-		set_variable = dbo_conquest_europe_eastern_gate_challenged
 		dbo_event_mild_bonus = yes
 	}
 }
@@ -372,10 +359,10 @@ dbo_dhe_conquest.72 = {
 	option = {
 		name = dbo_dhe_conquest_common_option
 		historical_option = yes
-		unlock_government_reform_effect = {
-			type = dbo_conquest_europe_eastern_gate_stamp
+		unlock_policy_effect = {
+			type = dbo_conquest_stamp_eastern_gate_policy
 		}
-		add_reform = government_reform:dbo_conquest_europe_eastern_gate_stamp
+		add_policy = policy:dbo_conquest_stamp_eastern_gate_policy
 		dbo_event_extreme_bonus = yes
 	}
 }
@@ -394,13 +381,11 @@ dbo_dhe_conquest.81 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		has_reform = government_reform:dbo_conquest_anatolian_turks_stamp
-		has_reform = government_reform:dbo_conquest_rumelia_stamp
+		dbo_conquest_challenge_check_turkish_renaissance = yes
 	}
 	option = {
 		name = dbo_dhe_conquest.81.a
 		historical_option = yes
-		set_variable = dbo_conquest_turkish_renaissance_challenged
 		dbo_event_mild_bonus = yes
 	}
 }
@@ -424,10 +409,10 @@ dbo_dhe_conquest.82 = {
 	option = {
 		name = dbo_dhe_conquest_common_option
 		historical_option = yes
-		unlock_government_reform_effect = {
-			type = dbo_conquest_turkish_renaissance_stamp
+		unlock_policy_effect = {
+			type = dbo_conquest_stamp_turkish_renaissance_policy
 		}
-		add_reform = government_reform:dbo_conquest_turkish_renaissance_stamp
+		add_policy = policy:dbo_conquest_stamp_turkish_renaissance_policy
 		dbo_event_extreme_bonus = yes
 	}
 }
@@ -446,16 +431,11 @@ dbo_dhe_conquest.91 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		has_reform = government_reform:dbo_conquest_anatolian_turks_stamp
-		has_reform = government_reform:dbo_conquest_rumelia_stamp
-		has_reform = government_reform:dbo_conquest_black_sea_stamp
-		has_reform = government_reform:dbo_conquest_steep_mountain_stamp
-		has_reform = government_reform:dbo_conquest_fertile_crescent_stamp
+		dbo_conquest_challenge_check_pearl_of_east = yes
 	}
 	option = {
 		name = dbo_dhe_conquest.91.a
 		historical_option = yes
-		set_variable = dbo_conquest_pearl_of_east_challenged
 		dbo_event_mild_bonus = yes
 	}
 }
@@ -479,10 +459,10 @@ dbo_dhe_conquest.92 = {
 	option = {
 		name = dbo_dhe_conquest_common_option
 		historical_option = yes
-		unlock_government_reform_effect = {
-			type = dbo_conquest_pearl_of_east_stamp
+		unlock_policy_effect = {
+			type = dbo_conquest_stamp_pearl_of_east_policy
 		}
-		add_reform = government_reform:dbo_conquest_pearl_of_east_stamp
+		add_policy = policy:dbo_conquest_stamp_pearl_of_east_policy
 		dbo_event_extreme_bonus = yes
 	}
 }
@@ -502,14 +482,11 @@ dbo_dhe_conquest.101 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		has_reform = government_reform:dbo_conquest_anatolian_turks_stamp
-		has_reform = government_reform:dbo_conquest_fertile_crescent_stamp
-		has_reform = government_reform:dbo_conquest_nile_river_stamp
+		dbo_conquest_challenge_check_maghreb = yes
 	}
 	option = {
 		name = dbo_dhe_conquest.101.a
 		historical_option = yes
-		set_variable = dbo_conquest_maghreb_challenged
 		dbo_event_mild_bonus = yes
 	}
 }
@@ -534,10 +511,10 @@ dbo_dhe_conquest.102 = {
 	option = {
 		name = dbo_dhe_conquest_common_option
 		historical_option = yes
-		unlock_government_reform_effect = {
-			type = dbo_conquest_maghreb_stamp
+		unlock_policy_effect = {
+			type = dbo_conquest_stamp_maghreb_policy
 		}
-		add_reform = government_reform:dbo_conquest_maghreb_stamp
+		add_policy = policy:dbo_conquest_stamp_maghreb_policy
 		dbo_event_extreme_bonus = yes
 	}
 }
@@ -557,7 +534,7 @@ dbo_dhe_conquest.111 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		has_reform = government_reform:dbo_conquest_anatolian_turks_stamp
+		dbo_conquest_challenge_check_steep_mountain = yes
 	}
 	option = {
 		name = dbo_dhe_conquest.111.a
@@ -587,10 +564,10 @@ dbo_dhe_conquest.112 = {
 	option = {
 		name = dbo_dhe_conquest_common_option
 		historical_option = yes
-		unlock_government_reform_effect = {
-			type = dbo_conquest_steep_mountain_stamp
+		unlock_policy_effect = {
+			type = dbo_conquest_stamp_steep_mountain_policy
 		}
-		add_reform = government_reform:dbo_conquest_steep_mountain_stamp
+		add_policy = policy:dbo_conquest_stamp_steep_mountain_policy
 		dbo_event_extreme_bonus = yes
 	}
 }

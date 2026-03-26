@@ -1,0 +1,61 @@
+dbo_conquest_challenge_check_anatolian_turks = {
+	own_entire_province = province_definition:edirne_province
+	own_entire_province = province_definition:dardanelles_province
+	own_entire_province = province_definition:constantinople_province
+	num_locations >= 250
+}
+
+dbo_conquest_challenge_check_rumelia = {
+	own_entire_province = province_definition:edirne_province
+	own_entire_province = province_definition:dardanelles_province
+	own_entire_province = province_definition:constantinople_province
+}
+
+dbo_conquest_challenge_check_fertile_crescent = {
+	has_policy = dbo_conquest_stamp_anatolian_turks_policy
+	has_policy = dbo_conquest_stamp_rumelia_policy
+}
+
+dbo_conquest_challenge_check_arabian_peninsula = {
+	has_policy = dbo_conquest_stamp_anatolian_turks_policy
+	has_policy = dbo_conquest_stamp_rumelia_policy
+	has_policy = dbo_conquest_stamp_fertile_crescent_policy
+}
+
+dbo_conquest_challenge_check_nile_river = {
+	has_policy = dbo_conquest_stamp_anatolian_turks_policy
+	has_policy = dbo_conquest_stamp_rumelia_policy
+	has_policy = dbo_conquest_stamp_fertile_crescent_policy
+}
+
+dbo_conquest_challenge_check_black_sea = {
+	has_policy = dbo_conquest_stamp_anatolian_turks_policy
+}
+
+dbo_conquest_challenge_check_eastern_gate = {
+	has_policy = dbo_conquest_stamp_rumelia_policy
+	has_policy = dbo_conquest_stamp_black_sea_policy
+}
+
+dbo_conquest_challenge_check_turkish_renaissance = {
+	has_policy = dbo_conquest_stamp_anatolian_turks_policy
+	has_policy = dbo_conquest_stamp_rumelia_policy
+}
+
+dbo_conquest_challenge_check_pearl_of_east = {
+	has_policy = dbo_conquest_stamp_anatolian_turks_policy
+	has_policy = dbo_conquest_stamp_rumelia_policy
+	has_policy = dbo_conquest_stamp_black_sea_policy
+	has_policy = dbo_conquest_stamp_steep_mountain_policy
+	has_policy = dbo_conquest_stamp_fertile_crescent_policy
+}
+
+dbo_conquest_challenge_check_maghreb = {
+	has_policy = dbo_conquest_stamp_anatolian_turks_policy
+	has_policy = dbo_conquest_stamp_fertile_crescent_policy
+	has_policy = dbo_conquest_stamp_nile_river_policy
+}
+
+dbo_conquest_challenge_check_steep_mountain = {
+	has_policy = dbo_conquest_stamp_anatolian_turks_policy
+}

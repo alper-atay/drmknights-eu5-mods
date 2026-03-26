@@ -4,14 +4,14 @@
 	name = GKTUR
 	flag = GKTUR
 	adjective = GKTUR_ADJ
-	tag = GKTUR
+	tag = TUR
 	color = map_GKTUR
 	potential = {
-		culture = {
-			has_culture_group = culture_group:turkic_group
-		}
+		tag = TUR
 	}
 	allow = {
+		always = no
+		tag = TUR
 		culture = {
 			has_culture_group = culture_group:turkic_group
 		}
@@ -19,9 +19,9 @@
 			text = dbo_roto_winner_tt
 			has_variable = rise_of_the_ottomans_winner_variable
 		}
-		has_reform = government_reform:dbo_conquest_anatolian_turks_stamp
-		has_reform = government_reform:dbo_conquest_black_sea_stamp
-		has_reform = government_reform:dbo_conquest_steep_mountain_stamp
+		has_policy = dbo_conquest_stamp_anatolian_turks_policy
+		has_policy = dbo_conquest_stamp_black_sea_policy
+		has_policy = dbo_conquest_stamp_steep_mountain_policy
 	}
 	provinces = {
 		constantinople_province

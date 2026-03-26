@@ -1,0 +1,35 @@
+﻿dbo_sahni_seman_madrasa = {
+	is_special = yes
+	is_foreign = no
+	pop_type = clergy
+	max_levels = 1
+	category = cultural_category
+	employment_size = 1
+	city = yes
+	expensive = yes
+	build_time = large_cultural_building_time
+	location_potential = {
+		is_capital = yes
+	}
+	country_potential = {
+		has_unlocked_building_trigger = {
+			type = dbo_sahni_seman_madrasa
+		}
+	}
+	remove_if = {
+		is_no_longer_capital = yes
+	}
+	modifier = {
+		local_max_literacy = 5
+		local_monthly_literacy = 0.1
+		local_cultural_tradition = 0.2
+	}
+	capital_country_modifier = {
+		monthly_towards_innovative = societal_value_monthly_move
+		research_speed_modifier = 0.05
+	}
+	possible_production_methods = {
+		library_maintenance
+	}
+	construction_demand = library_construction
+}

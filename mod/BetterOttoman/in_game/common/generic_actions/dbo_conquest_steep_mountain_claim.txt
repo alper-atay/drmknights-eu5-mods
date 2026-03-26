@@ -7,7 +7,7 @@
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			has_variable = dbo_conquest_steep_mountain_challenged
+			dbo_conquest_challenge_check_steep_mountain = yes
 		}
 	}
 	ai_tick = monthly

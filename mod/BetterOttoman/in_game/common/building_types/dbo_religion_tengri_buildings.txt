@@ -2,7 +2,7 @@
 	is_special = yes
 	is_foreign = no
 	max_levels = 10
-	pop_type = soldiers
+	pop_type = clergy
 	employment_size = religious_building_employment
 	category = military_category
 	rural_settlement = yes
@@ -13,10 +13,8 @@
 	construction_demand = soldier_building_construction
 	build_time = 90
 	country_potential = {
-		OR = {
-			religion = religion:tengri
-			has_or_had_tag = TUR
-			has_or_had_tag = TIM
+		has_unlocked_building_trigger = {
+			type = dbo_otag
 		}
 	}
 	unique_production_methods = {
@@ -25,6 +23,7 @@
 			leather = 0.01
 			horses = 0.01
 			cloth = 0.01
+			incense = 0.001
 			category = building_maintenance
 		}
 	}
@@ -56,7 +55,9 @@ dbo_ulu_otag = {
 		is_province_capital = yes
 	}
 	country_potential = {
-		religion = religion:tengri
+		has_unlocked_building_trigger = {
+			type = dbo_ulu_otag
+		}
 	}
 	remove_if = {
 		location = {
@@ -69,9 +70,10 @@ dbo_ulu_otag = {
 			leather = 0.1
 			horses = 0.1
 			cloth = 0.1
-			furniture = 0.1
-			fine_cloth = 0.1
-			goods_gold = 0.1
+			incense = 0.01
+			furniture = 0.05
+			fine_cloth = 0.05
+			goods_gold = 0.05
 			category = building_maintenance
 		}
 	}
