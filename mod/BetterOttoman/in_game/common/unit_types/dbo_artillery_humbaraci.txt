@@ -11,6 +11,9 @@
 	artillery_barrage = 1
 	country_potential = {
 		has_policy = dbo_military_army_artillery_topcu_ocagi_policy
+		has_unlocked_unit_trigger = {
+			type = a_houfnice
+		}
 	}
 }
 
@@ -27,6 +30,9 @@ dbo_a_age_3_discovery_humbaraci = {
 	artillery_barrage = 2
 	country_potential = {
 		has_policy = dbo_military_army_artillery_topcu_ocagi_policy
+		has_unlocked_unit_trigger = {
+			type = a_falconet
+		}
 	}
 }
 
@@ -43,6 +49,9 @@ dbo_a_age_4_reformation_humbaraci = {
 	artillery_barrage = 3
 	country_potential = {
 		has_policy = dbo_military_army_artillery_topcu_ocagi_policy
+		has_unlocked_unit_trigger = {
+			type = a_chambered_cannon
+		}
 	}
 }
 
@@ -59,6 +68,9 @@ dbo_a_age_5_absolutism_humbaraci = {
 	artillery_barrage = 4
 	country_potential = {
 		has_policy = dbo_military_army_artillery_topcu_ocagi_policy
+		has_unlocked_unit_trigger = {
+			type = a_royal_mortar
+		}
 	}
 }
 
@@ -75,5 +87,8 @@ dbo_a_age_6_revolutions_humbaraci = {
 	artillery_barrage = 5
 	country_potential = {
 		has_policy = dbo_military_army_artillery_topcu_ocagi_policy
+		has_unlocked_unit_trigger = {
+			type = a_flying_battery
+		}
 	}
 }

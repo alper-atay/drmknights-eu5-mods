@@ -15,6 +15,7 @@
 		culture = {
 			has_culture_group = culture_group:turkic_group
 		}
+		country_rank = country_rank:rank_empire
 		custom_tooltip = {
 			text = dbo_roto_winner_tt
 			has_variable = rise_of_the_ottomans_winner_variable

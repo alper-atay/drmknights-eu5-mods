@@ -586,7 +586,55 @@ dbo_dhe_history.203 = {
 	}
 }
 
-# dbo_fatih_sultan_mehmed Working on Legal Code
+# dbo_history_fatih_sultan_mehmed_sahni_seman_madrasa
+dbo_dhe_history.205 = {
+	type = country_event
+	title = dbo_dhe_history.205.title
+	desc = dbo_dhe_history.205.desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_fatih_sultan_mehmed_sahni_seman_madrasa.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1451.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		exists = capital
+		exists = character:dbo_fatih_sultan_mehmed
+		character:dbo_fatih_sultan_mehmed = {
+			character_age > 25
+		}
+	}
+	option = {
+		name = dbo_dhe_history.205.a
+		historical_option = yes
+		unlock_building_effect = {
+			type = dbo_sahni_seman_madrasa
+		}
+		capital = {
+			construct_building = {
+				building_type = building_type:dbo_sahni_seman_madrasa
+			}
+		}
+		every_estate = {
+			limit = {
+				NOT = {
+					estate_type = estate_type:crown_estate
+				}
+			}
+			ROOT = {
+				add_estate_satisfaction = {
+					type = prev.estate_type
+					value = estate_satisfaction_weak_penalty
+				}
+			}
+		}
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_history_fatih_sultan_mehmed_legal_code
 dbo_dhe_history.206 = {
 	type = country_event
 	title = dbo_dhe_history.206.title
@@ -598,7 +646,7 @@ dbo_dhe_history.206 = {
 		tag = TUR
 		from = 1451.1.1
 		to = 9999.1.1
-		monthly_chance = 10
+		monthly_chance = 20
 	}
 	trigger = {
 		exists = character:dbo_fatih_sultan_mehmed
@@ -617,7 +665,7 @@ dbo_dhe_history.206 = {
 	}
 }
 
-# dbo_fatih_sultan_mehmed Die
+# dbo_history_fatih_sultan_mehmed_die
 dbo_dhe_history.207 = {
 	type = country_event
 	title = dbo_dhe_history.207.title
@@ -660,7 +708,7 @@ dbo_dhe_history.207 = {
 	}
 }
 
-# Yavuz Sultan Selim Born
+# dbo_history_yavuz_sultan_selim_born
 dbo_dhe_history.301 = {
 	type = country_event
 	title = dbo_dhe_history.301.title
@@ -767,7 +815,7 @@ dbo_dhe_history.301 = {
 	}
 }
 
-# Yavuz Sultan Selim rise
+# dbo_history_yavuz_sultan_selim_rise
 dbo_dhe_history.302 = {
 	type = country_event
 	title = dbo_dhe_history.302.title

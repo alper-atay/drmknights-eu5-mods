@@ -17,22 +17,6 @@ dbo_situation.1 = {
 				}
 			}
 		}
-		custom_tooltip = {
-			text = dbo_every_owned_rural_location_construct_otag_tt
-			every_owned_rural_location = {
-				if = {
-					limit = {
-						can_build_building = building_type:dbo_otag
-					}
-					construct_building = {
-						building_type = building_type:dbo_otag
-						cost_multiplier = 0
-						cost_multiplier_reason = "must_be_free"
-						instant = yes
-					}
-				}
-			}
-		}
 		every_owned_non_rural_location = {
 			limit = {
 				is_province_capital = yes
@@ -41,33 +25,18 @@ dbo_situation.1 = {
 				limit = {
 					can_build_building = building_type:dbo_grand_mosque
 				}
-				construct_building = {
-					building_type = building_type:dbo_grand_mosque
-					cost_multiplier = 0
-					cost_multiplier_reason = "must_be_free"
-					instant = yes
-				}
-			}
-			if = {
-				limit = {
-					can_build_building = building_type:dbo_ulu_otag
-				}
-				construct_building = {
-					building_type = building_type:dbo_ulu_otag
-					cost_multiplier = 0
-					cost_multiplier_reason = "must_be_free"
-					instant = yes
+				change_building_level_in_location = {
+					building = building_type:dbo_grand_mosque
+					value = 1
 				}
 			}
 			if = {
 				limit = {
 					can_build_building = building_type:dbo_beylerbeyi
 				}
-				construct_building = {
-					building_type = building_type:dbo_beylerbeyi
-					cost_multiplier = 0
-					cost_multiplier_reason = "must_be_free"
-					instant = yes
+				change_building_level_in_location = {
+					building = building_type:dbo_beylerbeyi
+					value = 1
 				}
 			}
 		}

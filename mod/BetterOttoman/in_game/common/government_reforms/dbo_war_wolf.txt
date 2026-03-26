@@ -47,8 +47,8 @@ dbo_war_wolf_t2 = {
 		potential_trigger = {
 			religion = religion:tengri
 		}
-		assault_ability = 0.01
-		army_movement_speed = 0.01
+		assault_ability = 0.02
+		army_movement_speed = 0.02
 	}
 }
 
@@ -74,8 +74,8 @@ dbo_war_wolf_t3 = {
 		potential_trigger = {
 			religion = religion:tengri
 		}
-		assault_ability = 0.01
-		army_movement_speed = 0.01
+		assault_ability = 0.03
+		army_movement_speed = 0.03
 	}
 }
 
@@ -101,8 +101,8 @@ dbo_war_wolf_t4 = {
 		potential_trigger = {
 			religion = religion:tengri
 		}
-		assault_ability = 0.01
-		army_movement_speed = 0.01
+		assault_ability = 0.04
+		army_movement_speed = 0.04
 	}
 }
 
@@ -128,8 +128,8 @@ dbo_war_wolf_t5 = {
 		potential_trigger = {
 			religion = religion:tengri
 		}
-		assault_ability = 0.01
-		army_movement_speed = 0.01
+		assault_ability = 0.05
+		army_movement_speed = 0.05
 	}
 }
 
@@ -148,15 +148,15 @@ dbo_war_wolf_t6 = {
 	}
 	country_modifier = {
 		government_reform_slots = 1
-		assault_ability = 0.6
-		army_movement_speed = 0.6
+		assault_ability = 0.06
+		army_movement_speed = 0.06
 	}
 	country_modifier = {
 		potential_trigger = {
 			religion = religion:tengri
 		}
-		assault_ability = 0.01
-		army_movement_speed = 0.01
+		assault_ability = 0.06
+		army_movement_speed = 0.06
 	}
 }
 
@@ -175,15 +175,15 @@ dbo_war_wolf_t7 = {
 	}
 	country_modifier = {
 		government_reform_slots = 1
-		assault_ability = 0.7
-		army_movement_speed = 0.7
+		assault_ability = 0.07
+		army_movement_speed = 0.07
 	}
 	country_modifier = {
 		potential_trigger = {
 			religion = religion:tengri
 		}
-		assault_ability = 0.01
-		army_movement_speed = 0.01
+		assault_ability = 0.07
+		army_movement_speed = 0.07
 	}
 }
 
@@ -202,15 +202,15 @@ dbo_war_wolf_t8 = {
 	}
 	country_modifier = {
 		government_reform_slots = 1
-		assault_ability = 0.8
-		army_movement_speed = 0.8
+		assault_ability = 0.08
+		army_movement_speed = 0.08
 	}
 	country_modifier = {
 		potential_trigger = {
 			religion = religion:tengri
 		}
-		assault_ability = 0.01
-		army_movement_speed = 0.01
+		assault_ability = 0.08
+		army_movement_speed = 0.08
 	}
 }
 
@@ -229,15 +229,15 @@ dbo_war_wolf_t9 = {
 	}
 	country_modifier = {
 		government_reform_slots = 1
-		assault_ability = 0.9
-		army_movement_speed = 0.9
+		assault_ability = 0.09
+		army_movement_speed = 0.09
 	}
 	country_modifier = {
 		potential_trigger = {
 			religion = religion:tengri
 		}
-		assault_ability = 0.01
-		army_movement_speed = 0.01
+		assault_ability = 0.09
+		army_movement_speed = 0.09
 	}
 }
 
@@ -263,7 +263,7 @@ dbo_war_wolf_t10 = {
 		potential_trigger = {
 			religion = religion:tengri
 		}
-		assault_ability = 0.01
-		army_movement_speed = 0.01
+		assault_ability = 0.1
+		army_movement_speed = 0.1
 	}
 }
