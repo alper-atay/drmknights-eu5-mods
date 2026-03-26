@@ -106,8 +106,6 @@ dbo_destiny_piri_reis = {
 		exploration_maintenance_cost = -0.2
 		exploration_mission_speed_modifier = 0.2
 		exploration_preparation_time_modifier = -0.2
-		start_exploration_land_cost_modifier = -0.2
-		start_exploration_sea_cost_modifier = -0.2
 	}
 }
 

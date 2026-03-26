@@ -20,9 +20,9 @@
 }
 
 dbo_conquest_rumelia_check = {
-	own_entire_area = area:slovenia_area
-	own_entire_area = area:slavonia_area
-	own_entire_area = area:croatia_area
+	# own_entire_area = area:slovenia_area
+	# own_entire_area = area:slavonia_area
+	# own_entire_area = area:croatia_area
 	own_entire_area = area:bosnia_area
 	own_entire_area = area:serbia_area
 	own_entire_area = area:bulgaria_area
@@ -35,13 +35,23 @@ dbo_conquest_rumelia_check = {
 }
 
 dbo_conquest_arabian_peninsula_check = {
-	own_entire_area = area:bahrein_area
+	own_entire_area = area:levant_area
+	# own_entire_area = area:bahrein_area
 	own_entire_area = area:hedjaz_area
-	own_entire_area = area:najd_area
-	own_entire_area = area:oman_area
-	own_entire_area = area:hail_area
-	own_entire_area = area:north_yemen_area
-	own_entire_area = area:south_yemen_area
+	# own_entire_area = area:najd_area
+	# own_entire_area = area:oman_area
+	# own_entire_area = area:hail_area
+	# own_entire_area = area:north_yemen_area
+	# own_entire_area = area:south_yemen_area
+	location:jerusalem = {
+		has_road_to_capital = yes
+	}
+	location:medina = {
+		has_road_to_capital = yes
+	}
+	location:mecca = {
+		has_road_to_capital = yes
+	}
 }
 
 dbo_conquest_fertile_crescent_check = {

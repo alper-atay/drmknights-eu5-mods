@@ -182,7 +182,6 @@ dbo_military_army_heavy_artillery_law = {
 			}
 		}
 		country_modifier = {
-			artillery_bonus_vs_fort = 2
 			siege_ability = 0.2
 		}
 	}

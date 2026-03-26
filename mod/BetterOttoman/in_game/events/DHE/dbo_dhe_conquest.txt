@@ -47,10 +47,10 @@ dbo_dhe_conquest.12 = {
 	option = {
 		name = dbo_dhe_conquest_common_option
 		historical_option = yes
-		unlock_government_reform_effect = {
-			type = dbo_conquest_anatolian_turks_stamp
+		unlock_policy_effect = {
+			type = dbo_conquest_stamp_anatolian_turks_policy
 		}
-		add_reform = government_reform:dbo_conquest_anatolian_turks_stamp
+		add_policy = policy:dbo_conquest_stamp_anatolian_turks_policy
 		dbo_event_extreme_bonus = yes
 	}
 }
@@ -67,7 +67,7 @@ dbo_dhe_conquest.21 = {
 		tag = TUR
 		from = 1337.1.1
 		to = 9999.1.1
-		monthly_chance = 102
+		monthly_chance = 100
 	}
 	trigger = {
 		own_entire_province = province_definition:edirne_province
@@ -101,10 +101,10 @@ dbo_dhe_conquest.22 = {
 	option = {
 		name = dbo_dhe_conquest_common_option
 		historical_option = yes
-		unlock_government_reform_effect = {
-			type = dbo_conquest_rumelia_stamp
+		unlock_policy_effect = {
+			type = dbo_conquest_stamp_rumelia_policy
 		}
-		add_reform = government_reform:dbo_conquest_rumelia_stamp
+		add_policy = policy:dbo_conquest_stamp_rumelia_policy
 		dbo_event_extreme_bonus = yes
 	}
 }
@@ -124,8 +124,8 @@ dbo_dhe_conquest.31 = {
 		monthly_chance = 20
 	}
 	trigger = {
-		has_reform = government_reform:dbo_conquest_anatolian_turks_stamp
-		has_reform = government_reform:dbo_conquest_rumelia_stamp
+		has_policy = dbo_conquest_stamp_anatolian_turks_policy
+		has_policy = dbo_conquest_stamp_rumelia_policy
 	}
 	option = {
 		name = dbo_dhe_conquest.31.a
@@ -155,10 +155,10 @@ dbo_dhe_conquest.32 = {
 	option = {
 		name = dbo_dhe_conquest_common_option
 		historical_option = yes
-		unlock_government_reform_effect = {
-			type = dbo_conquest_fertile_crescent_stamp
+		unlock_policy_effect = {
+			type = dbo_conquest_stamp_fertile_crescent_policy
 		}
-		add_reform = government_reform:dbo_conquest_fertile_crescent_stamp
+		add_policy = policy:dbo_conquest_stamp_fertile_crescent_policy
 		dbo_event_extreme_bonus = yes
 	}
 }
@@ -178,9 +178,9 @@ dbo_dhe_conquest.41 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		has_reform = government_reform:dbo_conquest_anatolian_turks_stamp
-		has_reform = government_reform:dbo_conquest_rumelia_stamp
-		has_reform = government_reform:dbo_conquest_fertile_crescent_stamp
+		has_policy = dbo_conquest_stamp_anatolian_turks_policy
+		has_policy = dbo_conquest_stamp_rumelia_policy
+		has_policy = dbo_conquest_stamp_fertile_crescent_policy
 	}
 	option = {
 		name = dbo_dhe_conquest.31.a

@@ -1,0 +1,20 @@
+﻿dbrgo_switch_on_topography = {
+	switch = {
+		trigger = topography
+		flatland = {
+			$on_flatland$ = yes
+		}
+		mountains = {
+			$on_mountains$ = yes
+		}
+		hills = {
+			$on_hills$ = yes
+		}
+		plateau = {
+			$on_plateau$ = yes
+		}
+		wetlands = {
+			$on_wetlands$ = yes
+		}
+	}
+}

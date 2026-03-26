@@ -1,0 +1,63 @@
+﻿dbo_a_age_3_discovery_sahi = {
+	is_special = yes
+	category = army_artillery
+	copy_from = a_age_3_discovery_artillery
+	upgrades_to_only = dbo_a_age_4_reformation_sahi
+	construction_demand = dbo_army_artillery_sahi_regiment_construction
+	maintenance_demand = dbo_army_artillery_sahi_regiment_maintenance
+	artillery_barrage = 5
+	country_potential = {
+		has_policy = dbo_military_army_heavy_artillery_great_bronze_cannon_policy
+		has_unlocked_unit_trigger = {
+			type = a_falconet
+		}
+	}
+}
+
+dbo_a_age_4_reformation_sahi = {
+	is_special = yes
+	category = army_artillery
+	copy_from = a_age_4_reformation_artillery
+	upgrades_to_only = dbo_a_age_5_absolutism_sahi
+	construction_demand = dbo_army_artillery_sahi_regiment_construction
+	maintenance_demand = dbo_army_artillery_sahi_regiment_maintenance
+	artillery_barrage = 6
+	country_potential = {
+		has_policy = dbo_military_army_heavy_artillery_great_bronze_cannon_policy
+		has_unlocked_unit_trigger = {
+			type = a_chambered_cannon
+		}
+	}
+}
+
+dbo_a_age_5_absolutism_sahi = {
+	is_special = yes
+	category = army_artillery
+	copy_from = a_age_5_absolutism_artillery
+	upgrades_to_only = dbo_a_age_6_revolutions_sahi
+	construction_demand = dbo_army_artillery_sahi_regiment_construction
+	maintenance_demand = dbo_army_artillery_sahi_regiment_maintenance
+	artillery_barrage = 8
+	country_potential = {
+		has_policy = dbo_military_army_heavy_artillery_great_bronze_cannon_policy
+		has_unlocked_unit_trigger = {
+			type = a_royal_mortar
+		}
+	}
+}
+
+dbo_a_age_6_revolutions_sahi = {
+	is_special = yes
+	category = army_artillery
+	copy_from = a_age_6_revolutions_artillery
+	upgrades_to_only = dbo_a_age_6_revolutions_sahi
+	construction_demand = dbo_army_artillery_sahi_regiment_construction
+	maintenance_demand = dbo_army_artillery_sahi_regiment_maintenance
+	artillery_barrage = 10
+	country_potential = {
+		has_policy = dbo_military_army_heavy_artillery_great_bronze_cannon_policy
+		has_unlocked_unit_trigger = {
+			type = a_flying_battery
+		}
+	}
+}

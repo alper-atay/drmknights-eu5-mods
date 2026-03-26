@@ -1,0 +1,112 @@
+﻿# aridoamerica_region
+dbrgo_best_rgo_for_aridoamerica_region = {
+	if = {
+		limit = {
+			NOT = {
+				topography = hills
+			}
+			raw_material = goods:wild_game
+		}
+		dbrgo_aridoamerica_region_replace_wild_game = yes
+	}
+	if = {
+		limit = {
+			raw_material = goods:sand
+		}
+		dbrgo_aridoamerica_region_replace_sand = yes
+	}
+}
+
+dbrgo_aridoamerica_region_replace_wild_game = {
+	switch = {
+		trigger = topography
+		flatland = {
+			random_goods = {
+				limit = {
+					NOT = {
+						this = goods:wild_game
+					}
+					NOT = {
+						has_tag = old_world_goods
+					}
+					goods_category = raw_material
+					goods_method = farming
+					is_food = yes
+				}
+				save_temporary_scope_as = target_goods
+			}
+		}
+		mountains = {
+			random_goods = {
+				limit = {
+					goods_category = raw_material
+					goods_method = mining
+				}
+				save_temporary_scope_as = target_goods
+			}
+		}
+		hills = {
+		}
+		plateau = {
+			random_goods = {
+				limit = {
+					goods_category = raw_material
+					NOT = {
+						has_tag = old_world_goods
+					}
+				}
+				save_temporary_scope_as = target_goods
+			}
+		}
+		wetlands = {
+		}
+	}
+	change_raw_material = scope:target_goods
+}
+
+dbrgo_aridoamerica_region_replace_sand = {
+	switch = {
+		trigger = topography
+		flatland = {
+			random_goods = {
+				limit = {
+					NOT = {
+						this = goods:sand
+					}
+					NOT = {
+						has_tag = old_world_goods
+					}
+					goods_category = raw_material
+					goods_method = farming
+					is_food = yes
+				}
+				save_temporary_scope_as = target_goods
+			}
+		}
+		mountains = {
+			random_goods = {
+				limit = {
+					goods_category = raw_material
+					goods_method = mining
+				}
+				save_temporary_scope_as = target_goods
+			}
+		}
+		hills = {
+		}
+		plateau = {
+			random_goods = {
+				limit = {
+					goods_category = raw_material
+					NOT = {
+						has_tag = old_world_goods
+					}
+				}
+				save_temporary_scope_as = target_goods
+			}
+		}
+		wetlands = {
+		}
+	}
+	change_raw_material = scope:target_goods
+}

@@ -1,0 +1,76 @@
+﻿dbrgo_replace_stone_with_best_option = {
+	dbrgo_build_stone_quarry = yes
+	if = {
+		limit = {
+			topography = mountains
+		}
+		random_list = {
+			25 = {
+				change_raw_material = goods:coal
+			}
+			20 = {
+				change_raw_material = goods:iron
+			}
+			20 = {
+				change_raw_material = goods:copper
+			}
+			20 = {
+				change_raw_material = goods:tin
+			}
+			15 = {
+				change_raw_material = goods:lead
+			}
+			10 = {
+				change_raw_material = goods:gems
+			}
+			10 = {
+				change_raw_material = goods:silver
+			}
+			5 = {
+				change_raw_material = goods:goods_gold
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			topography = hills
+		}
+		random_list = {
+			25 = {
+				change_raw_material = goods:coal
+			}
+			20 = {
+				change_raw_material = goods:iron
+			}
+			20 = {
+				change_raw_material = goods:copper
+			}
+			20 = {
+				change_raw_material = goods:tin
+			}
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				region = region:east_coast_region
+			}
+			dbrgo_best_rgo_for_east_coast_region = yes
+		}
+		else_if = {
+		}
+	}
+}
+
+dbrgo_build_stone_quarry = {
+	if = {
+		limit = {
+			has_owner = yes
+			can_build_building = building_type:fishing_village
+		}
+		change_building_level_in_location = {
+			building = building_type:stone_quarry
+			value = 1
+		}
+	}
+}

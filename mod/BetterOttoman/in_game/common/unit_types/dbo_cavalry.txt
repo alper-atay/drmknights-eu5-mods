@@ -6,19 +6,16 @@
 	light = yes
 	buildable = yes
 	country_potential = {
-		culture = {
-			has_culture_group = culture_group:turkic_group
-		}
-		current_age_or_later = {
-			age = age_1_traditions
+		tag = GKTRK
+		has_unlocked_unit_trigger = {
+			type = dbo_metehans_cavalry_age_1
 		}
 	}
 	morale_damage_done = 0.2
 	initiative = 10
-	movement_speed = 1
 	combat = {
-		grasslands = 0.4
-		sparse = 0.4
+		grasslands = 0.2
+		sparse = 0.2
 	}
 	construction_demand = dbo_metehans_cavalry_age_1_construction
 	maintenance_demand = dbo_metehans_cavalry_age_1_maintenance
@@ -36,19 +33,16 @@ dbo_metehans_cavalry_age_2 = {
 	light = yes
 	buildable = yes
 	country_potential = {
-		culture = {
-			has_culture_group = culture_group:turkic_group
-		}
-		current_age_or_later = {
-			age = age_2_renaissance
+		tag = GKTRK
+		has_unlocked_unit_trigger = {
+			type = dbo_metehans_cavalry_age_2
 		}
 	}
-	morale_damage_done = 0.25
+	morale_damage_done = 0.2
 	initiative = 10
-	movement_speed = 1.25
 	combat = {
-		grasslands = 0.4
-		sparse = 0.4
+		grasslands = 0.2
+		sparse = 0.2
 	}
 	construction_demand = dbo_metehans_cavalry_age_2_construction
 	maintenance_demand = dbo_metehans_cavalry_age_2_maintenance
@@ -56,6 +50,9 @@ dbo_metehans_cavalry_age_2 = {
 		longbow_tag
 		archer_tag
 		light_tag
+	}
+	has_unlocked_unit_trigger = {
+		type = a_esho_cavalry_oyo
 	}
 }
 
@@ -67,19 +64,16 @@ dbo_metehans_cavalry_age_3 = {
 	light = yes
 	buildable = yes
 	country_potential = {
-		culture = {
-			has_culture_group = culture_group:turkic_group
-		}
-		current_age_or_later = {
-			age = age_3_discovery
+		tag = GKTRK
+		has_unlocked_unit_trigger = {
+			type = dbo_metehans_cavalry_age_3
 		}
 	}
-	morale_damage_done = 0.3
+	morale_damage_done = 0.2
 	initiative = 10
-	movement_speed = 1.5
 	combat = {
-		grasslands = 0.4
-		sparse = 0.4
+		grasslands = 0.2
+		sparse = 0.2
 	}
 	construction_demand = dbo_metehans_cavalry_age_3_construction
 	maintenance_demand = dbo_metehans_cavalry_age_3_maintenance
@@ -98,19 +92,16 @@ dbo_metehans_cavalry_age_4 = {
 	light = yes
 	buildable = yes
 	country_potential = {
-		culture = {
-			has_culture_group = culture_group:turkic_group
-		}
-		current_age_or_later = {
-			age = age_4_reformation
+		tag = GKTRK
+		has_unlocked_unit_trigger = {
+			type = dbo_metehans_cavalry_age_4
 		}
 	}
-	morale_damage_done = 0.35
+	morale_damage_done = 0.2
 	initiative = 10
-	movement_speed = 1.75
 	combat = {
-		grasslands = 0.4
-		sparse = 0.4
+		grasslands = 0.2
+		sparse = 0.2
 	}
 	construction_demand = dbo_metehans_cavalry_age_4_construction
 	maintenance_demand = dbo_metehans_cavalry_age_4_maintenance
@@ -128,19 +119,16 @@ dbo_metehans_cavalry_age_5 = {
 	light = yes
 	buildable = yes
 	country_potential = {
-		culture = {
-			has_culture_group = culture_group:turkic_group
-		}
-		current_age_or_later = {
-			age = age_5_absolutism
+		tag = GKTRK
+		has_unlocked_unit_trigger = {
+			type = dbo_metehans_cavalry_age_5
 		}
 	}
-	morale_damage_done = 0.4
+	morale_damage_done = 0.2
 	initiative = 10
-	movement_speed = 2
 	combat = {
-		grasslands = 0.4
-		sparse = 0.4
+		grasslands = 0.2
+		sparse = 0.2
 	}
 	construction_demand = dbo_metehans_cavalry_age_5_construction
 	maintenance_demand = dbo_metehans_cavalry_age_5_maintenance
@@ -158,19 +146,16 @@ dbo_metehans_cavalry_age_6 = {
 	light = yes
 	buildable = yes
 	country_potential = {
-		culture = {
-			has_culture_group = culture_group:turkic_group
-		}
-		current_age_or_later = {
-			age = age_6_revolutions
+		tag = GKTRK
+		has_unlocked_unit_trigger = {
+			type = dbo_metehans_cavalry_age_6
 		}
 	}
-	morale_damage_done = 0.5
+	morale_damage_done = 0.2
 	initiative = 10
-	movement_speed = 2
 	combat = {
-		grasslands = 0.4
-		sparse = 0.4
+		grasslands = 0.2
+		sparse = 0.2
 	}
 	construction_demand = dbo_metehans_cavalry_age_6_construction
 	maintenance_demand = dbo_metehans_cavalry_age_6_maintenance

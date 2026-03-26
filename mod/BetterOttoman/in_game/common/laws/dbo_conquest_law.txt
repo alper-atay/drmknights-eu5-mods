@@ -1,0 +1,356 @@
+﻿dbo_conquest_stamp_anatolian_turks_law = {
+	law_category = dbo_conquest
+	unique = yes
+	potential = {
+		OR = {
+			has_unlocked_policy_trigger = {
+				type = dbo_conquest_stamp_anatolian_turks_policy
+			}
+		}
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = dbo_conquest_stamp_anatolian_turks_law
+		}
+	}
+	dbo_conquest_stamp_anatolian_turks_policy = {
+		unique = yes
+		allow = {
+			has_unlocked_policy_trigger = {
+				type = dbo_conquest_stamp_anatolian_policy
+			}
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+			global_max_control = 0.1
+		}
+	}
+}
+
+dbo_conquest_stamp_rumelia_law = {
+	law_category = dbo_conquest
+	unique = yes
+	potential = {
+		OR = {
+			has_unlocked_policy_trigger = {
+				type = dbo_conquest_stamp_rumelia_policy
+			}
+		}
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = dbo_conquest_stamp_rumelia_law
+		}
+	}
+	dbo_conquest_stamp_rumelia_policy = {
+		unique = yes
+		allow = {
+			has_unlocked_policy_trigger = {
+				type = dbo_conquest_stamp_rumelia_policy
+			}
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+			tolerance_heretic = 1
+			cultures_capacity = 1
+		}
+	}
+}
+
+dbo_conquest_stamp_fertile_crescent_law = {
+	law_category = dbo_conquest
+	unique = yes
+	potential = {
+		OR = {
+			has_unlocked_policy_trigger = {
+				type = dbo_conquest_stamp_fertile_crescent_policy
+			}
+		}
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = dbo_conquest_stamp_fertile_crescent_law
+		}
+	}
+	dbo_conquest_stamp_fertile_crescent_policy = {
+		unique = yes
+		allow = {
+			has_unlocked_policy_trigger = {
+				type = dbo_conquest_stamp_fertile_crescent_policy
+			}
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+			research_speed = 0.1
+			global_sugar_output_modifier = 0.25
+			global_wheat_output_modifier = 0.25
+			global_rice_output_modifier = 0.25
+		}
+	}
+}
+
+dbo_conquest_stamp_arabian_peninsula_law = {
+	law_category = dbo_conquest
+	unique = yes
+	potential = {
+		OR = {
+			has_unlocked_policy_trigger = {
+				type = dbo_conquest_stamp_arabian_peninsula_policy
+			}
+		}
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = dbo_conquest_stamp_arabian_peninsula_law
+		}
+	}
+	dbo_conquest_stamp_arabian_peninsula_policy = {
+		unique = yes
+		allow = {
+			has_unlocked_policy_trigger = {
+				type = dbo_conquest_stamp_arabian_peninsula_policy
+			}
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+			tolerance_own = 1
+			global_pop_conversion_speed_modifier = 0.1
+			monthly_rebel_growth = -0.001
+		}
+	}
+}
+
+dbo_conquest_stamp_nile_river_law = {
+	law_category = dbo_conquest
+	unique = yes
+	potential = {
+		OR = {
+			has_unlocked_policy_trigger = {
+				type = dbo_conquest_stamp_nile_river_policy
+			}
+		}
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = dbo_conquest_stamp_nile_river_law
+		}
+	}
+	dbo_conquest_stamp_nile_river_policy = {
+		unique = yes
+		allow = {
+			has_unlocked_policy_trigger = {
+				type = dbo_conquest_stamp_nile_river_policy
+			}
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+			research_speed = 0.1
+			trade_efficiency = 0.1
+		}
+	}
+}
+
+dbo_conquest_stamp_black_sea_law = {
+	law_category = dbo_conquest
+	unique = yes
+	potential = {
+		OR = {
+			has_unlocked_policy_trigger = {
+				type = dbo_conquest_stamp_black_sea_policy
+			}
+		}
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = dbo_conquest_stamp_black_sea_law
+		}
+	}
+	dbo_conquest_stamp_black_sea_policy = {
+		unique = yes
+		allow = {
+			has_unlocked_policy_trigger = {
+				type = dbo_conquest_stamp_black_sea_policy
+			}
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+			trade_efficiency = 0.1
+			trade_land_movement_cost_modifier = -0.1
+			trade_sea_movement_cost_modifier = -0.1
+		}
+	}
+}
+
+dbo_conquest_stamp_eastern_gate_law = {
+	law_category = dbo_conquest
+	unique = yes
+	potential = {
+		OR = {
+			has_unlocked_policy_trigger = {
+				type = dbo_conquest_stamp_eastern_gate_policy
+			}
+		}
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = dbo_conquest_stamp_eastern_gate_law
+		}
+	}
+	dbo_conquest_stamp_eastern_gate_policy = {
+		unique = yes
+		allow = {
+			has_unlocked_policy_trigger = {
+				type = dbo_conquest_stamp_eastern_gate_policy
+			}
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+			global_goods_gold_output_modifier = 0.25
+			global_silver_output_modifier = 0.25
+			minting_income_factor = 0.25
+		}
+	}
+}
+
+dbo_conquest_stamp_turkish_renaissance_law = {
+	law_category = dbo_conquest
+	unique = yes
+	potential = {
+		OR = {
+			has_unlocked_policy_trigger = {
+				type = dbo_conquest_stamp_turkish_renaissance_policy
+			}
+		}
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = dbo_conquest_stamp_turkish_renaissance_law
+		}
+	}
+	dbo_conquest_stamp_turkish_renaissance_policy = {
+		unique = yes
+		allow = {
+			has_unlocked_policy_trigger = {
+				type = dbo_conquest_stamp_turkish_renaissance_policy
+			}
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+			research_speed = 0.2
+			tolerance_heretic = 1
+			bank_interest = -0.01
+		}
+	}
+}
+
+dbo_conquest_stamp_pearl_of_east_law = {
+	law_category = dbo_conquest
+	unique = yes
+	potential = {
+		OR = {
+			has_unlocked_policy_trigger = {
+				type = dbo_conquest_stamp_pearl_of_east_policy
+			}
+		}
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = dbo_conquest_stamp_pearl_of_east_law
+		}
+	}
+	dbo_conquest_stamp_pearl_of_east_policy = {
+		unique = yes
+		allow = {
+			has_unlocked_policy_trigger = {
+				type = dbo_conquest_stamp_pearl_of_east_policy
+			}
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+			research_speed = 0.1
+			tolerance_heathen = 1
+		}
+	}
+}
+
+dbo_conquest_stamp_maghreb_law = {
+	law_category = dbo_conquest
+	unique = yes
+	potential = {
+		OR = {
+			has_unlocked_policy_trigger = {
+				type = dbo_conquest_stamp_maghreb_policy
+			}
+		}
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = dbo_conquest_stamp_maghreb_law
+		}
+	}
+	dbo_conquest_stamp_maghreb_policy = {
+		unique = yes
+		allow = {
+			has_unlocked_policy_trigger = {
+				type = dbo_conquest_stamp_maghreb_policy
+			}
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+			colonial_range_modifier = 0.1
+			global_disease_resistance = 0.1
+		}
+	}
+}
+
+dbo_conquest_stamp_steep_mountain_law = {
+	law_category = dbo_conquest
+	unique = yes
+	potential = {
+		OR = {
+			has_unlocked_policy_trigger = {
+				type = dbo_conquest_stamp_steep_mountain_policy
+			}
+		}
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = dbo_conquest_stamp_steep_mountain_law
+		}
+	}
+	dbo_conquest_stamp_steep_mountain_policy = {
+		unique = yes
+		allow = {
+			has_unlocked_policy_trigger = {
+				type = dbo_conquest_stamp_steep_mountain_policy
+			}
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+			land_unit_attrition = -0.2
+			land_morale_recovery = 0.05
+		}
+	}
+}

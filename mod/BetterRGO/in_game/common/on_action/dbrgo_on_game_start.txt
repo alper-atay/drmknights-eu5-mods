@@ -1,0 +1,22 @@
+﻿on_game_start = {
+	on_actions = {
+		dbrgo_on_game_start
+	}
+}
+
+dbrgo_on_game_start = {
+	effect = {
+		every_location_in_the_world = {
+			limit = {
+				is_ownable = yes
+				exists = raw_material
+			}
+			if = {
+				limit = {
+					region = region:aridoamerica_region
+				}
+				dbrgo_best_rgo_for_aridoamerica_region = yes
+			}
+		}
+	}
+}

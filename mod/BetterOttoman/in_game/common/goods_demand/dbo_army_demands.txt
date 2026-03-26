@@ -1,12 +1,12 @@
-﻿dbo_heavy_artillery_construction = {
+﻿dbo_army_artillery_sahi_regiment_construction = {
 	cannons = 2
-	copper = 0.2
-	tin = 0.2
-	horses = 0.2
+	copper = 1
+	tin = 1
+	horses = 1
 	category = regiment_construction
 }
 
-dbo_heavy_artillery_maintenance = {
+dbo_army_artillery_sahi_regiment_maintenance = {
 	cannons = 1
 	copper = 0.1
 	tin = 0.1

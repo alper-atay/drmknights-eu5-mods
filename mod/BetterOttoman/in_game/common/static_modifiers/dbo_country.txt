@@ -27,5 +27,5 @@ dbo_ottoman_golden_age_of_science = {
 	game_data = {
 		category = country
 	}
-	research_speed = 0.25
+	research_speed = 0.1
 }
