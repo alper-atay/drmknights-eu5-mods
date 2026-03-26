@@ -880,9 +880,6 @@ dbo_dhe_history.307 = {
 			}
 			character_age > 50
 		}
-		has_variable = dbo_conquest_steep_mountain_challenged
-		has_variable = dbo_conquest_fertile_crescent_challenged
-		has_variable = dbo_conquest_nile_river_challenged
 		exists = character:dbo_kanuni_sultan_suleiman
 		character:dbo_kanuni_sultan_suleiman = {
 			is_alive = yes

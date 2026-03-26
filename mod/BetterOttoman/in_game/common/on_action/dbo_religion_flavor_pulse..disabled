@@ -1,5 +1,0 @@
-﻿religion_flavor_pulse = {
-	events = {
-		dbo_religious_building.1
-	}
-}

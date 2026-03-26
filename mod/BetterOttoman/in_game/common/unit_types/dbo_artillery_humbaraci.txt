@@ -2,7 +2,7 @@
 	is_special = yes
 	light = yes
 	category = army_artillery
-	copy_from = a_age_2_renaissance_auxiliary
+	copy_from = a_age_2_renaissance_artillery
 	upgrades_to_only = dbo_a_age_3_discovery_humbaraci
 	combat_power = 4
 	combat_speed = 0.5

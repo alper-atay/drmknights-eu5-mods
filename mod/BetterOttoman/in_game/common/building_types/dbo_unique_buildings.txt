@@ -15,13 +15,15 @@
 		is_province_capital = yes
 	}
 	country_potential = {
-		has_or_had_tag = TUR
+		has_reform = government_reform:anatolian_beylik
 	}
 	remove_if = {
 		location = {
 			NOR = {
 				is_province_capital = yes
-				has_reform = government_reform:anatolian_beylik
+				owner ?= {
+					has_reform = government_reform:anatolian_beylik
+				}
 			}
 		}
 	}

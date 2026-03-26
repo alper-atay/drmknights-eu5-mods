@@ -30,9 +30,7 @@ dbo_metehans_cavalry_age_2 = {
 	light = yes
 	buildable = yes
 	country_potential = {
-		has_unlocked_unit_trigger = {
-			type = dbo_metehans_cavalry_age_2
-		}
+		has_reform = government_reform:dbo_destiny_wing_of_turk
 	}
 	morale_damage_done = 0.2
 	initiative = 10
@@ -47,9 +45,6 @@ dbo_metehans_cavalry_age_2 = {
 		archer_tag
 		light_tag
 	}
-	has_unlocked_unit_trigger = {
-		type = a_esho_cavalry_oyo
-	}
 }
 
 dbo_metehans_cavalry_age_3 = {
@@ -60,9 +55,7 @@ dbo_metehans_cavalry_age_3 = {
 	light = yes
 	buildable = yes
 	country_potential = {
-		has_unlocked_unit_trigger = {
-			type = dbo_metehans_cavalry_age_3
-		}
+		has_reform = government_reform:dbo_destiny_wing_of_turk
 	}
 	morale_damage_done = 0.2
 	initiative = 10
@@ -87,9 +80,7 @@ dbo_metehans_cavalry_age_4 = {
 	light = yes
 	buildable = yes
 	country_potential = {
-		has_unlocked_unit_trigger = {
-			type = dbo_metehans_cavalry_age_4
-		}
+		has_reform = government_reform:dbo_destiny_wing_of_turk
 	}
 	morale_damage_done = 0.2
 	initiative = 10
@@ -113,9 +104,7 @@ dbo_metehans_cavalry_age_5 = {
 	light = yes
 	buildable = yes
 	country_potential = {
-		has_unlocked_unit_trigger = {
-			type = dbo_metehans_cavalry_age_5
-		}
+		has_reform = government_reform:dbo_destiny_wing_of_turk
 	}
 	morale_damage_done = 0.2
 	initiative = 10
@@ -139,9 +128,7 @@ dbo_metehans_cavalry_age_6 = {
 	light = yes
 	buildable = yes
 	country_potential = {
-		has_unlocked_unit_trigger = {
-			type = dbo_metehans_cavalry_age_6
-		}
+		has_reform = government_reform:dbo_destiny_wing_of_turk
 	}
 	morale_damage_done = 0.2
 	initiative = 10

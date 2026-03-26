@@ -24,7 +24,7 @@
 	}
 	automation_tick = never
 	automation_tick_frequency = 12
-	price = price:dbo_casus_belli_price
+	price = price:rto_press_claims_price
 	cooldown = {
 		type = dbo_conquest_black_sea_claim_cooldown_key
 		years = 1
@@ -209,20 +209,6 @@
 				add = {
 					value = 2000
 					desc = "We want to attack them"
-				}
-			}
-			if = {
-				limit = {
-					scope:actor = {
-						NOR = {
-							has_reform = government_reform:dbo_conquest_anatolian_turks_stamp
-							has_reform = government_reform:dbo_conquest_rumelia_stamp
-						}
-					}
-				}
-				add = {
-					value = -10000
-					desc = "Anatolia and Rumelia must be conquered"
 				}
 			}
 		}

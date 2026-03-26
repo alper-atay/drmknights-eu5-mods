@@ -24,7 +24,7 @@
 	}
 	automation_tick = never
 	automation_tick_frequency = 12
-	price = price:dbo_casus_belli_price
+	price = price:rto_press_claims_price
 	cooldown = {
 		type = dbo_conquest_anatolian_turks_claim_cooldown_key
 		years = 0

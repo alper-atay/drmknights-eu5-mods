@@ -1,3 +1,0 @@
-﻿dbo_casus_belli_price = {
-	scaled_gold = 0.5
-}

@@ -14,7 +14,7 @@
 	ai_tick_frequency = 3
 	automation_tick = never
 	automation_tick_frequency = 12
-	price = price:dbo_casus_belli_price
+	price = price:rto_press_claims_price
 	cooldown = {
 		type = dbo_conquest_rumelia_claim_cooldown_key
 		years = 1
@@ -174,17 +174,6 @@
 				add = {
 					value = 2000
 					desc = "We want to attack them"
-				}
-			}
-			if = {
-				limit = {
-					scope:actor = {
-						has_variable = dbo_conquest_rumelia_challenged
-					}
-				}
-				add = {
-					value = 1000
-					desc = "dbo_conquest_rumelia_challenged"
 				}
 			}
 		}

@@ -113,7 +113,7 @@ dbo_forming_gktur_buildings = {
 	}
 	custom_tooltip = {
 		text = dbo_every_owned_location_construct_otag_tt
-		every_owned_locations = {
+		every_owned_location = {
 			if = {
 				limit = {
 					can_build_building = building_type:dbo_otag
