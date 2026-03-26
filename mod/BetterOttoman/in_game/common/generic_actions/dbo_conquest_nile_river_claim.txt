@@ -176,20 +176,6 @@
 					desc = "We want to attack them"
 				}
 			}
-			if = {
-				limit = {
-					scope:actor = {
-						NOR = {
-							has_reform = government_reform:dbo_conquest_anatolian_turks_stamp
-							own_entire_area = area:levant_area
-						}
-					}
-				}
-				add = {
-					value = -10000
-					desc = "Anatolia and levant_area must be conquered"
-				}
-			}
 		}
 		else = {
 			add = {

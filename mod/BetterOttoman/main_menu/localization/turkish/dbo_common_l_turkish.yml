@@ -8,5 +8,3 @@
  dbo_crown_noble_marry_act_past: "[SCOPE.sCharacter('recipient').GetName], soylu bir hanımefendiyle evlendi!"
  dbo_crown_noble_marry_tt: "Bu karakter, soylu bir hanımefendiyle evlenecek." 
  dbo_roto_winner_tt: "[ShowSituationName('rise_of_the_ottomans')] [Concept('situation', 'Durumundan')|e], zaferimizle sona erdirdik!"
- dbo_move_nw_good_to_new_region: "Yeni Dünya'dan Bir Malı Bölgeye Yay"
- dbo_move_nw_good_to_new_region_desc: "[ShowContinentName('america')] kıtasında bulunan mallardan birini [Concept('locations', 'İllerimizden')|e] herhangi birine yayabiliriz ama bölgedekiler bundan hoşlanmayabilir ve ilgili ilin [rgo|e]'sunun gelişimini yeniden başlatmamız gerekir."

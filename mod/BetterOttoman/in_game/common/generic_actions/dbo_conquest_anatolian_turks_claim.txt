@@ -200,17 +200,6 @@
 					desc = "We want to attack them"
 				}
 			}
-			if = {
-				limit = {
-					scope:actor = {
-						has_variable = dbo_conquest_anatolian_turks_challenged
-					}
-				}
-				add = {
-					value = 1000
-					desc = "dbo_conquest_anatolian_turks_challenged"
-				}
-			}
 		}
 		else = {
 			add = {

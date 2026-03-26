@@ -19,7 +19,6 @@ dbo_dhe_conquest.11 = {
 	option = {
 		name = dbo_dhe_conquest.11.a
 		historical_option = yes
-		set_variable = dbo_conquest_anatolian_turks_challenged
 		dbo_event_mild_bonus = yes
 	}
 }
@@ -71,7 +70,6 @@ dbo_dhe_conquest.21 = {
 	}
 	option = {
 		name = dbo_dhe_conquest.21.a
-		set_variable = dbo_conquest_rumelia_challenged
 		dbo_event_mild_bonus = yes
 	}
 }
@@ -124,7 +122,6 @@ dbo_dhe_conquest.31 = {
 	option = {
 		name = dbo_dhe_conquest.31.a
 		historical_option = yes
-		set_variable = dbo_conquest_fertile_crescent_challenged
 		dbo_event_mild_bonus = yes
 	}
 }
@@ -177,7 +174,6 @@ dbo_dhe_conquest.41 = {
 	option = {
 		name = dbo_dhe_conquest.31.a
 		historical_option = yes
-		set_variable = dbo_conquest_arabian_peninsula_challenged
 		dbo_event_mild_bonus = yes
 	}
 }
@@ -203,9 +199,9 @@ dbo_dhe_conquest.42 = {
 		name = dbo_dhe_conquest_common_option
 		historical_option = yes
 		unlock_policy_effect = {
-			type = dbo_conquest_stamp_fertile_crescent_policy
+			type = dbo_conquest_stamp_arabian_peninsula_policy
 		}
-		add_policy = policy:dbo_conquest_stamp_fertile_crescent_policy
+		add_policy = policy:dbo_conquest_stamp_arabian_peninsula_policy
 		dbo_event_extreme_bonus = yes
 	}
 }
@@ -230,7 +226,6 @@ dbo_dhe_conquest.51 = {
 	option = {
 		name = dbo_dhe_conquest.51.a
 		historical_option = yes
-		set_variable = dbo_conquest_nile_river_challenged
 		dbo_event_mild_bonus = yes
 	}
 }
@@ -539,7 +534,6 @@ dbo_dhe_conquest.111 = {
 	option = {
 		name = dbo_dhe_conquest.111.a
 		historical_option = yes
-		set_variable = dbo_conquest_steep_mountain_challenged
 		dbo_event_mild_bonus = yes
 	}
 }

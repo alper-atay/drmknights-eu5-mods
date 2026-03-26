@@ -4,7 +4,7 @@
 	name = GKTUR
 	flag = GKTUR
 	adjective = GKTUR_ADJ
-	tag = TUR
+	tag = GKTUR
 	color = map_GKTUR
 	potential = {
 		culture = {

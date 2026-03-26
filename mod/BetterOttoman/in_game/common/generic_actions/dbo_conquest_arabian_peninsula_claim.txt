@@ -180,20 +180,6 @@
 					desc = "We want to attack them"
 				}
 			}
-			if = {
-				limit = {
-					scope:actor = {
-						NOR = {
-							has_reform = government_reform:dbo_conquest_anatolian_turks_stamp
-							has_reform = government_reform:dbo_conquest_fertile_crescent_stamp
-						}
-					}
-				}
-				add = {
-					value = -10000
-					desc = "Anatolia and Crescent must be conquered"
-				}
-			}
 		}
 		else = {
 			add = {

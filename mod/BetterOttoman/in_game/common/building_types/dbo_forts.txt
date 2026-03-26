@@ -1,4 +1,4 @@
-TRY_INJECT:stockade = {
+﻿TRY_INJECT:stockade = {
 	location_potential = {
 		is_province_capital = yes
 	}
