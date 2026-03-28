@@ -9,6 +9,8 @@
 		country_modifier = {
 			global_max_control = control_weak_bonus
 			tax_income_efficiency = small_tax_income_efficiency_bonus
+			global_estate_max_tax = 0.1
+			global_estate_min_tax = 0.1
 			global_distance_from_capital_speed_propagation = 0.05
 		}
 		country_modifier = {
@@ -19,6 +21,8 @@
 				}
 			}
 			global_max_control = control_weak_bonus
+			global_estate_max_tax = 0.05
+			global_estate_min_tax = 0.05
 			tax_income_efficiency = tiny_tax_income_efficiency_bonus
 			global_distance_from_capital_speed_propagation = 0.05
 			scale = {
@@ -40,7 +44,7 @@
 		}
 		country_modifier = {
 			country_cabinet_efficiency = 0.1
-			global_crown_estate_power = 0.4
+			global_crown_estate_power = 0.5
 			global_clergy_estate_power = 0.2
 			global_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
 			monthly_towards_centralization = societal_value_monthly_move

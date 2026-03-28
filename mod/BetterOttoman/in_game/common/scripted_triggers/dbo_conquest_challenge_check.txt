@@ -32,9 +32,8 @@ dbo_conquest_challenge_check_black_sea = {
 	has_policy = dbo_conquest_stamp_anatolian_turks_policy
 }
 
-dbo_conquest_challenge_check_eastern_gate = {
+dbo_conquest_challenge_check_europe_eastern_gate = {
 	has_policy = dbo_conquest_stamp_rumelia_policy
-	has_policy = dbo_conquest_stamp_black_sea_policy
 }
 
 dbo_conquest_challenge_check_turkish_renaissance = {

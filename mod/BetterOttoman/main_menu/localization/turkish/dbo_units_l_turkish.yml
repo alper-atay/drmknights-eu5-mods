@@ -18,6 +18,8 @@
 # dbo_a_great_bronze_cannon_sahi_common
  dbo_army_artillery_sahi_regiment_construction: "$dbo_army_artillery_sahi$ Yapımı"
  dbo_army_artillery_sahi_regiment_maintenance: "$dbo_army_artillery_sahi$ Bakımı"
+ dbo_a_age_2_renaissance_sahi: "[ShowAgeNameWithNoTooltip('age_2_renaissance')] $dbo_army_artillery_sahi$"
+ dbo_a_age_2_renaissance_sahi_desc: "$dbo_army_artillery_sahi_desc$"
  dbo_a_age_3_discovery_sahi: "[ShowAgeNameWithNoTooltip('age_3_discovery')] $dbo_army_artillery_sahi$"
  dbo_a_age_3_discovery_sahi_desc: "$dbo_army_artillery_sahi_desc$"
  dbo_a_age_4_reformation_sahi: "[ShowAgeNameWithNoTooltip('age_4_reformation')] $dbo_army_artillery_sahi$"

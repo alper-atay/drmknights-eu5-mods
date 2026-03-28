@@ -60,8 +60,8 @@
  dbo_dhe_conquest.71.historical_info: "$dbo_conquest_europe_eastern_gate_historical_info$"
  dbo_dhe_conquest.71.a: "Hedef $dbo_conquest_slogan_europe_eastern_gate$!"
  # dbo_conquest_europe_eastern_gate_stamp
- dbo_dhe_conquest.72.title: "[ShowPolicyName('dbo_conquest_stamp_eastern_gate_policy')]\n[Concept('policy', 'Politikası')|e]"
- dbo_dhe_conquest.72.desc: "$dbo_conquest_stamp_eastern_gate_policy_desc$"
+ dbo_dhe_conquest.72.title: "[ShowPolicyName('dbo_conquest_stamp_europe_eastern_gate_policy')]\n[Concept('policy', 'Politikası')|e]"
+ dbo_dhe_conquest.72.desc: "$dbo_conquest_stamp_europe_eastern_gate_policy_desc$"
  dbo_dhe_conquest.72.historical_info: "$dbo_conquest_europe_eastern_gate_historical_info$"
  # dbo_conquest_turkish_renaissance_challenged
  dbo_dhe_conquest.81.title: "$dbo_conquest_turkish_renaissance$"

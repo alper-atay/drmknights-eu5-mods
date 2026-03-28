@@ -19,14 +19,14 @@
 		is_province_capital = yes
 	}
 	country_potential = {
-		religion.group = religion_group:muslim
+		religion.group ?= religion_group:muslim
 	}
 	remove_if = {
-		location = {
-			NOR = {
-				owner ?= {
-					religion.group = religion_group:muslim
-				}
+		NOR = {
+			location.owner ?= {
+				religion.group ?= religion_group:muslim
+			}
+			location = {
 				is_province_capital = yes
 			}
 		}

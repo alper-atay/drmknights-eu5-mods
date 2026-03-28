@@ -1,16 +1,17 @@
 ﻿dbo_army_artillery_sahi_regiment_construction = {
 	cannons = 2
-	copper = 1
-	tin = 1
+	copper = 2
+	tin = 0.2
 	horses = 1
 	category = regiment_construction
 }
 
 dbo_army_artillery_sahi_regiment_maintenance = {
 	cannons = 1
-	copper = 0.1
-	tin = 0.1
-	horses = 0.1
+	copper = 0.2
+	tin = 0.05
+	lead = 0.05
+	horses = 0.5
 	category = regiment_maintenance
 }
 

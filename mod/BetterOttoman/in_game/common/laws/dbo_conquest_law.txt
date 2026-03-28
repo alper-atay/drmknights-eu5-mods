@@ -193,27 +193,27 @@ dbo_conquest_stamp_black_sea_law = {
 	}
 }
 
-dbo_conquest_stamp_eastern_gate_law = {
+dbo_conquest_stamp_europe_eastern_gate_law = {
 	law_category = dbo_conquest
 	unique = yes
 	potential = {
 		OR = {
 			has_unlocked_policy_trigger = {
-				type = dbo_conquest_stamp_eastern_gate_policy
+				type = dbo_conquest_stamp_europe_eastern_gate_policy
 			}
 		}
 	}
 	locked = {
 		is_locked_mechanic = {
 			mechanic = law
-			type = dbo_conquest_stamp_eastern_gate_law
+			type = dbo_conquest_stamp_europe_eastern_gate_law
 		}
 	}
-	dbo_conquest_stamp_eastern_gate_policy = {
+	dbo_conquest_stamp_europe_eastern_gate_policy = {
 		unique = yes
 		allow = {
 			has_unlocked_policy_trigger = {
-				type = dbo_conquest_stamp_eastern_gate_policy
+				type = dbo_conquest_stamp_europe_eastern_gate_policy
 			}
 		}
 		country_modifier = {

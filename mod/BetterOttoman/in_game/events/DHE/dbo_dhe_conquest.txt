@@ -34,7 +34,7 @@ dbo_dhe_conquest.12 = {
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.1.1
-		to = 1837.1.1
+		to = 9999.1.1
 		monthly_chance = 100
 	}
 	trigger = {
@@ -85,7 +85,7 @@ dbo_dhe_conquest.22 = {
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.1.1
-		to = 1837.1.1
+		to = 9999.1.1
 		monthly_chance = 100
 	}
 	trigger = {
@@ -137,7 +137,7 @@ dbo_dhe_conquest.32 = {
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.1.1
-		to = 1837.1.1
+		to = 9999.1.1
 		monthly_chance = 100
 	}
 	trigger = {
@@ -172,7 +172,7 @@ dbo_dhe_conquest.41 = {
 		dbo_conquest_challenge_check_arabian_peninsula = yes
 	}
 	option = {
-		name = dbo_dhe_conquest.31.a
+		name = dbo_dhe_conquest.41.a
 		historical_option = yes
 		dbo_event_mild_bonus = yes
 	}
@@ -189,7 +189,7 @@ dbo_dhe_conquest.42 = {
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.1.1
-		to = 1837.1.1
+		to = 9999.1.1
 		monthly_chance = 100
 	}
 	trigger = {
@@ -241,7 +241,7 @@ dbo_dhe_conquest.52 = {
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.1.1
-		to = 1837.1.1
+		to = 9999.1.1
 		monthly_chance = 100
 	}
 	trigger = {
@@ -293,7 +293,7 @@ dbo_dhe_conquest.62 = {
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.1.1
-		to = 1837.1.1
+		to = 9999.1.1
 		monthly_chance = 100
 	}
 	trigger = {
@@ -320,12 +320,12 @@ dbo_dhe_conquest.71 = {
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
-		from = 1520.1.1
+		from = 1337.1.1
 		to = 9999.1.1
 		monthly_chance = 100
 	}
 	trigger = {
-		dbo_conquest_challenge_check_eastern_gate = yes
+		dbo_conquest_challenge_check_europe_eastern_gate = yes
 	}
 	option = {
 		name = dbo_dhe_conquest.71.a
@@ -345,7 +345,7 @@ dbo_dhe_conquest.72 = {
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.1.1
-		to = 1837.1.1
+		to = 9999.1.1
 		monthly_chance = 100
 	}
 	trigger = {
@@ -355,9 +355,9 @@ dbo_dhe_conquest.72 = {
 		name = dbo_dhe_conquest_common_option
 		historical_option = yes
 		unlock_policy_effect = {
-			type = dbo_conquest_stamp_eastern_gate_policy
+			type = dbo_conquest_stamp_europe_eastern_gate_policy
 		}
-		add_policy = policy:dbo_conquest_stamp_eastern_gate_policy
+		add_policy = policy:dbo_conquest_stamp_europe_eastern_gate_policy
 		dbo_event_extreme_bonus = yes
 	}
 }
@@ -371,7 +371,7 @@ dbo_dhe_conquest.81 = {
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
-		from = 1520.1.1
+		from = 1337.1.1
 		to = 9999.1.1
 		monthly_chance = 100
 	}
@@ -395,7 +395,7 @@ dbo_dhe_conquest.82 = {
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.1.1
-		to = 1837.1.1
+		to = 9999.1.1
 		monthly_chance = 100
 	}
 	trigger = {
@@ -421,7 +421,7 @@ dbo_dhe_conquest.91 = {
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
-		from = 1520.1.1
+		from = 1337.1.1
 		to = 9999.1.1
 		monthly_chance = 100
 	}
@@ -445,7 +445,7 @@ dbo_dhe_conquest.92 = {
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.1.1
-		to = 1837.1.1
+		to = 9999.1.1
 		monthly_chance = 100
 	}
 	trigger = {
@@ -497,7 +497,7 @@ dbo_dhe_conquest.102 = {
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.1.1
-		to = 1837.1.1
+		to = 9999.1.1
 		monthly_chance = 100
 	}
 	trigger = {
@@ -549,7 +549,7 @@ dbo_dhe_conquest.112 = {
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.1.1
-		to = 1837.1.1
+		to = 9999.1.1
 		monthly_chance = 100
 	}
 	trigger = {

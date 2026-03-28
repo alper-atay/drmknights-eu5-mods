@@ -1,16 +1,32 @@
-﻿dbo_a_age_3_discovery_sahi = {
+﻿dbo_a_age_2_renaissance_sahi = {
+	is_special = yes
+	category = army_artillery
+	copy_from = a_age_2_renaissance_artillery
+	upgrades_to_only = dbo_a_age_3_discovery_sahi
+	construction_demand = dbo_army_artillery_sahi_regiment_construction
+	maintenance_demand = dbo_army_artillery_sahi_regiment_maintenance
+	max_strength = 0.4
+	bombard_efficiency = 0.2
+	artillery_barrage = 5
+	country_potential = {
+		has_policy = dbo_military_army_heavy_artillery_great_bronze_cannon_policy
+		has_advance = unlock_houfnice_advance
+	}
+}
+
+dbo_a_age_3_discovery_sahi = {
 	is_special = yes
 	category = army_artillery
 	copy_from = a_age_3_discovery_artillery
 	upgrades_to_only = dbo_a_age_4_reformation_sahi
 	construction_demand = dbo_army_artillery_sahi_regiment_construction
 	maintenance_demand = dbo_army_artillery_sahi_regiment_maintenance
-	artillery_barrage = 5
+	max_strength = 0.8
+	bombard_efficiency = 0.25
+	artillery_barrage = 6
 	country_potential = {
 		has_policy = dbo_military_army_heavy_artillery_great_bronze_cannon_policy
-		has_unlocked_unit_trigger = {
-			type = a_falconet
-		}
+		has_advance = unlock_falconet_advance
 	}
 }
 
@@ -21,12 +37,12 @@ dbo_a_age_4_reformation_sahi = {
 	upgrades_to_only = dbo_a_age_5_absolutism_sahi
 	construction_demand = dbo_army_artillery_sahi_regiment_construction
 	maintenance_demand = dbo_army_artillery_sahi_regiment_maintenance
-	artillery_barrage = 6
+	max_strength = 1.2
+	bombard_efficiency = 0.3
+	artillery_barrage = 7
 	country_potential = {
 		has_policy = dbo_military_army_heavy_artillery_great_bronze_cannon_policy
-		has_unlocked_unit_trigger = {
-			type = a_chambered_cannon
-		}
+		has_advance = unlock_chambered_cannon_advance
 	}
 }
 
@@ -37,12 +53,12 @@ dbo_a_age_5_absolutism_sahi = {
 	upgrades_to_only = dbo_a_age_6_revolutions_sahi
 	construction_demand = dbo_army_artillery_sahi_regiment_construction
 	maintenance_demand = dbo_army_artillery_sahi_regiment_maintenance
-	artillery_barrage = 8
+	max_strength = 1.6
+	bombard_efficiency = 0.35
+	artillery_barrage = 9
 	country_potential = {
 		has_policy = dbo_military_army_heavy_artillery_great_bronze_cannon_policy
-		has_unlocked_unit_trigger = {
-			type = a_royal_mortar
-		}
+		has_advance = unlock_royal_mortar_advance
 	}
 }
 
@@ -53,11 +69,11 @@ dbo_a_age_6_revolutions_sahi = {
 	upgrades_to_only = dbo_a_age_6_revolutions_sahi
 	construction_demand = dbo_army_artillery_sahi_regiment_construction
 	maintenance_demand = dbo_army_artillery_sahi_regiment_maintenance
-	artillery_barrage = 10
+	max_strength = 2
+	bombard_efficiency = 0.4
+	artillery_barrage = 11
 	country_potential = {
 		has_policy = dbo_military_army_heavy_artillery_great_bronze_cannon_policy
-		has_unlocked_unit_trigger = {
-			type = a_flying_battery
-		}
+		has_advance = unlock_flying_battery_advance
 	}
 }

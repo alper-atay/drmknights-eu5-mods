@@ -27,5 +27,16 @@ dbo_ottoman_golden_age_of_science = {
 	game_data = {
 		category = country
 	}
+	global_max_literacy = 10
+	research_speed = 0.2
+	global_monthly_literacy = 0.01
+}
+
+dbo_ottoman_wisdom_from_the_east = {
+	game_data = {
+		category = country
+	}
+	global_max_literacy = 5
 	research_speed = 0.1
+	global_monthly_literacy = 0.005
 }
