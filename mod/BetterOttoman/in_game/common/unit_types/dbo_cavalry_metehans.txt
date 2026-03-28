@@ -1,15 +1,13 @@
-﻿dbo_metehans_cavalry_age_1 = {
+﻿dbo_a_age_1_traditions_metehans_cavalry = {
 	is_special = yes
 	category = army_cavalry
 	copy_from = a_age_1_traditions_cavalry
-	upgrades_to_only = dbo_metehans_cavalry_age_2
+	upgrades_to_only = dbo_a_age_2_renaissance_metehans_cavalry
 	light = yes
 	buildable = yes
 	country_potential = {
 		has_reform = government_reform:dbo_destiny_wing_of_turk
-		has_unlocked_unit_trigger = {
-			type = a_horsemen
-		}
+		has_advance = unlock_horsemen_advance
 	}
 	morale_damage_done = 0.2
 	initiative = 10
@@ -17,26 +15,24 @@
 		grasslands = 0.2
 		sparse = 0.2
 	}
-	construction_demand = dbo_metehans_cavalry_age_1_construction
-	maintenance_demand = dbo_metehans_cavalry_age_1_maintenance
+	construction_demand = dbo_a_age_1_traditions_metehans_cavalry_construction
+	maintenance_demand = dbo_a_age_1_traditions_metehans_cavalry_maintenance
 	gfx_tags = {
 		archer_tag
 		light_tag
 	}
 }
 
-dbo_metehans_cavalry_age_2 = {
+dbo_a_age_2_renaissance_metehans_cavalry = {
 	is_special = yes
 	category = army_cavalry
 	copy_from = a_age_2_renaissance_cavalry
-	upgrades_to_only = dbo_metehans_cavalry_age_3
+	upgrades_to_only = dbo_a_age_3_discovery_metehans_cavalry
 	light = yes
 	buildable = yes
 	country_potential = {
 		has_reform = government_reform:dbo_destiny_wing_of_turk
-		has_unlocked_unit_trigger = {
-			type = a_cavalrymen
-		}
+		has_advance = unlock_cavalry_advance
 	}
 	morale_damage_done = 0.2
 	initiative = 10
@@ -44,8 +40,8 @@ dbo_metehans_cavalry_age_2 = {
 		grasslands = 0.2
 		sparse = 0.2
 	}
-	construction_demand = dbo_metehans_cavalry_age_2_construction
-	maintenance_demand = dbo_metehans_cavalry_age_2_maintenance
+	construction_demand = dbo_a_age_2_renaissance_metehans_cavalry_construction
+	maintenance_demand = dbo_a_age_2_renaissance_metehans_cavalry_maintenance
 	gfx_tags = {
 		longbow_tag
 		archer_tag
@@ -53,18 +49,16 @@ dbo_metehans_cavalry_age_2 = {
 	}
 }
 
-dbo_metehans_cavalry_age_3 = {
+dbo_a_age_3_discovery_metehans_cavalry = {
 	is_special = yes
 	category = army_cavalry
 	copy_from = a_age_3_discovery_cavalry
-	upgrades_to_only = dbo_metehans_cavalry_age_4
+	upgrades_to_only = dbo_a_age_4_reformation_metehans_cavalry
 	light = yes
 	buildable = yes
 	country_potential = {
 		has_reform = government_reform:dbo_destiny_wing_of_turk
-		has_unlocked_unit_trigger = {
-			type = a_light_lancers
-		}
+		has_advance = unlock_light_lancers_advance
 	}
 	morale_damage_done = 0.2
 	initiative = 10
@@ -72,8 +66,8 @@ dbo_metehans_cavalry_age_3 = {
 		grasslands = 0.2
 		sparse = 0.2
 	}
-	construction_demand = dbo_metehans_cavalry_age_3_construction
-	maintenance_demand = dbo_metehans_cavalry_age_3_maintenance
+	construction_demand = dbo_a_age_3_discovery_metehans_cavalry_construction
+	maintenance_demand = dbo_a_age_3_discovery_metehans_cavalry_maintenance
 	gfx_tags = {
 		archer_tag
 		musket_tag
@@ -81,18 +75,16 @@ dbo_metehans_cavalry_age_3 = {
 	}
 }
 
-dbo_metehans_cavalry_age_4 = {
+dbo_a_age_4_reformation_metehans_cavalry = {
 	is_special = yes
 	category = army_cavalry
 	copy_from = a_age_4_reformation_cavalry
-	upgrades_to_only = dbo_metehans_cavalry_age_5
+	upgrades_to_only = dbo_a_age_5_absolutism_metehans_cavalry
 	light = yes
 	buildable = yes
 	country_potential = {
 		has_reform = government_reform:dbo_destiny_wing_of_turk
-		has_unlocked_unit_trigger = {
-			type = a_pistoleers
-		}
+		has_advance = unlock_pistoleers_advance
 	}
 	morale_damage_done = 0.2
 	initiative = 10
@@ -100,26 +92,24 @@ dbo_metehans_cavalry_age_4 = {
 		grasslands = 0.2
 		sparse = 0.2
 	}
-	construction_demand = dbo_metehans_cavalry_age_4_construction
-	maintenance_demand = dbo_metehans_cavalry_age_4_maintenance
+	construction_demand = dbo_a_age_4_reformation_metehans_cavalry_construction
+	maintenance_demand = dbo_a_age_4_reformation_metehans_cavalry_maintenance
 	gfx_tags = {
 		pistol_tag
 		light_tag
 	}
 }
 
-dbo_metehans_cavalry_age_5 = {
+dbo_a_age_5_absolutism_metehans_cavalry = {
 	is_special = yes
 	category = army_cavalry
 	copy_from = a_age_5_absolutism_cavalry
-	upgrades_to_only = dbo_metehans_cavalry_age_6
+	upgrades_to_only = dbo_a_age_6_revolutions_metehans_cavalry
 	light = yes
 	buildable = yes
 	country_potential = {
 		has_reform = government_reform:dbo_destiny_wing_of_turk
-		has_unlocked_unit_trigger = {
-			type = a_hussars
-		}
+		has_advance = unlock_hussars_advance
 	}
 	morale_damage_done = 0.2
 	initiative = 10
@@ -127,26 +117,24 @@ dbo_metehans_cavalry_age_5 = {
 		grasslands = 0.2
 		sparse = 0.2
 	}
-	construction_demand = dbo_metehans_cavalry_age_5_construction
-	maintenance_demand = dbo_metehans_cavalry_age_5_maintenance
+	construction_demand = dbo_a_age_5_absolutism_metehans_cavalry_construction
+	maintenance_demand = dbo_a_age_5_absolutism_metehans_cavalry_maintenance
 	gfx_tags = {
 		pistol_tag
 		light_tag
 	}
 }
 
-dbo_metehans_cavalry_age_6 = {
+dbo_a_age_6_revolutions_metehans_cavalry = {
 	is_special = yes
 	category = army_cavalry
 	copy_from = a_age_6_revolutions_cavalry
-	upgrades_to_only = dbo_metehans_cavalry_age_6
+	upgrades_to_only = dbo_a_age_6_revolutions_metehans_cavalry
 	light = yes
 	buildable = yes
 	country_potential = {
 		has_reform = government_reform:dbo_destiny_wing_of_turk
-		has_unlocked_unit_trigger = {
-			type = a_light_dragoons
-		}
+		has_advance = unlock_light_dragoons_advance
 	}
 	morale_damage_done = 0.2
 	initiative = 10
@@ -154,8 +142,8 @@ dbo_metehans_cavalry_age_6 = {
 		grasslands = 0.2
 		sparse = 0.2
 	}
-	construction_demand = dbo_metehans_cavalry_age_6_construction
-	maintenance_demand = dbo_metehans_cavalry_age_6_maintenance
+	construction_demand = dbo_a_age_6_revolutions_metehans_cavalry_construction
+	maintenance_demand = dbo_a_age_6_revolutions_metehans_cavalry_maintenance
 	gfx_tags = {
 		rifle_tag
 		light_tag

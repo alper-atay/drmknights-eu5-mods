@@ -15,35 +15,35 @@ dbo_army_artillery_sahi_regiment_maintenance = {
 	category = regiment_maintenance
 }
 
-dbo_metehans_cavalry_age_1_construction = {
+dbo_a_age_1_traditions_metehans_cavalry_construction = {
 	leather = 0.1
 	horses = 1
 	weaponry = 0.1
 	category = regiment_construction
 }
 
-dbo_metehans_cavalry_age_1_maintenance = {
+dbo_a_age_1_traditions_metehans_cavalry_maintenance = {
 	leather = 0.01
 	horses = 0.2
 	weaponry = 0.01
 	category = regiment_maintenance
 }
 
-dbo_metehans_cavalry_age_2_construction = {
+dbo_a_age_2_renaissance_metehans_cavalry_construction = {
 	leather = 0.2
 	horses = 1
 	weaponry = 0.2
 	category = regiment_construction
 }
 
-dbo_metehans_cavalry_age_2_maintenance = {
+dbo_a_age_2_renaissance_metehans_cavalry_maintenance = {
 	leather = 0.02
 	horses = 0.2
 	weaponry = 0.02
 	category = regiment_maintenance
 }
 
-dbo_metehans_cavalry_age_3_construction = {
+dbo_a_age_3_discovery_metehans_cavalry_construction = {
 	leather = 0.3
 	horses = 1
 	weaponry = 0.2
@@ -51,7 +51,7 @@ dbo_metehans_cavalry_age_3_construction = {
 	category = regiment_construction
 }
 
-dbo_metehans_cavalry_age_3_maintenance = {
+dbo_a_age_3_discovery_metehans_cavalry_maintenance = {
 	leather = 0.03
 	horses = 0.2
 	weaponry = 0.02
@@ -59,7 +59,7 @@ dbo_metehans_cavalry_age_3_maintenance = {
 	category = regiment_maintenance
 }
 
-dbo_metehans_cavalry_age_4_construction = {
+dbo_a_age_4_reformation_metehans_cavalry_construction = {
 	leather = 0.4
 	horses = 1
 	weaponry = 0.2
@@ -67,7 +67,7 @@ dbo_metehans_cavalry_age_4_construction = {
 	category = regiment_construction
 }
 
-dbo_metehans_cavalry_age_4_maintenance = {
+dbo_a_age_4_reformation_metehans_cavalry_maintenance = {
 	leather = 0.03
 	horses = 0.2
 	weaponry = 0.02
@@ -75,7 +75,7 @@ dbo_metehans_cavalry_age_4_maintenance = {
 	category = regiment_maintenance
 }
 
-dbo_metehans_cavalry_age_5_construction = {
+dbo_a_age_5_absolutism_metehans_cavalry_construction = {
 	leather = 0.6
 	horses = 1.5
 	weaponry = 0.3
@@ -83,7 +83,7 @@ dbo_metehans_cavalry_age_5_construction = {
 	category = regiment_construction
 }
 
-dbo_metehans_cavalry_age_5_maintenance = {
+dbo_a_age_5_absolutism_metehans_cavalry_maintenance = {
 	leather = 0.06
 	horses = 0.3
 	weaponry = 0.03
@@ -91,7 +91,7 @@ dbo_metehans_cavalry_age_5_maintenance = {
 	category = regiment_maintenance
 }
 
-dbo_metehans_cavalry_age_6_construction = {
+dbo_a_age_6_revolutions_metehans_cavalry_construction = {
 	leather = 0.6
 	horses = 2
 	weaponry = 0.4
@@ -99,7 +99,7 @@ dbo_metehans_cavalry_age_6_construction = {
 	category = regiment_construction
 }
 
-dbo_metehans_cavalry_age_6_maintenance = {
+dbo_a_age_6_revolutions_metehans_cavalry_maintenance = {
 	leather = 0.06
 	horses = 0.4
 	weaponry = 0.04

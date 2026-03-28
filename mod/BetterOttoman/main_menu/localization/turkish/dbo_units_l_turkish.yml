@@ -31,33 +31,33 @@
 # dbo_metehans_cavalry
  dbo_metehans_cavalry: "Metehan'ın Süvarileri"
  dbo_metehans_cavalry_desc: "Metehan'ın Süvarileri, düşman hatlarını hızla yararak geçmek ve ardından arkadan saldırmak için eğitilmiş hızlı hareket eden birimlerden oluşur. Onların çevikliği ve savaş becerileri, düşman savunmalarını zayıflatmak ve savaşın gidişatını değiştirmek için kritik öneme sahiptir."
-# dbo_metehans_cavalry_age_1
- dbo_metehans_cavalry_age_1: "[ShowAgeNameWithNoTooltip('age_1_traditions')] $dbo_metehans_cavalry$"
- dbo_metehans_cavalry_age_1_desc: "$dbo_metehans_cavalry_desc$"
- dbo_metehans_cavalry_age_1_construction: "$dbo_metehans_cavalry_age_1$ Yapımı"
- dbo_metehans_cavalry_age_1_maintenance: "$dbo_metehans_cavalry_age_1$ Bakımı"
-# dbo_metehans_cavalry_age_2
- dbo_metehans_cavalry_age_2: "[ShowAgeNameWithNoTooltip('age_2_renaissance')] $dbo_metehans_cavalry$"
- dbo_metehans_cavalry_age_2_desc: "$dbo_metehans_cavalry_desc$"
- dbo_metehans_cavalry_age_2_construction: "$dbo_metehans_cavalry_age_2$ Yapımı"
- dbo_metehans_cavalry_age_2_maintenance: "$dbo_metehans_cavalry_age_2$ Bakımı"
-# dbo_metehans_cavalry_age_3
- dbo_metehans_cavalry_age_3: "[ShowAgeNameWithNoTooltip('age_3_discovery')] $dbo_metehans_cavalry$"
- dbo_metehans_cavalry_age_3_desc: "$dbo_metehans_cavalry_desc$"
- dbo_metehans_cavalry_age_3_construction: "$dbo_metehans_cavalry_age_3$ Yapımı"
- dbo_metehans_cavalry_age_3_maintenance: "$dbo_metehans_cavalry_age_3$ Bakımı"
-# dbo_metehans_cavalry_age_4
- dbo_metehans_cavalry_age_4: "[ShowAgeNameWithNoTooltip('age_4_reformation')] $dbo_metehans_cavalry$"
- dbo_metehans_cavalry_age_4_desc: "$dbo_metehans_cavalry_desc$"
- dbo_metehans_cavalry_age_4_construction: "$dbo_metehans_cavalry_age_4$ Yapımı"
- dbo_metehans_cavalry_age_4_maintenance: "$dbo_metehans_cavalry_age_4$ Bakımı"
-# dbo_metehans_cavalry_age_5
- dbo_metehans_cavalry_age_5: "[ShowAgeNameWithNoTooltip('age_5_absolutism')] $dbo_metehans_cavalry$"
- dbo_metehans_cavalry_age_5_desc: "$dbo_metehans_cavalry_desc$"
- dbo_metehans_cavalry_age_5_construction: "$dbo_metehans_cavalry_age_5$ Yapımı"
- dbo_metehans_cavalry_age_5_maintenance: "$dbo_metehans_cavalry_age_5$ Bakımı"
-# dbo_metehans_cavalry_age_6
- dbo_metehans_cavalry_age_6: "[ShowAgeNameWithNoTooltip('age_6_revolutions')] $dbo_metehans_cavalry$"
- dbo_metehans_cavalry_age_6_desc: "$dbo_metehans_cavalry_desc$"
- dbo_metehans_cavalry_age_6_construction: "$dbo_metehans_cavalry_age_6$ Yapımı"
- dbo_metehans_cavalry_age_6_maintenance: "$dbo_metehans_cavalry_age_6$ Bakımı"
+# dbo_a_age_1_traditions_metehans_cavalry
+ dbo_a_age_1_traditions_metehans_cavalry: "[ShowAgeNameWithNoTooltip('age_1_traditions')] $dbo_metehans_cavalry$"
+ dbo_a_age_1_traditions_metehans_cavalry_desc: "$dbo_metehans_cavalry_desc$"
+ dbo_a_age_1_traditions_metehans_cavalry_construction: "$dbo_a_age_1_traditions_metehans_cavalry$ Yapımı"
+ dbo_a_age_1_traditions_metehans_cavalry_maintenance: "$dbo_a_age_1_traditions_metehans_cavalry$ Bakımı"
+# dbo_a_age_2_renaissance_metehans_cavalry
+ dbo_a_age_2_renaissance_metehans_cavalry: "[ShowAgeNameWithNoTooltip('age_2_renaissance')] $dbo_metehans_cavalry$"
+ dbo_a_age_2_renaissance_metehans_cavalry_desc: "$dbo_metehans_cavalry_desc$"
+ dbo_a_age_2_renaissance_metehans_cavalry_construction: "$dbo_a_age_2_renaissance_metehans_cavalry$ Yapımı"
+ dbo_a_age_2_renaissance_metehans_cavalry_maintenance: "$dbo_a_age_2_renaissance_metehans_cavalry$ Bakımı"
+# dbo_a_age_3_discovery_metehans_cavalry
+ dbo_a_age_3_discovery_metehans_cavalry: "[ShowAgeNameWithNoTooltip('age_3_discovery')] $dbo_metehans_cavalry$"
+ dbo_a_age_3_discovery_metehans_cavalry_desc: "$dbo_metehans_cavalry_desc$"
+ dbo_a_age_3_discovery_metehans_cavalry_construction: "$dbo_a_age_3_discovery_metehans_cavalry$ Yapımı"
+ dbo_a_age_3_discovery_metehans_cavalry_maintenance: "$dbo_a_age_3_discovery_metehans_cavalry$ Bakımı"
+# dbo_a_age_4_reformation_metehans_cavalry
+ dbo_a_age_4_reformation_metehans_cavalry: "[ShowAgeNameWithNoTooltip('age_4_reformation')] $dbo_metehans_cavalry$"
+ dbo_a_age_4_reformation_metehans_cavalry_desc: "$dbo_metehans_cavalry_desc$"
+ dbo_a_age_4_reformation_metehans_cavalry_construction: "$dbo_a_age_4_reformation_metehans_cavalry$ Yapımı"
+ dbo_a_age_4_reformation_metehans_cavalry_maintenance: "$dbo_a_age_4_reformation_metehans_cavalry$ Bakımı"
+# dbo_a_age_5_absolutism_metehans_cavalry
+ dbo_a_age_5_absolutism_metehans_cavalry: "[ShowAgeNameWithNoTooltip('age_5_absolutism')] $dbo_metehans_cavalry$"
+ dbo_a_age_5_absolutism_metehans_cavalry_desc: "$dbo_metehans_cavalry_desc$"
+ dbo_a_age_5_absolutism_metehans_cavalry_construction: "$dbo_a_age_5_absolutism_metehans_cavalry$ Yapımı"
+ dbo_a_age_5_absolutism_metehans_cavalry_maintenance: "$dbo_a_age_5_absolutism_metehans_cavalry$ Bakımı"
+# dbo_a_age_6_revolutions_metehans_cavalry
+ dbo_a_age_6_revolutions_metehans_cavalry: "[ShowAgeNameWithNoTooltip('age_6_revolutions')] $dbo_metehans_cavalry$"
+ dbo_a_age_6_revolutions_metehans_cavalry_desc: "$dbo_metehans_cavalry_desc$"
+ dbo_a_age_6_revolutions_metehans_cavalry_construction: "$dbo_a_age_6_revolutions_metehans_cavalry$ Yapımı"
+ dbo_a_age_6_revolutions_metehans_cavalry_maintenance: "$dbo_a_age_6_revolutions_metehans_cavalry$ Bakımı"
