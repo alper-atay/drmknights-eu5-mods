@@ -4,9 +4,7 @@
 	}
 	remove_if = {
 		location = {
-			NOR = {
-				is_province_capital = yes
-			}
+			is_province_capital = no
 		}
 	}
 }
@@ -17,9 +15,7 @@ TRY_INJECT:castle = {
 	}
 	remove_if = {
 		location = {
-			NOR = {
-				is_province_capital = yes
-			}
+			is_province_capital = no
 		}
 	}
 }
@@ -30,9 +26,7 @@ TRY_INJECT:bastion = {
 	}
 	remove_if = {
 		location = {
-			NOR = {
-				is_province_capital = yes
-			}
+			is_province_capital = no
 		}
 	}
 }
@@ -43,9 +37,7 @@ TRY_INJECT:star_fort = {
 	}
 	remove_if = {
 		location = {
-			NOR = {
-				is_province_capital = yes
-			}
+			is_province_capital = no
 		}
 	}
 }
@@ -56,9 +48,7 @@ TRY_INJECT:fortress = {
 	}
 	remove_if = {
 		location = {
-			NOR = {
-				is_province_capital = yes
-			}
+			is_province_capital = no
 		}
 	}
 }

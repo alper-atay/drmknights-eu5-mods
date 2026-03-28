@@ -18,22 +18,22 @@
 		has_reform = government_reform:anatolian_beylik
 	}
 	remove_if = {
-		NOR = {
+		OR = {
 			location = {
-				is_province_capital = yes
+				is_province_capital = no
 			}
-			location.owner ?= {
-				has_reform = government_reform:anatolian_beylik
+			owner = {
+				NOT = {
+					has_reform = government_reform:anatolian_beylik
+				}
 			}
 		}
 	}
 	modifier = {
 		local_proximity_source = 20
-		local_nobles_estate_power = 0.5
-		local_crown_estate_power = 0.1
+		local_nobles_estate_power = 1
 		local_monthly_development = 0.001
 		local_monthly_prosperity = 0.001
-		local_nobles_max_literacy = 10
 		local_max_control = 0.1
 	}
 	unique_production_methods = {

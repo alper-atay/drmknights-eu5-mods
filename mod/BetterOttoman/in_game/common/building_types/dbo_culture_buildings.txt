@@ -25,8 +25,9 @@
 		local_cultural_tradition = 0.2
 	}
 	capital_country_modifier = {
+		research_speed = 0.1
+		research_speed_modifier = 0.1
 		monthly_towards_innovative = societal_value_monthly_move
-		research_speed_modifier = 0.05
 	}
 	possible_production_methods = {
 		library_maintenance

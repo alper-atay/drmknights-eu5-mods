@@ -16,3 +16,6 @@
  dbo_ulu_otag: "Ulu Otağ"
  dbo_ulu_otag_desc: "Ulu Otağ, Tengri inancında gökyüzünün ve göksel düzenin sembolü olan görkemli bir saltanat çadırıdır. Hükümdarın gücünü ve ilahi hakkını vurgulayan Ulu Otağ, savaş meydanında ordunun yönetim merkezi, barışta ise devletin ihtişamlı bir simgesidir."
  dbo_ulu_otag_maintenance: "$dbo_ulu_otag$"
+ dbo_mosque: "Cami"
+ dbo_mosque_desc: "Cami, İslam toplumlarında ibadet ve toplumsal etkinliklerin merkezi olan kutsal bir yapıdır. Minareleri, kubbeleri ve geniş avlusu ile dikkat çeken camiler, Müslümanların günlük ibadetlerini gerçekleştirdiği, cuma namazlarının kılındığı ve dini eğitimlerin verildiği önemli mekanlardır."
+ dbo_mosque_maintenance: "$dbo_mosque$"

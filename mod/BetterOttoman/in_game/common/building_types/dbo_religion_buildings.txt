@@ -1,4 +1,41 @@
-﻿dbo_grand_mosque = {
+﻿dbo_mosque = {
+	is_foreign = no
+	max_levels = 1
+	pop_type = clergy
+	category = religious_category
+	employment_size = religious_building_employment
+	rural_settlement = yes
+	town = yes
+	city = yes
+	expensive = yes
+	important_for_AI = yes
+	build_time = religious_building_time
+	graphical_tags = {
+		religious
+	}
+	country_potential = {
+		religion.group ?= religion_group:muslim
+	}
+	unique_production_methods = {
+		dbo_mosque_maintenance = {
+			cloth = 0.05
+			fine_cloth = 0.025
+			paper = 0.1
+			books = 0.05
+			category = building_maintenance
+		}
+	}
+	construction_demand = important_building_construction
+	modifier = {
+		local_clergy_estate_power = 0.1
+		local_clergy_food_consumption = 0.1
+		local_peasants_max_literacy = 5
+		local_pop_conversion_speed = 0.01
+		local_tribal_promotion = 0.1
+	}
+}
+
+dbo_grand_mosque = {
 	is_foreign = no
 	max_levels = 1
 	pop_type = clergy
@@ -22,28 +59,24 @@
 		religion.group ?= religion_group:muslim
 	}
 	remove_if = {
-		NOR = {
-			location.owner ?= {
-				religion.group ?= religion_group:muslim
-			}
-			location = {
-				is_province_capital = yes
-			}
+		location = {
+			is_province_capital = no
 		}
 	}
 	unique_production_methods = {
 		dbo_grand_mosque_maintenance = {
+			cloth = 0.1
+			fine_cloth = 0.05
 			paper = 0.2
 			books = 0.1
-			cloth = 0.2
-			fine_cloth = 0.1
 			category = building_maintenance
 		}
 	}
 	modifier = {
-		local_clergy_estate_power = 0.25
-		local_clergy_max_literacy = 10
+		local_clergy_estate_power = 0.2
+		local_clergy_food_consumption = 0.2
+		local_peasants_max_literacy = 10
 		local_pop_conversion_speed = 0.02
-		local_tribal_promotion = 0.1
+		local_tribal_promotion = 0.2
 	}
 }
