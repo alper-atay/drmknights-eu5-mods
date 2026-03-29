@@ -16,15 +16,15 @@
  dbo_dhe_sultans_yildirim_sultan_bayezid.1.historical_info: "$dbo_yildirim_sultan_bayezid_historical_info_common$"
  dbo_dhe_sultans_yildirim_sultan_bayezid.1.a: "Bir Yıldırım Çaktı!"
 # dbo_yildirim_sultan_bayezid rise
- dbo_dhe_sultans.102.title: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName]\n$dbo_history_common_rise$"
- dbo_dhe_sultans.102.desc: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName], [GetCharacter('dbo_yildirim_sultan_bayezid').GetAgeInYears] yaşına geldi ve artık Devlet-i Aliyye'nin başına geçecektir! Hiç bir güç engelleyemez."
- dbo_dhe_sultans.102.historical_info: "$dbo_yildirim_sultan_bayezid_historical_info_common$"
- dbo_dhe_sultans.102.a: "$dbo_history_common_rise_option$"
+ dbo_dhe_sultans_yildirim_sultan_bayezid.2.title: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName]\n$dbo_history_common_rise$"
+ dbo_dhe_sultans_yildirim_sultan_bayezid.2.desc: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName], [GetCharacter('dbo_yildirim_sultan_bayezid').GetAgeInYears] yaşına geldi ve artık Devlet-i Aliyye'nin başına geçecektir! Hiç bir güç engelleyemez."
+ dbo_dhe_sultans_yildirim_sultan_bayezid.2.historical_info: "$dbo_yildirim_sultan_bayezid_historical_info_common$"
+ dbo_dhe_sultans_yildirim_sultan_bayezid.2.a: "$dbo_history_common_rise_option$"
 # dbo_yildirim_sultan_bayezid ascend
- dbo_dhe_sultans.103.title: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName]'in\n$dbo_history_common_ascend$"
- dbo_dhe_sultans.103.desc: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName], [GetCharacter('dbo_yildirim_sultan_bayezid').GetAgeInYears] yaşına geldi ve artık Devlet-i Aliyye'nin başına geçecektir! Hiç bir güç engelleyemez."
- dbo_dhe_sultans.103.historical_info: "$dbo_yildirim_sultan_bayezid_historical_info_common$"
- dbo_dhe_sultans.103.a: "$dbo_history_common_ascend_option$"
+ dbo_dhe_sultans_yildirim_sultan_bayezid.3.title: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName]'in\n$dbo_history_common_ascend$"
+ dbo_dhe_sultans_yildirim_sultan_bayezid.3.desc: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName], [GetCharacter('dbo_yildirim_sultan_bayezid').GetAgeInYears] yaşına geldi ve artık Devlet-i Aliyye'nin başına geçecektir! Hiç bir güç engelleyemez."
+ dbo_dhe_sultans_yildirim_sultan_bayezid.3.historical_info: "$dbo_yildirim_sultan_bayezid_historical_info_common$"
+ dbo_dhe_sultans_yildirim_sultan_bayezid.3.a: "$dbo_history_common_ascend_option$"
 # dbo_yildirim_sultan_bayezid dbo_yildirim_sultan_bayezid_nightmare_1
  dbo_dhe_sultans.105.title: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName]\nKâbusu"
  dbo_dhe_sultans.105.desc: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName], rüyasında Timur tarafından esir alınacağını görmüştü. Bu rüya, onun gelecekteki zorluklara karşı hazırlıklı olmasını sağladı."

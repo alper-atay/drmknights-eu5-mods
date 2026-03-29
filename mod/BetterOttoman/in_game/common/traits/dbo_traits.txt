@@ -1,15 +1,23 @@
 ﻿dbo_prince = {
-	category = ruler
-	flavor = personality
+	category = child
 	allow = {
 		always = no
 	}
 	modifier = {
-		character_child_education = 0.5
+		character_child_education = 2
 	}
 }
 
 dbo_sultan = {
 	category = ruler
 	flavor = personality
+	allow = {
+		always = no
+	}
+	modifier = {
+		global_crown_estate_power = 0.3
+		force_allow_as_leader = yes
+		character_life_expectancy = 20
+		max_war_exhaustion = 5
+	}
 }

@@ -1,4 +1,4 @@
-namespace = dbo_dhe_sultans_yildirim_sultan_bayezid
+﻿namespace = dbo_dhe_sultans_yildirim_sultan_bayezid
 # dbo_history_yildirim_sultan_bayezid_born
 dbo_dhe_sultans_yildirim_sultan_bayezid.1 = {
 	type = country_event
@@ -14,12 +14,24 @@ dbo_dhe_sultans_yildirim_sultan_bayezid.1 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		has_ruler = yes
-		ruler = {
-			is_adult = yes
-		}
 		NOT = {
-			exists = dbo_yildirim_sultan_bayezid
+			exists = character:dbo_yildirim_sultan_bayezid
+		}
+		OR = {
+			AND = {
+				has_ruler = yes
+				ruler = {
+					father = character:tur_orhan
+					is_adult = yes
+				}
+			}
+			AND = {
+				has_heir = yes
+				heir = {
+					father = character:tur_orhan
+					is_adult = yes
+				}
+			}
 		}
 	}
 	immediate = {
@@ -52,8 +64,8 @@ dbo_dhe_sultans_yildirim_sultan_bayezid.1 = {
 				father = character:tur_orhan
 				birth_location = root.capital
 				age = {
-					min = 32
-					max = 40
+					min = 24
+					max = 32
 				}
 				culture = root.culture
 				religion = root.religion
@@ -84,14 +96,16 @@ dbo_dhe_sultans_yildirim_sultan_bayezid.1 = {
 					has_available_marriage_slot = yes
 				}
 			}
-			dbo_create_and_marry_lady = {
+			dbo_create_and_marry_lady_with_save_temporary_scope_as = {
 				married_character = scope:target_father
+				save_temporary_scope_as = target_mother
 			}
 		}
 		create_character = {
 			first_name = Bayezid
 			nickname = nick_Yildirim
 			father = scope:target_father
+			mother = scope:target_mother
 			birth_location = root.capital
 			age = 0
 			culture = root.culture
@@ -100,10 +114,98 @@ dbo_dhe_sultans_yildirim_sultan_bayezid.1 = {
 			add_trait = trait:dbo_prince
 			script = dbo_yildirim_sultan_bayezid
 		}
+		character:dbo_yildirim_sultan_bayezid = {
+			set_child_education = child_education:expensive_in_depth_education
+		}
 	}
 	option = {
 		name = dbo_dhe_sultans_yildirim_sultan_bayezid.1.a
 		historical_option = yes
 		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_history_yildirim_sultan_bayezid_rise
+dbo_dhe_sultans_yildirim_sultan_bayezid.2 = {
+	type = country_event
+	title = dbo_dhe_sultans_yildirim_sultan_bayezid.2.title
+	desc = dbo_dhe_sultans_yildirim_sultan_bayezid.2.desc
+	historical_info = dbo_dhe_sultans_yildirim_sultan_bayezid.2.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_sultan_bayezid_rise.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1354.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		exists = character:dbo_yildirim_sultan_bayezid
+		character:dbo_yildirim_sultan_bayezid = {
+			is_alive = yes
+			is_adult = yes
+		}
+	}
+	option = {
+		name = dbo_dhe_sultans_yildirim_sultan_bayezid.2.a
+		historical_option = yes
+		character:dbo_yildirim_sultan_bayezid = {
+			hidden_effect = {
+				remove_traits_of_category = ruler
+			}
+			add_trait = trait:dbo_sultan
+			add_trait = trait:conqueror
+			add_trait = trait:hussar_commander
+			dbo_add_scaling_character_abilities = yes
+		}
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_history_yildirim_sultan_bayezid_ascend
+dbo_dhe_sultans_yildirim_sultan_bayezid.3 = {
+	type = country_event
+	title = dbo_dhe_sultans_yildirim_sultan_bayezid.3.title
+	desc = dbo_dhe_sultans_yildirim_sultan_bayezid.3.desc
+	historical_info = dbo_dhe_sultans_yildirim_sultan_bayezid.3.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_sultan_bayezid_ascend.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1354.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		exists = character:dbo_yildirim_sultan_bayezid
+		character:dbo_yildirim_sultan_bayezid = {
+			has_trait = dbo_sultan
+		}
+		OR = {
+			AND = {
+				has_ruler = yes
+				NOT = {
+					character:dbo_yildirim_sultan_bayezid = {
+						is_child_of = root.ruler
+					}
+				}
+			}
+			has_regent = yes
+			character:dbo_yildirim_sultan_bayezid = {
+				is_ruler = yes
+			}
+		}
+	}
+	option = {
+		name = dbo_dhe_sultans_yildirim_sultan_bayezid.3.a
+		historical_option = yes
+		if = {
+			limit = {
+				character:dbo_yildirim_sultan_bayezid = {
+					is_ruler = no
+				}
+			}
+			set_new_ruler = character:dbo_yildirim_sultan_bayezid
+		}
 	}
 }

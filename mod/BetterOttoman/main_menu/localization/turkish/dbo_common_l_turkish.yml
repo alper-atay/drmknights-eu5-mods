@@ -1,7 +1,9 @@
 ﻿l_turkish:
  dbo_prince: "Şehzade"
- desc_dbo_prince: "Şehzade, Osmanlı İmparatorluğu'nun gelecekteki padişahı olacak olan genç hükümdardır. Şehzade, padişahın oğludur ve genellikle sarayda yetiştirilir. Şehzade, gelecekteki lider olarak eğitilir ve devlet işlerine hazırlanır."
+ dbo_prince_die_desc: "Vefatı derin bir acı yaratan Şehzade [CHARACTER.GetName], genç yaşta hayatını kaybetti. Şehzade, devletin gelecekteki lideri olarak büyük umutlar vaat ediyordu. Onun ölümü, sarayda ve halk arasında büyük bir üzüntüye neden oldu."
+ desc_dbo_prince: "Şehzade, devletin gelecekteki padişahı olacak olan genç hükümdardır. Şehzade, padişahın oğludur ve genellikle sarayda yetiştirilir. Şehzade, gelecekteki lider olarak eğitilir ve devlet işlerine hazırlanır."
  dbo_sultan: "Padişah"
+ dbo_sultan_die_desc: "Padişah [CHARACTER.GetName], uzun ve başarılı bir hükümdarlığın ardından vefat etti. Padişah, devletin en yüksek makamında bulunuyordu ve onun ölümü, devletin geleceği için büyük bir kayıp olarak kabul edildi. Padişahın vefatı, sarayda ve halk arasında derin bir üzüntüye neden oldu."
  desc_dbo_sultan: "Padişah, Osmanlı İmparatorluğu'nun en yüksek makamıdır. Padişah, devletin başı ve en güçlü figürüdür. Padişah, ülkeyi yönetir, yasaları yapar ve ordunun başkomutanıdır."
  dbo_crown_noble_marry: "Soylu bir Hanımefendiyle Evlendir"
  dbo_crown_noble_marry_concept: "[marriage|E]"

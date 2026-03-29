@@ -48,6 +48,66 @@
 
 dbo_create_and_marry_lady = {
 	create_character = {
+		age = 16
+		female = yes
+		fertility = 100
+		random_estate_type_trigger = {
+			NOR = {
+				this = estate_type:nobles_estate
+				this = estate_type:clergy_estate
+				this = estate_type:dhimmi_estate
+			}
+		}
+		adm = {
+			value = {
+				add = {
+					30
+					50
+				}
+				add = {
+					value = $married_character$.adm
+					divide = 2
+				}
+				max = 100
+			}
+		}
+		dip = {
+			value = {
+				add = {
+					30
+					50
+				}
+				add = {
+					value = $married_character$.dip
+					divide = 2
+				}
+				max = 100
+			}
+		}
+		mil = {
+			value = {
+				add = {
+					30
+					50
+				}
+				add = {
+					value = $married_character$.mil
+					divide = 2
+				}
+				max = 100
+			}
+		}
+		add_character_modifier = {
+			modifier = banned_from_cabinet
+			years = modifier_duration_permanent
+			mode = add_and_extend
+		}
+		marry_character = $married_character$
+	}
+}
+
+dbo_create_and_marry_lady_with_save_temporary_scope_as = {
+	create_character = {
 		birth_location = root.capital
 		age = 16
 		culture = root.culture
@@ -99,5 +159,6 @@ dbo_create_and_marry_lady = {
 			mode = add_and_extend
 		}
 		marry_character = $married_character$
+		save_temporary_scope_as = $save_temporary_scope_as$
 	}
 }

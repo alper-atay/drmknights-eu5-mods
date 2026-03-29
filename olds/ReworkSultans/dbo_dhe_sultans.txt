@@ -483,6 +483,54 @@ dbo_dhe_sultans.203 = {
 	}
 }
 
+# dbo_history_fatih_sultan_mehmed_sahni_seman_madrasa
+dbo_dhe_sultans.205 = {
+	type = country_event
+	title = dbo_dhe_sultans.205.title
+	desc = dbo_dhe_sultans.205.desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_fatih_sultan_mehmed_sahni_seman_madrasa.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1462.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		owns = location:constantinople
+		capital = location:constantinople
+		OR = {
+			AND = {
+				exists = character:dbo_fatih_sultan_mehmed
+				character:dbo_fatih_sultan_mehmed = {
+					character_age > 30
+				}
+			}
+		}
+	}
+	option = {
+		name = dbo_dhe_sultans.205.a
+		historical_option = yes
+		unlock_building_effect = {
+			type = dbo_sahni_seman_madrasa
+		}
+		capital = {
+			construct_building = {
+				building_type = building_type:dbo_sahni_seman_madrasa
+			}
+		}
+		add_estate_satisfaction = {
+			type = estate_type:nobles_estate
+			value = estate_satisfaction_severe_penalty
+		}
+		add_estate_satisfaction = {
+			type = estate_type:clergy_estate
+			value = estate_satisfaction_severe_penalty
+		}
+		dbo_event_severe_penalty = yes
+	}
+}
+
 # dbo_history_fatih_sultan_mehmed_legal_code
 dbo_dhe_sultans.206 = {
 	type = country_event

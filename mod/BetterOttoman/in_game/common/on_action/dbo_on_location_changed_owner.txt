@@ -42,6 +42,9 @@ dbo_on_conquer_any_location = {
 		}
 		if = {
 			limit = {
+				NOT = {
+					integration_level = core
+				}
 				OR = {
 					scope:loser = {
 						has_reform = government_reform:anatolian_beylik
