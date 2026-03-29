@@ -30,7 +30,7 @@
 		monthly_towards_innovative = societal_value_monthly_move
 	}
 	possible_production_methods = {
-		library_maintenance
+		dbo_sahni_seman_madrasa_maintenance
 	}
-	construction_demand = library_construction
+	construction_demand = prestige_building_construction
 }

@@ -1,6 +1,7 @@
 ﻿l_turkish:
  dbo_sahni_seman_madrasa: "Sahn-ı Seman Medresesi"
  dbo_sahni_seman_madrasa_desc: "Sahn-ı Seman, Fatih Sultan Mehmed'in İstanbul'u fethinden sonra kurduğu eğitim kurumları arasında en üst düzeyde eğitim veren yükseköğrenim kurumudur. Sahn-ı Seman; Kur'an, hadis, kelâm, fıkıh, tefsir gibi İslam bilimlerinin yanı sıra fizik, kimya, matematik, astronomi gibi aklî bilimlerde dersler verirdi. Fatih Külliyesi içerisinde yer alan Sahn-ı Seman, külliye bütünlüğü içerisinde yapılmıştır. İnşaatı 1462 ile 1470 yılları arasında sürmüştür."
+ dbo_sahni_seman_madrasa_maintenance: "$dbo_sahni_seman_madrasa$"
  dbo_watchhouse: "Karakol"
  dbo_watchhouse_desc: "Asayişi sağlamak, sınırları korumak ve haberleşme ağını denetlemek amacıyla stratejik noktalara inşa edilen askerî karakollardır."
  dbo_watchhouse_maintenance: "$dbo_watchhouse$"

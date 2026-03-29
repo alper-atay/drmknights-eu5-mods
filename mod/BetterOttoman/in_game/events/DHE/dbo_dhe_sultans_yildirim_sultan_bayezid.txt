@@ -1,0 +1,109 @@
+namespace = dbo_dhe_sultans_yildirim_sultan_bayezid
+# dbo_history_yildirim_sultan_bayezid_born
+dbo_dhe_sultans_yildirim_sultan_bayezid.1 = {
+	type = country_event
+	title = dbo_dhe_sultans_yildirim_sultan_bayezid.1.title
+	desc = dbo_dhe_sultans_yildirim_sultan_bayezid.1.desc
+	historical_info = dbo_dhe_sultans_yildirim_sultan_bayezid.1.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_sultan_bayezid_born.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1354.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		has_ruler = yes
+		ruler = {
+			is_adult = yes
+		}
+		NOT = {
+			exists = dbo_yildirim_sultan_bayezid
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				has_ruler = yes
+				ruler = {
+					father = character:tur_orhan
+				}
+			}
+			ruler = {
+				save_temporary_scope_as = target_father
+			}
+		}
+		else_if = {
+			limit = {
+				has_heir = yes
+				heir = {
+					is_adult = yes
+					father = character:tur_orhan
+				}
+			}
+			heir = {
+				save_temporary_scope_as = target_father
+			}
+		}
+		else = {
+			create_character = {
+				first_name = name_murad
+				father = character:tur_orhan
+				birth_location = root.capital
+				age = {
+					min = 32
+					max = 40
+				}
+				culture = root.culture
+				religion = root.religion
+				fertility = 100
+				adm = {
+					60
+					80
+				}
+				dip = {
+					60
+					80
+				}
+				mil = {
+					60
+					80
+				}
+				add_character_modifier = {
+					modifier = blocked_from_being_ruler
+					years = modifier_duration_permanent
+					mode = add_and_extend
+				}
+				save_temporary_scope_as = target_father
+			}
+		}
+		if = {
+			limit = {
+				scope:target_father = {
+					has_available_marriage_slot = yes
+				}
+			}
+			dbo_create_and_marry_lady = {
+				married_character = scope:target_father
+			}
+		}
+		create_character = {
+			first_name = Bayezid
+			nickname = nick_Yildirim
+			father = scope:target_father
+			birth_location = root.capital
+			age = 0
+			culture = root.culture
+			religion = root.religion
+			fertility = 100
+			add_trait = trait:dbo_prince
+			script = dbo_yildirim_sultan_bayezid
+		}
+	}
+	option = {
+		name = dbo_dhe_sultans_yildirim_sultan_bayezid.1.a
+		historical_option = yes
+		dbo_event_mild_bonus = yes
+	}
+}

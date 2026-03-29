@@ -45,3 +45,59 @@
 		}
 	}
 }
+
+dbo_create_and_marry_lady = {
+	create_character = {
+		birth_location = root.capital
+		age = 16
+		culture = root.culture
+		religion = root.religion
+		female = yes
+		fertility = 100
+		adm = {
+			value = {
+				add = {
+					30
+					50
+				}
+				add = {
+					value = $married_character$.adm
+					divide = 2
+				}
+				max = 100
+			}
+		}
+		dip = {
+			value = {
+				add = {
+					30
+					50
+				}
+				add = {
+					value = $married_character$.dip
+					divide = 2
+				}
+				max = 100
+			}
+		}
+		mil = {
+			value = {
+				add = {
+					30
+					50
+				}
+				add = {
+					value = $married_character$.mil
+					divide = 2
+				}
+				max = 100
+			}
+		}
+		add_character_modifier = {
+			modifier = banned_from_cabinet
+			years = modifier_duration_permanent
+			mode = add_and_extend
+		}
+		marry_character = $married_character$
+	}
+}

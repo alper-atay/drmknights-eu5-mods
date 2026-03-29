@@ -1,0 +1,10 @@
+﻿dbo_sahni_seman_madrasa_maintenance = {
+	paper = 2
+	books = 1
+	cloth = 1
+	fine_cloth = 0.5
+	tools = 1
+	glass = 0.5
+	mercury = 0.25
+	category = building_maintenance
+}

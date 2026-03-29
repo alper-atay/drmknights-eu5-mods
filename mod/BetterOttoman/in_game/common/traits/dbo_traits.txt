@@ -1,0 +1,15 @@
+﻿dbo_prince = {
+	category = ruler
+	flavor = personality
+	allow = {
+		always = no
+	}
+	modifier = {
+		character_child_education = 0.5
+	}
+}
+
+dbo_sultan = {
+	category = ruler
+	flavor = personality
+}

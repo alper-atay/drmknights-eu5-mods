@@ -1,4 +1,8 @@
 ﻿l_turkish:
+ dbo_prince: "Şehzade"
+ desc_dbo_prince: "Şehzade, Osmanlı İmparatorluğu'nun gelecekteki padişahı olacak olan genç hükümdardır. Şehzade, padişahın oğludur ve genellikle sarayda yetiştirilir. Şehzade, gelecekteki lider olarak eğitilir ve devlet işlerine hazırlanır."
+ dbo_sultan: "Padişah"
+ desc_dbo_sultan: "Padişah, Osmanlı İmparatorluğu'nun en yüksek makamıdır. Padişah, devletin başı ve en güçlü figürüdür. Padişah, ülkeyi yönetir, yasaları yapar ve ordunun başkomutanıdır."
  dbo_crown_noble_marry: "Soylu bir Hanımefendiyle Evlendir"
  dbo_crown_noble_marry_concept: "[marriage|E]"
  dbo_crown_noble_marry_act: "$dbo_crown_noble_marry$"

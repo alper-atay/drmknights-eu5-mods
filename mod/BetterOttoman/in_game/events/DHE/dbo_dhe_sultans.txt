@@ -1,114 +1,11 @@
-﻿namespace = dbo_dhe_history
-# dbo_dhe_history
-# dbo_history_yildirim_sultan_bayezid_born
-dbo_dhe_history.101 = {
-	type = country_event
-	title = dbo_dhe_history.101.title
-	desc = dbo_dhe_history.101.desc
-	historical_info = dbo_dhe_history.101.historical_info
-	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_sultan_bayezid_born.dds"
-	fire_only_once = yes
-	dynamic_historical_event = {
-		tag = TUR
-		from = 1354.1.1
-		to = 9999.1.1
-		monthly_chance = 100
-	}
-	trigger = {
-		has_ruler = yes
-		ruler = {
-			is_adult = yes
-		}
-	}
-	immediate = {
-		if = {
-			limit = {
-				has_ruler = yes
-				ruler = {
-					father = character:tur_orhan
-				}
-			}
-			ruler = {
-				save_temporary_scope_as = target_father
-			}
-		}
-		else_if = {
-			limit = {
-				has_heir = yes
-				heir = {
-					is_adult = yes
-					father = character:tur_orhan
-				}
-			}
-			heir = {
-				save_temporary_scope_as = target_father
-			}
-		}
-		else = {
-			create_character = {
-				first_name = name_murad
-				father = character:tur_orhan
-				birth_location = root.capital
-				age = {
-					min = 32
-					max = 40
-				}
-				culture = root.culture
-				religion = root.religion
-				fertility = 100
-				adm = {
-					60
-					80
-				}
-				dip = {
-					60
-					80
-				}
-				mil = {
-					60
-					80
-				}
-				add_character_modifier = {
-					modifier = blocked_from_being_ruler
-					years = modifier_duration_permanent
-					mode = add_and_extend
-				}
-				save_temporary_scope_as = target_father
-			}
-		}
-		create_character = {
-			first_name = Bayezid
-			nickname = nick_Yildirim
-			father = scope:target_father
-			birth_location = root.capital
-			age = 0
-			culture = root.culture
-			religion = root.religion
-			fertility = 100
-			add_trait = trait:child_prodigy
-			script = dbo_yildirim_sultan_bayezid
-		}
-		character:dbo_yildirim_sultan_bayezid = {
-			add_character_modifier = {
-				modifier = blocked_from_being_ruler
-				years = modifier_duration_permanent
-				mode = add_and_extend
-			}
-		}
-	}
-	option = {
-		name = dbo_dhe_history.101.a
-		historical_option = yes
-		dbo_event_mild_bonus = yes
-	}
-}
-
+﻿namespace = dbo_dhe_sultans
+# dbo_dhe_sultans
 # dbo_history_yildirim_sultan_bayezid_rise
-dbo_dhe_history.102 = {
+dbo_dhe_sultans.102 = {
 	type = country_event
-	title = dbo_dhe_history.102.title
-	desc = dbo_dhe_history.102.desc
-	historical_info = dbo_dhe_history.102.historical_info
+	title = dbo_dhe_sultans.102.title
+	desc = dbo_dhe_sultans.102.desc
+	historical_info = dbo_dhe_sultans.102.historical_info
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_sultan_bayezid_rise.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -125,7 +22,7 @@ dbo_dhe_history.102 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_history.102.a
+		name = dbo_dhe_sultans.102.a
 		historical_option = yes
 		character:dbo_yildirim_sultan_bayezid = {
 			hidden_effect = {
@@ -148,11 +45,11 @@ dbo_dhe_history.102 = {
 }
 
 # dbo_history_yildirim_sultan_bayezid_ascend
-dbo_dhe_history.103 = {
+dbo_dhe_sultans.103 = {
 	type = country_event
-	title = dbo_dhe_history.103.title
-	desc = dbo_dhe_history.103.desc
-	historical_info = dbo_dhe_history.103.historical_info
+	title = dbo_dhe_sultans.103.title
+	desc = dbo_dhe_sultans.103.desc
+	historical_info = dbo_dhe_sultans.103.historical_info
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_sultan_bayezid_ascend.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -172,7 +69,7 @@ dbo_dhe_history.103 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_history.103.a
+		name = dbo_dhe_sultans.103.a
 		historical_option = yes
 		if = {
 			limit = {
@@ -187,11 +84,11 @@ dbo_dhe_history.103 = {
 }
 
 # dbo_history_yildirim_sultan_bayezid_defeated_by_timur
-dbo_dhe_history.105 = {
+dbo_dhe_sultans.105 = {
 	type = country_event
-	title = dbo_dhe_history.105.title
-	desc = dbo_dhe_history.105.desc
-	historical_info = dbo_dhe_history.105.historical_info
+	title = dbo_dhe_sultans.105.title
+	desc = dbo_dhe_sultans.105.desc
+	historical_info = dbo_dhe_sultans.105.historical_info
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_sultan_bayezid_defeated_by_timur.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -219,7 +116,7 @@ dbo_dhe_history.105 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_history.105.a
+		name = dbo_dhe_sultans.105.a
 		historical_option = yes
 		set_variable = {
 			name = dbo_yildirim_sultan_bayezid_nightmare
@@ -229,11 +126,11 @@ dbo_dhe_history.105 = {
 }
 
 # dbo_history_yildirim_sultan_bayezid_nightmare
-dbo_dhe_history.106 = {
+dbo_dhe_sultans.106 = {
 	type = country_event
-	title = dbo_dhe_history.106.title
-	desc = dbo_dhe_history.106.desc
-	historical_info = dbo_dhe_history.106.historical_info
+	title = dbo_dhe_sultans.106.title
+	desc = dbo_dhe_sultans.106.desc
+	historical_info = dbo_dhe_sultans.106.historical_info
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_sultan_bayezid_nightmare.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -259,7 +156,7 @@ dbo_dhe_history.106 = {
 		var:dbo_yildirim_sultan_bayezid_nightmare = 1
 	}
 	option = {
-		name = dbo_dhe_history.106.a
+		name = dbo_dhe_sultans.106.a
 		historical_option = yes
 		change_variable = {
 			name = dbo_yildirim_sultan_bayezid_nightmare
@@ -269,11 +166,11 @@ dbo_dhe_history.106 = {
 }
 
 # dbo_history_yildirim_sultan_bayezid_die
-dbo_dhe_history.107 = {
+dbo_dhe_sultans.107 = {
 	type = country_event
-	title = dbo_dhe_history.107.title
-	desc = dbo_dhe_history.107.desc
-	historical_info = dbo_dhe_history.107.historical_info
+	title = dbo_dhe_sultans.107.title
+	desc = dbo_dhe_sultans.107.desc
+	historical_info = dbo_dhe_sultans.107.historical_info
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_sultan_bayezid_die.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -308,7 +205,7 @@ dbo_dhe_history.107 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_history.107.a
+		name = dbo_dhe_sultans.107.a
 		historical_option = yes
 		kill_character = {
 			target = character:dbo_yildirim_sultan_bayezid
@@ -322,11 +219,11 @@ dbo_dhe_history.107 = {
 }
 
 # Ottoman Interregnum Begin
-dbo_dhe_history.108 = {
+dbo_dhe_sultans.108 = {
 	type = country_event
-	title = dbo_dhe_history.108.title
-	desc = dbo_dhe_history.108.desc
-	historical_info = dbo_dhe_history.108.historical_info
+	title = dbo_dhe_sultans.108.title
+	desc = dbo_dhe_sultans.108.desc
+	historical_info = dbo_dhe_sultans.108.historical_info
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_ottoman_interregnum_begin.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -342,7 +239,7 @@ dbo_dhe_history.108 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_history.108.a
+		name = dbo_dhe_sultans.108.a
 		historical_option = yes
 		dbo_event_extreme_penalty = yes
 		add_country_modifier = {
@@ -376,11 +273,11 @@ dbo_dhe_history.108 = {
 }
 
 # Ottoman Interregnum End
-dbo_dhe_history.109 = {
+dbo_dhe_sultans.109 = {
 	type = country_event
-	title = dbo_dhe_history.109.title
-	desc = dbo_dhe_history.109.desc
-	historical_info = dbo_dhe_history.109.historical_info
+	title = dbo_dhe_sultans.109.title
+	desc = dbo_dhe_sultans.109.desc
+	historical_info = dbo_dhe_sultans.109.historical_info
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_ottoman_interregnum_end.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -398,7 +295,7 @@ dbo_dhe_history.109 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_history.109.a
+		name = dbo_dhe_sultans.109.a
 		historical_option = yes
 		dbo_event_extreme_bonus = yes
 		add_country_modifier = {
@@ -431,11 +328,11 @@ dbo_dhe_history.109 = {
 }
 
 # dbo_history_fatih_sultan_mehmed_born
-dbo_dhe_history.201 = {
+dbo_dhe_sultans.201 = {
 	type = country_event
-	title = dbo_dhe_history.201.title
-	desc = dbo_dhe_history.201.desc
-	historical_info = dbo_dhe_history.201.historical_info
+	title = dbo_dhe_sultans.201.title
+	desc = dbo_dhe_sultans.201.desc
+	historical_info = dbo_dhe_sultans.201.historical_info
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_fatih_sultan_mehmed_born.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -468,18 +365,18 @@ dbo_dhe_history.201 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_history.201.a
+		name = dbo_dhe_sultans.201.a
 		historical_option = yes
 		dbo_event_mild_bonus = yes
 	}
 }
 
 # dbo_fatih_sultan_mehmed rise
-dbo_dhe_history.202 = {
+dbo_dhe_sultans.202 = {
 	type = country_event
-	title = dbo_dhe_history.202.title
-	desc = dbo_dhe_history.202.desc
-	historical_info = dbo_dhe_history.202.historical_info
+	title = dbo_dhe_sultans.202.title
+	desc = dbo_dhe_sultans.202.desc
+	historical_info = dbo_dhe_sultans.202.historical_info
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_fatih_sultan_mehmed_rise.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -497,7 +394,7 @@ dbo_dhe_history.202 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_history.202.a
+		name = dbo_dhe_sultans.202.a
 		historical_option = yes
 		character:dbo_fatih_sultan_mehmed = {
 			hidden_effect = {
@@ -520,11 +417,11 @@ dbo_dhe_history.202 = {
 }
 
 # dbo_fatih_sultan_mehmed ascend
-dbo_dhe_history.203 = {
+dbo_dhe_sultans.203 = {
 	type = country_event
-	title = dbo_dhe_history.203.title
-	desc = dbo_dhe_history.203.desc
-	historical_info = dbo_dhe_history.203.historical_info
+	title = dbo_dhe_sultans.203.title
+	desc = dbo_dhe_sultans.203.desc
+	historical_info = dbo_dhe_sultans.203.historical_info
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_fatih_sultan_mehmed_ascend.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -564,7 +461,7 @@ dbo_dhe_history.203 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_history.203.a
+		name = dbo_dhe_sultans.203.a
 		historical_option = yes
 		if = {
 			limit = {
@@ -586,60 +483,12 @@ dbo_dhe_history.203 = {
 	}
 }
 
-# dbo_history_fatih_sultan_mehmed_sahni_seman_madrasa
-dbo_dhe_history.205 = {
-	type = country_event
-	title = dbo_dhe_history.205.title
-	desc = dbo_dhe_history.205.desc
-	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_fatih_sultan_mehmed_sahni_seman_madrasa.dds"
-	fire_only_once = yes
-	dynamic_historical_event = {
-		tag = TUR
-		from = 1451.1.1
-		to = 9999.1.1
-		monthly_chance = 100
-	}
-	trigger = {
-		exists = capital
-		exists = character:dbo_fatih_sultan_mehmed
-		character:dbo_fatih_sultan_mehmed = {
-			character_age > 25
-		}
-	}
-	option = {
-		name = dbo_dhe_history.205.a
-		historical_option = yes
-		unlock_building_effect = {
-			type = dbo_sahni_seman_madrasa
-		}
-		capital = {
-			construct_building = {
-				building_type = building_type:dbo_sahni_seman_madrasa
-			}
-		}
-		every_estate = {
-			limit = {
-				NOT = {
-					estate_type = estate_type:crown_estate
-				}
-			}
-			ROOT = {
-				add_estate_satisfaction = {
-					type = prev.estate_type
-					value = estate_satisfaction_weak_penalty
-				}
-			}
-		}
-		dbo_event_mild_bonus = yes
-	}
-}
-
 # dbo_history_fatih_sultan_mehmed_legal_code
-dbo_dhe_history.206 = {
+dbo_dhe_sultans.206 = {
 	type = country_event
-	title = dbo_dhe_history.206.title
-	desc = dbo_dhe_history.206.desc
-	historical_info = dbo_dhe_history.206.historical_info
+	title = dbo_dhe_sultans.206.title
+	desc = dbo_dhe_sultans.206.desc
+	historical_info = dbo_dhe_sultans.206.historical_info
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_fatih_sultan_mehmed_legal_code.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -655,7 +504,7 @@ dbo_dhe_history.206 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_history.206.a
+		name = dbo_dhe_sultans.206.a
 		historical_option = yes
 		unlock_policy_effect = {
 			type = dbo_destiny_legal_code_kanunname_i_al_i_osman_policy
@@ -666,11 +515,11 @@ dbo_dhe_history.206 = {
 }
 
 # dbo_history_fatih_sultan_mehmed_die
-dbo_dhe_history.207 = {
+dbo_dhe_sultans.207 = {
 	type = country_event
-	title = dbo_dhe_history.207.title
-	desc = dbo_dhe_history.207.desc
-	historical_info = dbo_dhe_history.207.historical_info
+	title = dbo_dhe_sultans.207.title
+	desc = dbo_dhe_sultans.207.desc
+	historical_info = dbo_dhe_sultans.207.historical_info
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_fatih_sultan_mehmed_die.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -703,17 +552,17 @@ dbo_dhe_history.207 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_history.207.a
+		name = dbo_dhe_sultans.207.a
 		historical_option = yes
 	}
 }
 
 # dbo_history_yavuz_sultan_selim_born
-dbo_dhe_history.301 = {
+dbo_dhe_sultans.301 = {
 	type = country_event
-	title = dbo_dhe_history.301.title
-	desc = dbo_dhe_history.301.desc
-	historical_info = dbo_dhe_history.301.historical_info
+	title = dbo_dhe_sultans.301.title
+	desc = dbo_dhe_sultans.301.desc
+	historical_info = dbo_dhe_sultans.301.historical_info
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yavuz_sultan_selim_born.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -809,18 +658,18 @@ dbo_dhe_history.301 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_history.301.a
+		name = dbo_dhe_sultans.301.a
 		historical_option = yes
 		dbo_event_mild_bonus = yes
 	}
 }
 
 # dbo_history_yavuz_sultan_selim_rise
-dbo_dhe_history.302 = {
+dbo_dhe_sultans.302 = {
 	type = country_event
-	title = dbo_dhe_history.302.title
-	desc = dbo_dhe_history.302.desc
-	historical_info = dbo_dhe_history.302.historical_info
+	title = dbo_dhe_sultans.302.title
+	desc = dbo_dhe_sultans.302.desc
+	historical_info = dbo_dhe_sultans.302.historical_info
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yavuz_sultan_selim_rise.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -837,7 +686,7 @@ dbo_dhe_history.302 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_history.302.a
+		name = dbo_dhe_sultans.302.a
 		historical_option = yes
 		character:dbo_yavuz_sultan_selim = {
 			hidden_effect = {
@@ -860,11 +709,11 @@ dbo_dhe_history.302 = {
 }
 
 # dbo_history_yildirim_sultan_bayezid_ascend
-dbo_dhe_history.303 = {
+dbo_dhe_sultans.303 = {
 	type = country_event
-	title = dbo_dhe_history.303.title
-	desc = dbo_dhe_history.303.desc
-	historical_info = dbo_dhe_history.303.historical_info
+	title = dbo_dhe_sultans.303.title
+	desc = dbo_dhe_sultans.303.desc
+	historical_info = dbo_dhe_sultans.303.historical_info
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_sultan_bayezid_ascend.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -885,7 +734,7 @@ dbo_dhe_history.303 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_history.303.a
+		name = dbo_dhe_sultans.303.a
 		historical_option = yes
 		if = {
 			limit = {
@@ -900,11 +749,11 @@ dbo_dhe_history.303 = {
 }
 
 # dbo_history_yavuz_sultan_selim_die
-dbo_dhe_history.307 = {
+dbo_dhe_sultans.307 = {
 	type = country_event
-	title = dbo_dhe_history.307.title
-	desc = dbo_dhe_history.307.desc
-	historical_info = dbo_dhe_history.307.historical_info
+	title = dbo_dhe_sultans.307.title
+	desc = dbo_dhe_sultans.307.desc
+	historical_info = dbo_dhe_sultans.307.historical_info
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yavuz_sultan_selim_die.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -941,17 +790,17 @@ dbo_dhe_history.307 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_history.307.a
+		name = dbo_dhe_sultans.307.a
 		historical_option = yes
 	}
 }
 
 # dbo_history_kanuni_sultan_suleiman_born
-dbo_dhe_history.401 = {
+dbo_dhe_sultans.401 = {
 	type = country_event
-	title = dbo_dhe_history.401.title
-	desc = dbo_dhe_history.401.desc
-	historical_info = dbo_dhe_history.401.historical_info
+	title = dbo_dhe_sultans.401.title
+	desc = dbo_dhe_sultans.401.desc
+	historical_info = dbo_dhe_sultans.401.historical_info
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_kanuni_sultan_suleiman_born.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -990,18 +839,18 @@ dbo_dhe_history.401 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_history.401.a
+		name = dbo_dhe_sultans.401.a
 		historical_option = yes
 		dbo_event_mild_bonus = yes
 	}
 }
 
 # dbo_history_kanuni_sultan_suleiman_rise
-dbo_dhe_history.402 = {
+dbo_dhe_sultans.402 = {
 	type = country_event
-	title = dbo_dhe_history.402.title
-	desc = dbo_dhe_history.402.desc
-	historical_info = dbo_dhe_history.402.historical_info
+	title = dbo_dhe_sultans.402.title
+	desc = dbo_dhe_sultans.402.desc
+	historical_info = dbo_dhe_sultans.402.historical_info
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_kanuni_sultan_suleiman_rise.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -1018,7 +867,7 @@ dbo_dhe_history.402 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_history.402.a
+		name = dbo_dhe_sultans.402.a
 		historical_option = yes
 		character:dbo_kanuni_sultan_suleiman = {
 			hidden_effect = {
@@ -1041,11 +890,11 @@ dbo_dhe_history.402 = {
 }
 
 # dbo_history_kanuni_sultan_suleiman_ascend
-dbo_dhe_history.403 = {
+dbo_dhe_sultans.403 = {
 	type = country_event
-	title = dbo_dhe_history.403.title
-	desc = dbo_dhe_history.403.desc
-	historical_info = dbo_dhe_history.403.historical_info
+	title = dbo_dhe_sultans.403.title
+	desc = dbo_dhe_sultans.403.desc
+	historical_info = dbo_dhe_sultans.403.historical_info
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_kanuni_sultan_suleiman_ascend.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -1068,7 +917,7 @@ dbo_dhe_history.403 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_history.403.a
+		name = dbo_dhe_sultans.403.a
 		historical_option = yes
 		if = {
 			limit = {
@@ -1084,11 +933,11 @@ dbo_dhe_history.403 = {
 }
 
 # dbo_history_kanuni_sultan_suleiman dbo_destiny_legal_code_kanunname_i_al_i_osman_policy_developed
-dbo_dhe_history.407 = {
+dbo_dhe_sultans.407 = {
 	type = country_event
-	title = dbo_dhe_history.407.title
-	desc = dbo_dhe_history.407.desc
-	historical_info = dbo_dhe_history.407.historical_info
+	title = dbo_dhe_sultans.407.title
+	desc = dbo_dhe_sultans.407.desc
+	historical_info = dbo_dhe_sultans.407.historical_info
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_kanuni_sultan_suleiman_working_laws.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -1105,7 +954,7 @@ dbo_dhe_history.407 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_history.407.a
+		name = dbo_dhe_sultans.407.a
 		historical_option = yes
 		if = {
 			limit = {
