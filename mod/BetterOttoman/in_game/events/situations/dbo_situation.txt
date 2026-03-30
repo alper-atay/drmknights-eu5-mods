@@ -40,9 +40,12 @@ dbo_situation.1 = {
 				}
 			}
 		}
-		region:anatolia_region = {
-			every_ownable_location_in_region = {
-				add_core = root
+		custom_tooltip = {
+			text = dbo_every_anatolia_region_location_add_core_tt
+			region:anatolia_region = {
+				every_ownable_location_in_region = {
+					add_core = root
+				}
 			}
 		}
 		dbo_event_extreme_bonus = yes

@@ -1,179 +1,299 @@
-﻿PERFORM_dbo_conquest_arabian_peninsula_claim_ACTION = {
-	log = yes
-	onmap = no
-	popup = yes
-	idle = no
-	option = yes
-	pausepopup = no
-	message_category = wars
+﻿PERFORM_dbo_conquest_arabian_peninsula_claim_ACTION={
+log=no
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+message_category=wars
 }
 
-WE_PERFORM_dbo_conquest_arabian_peninsula_claim_ACTION = {
-	log = yes
-	onmap = no
-	popup = yes
-	idle = no
-	option = yes
-	pausepopup = no
-	message_category = wars
+WE_PERFORM_dbo_conquest_arabian_peninsula_claim_ACTION={
+log=no
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+message_category=wars
 }
 
-OTHER_PERFORMS_dbo_conquest_arabian_peninsula_claim_ACTION = {
-	log = yes
-	onmap = no
-	popup = no
-	idle = no
-	option = yes
-	pausepopup = no
-	message_category = wars
+OTHER_PERFORMS_dbo_conquest_arabian_peninsula_claim_ACTION={
+log=no
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+message_category=wars
 }
 
-PERFORM_dbo_conquest_fertile_crescent_claim_ACTION = {
-	log = yes
-	onmap = no
-	popup = yes
-	idle = no
-	option = yes
-	pausepopup = no
-	message_category = wars
+PERFORM_dbo_conquest_fertile_crescent_claim_ACTION={
+log=no
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+message_category=wars
 }
 
-WE_PERFORM_dbo_conquest_fertile_crescent_claim_ACTION = {
-	log = yes
-	onmap = no
-	popup = yes
-	idle = no
-	option = yes
-	pausepopup = no
-	message_category = wars
+WE_PERFORM_dbo_conquest_fertile_crescent_claim_ACTION={
+log=no
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+message_category=wars
 }
 
-OTHER_PERFORMS_dbo_conquest_fertile_crescent_claim_ACTION = {
-	log = yes
-	onmap = no
-	popup = no
-	idle = no
-	option = yes
-	pausepopup = no
-	message_category = wars
+OTHER_PERFORMS_dbo_conquest_fertile_crescent_claim_ACTION={
+log=no
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+message_category=wars
 }
 
-PERFORM_dbo_conquest_anatolian_turks_claim_ACTION = {
-	log = yes
-	onmap = no
-	popup = yes
-	idle = no
-	option = yes
-	pausepopup = no
-	message_category = wars
+PERFORM_dbo_conquest_anatolian_turks_claim_ACTION={
+log=no
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+message_category=wars
 }
 
-WE_PERFORM_dbo_conquest_anatolian_turks_claim_ACTION = {
-	log = yes
-	onmap = no
-	popup = yes
-	idle = no
-	option = yes
-	pausepopup = no
-	message_category = wars
+WE_PERFORM_dbo_conquest_anatolian_turks_claim_ACTION={
+log=no
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+message_category=wars
 }
 
-OTHER_PERFORMS_dbo_conquest_anatolian_turks_claim_ACTION = {
-	log = yes
-	onmap = no
-	popup = no
-	idle = no
-	option = yes
-	pausepopup = no
-	message_category = wars
+OTHER_PERFORMS_dbo_conquest_anatolian_turks_claim_ACTION={
+log=no
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+message_category=wars
 }
 
-PERFORM_dbo_conquest_black_sea_claim_ACTION = {
-	log = yes
-	onmap = no
-	popup = yes
-	idle = no
-	option = yes
-	pausepopup = no
-	message_category = wars
+PERFORM_dbo_conquest_black_sea_claim_ACTION={
+log=no
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+message_category=wars
 }
 
-WE_PERFORM_dbo_conquest_black_sea_claim_ACTION = {
-	log = yes
-	onmap = no
-	popup = yes
-	idle = no
-	option = yes
-	pausepopup = no
-	message_category = wars
+WE_PERFORM_dbo_conquest_black_sea_claim_ACTION={
+log=no
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+message_category=wars
 }
 
-OTHER_PERFORMS_dbo_conquest_black_sea_claim_ACTION = {
-	log = yes
-	onmap = no
-	popup = no
-	idle = no
-	option = yes
-	pausepopup = no
-	message_category = wars
+OTHER_PERFORMS_dbo_conquest_black_sea_claim_ACTION={
+log=no
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+message_category=wars
 }
 
-PERFORM_dbo_conquest_rumelia_claim_ACTION = {
-	log = yes
-	onmap = no
-	popup = yes
-	idle = no
-	option = yes
-	pausepopup = no
-	message_category = wars
+PERFORM_dbo_conquest_rumelia_claim_ACTION={
+log=no
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+message_category=wars
 }
 
-WE_PERFORM_dbo_conquest_rumelia_claim_ACTION = {
-	log = yes
-	onmap = no
-	popup = yes
-	idle = no
-	option = yes
-	pausepopup = no
-	message_category = wars
+WE_PERFORM_dbo_conquest_rumelia_claim_ACTION={
+log=no
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+message_category=wars
 }
 
-OTHER_PERFORMS_dbo_conquest_rumelia_claim_ACTION = {
-	log = yes
-	onmap = no
-	popup = no
-	idle = no
-	option = yes
-	pausepopup = no
-	message_category = wars
+OTHER_PERFORMS_dbo_conquest_rumelia_claim_ACTION={
+log=no
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+message_category=wars
 }
 
-PERFORM_dbo_conquest_nile_river_claim_ACTION = {
-	log = yes
-	onmap = no
-	popup = yes
-	idle = no
-	option = yes
-	pausepopup = no
-	message_category = wars
+PERFORM_dbo_conquest_nile_river_claim_ACTION={
+log=no
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+message_category=wars
 }
 
-WE_PERFORM_dbo_conquest_nile_river_claim_ACTION = {
-	log = yes
-	onmap = no
-	popup = yes
-	idle = no
-	option = yes
-	pausepopup = no
-	message_category = wars
+WE_PERFORM_dbo_conquest_nile_river_claim_ACTION={
+log=no
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+message_category=wars
 }
 
-OTHER_PERFORMS_dbo_conquest_nile_river_claim_ACTION = {
-	log = yes
-	onmap = no
-	popup = no
-	idle = no
-	option = yes
-	pausepopup = no
-	message_category = wars
+OTHER_PERFORMS_dbo_conquest_nile_river_claim_ACTION={
+log=no
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+message_category=wars
+}
+
+PERFORM_dbo_conquest_europe_eastern_gate_claim_ACTION={
+log=no
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+message_category=wars
+}
+
+WE_PERFORM_dbo_conquest_europe_eastern_gate_claim_ACTION={
+log=no
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+message_category=wars
+}
+
+OTHER_PERFORMS_dbo_conquest_europe_eastern_gate_claim_ACTION={
+log=no
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+message_category=wars
+}
+
+PERFORM_dbo_conquest_maghreb_claim_ACTION={
+log=no
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+message_category=wars
+}
+
+WE_PERFORM_dbo_conquest_maghreb_claim_ACTION={
+log=no
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+message_category=wars
+}
+
+OTHER_PERFORMS_dbo_conquest_maghreb_claim_ACTION={
+log=no
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+message_category=wars
+}
+
+PERFORM_dbo_conquest_steep_mountain_claim_ACTION={
+log=no
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+message_category=wars
+}
+
+WE_PERFORM_dbo_conquest_steep_mountain_claim_ACTION={
+log=no
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+message_category=wars
+}
+
+OTHER_PERFORMS_dbo_conquest_steep_mountain_claim_ACTION={
+log=no
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+message_category=wars
+}
+
+PERFORM_dbo_conquest_turkish_renaissance_claim_ACTION={
+log=no
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+message_category=wars
+}
+
+WE_PERFORM_dbo_conquest_turkish_renaissance_claim_ACTION={
+log=no
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+message_category=wars
+}
+
+OTHER_PERFORMS_dbo_conquest_turkish_renaissance_claim_ACTION={
+log=no
+onmap=no
+popup=no
+idle=no
+option=no
+pausepopup=no
+message_category=wars
 }

@@ -23,3 +23,6 @@
  dbo_topkapi_palace: "Topkapı Sarayı"
  dbo_topkapi_palace_desc: "Topkapı Sarayı, Osmanlı İmparatorluğu'nun en önemli sarayıdır ve İstanbul'un tarihi yarımadasında yer alır. 15. yüzyılda inşa edilen bu saray, padişahların ikametgahı, devlet yönetim merkezi ve kültürel bir merkez olarak hizmet vermiştir. Topkapı Sarayı, zengin mimarisi, geniş avluları ve değerli koleksiyonlarıyla Osmanlı'nın ihtişamını yansıtır."
  dbo_topkapi_palace_maintenance: "$dbo_topkapi_palace$"
+ dbo_mevlana_dergahi: "Mevlana Dergahı"
+ dbo_mevlana_dergahi_desc: "Mevlana Dergahı, Konya'da bulunan ve Mevlana Celaleddin Rumi'nin öğretilerine adanmış bir tasavvuf merkezidir. Dergah, Mevlana'nın mezarını içerir ve her yıl düzenlenen Şeb-i Arus törenleriyle bilinir. Mevlana Dergahı, mistik bir atmosfer sunar ve ziyaretçilere derin bir manevi deneyim yaşatır."
+ dbo_mevlana_dergahi_maintenance: "$dbo_mevlana_dergahi$

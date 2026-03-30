@@ -11,7 +11,7 @@
 	expensive = yes
 	important_for_AI = yes
 	important_for_UI = yes
-	build_time = large_capital_build_time
+	build_time = small_capital_build_time
 	location_potential = {
 		is_province_capital = yes
 	}
@@ -94,6 +94,50 @@ dbo_topkapi_palace = {
 		early_capital_building_silver_maintenance
 	}
 	construction_demand = capital_building_construction
+}
+
+dbo_mevlana_dergahi = {
+	is_special = yes
+	is_foreign = no
+	pop_type = clergy
+	max_levels = 1
+	category = religious_category
+	employment_size = huge_religious_building_employment
+	rural_settlement = no
+	town = no
+	city = yes
+	expensive = yes
+	important_for_AI = yes
+	important_for_UI = yes
+	build_time = large_religious_building_time
+	graphical_tags = {
+		large_religious
+	}
+	location_potential = {
+		this = location:konya
+	}
+	country_potential = {
+		owns = location:konya
+		has_unlocked_building_trigger = {
+			type = dbo_mevlana_dergahi
+		}
+	}
+	modifier = {
+		local_clergy_estate_power = 1
+		local_clergy_max_literacy = 10
+		local_clergy_desired_pop = 0.1
+		number_of_allowed_religious_figures = 1
+	}
+	unique_production_methods = {
+		dbo_mevlana_dergahi_maintenance = {
+			paper = 0.2
+			books = 0.1
+			cloth = 0.1
+			fine_cloth = 0.05
+			category = building_maintenance
+		}
+	}
+	construction_demand = prestige_building_construction
 }
 
 REPLACE:janissary_barracks = {

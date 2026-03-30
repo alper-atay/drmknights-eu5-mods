@@ -119,6 +119,7 @@ dbo_destiny_ottoman_empire = {
 		}
 	}
 	country_modifier = {
+		rto_press_claims_price_cost_modifier = -0.5
 		government_reform_slots = 1
 		global_integration_speed_modifier = 0.25
 		government_size = 1
