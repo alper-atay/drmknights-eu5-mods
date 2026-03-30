@@ -6,7 +6,8 @@
 	light = yes
 	buildable = yes
 	country_potential = {
-		has_reform = government_reform:dbo_destiny_wing_of_turk
+		# has_reform = government_reform:dbo_destiny_wing_of_turk
+		has_or_had_tag = TUR
 		has_advance = unlock_horsemen_advance
 	}
 	morale_damage_done = 0.2
@@ -31,7 +32,8 @@ dbo_a_age_2_renaissance_metehans_cavalry = {
 	light = yes
 	buildable = yes
 	country_potential = {
-		has_reform = government_reform:dbo_destiny_wing_of_turk
+		# has_reform = government_reform:dbo_destiny_wing_of_turk
+		has_or_had_tag = TUR
 		has_advance = unlock_cavalry_advance
 	}
 	morale_damage_done = 0.2
@@ -57,7 +59,8 @@ dbo_a_age_3_discovery_metehans_cavalry = {
 	light = yes
 	buildable = yes
 	country_potential = {
-		has_reform = government_reform:dbo_destiny_wing_of_turk
+		# has_reform = government_reform:dbo_destiny_wing_of_turk
+		has_or_had_tag = TUR
 		has_advance = unlock_light_lancers_advance
 	}
 	morale_damage_done = 0.2
@@ -83,7 +86,8 @@ dbo_a_age_4_reformation_metehans_cavalry = {
 	light = yes
 	buildable = yes
 	country_potential = {
-		has_reform = government_reform:dbo_destiny_wing_of_turk
+		# has_reform = government_reform:dbo_destiny_wing_of_turk
+		has_or_had_tag = TUR
 		has_advance = unlock_pistoleers_advance
 	}
 	morale_damage_done = 0.2
@@ -108,7 +112,8 @@ dbo_a_age_5_absolutism_metehans_cavalry = {
 	light = yes
 	buildable = yes
 	country_potential = {
-		has_reform = government_reform:dbo_destiny_wing_of_turk
+		# has_reform = government_reform:dbo_destiny_wing_of_turk
+		has_or_had_tag = TUR
 		has_advance = unlock_hussars_advance
 	}
 	morale_damage_done = 0.2
@@ -133,7 +138,8 @@ dbo_a_age_6_revolutions_metehans_cavalry = {
 	light = yes
 	buildable = yes
 	country_potential = {
-		has_reform = government_reform:dbo_destiny_wing_of_turk
+		# has_reform = government_reform:dbo_destiny_wing_of_turk
+		has_or_had_tag = TUR
 		has_advance = unlock_light_dragoons_advance
 	}
 	morale_damage_done = 0.2
