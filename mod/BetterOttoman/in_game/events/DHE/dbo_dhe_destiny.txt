@@ -343,10 +343,10 @@ dbo_dhe_destiny.301 = {
 	option = {
 		name = dbo_dhe_destiny.301.a
 		historical_option = yes
-		add_estate_satisfaction = {
-			type = estate_type:clergy_estate
-			value = estate_satisfaction_severe_bonus
+		unlock_estate_privilege_effect = {
+			type = dbo_destiny_privilege_mevlana_dergahi
 		}
+		grant_estate_privilege = estate_privilege:dbo_destiny_privilege_mevlana_dergahi
 		unlock_building_effect = {
 			type = dbo_mevlana_dergahi
 		}
