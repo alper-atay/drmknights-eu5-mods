@@ -108,10 +108,12 @@ dbo_dhe_sultans_yildirim_sultan_bayezid.1 = {
 		}
 		else = {
 			random_character = {
-				is_spouse_of = scope:target_father
-				is_pregnant = no
-				is_adult = yes
-				character_age < 40
+				limit = {
+					is_spouse_of = scope:target_father
+					is_pregnant = no
+					is_adult = yes
+					character_age < 40
+				}
 			}
 			save_temporary_scope_as = target_mother
 		}

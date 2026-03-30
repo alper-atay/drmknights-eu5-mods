@@ -65,21 +65,29 @@ dbo_topkapi_palace = {
 	expensive = yes
 	build_time = large_capital_build_time
 	location_potential = {
-		this = location:constantinople
 		is_capital = yes
 	}
 	country_potential = {
-		has_or_had_tag = TUR
-		owns = location:constantinople
+		has_unlocked_building_trigger = {
+			type = dbo_topkapi_palace
+		}
+	}
+	remove_if = {
+		is_no_longer_capital = yes
 	}
 	modifier = {
+		local_monthly_development = 0.001
+		local_monthly_prosperity = 0.001
+	}
+	capital_modifier = {
 		local_cultural_tradition = 0.25
 		local_cultural_influence = 0.25
+		local_crown_estate_power = 0.5
 	}
 	capital_country_modifier = {
 		monthly_towards_centralization = societal_value_monthly_move
 		counter_espionage = 0.1
-		monthly_diplomats = 0.1
+		diplomatic_reputation = diplomatic_reputation_mild_bonus
 	}
 	possible_production_methods = {
 		early_capital_building_maintenance

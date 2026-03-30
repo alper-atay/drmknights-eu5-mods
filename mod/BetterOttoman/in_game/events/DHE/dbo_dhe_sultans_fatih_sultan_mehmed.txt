@@ -1,4 +1,4 @@
-namespace = dbo_dhe_sultans_fatih_sultan_mehmed
+﻿namespace = dbo_dhe_sultans_fatih_sultan_mehmed
 # dbo_history_fatih_sultan_mehmed_born
 dbo_dhe_sultans_fatih_sultan_mehmed.1 = {
 	type = country_event
@@ -67,10 +67,12 @@ dbo_dhe_sultans_fatih_sultan_mehmed.1 = {
 		}
 		else = {
 			random_character = {
-				is_spouse_of = scope:target_father
-				is_pregnant = no
-				is_adult = yes
-				age_in_years < 40
+				limit = {
+					is_spouse_of = scope:target_father
+					is_pregnant = no
+					is_adult = yes
+					age_in_years < 40
+				}
 			}
 			save_temporary_scope_as = target_mother
 		}
@@ -262,5 +264,170 @@ dbo_dhe_sultans_fatih_sultan_mehmed.13 = {
 	option = {
 		name = dbo_dhe_sultans_fatih_sultan_mehmed.13.a
 		set_variable = dbo_history_fatih_sultan_mehmet_and_orban_events_completed
+	}
+}
+
+# dbo_history_fatih_sultan_mehmed_topkapi_palace
+dbo_dhe_sultans_fatih_sultan_mehmed.21 = {
+	type = country_event
+	title = dbo_dhe_sultans_fatih_sultan_mehmed.21.title
+	desc = dbo_dhe_sultans_fatih_sultan_mehmed.21.desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_fatih_sultan_mehmed_topkapi_palace.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1460.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		owns = location:constantinople
+		capital = location:constantinople
+		exists = character:dbo_fatih_sultan_mehmed
+		character:dbo_fatih_sultan_mehmed = {
+			is_ruler = yes
+		}
+	}
+	option = {
+		name = dbo_dhe_sultans_fatih_sultan_mehmed.21.a
+		historical_option = yes
+		unlock_building_effect = {
+			type = dbo_topkapi_palace
+		}
+		capital = {
+			construct_building = {
+				building_type = building_type:dbo_topkapi_palace
+			}
+		}
+		add_estate_satisfaction = {
+			type = estate_type:nobles_estate
+			value = estate_satisfaction_severe_penalty
+		}
+		add_estate_satisfaction = {
+			type = estate_type:clergy_estate
+			value = estate_satisfaction_severe_penalty
+		}
+	}
+}
+
+# dbo_history_fatih_sultan_mehmed_sahni_seman_madrasa
+dbo_dhe_sultans_fatih_sultan_mehmed.22 = {
+	type = country_event
+	title = dbo_dhe_sultans_fatih_sultan_mehmed.22.title
+	desc = dbo_dhe_sultans_fatih_sultan_mehmed.22.desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_fatih_sultan_mehmed_sahni_seman_madrasa.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1462.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		owns = location:constantinople
+		capital = location:constantinople
+		exists = character:dbo_fatih_sultan_mehmed
+		character:dbo_fatih_sultan_mehmed = {
+			is_ruler = yes
+		}
+	}
+	option = {
+		name = dbo_dhe_sultans_fatih_sultan_mehmed.22.a
+		historical_option = yes
+		unlock_building_effect = {
+			type = dbo_sahni_seman_madrasa
+		}
+		capital = {
+			construct_building = {
+				building_type = building_type:dbo_sahni_seman_madrasa
+			}
+		}
+		add_estate_satisfaction = {
+			type = estate_type:nobles_estate
+			value = estate_satisfaction_severe_penalty
+		}
+		add_estate_satisfaction = {
+			type = estate_type:clergy_estate
+			value = estate_satisfaction_severe_penalty
+		}
+	}
+}
+
+# dbo_history_fatih_sultan_mehmed_legal_code
+dbo_dhe_sultans_fatih_sultan_mehmed.23 = {
+	type = country_event
+	title = dbo_dhe_sultans_fatih_sultan_mehmed.23.title
+	desc = dbo_dhe_sultans_fatih_sultan_mehmed.23.desc
+	historical_info = dbo_dhe_sultans_fatih_sultan_mehmed.23.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_fatih_sultan_mehmed_legal_code.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1465.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		exists = character:dbo_fatih_sultan_mehmed
+		character:dbo_fatih_sultan_mehmed = {
+			is_ruler = yes
+		}
+	}
+	option = {
+		name = dbo_dhe_sultans_fatih_sultan_mehmed.23.a
+		historical_option = yes
+		unlock_policy_effect = {
+			type = dbo_destiny_legal_code_kanunname_i_al_i_osman_policy
+		}
+		add_policy = policy:dbo_destiny_legal_code_kanunname_i_al_i_osman_policy
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_history_fatih_sultan_mehmed_retire
+dbo_dhe_sultans_fatih_sultan_mehmed.31 = {
+	type = country_event
+	title = dbo_dhe_sultans_fatih_sultan_mehmed.31.title
+	desc = dbo_dhe_sultans_fatih_sultan_mehmed.31.desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_fatih_sultan_mehmed_retire.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1475.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		has_heir = yes
+		heir = {
+			is_adult = yes
+		}
+		exists = character:dbo_fatih_sultan_mehmed
+		character:dbo_fatih_sultan_mehmed = {
+			is_alive = yes
+			is_ruler = yes
+			any_child = {
+				is_alive = yes
+				is_adult = yes
+				is_female = no
+				count > 1
+			}
+			character_age > 45
+		}
+	}
+	option = {
+		name = dbo_dhe_sultans_fatih_sultan_mehmed.31.a
+		historical_option = yes
+		character:dbo_fatih_sultan_mehmed = {
+			hidden_effect = {
+				remove_traits_of_category = ruler
+				remove_traits_of_category = general
+				remove_traits_of_category = admiral
+			}
+			add_artist_skill = 0.8
+			artist = scientist
+			add_trait = trait:workaholic
+		}
+		set_new_ruler = heir
 	}
 }
