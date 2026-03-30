@@ -52,10 +52,8 @@ dbo_create_and_marry_lady = {
 		female = yes
 		fertility = 100
 		random_estate_type_trigger = {
-			NOR = {
+			NOT = {
 				this = estate_type:nobles_estate
-				this = estate_type:clergy_estate
-				this = estate_type:dhimmi_estate
 			}
 		}
 		adm = {
@@ -108,12 +106,14 @@ dbo_create_and_marry_lady = {
 
 dbo_create_and_marry_lady_with_save_temporary_scope_as = {
 	create_character = {
-		birth_location = root.capital
 		age = 16
-		culture = root.culture
-		religion = root.religion
 		female = yes
 		fertility = 100
+		random_estate_type_trigger = {
+			NOT = {
+				this = estate_type:nobles_estate
+			}
+		}
 		adm = {
 			value = {
 				add = {

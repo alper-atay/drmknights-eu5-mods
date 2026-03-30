@@ -20,3 +20,6 @@
  dbo_mosque: "Cami"
  dbo_mosque_desc: "Cami, İslam toplumlarında ibadet ve toplumsal etkinliklerin merkezi olan kutsal bir yapıdır. Minareleri, kubbeleri ve geniş avlusu ile dikkat çeken camiler, Müslümanların günlük ibadetlerini gerçekleştirdiği, cuma namazlarının kılındığı ve dini eğitimlerin verildiği önemli mekanlardır."
  dbo_mosque_maintenance: "$dbo_mosque$"
+ dbo_topkapi_palace: "Topkapı Sarayı"
+ dbo_topkapi_palace_desc: "Topkapı Sarayı, Osmanlı İmparatorluğu'nun en önemli sarayıdır ve İstanbul'un tarihi yarımadasında yer alır. 15. yüzyılda inşa edilen bu saray, padişahların ikametgahı, devlet yönetim merkezi ve kültürel bir merkez olarak hizmet vermiştir. Topkapı Sarayı, zengin mimarisi, geniş avluları ve değerli koleksiyonlarıyla Osmanlı'nın ihtişamını yansıtır."
+ dbo_topkapi_palace_maintenance: "$dbo_topkapi_palace$"

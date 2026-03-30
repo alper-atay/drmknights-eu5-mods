@@ -45,15 +45,21 @@ dbo_on_conquer_any_location = {
 				NOT = {
 					integration_level = core
 				}
-				OR = {
+			}
+			if = {
+				limit = {
 					scope:loser = {
 						has_reform = government_reform:anatolian_beylik
 					}
+				}
+				change_integration_level = core
+			}
+			else_if = {
+				limit = {
 					OR = {
 						root.area = area:thrace_area
 						root.area = area:macedonia_area
 						root.area = area:armenian_highlands_area
-						root.region = region:anatolia_region
 						root.province_definition = province_definition:meskheti_province
 						root.province_definition = province_definition:hasankeyf_province
 						root.province_definition = province_definition:diyarbekir_province
@@ -65,8 +71,8 @@ dbo_on_conquer_any_location = {
 						root.province_definition = province_definition:antakya_province
 					}
 				}
+				change_integration_level = integrated
 			}
-			change_integration_level = integrated
 		}
 		scope:winner = {
 			add_gold = {

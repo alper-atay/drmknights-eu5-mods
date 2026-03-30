@@ -240,7 +240,7 @@ dbo_military_army_gendarme_law = {
 			}
 		}
 		country_modifier = {
-			counter_espionage = 0.2
+			counter_espionage = 0.1
 			spy_network_construction = 0.1
 			monthly_rebel_growth = -0.001
 			pop_join_rebel_threshold = -0.05

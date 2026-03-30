@@ -19,5 +19,6 @@ dbo_sultan = {
 		force_allow_as_leader = yes
 		character_life_expectancy = 20
 		max_war_exhaustion = 5
+		aggressiveness_modifier = 1
 	}
 }

@@ -1,4 +1,5 @@
 ﻿dbo_beylerbeyi = {
+	is_special = yes
 	is_foreign = no
 	pop_type = nobles
 	max_levels = 1
@@ -51,6 +52,40 @@
 		}
 	}
 	construction_demand = local_governor_construction
+}
+
+dbo_topkapi_palace = {
+	is_special = yes
+	is_foreign = no
+	pop_type = nobles
+	max_levels = 1
+	employment_size = insane_noble_employment
+	category = government_category
+	city = yes
+	expensive = yes
+	build_time = large_capital_build_time
+	location_potential = {
+		this = location:constantinople
+		is_capital = yes
+	}
+	country_potential = {
+		has_or_had_tag = TUR
+		owns = location:constantinople
+	}
+	modifier = {
+		local_cultural_tradition = 0.25
+		local_cultural_influence = 0.25
+	}
+	capital_country_modifier = {
+		monthly_towards_centralization = societal_value_monthly_move
+		counter_espionage = 0.1
+		monthly_diplomats = 0.1
+	}
+	possible_production_methods = {
+		early_capital_building_maintenance
+		early_capital_building_silver_maintenance
+	}
+	construction_demand = capital_building_construction
 }
 
 REPLACE:janissary_barracks = {

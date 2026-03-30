@@ -78,7 +78,7 @@ dbo_dhe_institution.3 = {
 		name = dbo_dhe_institution.3.a
 		add_country_modifier = {
 			modifier = dbo_ottoman_golden_age_of_science
-			years = 50
+			years = 100
 			mode = replace
 		}
 		dbo_event_severe_bonus = yes

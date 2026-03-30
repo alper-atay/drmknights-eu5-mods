@@ -36,7 +36,5 @@ dbo_ottoman_wisdom_from_the_east = {
 	game_data = {
 		category = country
 	}
-	global_max_literacy = 5
 	research_speed = 0.1
-	global_monthly_literacy = 0.005
 }
