@@ -25,4 +25,4 @@
  dbo_topkapi_palace_maintenance: "$dbo_topkapi_palace$"
  dbo_mevlana_dergahi: "$dbo_destiny_privilege_mevlana_dergahi$"
  dbo_mevlana_dergahi_desc: "$dbo_destiny_privilege_mevlana_dergahi_desc$"
- dbo_mevlana_dergahi_maintenance: "$dbo_mevlana_dergahi$
+ dbo_mevlana_dergahi_maintenance: "$dbo_mevlana_dergahi$"

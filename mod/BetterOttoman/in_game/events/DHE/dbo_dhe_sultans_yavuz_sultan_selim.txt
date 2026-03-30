@@ -85,8 +85,8 @@ dbo_dhe_sultans_yavuz_sultan_selim.1 = {
 					is_adult = yes
 					age_in_years < 40
 				}
+				save_temporary_scope_as = target_mother
 			}
-			save_temporary_scope_as = target_mother
 		}
 		create_character = {
 			first_name = Selim

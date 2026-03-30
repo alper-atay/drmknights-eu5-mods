@@ -19,14 +19,12 @@ dbo_dhe_sultans_fatih_sultan_mehmed.1 = {
 				has_ruler = yes
 				ruler = {
 					is_adult = yes
-					character_age < 40
 				}
 			}
 			AND = {
 				has_heir = yes
 				heir = {
 					is_adult = yes
-					character_age < 40
 				}
 			}
 		}
@@ -72,8 +70,8 @@ dbo_dhe_sultans_fatih_sultan_mehmed.1 = {
 					is_adult = yes
 					age_in_years < 40
 				}
+				save_temporary_scope_as = target_mother
 			}
-			save_temporary_scope_as = target_mother
 		}
 		create_character = {
 			first_name = name_muhammad

@@ -43,8 +43,8 @@ dbo_dhe_sultans_kanuni_sultan_suleiman.1 = {
 					is_adult = yes
 					age_in_years < 40
 				}
+				save_temporary_scope_as = target_mother
 			}
-			save_temporary_scope_as = target_mother
 		}
 		create_character = {
 			first_name = name_salomon
