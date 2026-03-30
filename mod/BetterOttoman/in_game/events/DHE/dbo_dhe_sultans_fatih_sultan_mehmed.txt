@@ -69,7 +69,6 @@ dbo_dhe_sultans_fatih_sultan_mehmed.1 = {
 			random_character = {
 				limit = {
 					is_spouse_of = scope:target_father
-					is_pregnant = no
 					is_adult = yes
 					age_in_years < 40
 				}

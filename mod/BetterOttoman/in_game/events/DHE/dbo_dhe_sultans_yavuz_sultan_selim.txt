@@ -1,0 +1,249 @@
+﻿namespace = dbo_dhe_sultans_yavuz_sultan_selim
+# dbo_history_yavuz_sultan_selim_born
+dbo_dhe_sultans_yavuz_sultan_selim.1 = {
+	type = country_event
+	title = dbo_dhe_sultans_yavuz_sultan_selim.1.title
+	desc = dbo_dhe_sultans_yavuz_sultan_selim.1.desc
+	historical_info = dbo_dhe_sultans_yavuz_sultan_selim.1.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yavuz_sultan_selim_born.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1470.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		exists = character:dbo_fatih_sultan_mehmed
+	}
+	immediate = {
+		if = {
+			limit = {
+				has_ruler = yes
+				ruler = {
+					is_adult = yes
+					father = character:dbo_fatih_sultan_mehmed
+				}
+			}
+			ruler = {
+				save_temporary_scope_as = target_father
+			}
+		}
+		else_if = {
+			limit = {
+				has_heir = yes
+				heir = {
+					is_adult = yes
+					father = character:dbo_fatih_sultan_mehmed
+				}
+			}
+			heir = {
+				save_temporary_scope_as = target_father
+			}
+		}
+		else = {
+			create_character = {
+				first_name = Bayezid
+				father = character:dbo_fatih_sultan_mehmed
+				birth_location = root.capital
+				age = {
+					min = 24
+					max = 30
+				}
+				culture = root.culture
+				religion = root.religion
+				adm = {
+					60
+					80
+				}
+				dip = {
+					60
+					80
+				}
+				mil = {
+					60
+					80
+				}
+				save_temporary_scope_as = target_father
+			}
+		}
+		if = {
+			limit = {
+				scope:target_father = {
+					has_available_marriage_slot = yes
+				}
+			}
+			dbo_create_and_marry_lady_with_save_temporary_scope_as = {
+				married_character = scope:target_father
+				save_temporary_scope_as = target_mother
+			}
+		}
+		else = {
+			random_character = {
+				limit = {
+					is_spouse_of = scope:target_father
+					is_adult = yes
+					age_in_years < 40
+				}
+			}
+			save_temporary_scope_as = target_mother
+		}
+		create_character = {
+			first_name = Selim
+			nickname = nick_Yavuz
+			father = scope:target_father
+			mother = scope:target_mother
+			birth_location = root.capital
+			age = 0
+			culture = root.culture
+			religion = root.religion
+			fertility = 100
+			add_trait = trait:dbo_prince
+			script = dbo_yavuz_sultan_selim
+		}
+		character:dbo_fatih_sultan_mehmed = {
+			set_child_education = child_education:expensive_in_depth_education
+		}
+	}
+	option = {
+		name = dbo_dhe_sultans_yavuz_sultan_selim.1.a
+		historical_option = yes
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_history_yavuz_sultan_selim_rise
+dbo_dhe_sultans_yavuz_sultan_selim.2 = {
+	type = country_event
+	title = dbo_dhe_sultans_yavuz_sultan_selim.2.title
+	desc = dbo_dhe_sultans_yavuz_sultan_selim.2.desc
+	historical_info = dbo_dhe_sultans_yavuz_sultan_selim.2.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yavuz_sultan_selim_rise.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1470.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		exists = character:dbo_yavuz_sultan_selim
+		character:dbo_yavuz_sultan_selim = {
+			is_alive = yes
+			is_adult = yes
+		}
+	}
+	option = {
+		name = dbo_dhe_sultans_yavuz_sultan_selim.2.a
+		historical_option = yes
+		character:dbo_yavuz_sultan_selim = {
+			hidden_effect = {
+				remove_traits_of_category = ruler
+				remove_traits_of_category = general
+			}
+			add_trait = trait:dbo_sultan
+			add_trait = trait:conqueror
+			add_trait = trait:military_theorist
+			dbo_add_scaling_character_abilities = yes
+		}
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_history_yildirim_sultan_bayezid_ascend
+dbo_dhe_sultans_yavuz_sultan_selim.3 = {
+	type = country_event
+	title = dbo_dhe_sultans_yavuz_sultan_selim.3.title
+	desc = dbo_dhe_sultans_yavuz_sultan_selim.3.desc
+	historical_info = dbo_dhe_sultans_yavuz_sultan_selim.3.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yildirim_sultan_bayezid_ascend.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1470.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		exists = character:dbo_yavuz_sultan_selim
+		character:dbo_yavuz_sultan_selim = {
+			has_trait = dbo_sultan
+			is_adult = yes
+		}
+		OR = {
+			has_ruler = yes
+			has_regent = yes
+			character:dbo_fatih_sultan_mehmed = {
+				is_ruler = no
+			}
+			character:dbo_yavuz_sultan_selim = {
+				is_ruler = yes
+			}
+		}
+	}
+	option = {
+		name = dbo_dhe_sultans_yavuz_sultan_selim.3.a
+		historical_option = yes
+		if = {
+			limit = {
+				character:dbo_yavuz_sultan_selim = {
+					is_ruler = no
+				}
+			}
+			if = {
+				limit = {
+					ruler = character:dbo_yavuz_sultan_selim.father
+				}
+				dbo_event_severe_penalty = yes
+			}
+			set_new_ruler = character:dbo_yavuz_sultan_selim
+		}
+	}
+}
+
+# dbo_history_yavuz_sultan_selim_die
+dbo_dhe_sultans_yavuz_sultan_selim.11 = {
+	type = country_event
+	title = dbo_dhe_sultans_yavuz_sultan_selim.11.title
+	desc = dbo_dhe_sultans_yavuz_sultan_selim.11.desc
+	historical_info = dbo_dhe_sultans_yavuz_sultan_selim.11.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_yavuz_sultan_selim_die.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1520.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		has_heir = yes
+		at_war = no
+		exists = character:dbo_yavuz_sultan_selim
+		character:dbo_yavuz_sultan_selim = {
+			is_alive = yes
+			is_ruler = yes
+			any_child = {
+				is_alive = yes
+				is_adult = yes
+				is_female = no
+				count > 1
+			}
+			character_age > 50
+		}
+		exists = character:dbo_kanuni_sultan_suleiman
+		character:dbo_kanuni_sultan_suleiman = {
+			is_alive = yes
+			is_adult = yes
+		}
+	}
+	immediate = {
+		kill_character = {
+			target = character:dbo_yavuz_sultan_selim
+			reason = sudden_illness
+		}
+	}
+	option = {
+		name = dbo_dhe_sultans_yavuz_sultan_selim.11.a
+		historical_option = yes
+	}
+}

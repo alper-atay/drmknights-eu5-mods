@@ -110,7 +110,6 @@ dbo_dhe_sultans_yildirim_sultan_bayezid.1 = {
 			random_character = {
 				limit = {
 					is_spouse_of = scope:target_father
-					is_pregnant = no
 					is_adult = yes
 					character_age < 40
 				}
