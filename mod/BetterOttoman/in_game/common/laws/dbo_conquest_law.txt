@@ -122,8 +122,7 @@ dbo_conquest_stamp_arabian_peninsula_law = {
 			power_projection = 5
 			num_local_governors = 1
 			tolerance_own = 1
-			global_pop_conversion_speed_modifier = 0.1
-			monthly_rebel_growth = -0.001
+			number_of_allowed_religious_figures = 1
 		}
 	}
 }
