@@ -395,6 +395,7 @@ dbo_dhe_sultans_fatih_sultan_mehmed.31 = {
 		monthly_chance = 100
 	}
 	trigger = {
+		at_war = no
 		has_heir = yes
 		heir = {
 			is_adult = yes
@@ -415,15 +416,43 @@ dbo_dhe_sultans_fatih_sultan_mehmed.31 = {
 	option = {
 		name = dbo_dhe_sultans_fatih_sultan_mehmed.31.a
 		historical_option = yes
-		character:dbo_fatih_sultan_mehmed = {
-			hidden_effect = {
+		hidden_effect = {
+			character:dbo_fatih_sultan_mehmed = {
 				remove_traits_of_category = ruler
 				remove_traits_of_category = general
 				remove_traits_of_category = admiral
-				remove_traits_of_category = child
+				add_character_modifier = {
+					modifier = dbo_retired
+					years = -1
+					mode = add_and_extend
+				}
+				remove_commander = this
 			}
-			add_artist_skill = 0.8
-			add_trait = trait:workaholic
+			create_character = {
+				first_name = name_muhammad
+				nickname = nick_the_conquerer
+				adm = character:dbo_fatih_sultan_mehmed.adm
+				dip = character:dbo_fatih_sultan_mehmed.dip
+				mil = character:dbo_fatih_sultan_mehmed.mil
+				age = character:dbo_fatih_sultan_mehmed.age_in_years
+				birth_location = character:dbo_fatih_sultan_mehmed.birth_location
+				estate = estate_type:crown_estate
+				dynasty = character:dbo_fatih_sultan_mehmed.dynasty
+				culture = character:dbo_fatih_sultan_mehmed.culture
+				religion = character:dbo_fatih_sultan_mehmed.religion
+				trait_category = artist
+				artist = artist_type:scientist
+				artist_skill = 0.9
+				add_trait = trait:dbo_genius_artist
+				add_character_modifier = {
+					modifier = healthy_character
+					years = -1
+					mode = add_and_extend
+				}
+				start_work_of_art = {
+					work_of_art_type = work_of_art_type:treatise
+				}
+			}
 		}
 		set_new_ruler = heir
 	}
@@ -447,6 +476,7 @@ dbo_dhe_sultans_fatih_sultan_mehmed.32 = {
 		monthly_chance = 100
 	}
 	trigger = {
+		at_war = no
 		has_heir = yes
 		exists = character:dbo_fatih_sultan_mehmed
 		character:dbo_fatih_sultan_mehmed = {

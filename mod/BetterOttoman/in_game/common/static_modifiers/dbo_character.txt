@@ -1,0 +1,11 @@
+﻿dbo_retired = {
+	game_data = {
+		category = character
+	}
+	blocked_from_marriage = yes
+	blocked_from_being_leader = yes
+	blocked_from_cabinet = yes
+	blocked_from_being_ruler = yes
+	prevented_from_being_heir = yes
+	character_life_expectancy = 10
+}

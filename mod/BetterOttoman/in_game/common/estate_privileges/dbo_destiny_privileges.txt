@@ -6,11 +6,10 @@
 		}
 	}
 	country_modifier = {
-		global_clergy_estate_power = 0.2
+		global_clergy_estate_power = 0.5
 		clergy_estate_target_satisfaction = medium_privilege_target_satisfaction
-		invite_religious_figure_different_school_cost_modifier = -0.15
-		invite_religious_figure_same_school_cost_modifier = -0.15
+		invite_religious_figure_different_school_cost_modifier = -0.1
+		invite_religious_figure_same_school_cost_modifier = -0.1
 		number_of_allowed_religious_figures = 1
-		research_speed_modifier = 0.05
 	}
 }

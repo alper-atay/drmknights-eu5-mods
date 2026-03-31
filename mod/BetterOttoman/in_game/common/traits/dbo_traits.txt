@@ -14,11 +14,19 @@ dbo_sultan = {
 	allow = {
 		always = no
 	}
+}
+
+dbo_genius_artist = {
+	category = artist
+	allow = {
+		always = no
+	}
 	modifier = {
-		global_crown_estate_power = 0.3
-		force_allow_as_leader = yes
-		character_life_expectancy = 20
-		max_war_exhaustion = 5
-		aggressiveness_modifier = 1
+		artist_salary_modifier_on_character = -0.25
+		art_creation_speed = 0.25
+		artist_impact = 0.25
+		work_of_art_quality_modifier = 0.25
+		artist_skill_level_gain = 0.25
+		artist_monthly_start_chance = 0.25
 	}
 }
