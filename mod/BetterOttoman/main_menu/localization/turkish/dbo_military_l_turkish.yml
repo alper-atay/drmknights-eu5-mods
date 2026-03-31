@@ -1,6 +1,5 @@
 ﻿l_turkish:
- dbo_military: "[GetCountry('TUR').GetName] Askerî"
- DBO_MILITARY_LAW_CATEGORY: "[GetCountry('TUR').GetName] $MILITARY_LAW_CATEGORY$"
+ DBO_MILITARY_LAW_CATEGORY: "Özel $MILITARY_LAW_CATEGORY$"
 # dbo_military_army_fundamental_law
  dbo_military_army_fundamental_law: "Temel [Concept('army', 'Ordu')|e] Yapılanması"
  dbo_military_army_fundamental_law_desc: "Osmanlı ordusunun temel yapısını ve işleyişini belirleyen bu kanun, askerî disiplin, eğitim ve sefer düzenlemeleri gibi kritik unsurları kapsar. Ordu içindeki hiyerarşi, birliklerin görev dağılımı ve savaş stratejileri bu kanunla şekillendirilir. Ayrıca, askerî personelin hakları ve yükümlülükleri de detaylı bir şekilde düzenlenir, böylece imparatorluğun askeri gücü etkin ve disiplinli bir şekilde yönetilir."

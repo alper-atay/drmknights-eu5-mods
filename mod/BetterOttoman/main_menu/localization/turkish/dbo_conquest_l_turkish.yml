@@ -1,6 +1,6 @@
 ﻿l_turkish:
 #Base
- dbo_casus_belli_price: "[ShowSituationName('dbo_situation')] eylemlerinin Hak İddiası Bedeli"
+ DBO_CONQUEST_LAW_CATEGORY: "[ShowSituationName('dbo_situation')] Kanunları" 
 # Names
  dbo_conquest_anatolian_turks: "Anadolu Türk Birliği"
  dbo_conquest_rumelia: "Rumeli’nin Fethi"

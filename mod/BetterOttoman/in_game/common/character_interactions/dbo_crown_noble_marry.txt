@@ -29,7 +29,7 @@
 			}
 		}
 		enabled = {
-			character_age < 40
+			age_in_years < 40
 			total_abilities > 120
 			has_available_marriage_slot = yes
 			modifier:blocked_from_marriage = no
