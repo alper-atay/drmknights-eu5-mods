@@ -1,0 +1,5 @@
+﻿four_yearly_country_pulse = {
+	events = {
+		dbu_black_death.100
+	}
+}
