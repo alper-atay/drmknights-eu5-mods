@@ -30,5 +30,3 @@ dbu_black_death.1 = {
 		}
 	}
 }
-
-W

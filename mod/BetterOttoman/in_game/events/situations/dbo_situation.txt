@@ -23,15 +23,6 @@ dbo_situation.1 = {
 			}
 			if = {
 				limit = {
-					can_build_building = building_type:dbo_grand_mosque
-				}
-				change_building_level_in_location = {
-					building = building_type:dbo_grand_mosque
-					value = 1
-				}
-			}
-			if = {
-				limit = {
 					can_build_building = building_type:dbo_beylerbeyi
 				}
 				change_building_level_in_location = {
