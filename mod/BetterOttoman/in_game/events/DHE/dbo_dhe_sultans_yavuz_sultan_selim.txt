@@ -101,7 +101,7 @@ dbo_dhe_sultans_yavuz_sultan_selim.1 = {
 			add_trait = trait:dbo_prince
 			script = dbo_yavuz_sultan_selim
 		}
-		character:dbo_fatih_sultan_mehmed = {
+		character:dbo_yavuz_sultan_selim = {
 			set_child_education = child_education:expensive_in_depth_education
 		}
 	}

@@ -1,4 +1,4 @@
-﻿dbo_mosque = {
+﻿dbu_mosque = {
 	is_foreign = no
 	max_levels = 1
 	pop_type = clergy
@@ -17,7 +17,7 @@
 		religion.group ?= religion_group:muslim
 	}
 	unique_production_methods = {
-		dbo_mosque_maintenance = {
+		dbu_mosque_maintenance = {
 			cloth = 0.05
 			fine_cloth = 0.025
 			paper = 0.1
@@ -35,7 +35,7 @@
 	}
 }
 
-dbo_grand_mosque = {
+dbu_grand_mosque = {
 	is_foreign = no
 	max_levels = 1
 	pop_type = clergy
@@ -64,7 +64,7 @@ dbo_grand_mosque = {
 		}
 	}
 	unique_production_methods = {
-		dbo_grand_mosque_maintenance = {
+		dbu_grand_mosque_maintenance = {
 			cloth = 0.1
 			fine_cloth = 0.05
 			paper = 0.2

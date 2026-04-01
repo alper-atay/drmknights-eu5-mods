@@ -59,7 +59,7 @@ dbo_dhe_sultans_kanuni_sultan_suleiman.1 = {
 			add_trait = trait:dbo_prince
 			script = dbo_kanuni_sultan_suleiman
 		}
-		character:dbo_fatih_sultan_mehmed = {
+		character:dbo_kanuni_sultan_suleiman = {
 			set_child_education = child_education:expensive_in_depth_education
 		}
 	}

@@ -1,0 +1,34 @@
+namespace = dbu_black_death
+# dbu_black_death_ended
+dbu_black_death.1 = {
+	type = country_event
+	title = dbu_black_death.1.title
+	desc = dbu_black_death.1.desc
+	trigger = {
+		has_variable = had_black_death
+		NOT = {
+			has_variable = dbu_had_recovery_after_the_black_death
+		}
+		NOT = {
+			can_see_situation = situation:black_death
+		}
+		situation:black_death = {
+			situation_is_active = no
+			situation_has_ended = yes
+		}
+	}
+	option = {
+		name = dbu_black_death.1.a
+		add_country_modifier = {
+			modifier = dbu_recovery_after_the_black_death
+			years = 100
+			mode = replace
+		}
+		set_variable = {
+			name = dbu_had_recovery_after_the_black_death
+			value = yes
+		}
+	}
+}
+
+W

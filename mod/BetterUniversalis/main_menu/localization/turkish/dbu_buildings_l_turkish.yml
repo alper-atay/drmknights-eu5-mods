@@ -1,0 +1,10 @@
+﻿l_turkish:
+ dbu_watchhouse: "Karakol"
+ dbu_watchhouse_desc: "Asayişi sağlamak, sınırları korumak ve haberleşme ağını denetlemek amacıyla stratejik noktalara inşa edilen askerî karakollardır."
+ dbu_watchhouse_maintenance: "$dbu_watchhouse$"
+ dbu_mosque: "Cami"
+ dbu_mosque_desc: "Cami, İslam toplumlarında ibadet ve toplumsal etkinliklerin merkezi olan kutsal bir yapıdır. Minareleri, kubbeleri ve geniş avlusu ile dikkat çeken camiler, Müslümanların günlük ibadetlerini gerçekleştirdiği, cuma namazlarının kılındığı ve dini eğitimlerin verildiği önemli mekanlardır."
+ dbu_mosque_maintenance: "$dbu_mosque$"
+ dbu_grand_mosque: "Ulu Cami"
+ dbu_grand_mosque_desc: "İslam mimarisinin en görkemli örneklerinden biri olan Ulu Cami, şehrin manevi merkezidir. Cemaatin bir araya geldiği, ilim ve ibadetin harmanlandığı bu kutsal yapı, devletin ihtişamını ve inancın gücünü simgeler."
+ dbu_grand_mosque_maintenance: "$dbu_grand_mosque$"

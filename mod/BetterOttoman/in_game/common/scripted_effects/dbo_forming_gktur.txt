@@ -151,3 +151,6 @@ dbo_forming_gktur_location_add_core = {
 		}
 	}
 }
+
+dbo_forming_gktur_culture = {
+}
