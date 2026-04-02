@@ -1,5 +1,11 @@
 ﻿# root = original country which gets targeted by the civil war, scope:target = rebel country which declares the war, scope:war = the civil war, scope:rebel is the rebel
 on_civil_war_start = {
+	on_actions = {
+		on_civil_war_start_by_rebel_turkish_pashas
+	}
+}
+
+on_civil_war_start_by_rebel_turkish_pashas = {
 	effect = {
 		if = {
 			limit = {
