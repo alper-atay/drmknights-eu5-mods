@@ -59,11 +59,6 @@ dbo_ulu_otag = {
 			type = dbo_ulu_otag
 		}
 	}
-	remove_if = {
-		location = {
-			is_province_capital = no
-		}
-	}
 	unique_production_methods = {
 		dbo_ulu_otag_maintenance = {
 			weaponry = 0.1

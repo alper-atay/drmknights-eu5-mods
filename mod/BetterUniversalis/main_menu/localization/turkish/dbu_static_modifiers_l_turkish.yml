@@ -1,3 +1,5 @@
 ﻿l_turkish:
  STATIC_MODIFIER_NAME_dbu_recovery_after_the_black_death: "Kara Ölüm Sonrası Toparlanma"
  STATIC_MODIFIER_DESC_dbu_recovery_after_the_black_death: "Kara Ölüm'ün etkisiyle, nüfusun toparlanması ve ekonomik büyümenin hızlanması için bir süre boyunca artan verimlilik ve üretkenlik sağlar."
+ STATIC_MODIFIER_NAME_dbu_explosion_of_innovation: "[Concept('institution', 'Yenilik')|e] Patlaması"
+ STATIC_MODIFIER_DESC_dbu_explosion_of_innovation: "Yeni bir [Concept('institution', 'Yenilik')|e] [Concept('embraced', 'benimsedik')|e] ve bu bir yenilikçilik patlamasına yol açtı, bu da teknolojik gelişmelerin hızlanmasına ve ekonomik büyümenin artmasına neden oldu."

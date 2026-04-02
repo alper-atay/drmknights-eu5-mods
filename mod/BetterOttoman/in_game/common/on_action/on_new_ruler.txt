@@ -1,0 +1,16 @@
+on_new_ruler = {
+	on_actions = {
+		dbo_on_new_ruler_culus_payment
+	}
+}
+
+dbo_on_new_ruler_culus_payment = {
+	trigger = {
+		country_exists = c:TUR
+		tag = TUR
+		has_policy = dbo_military_army_fundamental_kapikulu_ocaklari_policy
+	}
+	effect = {
+		trigger_event_non_silently = dbo_dhe_destiny.104
+	}
+}

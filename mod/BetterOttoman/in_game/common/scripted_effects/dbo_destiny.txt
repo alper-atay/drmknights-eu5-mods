@@ -1,0 +1,18 @@
+﻿# dbo_destiny_noble_turkish_pashas_grant_estate_privilege_effect
+dbo_destiny_noble_turkish_pashas_grant_estate_privilege_effect = {
+	hidden_effect = {
+		unlock_estate_privilege_effect = {
+			type = dbo_destiny_noble_privilege_turkish_pashas
+		}
+	}
+	grant_estate_privilege = estate_privilege:dbo_destiny_noble_privilege_turkish_pashas
+	if = {
+		limit = {
+			NOT = {
+				has_estate_privilege = estate_privilege:noble_leaders_only
+			}
+		}
+		grant_estate_privilege = estate_privilege:noble_leaders_only
+	}
+	dbo_event_mild_bonus = yes
+}

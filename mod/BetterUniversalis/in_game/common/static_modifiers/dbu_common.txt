@@ -1,9 +1,0 @@
-﻿dbu_recovery_after_the_black_death = {
-	game_data = {
-		category = country
-	}
-	global_population_growth = 0.001
-	global_monthly_food_modifier = 0.1
-	global_monthly_development = 0.001
-	global_monthly_prosperity = 0.001
-}

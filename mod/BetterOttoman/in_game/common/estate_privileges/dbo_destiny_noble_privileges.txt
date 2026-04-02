@@ -1,0 +1,26 @@
+﻿dbo_destiny_noble_privilege_turkish_pashas = {
+	estate = nobles_estate
+	potential = {
+		has_unlocked_estate_privilege_trigger = {
+			type = dbo_destiny_noble_privilege_turkish_pashas
+		}
+	}
+	can_revoke = {
+		"estate_power(estate_type:crown_estate)" >= 0.5
+		"estate_power(estate_type:nobles_estate)" <= 0.25
+	}
+	country_modifier = {
+		global_crown_estate_power = -0.2
+		nobles_estate_target_satisfaction = large_privilege_target_satisfaction
+		global_nobles_estate_power = 2
+		nobles_estate_max_tax = -0.2
+		clergy_estate_max_tax = 0.05
+		peasants_estate_max_tax = 0.05
+		dhimmi_estate_max_tax = 0.05
+		burghers_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
+		clergy_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
+		dhimmi_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
+		monthly_towards_decentralization = societal_value_monthly_move
+		monthly_towards_aristocracy = societal_value_monthly_move
+	}
+}

@@ -24,7 +24,7 @@ dbo_dhe_destiny.101 = {
 		name = dbo_dhe_destiny.101.a
 		historical_option = yes
 		change_heir_selection = heir_selection:dbo_destiny_talented_youngest_heir_selection
-		dbo_event_severe_bonus = yes
+		dbo_event_mild_bonus = yes
 	}
 }
 
@@ -53,13 +53,13 @@ dbo_dhe_destiny.102 = {
 		historical_option = yes
 		add_manpower = {
 			value = max_manpower
-			multiply = 0.2
+			multiply = 0.25
 			min = 2
 			max = 10
 		}
 		add_sailors = {
 			value = max_sailors
-			multiply = 0.2
+			multiply = 0.25
 			min = 1
 			max = 5
 		}
@@ -69,7 +69,7 @@ dbo_dhe_destiny.102 = {
 			mode = add_and_extend
 		}
 		add_government_power = government_power_severe_bonus
-		dbo_event_extreme_bonus = yes
+		dbo_event_severe_bonus = yes
 	}
 }
 
@@ -80,7 +80,6 @@ dbo_dhe_destiny.103 = {
 	desc = dbo_dhe_destiny.103.desc
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_anatolian_beyliks_forced_annex.dds"
 	fire_only_once = yes
-	outcome = positive
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.1.1
@@ -113,10 +112,45 @@ dbo_dhe_destiny.103 = {
 				}
 			}
 		}
-		dbo_event_extreme_bonus = yes
+		dbo_event_severe_bonus = yes
 	}
 	option = {
 		name = dbo_dhe_destiny.103.b
+	}
+}
+
+# dbo_destiny_culus_payment
+dbo_dhe_destiny.104 = {
+	type = country_event
+	title = dbo_dhe_destiny.104.title
+	desc = dbo_dhe_destiny.104.desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_culus_payment.dds"
+	option = {
+		name = dbo_dhe_destiny.104.a
+		historical_option = yes
+		set_local_variable = {
+			name = total_culus_payment_in_gold
+			value = 0
+		}
+		add_gold = {
+			value = country_tax_base
+			multiply = -2
+		}
+		add_inflation = inflation_mild_penalty
+		remove_local_variable = total_culus_payment_in_gold
+	}
+	option = {
+		name = dbo_dhe_destiny.104.b
+		dbo_event_extreme_penalty = yes
+		custom_tooltip = {
+			text = dbo_destiny_culus_payment_rejected_soldier_pops_lose_satisfaction_tt
+			every_pop = {
+				limit = {
+					pop_type = pop_type:soldiers
+				}
+				add_pop_satisfaction = pop_satisfaction_extreme_penalty
+			}
+		}
 	}
 }
 
@@ -128,7 +162,6 @@ dbo_dhe_destiny.201 = {
 	historical_info = dbo_dhe_destiny.201.historical_info
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_cultural_capital_constantinople.dds"
 	fire_only_once = yes
-	outcome = positive
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.1.1
@@ -145,7 +178,7 @@ dbo_dhe_destiny.201 = {
 			type = dbo_destiny_cultural_capital_constantinople
 		}
 		add_reform = government_reform:dbo_destiny_cultural_capital_constantinople
-		dbo_event_severe_bonus = yes
+		dbo_event_mild_bonus = yes
 	}
 }
 
@@ -157,7 +190,6 @@ dbo_dhe_destiny.202 = {
 	historical_info = dbo_dhe_destiny.202.historical_info
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_trade_center_grand_bazaar.dds"
 	fire_only_once = yes
-	outcome = positive
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.1.1
@@ -174,7 +206,7 @@ dbo_dhe_destiny.202 = {
 			type = dbo_destiny_trade_center_grand_bazaar
 		}
 		add_reform = government_reform:dbo_destiny_trade_center_grand_bazaar
-		dbo_event_severe_bonus = yes
+		dbo_event_mild_bonus = yes
 	}
 }
 
@@ -186,7 +218,6 @@ dbo_dhe_destiny.203 = {
 	historical_info = dbo_dhe_destiny.203.historical_info
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_legacy_of_seljuks.dds"
 	fire_only_once = yes
-	outcome = positive
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.1.1
@@ -212,7 +243,7 @@ dbo_dhe_destiny.203 = {
 			type = dbo_destiny_legacy_of_seljuks
 		}
 		add_reform = government_reform:dbo_destiny_legacy_of_seljuks
-		dbo_event_severe_bonus = yes
+		dbo_event_mild_bonus = yes
 	}
 }
 
@@ -224,7 +255,6 @@ dbo_dhe_destiny.204 = {
 	historical_info = dbo_dhe_destiny.204.historical_info
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_piri_reis.dds"
 	fire_only_once = yes
-	outcome = positive
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1500.1.1
@@ -241,7 +271,7 @@ dbo_dhe_destiny.204 = {
 			type = dbo_destiny_piri_reis
 		}
 		add_reform = government_reform:dbo_destiny_piri_reis
-		dbo_event_severe_bonus = yes
+		dbo_event_mild_bonus = yes
 	}
 }
 
@@ -253,7 +283,6 @@ dbo_dhe_destiny.205 = {
 	historical_info = dbo_dhe_destiny.205.historical_info
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_ottoman_empire.dds"
 	fire_only_once = yes
-	outcome = positive
 	dynamic_historical_event = {
 		tag = TUR
 		from = 1337.1.1
@@ -320,15 +349,154 @@ dbo_dhe_destiny.206 = {
 			type = dbo_destiny_mentor_lala
 		}
 		add_reform = government_reform:dbo_destiny_mentor_lala
-		dbo_event_severe_bonus = yes
+		dbo_event_mild_bonus = yes
 	}
 }
 
-# dbo_mevlana_dergahi
+# dbo_destiny_noble_privilege_turkish_pashas
 dbo_dhe_destiny.301 = {
 	title = dbo_dhe_destiny.301.title
 	desc = dbo_dhe_destiny.301.desc
-	historical_info = dbo_dhe_destiny.301.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_turkish_pashas.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		has_ruler = yes
+		in_civil_war = no
+		has_reform = government_reform:dbo_destiny_ottoman_empire
+		ruler = {
+			NOT = {
+				has_trait = dbo_sultan
+			}
+		}
+	}
+	option = {
+		name = dbo_dhe_destiny.301.a
+		historical_option = yes
+		dbo_destiny_noble_turkish_pashas_grant_estate_privilege_effect = yes
+	}
+	option = {
+		name = dbo_dhe_destiny.301.b
+		set_variable = {
+			name = dbo_destiny_noble_privilege_turkish_pashas_rejected
+			value = yes
+		}
+		add_estate_satisfaction = {
+			type = estate_type:nobles_estate
+			value = estate_satisfaction_ultimate_penalty
+		}
+		add_stability = stability_ultimate_penalty
+		custom_tooltip = {
+			text = dbo_turkish_pashas_rising_event_tt
+			trigger_event_silently = {
+				id = dbo_dhe_destiny.302
+				months = 3
+			}
+		}
+	}
+}
+
+dbo_dhe_destiny.302 = {
+	title = dbo_dhe_destiny.302.title
+	desc = dbo_dhe_destiny.302.desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_turkish_pashas_claim.dds"
+	trigger = {
+		has_variable = dbo_destiny_noble_privilege_turkish_pashas_rejected
+	}
+	option = {
+		name = dbo_dhe_destiny.301.a
+		historical_option = yes
+		dbo_destiny_noble_turkish_pashas_grant_estate_privilege_effect = yes
+		hidden_effect = {
+			if = {
+				limit = {
+					has_variable = dbo_destiny_noble_privilege_turkish_pashas_rejected
+				}
+				remove_variable = dbo_destiny_noble_privilege_turkish_pashas_rejected
+			}
+		}
+	}
+	option = {
+		name = dbo_dhe_destiny.302.b
+		set_variable = {
+			name = dbo_destiny_noble_privilege_turkish_pashas_rejected
+			value = yes
+		}
+		add_estate_satisfaction = {
+			type = estate_type:nobles_estate
+			value = estate_satisfaction_severe_penalty
+		}
+		add_stability = stability_severe_penalty
+		add_gold_to_estate = {
+			estate_type = estate_type:nobles_estate
+			value = {
+				value = monthly_income_trade_and_tax
+				multiply = 2
+			}
+		}
+		custom_tooltip = {
+			text = dbo_destiny_every_turkic_group_nobles_estate_pops_lose_satisfaction_tt
+			every_pop = {
+				limit = {
+					dbo_turkish_pashas_rebel_allegiance_trigger = yes
+				}
+				add_pop_satisfaction = pop_satisfaction_severe_penalty
+			}
+		}
+		if = {
+			limit = {
+				any_rebel = {
+					rebel_name_key = rebel_turkish_pashas
+				}
+			}
+			every_rebel = {
+				limit = {
+					rebel_name_key = rebel_turkish_pashas
+					rebel_progress > 0
+				}
+				add_rebel_progress = {
+					value = rebel_progress
+					add = rebel_progress_weak_penalty
+					divide = 2
+				}
+			}
+		}
+		# 
+		else = {
+			create_rebel = {
+				name = rebel_turkish_pashas
+				category = estate
+				estate = nobles_estate
+				culture = root.culture
+				save_temporary_scope_as = target_rebel
+			}
+			every_pop = {
+				limit = {
+					dbo_turkish_pashas_rebel_allegiance_trigger = yes
+				}
+				hidden_effect = {
+					add_pop_satisfaction = pop_satisfaction_radical_penalty
+				}
+				change_pop_allegiance = scope:target_rebel
+			}
+		}
+		trigger_event_silently = {
+			id = dbo_dhe_destiny.302
+			months = 12
+		}
+	}
+}
+
+# dbo_destiny_clergy_privilege_mevlana_dergahi
+dbo_dhe_destiny.401 = {
+	title = dbo_dhe_destiny.401.title
+	desc = dbo_dhe_destiny.401.desc
+	historical_info = dbo_dhe_destiny.401.historical_info
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_mevlana_dergahi.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -341,12 +509,16 @@ dbo_dhe_destiny.301 = {
 		owns = location:konya
 	}
 	option = {
-		name = dbo_dhe_destiny.301.a
+		name = dbo_dhe_destiny.401.a
 		historical_option = yes
-		unlock_estate_privilege_effect = {
-			type = dbo_destiny_privilege_mevlana_dergahi
+		add_estate_satisfaction = {
+			type = estate_type:nobles_estate
+			value = estate_satisfaction_weak_penalty
 		}
-		grant_estate_privilege = estate_privilege:dbo_destiny_privilege_mevlana_dergahi
+		unlock_estate_privilege_effect = {
+			type = dbo_destiny_clergy_privilege_mevlana_dergahi
+		}
+		grant_estate_privilege = estate_privilege:dbo_destiny_clergy_privilege_mevlana_dergahi
 		unlock_building_effect = {
 			type = dbo_mevlana_dergahi
 		}
@@ -357,6 +529,6 @@ dbo_dhe_destiny.301 = {
 				cost_multiplier_reason = "game_concept_event"
 			}
 		}
-		dbo_event_severe_bonus = yes
+		dbo_event_mild_bonus = yes
 	}
 }

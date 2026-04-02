@@ -39,7 +39,7 @@ dbo_situation.1 = {
 				}
 			}
 		}
-		dbo_event_extreme_bonus = yes
+		dbo_event_severe_bonus = yes
 		add_gold = 1299
 	}
 }

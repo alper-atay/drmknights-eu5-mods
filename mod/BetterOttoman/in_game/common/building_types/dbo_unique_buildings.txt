@@ -17,21 +17,10 @@
 	}
 	country_potential = {
 		has_reform = government_reform:anatolian_beylik
-	}
-	remove_if = {
-		OR = {
-			location = {
-				is_province_capital = no
-			}
-			owner = {
-				NOT = {
-					has_reform = government_reform:anatolian_beylik
-				}
-			}
-		}
+		has_estate_privilege = estate_privilege:dbo_destiny_noble_privilege_turkish_pashas
 	}
 	modifier = {
-		local_proximity_source = 20
+		local_proximity_source = 10
 		local_nobles_estate_power = 1
 		local_monthly_development = 0.001
 		local_monthly_prosperity = 0.001
@@ -71,9 +60,6 @@ dbo_topkapi_palace = {
 		has_unlocked_building_trigger = {
 			type = dbo_topkapi_palace
 		}
-	}
-	remove_if = {
-		is_no_longer_capital = yes
 	}
 	modifier = {
 		local_monthly_development = 0.001
@@ -148,18 +134,13 @@ REPLACE:janissary_barracks = {
 	employment_size = manpower_employment
 	category = military_category
 	rural_settlement = no
-	town = yes
+	town = no
 	city = yes
 	expensive = yes
 	build_time = soldier_building
 	always_add_demands = yes
 	location_potential = {
 		is_province_capital = yes
-	}
-	remove_if = {
-		location = {
-			is_province_capital = no
-		}
 	}
 	modifier = {
 		local_manpower = 0.025

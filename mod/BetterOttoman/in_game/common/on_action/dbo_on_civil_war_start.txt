@@ -1,0 +1,55 @@
+﻿# root = original country which gets targeted by the civil war, scope:target = rebel country which declares the war, scope:war = the civil war, scope:rebel is the rebel
+on_civil_war_start = {
+	effect = {
+		if = {
+			limit = {
+				scope:rebel = {
+					rebel_name_key = rebel_turkish_pashas
+				}
+			}
+			create_mercenary = {
+				name = rebel_turkish_pashas
+				home = scope:target.capital
+				borrower = scope:target
+				cost_multiplier = 0
+				categories = {
+					army_infantry = 16
+					army_cavalry = 16
+					army_artillery = 16
+					army_auxiliary = 16
+				}
+				save_scope_as = rebel_turkish_pashas_mercenary
+			}
+			scope:target = {
+				hire_mercenary = scope:rebel_turkish_pashas_mercenary
+				capital = {
+					create_num_sub_unit_of_category = {
+						count = 40
+						category = sub_unit_category:army_infantry
+					}
+					create_num_sub_unit_of_category = {
+						count = 40
+						category = sub_unit_category:army_cavalry
+					}
+					create_num_sub_unit_of_category = {
+						count = 40
+						category = sub_unit_category:army_artillery
+					}
+					create_num_sub_unit_of_category = {
+						count = 40
+						category = sub_unit_category:army_auxiliary
+					}
+				}
+				if = {
+					limit = {
+						has_raised_levies = no
+					}
+					raise_all_levies = {
+						type = army
+						instant = yes
+					}
+				}
+			}
+		}
+	}
+}

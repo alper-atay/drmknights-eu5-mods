@@ -22,3 +22,18 @@ dbo_rgo_replaced_goods = {
 		root = goods:wool
 	}
 }
+
+dbo_turkish_pashas_rebel_allegiance_trigger = {
+	OR = {
+		pop_type = pop_type:soldiers
+		AND = {
+			OR = {
+				estate_type = estate_type:nobles_estate
+				estate_type = estate_type:peasants_estate
+			}
+			culture = {
+				has_culture_group = culture_group:turkic_group
+			}
+		}
+	}
+}

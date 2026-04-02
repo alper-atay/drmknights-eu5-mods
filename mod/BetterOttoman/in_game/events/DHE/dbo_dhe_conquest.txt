@@ -47,7 +47,7 @@ dbo_dhe_conquest.12 = {
 			type = dbo_conquest_stamp_anatolian_turks_policy
 		}
 		add_policy = policy:dbo_conquest_stamp_anatolian_turks_policy
-		dbo_event_extreme_bonus = yes
+		dbo_event_severe_bonus = yes
 	}
 }
 
@@ -98,7 +98,7 @@ dbo_dhe_conquest.22 = {
 			type = dbo_conquest_stamp_rumelia_policy
 		}
 		add_policy = policy:dbo_conquest_stamp_rumelia_policy
-		dbo_event_extreme_bonus = yes
+		dbo_event_severe_bonus = yes
 	}
 }
 
@@ -150,7 +150,7 @@ dbo_dhe_conquest.32 = {
 			type = dbo_conquest_stamp_fertile_crescent_policy
 		}
 		add_policy = policy:dbo_conquest_stamp_fertile_crescent_policy
-		dbo_event_extreme_bonus = yes
+		dbo_event_severe_bonus = yes
 	}
 }
 
@@ -202,7 +202,7 @@ dbo_dhe_conquest.42 = {
 			type = dbo_conquest_stamp_arabian_peninsula_policy
 		}
 		add_policy = policy:dbo_conquest_stamp_arabian_peninsula_policy
-		dbo_event_extreme_bonus = yes
+		dbo_event_severe_bonus = yes
 	}
 }
 
@@ -254,7 +254,7 @@ dbo_dhe_conquest.52 = {
 			type = dbo_conquest_stamp_nile_river_policy
 		}
 		add_policy = policy:dbo_conquest_stamp_nile_river_policy
-		dbo_event_extreme_bonus = yes
+		dbo_event_severe_bonus = yes
 	}
 }
 
@@ -306,7 +306,7 @@ dbo_dhe_conquest.62 = {
 			type = dbo_conquest_stamp_black_sea_policy
 		}
 		add_policy = policy:dbo_conquest_stamp_black_sea_policy
-		dbo_event_extreme_bonus = yes
+		dbo_event_severe_bonus = yes
 	}
 }
 
@@ -358,7 +358,7 @@ dbo_dhe_conquest.72 = {
 			type = dbo_conquest_stamp_europe_eastern_gate_policy
 		}
 		add_policy = policy:dbo_conquest_stamp_europe_eastern_gate_policy
-		dbo_event_extreme_bonus = yes
+		dbo_event_severe_bonus = yes
 	}
 }
 
@@ -408,7 +408,7 @@ dbo_dhe_conquest.82 = {
 			type = dbo_conquest_stamp_turkish_renaissance_policy
 		}
 		add_policy = policy:dbo_conquest_stamp_turkish_renaissance_policy
-		dbo_event_extreme_bonus = yes
+		dbo_event_severe_bonus = yes
 	}
 }
 
@@ -458,7 +458,7 @@ dbo_dhe_conquest.92 = {
 			type = dbo_conquest_stamp_pearl_of_east_policy
 		}
 		add_policy = policy:dbo_conquest_stamp_pearl_of_east_policy
-		dbo_event_extreme_bonus = yes
+		dbo_event_severe_bonus = yes
 	}
 }
 
@@ -510,7 +510,7 @@ dbo_dhe_conquest.102 = {
 			type = dbo_conquest_stamp_maghreb_policy
 		}
 		add_policy = policy:dbo_conquest_stamp_maghreb_policy
-		dbo_event_extreme_bonus = yes
+		dbo_event_severe_bonus = yes
 	}
 }
 
@@ -562,6 +562,6 @@ dbo_dhe_conquest.112 = {
 			type = dbo_conquest_stamp_steep_mountain_policy
 		}
 		add_policy = policy:dbo_conquest_stamp_steep_mountain_policy
-		dbo_event_extreme_bonus = yes
+		dbo_event_severe_bonus = yes
 	}
 }

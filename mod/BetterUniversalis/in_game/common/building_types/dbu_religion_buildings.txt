@@ -58,11 +58,6 @@ dbu_grand_mosque = {
 	country_potential = {
 		religion.group ?= religion_group:muslim
 	}
-	remove_if = {
-		location = {
-			is_province_capital = no
-		}
-	}
 	unique_production_methods = {
 		dbu_grand_mosque_maintenance = {
 			cloth = 0.1

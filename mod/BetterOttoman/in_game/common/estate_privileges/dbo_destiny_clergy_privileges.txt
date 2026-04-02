@@ -1,8 +1,8 @@
-﻿dbo_destiny_privilege_mevlana_dergahi = {
+﻿dbo_destiny_clergy_privilege_mevlana_dergahi = {
 	estate = clergy_estate
 	potential = {
 		has_unlocked_estate_privilege_trigger = {
-			type = dbo_destiny_privilege_mevlana_dergahi
+			type = dbo_destiny_clergy_privilege_mevlana_dergahi
 		}
 	}
 	country_modifier = {

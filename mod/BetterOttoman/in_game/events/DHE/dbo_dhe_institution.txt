@@ -25,7 +25,7 @@ dbo_dhe_institution.1 = {
 				value = institution_progress_extreme_bonus
 			}
 		}
-		dbo_event_severe_bonus = yes
+		dbo_event_mild_bonus = yes
 	}
 }
 
@@ -55,7 +55,7 @@ dbo_dhe_institution.2 = {
 				value = institution_progress_extreme_bonus
 			}
 		}
-		dbo_event_severe_bonus = yes
+		dbo_event_mild_bonus = yes
 	}
 }
 
@@ -81,7 +81,7 @@ dbo_dhe_institution.3 = {
 			years = 100
 			mode = replace
 		}
-		dbo_event_severe_bonus = yes
+		dbo_event_mild_bonus = yes
 	}
 }
 
@@ -107,6 +107,6 @@ dbo_dhe_institution.4 = {
 			years = 50
 			mode = replace
 		}
-		dbo_event_severe_bonus = yes
+		dbo_event_mild_bonus = yes
 	}
 }

@@ -1,0 +1,7 @@
+﻿dbu_explosion_of_innovation = {
+	game_data = {
+		category = country
+	}
+	research_speed = 0.1
+	research_speed_modifier = 0.1
+}
