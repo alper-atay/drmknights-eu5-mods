@@ -1,4 +1,4 @@
-﻿dbo_situation = {
+﻿dbo_situation_conquest = {
 	monthly_spawn_chance = monthly_spawn_chance_unique
 	can_start = {
 		current_date > 1337.1.1
@@ -29,7 +29,7 @@
 	}
 	on_start = {
 		c:TUR = {
-			trigger_event_non_silently = dbo_situation.1
+			trigger_event_non_silently = dbo_situation_conquest.1
 		}
 	}
 }

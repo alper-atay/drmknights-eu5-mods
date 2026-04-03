@@ -1,4 +1,4 @@
 ﻿l_turkish:
- dbo_situation.1.title: "$dbo_situation$"
- dbo_situation.1.desc: "$dbo_situation_desc$"
- dbo_situation.1.a: "Cihan Hâkimiyeti Ülküsünü Kabul Et"
+ dbo_situation_conquest.1.title: "$dbo_situation_conquest$"
+ dbo_situation_conquest.1.desc: "$dbo_situation_desc$"
+ dbo_situation_conquest.1.a: "Cihan Hâkimiyeti Ülküsünü Kabul Et"

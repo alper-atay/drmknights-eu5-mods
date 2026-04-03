@@ -1,6 +1,6 @@
 ﻿l_turkish:
 #Base
- DBO_CONQUEST_LAW_CATEGORY: "[ShowSituationName('dbo_situation')] Kanunları" 
+ DBO_CONQUEST_LAW_CATEGORY: "[ShowSituationName('dbo_situation_conquest')] Kanunları" 
 # Names
  dbo_conquest_anatolian_turks: "Anadolu Türk Birliği"
  dbo_conquest_rumelia: "Rumeli’nin Fethi"

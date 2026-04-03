@@ -32,7 +32,7 @@
 	select_trigger = {
 		looking_for_a = situation
 		interaction_source_list = {
-			situation:dbo_situation = {
+			situation:dbo_situation_conquest = {
 				add_to_list = source
 			}
 		}
@@ -42,7 +42,7 @@
 			data = name
 		}
 		visible = {
-			situation:dbo_situation = this
+			situation:dbo_situation_conquest = this
 			situation_is_active = yes
 		}
 	}
