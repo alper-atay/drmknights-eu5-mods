@@ -8,54 +8,56 @@
 dbo_destiny_cultural_capital_constantinople_can_end = {
 	custom_tooltip = {
 		text = dbo_destiny_cultural_capital_constantinople_can_end_tooltip
-		c:TUR = {
-			has_reform = government_reform:dbo_destiny_cultural_capital_constantinople
-		}
+		has_reform = government_reform:dbo_destiny_cultural_capital_constantinople
 	}
 }
 
 dbo_destiny_trade_center_grand_bazaar_can_end = {
 	custom_tooltip = {
 		text = dbo_destiny_trade_center_grand_bazaar_can_end_tooltip
-		c:TUR = {
-			has_reform = government_reform:dbo_destiny_trade_center_grand_bazaar
-		}
+		has_reform = government_reform:dbo_destiny_trade_center_grand_bazaar
 	}
 }
 
 dbo_destiny_mentor_lala_can_end = {
 	custom_tooltip = {
 		text = dbo_destiny_mentor_lala_can_end_tooltip
-		c:TUR = {
-			has_reform = government_reform:dbo_destiny_mentor_lala
-		}
+		has_reform = government_reform:dbo_destiny_mentor_lala
 	}
 }
 
 dbo_destiny_legacy_of_seljuks_can_end = {
 	custom_tooltip = {
 		text = dbo_destiny_legacy_of_seljuks_can_end_tooltip
-		c:TUR = {
-			has_reform = government_reform:dbo_destiny_legacy_of_seljuks
-		}
+		has_reform = government_reform:dbo_destiny_legacy_of_seljuks
 	}
 }
 
 dbo_destiny_piri_reis_can_end = {
 	custom_tooltip = {
 		text = dbo_destiny_piri_reis_can_end_tooltip
-		c:TUR = {
-			has_reform = government_reform:dbo_destiny_piri_reis
-		}
+		has_reform = government_reform:dbo_destiny_piri_reis
 	}
 }
 
 dbo_destiny_ottoman_empire_can_end = {
 	custom_tooltip = {
 		text = dbo_destiny_ottoman_empire_can_end_tooltip
-		c:TUR = {
-			has_reform = government_reform:dbo_destiny_ottoman_empire
-		}
+		has_reform = government_reform:dbo_destiny_ottoman_empire
+	}
+}
+
+dbo_destiny_noble_privilege_pashas_can_end = {
+	custom_tooltip = {
+		text = dbo_destiny_noble_privilege_pashas_can_end_tooltip
+		has_estate_privilege = estate_privilege:dbo_destiny_noble_privilege_pashas
+	}
+}
+
+dbo_destiny_clergy_privilege_mevlana_dergahi_can_end = {
+	custom_tooltip = {
+		text = dbo_destiny_clergy_privilege_mevlana_dergahi_can_end_tooltip
+		has_estate_privilege = estate_privilege:dbo_destiny_clergy_privilege_mevlana_dergahi
 	}
 }
 
@@ -67,4 +69,6 @@ dbo_destiny_can_end = {
 	dbo_destiny_legacy_of_seljuks_can_end = yes
 	dbo_destiny_piri_reis_can_end = yes
 	dbo_destiny_ottoman_empire_can_end = yes
+	dbo_destiny_noble_privilege_pashas_can_end = yes
+	dbo_destiny_clergy_privilege_mevlana_dergahi_can_end = yes
 }

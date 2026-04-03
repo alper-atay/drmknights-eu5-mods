@@ -12,7 +12,7 @@ dbo_dhe_destiny.101 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		dbo_destiny_talented_youngest_heir_selection_trigger = yes
+		dbo_destiny_talented_youngest_heir_selection_check = yes
 	}
 	option = {
 		name = dbo_dhe_destiny.101.a
@@ -36,7 +36,7 @@ dbo_dhe_destiny.102 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		dbo_destiny_war_slave_tax_and_devshirme_system_trigger = yes
+		dbo_destiny_war_slave_tax_and_devshirme_system_check = yes
 	}
 	option = {
 		name = dbo_dhe_destiny.102.a
@@ -77,7 +77,7 @@ dbo_dhe_destiny.103 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		dbo_destiny_anatolian_beyliks_forced_annex_trigger = yes
+		dbo_destiny_anatolian_beyliks_forced_annex_check = yes
 	}
 	option = {
 		name = dbo_dhe_destiny.103.a
@@ -153,7 +153,7 @@ dbo_dhe_destiny.201 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		dbo_destiny_cultural_capital_constantinople_trigger = yes
+		dbo_destiny_cultural_capital_constantinople_check = yes
 	}
 	option = {
 		name = dbo_dhe_destiny.201.a
@@ -181,7 +181,7 @@ dbo_dhe_destiny.202 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		dbo_destiny_trade_center_grand_bazaar_trigger = yes
+		dbo_destiny_trade_center_grand_bazaar_check = yes
 	}
 	option = {
 		name = dbo_dhe_destiny.202.a
@@ -209,7 +209,7 @@ dbo_dhe_destiny.203 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		dbo_destiny_legacy_of_seljuks_trigger = yes
+		dbo_destiny_legacy_of_seljuks_check = yes
 	}
 	option = {
 		name = dbo_dhe_destiny.203.a
@@ -237,7 +237,7 @@ dbo_dhe_destiny.204 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		dbo_destiny_piri_reis_trigger = yes
+		dbo_destiny_piri_reis_check = yes
 	}
 	option = {
 		name = dbo_dhe_destiny.204.a
@@ -265,7 +265,7 @@ dbo_dhe_destiny.205 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		dbo_destiny_ottoman_empire_trigger = yes
+		dbo_destiny_ottoman_empire_check = yes
 	}
 	option = {
 		name = dbo_dhe_destiny.205.a
@@ -310,7 +310,7 @@ dbo_dhe_destiny.206 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		dbo_destiny_mentor_lala_trigger = yes
+		dbo_destiny_mentor_lala_check = yes
 	}
 	option = {
 		name = dbo_dhe_destiny.206.a
@@ -336,7 +336,7 @@ dbo_dhe_destiny.301 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		dbo_destiny_noble_privilege_pashas_trigger = yes
+		dbo_destiny_noble_privilege_pashas_check = yes
 	}
 	option = {
 		name = dbo_dhe_destiny.301.a
@@ -467,7 +467,7 @@ dbo_dhe_destiny.401 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		dbo_destiny_clergy_privilege_mevlana_dergahi_trigger = yes
+		dbo_destiny_clergy_privilege_mevlana_dergahi_check = yes
 	}
 	option = {
 		name = dbo_dhe_destiny.401.a

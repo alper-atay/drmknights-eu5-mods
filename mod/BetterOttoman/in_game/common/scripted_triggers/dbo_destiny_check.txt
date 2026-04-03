@@ -1,0 +1,154 @@
+﻿dbo_destiny_talented_youngest_heir_selection_check = {
+	trigger_if = {
+		limit = {
+			succession_law = heir_selection:dbo_destiny_talented_youngest_heir_selection
+		}
+		succession_law = heir_selection:dbo_destiny_talented_youngest_heir_selection
+	}
+	trigger_else = {
+		has_ruler = yes
+		has_heir = yes
+	}
+}
+
+dbo_destiny_war_slave_tax_and_devshirme_system_check = {
+	has_slavery = yes
+	OR = {
+		has_policy = ottoman_war_slave_tax
+		has_policy = devshirme_system_policy
+	}
+}
+
+dbo_destiny_anatolian_beyliks_forced_annex_check = {
+	has_variable = rise_of_the_ottomans_winner_variable
+	any_country = {
+		has_reform = government_reform:anatolian_beylik
+		NOT = {
+			tag = TUR
+		}
+	}
+}
+
+dbo_destiny_cultural_capital_constantinople_check = {
+	trigger_if = {
+		limit = {
+			has_reform = government_reform:dbo_destiny_cultural_capital_constantinople
+		}
+		has_reform = government_reform:dbo_destiny_cultural_capital_constantinople
+	}
+	trigger_else = {
+		own_entire_province = province_definition:constantinople_province
+		modifier:has_cultural_maintenance = yes
+	}
+}
+
+dbo_destiny_trade_center_grand_bazaar_check = {
+	trigger_if = {
+		limit = {
+			has_reform = government_reform:dbo_destiny_trade_center_grand_bazaar
+		}
+		has_reform = government_reform:dbo_destiny_trade_center_grand_bazaar
+	}
+	trigger_else = {
+		own_entire_province = province_definition:constantinople_province
+		country_has_estate = estate_type:burghers_estate
+		has_markets = yes
+	}
+}
+
+dbo_destiny_legacy_of_seljuks_check = {
+	trigger_if = {
+		limit = {
+			has_reform = government_reform:dbo_destiny_legacy_of_seljuks
+		}
+		has_reform = government_reform:dbo_destiny_legacy_of_seljuks
+	}
+	trigger_else = {
+		OR = {
+			AND = {
+				has_advance = seljuk_heritage
+				has_advance = seljuk_roots
+				has_advance = heirs_of_rum
+			}
+			current_age_or_later = {
+				age = age_3_discovery
+			}
+		}
+	}
+}
+
+dbo_destiny_piri_reis_check = {
+	trigger_if = {
+		limit = {
+			has_reform = government_reform:dbo_destiny_piri_reis
+		}
+		has_reform = government_reform:dbo_destiny_piri_reis
+	}
+	trigger_else = {
+		has_country_modifier = maps_of_piri_reis_modifier
+	}
+}
+
+dbo_destiny_ottoman_empire_check = {
+	trigger_if = {
+		limit = {
+			has_reform = government_reform:dbo_destiny_ottoman_empire
+		}
+		has_reform = government_reform:dbo_destiny_ottoman_empire
+	}
+	trigger_else = {
+		country_rank = country_rank:rank_empire
+		OR = {
+			has_reform = government_reform:legacy_of_the_ottomans
+			has_reform = government_reform:turkish_pashas
+		}
+	}
+}
+
+dbo_destiny_mentor_lala_check = {
+	trigger_if = {
+		limit = {
+			has_reform = government_reform:dbo_destiny_mentor_lala
+		}
+		has_reform = government_reform:dbo_destiny_mentor_lala
+	}
+	trigger_else = {
+		num_locations >= 100
+		num_of_non_rural >= 10
+	}
+}
+
+dbo_destiny_noble_privilege_pashas_check = {
+	trigger_if = {
+		limit = {
+			has_estate_privilege = estate_privilege:dbo_destiny_noble_privilege_pashas
+		}
+		has_estate_privilege = estate_privilege:dbo_destiny_noble_privilege_pashas
+	}
+	trigger_else = {
+		has_ruler = yes
+		in_civil_war = no
+		has_reform = government_reform:dbo_destiny_ottoman_empire
+		country_has_estate = estate_type:nobles_estate
+		NOT = {
+			ruler = {
+				has_trait = dbo_sultan
+			}
+		}
+	}
+}
+
+dbo_destiny_clergy_privilege_mevlana_dergahi_check = {
+	trigger_if = {
+		limit = {
+			has_estate_privilege = estate_privilege:dbo_destiny_clergy_privilege_mevlana_dergahi
+		}
+		has_estate_privilege = estate_privilege:dbo_destiny_clergy_privilege_mevlana_dergahi
+	}
+	trigger_else = {
+		own_entire_province = province_definition:konya_province
+		location:konya = {
+			is_core_of = root
+		}
+	}
+}

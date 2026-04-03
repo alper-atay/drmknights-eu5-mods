@@ -1,77 +1,77 @@
 ﻿dbo_conquest_anatolian_turks_can_end = {
 	custom_tooltip = {
 		text = dbo_conquest_anatolian_turks_can_end_tooltip
-		dbo_conquest_anatolian_turks_check = yes
+		has_policy = dbo_conquest_stamp_anatolian_turks_policy
 	}
 }
 
 dbo_conquest_rumelia_can_end = {
 	custom_tooltip = {
 		text = dbo_conquest_rumelia_can_end_tooltip
-		dbo_conquest_rumelia_check = yes
+		has_policy = dbo_conquest_stamp_rumelia_policy
 	}
 }
 
 dbo_conquest_black_sea_can_end = {
 	custom_tooltip = {
 		text = dbo_conquest_black_sea_can_end_tooltip
-		dbo_conquest_black_sea_check = yes
+		has_policy = dbo_conquest_stamp_black_sea_policy
 	}
 }
 
 dbo_conquest_fertile_crescent_can_end = {
 	custom_tooltip = {
 		text = dbo_conquest_fertile_crescent_can_end_tooltip
-		dbo_conquest_fertile_crescent_check = yes
+		has_policy = dbo_conquest_stamp_fertile_crescent_policy
 	}
 }
 
 dbo_conquest_arabian_peninsula_can_end = {
 	custom_tooltip = {
 		text = dbo_conquest_arabian_peninsula_can_end_tooltip
-		dbo_conquest_arabian_peninsula_check = yes
+		has_policy = dbo_conquest_stamp_arabian_peninsula_policy
 	}
 }
 
 dbo_conquest_nile_river_can_end = {
 	custom_tooltip = {
 		text = dbo_conquest_nile_river_can_end_tooltip
-		dbo_conquest_nile_river_check = yes
+		has_policy = dbo_conquest_stamp_nile_river_policy
 	}
 }
 
 dbo_conquest_europe_eastern_gate_can_end = {
 	custom_tooltip = {
 		text = dbo_conquest_europe_eastern_gate_can_end_tooltip
-		dbo_conquest_europe_eastern_gate_check = yes
+		has_policy = dbo_conquest_stamp_europe_eastern_gate_policy
 	}
 }
 
 dbo_conquest_pearl_of_east_can_end = {
 	custom_tooltip = {
 		text = dbo_conquest_pearl_of_east_can_end_tooltip
-		dbo_conquest_pearl_of_east_check = yes
+		has_policy = dbo_conquest_stamp_pearl_of_east_policy
 	}
 }
 
 dbo_conquest_turkish_renaissance_can_end = {
 	custom_tooltip = {
 		text = dbo_conquest_turkish_renaissance_can_end_tooltip
-		dbo_conquest_turkish_renaissance_check = yes
+		has_policy = dbo_conquest_stamp_turkish_renaissance_policy
 	}
 }
 
 dbo_conquest_maghreb_can_end = {
 	custom_tooltip = {
 		text = dbo_conquest_maghreb_can_end_tooltip
-		dbo_conquest_maghreb_check = yes
+		has_policy = dbo_conquest_stamp_maghreb_policy
 	}
 }
 
 dbo_conquest_steep_mountain_can_end = {
 	custom_tooltip = {
 		text = dbo_conquest_steep_mountain_can_end_tooltip
-		dbo_conquest_steep_mountain_check = yes
+		has_policy = dbo_conquest_stamp_steep_mountain_policy
 	}
 }
 

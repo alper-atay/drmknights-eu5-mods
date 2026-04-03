@@ -4,7 +4,22 @@
 		current_date > 1337.1.1
 	}
 	can_end = {
-		dbo_situation_can_end = yes
+		trigger_if = {
+			limit = {
+				country_exists = c:TUR
+			}
+			c:TUR = {
+				dbo_situation_can_end = yes
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				country_exists = c:GKTUR
+			}
+			c:GKTUR = {
+				dbo_situation_can_end = yes
+			}
+		}
 	}
 	visible = {
 		OR = {
