@@ -1,8 +1,7 @@
 ﻿dbo_conquest_anatolian_turks = {
 	type = take_province
 	attacker = {
-		conquer_cost = 0.25
-		antagonism = 0.25
+		conquer_cost = 0.5
 		allowed_locations = {
 			OR = {
 				scope:location.province_definition = province_definition:edirne_province
@@ -22,8 +21,6 @@
 		}
 	}
 	defender = {
-		conquer_cost = 1
-		subjugate_cost = 1
 	}
 	ticking_war_score = 0.5
 }
@@ -31,15 +28,12 @@
 dbo_conquest_rumelia = {
 	type = take_province
 	attacker = {
-		conquer_cost = 0.25
-		antagonism = 0.25
+		conquer_cost = 0.5
 		allowed_locations = {
 			scope:location.region = region:balkan_region
 		}
 	}
 	defender = {
-		conquer_cost = 1
-		subjugate_cost = 1
 	}
 	ticking_war_score = 0.5
 }
@@ -47,15 +41,12 @@ dbo_conquest_rumelia = {
 dbo_conquest_fertile_crescent = {
 	type = take_province
 	attacker = {
-		conquer_cost = 0.25
-		antagonism = 0.25
+		conquer_cost = 0.5
 		allowed_locations = {
 			scope:location.region = region:crescent_region
 		}
 	}
 	defender = {
-		conquer_cost = 1
-		subjugate_cost = 1
 	}
 	ticking_war_score = 0.5
 }
@@ -63,15 +54,12 @@ dbo_conquest_fertile_crescent = {
 dbo_conquest_arabian_peninsula = {
 	type = take_province
 	attacker = {
-		conquer_cost = 0.25
-		antagonism = 0.25
+		conquer_cost = 0.5
 		allowed_locations = {
 			scope:location.region = region:arabia_region
 		}
 	}
 	defender = {
-		conquer_cost = 1
-		subjugate_cost = 1
 	}
 	ticking_war_score = 0.5
 }
@@ -79,8 +67,7 @@ dbo_conquest_arabian_peninsula = {
 dbo_conquest_black_sea = {
 	type = take_province
 	attacker = {
-		conquer_cost = 0.25
-		antagonism = 0.25
+		conquer_cost = 0.5
 		allowed_locations = {
 			OR = {
 				scope:location.area = area:pontus_area
@@ -111,8 +98,6 @@ dbo_conquest_black_sea = {
 		}
 	}
 	defender = {
-		conquer_cost = 1
-		subjugate_cost = 1
 	}
 	ticking_war_score = 0.5
 }
@@ -120,15 +105,12 @@ dbo_conquest_black_sea = {
 dbo_conquest_nile_river = {
 	type = take_province
 	attacker = {
-		conquer_cost = 0.25
-		antagonism = 0.25
+		conquer_cost = 0.5
 		allowed_locations = {
 			scope:location.region = region:egypt_region
 		}
 	}
 	defender = {
-		conquer_cost = 1
-		subjugate_cost = 1
 	}
 	ticking_war_score = 0.5
 }
@@ -136,15 +118,12 @@ dbo_conquest_nile_river = {
 dbo_conquest_europe_eastern_gate = {
 	type = take_province
 	attacker = {
-		conquer_cost = 0.25
-		antagonism = 0.25
+		conquer_cost = 0.5
 		allowed_locations = {
 			scope:location.region = region:carpathia_region
 		}
 	}
 	defender = {
-		conquer_cost = 1
-		subjugate_cost = 1
 	}
 	ticking_war_score = 0.5
 }
@@ -152,15 +131,12 @@ dbo_conquest_europe_eastern_gate = {
 dbo_conquest_turkish_renaissance = {
 	type = take_province
 	attacker = {
-		conquer_cost = 0.25
-		antagonism = 0.25
+		conquer_cost = 0.5
 		allowed_locations = {
 			scope:location.region = region:italy_region
 		}
 	}
 	defender = {
-		conquer_cost = 1
-		subjugate_cost = 1
 	}
 	ticking_war_score = 0.5
 }
@@ -168,15 +144,12 @@ dbo_conquest_turkish_renaissance = {
 dbo_conquest_pearl_of_east = {
 	type = take_province
 	attacker = {
-		conquer_cost = 0.25
-		antagonism = 0.25
+		conquer_cost = 0.5
 		allowed_locations = {
 			scope:location.region = region:persia_region
 		}
 	}
 	defender = {
-		conquer_cost = 1
-		subjugate_cost = 1
 	}
 	ticking_war_score = 0.5
 }
@@ -184,15 +157,12 @@ dbo_conquest_pearl_of_east = {
 dbo_conquest_maghreb = {
 	type = take_province
 	attacker = {
-		conquer_cost = 0.25
-		antagonism = 0.25
+		conquer_cost = 0.5
 		allowed_locations = {
 			scope:location.region = region:maghreb_region
 		}
 	}
 	defender = {
-		conquer_cost = 1
-		subjugate_cost = 1
 	}
 	ticking_war_score = 0.5
 }
@@ -200,15 +170,12 @@ dbo_conquest_maghreb = {
 dbo_conquest_steep_mountain = {
 	type = take_province
 	attacker = {
-		conquer_cost = 0.25
-		antagonism = 0.25
+		conquer_cost = 0.5
 		allowed_locations = {
 			scope:location.region = region:caucasus_region
 		}
 	}
 	defender = {
-		conquer_cost = 1
-		subjugate_cost = 1
 	}
 	ticking_war_score = 0.5
 }
@@ -216,8 +183,7 @@ dbo_conquest_steep_mountain = {
 dbo_conquest_gokturk_union = {
 	type = take_province
 	attacker = {
-		conquer_cost = 0.25
-		antagonism = 0.25
+		conquer_cost = 0.5
 		allowed_locations = {
 			scope:location.region = region:steppes_region
 			scope:location.region = region:ural_region
@@ -229,8 +195,6 @@ dbo_conquest_gokturk_union = {
 		}
 	}
 	defender = {
-		conquer_cost = 1
-		subjugate_cost = 1
 	}
 	ticking_war_score = 0.5
 }
