@@ -14,7 +14,7 @@ dbo_dhe_conquest.11 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		dbo_conquest_challenge_check_anatolian_turks = yes
+		dbo_conquest_anatolian_turks_challenge_check = yes
 	}
 	option = {
 		name = dbo_dhe_conquest.11.a
@@ -66,7 +66,7 @@ dbo_dhe_conquest.21 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		dbo_conquest_challenge_check_rumelia = yes
+		dbo_conquest_rumelia_challenge_check = yes
 	}
 	option = {
 		name = dbo_dhe_conquest.21.a
@@ -117,7 +117,7 @@ dbo_dhe_conquest.31 = {
 		monthly_chance = 20
 	}
 	trigger = {
-		dbo_conquest_challenge_check_fertile_crescent = yes
+		dbo_conquest_fertile_crescent_challenge_check = yes
 	}
 	option = {
 		name = dbo_dhe_conquest.31.a
@@ -169,7 +169,7 @@ dbo_dhe_conquest.41 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		dbo_conquest_challenge_check_arabian_peninsula = yes
+		dbo_conquest_arabian_peninsula_challenge_check = yes
 	}
 	option = {
 		name = dbo_dhe_conquest.41.a
@@ -221,7 +221,7 @@ dbo_dhe_conquest.51 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		dbo_conquest_challenge_check_nile_river = yes
+		dbo_conquest_nile_river_challenge_check = yes
 	}
 	option = {
 		name = dbo_dhe_conquest.51.a
@@ -273,7 +273,7 @@ dbo_dhe_conquest.61 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		dbo_conquest_challenge_check_black_sea = yes
+		dbo_conquest_black_sea_challenge_check = yes
 	}
 	option = {
 		name = dbo_dhe_conquest.61.a
@@ -325,7 +325,7 @@ dbo_dhe_conquest.71 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		dbo_conquest_challenge_check_europe_eastern_gate = yes
+		dbo_conquest_europe_eastern_gate_challenge_check = yes
 	}
 	option = {
 		name = dbo_dhe_conquest.71.a
@@ -376,7 +376,7 @@ dbo_dhe_conquest.81 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		dbo_conquest_challenge_check_turkish_renaissance = yes
+		dbo_conquest_turkish_renaissance_challenge_check = yes
 	}
 	option = {
 		name = dbo_dhe_conquest.81.a
@@ -426,7 +426,7 @@ dbo_dhe_conquest.91 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		dbo_conquest_challenge_check_pearl_of_east = yes
+		dbo_conquest_pearl_of_east_challenge_check = yes
 	}
 	option = {
 		name = dbo_dhe_conquest.91.a
@@ -477,7 +477,7 @@ dbo_dhe_conquest.101 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		dbo_conquest_challenge_check_maghreb = yes
+		dbo_conquest_maghreb_challenge_check = yes
 	}
 	option = {
 		name = dbo_dhe_conquest.101.a
@@ -529,7 +529,7 @@ dbo_dhe_conquest.111 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		dbo_conquest_challenge_check_steep_mountain = yes
+		dbo_conquest_steep_mountain_challenge_check = yes
 	}
 	option = {
 		name = dbo_dhe_conquest.111.a

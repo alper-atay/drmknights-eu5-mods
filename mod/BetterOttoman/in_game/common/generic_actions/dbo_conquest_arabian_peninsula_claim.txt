@@ -7,7 +7,7 @@
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			dbo_conquest_challenge_check_arabian_peninsula = yes
+			dbo_conquest_arabian_peninsula_challenge_check = yes
 		}
 	}
 	ai_tick = monthly
