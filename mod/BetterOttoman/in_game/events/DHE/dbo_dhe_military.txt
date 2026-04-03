@@ -14,9 +14,7 @@ dbo_dhe_military.101 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		culture = {
-			has_culture_group = culture_group:turkic_group
-		}
+		dbo_military_army_fundamental_alp_and_alperen_policy_check = yes
 	}
 	option = {
 		name = dbo_dhe_military.101.a
@@ -44,8 +42,7 @@ dbo_dhe_military.102 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		has_policy = dbo_military_army_fundamental_alp_and_alperen_policy
-		has_advance = professional_armies_advance
+		dbo_military_army_fundamental_kapikulu_ocaklari_policy_check = yes
 	}
 	option = {
 		name = dbo_dhe_military.102.a
@@ -79,8 +76,7 @@ dbo_dhe_military.111 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		has_policy = dbo_military_army_fundamental_kapikulu_ocaklari_policy
-		has_advance = janissaries_advance
+		dbo_military_army_infantry_yeniceri_ocagi_policy_check = yes
 	}
 	option = {
 		name = dbo_dhe_military.111.a
@@ -108,9 +104,7 @@ dbo_dhe_military.121 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		culture = {
-			has_culture_group = culture_group:turkic_group
-		}
+		dbo_military_army_cavalry_lessons_from_mongols_policy_check = yes
 	}
 	option = {
 		name = dbo_dhe_military.121.a
@@ -138,13 +132,7 @@ dbo_dhe_military.122 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		has_policy = dbo_military_army_cavalry_lessons_from_mongols_policy
-		OR = {
-			has_advance = timariots
-			current_age_or_later = {
-				age = age_3_discovery
-			}
-		}
+		dbo_military_army_cavalry_timariot_system_policy_check = yes
 	}
 	option = {
 		name = dbo_dhe_military.122.a
@@ -172,10 +160,7 @@ dbo_dhe_military.131 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		has_policy = dbo_military_army_fundamental_kapikulu_ocaklari_policy
-		any_owned_building = {
-			building_produced_goods = goods:cannons
-		}
+		dbo_military_army_artillery_topcu_ocagi_policy_check = yes
 	}
 	option = {
 		name = dbo_dhe_military.131.a
@@ -203,8 +188,7 @@ dbo_dhe_military.141 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		has_policy = dbo_military_army_artillery_topcu_ocagi_policy
-		has_variable = dbo_history_fatih_sultan_mehmet_and_orban_events_completed
+		dbo_military_army_heavy_artillery_great_bronze_cannon_policy_check = yes
 	}
 	option = {
 		name = dbo_dhe_military.141.a
@@ -232,7 +216,7 @@ dbo_dhe_military.151 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		has_policy = dbo_military_army_fundamental_kapikulu_ocaklari_policy
+		dbo_military_army_auxiliary_cebeci_and_saka_ocagi_policy_check = yes
 	}
 	option = {
 		name = dbo_dhe_military.151.a
@@ -260,13 +244,7 @@ dbo_dhe_military.161 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		has_policy = dbo_military_army_infantry_yeniceri_ocagi_policy
-		OR = {
-			has_advance = millets
-			current_age_or_later = {
-				age = age_3_discovery
-			}
-		}
+		dbo_military_army_gendarme_martolos_units_policy_check = yes
 	}
 	option = {
 		name = dbo_dhe_military.161.a
@@ -294,8 +272,7 @@ dbo_dhe_military.171 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		own_entire_province = province_definition:smyrna_province
-		has_reform = government_reform:dbo_destiny_legacy_of_seljuks
+		dbo_military_navy_fundamental_legacy_of_caka_bey_policy_check = yes
 	}
 	option = {
 		name = dbo_dhe_military.171.a
@@ -323,10 +300,7 @@ dbo_dhe_military.172 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		religion = {
-			group = religion_group:muslim
-		}
-		has_policy = dbo_military_navy_fundamental_legacy_of_caka_bey_policy
+		dbo_military_navy_fundamental_barbaros_hayrettin_pasha_policy_check = yes
 	}
 	option = {
 		name = dbo_dhe_military.172.a

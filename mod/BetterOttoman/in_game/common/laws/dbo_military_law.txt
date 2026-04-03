@@ -22,7 +22,7 @@
 			}
 		}
 		country_modifier = {
-			military_tactics = 1
+			military_tactics = 0.25
 			discipline = 0.05
 			global_levy_size_modifier = 0.2
 			levy_combat_efficiency_modifier = 0.2
@@ -36,7 +36,7 @@
 			}
 		}
 		country_modifier = {
-			military_tactics = 1
+			military_tactics = 0.5
 			discipline = 0.1
 			regiment_recruit_speed = 0.1
 			global_manpower_modifier = 0.1
@@ -50,7 +50,7 @@
 			}
 		}
 		country_modifier = {
-			military_tactics = 2
+			military_tactics = 1
 			discipline = 0.2
 			army_movement_speed = 0.1
 			ignore_zone_of_control = yes

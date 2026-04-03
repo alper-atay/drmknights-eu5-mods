@@ -177,5 +177,6 @@ dbo_destiny_wing_of_turk = {
 	country_modifier = {
 		government_reform_slots = 1
 		global_horses_output_modifier = 1
+		monthly_towards_free_subjects = societal_value_large_monthly_move
 	}
 }

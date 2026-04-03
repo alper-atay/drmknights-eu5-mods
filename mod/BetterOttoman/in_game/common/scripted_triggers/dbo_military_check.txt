@@ -1,0 +1,206 @@
+﻿dbo_military_army_fundamental_alp_and_alperen_policy_check = {
+	trigger_if = {
+		limit = {
+			has_unlocked_policy_trigger = {
+				type = dbo_military_army_fundamental_alp_and_alperen_policy
+			}
+		}
+		has_unlocked_policy_trigger = {
+			type = dbo_military_army_fundamental_alp_and_alperen_policy
+		}
+	}
+	trigger_else = {
+		culture = {
+			has_culture_group = culture_group:turkic_group
+		}
+	}
+}
+
+dbo_military_army_fundamental_kapikulu_ocaklari_policy_check = {
+	trigger_if = {
+		limit = {
+			has_unlocked_policy_trigger = {
+				type = dbo_military_army_fundamental_kapikulu_ocaklari_policy
+			}
+		}
+		has_unlocked_policy_trigger = {
+			type = dbo_military_army_fundamental_kapikulu_ocaklari_policy
+		}
+	}
+	trigger_else = {
+		has_policy = dbo_military_army_fundamental_alp_and_alperen_policy
+		has_advance = professional_armies_advance
+	}
+}
+
+dbo_military_army_infantry_yeniceri_ocagi_policy_check = {
+	trigger_if = {
+		limit = {
+			has_unlocked_policy_trigger = {
+				type = dbo_military_army_infantry_yeniceri_ocagi_policy
+			}
+		}
+		has_unlocked_policy_trigger = {
+			type = dbo_military_army_infantry_yeniceri_ocagi_policy
+		}
+	}
+	trigger_else = {
+		has_policy = dbo_military_army_fundamental_kapikulu_ocaklari_policy
+		has_advance = janissaries_advance
+	}
+}
+
+dbo_military_army_cavalry_lessons_from_mongols_policy_check = {
+	trigger_if = {
+		limit = {
+			has_unlocked_policy_trigger = {
+				type = dbo_military_army_cavalry_lessons_from_mongols_policy
+			}
+		}
+		has_unlocked_policy_trigger = {
+			type = dbo_military_army_cavalry_lessons_from_mongols_policy
+		}
+	}
+	trigger_else = {
+		culture = {
+			has_culture_group = culture_group:turkic_group
+		}
+	}
+}
+
+dbo_military_army_cavalry_timariot_system_policy_check = {
+	trigger_if = {
+		limit = {
+			has_unlocked_policy_trigger = {
+				type = dbo_military_army_cavalry_timariot_system_policy
+			}
+		}
+		has_unlocked_policy_trigger = {
+			type = dbo_military_army_cavalry_timariot_system_policy
+		}
+	}
+	trigger_else = {
+		has_policy = dbo_military_army_cavalry_lessons_from_mongols_policy
+		OR = {
+			has_advance = timariots
+			current_age_or_later = {
+				age = age_3_discovery
+			}
+		}
+	}
+}
+
+dbo_military_army_artillery_topcu_ocagi_policy_check = {
+	trigger_if = {
+		limit = {
+			has_unlocked_policy_trigger = {
+				type = dbo_military_army_artillery_topcu_ocagi_policy
+			}
+		}
+		has_unlocked_policy_trigger = {
+			type = dbo_military_army_artillery_topcu_ocagi_policy
+		}
+	}
+	trigger_else = {
+		has_policy = dbo_military_army_fundamental_kapikulu_ocaklari_policy
+		any_owned_building = {
+			building_produced_goods = goods:cannons
+		}
+	}
+}
+
+dbo_military_army_heavy_artillery_great_bronze_cannon_policy_check = {
+	trigger_if = {
+		limit = {
+			has_unlocked_policy_trigger = {
+				type = dbo_military_army_heavy_artillery_great_bronze_cannon_policy
+			}
+		}
+		has_unlocked_policy_trigger = {
+			type = dbo_military_army_heavy_artillery_great_bronze_cannon_policy
+		}
+	}
+	trigger_else = {
+		has_policy = dbo_military_army_artillery_topcu_ocagi_policy
+		has_variable = dbo_history_fatih_sultan_mehmet_and_orban_events_completed
+	}
+}
+
+dbo_military_army_auxiliary_cebeci_and_saka_ocagi_policy_check = {
+	trigger_if = {
+		limit = {
+			has_unlocked_policy_trigger = {
+				type = dbo_military_army_auxiliary_cebeci_and_saka_ocagi_policy
+			}
+		}
+		has_unlocked_policy_trigger = {
+			type = dbo_military_army_auxiliary_cebeci_and_saka_ocagi_policy
+		}
+	}
+	trigger_else = {
+		has_policy = dbo_military_army_fundamental_kapikulu_ocaklari_policy
+	}
+}
+
+dbo_military_army_gendarme_martolos_units_policy_check = {
+	trigger_if = {
+		limit = {
+			has_unlocked_policy_trigger = {
+				type = dbo_military_army_gendarme_martolos_units_policy
+			}
+		}
+		has_unlocked_policy_trigger = {
+			type = dbo_military_army_gendarme_martolos_units_policy
+		}
+	}
+	trigger_else = {
+		has_policy = dbo_military_army_infantry_yeniceri_ocagi_policy
+		OR = {
+			has_advance = millets
+			current_age_or_later = {
+				age = age_3_discovery
+			}
+		}
+	}
+}
+
+dbo_military_navy_fundamental_legacy_of_caka_bey_policy_check = {
+	trigger_if = {
+		limit = {
+			has_unlocked_policy_trigger = {
+				type = dbo_military_navy_fundamental_legacy_of_caka_bey_policy
+			}
+		}
+		has_unlocked_policy_trigger = {
+			type = dbo_military_navy_fundamental_legacy_of_caka_bey_policy
+		}
+	}
+	trigger_else = {
+		own_entire_province = province_definition:smyrna_province
+		has_reform = government_reform:dbo_destiny_legacy_of_seljuks
+	}
+}
+
+dbo_military_navy_fundamental_barbaros_hayrettin_pasha_policy_check = {
+	trigger_if = {
+		limit = {
+			has_unlocked_policy_trigger = {
+				type = dbo_military_navy_fundamental_barbaros_hayrettin_pasha_policy
+			}
+		}
+		has_unlocked_policy_trigger = {
+			type = dbo_military_navy_fundamental_barbaros_hayrettin_pasha_policy
+		}
+	}
+	trigger_else = {
+		has_policy = dbo_military_navy_fundamental_legacy_of_caka_bey_policy
+		religion = {
+			group = religion_group:muslim
+		}
+		any_character = {
+			character_nickname = barbarossa
+			is_admiral = yes
+			is_admiral_of = root
+		}
+	}
+}
