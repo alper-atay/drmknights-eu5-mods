@@ -3,7 +3,6 @@
     blockoverride "situation_subheader_content" {}
 
     blockoverride "situation_panel_main_content" {
-
         situation_card_expandable = {
             blockoverride "header_button_onclick" {
                 onclick = "[LateralView.Vars.Toggle( 'requirements_toggled' )]"

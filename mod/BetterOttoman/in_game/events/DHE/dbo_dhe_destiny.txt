@@ -12,13 +12,7 @@ dbo_dhe_destiny.101 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		has_ruler = yes
-		has_heir = yes
-		stability > 0
-		legitimacy > 50
-		NOT = {
-			succession_law = heir_selection:dbo_destiny_talented_youngest_heir_selection
-		}
+		dbo_destiny_talented_youngest_heir_selection_trigger = yes
 	}
 	option = {
 		name = dbo_dhe_destiny.101.a
@@ -42,11 +36,7 @@ dbo_dhe_destiny.102 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		has_slavery = yes
-		OR = {
-			has_policy = ottoman_war_slave_tax
-			has_policy = devshirme_system_policy
-		}
+		dbo_destiny_war_slave_tax_and_devshirme_system_trigger = yes
 	}
 	option = {
 		name = dbo_dhe_destiny.102.a
@@ -73,7 +63,7 @@ dbo_dhe_destiny.102 = {
 	}
 }
 
-# Winner Ottoman get all Beyliks
+# dbo_destiny_anatolian_beyliks_forced_annex
 dbo_dhe_destiny.103 = {
 	type = country_event
 	title = dbo_dhe_destiny.103.title
@@ -87,13 +77,7 @@ dbo_dhe_destiny.103 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		has_variable = rise_of_the_ottomans_winner_variable
-		any_country = {
-			has_reform = government_reform:anatolian_beylik
-			NOT = {
-				tag = TUR
-			}
-		}
+		dbo_destiny_anatolian_beyliks_forced_annex_trigger = yes
 	}
 	option = {
 		name = dbo_dhe_destiny.103.a
@@ -169,7 +153,7 @@ dbo_dhe_destiny.201 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		own_entire_province = province_definition:constantinople_province
+		dbo_destiny_cultural_capital_constantinople_trigger = yes
 	}
 	option = {
 		name = dbo_dhe_destiny.201.a
@@ -197,7 +181,7 @@ dbo_dhe_destiny.202 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		own_entire_province = province_definition:constantinople_province
+		dbo_destiny_trade_center_grand_bazaar_trigger = yes
 	}
 	option = {
 		name = dbo_dhe_destiny.202.a
@@ -225,16 +209,7 @@ dbo_dhe_destiny.203 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		OR = {
-			AND = {
-				has_advance = seljuk_heritage
-				has_advance = seljuk_roots
-				has_advance = heirs_of_rum
-			}
-			current_age_or_later = {
-				age = age_3_discovery
-			}
-		}
+		dbo_destiny_legacy_of_seljuks_trigger = yes
 	}
 	option = {
 		name = dbo_dhe_destiny.203.a
@@ -262,7 +237,7 @@ dbo_dhe_destiny.204 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		has_country_modifier = maps_of_piri_reis_modifier
+		dbo_destiny_piri_reis_trigger = yes
 	}
 	option = {
 		name = dbo_dhe_destiny.204.a
@@ -290,11 +265,7 @@ dbo_dhe_destiny.205 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		country_rank = country_rank:rank_empire
-		OR = {
-			has_reform = government_reform:legacy_of_the_ottomans
-			has_reform = government_reform:turkish_pashas
-		}
+		dbo_destiny_ottoman_empire_trigger = yes
 	}
 	option = {
 		name = dbo_dhe_destiny.205.a
@@ -339,8 +310,7 @@ dbo_dhe_destiny.206 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		num_locations >= 100
-		num_of_non_rural >= 10
+		dbo_destiny_mentor_lala_trigger = yes
 	}
 	option = {
 		name = dbo_dhe_destiny.206.a
@@ -366,14 +336,7 @@ dbo_dhe_destiny.301 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		has_ruler = yes
-		in_civil_war = no
-		has_reform = government_reform:dbo_destiny_ottoman_empire
-		NOT = {
-			ruler = {
-				has_trait = dbo_sultan
-			}
-		}
+		dbo_destiny_noble_privilege_pashas_trigger = yes
 	}
 	option = {
 		name = dbo_dhe_destiny.301.a
@@ -504,7 +467,7 @@ dbo_dhe_destiny.401 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		owns = location:konya
+		dbo_destiny_clergy_privilege_mevlana_dergahi_trigger = yes
 	}
 	option = {
 		name = dbo_dhe_destiny.401.a

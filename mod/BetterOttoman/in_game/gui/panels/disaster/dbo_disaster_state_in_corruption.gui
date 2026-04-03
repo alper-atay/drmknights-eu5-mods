@@ -1,4 +1,6 @@
 disaster_panel = {
+	blockoverride "disaster_subheader"{}
+	blockoverride "main_image"{}
     blockoverride "disaster_secondary_tab" {
 		margin_top = 10
 		spacing = 5
@@ -25,6 +27,47 @@ disaster_panel = {
 			}
 			blockoverride "icon_replace_visible_not" {
 				visible = "[Not(LateralView.Vars.Exists( 'requirements_toggled' ))]"
+			}
+		}
+	}
+	
+	blockoverride "main_content"{
+		horizontal_scroll_card = {
+			blockoverride "text_top" {
+				text = "[DisasterView.GetDisaster.GetOwner.GetHighestProgressRebel.GetNameWithNoTooltip]"
+				default_format = "#yellow_titles"
+			}
+			blockoverride "text_bottom" {
+				text = "[DisasterView.GetDisaster.GetOwner.GetHighestProgressRebel.GetCategoryName]"
+			}
+
+			blockoverride "number_right" {
+				expand = {}
+				text_single = {
+					layoutpolicy_horizontal = expanding
+					size = { -1 30 }
+					autoresize = no
+					align = center|nobaseline
+					text = "[DisasterView.GetDisaster.GetOwner.GetHighestProgressRebel.GetProgress|2%]"
+				}
+	
+				progressbar = {
+					size = { 100 10 }
+					using = morale_progressbar_bar
+					value = "[Multiply_float(FixedPointToFloat(DisasterView.GetDisaster.GetOwner.GetHighestProgressRebel.GetProgress), '(float)100')]"
+				}
+				expand = {}
+			}
+
+			blockoverride "number_right_2" {
+				text_single = {
+					size = { 60 30 }
+					autoresize = no
+					align = center|nobaseline
+					text = "[DisasterView.GetDisaster.GetOwner.GetHighestProgressRebel.GetMonthlyChange|-=2%]"
+					datacontext = "[DisasterView.GetDisaster.GetOwner.GetHighestProgressRebel]"
+					tooltipwidget = { using = RebelMonthly_tooltip }
+				}
 			}
 		}
 	}

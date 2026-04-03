@@ -1,4 +1,11 @@
-﻿dbo_destiny_cultural_capital_constantinople_can_end = {
+﻿dbo_destiny_talented_youngest_heir_selection_can_end = {
+	custom_tooltip = {
+		text = dbo_destiny_talented_youngest_heir_selection_can_end_tooltip
+		succession_law = heir_selection:dbo_destiny_talented_youngest_heir_selection
+	}
+}
+
+dbo_destiny_cultural_capital_constantinople_can_end = {
 	custom_tooltip = {
 		text = dbo_destiny_cultural_capital_constantinople_can_end_tooltip
 		c:TUR = {
@@ -53,6 +60,7 @@ dbo_destiny_ottoman_empire_can_end = {
 }
 
 dbo_destiny_can_end = {
+	dbo_destiny_talented_youngest_heir_selection_can_end = yes
 	dbo_destiny_cultural_capital_constantinople_can_end = yes
 	dbo_destiny_trade_center_grand_bazaar_can_end = yes
 	dbo_destiny_mentor_lala_can_end = yes
