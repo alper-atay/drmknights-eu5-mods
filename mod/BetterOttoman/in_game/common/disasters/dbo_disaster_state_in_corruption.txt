@@ -1,0 +1,46 @@
+﻿dbo_disaster_state_in_corruption = {
+	monthly_spawn_chance = monthly_spawn_chance_unique
+	can_start = {
+		trigger_if = {
+			limit = {
+				has_ruler = yes
+			}
+			ruler = {
+				has_trait = dbo_cursed
+			}
+		}
+	}
+	modifier = {
+		global_max_control = control_severe_penalty
+		tax_income_efficiency = large_tax_income_efficiency_penalty
+		global_estate_max_tax = -0.1
+		global_distance_from_capital_speed_propagation = -0.1
+		monthly_legitimacy = -0.5
+		monthly_tribal_cohesion = -0.5
+		monthly_devotion = -0.5
+		monthly_horde_unity = -0.5
+		monthly_republican_tradition = -0.5
+		monthly_complacency = 0.05
+		global_crown_estate_power = -0.3
+		max_war_exhaustion = -5
+		global_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
+	}
+	can_end = {
+		trigger_if = {
+			limit = {
+				has_ruler = yes
+			}
+			NOT = {
+				ruler = {
+					has_trait = dbo_cursed
+				}
+			}
+		}
+	}
+	on_start = {
+	}
+	on_monthly = {
+	}
+	on_end = {
+	}
+}

@@ -1,4 +1,4 @@
-on_new_ruler = {
+﻿on_new_ruler = {
 	on_actions = {
 		dbo_on_new_ruler_culus_payment
 	}
