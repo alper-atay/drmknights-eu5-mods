@@ -17,7 +17,7 @@
 	}
 	country_potential = {
 		has_reform = government_reform:anatolian_beylik
-		has_estate_privilege = estate_privilege:dbo_destiny_noble_privilege_turkish_pashas
+		has_estate_privilege = estate_privilege:dbo_destiny_noble_privilege_pashas
 	}
 	modifier = {
 		local_proximity_source = 10

@@ -22,6 +22,20 @@ dbo_sultan = {
 	}
 }
 
+dbo_cursed = {
+	category = ruler
+	flavor = personality
+	allow = {
+		always = no
+	}
+	modifier = {
+		global_crown_estate_power = -0.3
+		character_life_expectancy = -10
+		max_war_exhaustion = -5
+		global_estate_target_satisfaction = medium_permanent_target_satisfaction
+	}
+}
+
 dbo_genius_artist = {
 	category = artist
 	allow = {

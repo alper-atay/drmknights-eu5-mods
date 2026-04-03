@@ -128,7 +128,7 @@ dbo_dhe_sultans_fatih_sultan_mehmed.2 = {
 			add_trait = trait:dbo_sultan
 			add_trait = trait:free_thinker
 			add_trait = trait:military_theorist
-			dbo_add_scaling_character_abilities = yes
+			dbo_scaling_buff_character_abilities = yes
 		}
 		dbo_event_mild_bonus = yes
 	}

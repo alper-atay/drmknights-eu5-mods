@@ -1,20 +1,20 @@
 ﻿# root = original country which gets targeted by the civil war, scope:target = rebel country which declares the war, scope:war = the civil war, scope:rebel is the rebel
 on_civil_war_start = {
 	on_actions = {
-		on_civil_war_start_by_rebel_turkish_pashas
+		on_civil_war_start_by_rebel_pashas
 	}
 }
 
-on_civil_war_start_by_rebel_turkish_pashas = {
+on_civil_war_start_by_rebel_pashas = {
 	effect = {
 		if = {
 			limit = {
 				scope:rebel = {
-					rebel_name_key = rebel_turkish_pashas
+					rebel_name_key = rebel_pashas
 				}
 			}
 			create_mercenary = {
-				name = rebel_turkish_pashas
+				name = rebel_pashas
 				home = scope:target.capital
 				borrower = scope:target
 				cost_multiplier = 0
@@ -24,10 +24,10 @@ on_civil_war_start_by_rebel_turkish_pashas = {
 					army_artillery = 16
 					army_auxiliary = 16
 				}
-				save_scope_as = rebel_turkish_pashas_mercenary
+				save_scope_as = rebel_pashas_mercenary
 			}
 			scope:target = {
-				hire_mercenary = scope:rebel_turkish_pashas_mercenary
+				hire_mercenary = scope:rebel_pashas_mercenary
 				capital = {
 					create_num_sub_unit_of_category = {
 						count = 40

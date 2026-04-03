@@ -1,4 +1,4 @@
-﻿dbo_add_scaling_character_abilities = {
+﻿dbo_scaling_buff_character_abilities = {
 	if = {
 		limit = {
 			NOT = {
@@ -42,6 +42,30 @@
 				divide = 2
 				ceiling = yes
 			}
+		}
+	}
+}
+
+dbo_scaling_nerf_character_abilities = {
+	add_adm = {
+		value = {
+			add = adm
+			divide = -2
+			ceiling = yes
+		}
+	}
+	add_dip = {
+		value = {
+			add = dip
+			divide = -2
+			ceiling = yes
+		}
+	}
+	add_mil = {
+		value = {
+			add = mil
+			divide = -2
+			ceiling = yes
 		}
 	}
 }

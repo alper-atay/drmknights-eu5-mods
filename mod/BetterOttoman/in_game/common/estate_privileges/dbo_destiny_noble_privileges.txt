@@ -1,8 +1,8 @@
-﻿dbo_destiny_noble_privilege_turkish_pashas = {
+﻿dbo_destiny_noble_privilege_pashas = {
 	estate = nobles_estate
 	potential = {
 		has_unlocked_estate_privilege_trigger = {
-			type = dbo_destiny_noble_privilege_turkish_pashas
+			type = dbo_destiny_noble_privilege_pashas
 		}
 	}
 	can_revoke = {

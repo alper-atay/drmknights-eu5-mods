@@ -102,7 +102,7 @@ dbo_dhe_sultans_kanuni_sultan_suleiman.2 = {
 			add_trait = trait:dbo_sultan
 			add_trait = trait:lawgiver
 			add_trait = trait:strategist
-			dbo_add_scaling_character_abilities = yes
+			dbo_scaling_buff_character_abilities = yes
 		}
 		dbo_event_mild_bonus = yes
 	}
@@ -184,5 +184,107 @@ dbo_dhe_sultans_kanuni_sultan_suleiman.11 = {
 		}
 		set_variable = dbo_destiny_legal_code_kanunname_i_al_i_osman_policy_developed
 		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_history_kanuni_sultan_suleiman_killing_heir
+dbo_dhe_sultans_kanuni_sultan_suleiman.21 = {
+	type = country_event
+	title = dbo_dhe_sultans_kanuni_sultan_suleiman.21.title
+	desc = dbo_dhe_sultans_kanuni_sultan_suleiman.21.desc
+	historical_info = dbo_dhe_sultans_kanuni_sultan_suleiman.21.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_kanuni_sultan_suleiman_killing_heir.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1520.1.1
+		to = 9999.1.1
+		monthly_chance = 20
+	}
+	trigger = {
+		exists = character:dbo_kanuni_sultan_suleiman
+		character:dbo_kanuni_sultan_suleiman = {
+			is_ruler = yes
+		}
+		has_heir = yes
+		heir = {
+			age_in_years > 38
+		}
+	}
+	option = {
+		name = dbo_dhe_sultans_kanuni_sultan_suleiman.11.a
+		historical_option = yes
+		kill_character = {
+			target = heir
+			reason = execution
+			killer = character:dbo_kanuni_sultan_suleiman
+		}
+		character:dbo_kanuni_sultan_suleiman = {
+			dbo_scaling_nerf_character_abilities = yes
+			remove_traits_of_category = ruler
+			remove_traits_of_category = general
+			add_trait = trait:craven
+			add_trait = trait:cruel
+			add_trait = trait:dbo_cursed
+		}
+		custom_tooltip = {
+			text = dbo_history_kanuni_sultan_suleiman_every_pop_lose_satisfaction_tt
+			every_pop = {
+				add_pop_satisfaction = pop_satisfaction_extreme_penalty
+			}
+		}
+		dbo_event_severe_penalty = yes
+	}
+}
+
+# dbo_history_yavuz_sultan_selim_die
+dbo_dhe_sultans_kanuni_sultan_suleiman.31 = {
+	type = country_event
+	title = dbo_dhe_sultans_kanuni_sultan_suleiman.31.title
+	desc = dbo_dhe_sultans_kanuni_sultan_suleiman.31.desc
+	historical_info = dbo_dhe_sultans_kanuni_sultan_suleiman.31.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_history_kanuni_sultan_suleiman_die.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1520.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		has_heir = yes
+		exists = character:dbo_kanuni_sultan_suleiman
+		character:dbo_kanuni_sultan_suleiman = {
+			is_alive = yes
+			is_ruler = yes
+			any_child = {
+				is_alive = yes
+				is_adult = yes
+				is_female = no
+				count > 1
+			}
+			character_age > 72
+		}
+	}
+	immediate = {
+		kill_character = {
+			target = character:dbo_kanuni_sultan_suleiman
+			reason = sudden_illness
+		}
+	}
+	option = {
+		name = dbo_dhe_sultans_kanuni_sultan_suleiman.31.a
+		historical_option = yes
+		ruler = {
+			dbo_scaling_nerf_character_abilities = yes
+			add_trait = trait:dbo_cursed
+		}
+		custom_tooltip = {
+			text = dbo_history_kanuni_sultan_suleiman_every_pop_lose_satisfaction_tt
+			every_pop = {
+				add_pop_satisfaction = pop_satisfaction_extreme_penalty
+			}
+		}
+		dbo_event_severe_penalty = yes
 	}
 }

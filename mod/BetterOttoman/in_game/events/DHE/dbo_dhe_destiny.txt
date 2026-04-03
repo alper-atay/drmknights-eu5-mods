@@ -353,7 +353,7 @@ dbo_dhe_destiny.206 = {
 	}
 }
 
-# dbo_destiny_noble_privilege_turkish_pashas
+# dbo_destiny_noble_privilege_pashas
 dbo_dhe_destiny.301 = {
 	title = dbo_dhe_destiny.301.title
 	desc = dbo_dhe_destiny.301.desc
@@ -369,8 +369,8 @@ dbo_dhe_destiny.301 = {
 		has_ruler = yes
 		in_civil_war = no
 		has_reform = government_reform:dbo_destiny_ottoman_empire
-		ruler = {
-			NOT = {
+		NOT = {
+			ruler = {
 				has_trait = dbo_sultan
 			}
 		}
@@ -383,7 +383,7 @@ dbo_dhe_destiny.301 = {
 	option = {
 		name = dbo_dhe_destiny.301.b
 		set_variable = {
-			name = dbo_destiny_noble_privilege_turkish_pashas_rejected
+			name = dbo_destiny_noble_privilege_pashas_rejected
 			value = yes
 		}
 		add_estate_satisfaction = {
@@ -392,7 +392,7 @@ dbo_dhe_destiny.301 = {
 		}
 		add_stability = stability_ultimate_penalty
 		custom_tooltip = {
-			text = dbo_turkish_pashas_rising_event_tt
+			text = dbo_pashas_rising_tt
 			trigger_event_silently = {
 				id = dbo_dhe_destiny.302
 				months = 3
@@ -406,7 +406,7 @@ dbo_dhe_destiny.302 = {
 	desc = dbo_dhe_destiny.302.desc
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_turkish_pashas_claim.dds"
 	trigger = {
-		has_variable = dbo_destiny_noble_privilege_turkish_pashas_rejected
+		has_variable = dbo_destiny_noble_privilege_pashas_rejected
 	}
 	option = {
 		name = dbo_dhe_destiny.301.a
@@ -415,16 +415,16 @@ dbo_dhe_destiny.302 = {
 		hidden_effect = {
 			if = {
 				limit = {
-					has_variable = dbo_destiny_noble_privilege_turkish_pashas_rejected
+					has_variable = dbo_destiny_noble_privilege_pashas_rejected
 				}
-				remove_variable = dbo_destiny_noble_privilege_turkish_pashas_rejected
+				remove_variable = dbo_destiny_noble_privilege_pashas_rejected
 			}
 		}
 	}
 	option = {
 		name = dbo_dhe_destiny.302.b
 		set_variable = {
-			name = dbo_destiny_noble_privilege_turkish_pashas_rejected
+			name = dbo_destiny_noble_privilege_pashas_rejected
 			value = yes
 		}
 		add_estate_satisfaction = {
@@ -440,7 +440,7 @@ dbo_dhe_destiny.302 = {
 			}
 		}
 		custom_tooltip = {
-			text = dbo_destiny_every_turkic_group_nobles_estate_pops_lose_satisfaction_tt
+			text = dbo_destiny_every_nobles_or_soldier_pops_lose_satisfaction_tt
 			every_pop = {
 				limit = {
 					dbo_turkish_pashas_rebel_allegiance_trigger = yes
@@ -451,12 +451,12 @@ dbo_dhe_destiny.302 = {
 		if = {
 			limit = {
 				any_rebel = {
-					rebel_name_key = rebel_turkish_pashas
+					rebel_name_key = rebel_pashas
 				}
 			}
 			every_rebel = {
 				limit = {
-					rebel_name_key = rebel_turkish_pashas
+					rebel_name_key = rebel_pashas
 					rebel_progress > 0
 				}
 				add_rebel_progress = {
@@ -469,7 +469,7 @@ dbo_dhe_destiny.302 = {
 		# 
 		else = {
 			create_rebel = {
-				name = rebel_turkish_pashas
+				name = rebel_pashas
 				category = estate
 				estate = nobles_estate
 				culture = root.culture
@@ -479,9 +479,7 @@ dbo_dhe_destiny.302 = {
 				limit = {
 					dbo_turkish_pashas_rebel_allegiance_trigger = yes
 				}
-				hidden_effect = {
-					add_pop_satisfaction = pop_satisfaction_radical_penalty
-				}
+				add_pop_satisfaction = pop_satisfaction_radical_penalty
 				change_pop_allegiance = scope:target_rebel
 			}
 		}
