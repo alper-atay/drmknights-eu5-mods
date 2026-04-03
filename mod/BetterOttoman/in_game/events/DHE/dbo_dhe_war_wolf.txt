@@ -14,8 +14,7 @@ dbo_dhe_war_wolf.101 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		num_locations >= 50
-		num_of_non_rural >= 5
+		dbo_war_wolf_t1_check = yes
 	}
 	option = {
 		name = dbo_dhe_war_wolf_common_option
@@ -43,17 +42,12 @@ dbo_dhe_war_wolf.102 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		has_reform = government_reform:dbo_war_wolf_t1
-		num_locations >= 100
-		num_of_non_rural >= 10
+		dbo_war_wolf_t2_check = yes
 	}
 	option = {
 		name = dbo_dhe_war_wolf_common_option
 		historical_option = yes
 		remove_reform = government_reform:dbo_war_wolf_t1
-		lock_government_reform_effect = {
-			type = dbo_war_wolf_t1
-		}
 		unlock_government_reform_effect = {
 			type = dbo_war_wolf_t2
 		}
@@ -77,17 +71,12 @@ dbo_dhe_war_wolf.103 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		has_reform = government_reform:dbo_war_wolf_t2
-		num_locations >= 250
-		num_of_non_rural >= 25
+		dbo_war_wolf_t3_check = yes
 	}
 	option = {
 		name = dbo_dhe_war_wolf_common_option
 		historical_option = yes
 		remove_reform = government_reform:dbo_war_wolf_t2
-		lock_government_reform_effect = {
-			type = dbo_war_wolf_t2
-		}
 		unlock_government_reform_effect = {
 			type = dbo_war_wolf_t3
 		}
@@ -111,17 +100,12 @@ dbo_dhe_war_wolf.104 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		has_reform = government_reform:dbo_war_wolf_t3
-		num_locations >= 400
-		num_of_non_rural >= 50
+		dbo_war_wolf_t4_check = yes
 	}
 	option = {
 		name = dbo_dhe_war_wolf_common_option
 		historical_option = yes
 		remove_reform = government_reform:dbo_war_wolf_t3
-		lock_government_reform_effect = {
-			type = dbo_war_wolf_t3
-		}
 		unlock_government_reform_effect = {
 			type = dbo_war_wolf_t4
 		}
@@ -145,17 +129,12 @@ dbo_dhe_war_wolf.105 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		has_reform = government_reform:dbo_war_wolf_t4
-		num_locations >= 600
-		num_of_non_rural >= 100
+		dbo_war_wolf_t5_check = yes
 	}
 	option = {
 		name = dbo_dhe_war_wolf_common_option
 		historical_option = yes
 		remove_reform = government_reform:dbo_war_wolf_t4
-		lock_government_reform_effect = {
-			type = dbo_war_wolf_t4
-		}
 		unlock_government_reform_effect = {
 			type = dbo_war_wolf_t5
 		}
@@ -179,17 +158,12 @@ dbo_dhe_war_wolf.106 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		has_reform = government_reform:dbo_war_wolf_t5
-		num_locations >= 800
-		num_of_non_rural >= 150
+		dbo_war_wolf_t6_check = yes
 	}
 	option = {
 		name = dbo_dhe_war_wolf_common_option
 		historical_option = yes
 		remove_reform = government_reform:dbo_war_wolf_t5
-		lock_government_reform_effect = {
-			type = dbo_war_wolf_t5
-		}
 		unlock_government_reform_effect = {
 			type = dbo_war_wolf_t6
 		}
@@ -213,17 +187,12 @@ dbo_dhe_war_wolf.107 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		has_reform = government_reform:dbo_war_wolf_t6
-		num_locations >= 1000
-		num_of_non_rural >= 200
+		dbo_war_wolf_t7_check = yes
 	}
 	option = {
 		name = dbo_dhe_war_wolf_common_option
 		historical_option = yes
 		remove_reform = government_reform:dbo_war_wolf_t6
-		lock_government_reform_effect = {
-			type = dbo_war_wolf_t6
-		}
 		unlock_government_reform_effect = {
 			type = dbo_war_wolf_t7
 		}
@@ -247,17 +216,12 @@ dbo_dhe_war_wolf.108 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		has_reform = government_reform:dbo_war_wolf_t7
-		num_locations >= 1200
-		num_of_non_rural >= 300
+		dbo_war_wolf_t8_check = yes
 	}
 	option = {
 		name = dbo_dhe_war_wolf_common_option
 		historical_option = yes
 		remove_reform = government_reform:dbo_war_wolf_t7
-		lock_government_reform_effect = {
-			type = dbo_war_wolf_t7
-		}
 		unlock_government_reform_effect = {
 			type = dbo_war_wolf_t8
 		}
@@ -281,17 +245,12 @@ dbo_dhe_war_wolf.109 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		has_reform = government_reform:dbo_war_wolf_t8
-		num_locations >= 1600
-		num_of_non_rural >= 400
+		dbo_war_wolf_t9_check = yes
 	}
 	option = {
 		name = dbo_dhe_war_wolf_common_option
 		historical_option = yes
 		remove_reform = government_reform:dbo_war_wolf_t8
-		lock_government_reform_effect = {
-			type = dbo_war_wolf_t8
-		}
 		unlock_government_reform_effect = {
 			type = dbo_war_wolf_t9
 		}
@@ -315,17 +274,12 @@ dbo_dhe_war_wolf.110 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		has_reform = government_reform:dbo_war_wolf_t9
-		num_locations >= 2000
-		num_of_non_rural >= 500
+		dbo_war_wolf_t10_check = yes
 	}
 	option = {
 		name = dbo_dhe_war_wolf_common_option
 		historical_option = yes
 		remove_reform = government_reform:dbo_war_wolf_t9
-		lock_government_reform_effect = {
-			type = dbo_war_wolf_t9
-		}
 		unlock_government_reform_effect = {
 			type = dbo_war_wolf_t10
 		}

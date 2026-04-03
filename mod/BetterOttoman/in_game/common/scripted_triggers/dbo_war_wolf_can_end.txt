@@ -1,10 +1,8 @@
 ﻿dbo_war_wolf_t1_can_end = {
 	custom_tooltip = {
 		text = dbo_war_wolf_t1_can_end_tooltip
-		c:TUR = {
-			has_unlocked_government_reform_trigger = {
-				type = dbo_war_wolf_t1
-			}
+		has_unlocked_government_reform_trigger = {
+			type = dbo_war_wolf_t1
 		}
 	}
 }
@@ -12,10 +10,8 @@
 dbo_war_wolf_t2_can_end = {
 	custom_tooltip = {
 		text = dbo_war_wolf_t2_can_end_tooltip
-		c:TUR = {
-			has_unlocked_government_reform_trigger = {
-				type = dbo_war_wolf_t2
-			}
+		has_unlocked_government_reform_trigger = {
+			type = dbo_war_wolf_t2
 		}
 	}
 }
@@ -23,10 +19,8 @@ dbo_war_wolf_t2_can_end = {
 dbo_war_wolf_t3_can_end = {
 	custom_tooltip = {
 		text = dbo_war_wolf_t3_can_end_tooltip
-		c:TUR = {
-			has_unlocked_government_reform_trigger = {
-				type = dbo_war_wolf_t3
-			}
+		has_unlocked_government_reform_trigger = {
+			type = dbo_war_wolf_t3
 		}
 	}
 }
@@ -34,10 +28,8 @@ dbo_war_wolf_t3_can_end = {
 dbo_war_wolf_t4_can_end = {
 	custom_tooltip = {
 		text = dbo_war_wolf_t4_can_end_tooltip
-		c:TUR = {
-			has_unlocked_government_reform_trigger = {
-				type = dbo_war_wolf_t4
-			}
+		has_unlocked_government_reform_trigger = {
+			type = dbo_war_wolf_t4
 		}
 	}
 }
@@ -45,10 +37,8 @@ dbo_war_wolf_t4_can_end = {
 dbo_war_wolf_t5_can_end = {
 	custom_tooltip = {
 		text = dbo_war_wolf_t5_can_end_tooltip
-		c:TUR = {
-			has_unlocked_government_reform_trigger = {
-				type = dbo_war_wolf_t5
-			}
+		has_unlocked_government_reform_trigger = {
+			type = dbo_war_wolf_t5
 		}
 	}
 }
@@ -56,10 +46,8 @@ dbo_war_wolf_t5_can_end = {
 dbo_war_wolf_t6_can_end = {
 	custom_tooltip = {
 		text = dbo_war_wolf_t6_can_end_tooltip
-		c:TUR = {
-			has_unlocked_government_reform_trigger = {
-				type = dbo_war_wolf_t6
-			}
+		has_unlocked_government_reform_trigger = {
+			type = dbo_war_wolf_t6
 		}
 	}
 }
@@ -67,10 +55,8 @@ dbo_war_wolf_t6_can_end = {
 dbo_war_wolf_t7_can_end = {
 	custom_tooltip = {
 		text = dbo_war_wolf_t7_can_end_tooltip
-		c:TUR = {
-			has_unlocked_government_reform_trigger = {
-				type = dbo_war_wolf_t7
-			}
+		has_unlocked_government_reform_trigger = {
+			type = dbo_war_wolf_t7
 		}
 	}
 }
@@ -78,10 +64,8 @@ dbo_war_wolf_t7_can_end = {
 dbo_war_wolf_t8_can_end = {
 	custom_tooltip = {
 		text = dbo_war_wolf_t8_can_end_tooltip
-		c:TUR = {
-			has_unlocked_government_reform_trigger = {
-				type = dbo_war_wolf_t8
-			}
+		has_unlocked_government_reform_trigger = {
+			type = dbo_war_wolf_t8
 		}
 	}
 }
@@ -89,10 +73,8 @@ dbo_war_wolf_t8_can_end = {
 dbo_war_wolf_t9_can_end = {
 	custom_tooltip = {
 		text = dbo_war_wolf_t9_can_end_tooltip
-		c:TUR = {
-			has_unlocked_government_reform_trigger = {
-				type = dbo_war_wolf_t9
-			}
+		has_unlocked_government_reform_trigger = {
+			type = dbo_war_wolf_t9
 		}
 	}
 }
@@ -100,10 +82,8 @@ dbo_war_wolf_t9_can_end = {
 dbo_war_wolf_t10_can_end = {
 	custom_tooltip = {
 		text = dbo_war_wolf_t10_can_end_tooltip
-		c:TUR = {
-			has_unlocked_government_reform_trigger = {
-				type = dbo_war_wolf_t10
-			}
+		has_unlocked_government_reform_trigger = {
+			type = dbo_war_wolf_t10
 		}
 	}
 }
