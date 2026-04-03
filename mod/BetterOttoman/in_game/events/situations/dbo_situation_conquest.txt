@@ -8,7 +8,7 @@ dbo_situation_conquest.1 = {
 	option = {
 		name = dbo_situation_conquest.1.a
 		custom_tooltip = {
-			text = dbo_every_owned_location_add_dbo_ottoman_miracle_tt
+			text = dbo_situation_conquest_every_owned_location_add_ottoman_miracle_tt
 			every_owned_location = {
 				add_location_modifier = {
 					modifier = dbo_ottoman_miracle
@@ -32,7 +32,7 @@ dbo_situation_conquest.1 = {
 			}
 		}
 		custom_tooltip = {
-			text = dbo_every_anatolia_region_location_add_core_tt
+			text = dbo_situation_conquest_every_anatolia_region_location_add_core_tt
 			region:anatolia_region = {
 				every_ownable_location_in_region = {
 					add_core = root
