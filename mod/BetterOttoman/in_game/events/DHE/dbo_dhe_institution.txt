@@ -16,6 +16,10 @@ dbo_dhe_institution.1 = {
 		NOT = {
 			has_embraced_institution = institution:professional_armies
 		}
+		any_owned_location = {
+			institution_progress:professional_armies > 0
+			institution_progress:professional_armies < 99
+		}
 	}
 	option = {
 		name = dbo_dhe_institution.1.a
@@ -26,6 +30,10 @@ dbo_dhe_institution.1 = {
 			}
 		}
 		dbo_event_mild_bonus = yes
+		add_estate_satisfaction = {
+			type = estate_type:nobles_estate
+			value = estate_satisfaction_weak_bonus
+		}
 	}
 }
 
@@ -46,6 +54,10 @@ dbo_dhe_institution.2 = {
 		NOT = {
 			has_embraced_institution = institution:meritocracy
 		}
+		any_owned_location = {
+			institution_progress:meritocracy > 0
+			institution_progress:meritocracy < 99
+		}
 	}
 	option = {
 		name = dbo_dhe_institution.2.a
@@ -56,6 +68,18 @@ dbo_dhe_institution.2 = {
 			}
 		}
 		dbo_event_mild_bonus = yes
+		add_estate_satisfaction = {
+			type = estate_type:nobles_estate
+			value = estate_satisfaction_mild_penalty
+		}
+		add_estate_satisfaction = {
+			type = estate_type:burghers_estate
+			value = estate_satisfaction_weak_bonus
+		}
+		add_estate_satisfaction = {
+			type = estate_type:peasants_estate
+			value = estate_satisfaction_weak_bonus
+		}
 	}
 }
 
