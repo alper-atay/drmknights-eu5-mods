@@ -4,6 +4,7 @@
 	dbo_forming_gktur_government_reforms = yes
 	dbo_forming_gktur_buildings = yes
 	dbo_forming_gktur_location_add_core = yes
+	dbo_forming_gktur_harmonize_culture = yes
 }
 
 dbo_forming_gktur_religion = {
@@ -15,7 +16,7 @@ dbo_forming_gktur_religion = {
 	set_court_language = culture.dialect
 	set_liturgical_language = culture.dialect
 	custom_tooltip = {
-		text = dbo_every_turkic_and_mongolian_group_pop_change_religion_tt
+		text = dbo_forming_gktur_every_turkic_and_mongolian_group_pop_change_religion_tt
 		every_country = {
 			every_pop = {
 				limit = {
@@ -88,6 +89,36 @@ dbo_forming_gktur_government_reforms = {
 		lock_government_reform_effect = {
 			type = dbo_destiny_ottoman_empire
 		}
+		if = {
+			limit = {
+				has_reform = government_reform:anatolian_beylik
+			}
+			remove_reform = government_reform:anatolian_beylik
+		}
+		if = {
+			limit = {
+				has_reform = government_reform:dbo_destiny_cultural_capital_constantinople
+			}
+			remove_reform = government_reform:dbo_destiny_cultural_capital_constantinople
+		}
+		if = {
+			limit = {
+				has_reform = government_reform:dbo_destiny_trade_center_grand_bazaar
+			}
+			remove_reform = government_reform:dbo_destiny_trade_center_grand_bazaar
+		}
+		if = {
+			limit = {
+				has_reform = government_reform:dbo_destiny_legacy_of_seljuks
+			}
+			remove_reform = government_reform:dbo_destiny_legacy_of_seljuks
+		}
+		if = {
+			limit = {
+				has_reform = government_reform:dbo_destiny_ottoman_empire
+			}
+			remove_reform = government_reform:dbo_destiny_ottoman_empire
+		}
 		unlock_government_reform_effect = {
 			type = dbo_destiny_children_of_tengri
 		}
@@ -95,11 +126,6 @@ dbo_forming_gktur_government_reforms = {
 			type = dbo_destiny_wing_of_turk
 		}
 	}
-	remove_reform = government_reform:anatolian_beylik
-	remove_reform = government_reform:dbo_destiny_cultural_capital_constantinople
-	remove_reform = government_reform:dbo_destiny_trade_center_grand_bazaar
-	remove_reform = government_reform:dbo_destiny_legacy_of_seljuks
-	remove_reform = government_reform:dbo_destiny_ottoman_empire
 	add_reform = government_reform:dbo_destiny_children_of_tengri
 	add_reform = government_reform:dbo_destiny_wing_of_turk
 }
@@ -112,7 +138,7 @@ dbo_forming_gktur_buildings = {
 		type = dbo_ulu_otag
 	}
 	custom_tooltip = {
-		text = dbo_every_owned_location_construct_otag_tt
+		text = dbo_forming_gktur_every_owned_location_construct_otag_tt
 		every_owned_location = {
 			if = {
 				limit = {
@@ -131,7 +157,7 @@ dbo_forming_gktur_buildings = {
 
 dbo_forming_gktur_location_add_core = {
 	custom_tooltip = {
-		text = dbo_every_asia_locations_add_core_tt
+		text = dbo_forming_gktur_historical_asia_locations_add_core_tt
 		every_location_in_the_world = {
 			limit = {
 				is_ownable = yes
@@ -152,5 +178,36 @@ dbo_forming_gktur_location_add_core = {
 	}
 }
 
-dbo_forming_gktur_culture = {
+dbo_forming_gktur_harmonize_culture = {
+	culture_group:turkic_group = {
+		every_culture_in_group = {
+			limit = {
+				NOT = {
+					this = root.culture
+				}
+			}
+			save_temporary_scope_as = target_culture
+			root = {
+				culture = {
+					set_cultural_view = {
+						target = scope:target_culture
+						value = kindred
+					}
+					reverse_set_cultural_view = {
+						target = scope:target_culture
+						value = kindred
+					}
+				}
+				if = {
+					limit = {
+						culture_percentage_in_country = {
+							culture = scope:target_culture
+							value >= 0.01
+						}
+					}
+					add_accepted_culture = scope:target_culture
+				}
+			}
+		}
+	}
 }

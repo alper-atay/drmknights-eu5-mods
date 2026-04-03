@@ -18,5 +18,4 @@
  dbo_crown_noble_marry_desc: "[character|e], soylu bir hanımefendiyle evlenecek."
  dbo_crown_noble_marry_past: "[SCOPE.sCharacter('recipient').GetName] [SCOPE.sCharacter('recipient').GetHerselfHimself] evlendi!"
  dbo_crown_noble_marry_act_past: "[SCOPE.sCharacter('recipient').GetName], soylu bir hanımefendiyle evlendi!"
- dbo_crown_noble_marry_tt: "Bu karakter, soylu bir hanımefendiyle evlenecek." 
- dbo_roto_winner_tt: "[ShowSituationName('rise_of_the_ottomans')] [Concept('situation', 'Durumundan')|e], zaferimizle sona erdirdik!"
+ dbo_crown_noble_marry_tt: "Bu karakter, soylu bir hanımefendiyle evlenecek."
