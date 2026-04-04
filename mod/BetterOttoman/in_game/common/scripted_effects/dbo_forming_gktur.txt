@@ -81,9 +81,6 @@ dbo_forming_gktur_government_reforms = {
 			type = dbo_destiny_cultural_capital_constantinople
 		}
 		lock_government_reform_effect = {
-			type = dbo_destiny_trade_center_grand_bazaar
-		}
-		lock_government_reform_effect = {
 			type = dbo_destiny_legacy_of_seljuks
 		}
 		lock_government_reform_effect = {
@@ -100,12 +97,6 @@ dbo_forming_gktur_government_reforms = {
 				has_reform = government_reform:dbo_destiny_cultural_capital_constantinople
 			}
 			remove_reform = government_reform:dbo_destiny_cultural_capital_constantinople
-		}
-		if = {
-			limit = {
-				has_reform = government_reform:dbo_destiny_trade_center_grand_bazaar
-			}
-			remove_reform = government_reform:dbo_destiny_trade_center_grand_bazaar
 		}
 		if = {
 			limit = {

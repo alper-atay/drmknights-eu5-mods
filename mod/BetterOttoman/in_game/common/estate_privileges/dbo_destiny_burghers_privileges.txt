@@ -1,4 +1,4 @@
-dbo_destiny_burghers_privilege_trade_center_grand_bazaar = {
+﻿dbo_destiny_burghers_privilege_trade_center_grand_bazaar = {
 	estate = burghers_estate
 	potential = {
 		has_unlocked_estate_privilege_trigger = {

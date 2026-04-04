@@ -8,31 +8,6 @@
 	}
 }
 
-dbo_sultan = {
-	category = ruler
-	flavor = personality
-	allow = {
-		always = no
-	}
-	modifier = {
-		global_crown_estate_power = 0.3
-		force_allow_as_leader = yes
-		character_life_expectancy = 10
-		max_war_exhaustion = 5
-	}
-}
-
-dbo_cursed = {
-	category = ruler
-	flavor = personality
-	allow = {
-		always = no
-	}
-	modifier = {
-		character_life_expectancy = -10
-	}
-}
-
 dbo_genius_artist = {
 	category = artist
 	allow = {

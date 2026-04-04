@@ -114,11 +114,11 @@ dbo_destiny_nobles_privilege_pashas_check = {
 	trigger_else = {
 		has_ruler = yes
 		in_civil_war = no
-		has_reform = government_reform:dbo_destiny_ottoman_empire
 		country_has_estate = estate_type:nobles_estate
+		has_reform = government_reform:dbo_destiny_ottoman_empire
 		NOT = {
 			ruler = {
-				has_trait = dbo_sultan
+				has_trait = dbo_marshal_sovereign
 			}
 		}
 	}
@@ -132,6 +132,7 @@ dbo_destiny_clergy_privilege_mevlana_dergahi_check = {
 		has_estate_privilege = estate_privilege:dbo_destiny_clergy_privilege_mevlana_dergahi
 	}
 	trigger_else = {
+		country_has_estate = estate_type:clergy_estate
 		own_entire_province = province_definition:konya_province
 		location:konya = {
 			is_core_of = root
@@ -148,8 +149,8 @@ dbo_destiny_burghers_privilege_trade_center_grand_bazaar_check = {
 		has_estate_privilege = estate_privilege:dbo_destiny_burghers_privilege_trade_center_grand_bazaar
 	}
 	trigger_else = {
-		own_entire_province = province_definition:constantinople_province
 		country_has_estate = estate_type:burghers_estate
 		has_markets = yes
+		own_entire_province = province_definition:constantinople_province
 	}
 }

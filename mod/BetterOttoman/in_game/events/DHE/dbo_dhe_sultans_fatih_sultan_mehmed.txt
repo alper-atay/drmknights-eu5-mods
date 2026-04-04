@@ -125,7 +125,7 @@ dbo_dhe_sultans_fatih_sultan_mehmed.2 = {
 			hidden_effect = {
 				remove_traits_of_category = ruler
 			}
-			add_trait = trait:dbo_sultan
+			add_trait = trait:dbo_marshal_sovereign
 			add_trait = trait:free_thinker
 			add_trait = trait:military_theorist
 			dbo_scaling_buff_character_abilities = yes
@@ -151,7 +151,7 @@ dbo_dhe_sultans_fatih_sultan_mehmed.3 = {
 	trigger = {
 		exists = character:dbo_fatih_sultan_mehmed
 		character:dbo_fatih_sultan_mehmed = {
-			has_trait = dbo_sultan
+			has_trait = dbo_marshal_sovereign
 			is_adult = yes
 		}
 		OR = {

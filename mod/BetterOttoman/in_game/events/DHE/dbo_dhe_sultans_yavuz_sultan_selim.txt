@@ -141,7 +141,7 @@ dbo_dhe_sultans_yavuz_sultan_selim.2 = {
 				remove_traits_of_category = ruler
 				remove_traits_of_category = general
 			}
-			add_trait = trait:dbo_sultan
+			add_trait = trait:dbo_marshal_sovereign
 			add_trait = trait:conqueror
 			add_trait = trait:military_theorist
 			dbo_scaling_buff_character_abilities = yes
@@ -167,7 +167,7 @@ dbo_dhe_sultans_yavuz_sultan_selim.3 = {
 	trigger = {
 		exists = character:dbo_yavuz_sultan_selim
 		character:dbo_yavuz_sultan_selim = {
-			has_trait = dbo_sultan
+			has_trait = dbo_marshal_sovereign
 			is_adult = yes
 		}
 		OR = {
