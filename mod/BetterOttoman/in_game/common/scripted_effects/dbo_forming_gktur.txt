@@ -1,10 +1,24 @@
 ﻿dbo_forming_gktur = {
-	dbo_forming_gktur_religion = yes
+	custom_tooltip = {
+		text = dbo_forming_gktur_religion_government_tt
+		dbo_forming_gktur_religion = yes
+	}
+	custom_tooltip = {
+		text = dbo_forming_gktur_religion_every_turkic_group_change_to_tengri_tt
+		dbo_forming_gktur_religion_every_turkic_group_change_to_tengri = yes
+	}
 	dbo_forming_gktur_laws_and_policies = yes
 	dbo_forming_gktur_government_reforms = yes
 	dbo_forming_gktur_buildings = yes
 	dbo_forming_gktur_location_add_core = yes
-	dbo_forming_gktur_harmonize_culture = yes
+	custom_tooltip = {
+		text = dbo_forming_gktur_harmonize_culture_tt
+		dbo_forming_gktur_harmonize_culture = yes
+	}
+	custom_tooltip = {
+		text = dbo_forming_gktur_every_owned_location_destroy_religious_category_tt
+		dbo_forming_gktur_buildings_destroy_religious_category = yes
+	}
 }
 
 dbo_forming_gktur_religion = {
@@ -15,25 +29,22 @@ dbo_forming_gktur_religion = {
 	}
 	set_court_language = culture.dialect
 	set_liturgical_language = culture.dialect
-	custom_tooltip = {
-		text = dbo_forming_gktur_every_turkic_and_mongolian_group_pop_change_religion_tt
-		every_country = {
-			every_pop = {
-				limit = {
-					NOT = {
-						religion = religion:tengri
-					}
-					culture = {
-						OR = {
-							has_culture_group = culture_group:turkic_group
-							has_culture_group = culture_group:mongolian_group
-						}
-					}
-				}
-				split_pop = {
-					fraction = 0.5
+}
+
+dbo_forming_gktur_religion_every_turkic_group_change_to_tengri = {
+	every_country = {
+		every_pop = {
+			limit = {
+				NOT = {
 					religion = religion:tengri
 				}
+				culture = {
+					has_culture_group = culture_group:turkic_group
+				}
+			}
+			split_pop = {
+				fraction = 0.5
+				religion = religion:tengri
 			}
 		}
 	}
@@ -146,6 +157,25 @@ dbo_forming_gktur_buildings = {
 	}
 }
 
+dbo_forming_gktur_buildings_destroy_religious_category = {
+	every_owned_location = {
+		every_buildings_in_location = {
+			limit = {
+				NOT = {
+					building_type = building_type:temple
+				}
+				building_category = religious_category
+				building_type = {
+					is_special_building = no
+				}
+			}
+			location = {
+				destroy_building = prev
+			}
+		}
+	}
+}
+
 dbo_forming_gktur_location_add_core = {
 	custom_tooltip = {
 		text = dbo_forming_gktur_historical_asia_locations_add_core_tt
@@ -175,6 +205,7 @@ dbo_forming_gktur_harmonize_culture = {
 			NOT = {
 				this = root.culture
 			}
+			has_culture_group = culture_group:turkic_group
 		}
 		save_temporary_scope_as = target_culture
 		root = {
@@ -199,4 +230,7 @@ dbo_forming_gktur_harmonize_culture = {
 			}
 		}
 	}
+}
+
+dbo_forming_gktur_exclude_culture = {
 }
