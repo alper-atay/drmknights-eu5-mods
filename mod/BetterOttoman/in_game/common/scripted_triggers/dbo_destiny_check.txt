@@ -42,20 +42,6 @@ dbo_destiny_cultural_capital_constantinople_check = {
 	}
 }
 
-dbo_destiny_trade_center_grand_bazaar_check = {
-	trigger_if = {
-		limit = {
-			has_reform = government_reform:dbo_destiny_trade_center_grand_bazaar
-		}
-		has_reform = government_reform:dbo_destiny_trade_center_grand_bazaar
-	}
-	trigger_else = {
-		own_entire_province = province_definition:constantinople_province
-		country_has_estate = estate_type:burghers_estate
-		has_markets = yes
-	}
-}
-
 dbo_destiny_legacy_of_seljuks_check = {
 	trigger_if = {
 		limit = {
@@ -118,12 +104,12 @@ dbo_destiny_mentor_lala_check = {
 	}
 }
 
-dbo_destiny_noble_privilege_pashas_check = {
+dbo_destiny_nobles_privilege_pashas_check = {
 	trigger_if = {
 		limit = {
-			has_estate_privilege = estate_privilege:dbo_destiny_noble_privilege_pashas
+			has_estate_privilege = estate_privilege:dbo_destiny_nobles_privilege_pashas
 		}
-		has_estate_privilege = estate_privilege:dbo_destiny_noble_privilege_pashas
+		has_estate_privilege = estate_privilege:dbo_destiny_nobles_privilege_pashas
 	}
 	trigger_else = {
 		has_ruler = yes
@@ -150,5 +136,20 @@ dbo_destiny_clergy_privilege_mevlana_dergahi_check = {
 		location:konya = {
 			is_core_of = root
 		}
+	}
+}
+
+# dbo_destiny_burghers_privilege_trade_center_grand_bazaar
+dbo_destiny_burghers_privilege_trade_center_grand_bazaar_check = {
+	trigger_if = {
+		limit = {
+			has_estate_privilege = estate_privilege:dbo_destiny_burghers_privilege_trade_center_grand_bazaar
+		}
+		has_estate_privilege = estate_privilege:dbo_destiny_burghers_privilege_trade_center_grand_bazaar
+	}
+	trigger_else = {
+		own_entire_province = province_definition:constantinople_province
+		country_has_estate = estate_type:burghers_estate
+		has_markets = yes
 	}
 }

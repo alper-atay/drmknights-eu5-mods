@@ -2,10 +2,10 @@
 dbo_destiny_noble_turkish_pashas_grant_estate_privilege_effect = {
 	hidden_effect = {
 		unlock_estate_privilege_effect = {
-			type = dbo_destiny_noble_privilege_pashas
+			type = dbo_destiny_nobles_privilege_pashas
 		}
 	}
-	grant_estate_privilege = estate_privilege:dbo_destiny_noble_privilege_pashas
+	grant_estate_privilege = estate_privilege:dbo_destiny_nobles_privilege_pashas
 	if = {
 		limit = {
 			NOT = {

@@ -166,34 +166,6 @@ dbo_dhe_destiny.201 = {
 	}
 }
 
-# dbo_destiny_trade_center_grand_bazaar
-dbo_dhe_destiny.202 = {
-	type = country_event
-	title = dbo_dhe_destiny.202.title
-	desc = dbo_dhe_destiny.202.desc
-	historical_info = dbo_dhe_destiny.202.historical_info
-	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_trade_center_grand_bazaar.dds"
-	fire_only_once = yes
-	dynamic_historical_event = {
-		tag = TUR
-		from = 1337.1.1
-		to = 9999.1.1
-		monthly_chance = 100
-	}
-	trigger = {
-		dbo_destiny_trade_center_grand_bazaar_check = yes
-	}
-	option = {
-		name = dbo_dhe_destiny.202.a
-		historical_option = yes
-		unlock_government_reform_effect = {
-			type = dbo_destiny_trade_center_grand_bazaar
-		}
-		add_reform = government_reform:dbo_destiny_trade_center_grand_bazaar
-		dbo_event_mild_bonus = yes
-	}
-}
-
 # dbo_destiny_legacy_of_seljuks
 dbo_dhe_destiny.203 = {
 	type = country_event
@@ -323,7 +295,7 @@ dbo_dhe_destiny.206 = {
 	}
 }
 
-# dbo_destiny_noble_privilege_pashas
+# dbo_destiny_nobles_privilege_pashas
 dbo_dhe_destiny.301 = {
 	title = dbo_dhe_destiny.301.title
 	desc = dbo_dhe_destiny.301.desc
@@ -336,7 +308,7 @@ dbo_dhe_destiny.301 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		dbo_destiny_noble_privilege_pashas_check = yes
+		dbo_destiny_nobles_privilege_pashas_check = yes
 	}
 	option = {
 		name = dbo_dhe_destiny.301.a
@@ -346,7 +318,7 @@ dbo_dhe_destiny.301 = {
 	option = {
 		name = dbo_dhe_destiny.301.b
 		set_variable = {
-			name = dbo_destiny_noble_privilege_pashas_rejected
+			name = dbo_destiny_nobles_privilege_pashas_rejected
 			value = yes
 		}
 		add_estate_satisfaction = {
@@ -369,7 +341,7 @@ dbo_dhe_destiny.302 = {
 	desc = dbo_dhe_destiny.302.desc
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_turkish_pashas_claim.dds"
 	trigger = {
-		has_variable = dbo_destiny_noble_privilege_pashas_rejected
+		has_variable = dbo_destiny_nobles_privilege_pashas_rejected
 	}
 	option = {
 		name = dbo_dhe_destiny.301.a
@@ -378,16 +350,16 @@ dbo_dhe_destiny.302 = {
 		hidden_effect = {
 			if = {
 				limit = {
-					has_variable = dbo_destiny_noble_privilege_pashas_rejected
+					has_variable = dbo_destiny_nobles_privilege_pashas_rejected
 				}
-				remove_variable = dbo_destiny_noble_privilege_pashas_rejected
+				remove_variable = dbo_destiny_nobles_privilege_pashas_rejected
 			}
 		}
 	}
 	option = {
 		name = dbo_dhe_destiny.302.b
 		set_variable = {
-			name = dbo_destiny_noble_privilege_pashas_rejected
+			name = dbo_destiny_nobles_privilege_pashas_rejected
 			value = yes
 		}
 		add_estate_satisfaction = {
@@ -490,6 +462,34 @@ dbo_dhe_destiny.401 = {
 				cost_multiplier_reason = "game_concept_event"
 			}
 		}
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_destiny_burghers_privilege_trade_center_grand_bazaar
+dbo_dhe_destiny.501 = {
+	type = country_event
+	title = dbo_dhe_destiny.501.title
+	desc = dbo_dhe_destiny.501.desc
+	historical_info = dbo_dhe_destiny.501.historical_info
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_trade_center_grand_bazaar.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_destiny_burghers_privilege_trade_center_grand_bazaar_check = yes
+	}
+	option = {
+		name = dbo_dhe_destiny.501.a
+		historical_option = yes
+		unlock_estate_privilege_effect = {
+			type = dbo_destiny_burghers_privilege_trade_center_grand_bazaar
+		}
+		grant_estate_privilege = estate_privilege:dbo_destiny_burghers_privilege_trade_center_grand_bazaar
 		dbo_event_mild_bonus = yes
 	}
 }

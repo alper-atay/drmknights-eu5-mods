@@ -37,7 +37,10 @@
 		}
 		country_modifier = {
 			potential_trigger = {
-				has_any_active_disaster = no
+				custom_tooltip = {
+					text = NOT_FIRST_HAS_ANY_ACTIVE_DISASTER_TRIGGER
+					has_any_active_disaster = no
+				}
 			}
 			military_tactics = 0.5
 			discipline = 0.1
@@ -79,7 +82,10 @@ dbo_military_army_infantry_law = {
 		}
 		country_modifier = {
 			potential_trigger = {
-				has_any_active_disaster = no
+				custom_tooltip = {
+					text = NOT_FIRST_HAS_ANY_ACTIVE_DISASTER_TRIGGER
+					has_any_active_disaster = no
+				}
 			}
 			army_infantry_power = 0.1
 			army_infantry_build_cost_modifier = -0.1
@@ -126,7 +132,10 @@ dbo_military_army_cavalry_law = {
 		}
 		country_modifier = {
 			potential_trigger = {
-				has_any_active_disaster = no
+				custom_tooltip = {
+					text = NOT_FIRST_HAS_ANY_ACTIVE_DISASTER_TRIGGER
+					has_any_active_disaster = no
+				}
 			}
 			army_cavalry_power = 0.05
 			army_cavalry_build_cost_modifier = -0.05
@@ -168,7 +177,10 @@ dbo_military_army_artillery_law = {
 		}
 		country_modifier = {
 			potential_trigger = {
-				has_any_active_disaster = no
+				custom_tooltip = {
+					text = NOT_FIRST_HAS_ANY_ACTIVE_DISASTER_TRIGGER
+					has_any_active_disaster = no
+				}
 			}
 			army_artillery_power = 0.1
 			army_artillery_build_cost_modifier = -0.1
@@ -197,7 +209,10 @@ dbo_military_army_heavy_artillery_law = {
 		}
 		country_modifier = {
 			potential_trigger = {
-				has_any_active_disaster = no
+				custom_tooltip = {
+					text = NOT_FIRST_HAS_ANY_ACTIVE_DISASTER_TRIGGER
+					has_any_active_disaster = no
+				}
 			}
 			siege_ability = 0.2
 		}
@@ -225,7 +240,10 @@ dbo_military_army_auxiliary_law = {
 		}
 		country_modifier = {
 			potential_trigger = {
-				has_any_active_disaster = no
+				custom_tooltip = {
+					text = NOT_FIRST_HAS_ANY_ACTIVE_DISASTER_TRIGGER
+					has_any_active_disaster = no
+				}
 			}
 			army_auxiliary_power = 0.1
 			army_auxiliary_build_cost_modifier = -0.1
@@ -259,7 +277,10 @@ dbo_military_army_gendarme_law = {
 		}
 		country_modifier = {
 			potential_trigger = {
-				has_any_active_disaster = no
+				custom_tooltip = {
+					text = NOT_FIRST_HAS_ANY_ACTIVE_DISASTER_TRIGGER
+					has_any_active_disaster = no
+				}
 			}
 			counter_espionage = 0.1
 			spy_network_construction = 0.1

@@ -2,6 +2,8 @@
 	monthly_spawn_chance = monthly_spawn_chance_unique
 	can_start = {
 		government_type = government_type:monarchy
+		tag = TUR
+		has_regent = no
 		trigger_if = {
 			limit = {
 				has_ruler = yes

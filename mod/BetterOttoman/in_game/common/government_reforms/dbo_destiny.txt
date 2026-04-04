@@ -21,26 +21,6 @@
 	}
 }
 
-dbo_destiny_trade_center_grand_bazaar = {
-	unique = yes
-	potential = {
-		has_unlocked_government_reform_trigger = {
-			type = dbo_destiny_trade_center_grand_bazaar
-		}
-	}
-	locked = {
-		is_locked_mechanic = {
-			mechanic = government_reform
-			type = dbo_destiny_trade_center_grand_bazaar
-		}
-	}
-	country_modifier = {
-		global_trade_center_power = 0.1
-		global_trade_protection_factor = 0.1
-		government_reform_slots = 1
-	}
-}
-
 dbo_destiny_mentor_lala = {
 	unique = yes
 	potential = {
