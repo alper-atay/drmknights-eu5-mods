@@ -7,6 +7,9 @@
 			}
 		}
 		country_modifier = {
+			potential_trigger = {
+				has_any_active_disaster = no
+			}
 			global_max_control = control_weak_bonus
 			tax_income_efficiency = medium_tax_income_efficiency_bonus
 			global_estate_max_tax = 0.05
@@ -18,6 +21,7 @@
 					text = dbo_destiny_legal_code_kanunname_i_al_i_osman_policy_developed_tt
 					has_variable = dbo_destiny_legal_code_kanunname_i_al_i_osman_policy_developed
 				}
+				has_any_active_disaster = no
 			}
 			global_max_control = control_weak_bonus
 			tax_income_efficiency = tiny_tax_income_efficiency_bonus
