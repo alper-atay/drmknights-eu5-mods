@@ -20,6 +20,8 @@
 				dbo_situation_can_end = yes
 			}
 		}
+		trigger_else = {
+		}
 	}
 	visible = {
 		OR = {

@@ -1,4 +1,4 @@
-dbo_war_wolf_t1_check = {
+﻿dbo_war_wolf_t1_check = {
 	trigger_if = {
 		limit = {
 			has_unlocked_government_reform_trigger = {

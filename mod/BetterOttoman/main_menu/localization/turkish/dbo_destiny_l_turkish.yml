@@ -48,4 +48,3 @@
  dbo_destiny_noble_privilege_pashas: "Paşalar"
  dbo_destiny_noble_privilege_pashas_desc: "Paşalar, Devlet-i Aliyye'nin idari ve askeri yapısında önemli bir rol oynayan yüksek rütbeli devlet görevlileridir. Paşalar, genellikle vali, beylerbeyi veya vezir gibi önemli pozisyonlarda görev yaparlar ve devletin farklı bölgelerinde yönetim ve askeri liderlik sağlarlar. Devlet-i Aliyye'nin geniş topraklarını etkili bir şekilde yönetmesine yardımcı olmuş ve uzun ömürlü olmasına katkıda bulunmuşlardır.\n\n[ShowBuildingTypeName('dbo_beylerbeyi')|e] [Concept('building', 'Yapısını')] inşa edebiliriz."
  dbo_destiny_noble_privilege_pashas_can_end_tt: "[ShowEstatePrivilegeName('dbo_destiny_noble_privilege_pashas')] [Concept('estate_privilege', 'Zümre Ayrıcalığı')|e];\n[ShowTriggerConditionsForScope('dbo_destiny_noble_privilege_pashas_check', SituationView.GetPlayer.MakeScope.Self)]"
- dbo_destiny_state_in_corruption_tt: "Devlet yolsuzluk ve çürüme içinde!"

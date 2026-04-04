@@ -159,6 +159,7 @@
  dbo_dhe_sultans_kanuni_sultan_suleiman.21.desc: "[GetCharacter('dbo_kanuni_sultan_suleiman').GetName], en büyük oğlu ve veliahtı [ROOT.GetCountry.GetGovernment.GetHeir.GetName], saray entrikaları sonucu öldürülmesiyle büyük bir acı yaşadı. Bu olay, hem aile içinde derin yaralar açtı hem de devlet yönetiminde ciddi sarsıntılara neden oldu."
  dbo_dhe_sultans_kanuni_sultan_suleiman.21.historical_info: "1553 yılında, Kanuni Sultan Süleyman'ın en büyük oğlu ve veliahtı Şehzade Mustafa, saray entrikaları sonucu öldürüldü. Bu trajik olay, hem aile içinde derin yaralar açtı hem de devlet yönetiminde ciddi sarsıntılara neden oldu. Mustafa'nın ölümüyle birlikte, Kanuni'nin diğer oğulları arasında taht mücadelesi başladı ve bu durum Osmanlı'nın geleceği üzerinde uzun süreli etkiler bıraktı."
  dbo_dhe_sultans_kanuni_sultan_suleiman.21.a: "[ROOT.GetCountry.GetGovernment.GetHeir.GetName] Ölmeli!"
+ dbo_history_kanuni_sultan_suleiman_every_pop_lose_satisfaction_tt: "Tüm [pops|e] [ShowNamedValue('pop_satisfaction_extreme_penalty')|-=2%] [pop_satisfaction|e] kaybeder."
 # dbo_history_yavuz_sultan_selim_die
  dbo_dhe_sultans_kanuni_sultan_suleiman.31.title: "[GetCharacter('dbo_kanuni_sultan_suleiman').GetName]\n$dbo_history_common_die$"
  dbo_dhe_sultans_kanuni_sultan_suleiman.31.desc: "1566 yılında, uzun ve görkemli bir saltanatın ardından, 'Muhteşem' [GetCharacter('dbo_kanuni_sultan_suleiman').GetName] hayatını kaybetti. Ölümü, Osmanlı İmparatorluğu'nda büyük bir yas havası oluşturdu."
