@@ -1,0 +1,10 @@
+﻿dbo_government_type_state = {
+	heir_selection = dbo_state_heir_selection
+	government_power = legitimacy
+	default_character_estate = nobles_estate
+	revolutionary_country_antagonism = 30
+	modifier = {
+		global_monthly_control = 0.001
+		global_monthly_development = 0.001
+	}
+}

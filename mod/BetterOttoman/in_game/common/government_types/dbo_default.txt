@@ -1,3 +1,0 @@
-﻿INJECT:monarchy = {
-    heir_selection = dbo_destiny_talented_youngest_heir_selection
-}

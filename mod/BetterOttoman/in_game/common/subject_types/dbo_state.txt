@@ -1,0 +1,170 @@
+﻿dbo_subject_type_state = {
+	subject_pays = subject_pays_colonial
+	color = dbo_subject_pays_state
+	use_overlord_map_color = yes
+	use_overlord_map_name = no
+	level = 3
+	join_offensive_wars_always = {
+		always = yes
+	}
+	join_defensive_wars_always = {
+		always = yes
+	}
+	overlord_protects_external = yes
+	government = republic
+	fleet_basing_rights = yes
+	can_overlord_recruit_regiments = yes
+	can_overlord_build_ships = yes
+	can_overlord_build_roads = yes
+	can_overlord_build_buildings = yes
+	can_overlord_build_rgos = yes
+	has_overlords_ruler = no
+	annexation_speed = 3
+	annexation_min_years_before = 5
+	annexation_min_opinion = 100
+	annexation_stall_opinion = 50
+	subject_can_cancel = no
+	overlord_can_cancel = no
+	overlord_inherit_if_no_heir = no
+	allow_declaring_wars = {
+		always = no
+	}
+	overlord_share_exploration = yes
+	has_limited_diplomacy = yes
+	food_access = yes
+	can_change_rank = no
+	can_change_heir_selection = no
+	great_power_score_transfer = 0.75
+	strength_vs_overlord = -0.8
+	overlord_modifier = {
+		global_manpower_modifier = 0.05
+		global_monthly_control = 0.001
+		monthly_legitimacy = 0.01
+		global_crown_estate_power = 0.01
+		monthly_prestige = 0.01
+	}
+	subject_modifier = {
+		monthly_prestige = 0.1
+		country_cabinet_efficiency = 0.25
+		global_manpower_modifier = 0.1
+		colonial_migration_size_modifier = -1
+		disallow_migration_beyond_borders = yes
+	}
+	diplomatic_capacity_cost_scale = 0.01
+	institution_spread_to_overlord = 1
+	institution_spread_to_subject = 1
+	creation_visible = {
+		AND = {
+			OR = {
+				has_or_had_tag = TUR
+				has_reform = government_reform:anatolian_beylik
+			}
+			OR = {
+				country_rank = country_rank:rank_empire
+				country_rank = country_rank:rank_kingdom
+			}
+		}
+	}
+	subject_creation_enabled = {
+		AND = {
+			OR = {
+				has_or_had_tag = TUR
+				has_reform = government_reform:anatolian_beylik
+			}
+			OR = {
+				country_rank = country_rank:rank_empire
+				country_rank = country_rank:rank_kingdom
+			}
+		}
+	}
+	release_country_enabled = {
+		AND = {
+			OR = {
+				has_or_had_tag = TUR
+				has_reform = government_reform:anatolian_beylik
+			}
+			OR = {
+				country_rank = country_rank:rank_empire
+				country_rank = country_rank:rank_kingdom
+			}
+		}
+	}
+	visible_through_treaty = {
+		always = no
+	}
+	visible_through_diplomacy = {
+		always = no
+	}
+	diplo_chance_accept_subject = {
+		base = -1000
+	}
+	diplo_chance_accept_overlord = {
+		base = -1000
+	}
+	on_enable = {
+		if = {
+			limit = {
+				exists = capital
+				capital = {
+					exists = dominant_culture
+				}
+				# Don't switch if it's already the same 
+				NOT = {
+					culture = culture:turkish
+				}
+			}
+			change_culture = capital.dominant_culture
+		}
+		add_country_modifier = {
+			modifier = eyalet_state_integration
+		}
+		if = {
+			limit = {
+				exists = capital
+				capital = {
+					exists = dominant_religion
+				}
+			}
+			change_religion = capital.dominant_religion
+		}
+	}
+	on_disable = {
+	}
+	can_rival = {
+		or = {
+			scope:recipient ?= {
+				is_subject = no
+			}
+			not = {
+				scope:recipient ?= {
+					is_subject_type = dbo_subject_type_state
+				}
+				scope:actor = {
+					overlord = scope:recipient.overlord
+				}
+			}
+		}
+	}
+	diplo_chance_accept_subject = {
+		# Should never appear in normal gameplay but set to -9999 in case
+		base = -9999
+	}
+	diplo_chance_accept_overlord = {
+		# Should never appear in normal gameplay but set to -9999 in case
+		base = -9999
+	}
+	ai_wants_to_be_overlord = {
+		scope:subject = {
+			add = {
+				desc = "COALITION_GRADE_ANTAGONISM_TOWARDS_THEM_SUBJECT"
+				value = {
+					every_country_with_coalition_grade_antagonism_against_us = {
+						add = {
+							value = -10
+						}
+					}
+				}
+			}
+		}
+	}
+}

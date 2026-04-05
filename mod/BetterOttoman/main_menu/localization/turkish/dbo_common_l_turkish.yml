@@ -19,3 +19,6 @@
  dbo_crown_noble_marry_past: "[SCOPE.sCharacter('recipient').GetName] [SCOPE.sCharacter('recipient').GetHerselfHimself] evlendi!"
  dbo_crown_noble_marry_act_past: "[SCOPE.sCharacter('recipient').GetName], soylu bir hanımefendiyle evlendi!"
  dbo_crown_noble_marry_tt: "Bu karakter, soylu bir hanımefendiyle evlenecek."
+ dbo_state: "Eyalet"
+ dbo_subject_type_state: "Eyalet"
+ dbo_subject_pays_state: "Eyalet Vergisi"

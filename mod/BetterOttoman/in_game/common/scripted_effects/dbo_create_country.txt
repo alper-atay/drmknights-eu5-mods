@@ -1,0 +1,31 @@
+﻿create_country_eqy = {
+	location:cairo = {
+		create_country_from_location = {
+			change_government_type = government_type:dbo_government_type_state
+			make_subject_of = {
+				target = root
+				type = subject_type:dbo_government_type_state
+			}
+			change_country_name = EGY
+			change_country_adjective = EGY_ADJ
+			change_country_color = map_egypt
+			change_country_flag = map_egypt
+			save_temporary_scope_as = target_country
+			every_location_in_the_world = {
+				limit = {
+					OR = {
+						area = area:lower_egypt_area
+						area = area:upper_egypt_area
+						area = area:sinai_area
+					}
+				}
+				change_location_owner = scope:target_country
+				add_core = scope:target_country
+				change_integration_level = core
+			}
+		}
+		scope:target_country = {
+			form_country = formable_country:EGY_f
+		}
+	}
+}
