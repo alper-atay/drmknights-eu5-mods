@@ -51,9 +51,6 @@ dbo_forming_gktur_religion_every_turkic_group_change_to_tengri = {
 }
 
 dbo_forming_gktur_laws_and_policies = {
-	add_policy = policy:polygyny
-	add_policy = policy:heir_same_religion
-	add_policy = policy:balanced_court_policy
 	hidden_effect = {
 		lock_policy_effect = {
 			type = dbo_military_army_fundamental_alp_and_alperen_policy
@@ -63,6 +60,9 @@ dbo_forming_gktur_laws_and_policies = {
 		}
 		lock_policy_effect = {
 			type = dbo_destiny_legal_code_kanunname_i_al_i_osman_policy
+		}
+		unlock_policy_effect = {
+			type = dbo_destiny_royal_court_customs_military_court_policy
 		}
 		unlock_policy_effect = {
 			type = dbo_military_army_fundamental_metehan_policy
@@ -77,6 +77,9 @@ dbo_forming_gktur_laws_and_policies = {
 			type = dbo_destiny_believe_in_tengri_policy
 		}
 	}
+	add_policy = policy:polygyny
+	add_policy = policy:heir_same_religion
+	add_policy = policy:dbo_destiny_royal_court_customs_military_court_policy
 	add_policy = policy:dbo_military_army_fundamental_metehan_policy
 	add_policy = policy:dbo_military_army_cavalry_metehans_policy
 	add_policy = policy:dbo_military_army_gendarme_yargan_policy

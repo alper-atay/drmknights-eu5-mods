@@ -128,15 +128,11 @@ dbo_destiny_children_of_tengri = {
 	}
 	country_modifier = {
 		government_reform_slots = 1
+		cultures_capacity_modifier = -0.75
 		auto_slave_raid_different_religion = yes
-		government_size = 2
 		tolerance_own = 5
 		tolerance_heretic = -5
 		tolerance_heathen = -5
-		cultures_capacity_modifier = -0.9
-		monthly_legitimacy = 0.1
-		monthly_prestige = 0.1
-		stability_investment = 0.1
 	}
 }
 
