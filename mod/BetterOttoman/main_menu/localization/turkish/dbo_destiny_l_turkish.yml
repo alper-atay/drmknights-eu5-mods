@@ -50,4 +50,4 @@
  dbo_destiny_burghers_privilege_trade_center_grand_bazaar_can_end_tt: "[ShowEstatePrivilegeName('dbo_destiny_burghers_privilege_trade_center_grand_bazaar')] [Concept('estate_privilege', 'Zümre Ayrıcalığı')|e];\n[ShowTriggerConditionsForScope('dbo_destiny_burghers_privilege_trade_center_grand_bazaar_check', SituationView.GetPlayer.MakeScope.Self)]"
 # dbo_destiny_royal_court_customs_military_court_policy
  dbo_destiny_royal_court_customs_military_court_policy: "$military_court_policy$"
- dbo_destiny_royal_court_customs_military_court_policy_desc: "military_court_policy_desc"
+ dbo_destiny_royal_court_customs_military_court_policy_desc: "$military_court_policy_desc$"
