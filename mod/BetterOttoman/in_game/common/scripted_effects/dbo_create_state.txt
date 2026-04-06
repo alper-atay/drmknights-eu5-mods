@@ -1,0 +1,29 @@
+﻿create_state_eqy = {
+	location:cairo = {
+		create_country_from_location = {
+			form_country = formable_country:EGY_f
+		}
+	}
+	if = {
+		limit = {
+			country_exists = c:EGY
+		}
+		c:EGY = {
+			make_subject_of = {
+				target = c:TUR
+				type = subject_type:dbo_subject_type_state
+			}
+		}
+		every_location_in_the_world = {
+			limit = {
+				is_ownable = yes
+				OR = {
+					area = area:lower_egypt_area
+					area = area:upper_egypt_area
+					area = area:sinai_area
+				}
+			}
+			change_location_owner = c:EGY
+		}
+	}
+}

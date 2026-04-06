@@ -1,6 +1,0 @@
-﻿dbo_subject_pays_state = {
-	scaled_gold = 0.1
-	scaled_sailors = 0.2
-	scaled_manpower = 0.2
-	ignore_inflation = yes
-}

@@ -1,6 +1,6 @@
 ﻿dbo_subject_type_state = {
 	subject_pays = subject_pays_colonial
-	color = dbo_subject_pays_state
+	color = subject_vassal
 	use_overlord_map_color = yes
 	use_overlord_map_name = no
 	level = 3
@@ -114,9 +114,6 @@
 				}
 			}
 			change_culture = capital.dominant_culture
-		}
-		add_country_modifier = {
-			modifier = eyalet_state_integration
 		}
 		if = {
 			limit = {
