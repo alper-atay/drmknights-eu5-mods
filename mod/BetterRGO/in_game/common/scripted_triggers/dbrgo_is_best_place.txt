@@ -1,9 +1,0 @@
-﻿dbrgo_is_best_place_coffee = {
-	topography = mountains
-	climate = arid
-	NOR = {
-		raw_material = goods:coffee
-		raw_material = goods:goods_gold
-		raw_material = goods:silver
-	}
-}
