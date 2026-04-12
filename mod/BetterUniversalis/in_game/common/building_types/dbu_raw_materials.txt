@@ -1,0 +1,40 @@
+﻿dbu_tea_plantation = {
+	is_special = no
+	is_foreign = no
+	pop_type = peasants
+	max_levels = plantation_cap
+	employment_size = rural_peasant_produce_employment
+	category = rgo_building_category
+	rural_settlement = yes
+	town = yes
+	city = yes
+	construction_demand = farm_constructions
+	build_time = rural_build_time
+	location_potential = {
+		OR = {
+			topography = mountains
+			topography = plateau
+			topography = hills
+		}
+		OR = {
+			climate = oceanic
+			climate = tropical
+			climate = subtropical
+		}
+		OR = {
+			vegetation = forest
+			vegetation = jungle
+		}
+	}
+	unique_production_methods = {
+		dbu_tea_plantation_maintenance = {
+			produced = tea
+			output = 0.5
+			lumber = 0.2
+			tools = 0.08
+			category = building_maintenance
+		}
+	}
+	modifier = {
+	}
+}

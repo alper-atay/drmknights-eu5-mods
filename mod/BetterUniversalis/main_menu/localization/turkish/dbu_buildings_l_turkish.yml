@@ -8,3 +8,6 @@
  dbu_grand_mosque: "Ulu Cami"
  dbu_grand_mosque_desc: "İslam mimarisinin en görkemli örneklerinden biri olan Ulu Cami, şehrin manevi merkezidir. Cemaatin bir araya geldiği, ilim ve ibadetin harmanlandığı bu kutsal yapı, devletin ihtişamını ve inancın gücünü simgeler."
  dbu_grand_mosque_maintenance: "$dbu_grand_mosque$"
+ dbu_tea_plantation: "Çay Plantasyonu"
+ dbu_tea_plantation_desc: "Çay plantasyonları, çay bitkisinin yetiştirildiği geniş arazilerdir. Genellikle nemli ve ılıman iklimlerde bulunan bu plantasyonlar, çay yapraklarının toplanması ve işlenmesiyle çay üretiminin temelini oluşturur."
+ dbu_tea_plantation_maintenance: "$dbu_tea_plantation$"

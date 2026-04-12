@@ -32,3 +32,33 @@
 		local_defensive = 0.25
 	}
 }
+
+TRY_INJECT:stockade = {
+	location_potential = {
+		is_province_capital = yes
+	}
+}
+
+TRY_INJECT:castle = {
+	location_potential = {
+		is_province_capital = yes
+	}
+}
+
+TRY_INJECT:bastion = {
+	location_potential = {
+		is_province_capital = yes
+	}
+}
+
+TRY_INJECT:star_fort = {
+	location_potential = {
+		is_province_capital = yes
+	}
+}
+
+TRY_INJECT:fortress = {
+	location_potential = {
+		is_province_capital = yes
+	}
+}
