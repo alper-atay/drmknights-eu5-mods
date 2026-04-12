@@ -1,0 +1,9 @@
+﻿TRY_INJECT:nobles_estate = {
+	text = {
+		localization_key = dbo_nobles_estate_pashas
+		trigger = {
+			has_estate_privilege = estate_privilege:dbo_destiny_nobles_privilege_pashas
+			country_rank_level >= 4
+		}
+	}
+}

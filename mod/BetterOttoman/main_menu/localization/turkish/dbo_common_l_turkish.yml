@@ -24,3 +24,4 @@
  dbo_subject_pays_state: "Eyalet Vergisi"
  LEAD_dbo_subject_type_state: "$LIST$ bir [SUBJECT_TYPE.GetName]"
  AM_dbo_subject_type_state: "$LIST$ tarafına tabi [SUBJECT_TYPE.GetName]."
+ dbo_nobles_estate_pashas: "Paşalar"
