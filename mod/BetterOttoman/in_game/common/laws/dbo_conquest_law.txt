@@ -353,3 +353,33 @@ dbo_conquest_stamp_steep_mountain_law = {
 		}
 	}
 }
+
+dbo_conquest_stamp_gokturk_union_law = {
+	law_category = dbo_conquest
+	unique = yes
+	potential = {
+		OR = {
+			has_unlocked_policy_trigger = {
+				type = dbo_conquest_stamp_gokturk_union_policy
+			}
+		}
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = dbo_conquest_stamp_steep_mountain_law
+		}
+	}
+	dbo_conquest_stamp_gokturk_union_policy = {
+		unique = yes
+		allow = {
+			has_unlocked_policy_trigger = {
+				type = dbo_conquest_stamp_gokturk_union_policy
+			}
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 2
+		}
+	}
+}
