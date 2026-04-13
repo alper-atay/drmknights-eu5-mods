@@ -3,7 +3,7 @@
 	is_foreign = no
 	pop_type = peasants
 	max_levels = plantation_cap
-	employment_size = rural_peasant_produce_employment
+	employment_size = small_peasant_employment
 	category = rgo_building_category
 	rural_settlement = yes
 	town = yes
@@ -29,9 +29,9 @@
 	unique_production_methods = {
 		dbu_tea_plantation_maintenance = {
 			produced = tea
-			output = 0.5
-			lumber = 0.2
-			tools = 0.08
+			output = 0.2
+			lumber = 0.1
+			tools = 0.1
 			category = building_maintenance
 		}
 	}

@@ -27,3 +27,39 @@
 		}
 	}
 }
+
+create_state_wallachia = {
+	location:targoviste = {
+		create_country_from_location = {
+			make_subject_of = {
+				target = c:TUR
+				type = subject_type:dbo_subject_type_state
+			}
+			save_scope_as = target_state_country
+		}
+	}
+	area:wallachia_area = {
+		every_location_in_area = {
+			change_location_owner = scope:target_state_country
+			change_integration_level = core
+		}
+	}
+}
+
+create_state_moldavia = {
+	location:iasi = {
+		create_country_from_location = {
+			make_subject_of = {
+				target = c:TUR
+				type = subject_type:dbo_subject_type_state
+			}
+			save_scope_as = target_state_country
+		}
+	}
+	area:moldavia_area = {
+		every_location_in_area = {
+			change_location_owner = scope:target_state_country
+			change_integration_level = core
+		}
+	}
+}

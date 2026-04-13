@@ -243,3 +243,6 @@ dbo_conquest_steep_mountain_check = {
 		own_entire_area = area:shirvan_area
 	}
 }
+
+dbo_conquest_new_homeland_check = {
+}

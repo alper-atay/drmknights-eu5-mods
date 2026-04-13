@@ -3,7 +3,7 @@
 	color = subject_vassal
 	use_overlord_map_color = yes
 	use_overlord_map_name = no
-	level = 3
+	level = 2
 	join_offensive_wars_always = {
 		always = yes
 	}

@@ -6,8 +6,8 @@
 	employment_size = religious_building_employment
 	category = military_category
 	rural_settlement = yes
-	town = no
-	city = no
+	town = yes
+	city = yes
 	important_for_AI = yes
 	important_for_UI = yes
 	construction_demand = soldier_building_construction
