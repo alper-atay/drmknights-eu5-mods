@@ -1,0 +1,12 @@
+﻿dbu_on_institution_embraced_effects = {
+	add_country_modifier = {
+		modifier = dbu_explosion_of_innovation
+		years = 20
+		mode = extend
+	}
+	add_country_modifier = {
+		modifier = innovation_wave
+		years = 20
+		mode = extend
+	}
+}

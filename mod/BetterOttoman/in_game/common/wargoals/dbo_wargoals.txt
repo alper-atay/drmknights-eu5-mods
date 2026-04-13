@@ -22,7 +22,7 @@
 	}
 	defender = {
 	}
-	ticking_war_score = 0.5
+	ticking_war_score = 1
 }
 
 dbo_conquest_rumelia = {
@@ -35,7 +35,7 @@ dbo_conquest_rumelia = {
 	}
 	defender = {
 	}
-	ticking_war_score = 0.5
+	ticking_war_score = 1
 }
 
 dbo_conquest_fertile_crescent = {
@@ -48,7 +48,7 @@ dbo_conquest_fertile_crescent = {
 	}
 	defender = {
 	}
-	ticking_war_score = 0.5
+	ticking_war_score = 1
 }
 
 dbo_conquest_arabian_peninsula = {
@@ -61,7 +61,7 @@ dbo_conquest_arabian_peninsula = {
 	}
 	defender = {
 	}
-	ticking_war_score = 0.5
+	ticking_war_score = 1
 }
 
 dbo_conquest_black_sea = {
@@ -99,7 +99,7 @@ dbo_conquest_black_sea = {
 	}
 	defender = {
 	}
-	ticking_war_score = 0.5
+	ticking_war_score = 1
 }
 
 dbo_conquest_nile_river = {
@@ -112,7 +112,7 @@ dbo_conquest_nile_river = {
 	}
 	defender = {
 	}
-	ticking_war_score = 0.5
+	ticking_war_score = 1
 }
 
 dbo_conquest_europe_eastern_gate = {
@@ -125,7 +125,7 @@ dbo_conquest_europe_eastern_gate = {
 	}
 	defender = {
 	}
-	ticking_war_score = 0.5
+	ticking_war_score = 1
 }
 
 dbo_conquest_turkish_renaissance = {
@@ -138,7 +138,7 @@ dbo_conquest_turkish_renaissance = {
 	}
 	defender = {
 	}
-	ticking_war_score = 0.5
+	ticking_war_score = 1
 }
 
 dbo_conquest_pearl_of_east = {
@@ -151,7 +151,7 @@ dbo_conquest_pearl_of_east = {
 	}
 	defender = {
 	}
-	ticking_war_score = 0.5
+	ticking_war_score = 1
 }
 
 dbo_conquest_maghreb = {
@@ -164,7 +164,7 @@ dbo_conquest_maghreb = {
 	}
 	defender = {
 	}
-	ticking_war_score = 0.5
+	ticking_war_score = 1
 }
 
 dbo_conquest_steep_mountain = {
@@ -177,7 +177,7 @@ dbo_conquest_steep_mountain = {
 	}
 	defender = {
 	}
-	ticking_war_score = 0.5
+	ticking_war_score = 1
 }
 
 dbo_conquest_gokturk_union = {
@@ -185,16 +185,41 @@ dbo_conquest_gokturk_union = {
 	attacker = {
 		conquer_cost = 0.5
 		allowed_locations = {
-			scope:location.region = region:steppes_region
-			scope:location.region = region:ural_region
-			scope:location.region = region:khorasan_region
-			scope:location.region = region:xinjiang_region
-			scope:location.region = region:mongolia_region
-			scope:location.region = region:east_siberia_region
-			scope:location.region = region:west_siberia_region
+			OR = {
+				scope:location.region = region:steppes_region
+				scope:location.region = region:ural_region
+				scope:location.region = region:khorasan_region
+				scope:location.region = region:xinjiang_region
+				scope:location.region = region:mongolia_region
+				scope:location.region = region:east_siberia_region
+				scope:location.region = region:west_siberia_region
+			}
 		}
 	}
 	defender = {
 	}
-	ticking_war_score = 0.5
+	ticking_war_score = 1
+}
+
+dbo_conquest_new_homeland = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			OR = {
+				scope:location.area = area:thrace_area
+				scope:location.area = area:macedonia_area
+				scope:location.area = area:aegean_archipelago_area
+				scope:location.area = area:albania_area
+				scope:location.area = area:northern_greece_area
+				scope:location.area = area:morea_area
+				scope:location.area = area:armenia_area
+				scope:location.area = area:shirvan_area
+				scope:location.area = area:azerbaijan_area
+			}
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
 }

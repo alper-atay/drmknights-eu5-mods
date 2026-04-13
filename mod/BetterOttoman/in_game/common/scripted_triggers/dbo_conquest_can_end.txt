@@ -75,8 +75,16 @@ dbo_conquest_steep_mountain_can_end = {
 	}
 }
 
+dbo_conquest_new_homeland_can_end = {
+	custom_tooltip = {
+		text = dbo_conquest_new_homeland_can_end_tt
+		has_policy = dbo_conquest_stamp_new_homeland_policy
+	}
+}
+
 dbo_conquest_can_end = {
 	dbo_conquest_anatolian_turks_can_end = yes
+	dbo_conquest_new_homeland_can_end = yes
 	dbo_conquest_rumelia_can_end = yes
 	dbo_conquest_black_sea_can_end = yes
 	dbo_conquest_fertile_crescent_can_end = yes
@@ -87,4 +95,5 @@ dbo_conquest_can_end = {
 	dbo_conquest_turkish_renaissance_can_end = yes
 	dbo_conquest_maghreb_can_end = yes
 	dbo_conquest_steep_mountain_can_end = yes
+	dbo_conquest_new_homeland = yes
 }

@@ -29,9 +29,9 @@
 	unique_production_methods = {
 		dbu_tea_plantation_maintenance = {
 			produced = tea
-			output = 0.2
-			lumber = 0.1
-			tools = 0.1
+			output = 0.5
+			lumber = 0.4
+			tools = 0.2
 			category = building_maintenance
 		}
 	}

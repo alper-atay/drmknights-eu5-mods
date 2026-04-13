@@ -58,3 +58,7 @@ dbo_conquest_maghreb_challenge_check = {
 dbo_conquest_steep_mountain_challenge_check = {
 	has_policy = dbo_conquest_stamp_anatolian_turks_policy
 }
+
+dbo_conquest_new_homeland_challenge_check = {
+	has_policy = dbo_conquest_stamp_anatolian_turks_policy
+}
