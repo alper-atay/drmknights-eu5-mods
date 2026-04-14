@@ -110,16 +110,11 @@ dbo_dhe_destiny.104 = {
 	option = {
 		name = dbo_dhe_destiny.104.a
 		historical_option = yes
-		set_local_variable = {
-			name = total_culus_payment_in_gold
-			value = 0
-		}
 		add_gold = {
 			value = country_tax_base
 			multiply = -2
 		}
-		add_inflation = inflation_mild_penalty
-		remove_local_variable = total_culus_payment_in_gold
+		add_inflation = inflation_weak_penalty
 	}
 	option = {
 		name = dbo_dhe_destiny.104.b

@@ -39,7 +39,7 @@ dbo_ottoman_wisdom_from_the_east = {
 	research_speed = 0.1
 }
 
-dbo_country_centralization = {
+dbo_country_centralization_politics = {
 	game_data = {
 		category = country
 	}
