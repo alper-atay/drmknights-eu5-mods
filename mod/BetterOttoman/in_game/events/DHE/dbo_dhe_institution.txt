@@ -1,8 +1,8 @@
 ﻿namespace = dbo_dhe_institution
-dbo_dhe_institution.1 = {
+dbo_dhe_institution.11 = {
 	type = country_event
-	title = dbo_dhe_institution.1.title
-	desc = dbo_dhe_institution.1.desc
+	title = dbo_dhe_institution.11.title
+	desc = dbo_dhe_institution.11.desc
 	image = "gfx/interface/illustrations/institutions/professional_armies.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -22,25 +22,55 @@ dbo_dhe_institution.1 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_institution.1.a
-		every_owned_non_rural_location = {
+		name = dbo_dhe_institution.11.a
+		capital = {
 			change_institution_progress = {
 				type = institution:professional_armies
-				value = institution_progress_extreme_bonus
+				value = institution_progress_ultimate_bonus
 			}
 		}
-		dbo_event_mild_bonus = yes
 		add_estate_satisfaction = {
 			type = estate_type:nobles_estate
-			value = estate_satisfaction_weak_bonus
+			value = estate_satisfaction_weak_penalty
 		}
+		dbo_event_mild_bonus = yes
 	}
 }
 
-dbo_dhe_institution.2 = {
+dbo_dhe_institution.12 = {
 	type = country_event
-	title = dbo_dhe_institution.2.title
-	desc = dbo_dhe_institution.2.desc
+	title = dbo_dhe_institution.12.title
+	desc = dbo_dhe_institution.12.desc
+	image = "gfx/interface/illustrations/institutions/professional_armies.dds"
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TUR
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		has_embraced_institution = institution:professional_armies
+	}
+	option = {
+		name = dbo_dhe_institution.12.a
+		add_country_modifier = {
+			modifier = dbo_ottoman_golden_age_of_science
+			years = 100
+			mode = replace
+		}
+		add_estate_satisfaction = {
+			type = estate_type:nobles_estate
+			value = estate_satisfaction_weak_penalty
+		}
+		dbo_event_mild_bonus = yes
+	}
+}
+
+dbo_dhe_institution.21 = {
+	type = country_event
+	title = dbo_dhe_institution.21.title
+	desc = dbo_dhe_institution.21.desc
 	image = "gfx/interface/illustrations/institutions/meritocracy.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -60,59 +90,25 @@ dbo_dhe_institution.2 = {
 		}
 	}
 	option = {
-		name = dbo_dhe_institution.2.a
-		every_owned_non_rural_location = {
+		name = dbo_dhe_institution.21.a
+		capital = {
 			change_institution_progress = {
 				type = institution:meritocracy
-				value = institution_progress_extreme_bonus
+				value = institution_progress_ultimate_bonus
 			}
 		}
-		dbo_event_mild_bonus = yes
 		add_estate_satisfaction = {
 			type = estate_type:nobles_estate
-			value = estate_satisfaction_mild_penalty
-		}
-		add_estate_satisfaction = {
-			type = estate_type:burghers_estate
-			value = estate_satisfaction_weak_bonus
-		}
-		add_estate_satisfaction = {
-			type = estate_type:peasants_estate
-			value = estate_satisfaction_weak_bonus
-		}
-	}
-}
-
-dbo_dhe_institution.3 = {
-	type = country_event
-	title = dbo_dhe_institution.3.title
-	desc = dbo_dhe_institution.3.desc
-	image = "gfx/interface/illustrations/institutions/professional_armies.dds"
-	fire_only_once = yes
-	dynamic_historical_event = {
-		tag = TUR
-		from = 1337.1.1
-		to = 9999.1.1
-		monthly_chance = 100
-	}
-	trigger = {
-		has_embraced_institution = institution:professional_armies
-	}
-	option = {
-		name = dbo_dhe_institution.3.a
-		add_country_modifier = {
-			modifier = dbo_ottoman_golden_age_of_science
-			years = 100
-			mode = replace
+			value = estate_satisfaction_weak_penalty
 		}
 		dbo_event_mild_bonus = yes
 	}
 }
 
-dbo_dhe_institution.4 = {
+dbo_dhe_institution.22 = {
 	type = country_event
-	title = dbo_dhe_institution.4.title
-	desc = dbo_dhe_institution.4.desc
+	title = dbo_dhe_institution.22.title
+	desc = dbo_dhe_institution.22.desc
 	image = "gfx/interface/illustrations/institutions/meritocracy.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
@@ -125,11 +121,15 @@ dbo_dhe_institution.4 = {
 		has_embraced_institution = institution:meritocracy
 	}
 	option = {
-		name = dbo_dhe_institution.4.a
+		name = dbo_dhe_institution.22.a
 		add_country_modifier = {
 			modifier = dbo_ottoman_wisdom_from_the_east
 			years = 50
 			mode = replace
+		}
+		add_estate_satisfaction = {
+			type = estate_type:nobles_estate
+			value = estate_satisfaction_weak_penalty
 		}
 		dbo_event_mild_bonus = yes
 	}

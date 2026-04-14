@@ -410,7 +410,7 @@ dbo_conquest_stamp_gokturk_union_law = {
 		}
 		country_modifier = {
 			power_projection = 5
-			num_local_governors = 2
+			num_local_governors = 3
 		}
 	}
 }

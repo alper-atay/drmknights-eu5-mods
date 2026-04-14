@@ -57,6 +57,11 @@ dbo_dhe_destiny.102 = {
 			years = 10
 			mode = add_and_extend
 		}
+		add_country_modifier = {
+			modifier = divergence_in_traditional_norms_modifier
+			years = 15
+			mode = replace
+		}
 		add_government_power = government_power_severe_bonus
 		dbo_event_severe_bonus = yes
 	}
