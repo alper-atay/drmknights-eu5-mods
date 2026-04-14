@@ -28,7 +28,7 @@ dbo_ottoman_golden_age_of_science = {
 		category = country
 	}
 	global_max_literacy = 10
-	research_speed = 0.2
+	research_speed = 0.1
 	global_monthly_literacy = 0.01
 }
 
@@ -37,4 +37,14 @@ dbo_ottoman_wisdom_from_the_east = {
 		category = country
 	}
 	research_speed = 0.1
+}
+
+dbo_country_centralization = {
+	game_data = {
+		category = country
+	}
+	global_crown_estate_power = 0.1
+	monthly_towards_centralization = societal_value_monthly_move
+	monthly_towards_innovative = societal_value_monthly_move
+	monthly_towards_jurisprudence = societal_value_monthly_move
 }

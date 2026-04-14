@@ -53,16 +53,10 @@ dbo_dhe_destiny.102 = {
 			max = 5
 		}
 		add_country_modifier = {
-			modifier = recruits_flock
-			years = 10
-			mode = add_and_extend
-		}
-		add_country_modifier = {
-			modifier = divergence_in_traditional_norms_modifier
-			years = 15
+			modifier = dbo_country_centralization_politics
+			years = 20
 			mode = replace
 		}
-		add_government_power = government_power_severe_bonus
 		dbo_event_severe_bonus = yes
 	}
 }
