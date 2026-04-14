@@ -261,5 +261,9 @@ dbo_conquest_new_homeland_check = {
 		own_entire_area = area:armenia_area
 		own_entire_area = area:shirvan_area
 		own_entire_area = area:azerbaijan_area
+		own_entire_province = province_definition:halab_province
+		own_entire_province = province_definition:raqqa_province
+		own_entire_province = province_definition:mosul_province
+		own_entire_province = province_definition:safhat_jibal_province
 	}
 }

@@ -1,0 +1,14 @@
+﻿dbo_test_annex_all_countries = {
+	every_country = {
+		limit = {
+			NOT = {
+				this = root
+			}
+		}
+		root = {
+			annex_country = {
+				country = prev
+			}
+		}
+	}
+}

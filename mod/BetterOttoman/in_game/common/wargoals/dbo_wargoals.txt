@@ -216,6 +216,10 @@ dbo_conquest_new_homeland = {
 				scope:location.area = area:armenia_area
 				scope:location.area = area:shirvan_area
 				scope:location.area = area:azerbaijan_area
+				scope:location.province_definition = province_definition:halab_province
+				scope:location.province_definition = province_definition:raqqa_province
+				scope:location.province_definition = province_definition:mosul_province
+				scope:location.province_definition = province_definition:safhat_jibal_province
 			}
 		}
 	}

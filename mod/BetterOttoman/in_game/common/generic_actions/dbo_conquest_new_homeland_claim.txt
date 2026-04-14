@@ -66,13 +66,19 @@
 			}
 			trigger_if = {
 				OR = {
-					area = area:armenian_highlands_area
-				}
-			}
-			any_location_in_province = {
-				OR = {
-					is_neighbor_of = scope:actor
-					province_definition = province_definition:cyprus_province
+					area = area:thrace_area
+					area = area:macedonia_area
+					area = area:aegean_archipelago_area
+					area = area:albania_area
+					area = area:northern_greece_area
+					area = area:morea_area
+					area = area:armenia_area
+					area = area:shirvan_area
+					area = area:azerbaijan_area
+					province_definition = province_definition:halab_province
+					province_definition = province_definition:raqqa_province
+					province_definition = province_definition:mosul_province
+					province_definition = province_definition:safhat_jibal_province
 				}
 			}
 			NOT = {
@@ -97,7 +103,7 @@
 			scope:actor = {
 				add_casus_belli = {
 					target = scope:target.owner
-					type = casus_belli:dbo_cb_conquest_anatolian_turks
+					type = casus_belli:dbo_cb_conquest_new_homeland
 					province = scope:target
 				}
 			}

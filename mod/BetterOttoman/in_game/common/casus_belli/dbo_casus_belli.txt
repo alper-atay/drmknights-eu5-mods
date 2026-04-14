@@ -3,26 +3,7 @@
 		always = no
 	}
 	visible = {
-		scope:target = {
-			any_owned_location = {
-				OR = {
-					this.province_definition = province_definition:edirne_province
-					this.province_definition = province_definition:dardanelles_province
-					this.province_definition = province_definition:constantinople_province
-					this.region = region:anatolia_region
-					this.area = area:armenian_highlands_area
-					this.province_definition = province_definition:meskheti_province
-					this.province_definition = province_definition:hasankeyf_province
-					this.province_definition = province_definition:diyarbekir_province
-					this.province_definition = province_definition:ar_ruha_province
-					this.province_definition = province_definition:amadiya_province
-					this.province_definition = province_definition:nusaybin_province
-					this.province_definition = province_definition:mardin_province
-					this.province_definition = province_definition:ayntab_province
-					this.province_definition = province_definition:antakya_province
-				}
-			}
-		}
+		always = no
 	}
 	war_goal_type = dbo_conquest_anatolian_turks
 	province = {
@@ -44,11 +25,7 @@ dbo_cb_conquest_rumelia = {
 		always = no
 	}
 	visible = {
-		scope:target = {
-			any_owned_location = {
-				this.region = region:balkan_region
-			}
-		}
+		always = no
 	}
 	war_goal_type = dbo_conquest_rumelia
 	province = {
@@ -70,11 +47,7 @@ dbo_cb_conquest_fertile_crescent = {
 		always = no
 	}
 	visible = {
-		scope:target = {
-			any_owned_location = {
-				this.region = region:crescent_region
-			}
-		}
+		always = no
 	}
 	war_goal_type = dbo_conquest_fertile_crescent
 	province = {
@@ -96,11 +69,7 @@ dbo_cb_conquest_arabian_peninsula = {
 		always = no
 	}
 	visible = {
-		scope:target = {
-			any_owned_location = {
-				this.region = region:arabia_region
-			}
-		}
+		always = no
 	}
 	war_goal_type = dbo_conquest_arabian_peninsula
 	province = {
@@ -122,36 +91,7 @@ dbo_cb_conquest_black_sea = {
 		always = no
 	}
 	visible = {
-		scope:target = {
-			any_owned_location = {
-				OR = {
-					this.area = area:pontus_area
-					this.area = area:crimea_area
-					this.province_definition = province_definition:bolu_province
-					this.province_definition = province_definition:kocaeli_province
-					this.province_definition = province_definition:constantinople_province
-					this.province_definition = province_definition:edirne_province
-					this.province_definition = province_definition:burgas_province
-					this.province_definition = province_definition:preslav_province
-					this.province_definition = province_definition:south_dobruja_province
-					this.province_definition = province_definition:north_dobruja_province
-					this.province_definition = province_definition:basarabia_province
-					this.province_definition = province_definition:khadjibey_province
-					this.province_definition = province_definition:boh_province
-					this.province_definition = province_definition:oleshia_province
-					this.province_definition = province_definition:qalancak_province
-					this.province_definition = province_definition:berda_province
-					this.province_definition = province_definition:kalmius_province
-					this.province_definition = province_definition:tana_province
-					this.province_definition = province_definition:azov_province
-					this.province_definition = province_definition:akhtar_province
-					this.province_definition = province_definition:taman_province
-					this.province_definition = province_definition:tuapse_province
-					this.province_definition = province_definition:abkhazia_province
-					this.province_definition = province_definition:samegrelo_province
-				}
-			}
-		}
+		always = no
 	}
 	war_goal_type = dbo_conquest_black_sea
 	province = {
@@ -173,11 +113,7 @@ dbo_cb_conquest_nile_river = {
 		always = no
 	}
 	visible = {
-		scope:target = {
-			any_owned_location = {
-				this.region = region:egypt_region
-			}
-		}
+		always = no
 	}
 	war_goal_type = dbo_conquest_nile_river
 	province = {
@@ -199,11 +135,7 @@ dbo_cb_conquest_europe_eastern_gate = {
 		always = no
 	}
 	visible = {
-		scope:target = {
-			any_owned_location = {
-				this.region = region:carpathia_region
-			}
-		}
+		always = no
 	}
 	war_goal_type = dbo_conquest_europe_eastern_gate
 	province = {
@@ -225,11 +157,7 @@ dbo_cb_conquest_turkish_renaissance = {
 		always = no
 	}
 	visible = {
-		scope:target = {
-			any_owned_location = {
-				this.region = region:italy_region
-			}
-		}
+		always = no
 	}
 	war_goal_type = dbo_conquest_turkish_renaissance
 	province = {
@@ -251,11 +179,7 @@ dbo_cb_conquest_pearl_of_east = {
 		always = no
 	}
 	visible = {
-		scope:target = {
-			any_owned_location = {
-				this.region = region:persia_region
-			}
-		}
+		always = no
 	}
 	war_goal_type = dbo_conquest_pearl_of_east
 	province = {
@@ -277,11 +201,7 @@ dbo_cb_conquest_maghreb = {
 		always = no
 	}
 	visible = {
-		scope:target = {
-			any_owned_location = {
-				this.region = region:maghreb_region
-			}
-		}
+		always = no
 	}
 	war_goal_type = dbo_conquest_maghreb
 	province = {
@@ -303,11 +223,7 @@ dbo_cb_conquest_steep_mountain = {
 		always = no
 	}
 	visible = {
-		scope:target = {
-			any_owned_location = {
-				this.region = region:caucasus_region
-			}
-		}
+		always = no
 	}
 	war_goal_type = dbo_conquest_steep_mountain
 	province = {
@@ -329,19 +245,7 @@ dbo_cb_conquest_gokturk_union = {
 		always = no
 	}
 	visible = {
-		scope:target = {
-			any_owned_location = {
-				OR = {
-					this.region = region:steppes_region
-					this.region = region:ural_region
-					this.region = region:khorasan_region
-					this.region = region:xinjiang_region
-					this.region = region:mongolia_region
-					this.region = region:east_siberia_region
-					this.region = region:west_siberia_region
-				}
-			}
-		}
+		always = no
 	}
 	war_goal_type = dbo_conquest_gokturk_union
 	province = {
@@ -363,21 +267,7 @@ dbo_cb_conquest_new_homeland = {
 		always = no
 	}
 	visible = {
-		scope:target = {
-			any_owned_location = {
-				OR = {
-					this.area = area:thrace_area
-					this.area = area:macedonia_area
-					this.area = area:aegean_archipelago_area
-					this.area = area:albania_area
-					this.area = area:northern_greece_area
-					this.area = area:morea_area
-					this.area = area:armenia_area
-					this.area = area:shirvan_area
-					this.area = area:azerbaijan_area
-				}
-			}
-		}
+		always = no
 	}
 	war_goal_type = dbo_conquest_new_homeland
 	province = {
