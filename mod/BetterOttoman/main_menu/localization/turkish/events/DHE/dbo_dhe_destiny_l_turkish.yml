@@ -41,13 +41,13 @@
  # dbo_destiny_nobles_privilege_pashas
  dbo_dhe_destiny.301.title: "[ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')|U] Paşaları Haklarını Talep Ediyor"
  dbo_dhe_destiny.301.desc: "[ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] zümresinin arasında en önde gelen Paşalar, Devlet-i Aliyye'nin bu günlere gelmesini sağladıklarına inanıyor ve [ShowEstatePrivilegeName('dbo_destiny_nobles_privilege_pashas')] [Concept('estate_privileges', 'Zümre Ayrıcalıklarının')|e] kendilerine verilmesini talep ediyorlar. Bu talepler, [ROOT.GetCountry.GetLongName|U] geleneksel yönetim yapısında önemli bir yer tutan paşaların, devletin idari ve askeri başarısına olan katkılarının tanınması ve ödüllendirilmesi anlamına geliyor. Ancak bu taleplerin kabul edilmesi, devletin merkezi otoritesini zayıflatabilir ve diğer zümreler arasında huzursuzluk yaratabilir. Bu nedenle, bu taleplerin nasıl karşılanacağı, Devlet-i Aliyye'nın gelecekteki siyasi dengeleri üzerinde önemli bir etkiye sahip olabilir."
- dbo_dhe_destiny.301.a: "Taleplerini kabul edelim."
- dbo_dhe_destiny.301.b: "Talepleri reddedilsin."
+ dbo_dhe_destiny.301.a: "Taleplerini Kabul Edelim."
+ dbo_dhe_destiny.301.b: "Talepleri Reddedilsin."
  dbo_pashas_rising_tt: "[ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')|U] Paşaları, saraya gelerek [ShowEstatePrivilegeName('dbo_destiny_nobles_privilege_pashas')] [Concept('estate_privileges', 'Zümre Ayrıcalıklarının')|e] kendilerine verilmesini talep etmek için üç ay içinde tekrar saraya gelerek daha sert taleplerde bulunacaklarını belirtiyorlar."
  dbo_dhe_destiny.302.title: "[ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')|U] Önde Gelen Paşaları Saraya Geldi"
  dbo_dhe_destiny.302.desc: "[ROOT.GetCountry.GetLongName|U] en önde gelen [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')|U] Paşaları, [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] zümresinin taleplerini iletmek üzere saraya gelerek, [ShowEstatePrivilegeName('dbo_destiny_nobles_privilege_pashas')] [Concept('estate_privileges', 'Zümre Ayrıcalıklarının')|e] kendilerine verilmesini tekrardan talep ediyorlar. Oldukça kızgın olan paşalar, devletin idari ve askeri başarısına olan katkılarının tanınması gerektiğini vurguluyorlar. Taleplerinin kabul edilmemesi durumunda tekrar saraya gelerek daha sert taleplerde bulunacaklarını belirtiyorlar. Bu durum, [ROOT.GetCountry.GetLongName|U] siyasi atmosferinde önemli bir gerilim yaratabilir ve devletin gelecekteki politikalarını şekillendirebilir."
- dbo_dhe_destiny.302.a: "Taleplerini kabul edelim."
- dbo_dhe_destiny.302.b: "Talepleri reddedilsin."
+ dbo_dhe_destiny.302.a: "Taleplerini Kabul Edelim."
+ dbo_dhe_destiny.302.b: "Talepleri Reddedilsin."
  dbo_destiny_every_nobles_or_soldier_pops_lose_satisfaction_tt: "[ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')|U] [Concept('estate', 'Zümresine')|e] ve [ShowPopTypeName('soldiers')] [Concept('pop_type', 'Toplum Türüne')|e] ait olan her [pops] [ShowNamedValue('pop_satisfaction_severe_penalty')|+=2%] [pop_satisfaction|e] kaybına neden olur"
  # dbo_destiny_clergy_privilege_mevlana_dergahi
  dbo_dhe_destiny.401.title: "[ShowBuildingTypeName('dbo_mevlana_dergahi')]\n[Concept('building', 'Büyük Dergâh')|e]"

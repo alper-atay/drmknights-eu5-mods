@@ -2,14 +2,14 @@
 # professional_armies
  dbo_dhe_institution.11.title: "[ShowInstitutionName('professional_armies')]\n[Concept('embrace', 'Benimseyeceğiz')|e]"
  dbo_dhe_institution.11.desc: "$professional_armies_desc$"
- dbo_dhe_institution.11.a: "Mutlaka [ShowInstitutionNameWithNoTooltip('professional_armies')] ilerleme kazanmalıyız"
+ dbo_dhe_institution.11.a: "Mutlaka [ShowInstitutionNameWithNoTooltip('professional_armies')] ilerleme kazanmalıyız!"
  dbo_dhe_institution.12.title: "[ShowInstitutionName('professional_armies')]\n[Concept('embraced', 'Benimsedik')|e]"
  dbo_dhe_institution.12.desc: "$professional_armies_desc$"
- dbo_dhe_institution.12.a: "Çok hızlı bir şekilde [ShowInstitutionName('professional_armies')] araştırmalıyız"
+ dbo_dhe_institution.12.a: "Çok hızlı bir şekilde [ShowInstitutionName('professional_armies')] araştırmalıyız!"
 # meritocracy
- dbo_dhe_institution.21.a: "Mutlaka [ShowInstitutionNameWithNoTooltip('meritocracy')] ilerleme kazanmalıyız."
+ dbo_dhe_institution.21.a: "Mutlaka [ShowInstitutionNameWithNoTooltip('meritocracy')] ilerleme kazanmalıyız!"
  dbo_dhe_institution.21.title: "[ShowInstitutionName('meritocracy')]\n[Concept('embrace', 'Benimseyeceğiz')|e]"
  dbo_dhe_institution.21.desc: "$meritocracy_advance_desc$"
  dbo_dhe_institution.22.title: "[ShowInstitutionName('meritocracy')]\n[Concept('embraced', 'Benimsedik')|e]"
  dbo_dhe_institution.22.desc: "$meritocracy_advance_desc$"
- dbo_dhe_institution.22.a: "Çok hızlı bir şekilde [ShowInstitutionName('meritocracy')] araştırmalıyız"
+ dbo_dhe_institution.22.a: "Çok hızlı bir şekilde [ShowInstitutionName('meritocracy')] araştırmalıyız!"
