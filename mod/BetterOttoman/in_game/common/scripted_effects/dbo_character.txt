@@ -78,6 +78,7 @@ dbo_create_and_marry_lady = {
 		random_estate_type_trigger = {
 			NOT = {
 				this = estate_type:nobles_estate
+				this = estate_type:dhimmi_estate
 			}
 		}
 		adm = {
@@ -136,6 +137,7 @@ dbo_create_and_marry_lady_with_save_temporary_scope_as = {
 		random_estate_type_trigger = {
 			NOT = {
 				this = estate_type:nobles_estate
+				this = estate_type:dhimmi_estate
 			}
 		}
 		adm = {
