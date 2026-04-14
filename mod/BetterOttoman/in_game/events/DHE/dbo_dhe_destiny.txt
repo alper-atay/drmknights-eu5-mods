@@ -301,7 +301,7 @@ dbo_dhe_destiny.301 = {
 	option = {
 		name = dbo_dhe_destiny.301.a
 		historical_option = yes
-		dbo_destiny_noble_turkish_pashas_grant_estate_privilege_effect = yes
+		dbo_destiny_pashas_grant_estate_privilege_effect = yes
 	}
 	option = {
 		name = dbo_dhe_destiny.301.b
@@ -334,7 +334,7 @@ dbo_dhe_destiny.302 = {
 	option = {
 		name = dbo_dhe_destiny.301.a
 		historical_option = yes
-		dbo_destiny_noble_turkish_pashas_grant_estate_privilege_effect = yes
+		dbo_destiny_pashas_grant_estate_privilege_effect = yes
 		hidden_effect = {
 			if = {
 				limit = {
@@ -366,7 +366,7 @@ dbo_dhe_destiny.302 = {
 			text = dbo_destiny_every_nobles_or_soldier_pops_lose_satisfaction_tt
 			every_pop = {
 				limit = {
-					dbo_turkish_pashas_rebel_allegiance_trigger = yes
+					dbo_pashas_rebel_allegiance_trigger = yes
 				}
 				add_pop_satisfaction = pop_satisfaction_severe_penalty
 			}
@@ -400,7 +400,7 @@ dbo_dhe_destiny.302 = {
 			}
 			every_pop = {
 				limit = {
-					dbo_turkish_pashas_rebel_allegiance_trigger = yes
+					dbo_pashas_rebel_allegiance_trigger = yes
 				}
 				add_pop_satisfaction = pop_satisfaction_radical_penalty
 				change_pop_allegiance = scope:target_rebel
