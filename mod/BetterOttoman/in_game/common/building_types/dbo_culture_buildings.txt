@@ -38,8 +38,5 @@
 			category = building_maintenance
 		}
 	}
-	possible_production_methods = {
-		dbo_sahni_seman_madrasa_maintenance
-	}
 	construction_demand = prestige_building_construction
 }

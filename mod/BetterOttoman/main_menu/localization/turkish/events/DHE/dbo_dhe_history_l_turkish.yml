@@ -67,8 +67,10 @@
  dbo_dhe_sultans_fatih_sultan_mehmed.11.a: "Demek mümkün..."
  dbo_dhe_sultans_fatih_sultan_mehmed.12.title: "[GetCharacter('dbo_fatih_sultan_mehmed').GetName] Dökümhane'de"
  dbo_dhe_sultans_fatih_sultan_mehmed.12.desc: "[GetCharacter('dbo_fatih_sultan_mehmed').GetName], Edirne'deki dökümhanenin kor ateşleri arasında bizzat bulunarak çalışmaları denetliyor. Macar Usta Orban ile birlikte, İstanbul'un kadim surlarını tozla buz edecek o devasa topların çatlamadan dökülebilmesi için en dayanıklı metal alaşımlarını ve döküm tekniklerini titizlikle araştırıyorlar. Her bir gülle, sadece bir şehri değil, bir devletin kaderini belirleyecek."
+ dbo_dhe_sultans_fatih_sultan_mehmed.12.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
  dbo_dhe_sultans_fatih_sultan_mehmed.13.title: "Şahi'nin İlk Nefesi: Kalıba Dökülüş"
  dbo_dhe_sultans_fatih_sultan_mehmed.13.desc: "Edirne dökümhanesinde nefesler tutuldu; erimiş bronz, devasa kalıplara doğru kızıl bir nehir gibi akmaya başladı.[GetCharacter('dbo_fatih_sultan_mehmed').GetName]'in gözleri önünde, tarihin en büyük topu olan Şahi ilk kez formunu alıyor. Bu kor ateşten çıkan dev, Bizans'ın bin yıllık surlarına meydan okuyacak olan sarsılmaz iradenin somut bir tezahürüdür."
+ dbo_dhe_sultans_fatih_sultan_mehmed.13.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
 # dbo_history_fatih_sultan_mehmed_topkapi_palace
  dbo_dhe_sultans_fatih_sultan_mehmed.21.title: "[ShowBuildingTypeName('dbo_topkapi_palace')]"
  dbo_dhe_sultans_fatih_sultan_mehmed.21.desc: "[GetCharacter('dbo_fatih_sultan_mehmed').GetName], İstanbul'un fethinden sonra, şehrin yeni başkenti olarak seçilen [ShowBuildingTypeName('dbo_topkapi_palace')] inşa ettirdi. Bu saray, sadece bir hükümet merkezi değil, devletin kalbi olarak, Devlet-i Aliyye'nın siyasi gücünü temsil eder."
@@ -85,7 +87,7 @@
  dbo_dhe_sultans_fatih_sultan_mehmed.31.title: "[GetCharacter('dbo_fatih_sultan_mehmed').GetName]\nEmeklilik Kararı"
  dbo_dhe_sultans_fatih_sultan_mehmed.31.desc: "Fatih Sultan Mehmed, uzun ve başarılı bir saltanatın ardından, devlet işlerini genç ve enerjik bir varise devretmeye karar verdi. Emeklilik kararı, Devlet-i Aliyye tarihinde nadir görülen bir durumdur ve onun vizyoner liderliğinin bir göstergesidir."
  dbo_dhe_sultans_fatih_sultan_mehmed.31.a: "Emeklilik Hayatı Başlasın!"
- dbo_dhe_sultans_fatih_sultan_mehmed.31.b: "Hayır Hükmetmeye Devam Etmeliyim!"
+ dbo_dhe_sultans_fatih_sultan_mehmed.31.b: "Hayır, Hükmetmeye Devam Etmeliyim!"
 # dbo_fatih_sultan_mehmed Die
  dbo_dhe_sultans_fatih_sultan_mehmed.32.title: "[GetCharacter('dbo_fatih_sultan_mehmed').GetName]'in Vefatı"
  dbo_dhe_sultans_fatih_sultan_mehmed.32.desc: "'Ebu'l-Feth' (Fetihlerin Babası) [GetCharacter('dbo_fatih_sultan_mehmed').GetName] hayata gözlerini yumdu. Ölümü, hem Doğu'da hem Batı'da büyük bir yankı uyandırdı."
