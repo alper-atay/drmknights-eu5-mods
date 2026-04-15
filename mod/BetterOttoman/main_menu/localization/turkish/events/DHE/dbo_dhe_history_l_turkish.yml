@@ -10,7 +10,7 @@
 # dbo_yildirim_sultan_bayezid
 # dbo_yildirim_sultan_bayezid born
  dbo_dhe_sultans_yildirim_sultan_bayezid.1.title: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName]'in\n$dbo_history_common_born$"
- dbo_dhe_sultans_yildirim_sultan_bayezid.1.desc: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetBirthDate] yılında, Devlet-i Aliyye İmparatorluğu'nun gelecekteki padişahı [GetCharacter('dbo_yildirim_sultan_bayezid').GetName] dünyaya geldi. Babası [GetCharacter('dbo_yildirim_sultan_bayezid').GetFather.GetName] izinden giderek, genç yaşta Devlet-i Aliyye'nin başına geçecektir!"
+ dbo_dhe_sultans_yildirim_sultan_bayezid.1.desc: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetBirthDate] yılında, Devlet-i Aliyye'nin gelecekteki padişahı [GetCharacter('dbo_yildirim_sultan_bayezid').GetName] dünyaya geldi. Babası [GetCharacter('dbo_yildirim_sultan_bayezid').GetFather.GetName] izinden giderek, genç yaşta Devlet-i Aliyye'nin başına geçecektir!"
  dbo_dhe_sultans_yildirim_sultan_bayezid.1.a: "Bir Yıldırım Çaktı!"
 # dbo_yildirim_sultan_bayezid rise
  dbo_dhe_sultans_yildirim_sultan_bayezid.2.title: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName]\n$dbo_history_common_rise$"
@@ -35,7 +35,7 @@
  # Interregnum
  # Interregnum Begin
  dbo_dhe_sultans_yildirim_sultan_bayezid.21.title: "Fetret Devri"    
- dbo_dhe_sultans_yildirim_sultan_bayezid.21.desc: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName] ölümünün ardından, Devlet-i Aliyye İmparatorluğu karanlık bir döneme girmiştir. Oğulları arasında taht kavgası başlamış, devlet içinde kaos ve belirsizlik hüküm sürmüştür. Bu on bir yıllık dönem, Devlet-i Aliyye tarihinin en kritik dönemidir."
+ dbo_dhe_sultans_yildirim_sultan_bayezid.21.desc: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName] ölümünün ardından, Devlet-i Aliyye karanlık bir döneme girmiştir. Oğulları arasında taht kavgası başlamış, devlet içinde kaos ve belirsizlik hüküm sürmüştür. Bu on bir yıllık dönem, Devlet-i Aliyye tarihinin en kritik dönemidir."
  dbo_dhe_sultans_yildirim_sultan_bayezid.21.a: "Devlet-i Aliyye yeniden toparlanacak!"
  dbo_history_ottoman_interregnum_tt: "Tüm [rebel|e] [pops|e] [ShowNamedValue('pop_satisfaction_severe_penalty')|+=2%] [pop_satisfaction|e] kaybeder."
  dbo_history_ottoman_interregnum_rebel_progress_gain_tt: "Tüm [rebels|e] [ShowNamedValue('rebel_progress_severe_penalty')|-=2%] ilerler."
@@ -46,11 +46,10 @@
  dbo_history_ottoman_interregnum_end_tt: "Tüm [pops|e] [ShowNamedValue('pop_satisfaction_severe_bonus')|+=2%] [pop_satisfaction|e] kazanır."
  dbo_history_ottoman_interregnum_end_rebel_progress_lose_tt: "Tüm [rebels|e] yarı yarıya ilerleme kaybeder."
 # dbo_fatih_sultan_mehmed
- dbo_fatih_sultan_mehmed_historical_info_common: "[GetCharacter('dbo_fatih_sultan_mehmed').GetName], sadece bir fatih değil, aynı zamanda Doğu ve Batı kültürlerini şahsında birleştiren entelektüel bir deha ve modern Devlet-i Aliyye İmparatorluğu'nun gerçek kurucusudur. 1453 yılında, henüz 21 yaşındayken 'aşılmaz' denilen Bizans surlarını devasa şahi toplarıyla yerle bir ederek İstanbul'u fethetmiş, bir çağı kapatıp yeni bir çağı açmıştır. Kendisini 'Kayser-i Rum' (Roma İmparatoru) ilan ederek Roma'nın mirasına sahip çıkmış, devlet teşkilatını Kanunname-i Âl-i Osman ile hukuki bir temele oturtmuştur. Karadeniz'i bir Türk gölü haline getiren, Balkanlar'da Devlet-i Aliyye hakimiyetini perçinleyen ve Otranto seferiyle Roma'nın kapılarına dayanan Fatih, askeri başarılarının yanı sıra bilim, sanat ve felsefeye verdiği önemle imparatorluğu bir kültür merkezi haline getirmiştir."
  dbo_fatih_sultan_mehmed_and_orban_tt: "[GetCharacter('dbo_fatih_sultan_mehmed').GetName]'in vizyonu ve Macar usta Orban'ın teknik dehası birleşerek, İstanbul'un surlarını yıkacak olan devasa 'Şahi' toplarının dökülmesini sağlamıştır. Bu teknolojik devrim, sadece bir şehrin fethini değil, dünya askeri tarihinde yeni bir çağın başlangıcını simgeler. Olay zincirini tetikler!"
 # dbo_fatih_sultan_mehmed born
  dbo_dhe_sultans_fatih_sultan_mehmed.1.title: "[GetCharacter('dbo_fatih_sultan_mehmed').GetName]'in Doğumu"
- dbo_dhe_sultans_fatih_sultan_mehmed.1.desc: "[GetCharacter('dbo_fatih_sultan_mehmed').GetBirthDate] yılında, Devlet-i Aliyye İmparatorluğu'nun gelecekteki padişahı [GetCharacter('dbo_fatih_sultan_mehmed').GetName] dünyaya geldi. Babası [GetCharacter('dbo_fatih_sultan_mehmed').GetFather.GetName] izinden giderek, genç yaşta Devlet-i Aliyye'nin başına geçecektir!"
+ dbo_dhe_sultans_fatih_sultan_mehmed.1.desc: "[GetCharacter('dbo_fatih_sultan_mehmed').GetBirthDate] yılında, Devlet-i Aliyye'nin gelecekteki padişahı [GetCharacter('dbo_fatih_sultan_mehmed').GetName] dünyaya geldi. Babası [GetCharacter('dbo_fatih_sultan_mehmed').GetFather.GetName] izinden giderek, genç yaşta Devlet-i Aliyye'nin başına geçecektir!"
  dbo_dhe_sultans_fatih_sultan_mehmed.1.a: "Bir Fatih Doğdu!"
 # dbo_fatih_sultan_mehmed rise
  dbo_dhe_sultans_fatih_sultan_mehmed.2.title: "[GetCharacter('dbo_fatih_sultan_mehmed').GetName]'in Yükselişi"
@@ -93,7 +92,7 @@
  dbo_dhe_sultans_fatih_sultan_mehmed.32.desc: "'Ebu'l-Feth' (Fetihlerin Babası) [GetCharacter('dbo_fatih_sultan_mehmed').GetName] hayata gözlerini yumdu. Ölümü, hem Doğu'da hem Batı'da büyük bir yankı uyandırdı."
  dbo_dhe_sultans_fatih_sultan_mehmed.32.a: "$dbo_history_common_die_option$"
 # dbo_yavuz_sultan_selim
- dbo_yavuz_sultan_selim_historical_info_common: "[GetCharacter('dbo_yavuz_sultan_selim').GetName], Devlet-i Aliyye İmparatorluğu'nun dokuzuncu padişahı ve ilk Devlet-i Aliyye halifesidir. 'Yavuz' lakabını sert mizacı, sarsılmaz iradesi ve askeri dehasıyla kazanan Selim Han, sekiz yıl gibi kısa bir sürede imparatorluk topraklarını iki buçuk katına çıkararak cihanşümul bir güç haline getirmiştir. Babası II. Bayezid'den devraldığı devleti, rotasını Doğu'ya çevirerek Safevi tehdidine karşı Çaldıran'da mutlak bir zaferle korumuş; ardından Mercidabık ve Ridaniye muharebeleriyle Memlük Devleti'ne son vererek Suriye, Filistin, Hicaz ve Mısır'ı Devlet-i Aliyye mülküne katmıştır. Kutsal toprakların anahtarlarını teslim aldığında kendisini 'Hâkimü'l-Haremeyn' (Kutsal Yerlerin Hakimi) yerine 'Hâdimü'l-Haremeyn' (Kutsal Yerlerin Hizmetkarı) olarak tanımlayan Yavuz, halifelik makamını Devlet-i Aliyye hanedanına taşıyarak İslam dünyasının liderliğini perçinlemiştir. Hazinesini ağzına kadar dolduran ve 'Benim altınla doldurduğum hazineyi, torunlarımdan her kim doldurabilirse kendi mührüyle mühürlesin, aksi halde benim mührümle mühürlenmeye devam etsin' vasiyetiyle Devlet-i Aliyye'nın ekonomik zirvesini simgeleyen Selim Han, kısa saltanatına asırları sığdıran bir hakan olarak tarihe geçmiştir."
+ dbo_yavuz_sultan_selim_historical_info_common: "[GetCharacter('dbo_yavuz_sultan_selim').GetName], Devlet-i Aliyye'nin dokuzuncu padişahı ve ilk Devlet-i Aliyye halifesidir. 'Yavuz' lakabını sert mizacı, sarsılmaz iradesi ve askeri dehasıyla kazanan Selim Han, sekiz yıl gibi kısa bir sürede imparatorluk topraklarını iki buçuk katına çıkararak cihanşümul bir güç haline getirmiştir. Babası II. Bayezid'den devraldığı devleti, rotasını Doğu'ya çevirerek Safevi tehdidine karşı Çaldıran'da mutlak bir zaferle korumuş; ardından Mercidabık ve Ridaniye muharebeleriyle Memlük Devleti'ne son vererek Suriye, Filistin, Hicaz ve Mısır'ı Devlet-i Aliyye mülküne katmıştır. Kutsal toprakların anahtarlarını teslim aldığında kendisini 'Hâkimü'l-Haremeyn' (Kutsal Yerlerin Hakimi) yerine 'Hâdimü'l-Haremeyn' (Kutsal Yerlerin Hizmetkarı) olarak tanımlayan Yavuz, halifelik makamını Devlet-i Aliyye hanedanına taşıyarak İslam dünyasının liderliğini perçinlemiştir. Hazinesini ağzına kadar dolduran ve 'Benim altınla doldurduğum hazineyi, torunlarımdan her kim doldurabilirse kendi mührüyle mühürlesin, aksi halde benim mührümle mühürlenmeye devam etsin' vasiyetiyle Devlet-i Aliyye'nın ekonomik zirvesini simgeleyen Selim Han, kısa saltanatına asırları sığdıran bir hakan olarak tarihe geçmiştir."
 # dbo_yavuz_sultan_selim Born
  dbo_dhe_sultans_yavuz_sultan_selim.1.title: "[GetCharacter('dbo_yavuz_sultan_selim').GetName]'in\n$dbo_history_common_born$"
  dbo_dhe_sultans_yavuz_sultan_selim.1.desc: "1470 yılında Amasya'da, Devlet-i Aliyye tarihinin en sert ve kararlı hükümdarlarından biri olacak olan Şehzade Selim dünyaya geldi. Babası II. Bayezid'in döneminde yetişen Selim, genç yaşlarından itibaren askeri yeteneği ve devlet yönetimine olan ilgisiyle dikkatleri üzerine çekti."
@@ -133,5 +132,5 @@
  dbo_history_kanuni_sultan_suleiman_every_pop_lose_satisfaction_tt: "Tüm [pops|e] [ShowNamedValue('pop_satisfaction_extreme_penalty')|-=2%] [pop_satisfaction|e] kaybeder."
 # dbo_history_yavuz_sultan_selim_die
  dbo_dhe_sultans_kanuni_sultan_suleiman.31.title: "[GetCharacter('dbo_kanuni_sultan_suleiman').GetName]\n$dbo_history_common_die$"
- dbo_dhe_sultans_kanuni_sultan_suleiman.31.desc: "1566 yılında, uzun ve görkemli bir saltanatın ardından, 'Muhteşem' [GetCharacter('dbo_kanuni_sultan_suleiman').GetName] hayatını kaybetti. Ölümü, Devlet-i Aliyye İmparatorluğu'nda büyük bir yas havası oluşturdu."
+ dbo_dhe_sultans_kanuni_sultan_suleiman.31.desc: "1566 yılında, uzun ve görkemli bir saltanatın ardından, 'Muhteşem' [GetCharacter('dbo_kanuni_sultan_suleiman').GetName] hayatını kaybetti. Ölümü, Devlet-i Aliyye'de büyük bir yas havası oluşturdu."
  dbo_dhe_sultans_kanuni_sultan_suleiman.31.a: "$dbo_history_common_die_option$" 

@@ -6,7 +6,7 @@
  STATIC_MODIFIER_NAME_dbo_character_yildirim_sultan_bayezid: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName]'in $dbo_situation_conquest$"
  STATIC_MODIFIER_DESC_dbo_character_yildirim_sultan_bayezid: "Yıldırım lakabıyla anılan Bayezid'in, Anadolu Türk birliğini büyük ölçüde sağladığı, İstanbul'u kuşattığı ve Niğbolu Zaferi ile Haçlı dünyasına karşı kazandığı mutlak üstünlüğü temsil eden askeri ve siyasi vizyonu."
  STATIC_MODIFIER_NAME_dbo_character_fatih_sultan_mehmed: "[GetCharacter('dbo_fatih_sultan_mehmed').GetName]'in $dbo_situation_conquest$"
- STATIC_MODIFIER_DESC_dbo_character_fatih_sultan_mehmed: "İstanbul'u fethederek bir çağı kapatıp yeni bir çağ açan, Roma İmparatorluğu'nun varisi olma iddiasıyla devleti cihanşümul bir imparatorluğa dönüştüren, bilim ve sanata önem veren büyük hükümdarın vizyonu."
+ STATIC_MODIFIER_DESC_dbo_character_fatih_sultan_mehmed: "İstanbul'u fethederek bir çağı kapatıp yeni bir çağ açan, Roma'nin varisi olma iddiasıyla devleti cihanşümul bir imparatorluğa dönüştüren, bilim ve sanata önem veren büyük hükümdarın vizyonu."
  STATIC_MODIFIER_NAME_dbo_character_yavuz_sultan_selim: "[GetCharacter('dbo_yavuz_sultan_selim').GetName]'in $dbo_situation_conquest$"
  STATIC_MODIFIER_DESC_dbo_character_yavuz_sultan_selim: "Yavuz Sultan Selim'in sekiz yıllık kısa saltanatına sığdırdığı devasa fetihlerle, İslam dünyasını tek bir sancak altında toplama ve Devlet-i Aliyye'yi mutlak bir küresel güç haline getirme vizyonu."
  STATIC_MODIFIER_NAME_dbo_character_kanuni_sultan_suleiman: "[GetCharacter('dbo_kanuni_sultan_suleiman').GetName]'in $dbo_situation_conquest$"
