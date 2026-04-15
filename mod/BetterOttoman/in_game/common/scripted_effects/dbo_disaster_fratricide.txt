@@ -1,0 +1,64 @@
+﻿dbo_disaster_fratricide_set_regent = {
+	random_character = {
+		limit = {
+			can_become_a_regent = yes
+			has_estate = estate_type:clergy_estate
+			religion = root.religion
+		}
+		save_temporary_scope_as = new_regent
+	}
+	if = {
+		limit = {
+			not = {
+				exists = scope:new_regent
+			}
+		}
+		create_character = {
+			religion = root.religion
+			estate = estate_type:clergy_estate
+			age = {
+				35
+				50
+			}
+			female = no
+			save_temporary_scope_as = new_regent
+		}
+	}
+	set_regent = scope:new_regent
+}
+
+dbo_disaster_fratricide_collect_rivals = {
+	if = {
+		limit = {
+			exists = previous_ruler
+		}
+		previous_ruler = {
+			every_child = {
+				limit = {
+					is_alive = yes
+					is_female = no
+					is_religious_figure = no
+				}
+				add_to_list = dbo_disaster_fratricide_rivals
+			}
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				not = {
+					exists = scope:new_leader
+				}
+			}
+			create_character = {
+				religion = root.religion
+				estate = estate_type:clergy_estate
+				age = 35
+				female = no
+				save_temporary_scope_as = new_leader
+			}
+		}
+		# We generate a description which doesn't run effects so new leader might not be set if we create a new character 
+		set_new_ruler = scope:new_leader
+	}
+}

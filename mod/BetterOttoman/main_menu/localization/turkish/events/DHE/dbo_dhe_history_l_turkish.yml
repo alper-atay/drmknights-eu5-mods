@@ -1,65 +1,64 @@
 ﻿l_turkish:
 # Common verbs
- dbo_history_common_born: "Cihan'a Geldi!"
+ dbo_history_common_born: "Dünyaya Geldi!"
  dbo_history_common_rise: "Yükselişi!"
- dbo_history_common_rise_option: "Şehzadem Çok Yaşa!"
- dbo_history_common_ascend: "Padişah Oldu!"
- dbo_history_common_ascend_option: "Padişahım Çok Yaşa!"
+ dbo_history_common_rise_option: "[Concept('heir', 'Şehzadem')|e] Çok Yaşa!"
+ dbo_history_common_ascend: "Yeni [Concept('ruler', 'Hükümdarımız')|e]!"
+ dbo_history_common_ascend_option: "[Concept('ruler', 'Hükümdarım')|e] Çok Yaşa!"
  dbo_history_common_die: "Vefat Etti!"
  dbo_history_common_die_option: "Devlet-i Aliyye'nin Başı Sağ Olsun!"
 # dbo_yildirim_sultan_bayezid
-# dbo_yildirim_sultan_bayezid born
- dbo_dhe_sultans_yildirim_sultan_bayezid.1.title: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName]'in\n$dbo_history_common_born$"
- dbo_dhe_sultans_yildirim_sultan_bayezid.1.desc: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetBirthDate] yılında, Devlet-i Aliyye'nin gelecekteki padişahı [GetCharacter('dbo_yildirim_sultan_bayezid').GetName] dünyaya geldi. Babası [GetCharacter('dbo_yildirim_sultan_bayezid').GetFather.GetName] izinden giderek, genç yaşta Devlet-i Aliyye'nin başına geçecektir!"
+# dbo_history_yildirim_sultan_bayezid_born
+ dbo_dhe_sultans_yildirim_sultan_bayezid.1.title: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName]\n$dbo_history_common_born$"
+ dbo_dhe_sultans_yildirim_sultan_bayezid.1.desc: "Devlet-i Aliyye'nin gelecekteki [Concept('ruler', 'Hükümdarı')|e] [GetCharacter('dbo_yildirim_sultan_bayezid').GetName] dünyaya geldi."
  dbo_dhe_sultans_yildirim_sultan_bayezid.1.a: "Bir Yıldırım Çaktı!"
-# dbo_yildirim_sultan_bayezid rise
+# dbo_history_yildirim_sultan_bayezid_rise
  dbo_dhe_sultans_yildirim_sultan_bayezid.2.title: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName]\n$dbo_history_common_rise$"
- dbo_dhe_sultans_yildirim_sultan_bayezid.2.desc: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName], [GetCharacter('dbo_yildirim_sultan_bayezid').GetAgeInYears] yaşına geldi ve artık Devlet-i Aliyye'nin başına geçecektir! Hiç bir güç engelleyemez."
+ dbo_dhe_sultans_yildirim_sultan_bayezid.2.desc: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName], [GetCharacter('dbo_yildirim_sultan_bayezid').GetAgeInYears] yaşına geldi ve Devlet-i Aliyye'nin başına geçecektir!"
  dbo_dhe_sultans_yildirim_sultan_bayezid.2.a: "$dbo_history_common_rise_option$"
-# dbo_yildirim_sultan_bayezid ascend
- dbo_dhe_sultans_yildirim_sultan_bayezid.3.title: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName]'in\n$dbo_history_common_ascend$"
- dbo_dhe_sultans_yildirim_sultan_bayezid.3.desc: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName], [GetCharacter('dbo_yildirim_sultan_bayezid').GetAgeInYears] yaşına geldi ve artık Devlet-i Aliyye'nin başına geçecektir! Hiç bir güç engelleyemez."
+# dbo_history_yildirim_sultan_bayezid_ascend
+ dbo_dhe_sultans_yildirim_sultan_bayezid.3.title: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName]\n$dbo_history_common_ascend$"
+ dbo_dhe_sultans_yildirim_sultan_bayezid.3.desc: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName], [GetCharacter('dbo_yildirim_sultan_bayezid').GetAgeInYears] yaşına geldi ve Devlet-i Aliyye'nin başına geçti!"
  dbo_dhe_sultans_yildirim_sultan_bayezid.3.a: "$dbo_history_common_ascend_option$"
-# dbo_yildirim_sultan_bayezid dbo_yildirim_sultan_bayezid_nightmare_1
+# dbo_history_yildirim_sultan_bayezid_defeated_by_timur
  dbo_dhe_sultans_yildirim_sultan_bayezid.11.title: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName]\nKâbusu"
  dbo_dhe_sultans_yildirim_sultan_bayezid.11.desc: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName], rüyasında Timur tarafından esir alınacağını görmüştü. Bu rüya, onun gelecekteki zorluklara karşı hazırlıklı olmasını sağladı."
  dbo_dhe_sultans_yildirim_sultan_bayezid.11.a: "Kâbuslar bazen gerçeğe dönüşür."
-# dbo_yildirim_sultan_bayezid Nightmare
+# dbo_history_yildirim_sultan_bayezid_nightmare
  dbo_dhe_sultans_yildirim_sultan_bayezid.12.title: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName]\nKâbusunu Yaşıyor"
  dbo_dhe_sultans_yildirim_sultan_bayezid.12.desc: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName], kâbusunda öleceğini görmüştü. Bu kâbus, onun gelecekteki zorluklara karşı hazırlıklı olmasını sağladı."
  dbo_dhe_sultans_yildirim_sultan_bayezid.12.a: "Kâbuslar bazen gerçeğe dönüşür."
-# dbo_yildirim_sultan_bayezid die
+# dbo_history_yildirim_sultan_bayezid_die
  dbo_dhe_sultans_yildirim_sultan_bayezid.13.title: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName]\n$dbo_history_common_die$"
  dbo_dhe_sultans_yildirim_sultan_bayezid.13.desc: "Âlimler çaresizlik içinde deva aradı ama [GetCharacter('dbo_yildirim_sultan_bayezid').GetName] ölüm döşeğinde gözlerini yumdu."
  dbo_dhe_sultans_yildirim_sultan_bayezid.13.a: "$dbo_history_common_die_option$"
- # Interregnum
- # Interregnum Begin
+ # dbo_history_ottoman_interregnum_begin
  dbo_dhe_sultans_yildirim_sultan_bayezid.21.title: "Fetret Devri"    
- dbo_dhe_sultans_yildirim_sultan_bayezid.21.desc: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName] ölümünün ardından, Devlet-i Aliyye karanlık bir döneme girmiştir. Oğulları arasında taht kavgası başlamış, devlet içinde kaos ve belirsizlik hüküm sürmüştür. Bu on bir yıllık dönem, Devlet-i Aliyye tarihinin en kritik dönemidir."
- dbo_dhe_sultans_yildirim_sultan_bayezid.21.a: "Devlet-i Aliyye yeniden toparlanacak!"
+ dbo_dhe_sultans_yildirim_sultan_bayezid.21.desc: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName] ölümünün ardından, Devlet-i Aliyye karanlık bir döneme girmiştir. [Concept('heirs', 'Veliahtlar')|e] arasında taht kavgası başlamış, devlet içinde kaos ve belirsizlik hüküm sürmüştür. Bu on bir yıllık dönem, Devlet-i Aliyye tarihinin en kritik dönemidir."
+ dbo_dhe_sultans_yildirim_sultan_bayezid.21.a: "Devlet-i Aliyye Toparlanacak!"
  dbo_history_ottoman_interregnum_tt: "Tüm [rebel|e] [pops|e] [ShowNamedValue('pop_satisfaction_severe_penalty')|+=2%] [pop_satisfaction|e] kaybeder."
  dbo_history_ottoman_interregnum_rebel_progress_gain_tt: "Tüm [rebels|e] [ShowNamedValue('rebel_progress_severe_penalty')|-=2%] ilerler."
-# Interregnum End
+# dbo_history_ottoman_interregnum_end
  dbo_dhe_sultans_yildirim_sultan_bayezid.22.title: "Fetret Devri Sona Erdi"
- dbo_dhe_sultans_yildirim_sultan_bayezid.22.desc: "On bir yıl süren kaos, kardeş kavgası ve belirsizliğin ardından, [GetCountry('TUR').GetGovernment.GetRuler.GetName] rakiplerini bertaraf ederek Devlet-i Aliyye tahtına tek başına sahip oldu. Devlet-i Aliyye, parçalanmanın eşiğinden dönerek yeniden birleşti ve sarsılan otorite yeniden tesis edildi."
- dbo_dhe_sultans_yildirim_sultan_bayezid.22.a: "Devlet-i Aliyye yeniden tek vücut!"
+ dbo_dhe_sultans_yildirim_sultan_bayezid.22.desc: "On bir yıl süren kaos, kardeş kavgası ve belirsizliğin ardından, [ROOT.GetCountry.GetGovernment.GetRuler.GetName] rakiplerini bertaraf ederek Devlet-i Aliyye tahtına tek başına sahip oldu. Devlet-i Aliyye, parçalanmanın eşiğinden dönerek yeniden birleşti ve sarsılan otorite yeniden tesis edildi."
+ dbo_dhe_sultans_yildirim_sultan_bayezid.22.a: "Devlet-i Aliyye Tek Vücut!"
  dbo_history_ottoman_interregnum_end_tt: "Tüm [pops|e] [ShowNamedValue('pop_satisfaction_severe_bonus')|+=2%] [pop_satisfaction|e] kazanır."
  dbo_history_ottoman_interregnum_end_rebel_progress_lose_tt: "Tüm [rebels|e] yarı yarıya ilerleme kaybeder."
 # dbo_fatih_sultan_mehmed
- dbo_fatih_sultan_mehmed_and_orban_tt: "[GetCharacter('dbo_fatih_sultan_mehmed').GetName]'in vizyonu ve Macar usta Orban'ın teknik dehası birleşerek, İstanbul'un surlarını yıkacak olan devasa 'Şahi' toplarının dökülmesini sağlamıştır. Bu teknolojik devrim, sadece bir şehrin fethini değil, dünya askeri tarihinde yeni bir çağın başlangıcını simgeler. Olay zincirini tetikler!"
-# dbo_fatih_sultan_mehmed born
- dbo_dhe_sultans_fatih_sultan_mehmed.1.title: "[GetCharacter('dbo_fatih_sultan_mehmed').GetName]'in Doğumu"
- dbo_dhe_sultans_fatih_sultan_mehmed.1.desc: "[GetCharacter('dbo_fatih_sultan_mehmed').GetBirthDate] yılında, Devlet-i Aliyye'nin gelecekteki padişahı [GetCharacter('dbo_fatih_sultan_mehmed').GetName] dünyaya geldi. Babası [GetCharacter('dbo_fatih_sultan_mehmed').GetFather.GetName] izinden giderek, genç yaşta Devlet-i Aliyye'nin başına geçecektir!"
+# dbo_history_fatih_sultan_mehmed_born
+ dbo_dhe_sultans_fatih_sultan_mehmed.1.title: "[GetCharacter('dbo_fatih_sultan_mehmed').GetName]\n$dbo_history_common_born$"
+ dbo_dhe_sultans_fatih_sultan_mehmed.1.desc: "Devlet-i Aliyye'nin gelecekteki [Concept('ruler', 'Hükümdarı')|e] [GetCharacter('dbo_fatih_sultan_mehmed').GetName] dünyaya geldi."
  dbo_dhe_sultans_fatih_sultan_mehmed.1.a: "Bir Fatih Doğdu!"
-# dbo_fatih_sultan_mehmed rise
- dbo_dhe_sultans_fatih_sultan_mehmed.2.title: "[GetCharacter('dbo_fatih_sultan_mehmed').GetName]'in Yükselişi"
- dbo_dhe_sultans_fatih_sultan_mehmed.2.desc: "[GetCharacter('dbo_fatih_sultan_mehmed').GetName], [GetCharacter('dbo_fatih_sultan_mehmed').GetAgeInYears] yaşına geldi ve artık Devlet-i Aliyye'nin başına geçecektir! Hiç bir güç engelleyemez."
+# dbo_history_fatih_sultan_mehmed_rise
+ dbo_dhe_sultans_fatih_sultan_mehmed.2.title: "[GetCharacter('dbo_fatih_sultan_mehmed').GetName]\n$dbo_history_common_rise$"
+ dbo_dhe_sultans_fatih_sultan_mehmed.2.desc: "[GetCharacter('dbo_fatih_sultan_mehmed').GetName], [GetCharacter('dbo_fatih_sultan_mehmed').GetAgeInYears] yaşına geldi ve Devlet-i Aliyye'nin başına geçecektir!"
  dbo_dhe_sultans_fatih_sultan_mehmed.2.a: "$dbo_history_common_rise_option$"
-# dbo_fatih_sultan_mehmed ascend
- dbo_dhe_sultans_fatih_sultan_mehmed.3.title: "[GetCharacter('dbo_fatih_sultan_mehmed').GetName]'in\n$dbo_history_common_ascend$"
- dbo_dhe_sultans_fatih_sultan_mehmed.3.desc: "[GetCharacter('dbo_fatih_sultan_mehmed').GetName], [GetCharacter('dbo_fatih_sultan_mehmed').GetAgeInYears] yaşına geldi ve artık Devlet-i Aliyye'nin başına geçecektir! Hiç bir güç engelleyemez."
+# dbo_history_fatih_sultan_mehmed_ascend
+ dbo_dhe_sultans_fatih_sultan_mehmed.3.title: "[GetCharacter('dbo_fatih_sultan_mehmed').GetName]\n$dbo_history_common_ascend$"
+ dbo_dhe_sultans_fatih_sultan_mehmed.3.desc: "[GetCharacter('dbo_fatih_sultan_mehmed').GetName], [GetCharacter('dbo_fatih_sultan_mehmed').GetAgeInYears] yaşına geldi ve Devlet-i Aliyye'nin başına geçti!"
  dbo_dhe_sultans_fatih_sultan_mehmed.3.a: "$dbo_history_common_ascend_option$"
 # dbo_history_fatih_sultan_mehmet_and_orban_events_completed
+ dbo_fatih_sultan_mehmed_and_orban_tt: "[GetCharacter('dbo_fatih_sultan_mehmed').GetName]'in vizyonu ve Macar usta Orban'ın teknik dehası birleşerek, İstanbul'un surlarını yıkacak olan devasa 'Şahi' toplarının dökülmesini sağlamıştır. Bu teknolojik devrim, sadece bir şehrin fethini değil, dünya askeri tarihinde yeni bir çağın başlangıcını simgeler. Olay zincirini tetikler!"
  dbo_history_fatih_sultan_mehmet_and_orban_events_completed: "[GetCharacter('dbo_fatih_sultan_mehmed').GetName] ve Macar Usta Orban ile tarihin o güne kadar görmediği en büyük topları döktüler"
  dbo_dhe_sultans_fatih_sultan_mehmed.11.title: "Fatih Sultan Mehmed ve Usta Orban"
  dbo_dhe_sultans_fatih_sultan_mehmed.11.desc: "İstanbul'un aşılmaz surlarını yıkma hayaliyle yanıp tutuşan genç Sultan Mehmed, Macar döküm ustası Orban'ı huzuruna kabul etti. Orban'ın teknik dehası ile Sultan'ın vizyonu birleşince, tarihin o güne dek gördüğü en büyük kuşatma silahı olan 'Şahi' toplarının döküm süreci başladı. Bu devasa toplar, sadece birer silah değil, bir çağın kapanıp yenisinin açılacağının habercisiydi."
@@ -92,16 +91,15 @@
  dbo_dhe_sultans_fatih_sultan_mehmed.32.desc: "'Ebu'l-Feth' (Fetihlerin Babası) [GetCharacter('dbo_fatih_sultan_mehmed').GetName] hayata gözlerini yumdu. Ölümü, hem Doğu'da hem Batı'da büyük bir yankı uyandırdı."
  dbo_dhe_sultans_fatih_sultan_mehmed.32.a: "$dbo_history_common_die_option$"
 # dbo_yavuz_sultan_selim
- dbo_yavuz_sultan_selim_historical_info_common: "[GetCharacter('dbo_yavuz_sultan_selim').GetName], Devlet-i Aliyye'nin dokuzuncu padişahı ve ilk Devlet-i Aliyye halifesidir. 'Yavuz' lakabını sert mizacı, sarsılmaz iradesi ve askeri dehasıyla kazanan Selim Han, sekiz yıl gibi kısa bir sürede imparatorluk topraklarını iki buçuk katına çıkararak cihanşümul bir güç haline getirmiştir. Babası II. Bayezid'den devraldığı devleti, rotasını Doğu'ya çevirerek Safevi tehdidine karşı Çaldıran'da mutlak bir zaferle korumuş; ardından Mercidabık ve Ridaniye muharebeleriyle Memlük Devleti'ne son vererek Suriye, Filistin, Hicaz ve Mısır'ı Devlet-i Aliyye mülküne katmıştır. Kutsal toprakların anahtarlarını teslim aldığında kendisini 'Hâkimü'l-Haremeyn' (Kutsal Yerlerin Hakimi) yerine 'Hâdimü'l-Haremeyn' (Kutsal Yerlerin Hizmetkarı) olarak tanımlayan Yavuz, halifelik makamını Devlet-i Aliyye hanedanına taşıyarak İslam dünyasının liderliğini perçinlemiştir. Hazinesini ağzına kadar dolduran ve 'Benim altınla doldurduğum hazineyi, torunlarımdan her kim doldurabilirse kendi mührüyle mühürlesin, aksi halde benim mührümle mühürlenmeye devam etsin' vasiyetiyle Devlet-i Aliyye'nın ekonomik zirvesini simgeleyen Selim Han, kısa saltanatına asırları sığdıran bir hakan olarak tarihe geçmiştir."
-# dbo_yavuz_sultan_selim Born
+# dbo_yavuz_sultan_selim_born
  dbo_dhe_sultans_yavuz_sultan_selim.1.title: "[GetCharacter('dbo_yavuz_sultan_selim').GetName]'in\n$dbo_history_common_born$"
  dbo_dhe_sultans_yavuz_sultan_selim.1.desc: "1470 yılında Amasya'da, Devlet-i Aliyye tarihinin en sert ve kararlı hükümdarlarından biri olacak olan Şehzade Selim dünyaya geldi. Babası II. Bayezid'in döneminde yetişen Selim, genç yaşlarından itibaren askeri yeteneği ve devlet yönetimine olan ilgisiyle dikkatleri üzerine çekti."
  dbo_dhe_sultans_yavuz_sultan_selim.1.a: "Yavuz Bir Aslan Doğdu!"
-# dbo_yavuz_sultan_selim Ascend
+# dbo_yavuz_sultan_selim_rise
  dbo_dhe_sultans_yavuz_sultan_selim.2.title: "[GetCharacter('dbo_yavuz_sultan_selim').GetName]'in Yükselişi"
  dbo_dhe_sultans_yavuz_sultan_selim.2.desc: "[GetCharacter('dbo_yavuz_sultan_selim').GetName] büyüyor ve devlet idaresindeki keskin zekası ile askeri dehası tüm Devlet-i Aliyye mülkünde yankılanmaya başlıyor. Şehzade Selim'in kararlılığı, dostun güveni düşmanın ise korkusu haline geliyor!"
  dbo_dhe_sultans_yavuz_sultan_selim.2.a: "$dbo_history_common_rise_option$"
-# dbo_yavuz_sultan_selim Rise
+# dbo_yavuz_sultan_selim_ascend
  dbo_dhe_sultans_yavuz_sultan_selim.3.title: "[GetCharacter('dbo_yavuz_sultan_selim').GetName] Tahta Çıktı"
  dbo_dhe_sultans_yavuz_sultan_selim.3.desc: "1512 yılında, Yeniçerilerin tam desteğini alan [GetCharacter('dbo_yavuz_sultan_selim').GetName], babası II. Bayezid'in feragatiyle Devlet-i Aliyye tahtına oturdu. 'Yavuz' lakabıyla anılacak olan yeni padişah, devletin bekası için en sert kararları almaktan çekinmeyeceğini ve rotasını doğrudan Doğu'daki tehditlere çevireceğini tüm dünyaya ilan etti."
  dbo_dhe_sultans_yavuz_sultan_selim.3.a: "$dbo_history_common_ascend_option$"

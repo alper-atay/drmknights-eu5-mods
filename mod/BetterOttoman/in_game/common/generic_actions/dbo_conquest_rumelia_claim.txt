@@ -61,6 +61,8 @@
 				OR = {
 					is_neighbor_of = scope:actor
 					area = area:aegean_archipelago_area
+					province_definition = province_definition:ionian_islands_province
+					this = location:kythira
 				}
 			}
 			NOT = {

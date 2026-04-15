@@ -1,0 +1,19 @@
+﻿dbo_disaster_fratricide = {
+	monthly_spawn_chance = monthly_spawn_chance_unique
+	can_start = {
+		has_variable = dbo_disaster_fratricide_forced
+	}
+	modifier = {
+	}
+	can_end = {
+		NOT = {
+			has_variable = dbo_disaster_fratricide_forced
+		}
+	}
+	on_start = {
+		dbo_disaster_fratricide_set_regent = yes
+		dbo_disaster_fratricide_collect_rivals = yes
+	}
+	on_end = {
+	}
+}

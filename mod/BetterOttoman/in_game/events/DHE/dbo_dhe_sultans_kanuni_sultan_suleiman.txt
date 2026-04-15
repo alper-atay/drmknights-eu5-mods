@@ -220,7 +220,7 @@ dbo_dhe_sultans_kanuni_sultan_suleiman.21 = {
 			remove_traits_of_category = general
 			add_trait = trait:craven
 			add_trait = trait:cruel
-			add_trait = trait:dbo_cursed
+			add_trait = trait:dbo_ruler_trait_cursed
 		}
 		custom_tooltip = {
 			text = dbo_history_kanuni_sultan_suleiman_every_pop_lose_satisfaction_tt
@@ -271,7 +271,7 @@ dbo_dhe_sultans_kanuni_sultan_suleiman.31 = {
 		historical_option = yes
 		ruler = {
 			dbo_scaling_nerf_character_abilities = yes
-			add_trait = trait:dbo_cursed
+			add_trait = trait:dbo_ruler_trait_cursed
 		}
 		custom_tooltip = {
 			text = dbo_history_kanuni_sultan_suleiman_every_pop_lose_satisfaction_tt

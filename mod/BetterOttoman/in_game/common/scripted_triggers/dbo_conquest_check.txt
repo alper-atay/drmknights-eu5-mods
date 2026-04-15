@@ -265,5 +265,6 @@ dbo_conquest_new_homeland_check = {
 		own_entire_province = province_definition:raqqa_province
 		own_entire_province = province_definition:mosul_province
 		own_entire_province = province_definition:safhat_jibal_province
+		own_entire_province = province_definition:garmian_province
 	}
 }

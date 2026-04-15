@@ -79,6 +79,12 @@
 					province_definition = province_definition:raqqa_province
 					province_definition = province_definition:mosul_province
 					province_definition = province_definition:safhat_jibal_province
+					province_definition = province_definition:garmian_province
+				}
+				any_location_in_province = {
+					OR = {
+						is_neighbor_of = scope:actor
+					}
 				}
 			}
 			NOT = {

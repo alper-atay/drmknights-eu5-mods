@@ -12,7 +12,7 @@
 	}
 }
 
-dbo_cursed = {
+dbo_ruler_trait_cursed = {
 	category = ruler
 	flavor = personality
 	allow = {

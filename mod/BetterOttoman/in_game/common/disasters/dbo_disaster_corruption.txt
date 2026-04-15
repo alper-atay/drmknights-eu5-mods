@@ -1,15 +1,13 @@
 ﻿dbo_disaster_corruption = {
 	monthly_spawn_chance = monthly_spawn_chance_unique
 	can_start = {
-		government_type = government_type:monarchy
-		tag = TUR
-		has_regent = no
+		has_or_had_tag = TUR
 		trigger_if = {
 			limit = {
 				has_ruler = yes
 			}
 			ruler = {
-				has_trait = dbo_cursed
+				has_trait = dbo_ruler_trait_cursed
 			}
 		}
 	}
@@ -31,7 +29,7 @@
 			}
 			NOT = {
 				ruler = {
-					has_trait = dbo_cursed
+					has_trait = dbo_ruler_trait_cursed
 				}
 			}
 		}
