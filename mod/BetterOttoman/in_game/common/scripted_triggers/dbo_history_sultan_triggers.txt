@@ -1,0 +1,2 @@
+﻿dbo_history_sultan_yildirim_sultan_bayezid_trigger = {
+}

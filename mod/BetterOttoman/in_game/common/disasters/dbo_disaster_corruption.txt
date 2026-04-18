@@ -2,6 +2,7 @@
 	monthly_spawn_chance = monthly_spawn_chance_unique
 	can_start = {
 		has_or_had_tag = TUR
+		has_ruler = yes
 		trigger_if = {
 			limit = {
 				has_ruler = yes
