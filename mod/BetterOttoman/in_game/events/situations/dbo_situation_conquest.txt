@@ -11,7 +11,7 @@ dbo_situation_conquest.1 = {
 			text = dbo_situation_conquest_every_owned_location_add_ottoman_miracle_tt
 			every_owned_location = {
 				add_location_modifier = {
-					modifier = dbo_ottoman_miracle
+					modifier = dbo_location_modifier_miracle
 					years = 40
 					mode = replace
 				}

@@ -1,4 +1,4 @@
-﻿dbo_ottoman_miracle = {
+﻿dbo_location_modifier_miracle = {
 	game_data = {
 		category = location
 	}

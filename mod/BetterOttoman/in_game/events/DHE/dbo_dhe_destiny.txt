@@ -53,7 +53,7 @@ dbo_dhe_destiny.102 = {
 			max = 5
 		}
 		add_country_modifier = {
-			modifier = dbo_country_centralization_politics
+			modifier = dbo_country_modifier_centralization_politics
 			years = 20
 			mode = replace
 		}

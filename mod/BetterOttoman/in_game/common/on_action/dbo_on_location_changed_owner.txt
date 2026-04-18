@@ -36,7 +36,7 @@ dbo_on_conquer_any_location = {
 			}
 		}
 		add_location_modifier = {
-			modifier = dbo_ottoman_miracle
+			modifier = dbo_location_modifier_miracle
 			years = 40
 			mode = replace
 		}
@@ -96,9 +96,9 @@ dbo_on_lose_any_location = {
 	effect = {
 		if = {
 			limit = {
-				has_location_modifier = dbo_ottoman_miracle
+				has_location_modifier = dbo_location_modifier_miracle
 			}
-			remove_location_modifier = dbo_ottoman_miracle
+			remove_location_modifier = dbo_location_modifier_miracle
 		}
 	}
 }

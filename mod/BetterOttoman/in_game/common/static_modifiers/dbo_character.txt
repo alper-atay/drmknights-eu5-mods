@@ -1,4 +1,4 @@
-﻿dbo_retired = {
+﻿dbo_character_modifier_retired = {
 	game_data = {
 		category = character
 	}

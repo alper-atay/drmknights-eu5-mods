@@ -394,7 +394,7 @@ dbo_dhe_sultans_yildirim_sultan_bayezid.21 = {
 			}
 		}
 		set_variable = {
-			name = dbo_ottoman_interregnum_end_year
+			name = dbo_country_modifier_interregnum_end_year
 			value = {
 				value = current_year
 				add = 10
@@ -418,10 +418,10 @@ dbo_dhe_sultans_yildirim_sultan_bayezid.22 = {
 	}
 	trigger = {
 		in_civil_war = no
-		has_variable = dbo_ottoman_interregnum_end_year
-		current_year > var:dbo_ottoman_interregnum_end_year
+		has_variable = dbo_country_modifier_interregnum_end_year
+		current_year > var:dbo_country_modifier_interregnum_end_year
 		NOT = {
-			has_country_modifier = dbo_ottoman_interregnum
+			has_country_modifier = dbo_country_modifier_interregnum
 		}
 	}
 	option = {
@@ -429,7 +429,7 @@ dbo_dhe_sultans_yildirim_sultan_bayezid.22 = {
 		historical_option = yes
 		dbo_event_severe_bonus = yes
 		add_country_modifier = {
-			modifier = dbo_ottoman_interregnum_recovery
+			modifier = dbo_country_modifier_interregnum_recovery
 			years = 11
 			mode = add_and_extend
 		}

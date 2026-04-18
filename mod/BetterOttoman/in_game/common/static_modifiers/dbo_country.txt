@@ -1,4 +1,4 @@
-﻿dbo_ottoman_interregnum = {
+﻿dbo_country_modifier_interregnum = {
 	game_data = {
 		category = country
 	}
@@ -11,7 +11,7 @@
 	pop_leave_rebels_threshold = 0.05
 }
 
-dbo_ottoman_interregnum_recovery = {
+dbo_country_modifier_interregnum_recovery = {
 	game_data = {
 		category = country
 	}
@@ -23,7 +23,7 @@ dbo_ottoman_interregnum_recovery = {
 	pop_leave_rebels_threshold = -0.05
 }
 
-dbo_ottoman_golden_age_of_science = {
+dbo_country_modifier_golden_age_of_science = {
 	game_data = {
 		category = country
 	}
@@ -32,14 +32,14 @@ dbo_ottoman_golden_age_of_science = {
 	global_monthly_literacy = 0.01
 }
 
-dbo_ottoman_wisdom_from_the_east = {
+dbo_country_modifier_wisdom_from_the_east = {
 	game_data = {
 		category = country
 	}
 	research_speed = 0.1
 }
 
-dbo_country_centralization_politics = {
+dbo_country_modifier_centralization_politics = {
 	game_data = {
 		category = country
 	}

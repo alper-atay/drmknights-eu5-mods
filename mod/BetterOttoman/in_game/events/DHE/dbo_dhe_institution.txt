@@ -55,7 +55,7 @@ dbo_dhe_institution.12 = {
 	option = {
 		name = dbo_dhe_institution.12.a
 		add_country_modifier = {
-			modifier = dbo_ottoman_golden_age_of_science
+			modifier = dbo_country_modifier_golden_age_of_science
 			years = 100
 			mode = replace
 		}
@@ -123,7 +123,7 @@ dbo_dhe_institution.22 = {
 	option = {
 		name = dbo_dhe_institution.22.a
 		add_country_modifier = {
-			modifier = dbo_ottoman_wisdom_from_the_east
+			modifier = dbo_country_modifier_wisdom_from_the_east
 			years = 50
 			mode = replace
 		}
