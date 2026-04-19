@@ -1,0 +1,38 @@
+﻿l_turkish:
+# dbo_yildirim_sultan_bayezid
+# dbo_history_yildirim_sultan_bayezid_born
+ dbo_dhe_sultans_yildirim_sultan_bayezid.1.title: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName]\n$dbo_history_common_born$"
+ dbo_dhe_sultans_yildirim_sultan_bayezid.1.desc: "Devlet-i Aliyye'nin gelecekteki [Concept('ruler', 'Hükümdarı')|e] [GetCharacter('dbo_yildirim_sultan_bayezid').GetName] dünyaya geldi."
+ dbo_dhe_sultans_yildirim_sultan_bayezid.1.a: "Bir Yıldırım Çaktı!"
+# dbo_history_yildirim_sultan_bayezid_rise
+ dbo_dhe_sultans_yildirim_sultan_bayezid.2.title: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName]\n$dbo_history_common_rise$"
+ dbo_dhe_sultans_yildirim_sultan_bayezid.2.desc: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName], [GetCharacter('dbo_yildirim_sultan_bayezid').GetAgeInYears] yaşına geldi ve Devlet-i Aliyye'nin başına geçecektir!"
+ dbo_dhe_sultans_yildirim_sultan_bayezid.2.a: "$dbo_history_common_rise_option$"
+# dbo_history_yildirim_sultan_bayezid_ascend
+ dbo_dhe_sultans_yildirim_sultan_bayezid.3.title: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName]\n$dbo_history_common_ascend$"
+ dbo_dhe_sultans_yildirim_sultan_bayezid.3.desc: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName], [GetCharacter('dbo_yildirim_sultan_bayezid').GetAgeInYears] yaşına geldi ve Devlet-i Aliyye'nin başına geçti!"
+ dbo_dhe_sultans_yildirim_sultan_bayezid.3.a: "$dbo_history_common_ascend_option$"
+# dbo_history_yildirim_sultan_bayezid_defeated_by_timur
+ dbo_dhe_sultans_yildirim_sultan_bayezid.11.title: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName]\nKâbusu"
+ dbo_dhe_sultans_yildirim_sultan_bayezid.11.desc: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName], rüyasında Timur tarafından esir alınacağını görmüştü. Bu rüya, onun gelecekteki zorluklara karşı hazırlıklı olmasını sağladı."
+ dbo_dhe_sultans_yildirim_sultan_bayezid.11.a: "Kâbuslar bazen gerçeğe dönüşür."
+# dbo_history_yildirim_sultan_bayezid_nightmare
+ dbo_dhe_sultans_yildirim_sultan_bayezid.12.title: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName]\nKâbusunu Yaşıyor"
+ dbo_dhe_sultans_yildirim_sultan_bayezid.12.desc: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName], kâbusunda öleceğini görmüştü. Bu kâbus, onun gelecekteki zorluklara karşı hazırlıklı olmasını sağladı."
+ dbo_dhe_sultans_yildirim_sultan_bayezid.12.a: "Kâbuslar bazen gerçeğe dönüşür."
+# dbo_history_yildirim_sultan_bayezid_die
+ dbo_dhe_sultans_yildirim_sultan_bayezid.13.title: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName]\n$dbo_history_common_die$"
+ dbo_dhe_sultans_yildirim_sultan_bayezid.13.desc: "Âlimler çaresizlik içinde deva aradı ama [GetCharacter('dbo_yildirim_sultan_bayezid').GetName] ölüm döşeğinde gözlerini yumdu."
+ dbo_dhe_sultans_yildirim_sultan_bayezid.13.a: "$dbo_history_common_die_option$"
+ # dbo_history_ottoman_interregnum_begin
+ dbo_dhe_sultans_yildirim_sultan_bayezid.21.title: "Fetret Devri"    
+ dbo_dhe_sultans_yildirim_sultan_bayezid.21.desc: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName] ölümünün ardından, Devlet-i Aliyye karanlık bir döneme girmiştir. [Concept('heirs', 'Veliahtlar')|e] arasında taht kavgası başlamış, devlet içinde kaos ve belirsizlik hüküm sürmüştür. Bu on bir yıllık dönem, Devlet-i Aliyye tarihinin en kritik dönemidir."
+ dbo_dhe_sultans_yildirim_sultan_bayezid.21.a: "Devlet-i Aliyye Toparlanacak!"
+ dbo_history_ottoman_interregnum_tt: "Tüm [rebel|e] [pops|e] [ShowNamedValue('pop_satisfaction_severe_penalty')|+=2%] [pop_satisfaction|e] kaybeder."
+ dbo_history_ottoman_interregnum_rebel_progress_gain_tt: "Tüm [rebels|e] [ShowNamedValue('rebel_progress_severe_penalty')|-=2%] ilerler."
+# dbo_history_ottoman_interregnum_end
+ dbo_dhe_sultans_yildirim_sultan_bayezid.22.title: "Fetret Devri Sona Erdi"
+ dbo_dhe_sultans_yildirim_sultan_bayezid.22.desc: "On bir yıl süren kaos, kardeş kavgası ve belirsizliğin ardından, [ROOT.GetCountry.GetGovernment.GetRuler.GetName] rakiplerini bertaraf ederek Devlet-i Aliyye tahtına tek başına sahip oldu. Devlet-i Aliyye, parçalanmanın eşiğinden dönerek yeniden birleşti ve sarsılan otorite yeniden tesis edildi."
+ dbo_dhe_sultans_yildirim_sultan_bayezid.22.a: "Devlet-i Aliyye Tek Vücut!"
+ dbo_history_ottoman_interregnum_end_tt: "Tüm [pops|e] [ShowNamedValue('pop_satisfaction_severe_bonus')|+=2%] [pop_satisfaction|e] kazanır."
+ dbo_history_ottoman_interregnum_end_rebel_progress_lose_tt: "Tüm [rebels|e] yarı yarıya ilerleme kaybeder."

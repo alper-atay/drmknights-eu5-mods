@@ -1,0 +1,18 @@
+﻿l_turkish:
+# dbo_yavuz_sultan_selim
+# dbo_yavuz_sultan_selim_born
+ dbo_dhe_sultans_yavuz_sultan_selim.1.title: "[GetCharacter('dbo_yavuz_sultan_selim').GetName]'in\n$dbo_history_common_born$"
+ dbo_dhe_sultans_yavuz_sultan_selim.1.desc: "1470 yılında Amasya'da, Devlet-i Aliyye tarihinin en sert ve kararlı hükümdarlarından biri olacak olan Şehzade Selim dünyaya geldi. Babası II. Bayezid'in döneminde yetişen Selim, genç yaşlarından itibaren askeri yeteneği ve devlet yönetimine olan ilgisiyle dikkatleri üzerine çekti."
+ dbo_dhe_sultans_yavuz_sultan_selim.1.a: "Yavuz Bir Aslan Doğdu!"
+# dbo_yavuz_sultan_selim_rise
+ dbo_dhe_sultans_yavuz_sultan_selim.2.title: "[GetCharacter('dbo_yavuz_sultan_selim').GetName]'in Yükselişi"
+ dbo_dhe_sultans_yavuz_sultan_selim.2.desc: "[GetCharacter('dbo_yavuz_sultan_selim').GetName] büyüyor ve devlet idaresindeki keskin zekası ile askeri dehası tüm Devlet-i Aliyye mülkünde yankılanmaya başlıyor. Şehzade Selim'in kararlılığı, dostun güveni düşmanın ise korkusu haline geliyor!"
+ dbo_dhe_sultans_yavuz_sultan_selim.2.a: "$dbo_history_common_rise_option$"
+# dbo_yavuz_sultan_selim_ascend
+ dbo_dhe_sultans_yavuz_sultan_selim.3.title: "[GetCharacter('dbo_yavuz_sultan_selim').GetName] Tahta Çıktı"
+ dbo_dhe_sultans_yavuz_sultan_selim.3.desc: "1512 yılında, Yeniçerilerin tam desteğini alan [GetCharacter('dbo_yavuz_sultan_selim').GetName], babası II. Bayezid'in feragatiyle Devlet-i Aliyye tahtına oturdu. 'Yavuz' lakabıyla anılacak olan yeni padişah, devletin bekası için en sert kararları almaktan çekinmeyeceğini ve rotasını doğrudan Doğu'daki tehditlere çevireceğini tüm dünyaya ilan etti."
+ dbo_dhe_sultans_yavuz_sultan_selim.3.a: "$dbo_history_common_ascend_option$"
+# dbo_history_yavuz_sultan_selim_die
+ dbo_dhe_sultans_yavuz_sultan_selim.11.title: "[GetCharacter('dbo_yavuz_sultan_selim').GetName]\n$dbo_history_common_die$"
+ dbo_dhe_sultans_yavuz_sultan_selim.11.desc: "Sekiz yıla seksen yıllık iş sığdıran [GetCharacter('dbo_yavuz_sultan_selim').GetName], Batı'ya yapacağı büyük seferin hazırlıkları içindeyken 'Sirpençe' adı verilen bir çıban yüzünden hayata gözlerini yumdu."
+ dbo_dhe_sultans_yavuz_sultan_selim.11.a: "$dbo_history_common_die_option$"
