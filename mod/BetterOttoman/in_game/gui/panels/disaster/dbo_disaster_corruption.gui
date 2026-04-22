@@ -1,6 +1,6 @@
 disaster_panel = {
-	blockoverride "disaster_subheader"{}
-	blockoverride "main_image"{}
+	blockoverride "disaster_subheader" {}
+	blockoverride "main_image" {}
     blockoverride "disaster_secondary_tab" {
 		margin_top = 10
 		spacing = 5
@@ -31,7 +31,7 @@ disaster_panel = {
 		}
 	}
 	
-	blockoverride "main_content"{
+	blockoverride "main_content" {
 		horizontal_scroll_card = {
 			blockoverride "text_top" {
 				text = "[DisasterView.GetDisaster.GetOwner.GetHighestProgressRebel.GetNameWithNoTooltip]"
