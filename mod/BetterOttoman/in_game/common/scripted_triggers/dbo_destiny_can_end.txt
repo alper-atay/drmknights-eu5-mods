@@ -72,6 +72,7 @@ dbo_destiny_can_end = {
 	dbo_destiny_talented_youngest_heir_selection_can_end = yes
 	dbo_destiny_cultural_capital_constantinople_can_end = yes
 	dbo_destiny_mentor_lala_can_end = yes
+	dbo_destiny_devshirme_system_can_end = yes
 	dbo_destiny_legacy_of_seljuks_can_end = yes
 	dbo_destiny_piri_reis_can_end = yes
 	dbo_destiny_ottoman_empire_can_end = yes
