@@ -11,8 +11,9 @@
 	}
 }
 
-dbo_destiny_war_slave_tax_and_devshirme_system_check = {
+dbo_destiny_devshirme_system_check = {
 	has_slavery = yes
+	has_reform = government_reform:enderun_interior_service
 	OR = {
 		has_policy = ottoman_war_slave_tax
 		has_policy = devshirme_system_policy

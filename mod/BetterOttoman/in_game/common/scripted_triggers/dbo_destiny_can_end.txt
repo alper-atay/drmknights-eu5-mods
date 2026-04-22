@@ -26,6 +26,13 @@ dbo_destiny_legacy_of_seljuks_can_end = {
 	}
 }
 
+dbo_destiny_devshirme_system_can_end = {
+	custom_tooltip = {
+		text = dbo_destiny_devshirme_system_can_end_tt
+		dbo_destiny_devshirme_system_check = yes
+	}
+}
+
 dbo_destiny_piri_reis_can_end = {
 	custom_tooltip = {
 		text = dbo_destiny_piri_reis_can_end_tt

@@ -22,11 +22,11 @@ dbo_dhe_destiny.101 = {
 	}
 }
 
-# dbo_destiny_war_slave_tax_and_devshirme_system
+# dbo_destiny_devshirme_system
 dbo_dhe_destiny.102 = {
 	title = dbo_dhe_destiny.102.title
 	desc = dbo_dhe_destiny.102.desc
-	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_war_slave_tax_and_devshirme_system.dds"
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_devshirme_system.dds"
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TUR
@@ -35,7 +35,7 @@ dbo_dhe_destiny.102 = {
 		monthly_chance = 100
 	}
 	trigger = {
-		dbo_destiny_war_slave_tax_and_devshirme_system_check = yes
+		dbo_destiny_devshirme_system_check = yes
 	}
 	option = {
 		name = dbo_dhe_destiny.102.a
@@ -54,7 +54,7 @@ dbo_dhe_destiny.102 = {
 		}
 		add_country_modifier = {
 			modifier = dbo_country_modifier_centralization_politics
-			years = 20
+			years = 40
 			mode = replace
 		}
 		dbo_event_severe_bonus = yes

@@ -3,7 +3,8 @@
  dbo_dhe_destiny.101.title: "[ShowHeirSelectionName('dbo_destiny_talented_youngest_heir_selection')]\n[Concept('heir_selection', 'Veliaht Seçimi')|e]"
  dbo_dhe_destiny.101.desc: "$dbo_destiny_talented_youngest_heir_selection_desc$"
  dbo_dhe_destiny.101.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
- # dbo_destiny_war_slave_tax_and_devshirme_system_policy
+ # dbo_destiny_devshirme_system
+ dbo_destiny_devshirme_system_can_end_tt: "[ShowModifier('dbo_country_modifier_centralization_politics')];\n[ShowTriggerConditionsForScope('dbo_destiny_devshirme_system_check', SituationView.GetPlayer.MakeScope.Self)]"
  dbo_dhe_destiny.102.title: "[ShowLawName('recruitment_law')]\n[Concept('law', 'Kanunu')|e]"
  dbo_dhe_destiny.102.desc: "Devlet-i Aliyye'nin insan gücü ve bürokrasi yönetiminin temel taşıdır. Balkanlar ve Anadolu'daki gayrimüslim tebaanın yetenekli çocuklarının seçilerek devlet hizmetine alınması esasına dayanır. Sıkı bir eğitimden geçen bu gençler; askerlik yeteneklerine göre Yeniçeri Ocağı'na, idari zekalarına göre ise Enderun Mektebi'ne gönderilerek devletin en üst düzey yönetici kadrolarını oluştururlar. Bu sistem, hanedana sadık, toprak sahibi soylulardan bağımsız bir yönetici sınıfı yaratarak merkezi otoriteyi güçlendirir."
  dbo_dhe_destiny.102.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
