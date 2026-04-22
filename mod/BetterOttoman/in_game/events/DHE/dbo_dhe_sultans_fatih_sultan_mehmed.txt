@@ -82,7 +82,7 @@ dbo_dhe_sultans_fatih_sultan_mehmed.1 = {
 			culture = root.culture
 			religion = root.religion
 			fertility = 100
-			add_trait = trait:dbo_prince
+			add_trait = trait:dbo_child_trait_prince
 			script = dbo_fatih_sultan_mehmed
 		}
 		character:dbo_fatih_sultan_mehmed = {
@@ -123,7 +123,7 @@ dbo_dhe_sultans_fatih_sultan_mehmed.2 = {
 			hidden_effect = {
 				remove_traits_of_category = ruler
 			}
-			add_trait = trait:dbo_marshal_sovereign
+			add_trait = trait:dbo_ruler_trait_marshal_sovereign
 			add_trait = trait:free_thinker
 			add_trait = trait:military_theorist
 			dbo_scaling_buff_character_abilities = yes
@@ -148,7 +148,7 @@ dbo_dhe_sultans_fatih_sultan_mehmed.3 = {
 	trigger = {
 		exists = character:dbo_fatih_sultan_mehmed
 		character:dbo_fatih_sultan_mehmed = {
-			has_trait = dbo_marshal_sovereign
+			has_trait = dbo_ruler_trait_marshal_sovereign
 			is_adult = yes
 		}
 		OR = {
@@ -436,7 +436,7 @@ dbo_dhe_sultans_fatih_sultan_mehmed.31 = {
 				trait_category = artist
 				artist = artist_type:scientist
 				artist_skill = 0.9
-				add_trait = trait:dbo_genius_artist
+				add_trait = trait:dbo_artist_trait_genius
 				add_character_modifier = {
 					modifier = healthy_character
 					years = -1

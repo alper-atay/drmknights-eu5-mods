@@ -121,7 +121,7 @@ dbo_dhe_sultans_yildirim_sultan_bayezid.1 = {
 			culture = root.culture
 			religion = root.religion
 			fertility = 100
-			add_trait = trait:dbo_prince
+			add_trait = trait:dbo_child_trait_prince
 			script = dbo_yildirim_sultan_bayezid
 		}
 		character:dbo_yildirim_sultan_bayezid = {
@@ -162,7 +162,7 @@ dbo_dhe_sultans_yildirim_sultan_bayezid.2 = {
 			hidden_effect = {
 				remove_traits_of_category = ruler
 			}
-			add_trait = trait:dbo_marshal_sovereign
+			add_trait = trait:dbo_ruler_trait_marshal_sovereign
 			add_trait = trait:conqueror
 			add_trait = trait:hussar_commander
 			dbo_scaling_buff_character_abilities = yes
@@ -187,7 +187,7 @@ dbo_dhe_sultans_yildirim_sultan_bayezid.3 = {
 	trigger = {
 		exists = character:dbo_yildirim_sultan_bayezid
 		character:dbo_yildirim_sultan_bayezid = {
-			has_trait = dbo_marshal_sovereign
+			has_trait = dbo_ruler_trait_marshal_sovereign
 			is_adult = yes
 		}
 		OR = {

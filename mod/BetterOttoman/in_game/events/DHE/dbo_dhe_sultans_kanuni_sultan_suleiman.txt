@@ -55,7 +55,7 @@ dbo_dhe_sultans_kanuni_sultan_suleiman.1 = {
 			culture = root.culture
 			religion = root.religion
 			fertility = 100
-			add_trait = trait:dbo_prince
+			add_trait = trait:dbo_child_trait_prince
 			script = dbo_kanuni_sultan_suleiman
 		}
 		character:dbo_kanuni_sultan_suleiman = {
@@ -97,7 +97,7 @@ dbo_dhe_sultans_kanuni_sultan_suleiman.2 = {
 				remove_traits_of_category = ruler
 				remove_traits_of_category = general
 			}
-			add_trait = trait:dbo_marshal_sovereign
+			add_trait = trait:dbo_ruler_trait_marshal_sovereign
 			add_trait = trait:lawgiver
 			add_trait = trait:strategist
 			dbo_scaling_buff_character_abilities = yes
@@ -127,7 +127,7 @@ dbo_dhe_sultans_kanuni_sultan_suleiman.3 = {
 		exists = character:dbo_kanuni_sultan_suleiman
 		character:dbo_kanuni_sultan_suleiman = {
 			OR = {
-				has_trait = dbo_marshal_sovereign
+				has_trait = dbo_ruler_trait_marshal_sovereign
 				is_ruler = yes
 			}
 		}

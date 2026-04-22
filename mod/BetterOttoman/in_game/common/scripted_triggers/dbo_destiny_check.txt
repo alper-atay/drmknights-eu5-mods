@@ -118,7 +118,7 @@ dbo_destiny_nobles_privilege_pashas_check = {
 		has_reform = government_reform:dbo_destiny_ottoman_empire
 		NOT = {
 			ruler = {
-				has_trait = dbo_marshal_sovereign
+				has_trait = dbo_ruler_trait_marshal_sovereign
 			}
 		}
 	}

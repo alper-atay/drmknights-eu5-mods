@@ -5,14 +5,14 @@
  dbo_dhe_conquest.11.desc: "$dbo_conquest_anatolian_turks_claim_desc$"
  dbo_dhe_conquest.11.a: "Hedef $dbo_conquest_slogan_anatolian_turks$!"
  # dbo_conquest_anatolian_turks_stamp
- dbo_dhe_conquest.12.title: "[ShowPolicyName('dbo_conquest_stamp_anatolian_turks_policy')] [Concept('policy', 'Politikası')|e]"
+ dbo_dhe_conquest.12.title: "[ShowPolicyName('dbo_conquest_stamp_anatolian_turks_policy')]\n[Concept('policy', 'Politikası')|e]"
  dbo_dhe_conquest.12.desc: "$dbo_conquest_stamp_anatolian_turks_policy_desc$"
 # dbo_conquest_rumelia_challenged 
  dbo_dhe_conquest.21.title: "$dbo_conquest_rumelia$"
  dbo_dhe_conquest.21.desc: "$dbo_conquest_rumelia_claim_desc$"
  dbo_dhe_conquest.21.a: "Hedef $dbo_conquest_slogan_rumelia$!"
  # dbo_conquest_rumelia_stamp
- dbo_dhe_conquest.22.title: "[ShowPolicyName('dbo_conquest_stamp_rumelia_policy')] [Concept('policy', 'Politikası')|e]"
+ dbo_dhe_conquest.22.title: "[ShowPolicyName('dbo_conquest_stamp_rumelia_policy')]\n[Concept('policy', 'Politikası')|e]"
  dbo_dhe_conquest.22.desc: "$dbo_conquest_stamp_rumelia_policy_desc$"
  # dbo_conquest_fertile_crescent_challenged
  dbo_dhe_conquest.31.title: "$dbo_conquest_fertile_crescent$"

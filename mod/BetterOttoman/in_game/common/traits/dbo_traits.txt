@@ -1,4 +1,4 @@
-﻿dbo_prince = {
+﻿dbo_child_trait_prince = {
 	category = child
 	allow = {
 		always = no
@@ -8,7 +8,7 @@
 	}
 }
 
-dbo_genius_artist = {
+dbo_artist_trait_genius = {
 	category = artist
 	allow = {
 		always = no
@@ -20,5 +20,6 @@ dbo_genius_artist = {
 		work_of_art_quality_modifier = 0.25
 		artist_skill_level_gain = 0.25
 		artist_monthly_start_chance = 0.25
+		character_life_expectancy = 20
 	}
 }

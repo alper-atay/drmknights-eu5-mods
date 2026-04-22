@@ -1,4 +1,4 @@
-﻿dbo_marshal_sovereign = {
+﻿dbo_ruler_trait_marshal_sovereign = {
 	category = ruler
 	flavor = personality
 	allow = {
