@@ -1,14 +1,4 @@
-﻿dbo_child_trait_prince = {
-	category = child
-	allow = {
-		always = no
-	}
-	modifier = {
-		character_child_education = 2
-	}
-}
-
-dbo_artist_trait_genius = {
+﻿dbo_artist_trait_genius = {
 	category = artist
 	allow = {
 		always = no
