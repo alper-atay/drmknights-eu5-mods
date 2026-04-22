@@ -57,9 +57,9 @@ dbo_destiny_legacy_of_seljuks = {
 		government_reform_slots = 1
 		global_crown_estate_power = 0.1
 		government_size = 1
-		monthly_legitimacy = 0.1
-		monthly_prestige = 0.1
-		stability_investment = 0.1
+		monthly_legitimacy = 0.05
+		monthly_prestige = monthly_prestige_weak_bonus
+		stability_investment = tiny_stability_investment
 		monthly_towards_centralization = societal_value_monthly_move
 	}
 }
