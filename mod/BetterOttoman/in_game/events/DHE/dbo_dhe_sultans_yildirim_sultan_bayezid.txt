@@ -373,10 +373,10 @@ dbo_dhe_sultans_yildirim_sultan_bayezid.21 = {
 	option = {
 		name = dbo_dhe_sultans_yildirim_sultan_bayezid.21.a
 		historical_option = yes
-		kill_character = {
-			target = ruler
-			reason = execution
-			killer = heir
+		add_country_modifier = {
+			modifier = dbo_country_modifier_interregnum
+			years = 11
+			mode = add_and_extend
 		}
 		custom_tooltip = {
 			text = dbo_history_ottoman_interregnum_rebel_progress_gain_tt
