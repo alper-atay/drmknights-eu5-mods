@@ -25,7 +25,7 @@
  dbo_dhe_sultans_yildirim_sultan_bayezid.13.desc: "Âlimler çaresizlik içinde deva aradı ama [GetCharacter('dbo_yildirim_sultan_bayezid').GetName] ölüm döşeğinde gözlerini yumdu."
  dbo_dhe_sultans_yildirim_sultan_bayezid.13.a: "$dbo_history_common_die_option$"
  # dbo_history_ottoman_interregnum_begin
- dbo_dhe_sultans_yildirim_sultan_bayezid.21.title: "Fetret Devri"    
+ dbo_dhe_sultans_yildirim_sultan_bayezid.21.title: "Fetret Devri"
  dbo_dhe_sultans_yildirim_sultan_bayezid.21.desc: "[GetCharacter('dbo_yildirim_sultan_bayezid').GetName] ölümünün ardından, Devlet-i Aliyye karanlık bir döneme girmiştir. [Concept('heirs', 'Veliahtlar')|e] arasında taht kavgası başlamış, devlet içinde kaos ve belirsizlik hüküm sürmüştür. Bu on bir yıllık dönem, Devlet-i Aliyye tarihinin en kritik dönemidir."
  dbo_dhe_sultans_yildirim_sultan_bayezid.21.a: "Devlet-i Aliyye Toparlanacak!"
  dbo_history_ottoman_interregnum_tt: "Tüm [rebel|e] [pops|e] [ShowNamedValue('pop_satisfaction_severe_penalty')|+=2%] [pop_satisfaction|e] kaybeder."

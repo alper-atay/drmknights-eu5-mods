@@ -1,14 +1,14 @@
 ﻿l_turkish:
 # dbo_kanuni_sultan_suleiman born
- dbo_dhe_sultans_kanuni_sultan_suleiman.1.title: "[GetCharacter('dbo_kanuni_sultan_suleiman').GetName]'in\n$dbo_history_common_born$"
+ dbo_dhe_sultans_kanuni_sultan_suleiman.1.title: "[GetCharacter('dbo_kanuni_sultan_suleiman').GetName]\n$dbo_history_common_born$"
  dbo_dhe_sultans_kanuni_sultan_suleiman.1.desc: "1494 yılında Trabzon'da, cihanın 'Muhteşem' olarak tanıyacağı, adaletiyle 'Kanuni' unvanını alacak olan Şehzade Süleyman dünyaya geldi. Babası [GetCharacter('dbo_yavuz_sultan_selim').GetName]'in sert ve disiplinli yönetiminde yetişen Süleyman, Devlet-i Aliyye'nın en parlak döneminin mimarı olacaktır."
  dbo_dhe_sultans_kanuni_sultan_suleiman.1.a: "Cihan'a Muhteşem Bir Yıldız Doğdu!"
 # dbo_kanuni_sultan_suleiman rise
- dbo_dhe_sultans_kanuni_sultan_suleiman.2.title: "[GetCharacter('dbo_kanuni_sultan_suleiman').GetName]'in $dbo_history_common_rise$"
+ dbo_dhe_sultans_kanuni_sultan_suleiman.2.title: "[GetCharacter('dbo_kanuni_sultan_suleiman').GetName]\n$dbo_history_common_rise$"
  dbo_dhe_sultans_kanuni_sultan_suleiman.2.desc: "[GetCharacter('dbo_kanuni_sultan_suleiman').GetName], [GetCharacter('dbo_kanuni_sultan_suleiman').GetAgeInYears] yaşına geldi ve artık Devlet-i Aliyye'nin başına geçecektir! Hiç bir güç engelleyemez."
  dbo_dhe_sultans_kanuni_sultan_suleiman.2.a: "$dbo_history_common_rise_option$"
 # dbo_kanuni_sultan_suleiman ascend
- dbo_dhe_sultans_kanuni_sultan_suleiman.3.title: "[GetCharacter('dbo_kanuni_sultan_suleiman').GetName]'in\n$dbo_history_common_ascend$"
+ dbo_dhe_sultans_kanuni_sultan_suleiman.3.title: "[GetCharacter('dbo_kanuni_sultan_suleiman').GetName]\n$dbo_history_common_ascend$"
  dbo_dhe_sultans_kanuni_sultan_suleiman.3.desc: "[GetCharacter('dbo_kanuni_sultan_suleiman').GetName], [GetCharacter('dbo_kanuni_sultan_suleiman').GetAgeInYears] yaşına geldi ve artık Devlet-i Aliyye'nin başına geçecektir! Hiç bir güç engelleyemez."
  dbo_dhe_sultans_kanuni_sultan_suleiman.3.a: "$dbo_history_common_ascend_option$"
 # dbo_history_kanuni_sultan_suleiman lawcode_of_suleiman
