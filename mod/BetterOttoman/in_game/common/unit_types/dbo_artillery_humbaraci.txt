@@ -1,6 +1,5 @@
 ﻿dbo_a_age_2_renaissance_humbaraci = {
 	is_special = yes
-	light = yes
 	category = army_artillery
 	copy_from = a_age_2_renaissance_artillery
 	upgrades_to_only = dbo_a_age_3_discovery_humbaraci
@@ -17,7 +16,6 @@
 
 dbo_a_age_3_discovery_humbaraci = {
 	is_special = yes
-	light = yes
 	category = army_artillery
 	copy_from = a_age_3_discovery_artillery
 	upgrades_to_only = dbo_a_age_4_reformation_humbaraci
@@ -34,7 +32,6 @@ dbo_a_age_3_discovery_humbaraci = {
 
 dbo_a_age_4_reformation_humbaraci = {
 	is_special = yes
-	light = yes
 	category = army_artillery
 	copy_from = a_age_4_reformation_artillery
 	upgrades_to_only = dbo_a_age_5_absolutism_humbaraci
@@ -51,7 +48,6 @@ dbo_a_age_4_reformation_humbaraci = {
 
 dbo_a_age_5_absolutism_humbaraci = {
 	is_special = yes
-	light = yes
 	category = army_artillery
 	copy_from = a_age_5_absolutism_artillery
 	upgrades_to_only = dbo_a_age_6_revolutions_humbaraci
@@ -68,7 +64,6 @@ dbo_a_age_5_absolutism_humbaraci = {
 
 dbo_a_age_6_revolutions_humbaraci = {
 	is_special = yes
-	light = yes
 	category = army_artillery
 	copy_from = a_age_6_revolutions_artillery
 	upgrades_to_only = dbo_a_age_6_revolutions_humbaraci

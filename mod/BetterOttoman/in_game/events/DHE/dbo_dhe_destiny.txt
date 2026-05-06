@@ -110,6 +110,7 @@ dbo_dhe_destiny.104 = {
 	title = dbo_dhe_destiny.104.title
 	desc = dbo_dhe_destiny.104.desc
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_culus_payment.dds"
+	outcome = neutral
 	option = {
 		name = dbo_dhe_destiny.104.a
 		historical_option = yes
@@ -337,6 +338,7 @@ dbo_dhe_destiny.302 = {
 	title = dbo_dhe_destiny.302.title
 	desc = dbo_dhe_destiny.302.desc
 	image = "gfx/interface/illustrations/event/backgrounds/dbo_destiny_turkish_pashas_claim.dds"
+	outcome = neutral
 	trigger = {
 		has_variable = dbo_destiny_nobles_privilege_pashas_rejected
 	}

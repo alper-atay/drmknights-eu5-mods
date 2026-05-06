@@ -5,6 +5,7 @@ dbo_situation_conquest.1 = {
 	title = dbo_situation_conquest.1.title
 	desc = dbo_situation_conquest.1.desc
 	image = "gfx/interface/illustrations/situation/dbo_situation_conquest.dds"
+	outcome = neutral
 	option = {
 		name = dbo_situation_conquest.1.a
 		custom_tooltip = {
