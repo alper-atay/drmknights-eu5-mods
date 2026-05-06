@@ -1,6 +1,6 @@
 ﻿dbo_a_age_1_traditions_metehans_cavalry = {
 	is_special = yes
-	category = army_cavalry
+	category = army_light_cavalry
 	copy_from = a_age_1_traditions_light_cavalry
 	upgrades_to_only = dbo_a_age_2_renaissance_metehans_cavalry
 	buildable = yes
@@ -25,7 +25,7 @@
 
 dbo_a_age_2_renaissance_metehans_cavalry = {
 	is_special = yes
-	category = army_cavalry
+	category = army_light_cavalry
 	copy_from = a_age_2_renaissance_light_cavalry
 	upgrades_to_only = dbo_a_age_3_discovery_metehans_cavalry
 	buildable = yes
@@ -51,7 +51,7 @@ dbo_a_age_2_renaissance_metehans_cavalry = {
 
 dbo_a_age_3_discovery_metehans_cavalry = {
 	is_special = yes
-	category = army_cavalry
+	category = army_light_cavalry
 	copy_from = a_age_3_discovery_light_cavalry
 	upgrades_to_only = dbo_a_age_4_reformation_metehans_cavalry
 	buildable = yes
@@ -77,7 +77,7 @@ dbo_a_age_3_discovery_metehans_cavalry = {
 
 dbo_a_age_4_reformation_metehans_cavalry = {
 	is_special = yes
-	category = army_cavalry
+	category = army_light_cavalry
 	copy_from = a_age_4_reformation_light_cavalry
 	upgrades_to_only = dbo_a_age_5_absolutism_metehans_cavalry
 	buildable = yes
@@ -102,7 +102,7 @@ dbo_a_age_4_reformation_metehans_cavalry = {
 
 dbo_a_age_5_absolutism_metehans_cavalry = {
 	is_special = yes
-	category = army_cavalry
+	category = army_light_cavalry
 	copy_from = a_age_5_absolutism_light_cavalry
 	upgrades_to_only = dbo_a_age_6_revolutions_metehans_cavalry
 	buildable = yes
@@ -127,7 +127,7 @@ dbo_a_age_5_absolutism_metehans_cavalry = {
 
 dbo_a_age_6_revolutions_metehans_cavalry = {
 	is_special = yes
-	category = army_cavalry
+	category = army_light_cavalry
 	copy_from = a_age_6_revolutions_light_cavalry
 	upgrades_to_only = dbo_a_age_6_revolutions_metehans_cavalry
 	buildable = yes
