@@ -10,7 +10,7 @@
 		global_burghers_estate_power = 1
 		global_trade_center_power = 0.1
 		global_trade_protection_factor = 0.1
-		trade_efficiency = small_trade_efficiency_bonus
+		selling_efficiency = small_trade_efficiency_bonus
 		tax_income_efficiency = medium_tax_income_efficiency_bonus
 	}
 }

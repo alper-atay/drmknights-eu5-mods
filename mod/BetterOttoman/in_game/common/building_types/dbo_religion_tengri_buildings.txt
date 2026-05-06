@@ -8,6 +8,7 @@
 	rural_settlement = yes
 	town = yes
 	city = yes
+	megalopolis = yes
 	important_for_AI = yes
 	important_for_UI = yes
 	construction_demand = soldier_building_construction
@@ -46,6 +47,7 @@ dbo_ulu_otag = {
 	rural_settlement = no
 	town = no
 	city = yes
+	megalopolis = yes
 	expensive = yes
 	important_for_AI = yes
 	important_for_UI = yes

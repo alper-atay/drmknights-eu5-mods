@@ -8,6 +8,7 @@
 	rural_settlement = no
 	town = no
 	city = yes
+	megalopolis = yes
 	expensive = yes
 	important_for_AI = yes
 	important_for_UI = yes
@@ -50,6 +51,7 @@ dbo_topkapi_palace = {
 	employment_size = insane_noble_employment
 	category = government_category
 	city = yes
+	megalopolis = yes
 	expensive = yes
 	build_time = large_capital_build_time
 	location_potential = {
@@ -91,6 +93,7 @@ dbo_mevlana_dergahi = {
 	rural_settlement = no
 	town = no
 	city = yes
+	megalopolis = yes
 	expensive = yes
 	important_for_AI = yes
 	important_for_UI = yes
@@ -135,6 +138,7 @@ REPLACE:janissary_barracks = {
 	rural_settlement = no
 	town = no
 	city = yes
+	megalopolis = yes
 	expensive = yes
 	build_time = soldier_building
 	always_add_demands = yes
@@ -159,6 +163,7 @@ REPLACE:bey_fortress = {
 	employment_size = manpower_employment
 	category = defense_category
 	city = yes
+	megalopolis = yes
 	build_time = small_fort_building
 	location_potential = {
 		has_building = building_type:dbo_beylerbeyi
@@ -183,105 +188,113 @@ REPLACE:bey_fortress = {
 	on_built = {
 		if = {
 			limit = {
-				location = location:izmit
-				location.owner = {
-					NOT = {
-						has_variable = izmit_variable
-					}
+				situation:rise_of_the_ottomans = {
+					situation_is_active = yes
+					situation_has_ended = no
 				}
 			}
-			location.owner = {
-				trigger_event_non_silently = rise_of_the_ottomans.200
-				set_variable = izmit_variable
-			}
-		}
-		else_if = {
-			limit = {
-				location = location:bursa
-				location.owner = {
-					NOT = {
-						has_variable = bursa_variable
+			if = {
+				limit = {
+					location = location:izmit
+					location.owner = {
+						NOT = {
+							has_variable = izmit_variable
+						}
 					}
 				}
-			}
-			location.owner = {
-				trigger_event_non_silently = rise_of_the_ottomans.201
-				set_variable = bursa_variable
-			}
-		}
-		else_if = {
-			limit = {
-				location = location:konya
 				location.owner = {
-					NOT = {
-						has_variable = konya_variable
-					}
+					trigger_event_non_silently = rise_of_the_ottomans.200
+					set_variable = izmit_variable
 				}
 			}
-			location.owner = {
-				trigger_event_non_silently = rise_of_the_ottomans.202
-				set_variable = konya_variable
-			}
-		}
-		else_if = {
-			limit = {
-				location = location:ankara
-				location.owner = {
-					NOT = {
-						has_variable = ankara_variable
+			else_if = {
+				limit = {
+					location = location:bursa
+					location.owner = {
+						NOT = {
+							has_variable = bursa_variable
+						}
 					}
 				}
-			}
-			location.owner = {
-				trigger_event_non_silently = rise_of_the_ottomans.203
-				set_variable = ankara_variable
-			}
-		}
-		else_if = {
-			limit = {
-				location = location:kayseri
 				location.owner = {
-					NOT = {
-						has_variable = kayseri_variable
-					}
+					trigger_event_non_silently = rise_of_the_ottomans.201
+					set_variable = bursa_variable
 				}
 			}
-			location.owner = {
-				trigger_event_non_silently = rise_of_the_ottomans.204
-				set_variable = kayseri_variable
-			}
-		}
-		else_if = {
-			limit = {
-				location = location:sivas
-				location.owner = {
-					NOT = {
-						has_variable = sivas_variable
+			else_if = {
+				limit = {
+					location = location:konya
+					location.owner = {
+						NOT = {
+							has_variable = konya_variable
+						}
 					}
 				}
-			}
-			location.owner = {
-				trigger_event_non_silently = rise_of_the_ottomans.205
-				set_variable = sivas_variable
-			}
-		}
-		else_if = {
-			limit = {
-				location = location:smyrna
 				location.owner = {
-					NOT = {
-						has_variable = smyrna_variable
-					}
+					trigger_event_non_silently = rise_of_the_ottomans.202
+					set_variable = konya_variable
 				}
 			}
-			location.owner = {
-				trigger_event_non_silently = rise_of_the_ottomans.206
-				set_variable = smyrna_variable
+			else_if = {
+				limit = {
+					location = location:ankara
+					location.owner = {
+						NOT = {
+							has_variable = ankara_variable
+						}
+					}
+				}
+				location.owner = {
+					trigger_event_non_silently = rise_of_the_ottomans.203
+					set_variable = ankara_variable
+				}
 			}
-		}
-		else = {
-			location = {
-				trigger_event_non_silently = rise_of_the_ottomans.207
+			else_if = {
+				limit = {
+					location = location:kayseri
+					location.owner = {
+						NOT = {
+							has_variable = kayseri_variable
+						}
+					}
+				}
+				location.owner = {
+					trigger_event_non_silently = rise_of_the_ottomans.204
+					set_variable = kayseri_variable
+				}
+			}
+			else_if = {
+				limit = {
+					location = location:sivas
+					location.owner = {
+						NOT = {
+							has_variable = sivas_variable
+						}
+					}
+				}
+				location.owner = {
+					trigger_event_non_silently = rise_of_the_ottomans.205
+					set_variable = sivas_variable
+				}
+			}
+			else_if = {
+				limit = {
+					location = location:smyrna
+					location.owner = {
+						NOT = {
+							has_variable = smyrna_variable
+						}
+					}
+				}
+				location.owner = {
+					trigger_event_non_silently = rise_of_the_ottomans.206
+					set_variable = smyrna_variable
+				}
+			}
+			else = {
+				location = {
+					trigger_event_non_silently = rise_of_the_ottomans.207
+				}
 			}
 		}
 	}

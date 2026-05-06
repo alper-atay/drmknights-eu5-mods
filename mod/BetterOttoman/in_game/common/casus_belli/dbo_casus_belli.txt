@@ -1,8 +1,8 @@
 ﻿dbo_cb_conquest_anatolian_turks = {
-	allow_creation = {
+	create_visible = {
 		always = no
 	}
-	visible = {
+	create_enabled = {
 		always = no
 	}
 	war_goal_type = dbo_conquest_anatolian_turks
@@ -21,10 +21,10 @@
 }
 
 dbo_cb_conquest_rumelia = {
-	allow_creation = {
+	create_visible = {
 		always = no
 	}
-	visible = {
+	create_enabled = {
 		always = no
 	}
 	war_goal_type = dbo_conquest_rumelia
@@ -43,10 +43,10 @@ dbo_cb_conquest_rumelia = {
 }
 
 dbo_cb_conquest_fertile_crescent = {
-	allow_creation = {
+	create_visible = {
 		always = no
 	}
-	visible = {
+	create_enabled = {
 		always = no
 	}
 	war_goal_type = dbo_conquest_fertile_crescent
@@ -65,10 +65,10 @@ dbo_cb_conquest_fertile_crescent = {
 }
 
 dbo_cb_conquest_arabian_peninsula = {
-	allow_creation = {
+	create_visible = {
 		always = no
 	}
-	visible = {
+	create_enabled = {
 		always = no
 	}
 	war_goal_type = dbo_conquest_arabian_peninsula
@@ -87,10 +87,10 @@ dbo_cb_conquest_arabian_peninsula = {
 }
 
 dbo_cb_conquest_black_sea = {
-	allow_creation = {
+	create_visible = {
 		always = no
 	}
-	visible = {
+	create_enabled = {
 		always = no
 	}
 	war_goal_type = dbo_conquest_black_sea
@@ -109,10 +109,10 @@ dbo_cb_conquest_black_sea = {
 }
 
 dbo_cb_conquest_nile_river = {
-	allow_creation = {
+	create_visible = {
 		always = no
 	}
-	visible = {
+	create_enabled = {
 		always = no
 	}
 	war_goal_type = dbo_conquest_nile_river
@@ -131,10 +131,10 @@ dbo_cb_conquest_nile_river = {
 }
 
 dbo_cb_conquest_europe_eastern_gate = {
-	allow_creation = {
+	create_visible = {
 		always = no
 	}
-	visible = {
+	create_enabled = {
 		always = no
 	}
 	war_goal_type = dbo_conquest_europe_eastern_gate
@@ -153,10 +153,10 @@ dbo_cb_conquest_europe_eastern_gate = {
 }
 
 dbo_cb_conquest_turkish_renaissance = {
-	allow_creation = {
+	create_visible = {
 		always = no
 	}
-	visible = {
+	create_enabled = {
 		always = no
 	}
 	war_goal_type = dbo_conquest_turkish_renaissance
@@ -175,10 +175,10 @@ dbo_cb_conquest_turkish_renaissance = {
 }
 
 dbo_cb_conquest_pearl_of_east = {
-	allow_creation = {
+	create_visible = {
 		always = no
 	}
-	visible = {
+	create_enabled = {
 		always = no
 	}
 	war_goal_type = dbo_conquest_pearl_of_east
@@ -197,10 +197,10 @@ dbo_cb_conquest_pearl_of_east = {
 }
 
 dbo_cb_conquest_maghreb = {
-	allow_creation = {
+	create_visible = {
 		always = no
 	}
-	visible = {
+	create_enabled = {
 		always = no
 	}
 	war_goal_type = dbo_conquest_maghreb
@@ -219,10 +219,10 @@ dbo_cb_conquest_maghreb = {
 }
 
 dbo_cb_conquest_steep_mountain = {
-	allow_creation = {
+	create_visible = {
 		always = no
 	}
-	visible = {
+	create_enabled = {
 		always = no
 	}
 	war_goal_type = dbo_conquest_steep_mountain
@@ -241,10 +241,10 @@ dbo_cb_conquest_steep_mountain = {
 }
 
 dbo_cb_conquest_gokturk_union = {
-	allow_creation = {
+	create_visible = {
 		always = no
 	}
-	visible = {
+	create_enabled = {
 		always = no
 	}
 	war_goal_type = dbo_conquest_gokturk_union
@@ -263,10 +263,10 @@ dbo_cb_conquest_gokturk_union = {
 }
 
 dbo_cb_conquest_new_homeland = {
-	allow_creation = {
+	create_visible = {
 		always = no
 	}
-	visible = {
+	create_enabled = {
 		always = no
 	}
 	war_goal_type = dbo_conquest_new_homeland

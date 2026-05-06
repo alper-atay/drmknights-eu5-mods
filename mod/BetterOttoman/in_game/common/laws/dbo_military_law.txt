@@ -87,10 +87,9 @@ dbo_military_army_infantry_law = {
 					has_any_active_disaster = no
 				}
 			}
-			army_infantry_power = 0.1
-			army_infantry_build_cost_modifier = -0.1
-			army_infantry_maintenance_cost_modifier = -0.1
-			army_infantry_reinforce_cost_modifier = -0.1
+			army_light_infantry_build_cost_modifier = -0.1
+			army_light_infantry_maintenance_cost_modifier = -0.1
+			army_light_infantry_reinforce_cost_modifier = -0.1
 		}
 	}
 }
@@ -119,8 +118,8 @@ dbo_military_army_cavalry_law = {
 			}
 		}
 		country_modifier = {
-			army_cavalry_power = 0.1
-			army_cavalry_maintenance_cost_modifier = -0.1
+			army_light_cavalry_power = 0.1
+			army_light_cavalry_maintenance_cost_modifier = -0.1
 		}
 	}
 	dbo_military_army_cavalry_timariot_system_policy = {
@@ -137,10 +136,10 @@ dbo_military_army_cavalry_law = {
 					has_any_active_disaster = no
 				}
 			}
-			army_cavalry_power = 0.05
-			army_cavalry_build_cost_modifier = -0.05
-			army_cavalry_maintenance_cost_modifier = -0.2
-			army_cavalry_reinforce_cost_modifier = -0.05
+			army_light_cavalry_power = 0.05
+			army_light_cavalry_build_cost_modifier = -0.05
+			army_light_cavalry_maintenance_cost_modifier = -0.2
+			army_light_cavalry_reinforce_cost_modifier = -0.05
 		}
 	}
 	dbo_military_army_cavalry_metehans_policy = {
@@ -152,10 +151,10 @@ dbo_military_army_cavalry_law = {
 			}
 		}
 		country_modifier = {
-			army_cavalry_power = 0.2
-			army_cavalry_build_cost_modifier = -0.1
-			army_cavalry_maintenance_cost_modifier = -0.4
-			army_cavalry_reinforce_cost_modifier = -0.1
+			army_light_cavalry_power = 0.2
+			army_light_cavalry_build_cost_modifier = -0.1
+			army_light_cavalry_maintenance_cost_modifier = -0.4
+			army_light_cavalry_reinforce_cost_modifier = -0.1
 		}
 	}
 }

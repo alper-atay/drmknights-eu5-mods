@@ -6,6 +6,7 @@
 	category = cultural_category
 	employment_size = 1
 	city = yes
+	megalopolis = yes
 	expensive = yes
 	build_time = large_cultural_building_time
 	location_potential = {
@@ -21,7 +22,7 @@
 		local_monthly_literacy = 0.1
 	}
 	capital_country_modifier = {
-		research_speed = 0.1
+		research_speed = 0.05
 		research_speed_modifier = 0.1
 		monthly_towards_innovative = societal_value_monthly_move
 		num_possible_artists = 1

@@ -154,7 +154,6 @@ dbo_conquest_stamp_nile_river_law = {
 			power_projection = 5
 			num_local_governors = 1
 			research_speed = 0.1
-			trade_efficiency = 0.1
 		}
 	}
 }
@@ -185,9 +184,6 @@ dbo_conquest_stamp_black_sea_law = {
 		country_modifier = {
 			power_projection = 5
 			num_local_governors = 1
-			trade_efficiency = 0.1
-			trade_land_movement_cost_modifier = -0.1
-			trade_sea_movement_cost_modifier = -0.1
 		}
 	}
 }
@@ -220,7 +216,6 @@ dbo_conquest_stamp_europe_eastern_gate_law = {
 			num_local_governors = 1
 			global_goods_gold_output_modifier = 0.25
 			global_silver_output_modifier = 0.25
-			minting_income_factor = 0.25
 		}
 	}
 }

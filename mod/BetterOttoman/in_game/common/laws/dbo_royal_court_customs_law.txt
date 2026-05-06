@@ -7,7 +7,7 @@
 			}
 		}
 		country_modifier = {
-			court_spending_cost = -0.02
+			court_spending_cost_modifier = -0.05
 			monthly_towards_land = societal_value_monthly_move
 			army_tradition_decay = -0.002
 		}

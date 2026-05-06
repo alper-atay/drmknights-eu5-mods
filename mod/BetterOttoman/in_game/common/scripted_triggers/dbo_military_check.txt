@@ -198,9 +198,8 @@ dbo_military_navy_fundamental_barbaros_hayrettin_pasha_policy_check = {
 			group = religion_group:muslim
 		}
 		any_character = {
-			character_nickname = barbarossa
-			is_admiral = yes
-			is_admiral_of = root
+			character_name = name_khayr.name_al_din
+			has_trait_category = admiral
 		}
 	}
 }
