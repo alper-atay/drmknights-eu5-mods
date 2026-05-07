@@ -170,7 +170,7 @@ REPLACE:bey_fortress = {
 	}
 	expensive = yes
 	unique_production_methods = {
-		bey_fortress_maintenance = {
+		bey_fortress_maintenance2 = {
 			stone = 0.1
 			tools = 0.1
 			weaponry = 0.2
