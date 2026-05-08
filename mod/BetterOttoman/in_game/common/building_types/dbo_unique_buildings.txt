@@ -4,6 +4,7 @@
 	pop_type = nobles
 	max_levels = 1
 	category = government_category
+	obsolete = bey_fortress
 	employment_size = large_noble_employment
 	rural_settlement = no
 	town = no
@@ -25,6 +26,10 @@
 		local_monthly_development = 0.001
 		local_monthly_prosperity = 0.001
 		local_max_control = 0.1
+		local_crown_estate_power = 0.25
+		local_manpower = 0.01
+		local_defensive = 0.25
+		can_recruit_regiment_in_this_location = yes
 	}
 	unique_production_methods = {
 		dbo_beylerbeyi_maintenance = {
@@ -37,31 +42,6 @@
 			books = 0.1
 			cloth = 0.1
 			fine_cloth = 0.05
-			category = building_maintenance
-		}
-	}
-	construction_demand = local_governor_construction
-}
-
-dbo_beylerbeyi_fortress = {
-	is_special = yes
-	is_foreign = no
-	pop_type = soldiers
-	max_levels = 1
-	employment_size = manpower_employment
-	category = defense_category
-	city = yes
-	megalopolis = yes
-	build_time = small_fort_building
-	location_potential = {
-		has_building = building_type:dbo_beylerbeyi
-		NOT = {
-			has_building = building_type:bey_fortress
-		}
-	}
-	expensive = yes
-	unique_production_methods = {
-		dbo_beylerbeyi_fortress_maintenance = {
 			stone = 0.1
 			tools = 0.1
 			weaponry = 0.2
@@ -69,13 +49,7 @@ dbo_beylerbeyi_fortress = {
 			category = building_maintenance
 		}
 	}
-	construction_demand = castle_construction
-	modifier = {
-		local_crown_estate_power = 0.25
-		local_manpower = 0.01
-		local_defensive = 0.25
-		can_recruit_regiment_in_this_location = yes
-	}
+	construction_demand = local_governor_construction
 }
 
 dbo_topkapi_palace = {

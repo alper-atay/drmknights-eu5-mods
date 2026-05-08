@@ -5,8 +5,6 @@
  dbo_beylerbeyi: "Beylerbeyliği"
  dbo_beylerbeyi_desc: "Devlet-i Aliyye'de bir eyaletin veya bölgenin en yüksek yöneticisi olan Beylerbeyi, hem askeri hem de sivil otoriteye sahip önemli bir makamdır. Beylerbeyi, padişahın temsilcisi olarak görev yapar, bölgesel yönetimi sağlar ve gerektiğinde askeri liderlik yapar."
  dbo_beylerbeyi_maintenance: "$dbo_beylerbeyi$"
- dbo_beylerbeyi_fortress: "Beylerbeyi Kalesi"
- dbo_beylerbeyi_fortress_desc: "Beylerbeyi Kalesi, Devlet-i Aliyye'nin önemli bir askeri yapısıdır ve genellikle stratejik bölgelerde inşa edilmiştir. Bu kaleler, bölgenin savunmasını sağlamak, düşman saldırılarına karşı koruma sunmak ve bölgesel otoriteyi pekiştirmek amacıyla kullanılmıştır. Beylerbeyi Kalesi, güçlü surları, gözetleme kuleleri ve askeri tesisleriyle dikkat çeker."
  dbo_beylerbeyi_fortress_maintenance: "$dbo_beylerbeyi_fortress$"
  dbo_otag: "Otağ"
  dbo_otag_desc: "Han'ın seferlerde veya törenlerde kullandığı, devletin gücünü ve hükümdarın otoritesini temsil eden görkemli saltanat çadırıdır. Savaş meydanında ordunun yönetim merkezi, barışta ise devletin ihtişamlı bir simgesidir. Otağ, Tengri inancında gökyüzünün ve göksel düzenin sembolüdür, bu nedenle hükümdarın gücünü ve ilahi hakkını vurgular."
