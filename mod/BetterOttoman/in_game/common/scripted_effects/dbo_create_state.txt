@@ -1,4 +1,4 @@
-﻿create_state_eqy = {
+﻿create_state_egy = {
 	location:cairo = {
 		create_country_from_location = {
 			form_country = formable_country:EGY_f
