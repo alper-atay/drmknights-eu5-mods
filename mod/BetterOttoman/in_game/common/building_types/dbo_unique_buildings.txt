@@ -4,7 +4,7 @@
 	pop_type = nobles
 	max_levels = 1
 	category = government_category
-	obsolete = bey_fortress
+	# obsolete = bey_fortress
 	employment_size = large_noble_employment
 	rural_settlement = no
 	town = no
@@ -34,7 +34,6 @@
 	unique_production_methods = {
 		dbo_beylerbeyi_maintenance = {
 			furniture = 0.1
-			tools = 0.05
 			glass = 0.05
 			goods_gold = 0.05
 			marble = 0.05
@@ -43,7 +42,7 @@
 			cloth = 0.1
 			fine_cloth = 0.05
 			stone = 0.1
-			tools = 0.1
+			tools = 0.2
 			weaponry = 0.2
 			tar = 0.1
 			category = building_maintenance

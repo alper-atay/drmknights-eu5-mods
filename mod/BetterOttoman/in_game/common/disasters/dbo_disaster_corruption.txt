@@ -1,4 +1,5 @@
 ﻿dbo_disaster_corruption = {
+	image = "gfx/interface/illustrations/disaster/dbo_disaster_corruption.dds"
 	monthly_spawn_chance = monthly_spawn_chance_unique
 	can_start = {
 		has_or_had_tag = TUR
@@ -37,8 +38,24 @@
 	}
 	on_start = {
 	}
-	on_monthly = {
-	}
 	on_end = {
+	}
+	on_monthly = {
+		random_list = {
+			5 = {
+				custom_tooltip = an_event_occurs_tt
+			}
+			95 = {
+				custom_tooltip = no_event_occurs_tt
+			}
+		}
+		hidden_effect = {
+			random_list = {
+				5 = {
+				}
+				95 = {
+				}
+			}
+		}
 	}
 }
