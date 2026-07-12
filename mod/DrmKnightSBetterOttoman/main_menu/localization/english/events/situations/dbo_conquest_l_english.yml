@@ -1,0 +1,8 @@
+﻿l_english:
+ dbo_conquest.1.title: "$dbo_conquest$"
+ dbo_conquest.1.desc: "$dbo_conquest_desc$"
+ dbo_conquest.1.a: "I Will Become the Conqueror of the World!"
+
+ dbo_conquest.100.title: "[target_country.GetNameWithNoTooltip] Campaign"
+ dbo_conquest.100.desc: "[ROOT.GetCountry.GetGovernment.GetRulerTitle] watches the victorious [ROOT.GetCountry.GetAdjective] banners fluttering in the wind while contemplating the next move to secure [ShowSituationName('dbo_conquest')]. Neighboring lands already seem ready to be drawn into the expanding [ROOT.GetCountry.GetFlavorRank] dominion.\n\nIf we decide to lay claim to the province of [target.GetProvince.GetName], we will strengthen our control over [target.GetArea.GetName] and come one step closer to securing [ShowSituationName('dbo_conquest')]. The time has come to launch a new campaign!"
+ dbo_conquest.100.a: "[target.GetName] will soon be ours!"

@@ -1,0 +1,61 @@
+﻿l_english:
+ dbo_destiny_alp_and_alperen: "Alps and Alperens"
+ dbo_destiny_alp_and_alperen_desc: "In the time of Gazi Osman Bey, he was an Alp. $dbo_destiny_alp_and_alperen$ stand out with their leadership and warrior skills. As skilled riders, they use all weapons of war—especially the bow and arrow—with great mastery. In difficult times, they bring their people to safety through their personal combat abilities and heroism. They are tall, brave, and strong. Blood feuds persist among them. Some possess the talents of minstrels."
+
+ dbo_destiny_cultural_capital_constantinople: "Cultural Capital: [ShowLocationName('constantinople')]"
+ dbo_destiny_cultural_capital_constantinople_desc: "[ShowLocationName('constantinople')] rises at the heart of our Empire as a city where the brightest examples of our culture and art are displayed. This city will become a cultural capital that draws the attention not only of the Ottomans but of the entire world. Artists, writers, and thinkers will gather here, create their works, and pass our heritage on to future generations. By supporting this grand vision, we will showcase the cultural richness and strength of the Ottomans to the whole world."
+
+ dbo_destiny_trade_center_grand_bazaar: "Trade Center: The Grand Bazaar"
+ dbo_destiny_trade_center_grand_bazaar_desc: "At the heart of our Empire stands a magnificent market that will become the center of trade and prosperity. The Grand Bazaar will be a commercial hub that attracts not only the Ottomans but the entire world. Merchants, craftsmen, and artisans will gather here, display their goods, and increase the wealth of our Empire. By supporting this great project, we will demonstrate the Ottoman Empire’s economic power and cultural diversity to the world."
+
+ dbo_destiny_great_bronze_cannon: "Great Bronze Cannon: Şahi"
+ dbo_destiny_great_bronze_cannon_desc: "The Great Bronze Cannon Şahi symbolizes the Ottomans’ mastery in military engineering and their power on the battlefield. This colossal cannon was used in siege warfare and enabled the Ottoman army to demolish enemy fortresses effectively. The Great Bronze Cannon represents the Ottomans’ innovative approach to military technology and their strategic superiority."
+
+ dbo_destiny_legacy_of_seljuks: "Eternal Seljuk Spirit"
+ dbo_destiny_legacy_of_seljuks_desc: "Embracing the Seljuk legacy enhanced the Ottomans’ cultural diversity and administrative capabilities. Seljuk influence is clearly visible in Ottoman architecture, art, and governance. Accepting the Seljuk heritage strengthened Ottoman dominance in the region and contributed to their rise as a long-lasting empire."
+
+ dbo_destiny_lessons_from_mongols: "Lessons from the Mongols"
+ dbo_destiny_lessons_from_mongols_desc: "Lessons learned from the Mongols helped the Ottomans improve their military strategies and administrative approaches. Mongol tactics and organizational skills increased Ottoman effectiveness on the battlefield. These lessons strengthened the Ottomans’ ability to govern and defend vast territories."
+
+ dbo_destiny_martolos_units: "Martolos Units"
+ dbo_destiny_martolos_units_desc: "The Martolos units played an important role in the Ottoman army’s intelligence and security operations. These special units patrolled border regions, monitored enemy movements, and ensured internal security. As a critical component of the Ottoman military structure, the Martolos were effective in protecting the Empire’s vast territories."
+
+ dbo_destiny_advanced_devshirme_system: "$dbo_advanced_devshirme_system_policy$"
+ dbo_destiny_advanced_devshirme_system_desc: "$dbo_advanced_devshirme_system_policy_desc$"
+
+ dbo_destiny_ottoman_empire: "Ottoman Empire"
+ dbo_destiny_ottoman_empire_desc: "The Ottoman Empire was a state capable of rapid expansion thanks to its disciplined army, advanced administrative system, and control over strategic trade centers. The timar system provided a strong military structure, while the autonomy granted to different religions and communities increased internal stability. With the conquest of Constantinople, it gained imperial status and became a unique center of power between East and West."
+
+ dbo_destiny_modernized_timariot_system: "Modern Timar System"
+ dbo_destiny_modernized_timariot_system_desc: "A comprehensive government reform shaped on the foundations of [ShowGovernmentReformName('dbo_destiny_lessons_from_mongols')], [ShowGovernmentReformName('basic_timariot_system')], and [ShowGovernmentReformName('expanded_timariot_system')], elevating the Ottoman Empire’s military-administrative structure to a higher level. This reform emerged from synthesizing lessons drawn from Mongol military tradition with Ottoman statecraft; it restored principles of mobility, discipline, and centralized oversight to the timar order.\nIn this new system, timar holders ceased to be merely local figures collecting land revenues and became responsible actors directly supporting the state’s military capacity. Their duties in tax collection, soldier training, and providing ready forces during campaigns were bound to clearer rules, forming a performance-based structure. Thus, the efficiency of the timar increased, while the discipline and maneuverability of provincial armies were strengthened."
+
+ dbo_destiny_piri_reis: "Piri Reis"
+ dbo_destiny_piri_reis_desc: "Piri Reis is one of the brightest figures in the Ottoman Empire’s maritime and cartographic history. His detailed maps and naval knowledge provided the Ottomans with great advantages in Mediterranean expeditions and beyond. His works are considered foundational to Ottoman naval power and strengthened the Empire’s dominance at sea. A Turkish sailor, admiral, and cartographer, he authored the Kitab-ı Bahriye, which describes the Mediterranean coasts in great detail. His 1513 world map is notable for containing some of the earliest and most valuable information about the American continent. With his maritime expertise, spirit of exploration, and scientific approach, he became one of the iconic figures of Ottoman naval strength."
+
+ dbo_destiny_legacy_of_caka_bey: "Legacy of Çaka Bey"
+ dbo_destiny_legacy_of_caka_bey_desc: "Çaka Bey was a visionary strategist who, after 1071, founded the first Turkish naval beylik centered in Smirni (Izmir), combining the naval technology he learned in the Byzantine court with the military genius of the steppe. By building the first navy in Turkish history, conquering Aegean islands, and attempting to besiege Byzantium both by sea and through a Pecheneg alliance in the Balkans, he became a unique figure capable of establishing early maritime dominance (thalassocracy). Although he could not fulfill his ambition to conquer Constantinople due to complex dynastic relations with Seljuk Sultan Kilij Arslan I and Byzantine intrigues, the naval tradition he founded and the shipyard infrastructure in Izmir added a strategic maritime dimension to Anatolia’s transformation into a Turkish homeland."
+
+ dbo_destiny_war_wolf: "War Wolf"
+ dbo_destiny_war_wolf_t1: "1. $dbo_destiny_war_wolf$"
+ dbo_destiny_war_wolf_t2: "2. $dbo_destiny_war_wolf$"
+ dbo_destiny_war_wolf_t3: "3. $dbo_destiny_war_wolf$"
+ dbo_destiny_war_wolf_t4: "4. $dbo_destiny_war_wolf$"
+ dbo_destiny_war_wolf_t5: "5. $dbo_destiny_war_wolf$"
+ dbo_destiny_war_wolf_t6: "6. $dbo_destiny_war_wolf$"
+ dbo_destiny_war_wolf_t7: "7. $dbo_destiny_war_wolf$"
+ dbo_destiny_war_wolf_t8: "8. $dbo_destiny_war_wolf$"
+ dbo_destiny_war_wolf_t9: "9. $dbo_destiny_war_wolf$"
+ dbo_destiny_war_wolf_t10: "10. $dbo_destiny_war_wolf$"
+
+ dbo_destiny_war_wolf_desc: "The golden gleam rising on the dusty horizon of the steppe is neither the shadow of a single army nor that of a lone conqueror; it is the legendary War Wolf, embodied by the unbreakable will of warriors.\nThis ancient spirit, bearing the Mongol’s wild speed and the Turk’s mighty claws, united with the strategic brilliance of the Alps and Alperens, brought the wrath of the heavens down to earth; with the red fire in its eyes it heralded the end of kingdoms, and with its sharp fangs the dawn of a new world order.\nThe War Wolf is not merely a beast that tears apart—it is also a proud guardian protecting magnificent cities and trade routes, an immortal symbol of an empire woven with merit and discipline.\nThis mythical force from beyond time is etched into history as the cold steel gleaming on the Turk’s sword and the storm torn from the heart of the steppe."
+
+ dbo_destiny_war_wolf_t1_desc: "$dbo_destiny_war_wolf_desc$"
+ dbo_destiny_war_wolf_t2_desc: "$dbo_destiny_war_wolf_desc$"
+ dbo_destiny_war_wolf_t3_desc: "$dbo_destiny_war_wolf_desc$"
+ dbo_destiny_war_wolf_t4_desc: "$dbo_destiny_war_wolf_desc$"
+ dbo_destiny_war_wolf_t5_desc: "$dbo_destiny_war_wolf_desc$"
+ dbo_destiny_war_wolf_t6_desc: "$dbo_destiny_war_wolf_desc$"
+ dbo_destiny_war_wolf_t7_desc: "$dbo_destiny_war_wolf_desc$"
+ dbo_destiny_war_wolf_t8_desc: "$dbo_destiny_war_wolf_desc$"
+ dbo_destiny_war_wolf_t9_desc: "$dbo_destiny_war_wolf_desc$"
+ dbo_destiny_war_wolf_t10_desc: "$dbo_destiny_war_wolf_desc$"
