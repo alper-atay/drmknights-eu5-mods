@@ -1,0 +1,7 @@
+﻿GKTUR = {
+	# Ottomans
+	flag_definition = {
+		coa = GKTUR
+		priority = 1
+	}
+}

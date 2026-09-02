@@ -1,0 +1,22 @@
+﻿dbo_destiny_talented_youngest_heir_selection_check = {
+	trigger_if = {
+		limit = {
+			succession_law = heir_selection:dbo_destiny_talented_youngest_heir_selection
+		}
+		succession_law = heir_selection:dbo_destiny_talented_youngest_heir_selection
+	}
+	trigger_else = {
+		has_ruler = yes
+		has_heir = yes
+	}
+}
+
+dbo_destiny_anatolian_beyliks_forced_annex_check = {
+	has_variable = rise_of_the_ottomans_winner_variable
+	any_country = {
+		has_reform = government_reform:anatolian_beylik
+		NOT = {
+			tag = TUR
+		}
+	}
+}

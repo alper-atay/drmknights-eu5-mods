@@ -1,0 +1,9 @@
+﻿l_turkish:
+# Common verbs
+ dbo_history_common_born: "Dünyaya Geldi!"
+ dbo_history_common_rise: "Yükselişi!"
+ dbo_history_common_rise_option: "[Concept('heir', 'Şehzadem')|e] Çok Yaşa!"
+ dbo_history_common_ascend: "Yeni [Concept('ruler', 'Hükümdarımız')|e]!"
+ dbo_history_common_ascend_option: "[Concept('ruler', 'Hükümdarım')|e] Çok Yaşa!"
+ dbo_history_common_die: "Vefat Etti!"
+ dbo_history_common_die_option: "Devlet-i Aliyye'nin Başı Sağ Olsun!"

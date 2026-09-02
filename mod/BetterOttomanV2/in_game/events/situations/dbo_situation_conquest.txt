@@ -1,0 +1,46 @@
+﻿namespace = dbo_situation_conquest
+dbo_situation_conquest.1 = {
+	type = country_event
+	category = situation_event
+	title = dbo_situation_conquest.1.title
+	desc = dbo_situation_conquest.1.desc
+	image = "gfx/interface/illustrations/situation/dbo_situation_conquest.dds"
+	outcome = neutral
+	option = {
+		name = dbo_situation_conquest.1.a
+		custom_tooltip = {
+			text = dbo_situation_conquest_every_owned_location_add_ottoman_miracle_tt
+			every_owned_location = {
+				add_location_modifier = {
+					modifier = dbo_location_modifier_miracle
+					years = 40
+					mode = replace
+				}
+			}
+		}
+		every_owned_non_rural_location = {
+			limit = {
+				is_province_capital = yes
+			}
+			if = {
+				limit = {
+					can_build_building = building_type:dbo_beylerbeyi
+				}
+				change_building_level_in_location = {
+					building = building_type:dbo_beylerbeyi
+					value = 1
+				}
+			}
+		}
+		custom_tooltip = {
+			text = dbo_situation_conquest_every_anatolia_region_location_add_core_tt
+			region:anatolia_region = {
+				every_ownable_location_in_region = {
+					add_core = root
+				}
+			}
+		}
+		dbo_event_severe_bonus = yes
+		add_gold = 1299
+	}
+}

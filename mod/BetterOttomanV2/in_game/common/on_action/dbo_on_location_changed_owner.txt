@@ -1,0 +1,104 @@
+﻿#root = location  (after winning and losing, for both), scope:winner = new owner country, scope:loser = previous owner country
+on_location_changed_owner = {
+	on_actions = {
+		dbo_on_conquer_any_location
+		dbo_on_lose_any_location
+	}
+}
+
+dbo_on_conquer_any_location = {
+	trigger = {
+		exists = scope:winner
+		exists = scope:loser
+		tag_exists = TUR
+		scope:winner = {
+			tag = TUR
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				culture_percentage = {
+					culture = scope:winner.culture
+					value < 0.2
+				}
+			}
+			add_pop = {
+				culture = scope:winner.culture
+				religion = scope:winner.religion
+				type = pop_type:peasants
+				size = {
+					value = population
+					multiply = 0.1
+					min = 0.2
+					max = 1
+				}
+			}
+		}
+		add_location_modifier = {
+			modifier = dbo_location_modifier_miracle
+			years = 40
+			mode = replace
+		}
+		if = {
+			limit = {
+				NOT = {
+					integration_level = core
+				}
+			}
+			if = {
+				limit = {
+					scope:loser = {
+						has_reform = government_reform:anatolian_beylik
+					}
+				}
+				change_integration_level = core
+			}
+			else_if = {
+				limit = {
+					OR = {
+						root.area = area:thrace_area
+						root.area = area:macedonia_area
+						root.area = area:armenian_highlands_area
+						root.province_definition = province_definition:meskheti_province
+						root.province_definition = province_definition:hasankeyf_province
+						root.province_definition = province_definition:diyarbekir_province
+						root.province_definition = province_definition:ar_ruha_province
+						root.province_definition = province_definition:amadiya_province
+						root.province_definition = province_definition:nusaybin_province
+						root.province_definition = province_definition:mardin_province
+						root.province_definition = province_definition:ayntab_province
+						root.province_definition = province_definition:antakya_province
+					}
+				}
+				change_integration_level = integrated
+			}
+		}
+		scope:winner = {
+			add_gold = {
+				value = root.location_tax_base
+				multiply = 12
+			}
+		}
+	}
+}
+
+dbo_on_lose_any_location = {
+	trigger = {
+		exists = owner
+		tag_exists = TUR
+		owner = {
+			NOT = {
+				tag = TUR
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				has_location_modifier = dbo_location_modifier_miracle
+			}
+			remove_location_modifier = dbo_location_modifier_miracle
+		}
+	}
+}

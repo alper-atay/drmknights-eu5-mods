@@ -1,0 +1,285 @@
+﻿dbo_cb_conquest_anatolian_turks = {
+	create_visible = {
+		always = no
+	}
+	create_enabled = {
+		always = no
+	}
+	war_goal_type = dbo_conquest_anatolian_turks
+	province = {
+		any_location_in_province = {
+			always = yes
+		}
+	}
+	ai_will_do = {
+		add = {
+			desc = "CB_REASON_IMPORTANT_CB"
+			value = 1000
+		}
+	}
+	ai_subjugation_desire = -100
+}
+
+dbo_cb_conquest_rumelia = {
+	create_visible = {
+		always = no
+	}
+	create_enabled = {
+		always = no
+	}
+	war_goal_type = dbo_conquest_rumelia
+	province = {
+		any_location_in_province = {
+			always = yes
+		}
+	}
+	ai_will_do = {
+		add = {
+			desc = "CB_REASON_IMPORTANT_CB"
+			value = 1000
+		}
+	}
+	ai_subjugation_desire = -100
+}
+
+dbo_cb_conquest_fertile_crescent = {
+	create_visible = {
+		always = no
+	}
+	create_enabled = {
+		always = no
+	}
+	war_goal_type = dbo_conquest_fertile_crescent
+	province = {
+		any_location_in_province = {
+			always = yes
+		}
+	}
+	ai_will_do = {
+		add = {
+			desc = "CB_REASON_IMPORTANT_CB"
+			value = 1000
+		}
+	}
+	ai_subjugation_desire = -100
+}
+
+dbo_cb_conquest_arabian_peninsula = {
+	create_visible = {
+		always = no
+	}
+	create_enabled = {
+		always = no
+	}
+	war_goal_type = dbo_conquest_arabian_peninsula
+	province = {
+		any_location_in_province = {
+			always = yes
+		}
+	}
+	ai_will_do = {
+		add = {
+			desc = "CB_REASON_IMPORTANT_CB"
+			value = 1000
+		}
+	}
+	ai_subjugation_desire = -100
+}
+
+dbo_cb_conquest_black_sea = {
+	create_visible = {
+		always = no
+	}
+	create_enabled = {
+		always = no
+	}
+	war_goal_type = dbo_conquest_black_sea
+	province = {
+		any_location_in_province = {
+			always = yes
+		}
+	}
+	ai_will_do = {
+		add = {
+			desc = "CB_REASON_IMPORTANT_CB"
+			value = 1000
+		}
+	}
+	ai_subjugation_desire = -100
+}
+
+dbo_cb_conquest_nile_river = {
+	create_visible = {
+		always = no
+	}
+	create_enabled = {
+		always = no
+	}
+	war_goal_type = dbo_conquest_nile_river
+	province = {
+		any_location_in_province = {
+			always = yes
+		}
+	}
+	ai_will_do = {
+		add = {
+			desc = "CB_REASON_IMPORTANT_CB"
+			value = 1000
+		}
+	}
+	ai_subjugation_desire = -100
+}
+
+dbo_cb_conquest_europe_eastern_gate = {
+	create_visible = {
+		always = no
+	}
+	create_enabled = {
+		always = no
+	}
+	war_goal_type = dbo_conquest_europe_eastern_gate
+	province = {
+		any_location_in_province = {
+			always = yes
+		}
+	}
+	ai_will_do = {
+		add = {
+			desc = "CB_REASON_IMPORTANT_CB"
+			value = 1000
+		}
+	}
+	ai_subjugation_desire = -100
+}
+
+dbo_cb_conquest_turkish_renaissance = {
+	create_visible = {
+		always = no
+	}
+	create_enabled = {
+		always = no
+	}
+	war_goal_type = dbo_conquest_turkish_renaissance
+	province = {
+		any_location_in_province = {
+			always = yes
+		}
+	}
+	ai_will_do = {
+		add = {
+			desc = "CB_REASON_IMPORTANT_CB"
+			value = 1000
+		}
+	}
+	ai_subjugation_desire = -100
+}
+
+dbo_cb_conquest_pearl_of_east = {
+	create_visible = {
+		always = no
+	}
+	create_enabled = {
+		always = no
+	}
+	war_goal_type = dbo_conquest_pearl_of_east
+	province = {
+		any_location_in_province = {
+			always = yes
+		}
+	}
+	ai_will_do = {
+		add = {
+			desc = "CB_REASON_IMPORTANT_CB"
+			value = 1000
+		}
+	}
+	ai_subjugation_desire = -100
+}
+
+dbo_cb_conquest_maghreb = {
+	create_visible = {
+		always = no
+	}
+	create_enabled = {
+		always = no
+	}
+	war_goal_type = dbo_conquest_maghreb
+	province = {
+		any_location_in_province = {
+			always = yes
+		}
+	}
+	ai_will_do = {
+		add = {
+			desc = "CB_REASON_IMPORTANT_CB"
+			value = 1000
+		}
+	}
+	ai_subjugation_desire = -100
+}
+
+dbo_cb_conquest_steep_mountain = {
+	create_visible = {
+		always = no
+	}
+	create_enabled = {
+		always = no
+	}
+	war_goal_type = dbo_conquest_steep_mountain
+	province = {
+		any_location_in_province = {
+			always = yes
+		}
+	}
+	ai_will_do = {
+		add = {
+			desc = "CB_REASON_IMPORTANT_CB"
+			value = 1000
+		}
+	}
+	ai_subjugation_desire = -100
+}
+
+dbo_cb_conquest_gokturk_union = {
+	create_visible = {
+		always = no
+	}
+	create_enabled = {
+		always = no
+	}
+	war_goal_type = dbo_conquest_gokturk_union
+	province = {
+		any_location_in_province = {
+			always = yes
+		}
+	}
+	ai_will_do = {
+		add = {
+			desc = "CB_REASON_IMPORTANT_CB"
+			value = 2000
+		}
+	}
+	ai_subjugation_desire = -100
+}
+
+dbo_cb_conquest_new_homeland = {
+	create_visible = {
+		always = no
+	}
+	create_enabled = {
+		always = no
+	}
+	war_goal_type = dbo_conquest_new_homeland
+	province = {
+		any_location_in_province = {
+			always = yes
+		}
+	}
+	ai_will_do = {
+		add = {
+			desc = "CB_REASON_IMPORTANT_CB"
+			value = 2000
+		}
+	}
+	ai_subjugation_desire = -100
+}

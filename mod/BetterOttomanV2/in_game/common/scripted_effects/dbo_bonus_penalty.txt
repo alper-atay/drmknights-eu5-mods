@@ -1,0 +1,71 @@
+﻿dbo_event_weak_bonus = {
+	add_legitimacy = legitimacy_weak_bonus
+	add_stability = stability_weak_bonus
+	add_prestige = prestige_weak_bonus
+}
+
+dbo_event_mild_bonus = {
+	add_legitimacy = legitimacy_mild_bonus
+	add_stability = stability_mild_bonus
+	add_prestige = prestige_mild_bonus
+}
+
+dbo_event_severe_bonus = {
+	add_legitimacy = legitimacy_severe_bonus
+	add_stability = stability_severe_bonus
+	add_prestige = prestige_severe_bonus
+}
+
+dbo_event_extreme_bonus = {
+	add_legitimacy = legitimacy_extreme_bonus
+	add_stability = stability_extreme_bonus
+	add_prestige = prestige_extreme_bonus
+}
+
+dbo_event_ultimate_bonus = {
+	add_legitimacy = legitimacy_ultimate_bonus
+	add_stability = stability_ultimate_bonus
+	add_prestige = prestige_ultimate_bonus
+}
+
+dbo_event_radical_bonus = {
+	add_legitimacy = legitimacy_radical_bonus
+	add_stability = stability_radical_bonus
+	add_prestige = prestige_radical_bonus
+}
+
+dbo_event_weak_penalty = {
+	add_legitimacy = legitimacy_weak_penalty
+	add_stability = stability_weak_penalty
+	add_prestige = prestige_weak_penalty
+}
+
+dbo_event_mild_penalty = {
+	add_legitimacy = legitimacy_mild_penalty
+	add_stability = stability_mild_penalty
+	add_prestige = prestige_mild_penalty
+}
+
+dbo_event_severe_penalty = {
+	add_legitimacy = legitimacy_severe_penalty
+	add_stability = stability_severe_penalty
+	add_prestige = prestige_severe_penalty
+}
+
+dbo_event_extreme_penalty = {
+	add_legitimacy = legitimacy_extreme_penalty
+	add_stability = stability_extreme_penalty
+	add_prestige = prestige_extreme_penalty
+}
+
+dbo_event_ultimate_penalty = {
+	add_legitimacy = legitimacy_ultimate_penalty
+	add_stability = stability_ultimate_penalty
+	add_prestige = prestige_ultimate_penalty
+}
+
+dbo_event_radical_penalty = {
+	add_legitimacy = legitimacy_radical_penalty
+	add_stability = stability_radical_penalty
+	add_prestige = prestige_radical_penalty
+}

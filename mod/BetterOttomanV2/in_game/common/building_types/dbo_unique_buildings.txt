@@ -1,0 +1,52 @@
+﻿dbo_beylerbeyi = {
+	is_special = yes
+	is_foreign = no
+	pop_type = nobles
+	max_levels = 1
+	category = government_category
+	# obsolete = bey_fortress
+	employment_size = large_noble_employment
+	rural_settlement = no
+	town = no
+	city = yes
+	megalopolis = yes
+	expensive = yes
+	important_for_AI = yes
+	important_for_UI = yes
+	build_time = small_capital_build_time
+	location_potential = {
+		is_province_capital = yes
+	}
+	country_potential = {
+		has_estate_privilege = estate_privilege:dbo_destiny_nobles_privilege_pashas
+	}
+	modifier = {
+		local_proximity_source = 10
+		local_nobles_estate_power = 1
+		local_monthly_development = 0.001
+		local_monthly_prosperity = 0.001
+		local_max_control = 0.1
+		local_crown_estate_power = 0.25
+		local_manpower = 0.01
+		local_defensive = 0.25
+		can_recruit_regiment_in_this_location = yes
+	}
+	unique_production_methods = {
+		dbo_beylerbeyi_maintenance = {
+			furniture = 0.1
+			glass = 0.05
+			goods_gold = 0.05
+			marble = 0.05
+			paper = 0.2
+			books = 0.1
+			cloth = 0.1
+			fine_cloth = 0.05
+			stone = 0.1
+			tools = 0.2
+			weaponry = 0.2
+			tar = 0.1
+			category = building_maintenance
+		}
+	}
+	construction_demand = local_governor_construction
+}

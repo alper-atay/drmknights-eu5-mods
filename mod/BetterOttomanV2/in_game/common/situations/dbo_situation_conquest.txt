@@ -1,0 +1,37 @@
+﻿dbo_situation_conquest = {
+	monthly_spawn_chance = monthly_spawn_chance_unique
+	can_start = {
+		current_date > 1337.1.1
+	}
+	can_end = {
+		trigger_if = {
+			limit = {
+				country_exists = c:TUR
+			}
+			c:TUR = {
+				dbo_situation_can_end = yes
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				country_exists = c:GKTUR
+			}
+			c:GKTUR = {
+				dbo_situation_can_end = yes
+			}
+		}
+		trigger_else = {
+		}
+	}
+	visible = {
+		OR = {
+			tag = TUR
+			tag = GKTUR
+		}
+	}
+	on_start = {
+		c:TUR = {
+			trigger_event_non_silently = dbo_situation_conquest.1
+		}
+	}
+}
