@@ -18,7 +18,7 @@
 		is_province_capital = yes
 	}
 	country_potential = {
-		has_estate_privilege = estate_privilege:dbo_destiny_nobles_privilege_pashas
+		tag = TUR
 	}
 	modifier = {
 		local_proximity_source = 10

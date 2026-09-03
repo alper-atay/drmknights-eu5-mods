@@ -9,7 +9,7 @@ dbo_dhe_war_wolf.101 = {
 	outcome = neutral
 	dynamic_historical_event = {
 		tag = TUR
-		tag = GKTUR
+		
 		from = 1337.1.1
 		to = 1837.1.1
 		monthly_chance = 100
@@ -38,7 +38,7 @@ dbo_dhe_war_wolf.102 = {
 	outcome = neutral
 	dynamic_historical_event = {
 		tag = TUR
-		tag = GKTUR
+		
 		from = 1337.1.1
 		to = 1837.1.1
 		monthly_chance = 100
@@ -69,7 +69,7 @@ dbo_dhe_war_wolf.103 = {
 	outcome = neutral
 	dynamic_historical_event = {
 		tag = TUR
-		tag = GKTUR
+		
 		from = 1337.1.1
 		to = 1837.1.1
 		monthly_chance = 100
@@ -100,7 +100,7 @@ dbo_dhe_war_wolf.104 = {
 	outcome = neutral
 	dynamic_historical_event = {
 		tag = TUR
-		tag = GKTUR
+		
 		from = 1337.1.1
 		to = 1837.1.1
 		monthly_chance = 100
@@ -131,7 +131,7 @@ dbo_dhe_war_wolf.105 = {
 	outcome = neutral
 	dynamic_historical_event = {
 		tag = TUR
-		tag = GKTUR
+		
 		from = 1337.1.1
 		to = 1837.1.1
 		monthly_chance = 100
@@ -162,7 +162,7 @@ dbo_dhe_war_wolf.106 = {
 	outcome = neutral
 	dynamic_historical_event = {
 		tag = TUR
-		tag = GKTUR
+		
 		from = 1337.1.1
 		to = 1837.1.1
 		monthly_chance = 100
@@ -193,7 +193,7 @@ dbo_dhe_war_wolf.107 = {
 	outcome = neutral
 	dynamic_historical_event = {
 		tag = TUR
-		tag = GKTUR
+		
 		from = 1337.1.1
 		to = 1837.1.1
 		monthly_chance = 100
@@ -224,7 +224,7 @@ dbo_dhe_war_wolf.108 = {
 	outcome = neutral
 	dynamic_historical_event = {
 		tag = TUR
-		tag = GKTUR
+		
 		from = 1337.1.1
 		to = 1837.1.1
 		monthly_chance = 100
@@ -255,7 +255,7 @@ dbo_dhe_war_wolf.109 = {
 	outcome = neutral
 	dynamic_historical_event = {
 		tag = TUR
-		tag = GKTUR
+		
 		from = 1337.1.1
 		to = 1837.1.1
 		monthly_chance = 100
@@ -286,7 +286,7 @@ dbo_dhe_war_wolf.110 = {
 	outcome = neutral
 	dynamic_historical_event = {
 		tag = TUR
-		tag = GKTUR
+		
 		from = 1337.1.1
 		to = 1837.1.1
 		monthly_chance = 100

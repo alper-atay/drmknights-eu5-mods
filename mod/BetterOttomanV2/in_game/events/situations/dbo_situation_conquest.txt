@@ -8,6 +8,7 @@ dbo_situation_conquest.1 = {
 	outcome = neutral
 	option = {
 		name = dbo_situation_conquest.1.a
+		change_heir_selection = heir_selection:dbo_destiny_talented_youngest_heir_selection
 		custom_tooltip = {
 			text = dbo_situation_conquest_every_owned_location_add_ottoman_miracle_tt
 			every_owned_location = {
