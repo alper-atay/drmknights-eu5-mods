@@ -1,0 +1,21 @@
+﻿dbo_destiny_gunpowder_empire = {
+	unique = yes
+	potential = {
+		has_unlocked_government_reform_trigger = {
+			type = dbo_destiny_gunpowder_empire
+		}
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = government_reform
+			type = dbo_destiny_gunpowder_empire
+		}
+	}
+	country_modifier = {
+		rto_press_claims_price_cost_modifier = -0.5
+		government_reform_slots = 1
+		government_size = 1
+		research_speed_modifier = 0.2
+		global_institution_growth_modifier = 0.2
+	}
+}
