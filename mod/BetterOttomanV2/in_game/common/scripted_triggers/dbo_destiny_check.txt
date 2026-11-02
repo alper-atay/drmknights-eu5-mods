@@ -20,3 +20,19 @@ dbo_destiny_anatolian_beyliks_forced_annex_check = {
 		}
 	}
 }
+
+dbo_destiny_ottoman_empire_check = {
+	trigger_if = {
+		limit = {
+			has_reform = government_reform:dbo_destiny_ottoman_empire
+		}
+		has_reform = government_reform:dbo_destiny_ottoman_empire
+	}
+	trigger_else = {
+		country_rank = country_rank:rank_empire
+		OR = {
+			has_reform = government_reform:legacy_of_the_ottomans
+			has_reform = government_reform:turkish_pashas
+		}
+	}
+}

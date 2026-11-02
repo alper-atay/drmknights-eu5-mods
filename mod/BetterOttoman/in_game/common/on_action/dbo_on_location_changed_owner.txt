@@ -37,7 +37,7 @@ dbo_on_conquer_any_location = {
 		}
 		add_location_modifier = {
 			modifier = dbo_location_modifier_miracle
-			years = 40
+			years = 50
 			mode = replace
 		}
 		if = {

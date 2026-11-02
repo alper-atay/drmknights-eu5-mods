@@ -1,6 +1,8 @@
 ﻿l_turkish:
  dbo_destiny_gunpowder_empire: "Kader: Barut İmparatorluğu"
  dbo_destiny_gunpowder_empire_desc: "Kaderin kudreti, Türk'ün kılıcında parlayan soğuk çelik ve bozkırın bağrından kopan fırtına olarak tarihin derinliklerine kazınmıştır. Barutun patlayıcı gücü, Türk'ün stratejik zekasıyla birleşerek göklerin gazabını yeryüzüne indirmiş; gözlerindeki kızıl ateşle krallıkların sonunu, keskin dişleriyle ise yeni bir dünya düzeninin şafağını müjdelemiştir.\n\nBarut İmparatorluğu sadece parçalayan bir canavar değil, aynı zamanda ihtişamlı şehirleri ve ticaret yollarını koruyan mağrur bir muhafız, liyakat ve disiplinle örülmüş bir devletin ölümsüz simgesidir."
+ dbo_destiny_ottoman_empire: "Osmanlı İmparatorluğu"
+ dbo_destiny_ottoman_empire_desc: "Kaderin kudreti, Türk'ün kılıcında parlayan soğuk çelik ve bozkırın bağrından kopan fırtına olarak tarihin derinliklerine kazınmıştır. Osmanlı'nın kudretli pençesi, Türk'ün stratejik zekasıyla birleşerek göklerin gazabını yeryüzüne indirmiş; gözlerindeki kızıl ateşle krallıkların sonunu, keskin dişleriyle ise yeni bir dünya düzeninin şafağını müjdelemiştir.\n\nDevlet-i Aliyye sadece parçalayan bir canavar değil, aynı zamanda ihtişamlı şehirleri ve ticaret yollarını koruyan mağrur bir muhafız, liyakat ve disiplinle örülmüş bir devletin ölümsüz simgesidir."
  dbo_war_wolf: "Savaş Kurdu"
  dbo_war_wolf_t1: "1. $dbo_war_wolf$"
  dbo_war_wolf_t2: "2. $dbo_war_wolf$"

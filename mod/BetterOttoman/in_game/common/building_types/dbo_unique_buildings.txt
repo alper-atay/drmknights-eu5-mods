@@ -137,26 +137,36 @@ dbo_mevlana_dergahi = {
 }
 
 REPLACE:janissary_barracks = {
+	audio_tier = 4
 	is_special = yes
 	is_foreign = no
 	pop_type = soldiers
+	
 	max_levels = janissary_barracks_size
-	employment_size = manpower_employment
+	employment_size = slave_soldier_barracks
+	
 	category = military_category
+	
 	rural_settlement = no
 	town = no
 	city = yes
 	megalopolis = yes
+
 	expensive = yes
+	
 	build_time = soldier_building
+	
 	always_add_demands = yes
+	
 	location_potential = {
 		is_province_capital = yes
 	}
+
 	modifier = {
 		local_manpower = 0.025
 		can_recruit_regiment_in_this_location = yes
 	}
+	
 	possible_production_methods = {
 		janissary_barracks_maintenance
 	}

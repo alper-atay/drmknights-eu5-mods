@@ -2,4 +2,6 @@
  dbo_beylerbeyi: "Beylerbeyliği"
  dbo_beylerbeyi_desc: "Devlet-i Aliyye'de bir eyaletin veya bölgenin en yüksek yöneticisi olan Beylerbeyi, hem askeri hem de sivil otoriteye sahip önemli bir makamdır. Beylerbeyi, padişahın temsilcisi olarak görev yapar, bölgesel yönetimi sağlar ve gerektiğinde askeri liderlik yapar."
  dbo_beylerbeyi_maintenance: "$dbo_beylerbeyi$"
+ dbo_beylerbeyi_fortress: "Beylerbeyi Hisarı"
+ dbo_beylerbeyi_fortress_desc: "Beylerbeyi Hisarı, Devlet-i Aliyye'nin önemli bir askeri yapısıdır. Bu hisar, stratejik bir konumda inşa edilmiş olup, hem savunma hem de kontrol amacıyla kullanılmıştır. Beylerbeyi Hisarı, bölgedeki güvenliği sağlamak ve askeri gücünü göstermek için kritik bir rol oynamıştır."
  dbo_beylerbeyi_fortress_maintenance: "$dbo_beylerbeyi_fortress$"

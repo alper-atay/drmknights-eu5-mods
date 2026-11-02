@@ -12,10 +12,44 @@
 		}
 	}
 	country_modifier = {
+		global_levy_size_modifier = 0.25
+		global_levy_recruitment_speed_modifier = 0.25
+		levy_combat_efficiency_modifier = 0.1
 		rto_press_claims_price_cost_modifier = -0.5
 		government_reform_slots = 1
 		government_size = 1
-		research_speed_modifier = 0.2
-		global_institution_growth_modifier = 0.2
+		num_local_governors = 1
+		research_speed_modifier = 0.25
+		global_institution_growth_modifier = 0.25
+	}
+}
+
+dbo_destiny_ottoman_empire = {
+	unique = yes
+	potential = {
+		has_unlocked_government_reform_trigger = {
+			type = dbo_destiny_ottoman_empire
+		}
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = government_reform
+			type = dbo_destiny_ottoman_empire
+		}
+	}
+	country_modifier = {
+		rto_press_claims_price_cost_modifier = -0.5
+		government_reform_slots = 1
+		government_size = 1
+		num_local_governors = 1
+		research_speed_modifier = 0.25
+		global_institution_growth_modifier = 0.25
+		global_integration_speed_modifier = 0.25
+		auto_slave_raid_different_religion = yes
+		cultures_capacity_modifier = 0.25
+		global_crown_estate_power = 0.1
+		monthly_legitimacy = 0.01
+		monthly_prestige = 0.05
+		stability_investment = 0.05
 	}
 }

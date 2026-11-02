@@ -7,7 +7,7 @@
 	local_devastation_recovery = 0.005
 	local_monthly_prosperity = 0.001
 	local_monthly_development = 0.001
-	local_pop_conversion_speed = 0.005
-	local_pop_assimilation_speed = 0.005
+	local_pop_conversion_speed = 0.01
+	local_pop_assimilation_speed = 0.01
 	local_integration_speed = 0.25
 }
