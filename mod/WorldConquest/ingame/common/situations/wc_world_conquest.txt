@@ -1,0 +1,15 @@
+﻿wc_world_conquest = {
+	monthly_spawn_chance = monthly_spawn_chance_unique
+	can_start = {
+		current_date > 1337.1.1
+		is_human = yes
+	}
+	can_end = {
+		always = no
+	}
+	visible = {
+		is_human = yes
+	}
+	on_start = {
+	}
+}

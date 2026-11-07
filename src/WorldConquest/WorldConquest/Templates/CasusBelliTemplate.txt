@@ -1,0 +1,14 @@
+﻿{{CasusBelliName}}_casus_belli = {
+	create_visible = {
+		always = no
+	}
+	create_enabled = {
+		always = no
+	}
+	war_goal_type = {{WargoalName}}_wargoal
+	province = {
+		any_location_in_province = {
+			always = yes
+		}
+	}
+}

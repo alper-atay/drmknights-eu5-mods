@@ -1,0 +1,11 @@
+﻿{{KeyName}}_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = {{KeyName}}_policy
+		}
+		has_policy = {{KeyName}}_policy
+	}
+	trigger_else = {
+		{{OwningList}}
+	}
+}

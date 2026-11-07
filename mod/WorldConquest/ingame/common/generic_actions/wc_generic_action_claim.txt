@@ -1,0 +1,7544 @@
+﻿wc_europe_western_europe_scandinavian_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_europe_western_europe_scandinavian_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_europe_western_europe_scandinavian_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:scandinavian_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_europe_western_europe_scandinavian_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_europe_western_europe_north_atlantic_islands_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_europe_western_europe_north_atlantic_islands_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_europe_western_europe_north_atlantic_islands_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:north_atlantic_islands_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_europe_western_europe_north_atlantic_islands_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_europe_western_europe_north_german_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_europe_western_europe_north_german_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_europe_western_europe_north_german_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:north_german_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_europe_western_europe_north_german_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_europe_western_europe_south_german_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_europe_western_europe_south_german_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_europe_western_europe_south_german_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:south_german_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_europe_western_europe_south_german_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_europe_western_europe_great_britain_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_europe_western_europe_great_britain_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_europe_western_europe_great_britain_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:great_britain_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_europe_western_europe_great_britain_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_europe_western_europe_ireland_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_europe_western_europe_ireland_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_europe_western_europe_ireland_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:ireland_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_europe_western_europe_ireland_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_europe_western_europe_france_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_europe_western_europe_france_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_europe_western_europe_france_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:france_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_europe_western_europe_france_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_europe_western_europe_iberia_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_europe_western_europe_iberia_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_europe_western_europe_iberia_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:iberia_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_europe_western_europe_iberia_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_europe_western_europe_italy_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_europe_western_europe_italy_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_europe_western_europe_italy_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:italy_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_europe_western_europe_italy_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_europe_eastern_europe_carpathia_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_europe_eastern_europe_carpathia_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_europe_eastern_europe_carpathia_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:carpathia_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_europe_eastern_europe_carpathia_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_europe_eastern_europe_baltic_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_europe_eastern_europe_baltic_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_europe_eastern_europe_baltic_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:baltic_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_europe_eastern_europe_baltic_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_europe_eastern_europe_ruthenia_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_europe_eastern_europe_ruthenia_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_europe_eastern_europe_ruthenia_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:ruthenia_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_europe_eastern_europe_ruthenia_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_europe_eastern_europe_caucasus_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_europe_eastern_europe_caucasus_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_europe_eastern_europe_caucasus_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:caucasus_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_europe_eastern_europe_caucasus_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_europe_eastern_europe_steppes_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_europe_eastern_europe_steppes_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_europe_eastern_europe_steppes_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:steppes_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_europe_eastern_europe_steppes_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_europe_eastern_europe_russian_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_europe_eastern_europe_russian_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_europe_eastern_europe_russian_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:russian_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_europe_eastern_europe_russian_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_europe_eastern_europe_ural_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_europe_eastern_europe_ural_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_europe_eastern_europe_ural_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:ural_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_europe_eastern_europe_ural_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_europe_eastern_europe_balkan_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_europe_eastern_europe_balkan_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_europe_eastern_europe_balkan_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:balkan_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_europe_eastern_europe_balkan_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_asia_central_asia_khorasan_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_asia_central_asia_khorasan_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_asia_central_asia_khorasan_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:khorasan_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_asia_central_asia_khorasan_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_asia_middle_east_anatolia_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_asia_middle_east_anatolia_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_asia_middle_east_anatolia_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:anatolia_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_asia_middle_east_anatolia_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_asia_middle_east_crescent_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_asia_middle_east_crescent_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_asia_middle_east_crescent_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:crescent_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_asia_middle_east_crescent_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_asia_middle_east_arabia_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_asia_middle_east_arabia_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_asia_middle_east_arabia_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:arabia_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_asia_middle_east_arabia_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_asia_middle_east_persia_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_asia_middle_east_persia_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_asia_middle_east_persia_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:persia_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_asia_middle_east_persia_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_asia_east_asia_east_china_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_asia_east_asia_east_china_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_asia_east_asia_east_china_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:east_china_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_asia_east_asia_east_china_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_asia_east_asia_japan_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_asia_east_asia_japan_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_asia_east_asia_japan_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:japan_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_asia_east_asia_japan_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_asia_east_asia_korea_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_asia_east_asia_korea_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_asia_east_asia_korea_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:korea_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_asia_east_asia_korea_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_asia_east_asia_manchuria_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_asia_east_asia_manchuria_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_asia_east_asia_manchuria_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:manchuria_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_asia_east_asia_manchuria_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_asia_east_asia_mongolia_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_asia_east_asia_mongolia_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_asia_east_asia_mongolia_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:mongolia_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_asia_east_asia_mongolia_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_asia_east_asia_north_china_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_asia_east_asia_north_china_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_asia_east_asia_north_china_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:north_china_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_asia_east_asia_north_china_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_asia_east_asia_south_china_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_asia_east_asia_south_china_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_asia_east_asia_south_china_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:south_china_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_asia_east_asia_south_china_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_asia_east_asia_tibet_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_asia_east_asia_tibet_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_asia_east_asia_tibet_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:tibet_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_asia_east_asia_tibet_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_asia_east_asia_west_china_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_asia_east_asia_west_china_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_asia_east_asia_west_china_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:west_china_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_asia_east_asia_west_china_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_asia_east_asia_xinjiang_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_asia_east_asia_xinjiang_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_asia_east_asia_xinjiang_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:xinjiang_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_asia_east_asia_xinjiang_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_asia_north_asia_west_siberia_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_asia_north_asia_west_siberia_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_asia_north_asia_west_siberia_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:west_siberia_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_asia_north_asia_west_siberia_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_asia_north_asia_east_siberia_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_asia_north_asia_east_siberia_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_asia_north_asia_east_siberia_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:east_siberia_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_asia_north_asia_east_siberia_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_asia_south_asia_hindustan_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_asia_south_asia_hindustan_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_asia_south_asia_hindustan_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:hindustan_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_asia_south_asia_hindustan_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_asia_south_asia_bengal_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_asia_south_asia_bengal_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_asia_south_asia_bengal_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:bengal_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_asia_south_asia_bengal_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_asia_south_asia_central_india_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_asia_south_asia_central_india_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_asia_south_asia_central_india_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:central_india_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_asia_south_asia_central_india_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_asia_south_asia_western_india_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_asia_south_asia_western_india_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_asia_south_asia_western_india_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:western_india_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_asia_south_asia_western_india_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_asia_south_asia_deccan_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_asia_south_asia_deccan_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_asia_south_asia_deccan_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:deccan_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_asia_south_asia_deccan_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_asia_south_east_asia_indochina_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_asia_south_east_asia_indochina_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_asia_south_east_asia_indochina_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:indochina_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_asia_south_east_asia_indochina_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_asia_south_east_asia_indonesia_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_asia_south_east_asia_indonesia_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_asia_south_east_asia_indonesia_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:indonesia_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_asia_south_east_asia_indonesia_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_africa_central_africa_central_africa_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_africa_central_africa_central_africa_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_africa_central_africa_central_africa_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:central_africa_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_africa_central_africa_central_africa_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_africa_central_africa_kongo_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_africa_central_africa_kongo_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_africa_central_africa_kongo_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:kongo_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_africa_central_africa_kongo_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_africa_east_africa_ethiopia_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_africa_east_africa_ethiopia_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_africa_east_africa_ethiopia_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:ethiopia_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_africa_east_africa_ethiopia_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_africa_east_africa_nubia_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_africa_east_africa_nubia_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_africa_east_africa_nubia_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:nubia_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_africa_east_africa_nubia_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_africa_east_africa_somalia_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_africa_east_africa_somalia_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_africa_east_africa_somalia_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:somalia_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_africa_east_africa_somalia_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_africa_east_africa_great_lakes_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_africa_east_africa_great_lakes_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_africa_east_africa_great_lakes_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:great_lakes_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_africa_east_africa_great_lakes_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_africa_east_africa_swahili_coast_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_africa_east_africa_swahili_coast_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_africa_east_africa_swahili_coast_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:swahili_coast_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_africa_east_africa_swahili_coast_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_africa_east_africa_madagascar_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_africa_east_africa_madagascar_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_africa_east_africa_madagascar_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:madagascar_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_africa_east_africa_madagascar_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_africa_north_africa_egypt_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_africa_north_africa_egypt_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_africa_north_africa_egypt_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:egypt_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_africa_north_africa_egypt_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_africa_north_africa_macaronesia_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_africa_north_africa_macaronesia_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_africa_north_africa_macaronesia_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:macaronesia_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_africa_north_africa_macaronesia_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_africa_north_africa_maghreb_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_africa_north_africa_maghreb_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_africa_north_africa_maghreb_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:maghreb_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_africa_north_africa_maghreb_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_africa_southern_africa_southern_africa_islands_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_africa_southern_africa_southern_africa_islands_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_africa_southern_africa_southern_africa_islands_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:southern_africa_islands_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_africa_southern_africa_southern_africa_islands_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_africa_southern_africa_southern_africa_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_africa_southern_africa_southern_africa_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_africa_southern_africa_southern_africa_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:southern_africa_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_africa_southern_africa_southern_africa_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_africa_southern_africa_zimbabwe_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_africa_southern_africa_zimbabwe_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_africa_southern_africa_zimbabwe_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:zimbabwe_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_africa_southern_africa_zimbabwe_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_africa_west_africa_guinea_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_africa_west_africa_guinea_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_africa_west_africa_guinea_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:guinea_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_africa_west_africa_guinea_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_africa_west_africa_sahel_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_africa_west_africa_sahel_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_africa_west_africa_sahel_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:sahel_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_africa_west_africa_sahel_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_america_north_america_canada_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_america_north_america_canada_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_america_north_america_canada_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:canada_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_america_north_america_canada_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_america_north_america_caribbean_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_america_north_america_caribbean_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_america_north_america_caribbean_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:caribbean_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_america_north_america_caribbean_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_america_north_america_east_coast_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_america_north_america_east_coast_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_america_north_america_east_coast_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:east_coast_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_america_north_america_east_coast_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_america_north_america_great_plains_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_america_north_america_great_plains_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_america_north_america_great_plains_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:great_plains_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_america_north_america_great_plains_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_america_north_america_mesoamerica_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_america_north_america_mesoamerica_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_america_north_america_mesoamerica_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:mesoamerica_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_america_north_america_mesoamerica_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_america_north_america_central_america_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_america_north_america_central_america_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_america_north_america_central_america_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:central_america_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_america_north_america_central_america_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_america_north_america_aridoamerica_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_america_north_america_aridoamerica_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_america_north_america_aridoamerica_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:aridoamerica_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_america_north_america_aridoamerica_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_america_north_america_alaska_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_america_north_america_alaska_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_america_north_america_alaska_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:alaska_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_america_north_america_alaska_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_america_north_america_west_coast_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_america_north_america_west_coast_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_america_north_america_west_coast_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:west_coast_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_america_north_america_west_coast_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_america_south_america_colombia_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_america_south_america_colombia_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_america_south_america_colombia_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:colombia_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_america_south_america_colombia_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_america_south_america_brazil_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_america_south_america_brazil_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_america_south_america_brazil_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:brazil_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_america_south_america_brazil_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_america_south_america_andes_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_america_south_america_andes_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_america_south_america_andes_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:andes_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_america_south_america_andes_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_america_south_america_chaco_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_america_south_america_chaco_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_america_south_america_chaco_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:chaco_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_america_south_america_chaco_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_america_south_america_la_plata_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_america_south_america_la_plata_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_america_south_america_la_plata_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:la_plata_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_america_south_america_la_plata_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_oceania_australasia_australia_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_oceania_australasia_australia_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_oceania_australasia_australia_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:australia_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_oceania_australasia_australia_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_oceania_australasia_new_zealand_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_oceania_australasia_new_zealand_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_oceania_australasia_new_zealand_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:new_zealand_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_oceania_australasia_new_zealand_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_oceania_pacific_islands_polynesia_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_oceania_pacific_islands_polynesia_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_oceania_pacific_islands_polynesia_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:polynesia_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_oceania_pacific_islands_polynesia_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_oceania_pacific_islands_micronesia_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_oceania_pacific_islands_micronesia_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_oceania_pacific_islands_micronesia_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:micronesia_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_oceania_pacific_islands_micronesia_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_oceania_pacific_islands_melanesia_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_oceania_pacific_islands_melanesia_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_oceania_pacific_islands_melanesia_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:melanesia_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_oceania_pacific_islands_melanesia_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_oceania_north_atlantic_ocean_sub_continent_north_atlantic_ocean_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_oceania_north_atlantic_ocean_sub_continent_north_atlantic_ocean_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_oceania_north_atlantic_ocean_sub_continent_north_atlantic_ocean_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:north_atlantic_ocean_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_oceania_north_atlantic_ocean_sub_continent_north_atlantic_ocean_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_oceania_south_atlantic_sub_continent_south_atlantic_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_oceania_south_atlantic_sub_continent_south_atlantic_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_oceania_south_atlantic_sub_continent_south_atlantic_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:south_atlantic_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_oceania_south_atlantic_sub_continent_south_atlantic_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_oceania_indian_ocean_sub_continent_indian_ocean_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_oceania_indian_ocean_sub_continent_indian_ocean_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_oceania_indian_ocean_sub_continent_indian_ocean_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:indian_ocean_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_oceania_indian_ocean_sub_continent_indian_ocean_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_oceania_north_pacific_ocean_sub_continent_north_pacific_ocean_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_oceania_north_pacific_ocean_sub_continent_north_pacific_ocean_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_oceania_north_pacific_ocean_sub_continent_north_pacific_ocean_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:north_pacific_ocean_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_oceania_north_pacific_ocean_sub_continent_north_pacific_ocean_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_oceania_south_pacific_ocean_sub_continent_south_pacific_ocean_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_oceania_south_pacific_ocean_sub_continent_south_pacific_ocean_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_oceania_south_pacific_ocean_sub_continent_south_pacific_ocean_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:south_pacific_ocean_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_oceania_south_pacific_ocean_sub_continent_south_pacific_ocean_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+
+wc_oceania_antarctic_ocean_sub_continent_antarctic_ocean_region_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			wc_oceania_antarctic_ocean_sub_continent_antarctic_ocean_region_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = wc_oceania_antarctic_ocean_sub_continent_antarctic_ocean_region_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:wc_world_conquest = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:wc_world_conquest = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:antarctic_ocean_region
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:wc_oceania_antarctic_ocean_sub_continent_antarctic_ocean_region_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}
+

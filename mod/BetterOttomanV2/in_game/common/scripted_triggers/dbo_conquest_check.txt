@@ -268,3 +268,26 @@ dbo_conquest_new_homeland_check = {
 		own_entire_province = province_definition:garmian_province
 	}
 }
+
+dbo_conquest_steppes_region_check = {
+	trigger_if = {
+		limit = {
+			has_policy = dbo_conquest_stamp_steppes_region_policy
+		}
+		has_policy = dbo_conquest_stamp_steppes_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:crimea_area
+		own_entire_area = area:matrega_area
+		own_entire_area = area:yedisan_area
+		own_entire_area = area:zaporizhzhia_area
+		own_entire_area = area:kursk_area
+		own_entire_area = area:sloboda_ukraine_area
+		own_entire_area = area:pryazovia_area
+		own_entire_area = area:azov_area
+		own_entire_area = area:lower_don_area
+		own_entire_area = area:astrakhan_area
+		own_entire_area = area:majar_area
+		own_entire_area = area:lower_yik_area
+	}
+}

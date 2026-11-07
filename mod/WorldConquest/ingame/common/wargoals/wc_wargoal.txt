@@ -1,0 +1,984 @@
+﻿wc_europe_western_europe_scandinavian_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:scandinavian_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_europe_western_europe_north_atlantic_islands_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:north_atlantic_islands_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_europe_western_europe_north_german_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:north_german_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_europe_western_europe_south_german_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:south_german_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_europe_western_europe_great_britain_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:great_britain_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_europe_western_europe_ireland_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:ireland_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_europe_western_europe_france_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:france_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_europe_western_europe_iberia_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:iberia_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_europe_western_europe_italy_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:italy_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_europe_eastern_europe_carpathia_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:carpathia_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_europe_eastern_europe_baltic_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:baltic_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_europe_eastern_europe_ruthenia_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:ruthenia_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_europe_eastern_europe_caucasus_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:caucasus_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_europe_eastern_europe_steppes_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:steppes_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_europe_eastern_europe_russian_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:russian_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_europe_eastern_europe_ural_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:ural_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_europe_eastern_europe_balkan_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:balkan_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_asia_central_asia_khorasan_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:khorasan_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_asia_middle_east_anatolia_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:anatolia_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_asia_middle_east_crescent_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:crescent_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_asia_middle_east_arabia_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:arabia_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_asia_middle_east_persia_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:persia_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_asia_east_asia_east_china_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:east_china_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_asia_east_asia_japan_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:japan_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_asia_east_asia_korea_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:korea_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_asia_east_asia_manchuria_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:manchuria_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_asia_east_asia_mongolia_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:mongolia_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_asia_east_asia_north_china_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:north_china_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_asia_east_asia_south_china_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:south_china_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_asia_east_asia_tibet_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:tibet_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_asia_east_asia_west_china_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:west_china_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_asia_east_asia_xinjiang_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:xinjiang_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_asia_north_asia_west_siberia_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:west_siberia_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_asia_north_asia_east_siberia_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:east_siberia_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_asia_south_asia_hindustan_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:hindustan_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_asia_south_asia_bengal_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:bengal_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_asia_south_asia_central_india_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:central_india_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_asia_south_asia_western_india_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:western_india_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_asia_south_asia_deccan_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:deccan_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_asia_south_east_asia_indochina_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:indochina_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_asia_south_east_asia_indonesia_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:indonesia_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_africa_central_africa_central_africa_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:central_africa_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_africa_central_africa_kongo_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:kongo_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_africa_east_africa_ethiopia_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:ethiopia_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_africa_east_africa_nubia_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:nubia_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_africa_east_africa_somalia_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:somalia_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_africa_east_africa_great_lakes_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:great_lakes_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_africa_east_africa_swahili_coast_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:swahili_coast_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_africa_east_africa_madagascar_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:madagascar_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_africa_north_africa_egypt_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:egypt_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_africa_north_africa_macaronesia_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:macaronesia_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_africa_north_africa_maghreb_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:maghreb_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_africa_southern_africa_southern_africa_islands_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:southern_africa_islands_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_africa_southern_africa_southern_africa_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:southern_africa_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_africa_southern_africa_zimbabwe_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:zimbabwe_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_africa_west_africa_guinea_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:guinea_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_africa_west_africa_sahel_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:sahel_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_america_north_america_canada_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:canada_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_america_north_america_caribbean_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:caribbean_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_america_north_america_east_coast_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:east_coast_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_america_north_america_great_plains_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:great_plains_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_america_north_america_mesoamerica_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:mesoamerica_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_america_north_america_central_america_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:central_america_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_america_north_america_aridoamerica_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:aridoamerica_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_america_north_america_alaska_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:alaska_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_america_north_america_west_coast_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:west_coast_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_america_south_america_colombia_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:colombia_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_america_south_america_brazil_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:brazil_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_america_south_america_andes_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:andes_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_america_south_america_chaco_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:chaco_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_america_south_america_la_plata_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:la_plata_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_oceania_australasia_australia_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:australia_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_oceania_australasia_new_zealand_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:new_zealand_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_oceania_pacific_islands_polynesia_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:polynesia_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_oceania_pacific_islands_micronesia_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:micronesia_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_oceania_pacific_islands_melanesia_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:melanesia_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_oceania_north_atlantic_ocean_sub_continent_north_atlantic_ocean_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:north_atlantic_ocean_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_oceania_south_atlantic_sub_continent_south_atlantic_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:south_atlantic_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_oceania_indian_ocean_sub_continent_indian_ocean_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:indian_ocean_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_oceania_north_pacific_ocean_sub_continent_north_pacific_ocean_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:north_pacific_ocean_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_oceania_south_pacific_ocean_sub_continent_south_pacific_ocean_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:south_pacific_ocean_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+wc_oceania_antarctic_ocean_sub_continent_antarctic_ocean_region_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:antarctic_ocean_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}

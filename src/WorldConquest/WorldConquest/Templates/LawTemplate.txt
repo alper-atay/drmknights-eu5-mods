@@ -1,0 +1,29 @@
+﻿{{LawName}} = {
+	law_category = {{LawCategoryName}}
+	unique = yes
+	potential = {
+		OR = {
+			has_unlocked_policy_trigger = {
+				type = {{PolicyName}}
+			}
+		}
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = {{PolicyName}}
+		}
+	}
+	{{PolicyName}} = {
+		unique = yes
+		allow = {
+			has_unlocked_policy_trigger = {
+				type = {{PolicyName}}
+			}
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}

@@ -1,0 +1,91 @@
+﻿{{KeyName}}_claim = {
+	type = situation
+	show_message = no
+	potential = {
+	}
+	allow = {
+		scope:actor = {
+			at_war = no
+			has_raised_levies = no
+			{{KeyName}}_challenge_check = yes
+		}
+	}
+	ai_tick = never
+	ai_tick_frequency = 12
+	automation_tick = never
+	automation_tick_frequency = 12
+	price = price:rto_press_claims_price
+	cooldown = {
+		type = {{KeyName}}_claim_cooldown_key
+		years = 1
+	}
+	select_trigger = {
+		looking_for_a = situation
+		interaction_source_list = {
+			situation:{{SituationName}} = {
+				add_to_list = source
+			}
+		}
+		target_flag = recipient
+		name = "choose_situation"
+		column = {
+			data = name
+		}
+		visible = {
+			situation:{{SituationName}} = this
+			situation_is_active = yes
+		}
+	}
+	select_trigger = {
+		looking_for_a = province
+		target_flag = target
+		name = "choose_province"
+		none_available_msg_key = "no_provinces_available"
+		column = {
+			data = owner_flag
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+			scope:actor = {
+				can_declare_war_on = root.owner
+			}
+			trigger_if = {
+				region = region:{{RegionName}}
+			}
+			any_location_in_province = {
+				is_neighbor_of = scope:actor
+			}
+			NOT = {
+				owner = {
+					OR = {
+						this = scope:actor
+						overlord ?= scope:actor
+						has_mutual_scripted_relation = {
+							type = relation_type:alliance
+							target = scope:actor
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target
+			}
+			scope:actor = {
+				add_casus_belli = {
+					target = scope:target.owner
+					type = casus_belli:{{KeyName}}_casus_belli
+					province = scope:target
+				}
+			}
+		}
+	}
+}

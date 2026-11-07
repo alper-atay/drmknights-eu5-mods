@@ -1,0 +1,12 @@
+﻿{{WargoalName}}_wargoal = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:{{RegionName}}
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}

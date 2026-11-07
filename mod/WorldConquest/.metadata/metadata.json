@@ -1,0 +1,14 @@
+﻿{
+  "name": "DrmKnightS World Conquest",
+  "id": "drmknights.worldconquest",
+  "version": "1.3",
+  "game_id": "eu5",
+  "picture": "thumbnail.png",
+  "supported_game_version": "1.4.*",
+  "short_description": "Conquer the World! This mod adds a new game mode where you can conquer the world by claiming regions and expanding your empire.",
+  "tags": [
+    "Gameplay"
+  ],
+  "relationships": [],
+  "game_custom_data": {}
+}

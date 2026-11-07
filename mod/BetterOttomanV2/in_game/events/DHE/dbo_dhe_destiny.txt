@@ -1,5 +1,4 @@
 ﻿namespace = dbo_dhe_destiny
-
 # dbo_destiny_ottoman_empire
 dbo_dhe_destiny.205 = {
 	type = country_event

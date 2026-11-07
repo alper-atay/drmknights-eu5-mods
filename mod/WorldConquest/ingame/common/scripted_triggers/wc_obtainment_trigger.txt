@@ -1,0 +1,1604 @@
+﻿wc_europe_western_europe_scandinavian_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_europe_western_europe_scandinavian_region_policy
+		}
+		has_policy = wc_europe_western_europe_scandinavian_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:svealand_area
+		own_entire_area = area:gotaland_area
+		own_entire_area = area:denmark_area
+		own_entire_area = area:skaneland_area
+		own_entire_area = area:norrland_area
+		own_entire_area = area:finland_area
+		own_entire_area = area:syd_norge_area
+		own_entire_area = area:nord_norge_area
+		own_entire_area = area:karelia_area
+		own_entire_area = area:kola_area
+		own_entire_area = area:western_baltic_sea
+
+	}
+}
+wc_europe_western_europe_north_atlantic_islands_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_europe_western_europe_north_atlantic_islands_region_policy
+		}
+		has_policy = wc_europe_western_europe_north_atlantic_islands_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:iceland_area
+		own_entire_area = area:greenland_area
+		own_entire_area = area:northern_isles_area
+
+	}
+}
+wc_europe_western_europe_north_german_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_europe_western_europe_north_german_region_policy
+		}
+		has_policy = wc_europe_western_europe_north_german_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:brabant_area
+		own_entire_area = area:flanders_area
+		own_entire_area = area:friesland_area
+		own_entire_area = area:holland_area
+		own_entire_area = area:wallonia_area
+		own_entire_area = area:holstein_area
+		own_entire_area = area:brandenburg_area
+		own_entire_area = area:rhineland_area
+		own_entire_area = area:hesse_area
+		own_entire_area = area:westphalia_area
+		own_entire_area = area:lower_saxony_area
+		own_entire_area = area:upper_saxony_area
+		own_entire_area = area:mecklenburg_area
+		own_entire_area = area:pomerania_area
+
+	}
+}
+wc_europe_western_europe_south_german_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_europe_western_europe_south_german_region_policy
+		}
+		has_policy = wc_europe_western_europe_south_german_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:austria_area
+		own_entire_area = area:upper_austria_area
+		own_entire_area = area:salzburg_area
+		own_entire_area = area:styria_area
+		own_entire_area = area:carinthia_area
+		own_entire_area = area:tirol_area
+		own_entire_area = area:central_switzerland_area
+		own_entire_area = area:eastern_switzerland_area
+		own_entire_area = area:western_switzerland_area
+		own_entire_area = area:upper_rhine_area
+		own_entire_area = area:swabia_area
+		own_entire_area = area:franconia_area
+		own_entire_area = area:bavaria_area
+		own_entire_area = area:bohemia_area
+		own_entire_area = area:moravia_area
+		own_entire_area = area:alsace_area
+
+	}
+}
+wc_europe_western_europe_great_britain_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_europe_western_europe_great_britain_region_policy
+		}
+		has_policy = wc_europe_western_europe_great_britain_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:home_counties_area
+		own_entire_area = area:midlands_area
+		own_entire_area = area:northumbria_area
+		own_entire_area = area:east_anglia_area
+		own_entire_area = area:west_country_area
+		own_entire_area = area:scottish_highlands_area
+		own_entire_area = area:hebrides_area
+		own_entire_area = area:scottish_lowlands_area
+		own_entire_area = area:wales_area
+
+	}
+}
+wc_europe_western_europe_ireland_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_europe_western_europe_ireland_region_policy
+		}
+		has_policy = wc_europe_western_europe_ireland_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:leinster_area
+		own_entire_area = area:ulster_area
+		own_entire_area = area:connaught_area
+		own_entire_area = area:munster_area
+
+	}
+}
+wc_europe_western_europe_france_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_europe_western_europe_france_region_policy
+		}
+		has_policy = wc_europe_western_europe_france_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:anjou_area
+		own_entire_area = area:auvergne_area
+		own_entire_area = area:brittany_area
+		own_entire_area = area:burgundy_area
+		own_entire_area = area:champagne_area
+		own_entire_area = area:franche_comte_area
+		own_entire_area = area:gascony_area
+		own_entire_area = area:guyenne_area
+		own_entire_area = area:ile_de_france_area
+		own_entire_area = area:languedoc_area
+		own_entire_area = area:limousin_province
+		own_entire_area = area:lorraine_area
+		own_entire_area = area:lyonnais_area
+		own_entire_area = area:normandy_area
+		own_entire_area = area:orleanais_area
+		own_entire_area = area:picardy_area
+		own_entire_area = area:poitou_area
+		own_entire_area = area:provence_area
+		own_entire_area = area:savoy_area
+		own_entire_area = area:bay_of_biscay_area
+
+	}
+}
+wc_europe_western_europe_iberia_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_europe_western_europe_iberia_region_policy
+		}
+		has_policy = wc_europe_western_europe_iberia_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:galicia_area
+		own_entire_area = area:leon_area
+		own_entire_area = area:castile_area
+		own_entire_area = area:extremadura_area
+		own_entire_area = area:navarre_area
+		own_entire_area = area:aragon_area
+		own_entire_area = area:catalonia_area
+		own_entire_area = area:valencia_area
+		own_entire_area = area:balearics_area
+		own_entire_area = area:north_portugal_area
+		own_entire_area = area:south_portugal_area
+		own_entire_area = area:toledo_area
+		own_entire_area = area:andalusia_area
+		own_entire_area = area:granada_area
+		own_entire_area = area:murcia_area
+
+	}
+}
+wc_europe_western_europe_italy_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_europe_western_europe_italy_region_policy
+		}
+		has_policy = wc_europe_western_europe_italy_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:abruzzo_area
+		own_entire_area = area:apulia_area
+		own_entire_area = area:basilicata_area
+		own_entire_area = area:campania_area
+		own_entire_area = area:emilia_area
+		own_entire_area = area:lazio_area
+		own_entire_area = area:liguria_area
+		own_entire_area = area:lombardy_area
+		own_entire_area = area:marche_area
+		own_entire_area = area:piemonte_area
+		own_entire_area = area:sardinia_area
+		own_entire_area = area:sicily_area
+		own_entire_area = area:tuscany_area
+		own_entire_area = area:veneto_area
+		own_entire_area = area:tyrrhenian_sea
+
+	}
+}
+wc_europe_eastern_europe_carpathia_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_europe_eastern_europe_carpathia_region_policy
+		}
+		has_policy = wc_europe_eastern_europe_carpathia_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:moldavia_area
+		own_entire_area = area:north_alfold_area
+		own_entire_area = area:slovakia_area
+		own_entire_area = area:south_alfold_area
+		own_entire_area = area:transdanubia_area
+		own_entire_area = area:transylvania_area
+		own_entire_area = area:wallachia_area
+
+	}
+}
+wc_europe_eastern_europe_baltic_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_europe_eastern_europe_baltic_region_policy
+		}
+		has_policy = wc_europe_eastern_europe_baltic_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:baltic_area
+		own_entire_area = area:central_poland_area
+		own_entire_area = area:greater_poland_area
+		own_entire_area = area:lesser_poland_area
+		own_entire_area = area:lithuania_area
+		own_entire_area = area:mazovia_area
+		own_entire_area = area:prussia_area
+		own_entire_area = area:samogitia_area
+		own_entire_area = area:silesia_area
+		own_entire_area = area:eastern_baltic_sea
+
+	}
+}
+wc_europe_eastern_europe_ruthenia_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_europe_eastern_europe_ruthenia_region_policy
+		}
+		has_policy = wc_europe_eastern_europe_ruthenia_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:black_ruthenia_area
+		own_entire_area = area:left_bank_ukraine_area
+		own_entire_area = area:podolia_area
+		own_entire_area = area:polesia_area
+		own_entire_area = area:red_ruthenia_area
+		own_entire_area = area:severia_area
+		own_entire_area = area:volhynia_area
+		own_entire_area = area:right_bank_ukraine_area
+		own_entire_area = area:white_ruthenia_area
+
+	}
+}
+wc_europe_eastern_europe_caucasus_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_europe_eastern_europe_caucasus_region_policy
+		}
+		has_policy = wc_europe_eastern_europe_caucasus_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:armenian_highlands_area
+		own_entire_area = area:armenia_area
+		own_entire_area = area:georgia_area
+		own_entire_area = area:northern_caucasus_area
+		own_entire_area = area:shirvan_area
+
+	}
+}
+wc_europe_eastern_europe_steppes_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_europe_eastern_europe_steppes_region_policy
+		}
+		has_policy = wc_europe_eastern_europe_steppes_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:crimea_area
+		own_entire_area = area:matrega_area
+		own_entire_area = area:yedisan_area
+		own_entire_area = area:zaporizhzhia_area
+		own_entire_area = area:kursk_area
+		own_entire_area = area:sloboda_ukraine_area
+		own_entire_area = area:pryazovia_area
+		own_entire_area = area:azov_area
+		own_entire_area = area:lower_don_area
+		own_entire_area = area:astrakhan_area
+		own_entire_area = area:majar_area
+		own_entire_area = area:lower_yik_area
+
+	}
+}
+wc_europe_eastern_europe_russian_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_europe_eastern_europe_russian_region_policy
+		}
+		has_policy = wc_europe_eastern_europe_russian_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:moscow_area
+		own_entire_area = area:oka_area
+		own_entire_area = area:smolensk_area
+		own_entire_area = area:ryazan_area
+		own_entire_area = area:tambov_area
+		own_entire_area = area:samara_area
+		own_entire_area = area:nizhny_novgorod_area
+		own_entire_area = area:suzdal_area
+		own_entire_area = area:vladimir_area
+		own_entire_area = area:tver_area
+		own_entire_area = area:yaroslavl_area
+		own_entire_area = area:beloozero_area
+		own_entire_area = area:totma_area
+		own_entire_area = area:east_novgorod_area
+		own_entire_area = area:west_novgorod_area
+		own_entire_area = area:pomorye_area
+		own_entire_area = area:arkhangelsk_area
+
+	}
+}
+wc_europe_eastern_europe_ural_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_europe_eastern_europe_ural_region_policy
+		}
+		has_policy = wc_europe_eastern_europe_ural_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:kazan_area
+		own_entire_area = area:vyatka_area
+		own_entire_area = area:bolghar_area
+		own_entire_area = area:bashkiria_area
+		own_entire_area = area:karagay_area
+		own_entire_area = area:perm_area
+		own_entire_area = area:ust_sysola_area
+		own_entire_area = area:vorkuta_area
+		own_entire_area = area:ural_area
+
+	}
+}
+wc_europe_eastern_europe_balkan_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_europe_eastern_europe_balkan_region_policy
+		}
+		has_policy = wc_europe_eastern_europe_balkan_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:slovenia_area
+		own_entire_area = area:slavonia_area
+		own_entire_area = area:croatia_area
+		own_entire_area = area:bosnia_area
+		own_entire_area = area:serbia_area
+		own_entire_area = area:bulgaria_area
+		own_entire_area = area:macedonia_area
+		own_entire_area = area:thrace_area
+		own_entire_area = area:albania_area
+		own_entire_area = area:northern_greece_area
+		own_entire_area = area:morea_area
+		own_entire_area = area:aegean_archipelago_area
+
+	}
+}
+wc_asia_central_asia_khorasan_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_asia_central_asia_khorasan_region_policy
+		}
+		has_policy = wc_asia_central_asia_khorasan_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:badakhshan_area
+		own_entire_area = area:desht_kipchak_area
+		own_entire_area = area:eastern_khorasan_area
+		own_entire_area = area:khwarazm_area
+		own_entire_area = area:transoxiana_area
+		own_entire_area = area:western_khorasan_area
+		own_entire_area = area:zhetysu_area
+
+	}
+}
+wc_asia_middle_east_anatolia_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_asia_middle_east_anatolia_region_policy
+		}
+		has_policy = wc_asia_middle_east_anatolia_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:cappadocia_area
+		own_entire_area = area:central_anatolia_area
+		own_entire_area = area:cilicia_area
+		own_entire_area = area:marmara_area
+		own_entire_area = area:pontus_area
+		own_entire_area = area:west_anatolia_area
+
+	}
+}
+wc_asia_middle_east_crescent_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_asia_middle_east_crescent_region_policy
+		}
+		has_policy = wc_asia_middle_east_crescent_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:iraq_arabi_area
+		own_entire_area = area:jazira_area
+		own_entire_area = area:levant_area
+
+	}
+}
+wc_asia_middle_east_arabia_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_asia_middle_east_arabia_region_policy
+		}
+		has_policy = wc_asia_middle_east_arabia_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:bahrein_area
+		own_entire_area = area:hedjaz_area
+		own_entire_area = area:najd_area
+		own_entire_area = area:oman_area
+		own_entire_area = area:hail_area
+		own_entire_area = area:north_yemen_area
+		own_entire_area = area:south_yemen_area
+		own_entire_area = area:arabian_area
+
+	}
+}
+wc_asia_middle_east_persia_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_asia_middle_east_persia_region_policy
+		}
+		has_policy = wc_asia_middle_east_persia_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:azerbaijan_area
+		own_entire_area = area:baluchistan_area
+		own_entire_area = area:fars_area
+		own_entire_area = area:iraq_ajam_area
+		own_entire_area = area:kerman_area
+		own_entire_area = area:khuzestan_area
+		own_entire_area = area:kordestan_area
+		own_entire_area = area:mazandaran_area
+		own_entire_area = area:quhestan_area
+		own_entire_area = area:sistan_area
+
+	}
+}
+wc_asia_east_asia_east_china_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_asia_east_asia_east_china_region_policy
+		}
+		has_policy = wc_asia_east_asia_east_china_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:fujian_area
+		own_entire_area = area:hunan_area
+		own_entire_area = area:wuling_area
+		own_entire_area = area:hubei_area
+		own_entire_area = area:jiangxi_area
+		own_entire_area = area:jiangnan_area
+		own_entire_area = area:huaidong_area
+		own_entire_area = area:huaixi_area
+		own_entire_area = area:taiwan_area
+		own_entire_area = area:zhejiang_area
+
+	}
+}
+wc_asia_east_asia_japan_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_asia_east_asia_japan_region_policy
+		}
+		has_policy = wc_asia_east_asia_japan_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:ezo_area
+		own_entire_area = area:hokurikudou_area
+		own_entire_area = area:kinai_area
+		own_entire_area = area:nankaidou_area
+		own_entire_area = area:saikaidou_area
+		own_entire_area = area:sanindou_area
+		own_entire_area = area:sanyoudou_area
+		own_entire_area = area:ou_area
+		own_entire_area = area:toukaidou_area
+		own_entire_area = area:tousandou_area
+		own_entire_area = area:ryuukyuu_area
+		own_entire_area = area:ezo_sea
+		own_entire_area = area:sea_of_japan_area
+
+	}
+}
+wc_asia_east_asia_korea_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_asia_east_asia_korea_region_policy
+		}
+		has_policy = wc_asia_east_asia_korea_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:gwanseo_area
+		own_entire_area = area:gwandong_area
+		own_entire_area = area:yeongnam_area
+		own_entire_area = area:gyeonggi_area
+		own_entire_area = area:honam_area
+		own_entire_area = area:haeseo_area
+		own_entire_area = area:hoseo_area
+		own_entire_area = area:gwanbuk_area
+
+	}
+}
+wc_asia_east_asia_manchuria_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_asia_east_asia_manchuria_region_policy
+		}
+		has_policy = wc_asia_east_asia_manchuria_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:liaodong_area
+		own_entire_area = area:lower_amur_area
+		own_entire_area = area:middle_amur_area
+		own_entire_area = area:songhua_area
+		own_entire_area = area:songnen_area
+		own_entire_area = area:ussuri_area
+
+	}
+}
+wc_asia_east_asia_mongolia_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_asia_east_asia_mongolia_region_policy
+		}
+		has_policy = wc_asia_east_asia_mongolia_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:argun_area
+		own_entire_area = area:eastern_gobi_area
+		own_entire_area = area:lower_selenga_area
+		own_entire_area = area:mongolian_great_lakes_area
+		own_entire_area = area:shilkari_area
+		own_entire_area = area:southern_gobi_area
+		own_entire_area = area:tuva_area
+		own_entire_area = area:upper_selenga_area
+		own_entire_area = area:western_gobi_area
+
+	}
+}
+wc_asia_east_asia_north_china_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_asia_east_asia_north_china_region_policy
+		}
+		has_policy = wc_asia_east_asia_north_china_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:yannan_area
+		own_entire_area = area:yanbei_area
+		own_entire_area = area:beiping_area
+		own_entire_area = area:hebei_area
+		own_entire_area = area:henan_area
+		own_entire_area = area:haiyou_area
+		own_entire_area = area:shandong_area
+		own_entire_area = area:datong_area
+		own_entire_area = area:shanxi_area
+
+	}
+}
+wc_asia_east_asia_south_china_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_asia_east_asia_south_china_region_policy
+		}
+		has_policy = wc_asia_east_asia_south_china_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:haibei_hainan_area
+		own_entire_area = area:guangdong_area
+		own_entire_area = area:liangjiang_area
+		own_entire_area = area:guangxi_area
+		own_entire_area = area:guizhou_area
+		own_entire_area = area:dali_area
+		own_entire_area = area:yunnan_area
+
+	}
+}
+wc_asia_east_asia_tibet_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_asia_east_asia_tibet_region_policy
+		}
+		has_policy = wc_asia_east_asia_tibet_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:amdo_area
+		own_entire_area = area:changtang_area
+		own_entire_area = area:kham_area
+		own_entire_area = area:ngari_area
+		own_entire_area = area:tsang_area
+		own_entire_area = area:u_area
+
+	}
+}
+wc_asia_east_asia_west_china_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_asia_east_asia_west_china_region_policy
+		}
+		has_policy = wc_asia_east_asia_west_china_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:gansu_area
+		own_entire_area = area:hexi_area
+		own_entire_area = area:longyou_area
+		own_entire_area = area:shaanxi_area
+		own_entire_area = area:chuandong_area
+		own_entire_area = area:chuannan_area
+		own_entire_area = area:chuanxi_area
+
+	}
+}
+wc_asia_east_asia_xinjiang_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_asia_east_asia_xinjiang_region_policy
+		}
+		has_policy = wc_asia_east_asia_xinjiang_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:dzungaria_area
+		own_entire_area = area:tarim_area
+
+	}
+}
+wc_asia_north_asia_west_siberia_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_asia_north_asia_west_siberia_region_policy
+		}
+		has_policy = wc_asia_north_asia_west_siberia_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:chimgi_tura_area
+		own_entire_area = area:qashliq_area
+		own_entire_area = area:irkutsk_area
+		own_entire_area = area:surgut_area
+		own_entire_area = area:mangazeya_area
+		own_entire_area = area:tomsk_area
+		own_entire_area = area:omsk_area
+		own_entire_area = area:kulykol_area
+		own_entire_area = area:bursol_area
+		own_entire_area = area:suzun_area
+		own_entire_area = area:kansk_area
+		own_entire_area = area:bratsk_area
+		own_entire_area = area:anabyr_area
+		own_entire_area = area:angara_area
+		own_entire_area = area:vitim_area
+		own_entire_area = area:yenisei_area
+
+	}
+}
+wc_asia_north_asia_east_siberia_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_asia_north_asia_east_siberia_region_policy
+		}
+		has_policy = wc_asia_north_asia_east_siberia_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:chukchee_area
+		own_entire_area = area:anadyr_area
+		own_entire_area = area:kamchatka_area
+		own_entire_area = area:chuvan_area
+		own_entire_area = area:kolyma_area
+		own_entire_area = area:yandin_area
+		own_entire_area = area:indigirka_area
+		own_entire_area = area:east_stanovoi_area
+		own_entire_area = area:west_stanovoi_area
+		own_entire_area = area:amga_area
+		own_entire_area = area:yakutia_area
+		own_entire_area = area:middle_lena_area
+		own_entire_area = area:onoid_area
+		own_entire_area = area:upper_lena_area
+		own_entire_area = area:lower_lena_area
+
+	}
+}
+wc_asia_south_asia_hindustan_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_asia_south_asia_hindustan_region_policy
+		}
+		has_policy = wc_asia_south_asia_hindustan_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:awadh_area
+		own_entire_area = area:bhojpur_area
+		own_entire_area = area:rokhilkhand_area
+		own_entire_area = area:doab_area
+		own_entire_area = area:punjab_area
+		own_entire_area = area:upper_indus_area
+		own_entire_area = area:nepal_area
+
+	}
+}
+wc_asia_south_asia_bengal_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_asia_south_asia_bengal_region_policy
+		}
+		has_policy = wc_asia_south_asia_bengal_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:assam_area
+		own_entire_area = area:bengal_area
+		own_entire_area = area:hill_area
+		own_entire_area = area:jharkhand_area
+		own_entire_area = area:mithila_area
+		own_entire_area = area:monyul_area
+		own_entire_area = area:orissa_area
+		own_entire_area = area:chota_nagpur_area
+
+	}
+}
+wc_asia_south_asia_central_india_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_asia_south_asia_central_india_region_policy
+		}
+		has_policy = wc_asia_south_asia_central_india_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:malwa_area
+		own_entire_area = area:vidarbha_area
+		own_entire_area = area:gondwana_area
+
+	}
+}
+wc_asia_south_asia_western_india_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_asia_south_asia_western_india_region_policy
+		}
+		has_policy = wc_asia_south_asia_western_india_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:rajputana_area
+		own_entire_area = area:saurashtra_area
+		own_entire_area = area:gujarat_area
+		own_entire_area = area:sindh_area
+
+	}
+}
+wc_asia_south_asia_deccan_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_asia_south_asia_deccan_region_policy
+		}
+		has_policy = wc_asia_south_asia_deccan_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:andhra_area
+		own_entire_area = area:telingana_area
+		own_entire_area = area:karnakassala_area
+		own_entire_area = area:maharashtra_area
+		own_entire_area = area:konkan_area
+		own_entire_area = area:malabar_area
+		own_entire_area = area:tamil_land_area
+		own_entire_area = area:sailan_area
+		own_entire_area = area:maldives_area
+
+	}
+}
+wc_asia_south_east_asia_indochina_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_asia_south_east_asia_indochina_region_policy
+		}
+		has_policy = wc_asia_south_east_asia_indochina_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:arakhan_area
+		own_entire_area = area:champa_area
+		own_entire_area = area:chao_phraya_area
+		own_entire_area = area:irrawady_area
+		own_entire_area = area:irrawady_delta_area
+		own_entire_area = area:kachin_area
+		own_entire_area = area:khorat_plateau_area
+		own_entire_area = area:lower_mekong_area
+		own_entire_area = area:malay_peninsula_area
+		own_entire_area = area:northern_tai_highland_area
+		own_entire_area = area:red_river_delta_area
+		own_entire_area = area:shan_highland_area
+		own_entire_area = area:southeast_asian_coasts_area
+
+	}
+}
+wc_asia_south_east_asia_indonesia_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_asia_south_east_asia_indonesia_region_policy
+		}
+		has_policy = wc_asia_south_east_asia_indonesia_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:south_borneo_area
+		own_entire_area = area:north_borneo_area
+		own_entire_area = area:celebes_area
+		own_entire_area = area:java_area
+		own_entire_area = area:lesser_sunda_area
+		own_entire_area = area:moluccas_area
+		own_entire_area = area:luzon_area
+		own_entire_area = area:mindanao_area
+		own_entire_area = area:visayas_area
+		own_entire_area = area:south_sumatra_area
+		own_entire_area = area:north_sumatra_area
+		own_entire_area = area:indonesia_coasts_area
+
+	}
+}
+wc_africa_central_africa_central_africa_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_africa_central_africa_central_africa_region_policy
+		}
+		has_policy = wc_africa_central_africa_central_africa_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:central_africa_area
+		own_entire_area = area:wadai_area
+		own_entire_area = area:adamawa_area
+		own_entire_area = area:logone_area
+		own_entire_area = area:cameroon_highlands_area
+		own_entire_area = area:north_gabun_area
+		own_entire_area = area:south_gabun_area
+
+	}
+}
+wc_africa_central_africa_kongo_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_africa_central_africa_kongo_region_policy
+		}
+		has_policy = wc_africa_central_africa_kongo_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:west_kongo_area
+		own_entire_area = area:kongo_area
+		own_entire_area = area:south_kongo_area
+		own_entire_area = area:west_lunda_area
+		own_entire_area = area:viye_area
+		own_entire_area = area:maligo_area
+		own_entire_area = area:east_lunda_area
+		own_entire_area = area:moshiko_area
+		own_entire_area = area:east_kongo_area
+
+	}
+}
+wc_africa_east_africa_ethiopia_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_africa_east_africa_ethiopia_region_policy
+		}
+		has_policy = wc_africa_east_africa_ethiopia_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:central_ethiopia_area
+		own_entire_area = area:northern_ethiopia_area
+		own_entire_area = area:southern_ethiopia_area
+
+	}
+}
+wc_africa_east_africa_nubia_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_africa_east_africa_nubia_region_policy
+		}
+		has_policy = wc_africa_east_africa_nubia_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:butana_area
+		own_entire_area = area:darfur_area
+		own_entire_area = area:equatoria_area
+		own_entire_area = area:nubia_proper_area
+
+	}
+}
+wc_africa_east_africa_somalia_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_africa_east_africa_somalia_region_policy
+		}
+		has_policy = wc_africa_east_africa_somalia_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:inner_somalia_area
+		own_entire_area = area:northern_somalia_area
+		own_entire_area = area:southern_somalia_area
+
+	}
+}
+wc_africa_east_africa_great_lakes_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_africa_east_africa_great_lakes_region_policy
+		}
+		has_policy = wc_africa_east_africa_great_lakes_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:egaso_ngiro_area
+		own_entire_area = area:igombe_area
+		own_entire_area = area:malawi_area
+		own_entire_area = area:rift_valley_area
+		own_entire_area = area:victoria_area
+		own_entire_area = area:kasongo_area
+
+	}
+}
+wc_africa_east_africa_swahili_coast_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_africa_east_africa_swahili_coast_region_policy
+		}
+		has_policy = wc_africa_east_africa_swahili_coast_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:mozambique_area
+		own_entire_area = area:rufiji_area
+		own_entire_area = area:ruvuma_lurio_area
+		own_entire_area = area:tana_area
+		own_entire_area = area:wami_area
+		own_entire_area = area:east_african_island_area
+
+	}
+}
+wc_africa_east_africa_madagascar_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_africa_east_africa_madagascar_region_policy
+		}
+		has_policy = wc_africa_east_africa_madagascar_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:east_madagascar_area
+		own_entire_area = area:malagasy_highlands_area
+		own_entire_area = area:north_madagascar_area
+		own_entire_area = area:west_madagascar_area
+		own_entire_area = area:mascarene_islands_area
+
+	}
+}
+wc_africa_north_africa_egypt_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_africa_north_africa_egypt_region_policy
+		}
+		has_policy = wc_africa_north_africa_egypt_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:lower_egypt_area
+		own_entire_area = area:upper_egypt_area
+		own_entire_area = area:cyrenaica_area
+		own_entire_area = area:sinai_area
+
+	}
+}
+wc_africa_north_africa_macaronesia_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_africa_north_africa_macaronesia_region_policy
+		}
+		has_policy = wc_africa_north_africa_macaronesia_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:azores_area
+		own_entire_area = area:canary_islands_area
+		own_entire_area = area:south_macaronesia_area
+
+	}
+}
+wc_africa_north_africa_maghreb_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_africa_north_africa_maghreb_region_policy
+		}
+		has_policy = wc_africa_north_africa_maghreb_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:sus_area
+		own_entire_area = area:morocco_area
+		own_entire_area = area:atlas_high_plateau
+		own_entire_area = area:algiers_area
+		own_entire_area = area:tunis_area
+		own_entire_area = area:tripolitania_area
+		own_entire_area = area:desert_area
+		own_entire_area = area:western_sahara_area
+
+	}
+}
+wc_africa_southern_africa_southern_africa_islands_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_africa_southern_africa_southern_africa_islands_region_policy
+		}
+		has_policy = wc_africa_southern_africa_southern_africa_islands_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:southern_africa_islands_area
+
+	}
+}
+wc_africa_southern_africa_southern_africa_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_africa_southern_africa_southern_africa_region_policy
+		}
+		has_policy = wc_africa_southern_africa_southern_africa_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:goringhaikona_area
+		own_entire_area = area:umgungundlovu_area
+		own_entire_area = area:tzaneen_area
+		own_entire_area = area:thaba_bosiu_area
+		own_entire_area = area:karoo_area
+		own_entire_area = area:kalahari_area
+		own_entire_area = area:okavango_area
+		own_entire_area = area:namib_area
+
+	}
+}
+wc_africa_southern_africa_zimbabwe_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_africa_southern_africa_zimbabwe_region_policy
+		}
+		has_policy = wc_africa_southern_africa_zimbabwe_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:limpopo_area
+		own_entire_area = area:save_area
+		own_entire_area = area:zambezi_area
+
+	}
+}
+wc_africa_west_africa_guinea_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_africa_west_africa_guinea_region_policy
+		}
+		has_policy = wc_africa_west_africa_guinea_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:akan_area
+		own_entire_area = area:benin_area
+		own_entire_area = area:cape_verde_area
+		own_entire_area = area:futa_tooro_area
+		own_entire_area = area:gambia_area
+		own_entire_area = area:gulf_of_guinea_area
+		own_entire_area = area:gur_area
+		own_entire_area = area:jolof_area
+		own_entire_area = area:kong_area
+		own_entire_area = area:kru_area
+		own_entire_area = area:lower_niger_area
+		own_entire_area = area:south_manding_area
+		own_entire_area = area:upper_guinea_area
+		own_entire_area = area:yoruba_area
+		own_entire_area = area:gulf_of_africa_sea
+
+	}
+}
+wc_africa_west_africa_sahel_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_africa_west_africa_sahel_region_policy
+		}
+		has_policy = wc_africa_west_africa_sahel_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:air_area
+		own_entire_area = area:bornu_area
+		own_entire_area = area:east_mossi_area
+		own_entire_area = area:gao_area
+		own_entire_area = area:ghana_area
+		own_entire_area = area:kanem_area
+		own_entire_area = area:mali_area
+		own_entire_area = area:north_hausa_area
+		own_entire_area = area:south_hausa_area
+		own_entire_area = area:timbuktu_area
+		own_entire_area = area:west_mossi_area
+		own_entire_area = area:zarma_area
+
+	}
+}
+wc_america_north_america_canada_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_america_north_america_canada_region_policy
+		}
+		has_policy = wc_america_north_america_canada_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:quebec_area
+		own_entire_area = area:laurentian_area
+		own_entire_area = area:lower_canada_area
+		own_entire_area = area:jamesie_area
+		own_entire_area = area:nunavik_area
+		own_entire_area = area:labrador_area
+		own_entire_area = area:newfoundland_area
+		own_entire_area = area:prince_edward_island_area
+		own_entire_area = area:acadia_area
+		own_entire_area = area:new_brunswick_area
+		own_entire_area = area:eastern_ontario_area
+		own_entire_area = area:western_ontario_area
+		own_entire_area = area:northern_ontario_area
+		own_entire_area = area:northwestern_ontario_area
+		own_entire_area = area:greenstone_belt_area
+		own_entire_area = area:keewatin_area
+		own_entire_area = area:keewatin_n_area
+		own_entire_area = area:james_bay_lowlands_area
+
+	}
+}
+wc_america_north_america_caribbean_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_america_north_america_caribbean_region_policy
+		}
+		has_policy = wc_america_north_america_caribbean_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:cuba_area
+		own_entire_area = area:hispaniola_area
+		own_entire_area = area:gulf_of_mexico_area
+		own_entire_area = area:lesser_antilles_area
+
+	}
+}
+wc_america_north_america_east_coast_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_america_north_america_east_coast_region_policy
+		}
+		has_policy = wc_america_north_america_east_coast_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:massachusetts_area
+		own_entire_area = area:southern_new_england_area
+		own_entire_area = area:vermont_area
+		own_entire_area = area:new_hampshire_area
+		own_entire_area = area:maine_area
+		own_entire_area = area:hudson_area
+		own_entire_area = area:haudenosaunee_area
+		own_entire_area = area:new_jersey_area
+		own_entire_area = area:pennsylvania_area
+		own_entire_area = area:westsylvania_area
+		own_entire_area = area:maryland_area
+		own_entire_area = area:virginia_area
+		own_entire_area = area:west_virginia_area
+		own_entire_area = area:north_carolina_area
+		own_entire_area = area:south_carolina_area
+		own_entire_area = area:georgia_us_area
+		own_entire_area = area:florida_area
+		own_entire_area = area:tennessee_area
+		own_entire_area = area:kentucky_area
+		own_entire_area = area:ohio_area
+		own_entire_area = area:indiana_area
+		own_entire_area = area:michigan_area
+		own_entire_area = area:illinois_area
+		own_entire_area = area:wisconsin_area
+		own_entire_area = area:alabama_area
+		own_entire_area = area:mississippi_area
+
+	}
+}
+wc_america_north_america_great_plains_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_america_north_america_great_plains_region_policy
+		}
+		has_policy = wc_america_north_america_great_plains_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:louisiana_area
+		own_entire_area = area:arkansas_area
+		own_entire_area = area:missouri_area
+		own_entire_area = area:iowa_area
+		own_entire_area = area:superior_area
+		own_entire_area = area:badlands_area
+		own_entire_area = area:upper_missouri_area
+		own_entire_area = area:central_plains_area
+		own_entire_area = area:high_plains_area
+		own_entire_area = area:saskatchewan_area
+		own_entire_area = area:red_river_area
+
+	}
+}
+wc_america_north_america_mesoamerica_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_america_north_america_mesoamerica_region_policy
+		}
+		has_policy = wc_america_north_america_mesoamerica_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:mexihko_area
+		own_entire_area = area:huaxyacac_area
+		own_entire_area = area:tochtepec_area
+		own_entire_area = area:tlaxcala_area
+		own_entire_area = area:michoacan_area
+		own_entire_area = area:xilotepec_area
+		own_entire_area = area:chilapan_area
+		own_entire_area = area:mayaab_area
+		own_entire_area = area:puuk_area
+		own_entire_area = area:chactemal_area
+		own_entire_area = area:xalisco_area
+
+	}
+}
+wc_america_north_america_central_america_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_america_north_america_central_america_region_policy
+		}
+		has_policy = wc_america_north_america_central_america_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:peten_area
+		own_entire_area = area:tezulutlan_area
+		own_entire_area = area:kuskatan_area
+		own_entire_area = area:imabite_area
+		own_entire_area = area:nekokiaw_area
+		own_entire_area = area:panama_area
+
+	}
+}
+wc_america_north_america_aridoamerica_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_america_north_america_aridoamerica_region_policy
+		}
+		has_policy = wc_america_north_america_aridoamerica_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:natahende_area
+		own_entire_area = area:baja_area
+		own_entire_area = area:tahejoc_area
+		own_entire_area = area:culiacan_area
+		own_entire_area = area:tamaulipeco_area
+		own_entire_area = area:guachichil_area
+		own_entire_area = area:texas_area
+		own_entire_area = area:shiewhibak_area
+		own_entire_area = area:zacatecas_area
+
+	}
+}
+wc_america_north_america_alaska_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_america_north_america_alaska_region_policy
+		}
+		has_policy = wc_america_north_america_alaska_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:western_arctic_area
+		own_entire_area = area:alaxsxaq_area
+		own_entire_area = area:yukon_area
+		own_entire_area = area:columbia_interior_area
+		own_entire_area = area:athabasca_area
+
+	}
+}
+wc_america_north_america_west_coast_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_america_north_america_west_coast_region_policy
+		}
+		has_policy = wc_america_north_america_west_coast_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:california_area
+		own_entire_area = area:great_basin_area
+		own_entire_area = area:rockies_area
+		own_entire_area = area:cascadia_area
+
+	}
+}
+wc_america_south_america_colombia_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_america_south_america_colombia_region_policy
+		}
+		has_policy = wc_america_south_america_colombia_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:boiaca_area
+		own_entire_area = area:sinu_area
+		own_entire_area = area:suchiimma_area
+		own_entire_area = area:caracas_area
+		own_entire_area = area:orinucu_area
+		own_entire_area = area:apure_area
+		own_entire_area = area:chunsa_area
+		own_entire_area = area:caly_area
+		own_entire_area = area:guayana_area
+
+	}
+}
+wc_america_south_america_brazil_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_america_south_america_brazil_region_policy
+		}
+		has_policy = wc_america_south_america_brazil_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:amazon_area
+		own_entire_area = area:mato_grosso_area
+		own_entire_area = area:guapore_area
+		own_entire_area = area:tocantins_area
+		own_entire_area = area:mearim_area
+		own_entire_area = area:paranaiba_area
+		own_entire_area = area:jaguaribe_area
+		own_entire_area = area:parapitinga_area
+		own_entire_area = area:pindorama_area
+		own_entire_area = area:parana_area
+
+	}
+}
+wc_america_south_america_andes_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_america_south_america_andes_region_policy
+		}
+		has_policy = wc_america_south_america_andes_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:quitu_area
+		own_entire_area = area:chala_area
+		own_entire_area = area:atacama_area
+		own_entire_area = area:cuyo_area
+		own_entire_area = area:yunga_area
+		own_entire_area = area:puna_area
+		own_entire_area = area:qullaw_area
+		own_entire_area = area:acamama_area
+		own_entire_area = area:suni_area
+		own_entire_area = area:rupa_rupa_area
+		own_entire_area = area:galapagos_area
+		own_entire_area = area:ngulumapu_area
+		own_entire_area = area:juan_fernandez_area
+
+	}
+}
+wc_america_south_america_chaco_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_america_south_america_chaco_region_policy
+		}
+		has_policy = wc_america_south_america_chaco_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:mamore_area
+		own_entire_area = area:paraguay_area
+		own_entire_area = area:ayoreo_area
+		own_entire_area = area:moqoit_area
+
+	}
+}
+wc_america_south_america_la_plata_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_america_south_america_la_plata_region_policy
+		}
+		has_policy = wc_america_south_america_la_plata_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:pampa_area
+		own_entire_area = area:puelmapu_area
+		own_entire_area = area:patagonia_area
+		own_entire_area = area:falklands_area
+		own_entire_area = area:south_georgia_area
+
+	}
+}
+wc_oceania_australasia_australia_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_oceania_australasia_australia_region_policy
+		}
+		has_policy = wc_oceania_australasia_australia_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:southwestern_australia_area
+		own_entire_area = area:northwestern_australia_area
+		own_entire_area = area:australian_northern_territory_area
+		own_entire_area = area:australian_yalanji_area
+		own_entire_area = area:eastern_australia_area
+		own_entire_area = area:southeastern_australia_area
+		own_entire_area = area:south_australia_area
+
+	}
+}
+wc_oceania_australasia_new_zealand_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_oceania_australasia_new_zealand_region_policy
+		}
+		has_policy = wc_oceania_australasia_new_zealand_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:north_island_area
+		own_entire_area = area:south_island_area
+		own_entire_area = area:rekohu_area
+		own_entire_area = area:lord_howe_area
+		own_entire_area = area:norfolk_nz_area
+		own_entire_area = area:motu_maha_area
+
+	}
+}
+wc_oceania_pacific_islands_polynesia_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_oceania_pacific_islands_polynesia_region_policy
+		}
+		has_policy = wc_oceania_pacific_islands_polynesia_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:hawaii_area
+		own_entire_area = area:papahanaumokuakea_area
+		own_entire_area = area:aono_raina_area
+		own_entire_area = area:te_henua_enana_area
+		own_entire_area = area:kuki_airani_area
+		own_entire_area = area:tuhaa_pae_area
+		own_entire_area = area:totaiete_ma_area
+		own_entire_area = area:tuamotu_area
+		own_entire_area = area:raeffsky_area
+		own_entire_area = area:palliser_area
+		own_entire_area = area:rapa_nui_area
+		own_entire_area = area:pitcairn_area
+		own_entire_area = area:rawaki_area
+		own_entire_area = area:tuvalu_area
+		own_entire_area = area:futuna_area
+		own_entire_area = area:tonga_area
+		own_entire_area = area:niue_area
+		own_entire_area = area:tokelau_area
+		own_entire_area = area:samoa_area
+
+	}
+}
+wc_oceania_pacific_islands_micronesia_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_oceania_pacific_islands_micronesia_region_policy
+		}
+		has_policy = wc_oceania_pacific_islands_micronesia_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:nanpo_area
+		own_entire_area = area:ratak_area
+		own_entire_area = area:ralik_area
+		own_entire_area = area:belau_area
+		own_entire_area = area:marianas_area
+		own_entire_area = area:chuuk_area
+		own_entire_area = area:tungaru_area
+		own_entire_area = area:nauru_area
+
+	}
+}
+wc_oceania_pacific_islands_melanesia_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_oceania_pacific_islands_melanesia_region_policy
+		}
+		has_policy = wc_oceania_pacific_islands_melanesia_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:tinputz_area
+		own_entire_area = area:bougainville_area
+		own_entire_area = area:mu_ngava_area
+		own_entire_area = area:temotu_area
+		own_entire_area = area:vanuatu_area
+		own_entire_area = area:fiji_area
+		own_entire_area = area:kanaky_area
+		own_entire_area = area:bismarck_area
+		own_entire_area = area:momase_area
+		own_entire_area = area:kerema_area
+		own_entire_area = area:milne_area
+		own_entire_area = area:wanin_area
+		own_entire_area = area:papua_area
+		own_entire_area = area:anim_ha_area
+
+	}
+}
+wc_oceania_north_atlantic_ocean_sub_continent_north_atlantic_ocean_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_oceania_north_atlantic_ocean_sub_continent_north_atlantic_ocean_region_policy
+		}
+		has_policy = wc_oceania_north_atlantic_ocean_sub_continent_north_atlantic_ocean_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:atlantic_irminger_area
+		own_entire_area = area:atlantic_labrador_area
+		own_entire_area = area:atlantic_gulf_stream_area
+		own_entire_area = area:bermuda_area
+		own_entire_area = area:atlantic_north_atlantic_current_area
+		own_entire_area = area:atlantic_north_equatorial_area
+
+	}
+}
+wc_oceania_south_atlantic_sub_continent_south_atlantic_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_oceania_south_atlantic_sub_continent_south_atlantic_region_policy
+		}
+		has_policy = wc_oceania_south_atlantic_sub_continent_south_atlantic_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:atlantic_equatorial_countercurrent_area
+		own_entire_area = area:atlantic_south_equatorial_area
+		own_entire_area = area:atlantic_saint_helena_area
+		own_entire_area = area:bouvet_area
+		own_entire_area = area:tristan_da_cunha_area
+		own_entire_area = area:atlantic_south_area
+
+	}
+}
+wc_oceania_indian_ocean_sub_continent_indian_ocean_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_oceania_indian_ocean_sub_continent_indian_ocean_region_policy
+		}
+		has_policy = wc_oceania_indian_ocean_sub_continent_indian_ocean_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:indian_horn_area
+		own_entire_area = area:bengal_bay_area
+		own_entire_area = area:indian_monsoon_area
+		own_entire_area = area:indian_equatorial_countercurrent_area
+		own_entire_area = area:indian_south_equatorial_area
+		own_entire_area = area:indian_south_area
+		own_entire_area = area:indian_north_agulhas_area
+
+	}
+}
+wc_oceania_north_pacific_ocean_sub_continent_north_pacific_ocean_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_oceania_north_pacific_ocean_sub_continent_north_pacific_ocean_region_policy
+		}
+		has_policy = wc_oceania_north_pacific_ocean_sub_continent_north_pacific_ocean_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:pacific_north_area
+		own_entire_area = area:pacific_north_equatorial_area
+		own_entire_area = area:pacific_hawaii_area
+		own_entire_area = area:pacific_kuro_area
+
+	}
+}
+wc_oceania_south_pacific_ocean_sub_continent_south_pacific_ocean_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_oceania_south_pacific_ocean_sub_continent_south_pacific_ocean_region_policy
+		}
+		has_policy = wc_oceania_south_pacific_ocean_sub_continent_south_pacific_ocean_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:pacific_south_equatorial_area
+		own_entire_area = area:pacific_easter_equatorial_area
+		own_entire_area = area:pacific_equatorial_countercurrent_area
+		own_entire_area = area:pacific_polynesia_area
+		own_entire_area = area:pacific_south_area
+		own_entire_area = area:pacific_tasmania_area
+
+	}
+}
+wc_oceania_antarctic_ocean_sub_continent_antarctic_ocean_region_obtainment_trigger = {
+	trigger_if = {
+		limit = {
+			has_policy = wc_oceania_antarctic_ocean_sub_continent_antarctic_ocean_region_policy
+		}
+		has_policy = wc_oceania_antarctic_ocean_sub_continent_antarctic_ocean_region_policy
+	}
+	trigger_else = {
+		own_entire_area = area:antarctic_ocean_area
+
+	}
+}
