@@ -15,7 +15,7 @@ public class WorldConquestGenericActionClaim
         _template = Template.Parse(_templateSource);
     }
 
-    public string GetString(WorldConquestData data)
+    public string GetString(WorldConquestMapData data)
     {
         ScriptObject scriptObject = new()
         {

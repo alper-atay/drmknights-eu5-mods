@@ -7,9 +7,9 @@ public class WorldConquestChallengeTriggerWriter : IParadoxWrite
     private const string _TriggerPrefix = "wc";
     private const string _TriggerSuffix = "challenge_trigger";
 
-    private readonly Map _map;
+    private readonly WorldConquestMap _map;
 
-    public WorldConquestChallengeTriggerWriter(Map map)
+    public WorldConquestChallengeTriggerWriter(WorldConquestMap map)
     {
         _map = map;
     }

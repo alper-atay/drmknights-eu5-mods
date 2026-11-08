@@ -41,6 +41,26 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "Microsoft.Extensions.Configuration.Binder/10.0.14": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "10.0.14",
+          "Microsoft.Extensions.Configuration.Abstractions": "10.0.14"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.Extensions.Configuration.Binder.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.Configuration.Binder.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.0/Microsoft.Extensions.Configuration.Binder.targets": {}
+        }
+      },
       "Microsoft.Extensions.Configuration.FileExtensions/10.0.14": {
         "type": "package",
         "dependencies": {
@@ -158,16 +178,7 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
-      "Pdoxcl2Sharp/0.6.2": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Pdoxcl2Sharp.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Pdoxcl2Sharp.dll": {}
-        }
-      },
-      "Scriban/7.5.3": {
+      "Scriban/7.6.1": {
         "type": "package",
         "compile": {
           "lib/net8.0/Scriban.dll": {
@@ -242,6 +253,46 @@
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.xml",
         "microsoft.extensions.configuration.abstractions.10.0.14.nupkg.sha512",
         "microsoft.extensions.configuration.abstractions.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.Binder/10.0.14": {
+      "sha512": "brDb5kgle2iY2lWHgeV/KOqnBEpVnlMFigGJ/WW7KP9Nj6C/t53f/h5boYyVXB0bEhgpL+ctbewDJMI+zAMj1w==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.binder/10.0.14",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "analyzers/dotnet/cs/Microsoft.Extensions.Configuration.Binder.SourceGeneration.dll",
+        "analyzers/dotnet/cs/cs/Microsoft.Extensions.Configuration.Binder.SourceGeneration.resources.dll",
+        "analyzers/dotnet/cs/de/Microsoft.Extensions.Configuration.Binder.SourceGeneration.resources.dll",
+        "analyzers/dotnet/cs/es/Microsoft.Extensions.Configuration.Binder.SourceGeneration.resources.dll",
+        "analyzers/dotnet/cs/fr/Microsoft.Extensions.Configuration.Binder.SourceGeneration.resources.dll",
+        "analyzers/dotnet/cs/it/Microsoft.Extensions.Configuration.Binder.SourceGeneration.resources.dll",
+        "analyzers/dotnet/cs/ja/Microsoft.Extensions.Configuration.Binder.SourceGeneration.resources.dll",
+        "analyzers/dotnet/cs/ko/Microsoft.Extensions.Configuration.Binder.SourceGeneration.resources.dll",
+        "analyzers/dotnet/cs/pl/Microsoft.Extensions.Configuration.Binder.SourceGeneration.resources.dll",
+        "analyzers/dotnet/cs/pt-BR/Microsoft.Extensions.Configuration.Binder.SourceGeneration.resources.dll",
+        "analyzers/dotnet/cs/ru/Microsoft.Extensions.Configuration.Binder.SourceGeneration.resources.dll",
+        "analyzers/dotnet/cs/tr/Microsoft.Extensions.Configuration.Binder.SourceGeneration.resources.dll",
+        "analyzers/dotnet/cs/zh-Hans/Microsoft.Extensions.Configuration.Binder.SourceGeneration.resources.dll",
+        "analyzers/dotnet/cs/zh-Hant/Microsoft.Extensions.Configuration.Binder.SourceGeneration.resources.dll",
+        "buildTransitive/netstandard2.0/Microsoft.Extensions.Configuration.Binder.targets",
+        "lib/net10.0/Microsoft.Extensions.Configuration.Binder.dll",
+        "lib/net10.0/Microsoft.Extensions.Configuration.Binder.xml",
+        "lib/net462/Microsoft.Extensions.Configuration.Binder.dll",
+        "lib/net462/Microsoft.Extensions.Configuration.Binder.xml",
+        "lib/net8.0/Microsoft.Extensions.Configuration.Binder.dll",
+        "lib/net8.0/Microsoft.Extensions.Configuration.Binder.xml",
+        "lib/net9.0/Microsoft.Extensions.Configuration.Binder.dll",
+        "lib/net9.0/Microsoft.Extensions.Configuration.Binder.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.xml",
+        "microsoft.extensions.configuration.binder.10.0.14.nupkg.sha512",
+        "microsoft.extensions.configuration.binder.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
@@ -421,22 +472,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Pdoxcl2Sharp/0.6.2": {
-      "sha512": "PyFHPVcYo7Spoo7zsksccueAAMRBYh0McwUyLHc83XzOYKBbIp7NfGyjUkvkxe/mOyHn76zyislOAzBI9suKaA==",
+    "Scriban/7.6.1": {
+      "sha512": "EHEiHXenLu4qbPE+pplWzPKX937juMGW5BPVCHF8pyllWvQP0H57BAtWxiyMTk4G+aKH8iHLKgcoYSHemP6DJg==",
       "type": "package",
-      "path": "pdoxcl2sharp/0.6.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/Pdoxcl2Sharp.dll",
-        "pdoxcl2sharp.0.6.2.nupkg.sha512",
-        "pdoxcl2sharp.nuspec"
-      ]
-    },
-    "Scriban/7.5.3": {
-      "sha512": "yeusmR5XJYfGJ2Wj8I92TagqV3n6dggeurnq+cfYPZ4YMFmZMuAG8YSLqExrB9Z9Gx99YGR4ABzVkAHcLlTOmw==",
-      "type": "package",
-      "path": "scriban/7.5.3",
+      "path": "scriban/7.6.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -447,7 +486,7 @@
         "lib/netstandard2.0/Scriban.dll",
         "lib/netstandard2.0/Scriban.xml",
         "readme.md",
-        "scriban.7.5.3.nupkg.sha512",
+        "scriban.7.6.1.nupkg.sha512",
         "scriban.nuspec",
         "scriban.png",
         "src/Scriban/.editorconfig",
@@ -628,9 +667,9 @@
   "projectFileDependencyGroups": {
     "net10.0": [
       "Microsoft.Extensions.Configuration >= 10.0.14",
+      "Microsoft.Extensions.Configuration.Binder >= 10.0.14",
       "Microsoft.Extensions.Configuration.Json >= 10.0.14",
-      "Pdoxcl2Sharp >= 0.6.2",
-      "Scriban >= 7.5.3"
+      "Scriban >= 7.6.1"
     ]
   },
   "packageFolders": {
@@ -690,17 +729,17 @@
             "target": "Package",
             "version": "[10.0.14, )"
           },
+          "Microsoft.Extensions.Configuration.Binder": {
+            "target": "Package",
+            "version": "[10.0.14, )"
+          },
           "Microsoft.Extensions.Configuration.Json": {
             "target": "Package",
             "version": "[10.0.14, )"
           },
-          "Pdoxcl2Sharp": {
-            "target": "Package",
-            "version": "[0.6.2, )"
-          },
           "Scriban": {
             "target": "Package",
-            "version": "[7.5.3, )"
+            "version": "[7.6.1, )"
           }
         },
         "imports": [

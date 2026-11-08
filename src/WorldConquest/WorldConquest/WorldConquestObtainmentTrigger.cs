@@ -1,6 +1,6 @@
-﻿using Scriban;
+﻿using System.Text;
+using Scriban;
 using Scriban.Runtime;
-using System.Text;
 
 namespace WorldConquest;
 
@@ -16,14 +16,14 @@ public class WorldConquestObtainmentTrigger
         _template = Template.Parse(_templateSource);
     }
 
-    public string GetString(WorldConquestData data)
+    public string GetString(WorldConquestMapData data)
     {
         string owningListString = GetOwningListString(data);
 
         ScriptObject scriptObject = new()
         {
             { "KeyName", data.KeyName },
-            { "OwningList", owningListString }
+            { "OwningList", owningListString },
         };
 
         _templateContext.PushGlobal(scriptObject);
@@ -35,7 +35,7 @@ public class WorldConquestObtainmentTrigger
         return result;
     }
 
-    private static string GetOwningListString(WorldConquestData data)
+    private static string GetOwningListString(WorldConquestMapData data)
     {
         StringBuilder stringBuilder = new StringBuilder();
 

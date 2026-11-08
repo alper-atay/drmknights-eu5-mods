@@ -7,7 +7,11 @@
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			{{KeyName}}_challenge_check = yes
+		}
+		region:{{RegionName}} = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -34,6 +38,11 @@
 		visible = {
 			situation:{{SituationName}} = this
 			situation_is_active = yes
+			region:{{RegionName}} = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {

@@ -1,48 +1,43 @@
-﻿using Microsoft.Extensions.Configuration;
-using Pdoxcl2Sharp;
+﻿using Pdoxcl2Sharp;
 using System.Text;
 
 namespace WorldConquest;
 
 public class WorldConquest
 {
-    private readonly List<WorldConquestData> _data = [];
-    private readonly IConfigurationRoot _configuration;
+    public WorldConquestConfig Config { get; }
 
-    private readonly string _modPath;
+    public WorldConquestMap Map { get; private set; }
 
-    private readonly Map _map;
+    private readonly List<WorldConquestMapData> _mapData = [];
 
     public WorldConquest()
     {
-        using FileStream fileStream = new("MapData.txt", FileMode.Open);
-        MapDataReader mapData = ParadoxParser.Parse(fileStream, new MapDataReader());
-        _map = new(mapData);
+        Config = new WorldConquestConfig();
+    }
 
-        _configuration = new ConfigurationBuilder()
-            .AddJsonFile("AppSettings.json", optional: false)
-            .Build();
+    public async Task GenerateMap()
+    {
 
-        _modPath = _configuration.GetSection("ModPath").Value!;
     }
 
     public async Task Generate()
     {
-        IEnumerable<string> continents = _map.GetContinents();
+        IEnumerable<string> continents = Map.GetContinents();
 
         foreach (string continent in continents)
         {
-            IEnumerable<string> subcontinents = _map.GetSubcontinentsByContinent(continent);
+            IEnumerable<string> subcontinents = Map.GetSubcontinentsByContinent(continent);
 
             foreach (string subcontinent in subcontinents)
             {
-                IEnumerable<string> regions = _map.GetRegionsBySubcontinent(subcontinent);
+                IEnumerable<string> regions = Map.GetRegionsBySubcontinent(subcontinent);
 
                 int eventIndex = WorldConquestPredefined.EventIndexOrigin;
 
                 foreach (string region in regions)
                 {
-                    IEnumerable<string> areas = _map.GetAreasByRegion(region);
+                    IEnumerable<string> areas = Map.GetAreasByRegion(region);
 
                     string pathName = string.Join(
                         WorldConquestPredefined.Separator,
@@ -52,7 +47,7 @@ public class WorldConquest
                         region
                     );
 
-                    WorldConquestData data = new()
+                    WorldConquestMapData mapData = new()
                     {
                         ContinentName = continent,
                         SubcontinentName = subcontinent,
@@ -63,7 +58,7 @@ public class WorldConquest
                         EventIndex = eventIndex,
                     };
 
-                    _data.Add(data);
+                    _mapData.Add(mapData);
 
                     eventIndex++;
                 }
@@ -73,12 +68,17 @@ public class WorldConquest
         await GenerateAndWriteAll();
     }
 
+    public async Task GenerateMapData()
+    {
+        using FileStream fileStream = new("MapData.txt", FileMode.Open);
+        RawMapDataParser mapData = ParadoxParser.Parse(fileStream, new RawMapDataParser());
+    }
+
     public async Task GenerateAndWriteAll()
     {
         await GenerateAndWriteWargoal();
         await GenerateAndWriteCasusBelli();
         await GenerateAndWriteObtainmentTrigger();
-
 
         await GenerateAndWriteGenericActionClaim();
     }
@@ -89,7 +89,7 @@ public class WorldConquest
 
         using FileStream fileStream = new(
             Path.Combine(
-                _modPath,
+                Config.ModDirectory,
                 WorldConquestPredefined.WargoalPath,
                 string.Join(
                     WorldConquestPredefined.Separator,
@@ -103,7 +103,7 @@ public class WorldConquest
 
         using StreamWriter streamWriter = new(fileStream, new UTF8Encoding(true));
 
-        foreach (WorldConquestData data in _data)
+        foreach (WorldConquestMapData data in _mapData)
         {
             string wargoalString = wargoal.GetString(data);
 
@@ -117,7 +117,7 @@ public class WorldConquest
 
         using FileStream fileStream = new(
             Path.Combine(
-                _modPath,
+                Config.ModDirectory,
                 WorldConquestPredefined.CasusBelliPath,
                 string.Join(
                     WorldConquestPredefined.Separator,
@@ -131,12 +131,15 @@ public class WorldConquest
 
         using StreamWriter streamWriter = new(fileStream, new UTF8Encoding(true));
 
-        foreach (WorldConquestData data in _data)
+        foreach (WorldConquestMapData data in _mapData)
         {
             string wargoalString = casusBelli.GetString(data);
 
             await streamWriter.WriteLineAsync(wargoalString);
         }
+
+        await streamWriter.DisposeAsync();
+        await fileStream.DisposeAsync();
     }
 
     private async Task GenerateAndWriteObtainmentTrigger()
@@ -145,7 +148,7 @@ public class WorldConquest
 
         using FileStream fileStream = new(
             Path.Combine(
-                _modPath,
+                Config.ModDirectory,
                 WorldConquestPredefined.ObtainmentTriggerPath,
                 string.Join(
                     WorldConquestPredefined.Separator,
@@ -159,7 +162,7 @@ public class WorldConquest
 
         using StreamWriter streamWriter = new(fileStream, new UTF8Encoding(true));
 
-        foreach (WorldConquestData data in _data)
+        foreach (WorldConquestMapData data in _mapData)
         {
             string wargoalString = obtainmentTrigger.GetString(data);
 
@@ -173,7 +176,7 @@ public class WorldConquest
 
         using FileStream fileStream = new(
             Path.Combine(
-                _modPath,
+                Config.ModDirectory,
                 WorldConquestPredefined.GenericActionClaimPath,
                 string.Join(
                     WorldConquestPredefined.Separator,
@@ -187,7 +190,7 @@ public class WorldConquest
 
         using StreamWriter streamWriter = new(fileStream, new UTF8Encoding(true));
 
-        foreach (WorldConquestData data in _data)
+        foreach (WorldConquestMapData data in _mapData)
         {
             string genericActionClaimString = genericActionClaim.GetString(data);
 

@@ -1,7 +1,13 @@
 ﻿WorldConquest.WorldConquest worldConquest = new();
 
-await worldConquest.Generate();
+//await worldConquest.Generate();
 
+
+
+
+
+
+Console.WriteLine("Mod Updated");
 Console.ReadLine();
 
 

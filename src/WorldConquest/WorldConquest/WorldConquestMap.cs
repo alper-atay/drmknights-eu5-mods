@@ -1,15 +1,15 @@
 ﻿namespace WorldConquest;
 
-public class Map
+public class WorldConquestMap
 {
-    private readonly IReadOnlyList<MapData> _mapData;
+    private readonly IReadOnlyList<RawMapData> _mapData;
 
     public readonly IEnumerable<string> Continents;
     public readonly IEnumerable<string> Subcontinents;
     public readonly IEnumerable<string> Regions;
     public readonly IEnumerable<string> Areas;
 
-    public Map(IReadOnlyList<MapData> mapData)
+    public WorldConquestMap(IReadOnlyList<RawMapData> mapData)
     {
         _mapData = mapData;
 

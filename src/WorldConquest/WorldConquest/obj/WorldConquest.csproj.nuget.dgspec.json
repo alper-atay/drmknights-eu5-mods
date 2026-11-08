@@ -57,17 +57,17 @@
               "target": "Package",
               "version": "[10.0.14, )"
             },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[10.0.14, )"
+            },
             "Microsoft.Extensions.Configuration.Json": {
               "target": "Package",
               "version": "[10.0.14, )"
             },
-            "Pdoxcl2Sharp": {
-              "target": "Package",
-              "version": "[0.6.2, )"
-            },
             "Scriban": {
               "target": "Package",
-              "version": "[7.5.3, )"
+              "version": "[7.6.1, )"
             }
           },
           "imports": [

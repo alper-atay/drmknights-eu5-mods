@@ -24,5 +24,10 @@ public static class WorldConquestPredefined
 
     public const string GenericActionClaimPath = "in_game\\common\\generic_actions";
 
-    public const string GenericActionClaimTemplatePath = "Templates\\GenericActionClaimTemplate.txt";
+    public const string GenericActionClaimTemplatePath =
+        "Templates\\GenericActionClaimTemplate.txt";
+
+    public const string LocalizationPath = "main_menu\\localization";
+
+    public const string LocalizationCasusBelliFileName = "wc_casus_belli";
 }

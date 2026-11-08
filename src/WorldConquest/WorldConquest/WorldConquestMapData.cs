@@ -1,6 +1,6 @@
 ﻿namespace WorldConquest;
 
-public readonly struct WorldConquestData
+public readonly struct WorldConquestMapData
 {
     public required int EventIndex { get; init; }
 
@@ -13,6 +13,4 @@ public readonly struct WorldConquestData
     public required string RegionName { get; init; }
 
     public required IEnumerable<string> AreaNames { get; init; }
-
-    public WorldConquestData() { }
 }

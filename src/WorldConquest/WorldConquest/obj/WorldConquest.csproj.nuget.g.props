@@ -14,6 +14,6 @@
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)scriban\7.5.3\build\Scriban.props" Condition="Exists('$(NuGetPackageRoot)scriban\7.5.3\build\Scriban.props')" />
+    <Import Project="$(NuGetPackageRoot)scriban\7.6.1\build\Scriban.props" Condition="Exists('$(NuGetPackageRoot)scriban\7.6.1\build\Scriban.props')" />
   </ImportGroup>
 </Project>

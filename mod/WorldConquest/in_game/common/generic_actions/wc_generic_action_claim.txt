@@ -7,7 +7,11 @@
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_europe_western_europe_scandinavian_region_challenge_check = yes
+		}
+		region:scandinavian_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -34,6 +38,11 @@
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:scandinavian_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -99,7 +108,11 @@ wc_europe_western_europe_north_atlantic_islands_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_europe_western_europe_north_atlantic_islands_region_challenge_check = yes
+		}
+		region:north_atlantic_islands_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -126,6 +139,11 @@ wc_europe_western_europe_north_atlantic_islands_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:north_atlantic_islands_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -191,7 +209,11 @@ wc_europe_western_europe_north_german_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_europe_western_europe_north_german_region_challenge_check = yes
+		}
+		region:north_german_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -218,6 +240,11 @@ wc_europe_western_europe_north_german_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:north_german_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -283,7 +310,11 @@ wc_europe_western_europe_south_german_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_europe_western_europe_south_german_region_challenge_check = yes
+		}
+		region:south_german_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -310,6 +341,11 @@ wc_europe_western_europe_south_german_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:south_german_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -375,7 +411,11 @@ wc_europe_western_europe_great_britain_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_europe_western_europe_great_britain_region_challenge_check = yes
+		}
+		region:great_britain_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -402,6 +442,11 @@ wc_europe_western_europe_great_britain_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:great_britain_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -467,7 +512,11 @@ wc_europe_western_europe_ireland_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_europe_western_europe_ireland_region_challenge_check = yes
+		}
+		region:ireland_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -494,6 +543,11 @@ wc_europe_western_europe_ireland_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:ireland_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -559,7 +613,11 @@ wc_europe_western_europe_france_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_europe_western_europe_france_region_challenge_check = yes
+		}
+		region:france_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -586,6 +644,11 @@ wc_europe_western_europe_france_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:france_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -651,7 +714,11 @@ wc_europe_western_europe_iberia_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_europe_western_europe_iberia_region_challenge_check = yes
+		}
+		region:iberia_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -678,6 +745,11 @@ wc_europe_western_europe_iberia_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:iberia_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -743,7 +815,11 @@ wc_europe_western_europe_italy_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_europe_western_europe_italy_region_challenge_check = yes
+		}
+		region:italy_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -770,6 +846,11 @@ wc_europe_western_europe_italy_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:italy_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -835,7 +916,11 @@ wc_europe_eastern_europe_carpathia_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_europe_eastern_europe_carpathia_region_challenge_check = yes
+		}
+		region:carpathia_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -862,6 +947,11 @@ wc_europe_eastern_europe_carpathia_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:carpathia_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -927,7 +1017,11 @@ wc_europe_eastern_europe_baltic_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_europe_eastern_europe_baltic_region_challenge_check = yes
+		}
+		region:baltic_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -954,6 +1048,11 @@ wc_europe_eastern_europe_baltic_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:baltic_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -1019,7 +1118,11 @@ wc_europe_eastern_europe_ruthenia_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_europe_eastern_europe_ruthenia_region_challenge_check = yes
+		}
+		region:ruthenia_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -1046,6 +1149,11 @@ wc_europe_eastern_europe_ruthenia_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:ruthenia_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -1111,7 +1219,11 @@ wc_europe_eastern_europe_caucasus_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_europe_eastern_europe_caucasus_region_challenge_check = yes
+		}
+		region:caucasus_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -1138,6 +1250,11 @@ wc_europe_eastern_europe_caucasus_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:caucasus_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -1203,7 +1320,11 @@ wc_europe_eastern_europe_steppes_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_europe_eastern_europe_steppes_region_challenge_check = yes
+		}
+		region:steppes_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -1230,6 +1351,11 @@ wc_europe_eastern_europe_steppes_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:steppes_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -1295,7 +1421,11 @@ wc_europe_eastern_europe_russian_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_europe_eastern_europe_russian_region_challenge_check = yes
+		}
+		region:russian_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -1322,6 +1452,11 @@ wc_europe_eastern_europe_russian_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:russian_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -1387,7 +1522,11 @@ wc_europe_eastern_europe_ural_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_europe_eastern_europe_ural_region_challenge_check = yes
+		}
+		region:ural_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -1414,6 +1553,11 @@ wc_europe_eastern_europe_ural_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:ural_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -1479,7 +1623,11 @@ wc_europe_eastern_europe_balkan_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_europe_eastern_europe_balkan_region_challenge_check = yes
+		}
+		region:balkan_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -1506,6 +1654,11 @@ wc_europe_eastern_europe_balkan_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:balkan_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -1571,7 +1724,11 @@ wc_asia_central_asia_khorasan_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_asia_central_asia_khorasan_region_challenge_check = yes
+		}
+		region:khorasan_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -1598,6 +1755,11 @@ wc_asia_central_asia_khorasan_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:khorasan_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -1663,7 +1825,11 @@ wc_asia_middle_east_anatolia_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_asia_middle_east_anatolia_region_challenge_check = yes
+		}
+		region:anatolia_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -1690,6 +1856,11 @@ wc_asia_middle_east_anatolia_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:anatolia_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -1755,7 +1926,11 @@ wc_asia_middle_east_crescent_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_asia_middle_east_crescent_region_challenge_check = yes
+		}
+		region:crescent_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -1782,6 +1957,11 @@ wc_asia_middle_east_crescent_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:crescent_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -1847,7 +2027,11 @@ wc_asia_middle_east_arabia_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_asia_middle_east_arabia_region_challenge_check = yes
+		}
+		region:arabia_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -1874,6 +2058,11 @@ wc_asia_middle_east_arabia_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:arabia_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -1939,7 +2128,11 @@ wc_asia_middle_east_persia_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_asia_middle_east_persia_region_challenge_check = yes
+		}
+		region:persia_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -1966,6 +2159,11 @@ wc_asia_middle_east_persia_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:persia_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -2031,7 +2229,11 @@ wc_asia_east_asia_east_china_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_asia_east_asia_east_china_region_challenge_check = yes
+		}
+		region:east_china_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -2058,6 +2260,11 @@ wc_asia_east_asia_east_china_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:east_china_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -2123,7 +2330,11 @@ wc_asia_east_asia_japan_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_asia_east_asia_japan_region_challenge_check = yes
+		}
+		region:japan_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -2150,6 +2361,11 @@ wc_asia_east_asia_japan_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:japan_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -2215,7 +2431,11 @@ wc_asia_east_asia_korea_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_asia_east_asia_korea_region_challenge_check = yes
+		}
+		region:korea_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -2242,6 +2462,11 @@ wc_asia_east_asia_korea_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:korea_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -2307,7 +2532,11 @@ wc_asia_east_asia_manchuria_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_asia_east_asia_manchuria_region_challenge_check = yes
+		}
+		region:manchuria_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -2334,6 +2563,11 @@ wc_asia_east_asia_manchuria_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:manchuria_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -2399,7 +2633,11 @@ wc_asia_east_asia_mongolia_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_asia_east_asia_mongolia_region_challenge_check = yes
+		}
+		region:mongolia_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -2426,6 +2664,11 @@ wc_asia_east_asia_mongolia_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:mongolia_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -2491,7 +2734,11 @@ wc_asia_east_asia_north_china_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_asia_east_asia_north_china_region_challenge_check = yes
+		}
+		region:north_china_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -2518,6 +2765,11 @@ wc_asia_east_asia_north_china_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:north_china_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -2583,7 +2835,11 @@ wc_asia_east_asia_south_china_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_asia_east_asia_south_china_region_challenge_check = yes
+		}
+		region:south_china_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -2610,6 +2866,11 @@ wc_asia_east_asia_south_china_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:south_china_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -2675,7 +2936,11 @@ wc_asia_east_asia_tibet_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_asia_east_asia_tibet_region_challenge_check = yes
+		}
+		region:tibet_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -2702,6 +2967,11 @@ wc_asia_east_asia_tibet_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:tibet_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -2767,7 +3037,11 @@ wc_asia_east_asia_west_china_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_asia_east_asia_west_china_region_challenge_check = yes
+		}
+		region:west_china_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -2794,6 +3068,11 @@ wc_asia_east_asia_west_china_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:west_china_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -2859,7 +3138,11 @@ wc_asia_east_asia_xinjiang_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_asia_east_asia_xinjiang_region_challenge_check = yes
+		}
+		region:xinjiang_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -2886,6 +3169,11 @@ wc_asia_east_asia_xinjiang_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:xinjiang_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -2951,7 +3239,11 @@ wc_asia_north_asia_west_siberia_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_asia_north_asia_west_siberia_region_challenge_check = yes
+		}
+		region:west_siberia_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -2978,6 +3270,11 @@ wc_asia_north_asia_west_siberia_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:west_siberia_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -3043,7 +3340,11 @@ wc_asia_north_asia_east_siberia_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_asia_north_asia_east_siberia_region_challenge_check = yes
+		}
+		region:east_siberia_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -3070,6 +3371,11 @@ wc_asia_north_asia_east_siberia_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:east_siberia_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -3135,7 +3441,11 @@ wc_asia_south_asia_hindustan_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_asia_south_asia_hindustan_region_challenge_check = yes
+		}
+		region:hindustan_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -3162,6 +3472,11 @@ wc_asia_south_asia_hindustan_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:hindustan_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -3227,7 +3542,11 @@ wc_asia_south_asia_bengal_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_asia_south_asia_bengal_region_challenge_check = yes
+		}
+		region:bengal_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -3254,6 +3573,11 @@ wc_asia_south_asia_bengal_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:bengal_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -3319,7 +3643,11 @@ wc_asia_south_asia_central_india_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_asia_south_asia_central_india_region_challenge_check = yes
+		}
+		region:central_india_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -3346,6 +3674,11 @@ wc_asia_south_asia_central_india_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:central_india_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -3411,7 +3744,11 @@ wc_asia_south_asia_western_india_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_asia_south_asia_western_india_region_challenge_check = yes
+		}
+		region:western_india_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -3438,6 +3775,11 @@ wc_asia_south_asia_western_india_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:western_india_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -3503,7 +3845,11 @@ wc_asia_south_asia_deccan_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_asia_south_asia_deccan_region_challenge_check = yes
+		}
+		region:deccan_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -3530,6 +3876,11 @@ wc_asia_south_asia_deccan_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:deccan_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -3595,7 +3946,11 @@ wc_asia_south_east_asia_indochina_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_asia_south_east_asia_indochina_region_challenge_check = yes
+		}
+		region:indochina_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -3622,6 +3977,11 @@ wc_asia_south_east_asia_indochina_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:indochina_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -3687,7 +4047,11 @@ wc_asia_south_east_asia_indonesia_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_asia_south_east_asia_indonesia_region_challenge_check = yes
+		}
+		region:indonesia_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -3714,6 +4078,11 @@ wc_asia_south_east_asia_indonesia_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:indonesia_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -3779,7 +4148,11 @@ wc_africa_central_africa_central_africa_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_africa_central_africa_central_africa_region_challenge_check = yes
+		}
+		region:central_africa_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -3806,6 +4179,11 @@ wc_africa_central_africa_central_africa_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:central_africa_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -3871,7 +4249,11 @@ wc_africa_central_africa_kongo_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_africa_central_africa_kongo_region_challenge_check = yes
+		}
+		region:kongo_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -3898,6 +4280,11 @@ wc_africa_central_africa_kongo_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:kongo_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -3963,7 +4350,11 @@ wc_africa_east_africa_ethiopia_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_africa_east_africa_ethiopia_region_challenge_check = yes
+		}
+		region:ethiopia_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -3990,6 +4381,11 @@ wc_africa_east_africa_ethiopia_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:ethiopia_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -4055,7 +4451,11 @@ wc_africa_east_africa_nubia_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_africa_east_africa_nubia_region_challenge_check = yes
+		}
+		region:nubia_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -4082,6 +4482,11 @@ wc_africa_east_africa_nubia_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:nubia_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -4147,7 +4552,11 @@ wc_africa_east_africa_somalia_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_africa_east_africa_somalia_region_challenge_check = yes
+		}
+		region:somalia_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -4174,6 +4583,11 @@ wc_africa_east_africa_somalia_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:somalia_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -4239,7 +4653,11 @@ wc_africa_east_africa_great_lakes_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_africa_east_africa_great_lakes_region_challenge_check = yes
+		}
+		region:great_lakes_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -4266,6 +4684,11 @@ wc_africa_east_africa_great_lakes_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:great_lakes_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -4331,7 +4754,11 @@ wc_africa_east_africa_swahili_coast_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_africa_east_africa_swahili_coast_region_challenge_check = yes
+		}
+		region:swahili_coast_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -4358,6 +4785,11 @@ wc_africa_east_africa_swahili_coast_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:swahili_coast_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -4423,7 +4855,11 @@ wc_africa_east_africa_madagascar_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_africa_east_africa_madagascar_region_challenge_check = yes
+		}
+		region:madagascar_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -4450,6 +4886,11 @@ wc_africa_east_africa_madagascar_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:madagascar_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -4515,7 +4956,11 @@ wc_africa_north_africa_egypt_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_africa_north_africa_egypt_region_challenge_check = yes
+		}
+		region:egypt_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -4542,6 +4987,11 @@ wc_africa_north_africa_egypt_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:egypt_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -4607,7 +5057,11 @@ wc_africa_north_africa_macaronesia_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_africa_north_africa_macaronesia_region_challenge_check = yes
+		}
+		region:macaronesia_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -4634,6 +5088,11 @@ wc_africa_north_africa_macaronesia_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:macaronesia_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -4699,7 +5158,11 @@ wc_africa_north_africa_maghreb_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_africa_north_africa_maghreb_region_challenge_check = yes
+		}
+		region:maghreb_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -4726,6 +5189,11 @@ wc_africa_north_africa_maghreb_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:maghreb_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -4791,7 +5259,11 @@ wc_africa_southern_africa_southern_africa_islands_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_africa_southern_africa_southern_africa_islands_region_challenge_check = yes
+		}
+		region:southern_africa_islands_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -4818,6 +5290,11 @@ wc_africa_southern_africa_southern_africa_islands_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:southern_africa_islands_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -4883,7 +5360,11 @@ wc_africa_southern_africa_southern_africa_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_africa_southern_africa_southern_africa_region_challenge_check = yes
+		}
+		region:southern_africa_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -4910,6 +5391,11 @@ wc_africa_southern_africa_southern_africa_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:southern_africa_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -4975,7 +5461,11 @@ wc_africa_southern_africa_zimbabwe_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_africa_southern_africa_zimbabwe_region_challenge_check = yes
+		}
+		region:zimbabwe_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -5002,6 +5492,11 @@ wc_africa_southern_africa_zimbabwe_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:zimbabwe_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -5067,7 +5562,11 @@ wc_africa_west_africa_guinea_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_africa_west_africa_guinea_region_challenge_check = yes
+		}
+		region:guinea_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -5094,6 +5593,11 @@ wc_africa_west_africa_guinea_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:guinea_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -5159,7 +5663,11 @@ wc_africa_west_africa_sahel_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_africa_west_africa_sahel_region_challenge_check = yes
+		}
+		region:sahel_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -5186,6 +5694,11 @@ wc_africa_west_africa_sahel_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:sahel_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -5251,7 +5764,11 @@ wc_america_north_america_canada_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_america_north_america_canada_region_challenge_check = yes
+		}
+		region:canada_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -5278,6 +5795,11 @@ wc_america_north_america_canada_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:canada_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -5343,7 +5865,11 @@ wc_america_north_america_caribbean_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_america_north_america_caribbean_region_challenge_check = yes
+		}
+		region:caribbean_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -5370,6 +5896,11 @@ wc_america_north_america_caribbean_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:caribbean_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -5435,7 +5966,11 @@ wc_america_north_america_east_coast_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_america_north_america_east_coast_region_challenge_check = yes
+		}
+		region:east_coast_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -5462,6 +5997,11 @@ wc_america_north_america_east_coast_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:east_coast_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -5527,7 +6067,11 @@ wc_america_north_america_great_plains_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_america_north_america_great_plains_region_challenge_check = yes
+		}
+		region:great_plains_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -5554,6 +6098,11 @@ wc_america_north_america_great_plains_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:great_plains_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -5619,7 +6168,11 @@ wc_america_north_america_mesoamerica_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_america_north_america_mesoamerica_region_challenge_check = yes
+		}
+		region:mesoamerica_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -5646,6 +6199,11 @@ wc_america_north_america_mesoamerica_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:mesoamerica_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -5711,7 +6269,11 @@ wc_america_north_america_central_america_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_america_north_america_central_america_region_challenge_check = yes
+		}
+		region:central_america_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -5738,6 +6300,11 @@ wc_america_north_america_central_america_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:central_america_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -5803,7 +6370,11 @@ wc_america_north_america_aridoamerica_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_america_north_america_aridoamerica_region_challenge_check = yes
+		}
+		region:aridoamerica_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -5830,6 +6401,11 @@ wc_america_north_america_aridoamerica_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:aridoamerica_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -5895,7 +6471,11 @@ wc_america_north_america_alaska_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_america_north_america_alaska_region_challenge_check = yes
+		}
+		region:alaska_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -5922,6 +6502,11 @@ wc_america_north_america_alaska_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:alaska_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -5987,7 +6572,11 @@ wc_america_north_america_west_coast_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_america_north_america_west_coast_region_challenge_check = yes
+		}
+		region:west_coast_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -6014,6 +6603,11 @@ wc_america_north_america_west_coast_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:west_coast_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -6079,7 +6673,11 @@ wc_america_south_america_colombia_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_america_south_america_colombia_region_challenge_check = yes
+		}
+		region:colombia_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -6106,6 +6704,11 @@ wc_america_south_america_colombia_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:colombia_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -6171,7 +6774,11 @@ wc_america_south_america_brazil_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_america_south_america_brazil_region_challenge_check = yes
+		}
+		region:brazil_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -6198,6 +6805,11 @@ wc_america_south_america_brazil_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:brazil_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -6263,7 +6875,11 @@ wc_america_south_america_andes_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_america_south_america_andes_region_challenge_check = yes
+		}
+		region:andes_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -6290,6 +6906,11 @@ wc_america_south_america_andes_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:andes_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -6355,7 +6976,11 @@ wc_america_south_america_chaco_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_america_south_america_chaco_region_challenge_check = yes
+		}
+		region:chaco_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -6382,6 +7007,11 @@ wc_america_south_america_chaco_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:chaco_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -6447,7 +7077,11 @@ wc_america_south_america_la_plata_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_america_south_america_la_plata_region_challenge_check = yes
+		}
+		region:la_plata_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -6474,6 +7108,11 @@ wc_america_south_america_la_plata_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:la_plata_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -6539,7 +7178,11 @@ wc_oceania_australasia_australia_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_oceania_australasia_australia_region_challenge_check = yes
+		}
+		region:australia_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -6566,6 +7209,11 @@ wc_oceania_australasia_australia_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:australia_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -6631,7 +7279,11 @@ wc_oceania_australasia_new_zealand_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_oceania_australasia_new_zealand_region_challenge_check = yes
+		}
+		region:new_zealand_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -6658,6 +7310,11 @@ wc_oceania_australasia_new_zealand_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:new_zealand_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -6723,7 +7380,11 @@ wc_oceania_pacific_islands_polynesia_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_oceania_pacific_islands_polynesia_region_challenge_check = yes
+		}
+		region:polynesia_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -6750,6 +7411,11 @@ wc_oceania_pacific_islands_polynesia_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:polynesia_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -6815,7 +7481,11 @@ wc_oceania_pacific_islands_micronesia_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_oceania_pacific_islands_micronesia_region_challenge_check = yes
+		}
+		region:micronesia_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -6842,6 +7512,11 @@ wc_oceania_pacific_islands_micronesia_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:micronesia_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -6907,7 +7582,11 @@ wc_oceania_pacific_islands_melanesia_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_oceania_pacific_islands_melanesia_region_challenge_check = yes
+		}
+		region:melanesia_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -6934,6 +7613,11 @@ wc_oceania_pacific_islands_melanesia_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:melanesia_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -6999,7 +7683,11 @@ wc_oceania_north_atlantic_ocean_sub_continent_north_atlantic_ocean_region_claim 
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_oceania_north_atlantic_ocean_sub_continent_north_atlantic_ocean_region_challenge_check = yes
+		}
+		region:north_atlantic_ocean_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -7026,6 +7714,11 @@ wc_oceania_north_atlantic_ocean_sub_continent_north_atlantic_ocean_region_claim 
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:north_atlantic_ocean_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -7091,7 +7784,11 @@ wc_oceania_south_atlantic_sub_continent_south_atlantic_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_oceania_south_atlantic_sub_continent_south_atlantic_region_challenge_check = yes
+		}
+		region:south_atlantic_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -7118,6 +7815,11 @@ wc_oceania_south_atlantic_sub_continent_south_atlantic_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:south_atlantic_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -7183,7 +7885,11 @@ wc_oceania_indian_ocean_sub_continent_indian_ocean_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_oceania_indian_ocean_sub_continent_indian_ocean_region_challenge_check = yes
+		}
+		region:indian_ocean_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -7210,6 +7916,11 @@ wc_oceania_indian_ocean_sub_continent_indian_ocean_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:indian_ocean_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -7275,7 +7986,11 @@ wc_oceania_north_pacific_ocean_sub_continent_north_pacific_ocean_region_claim = 
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_oceania_north_pacific_ocean_sub_continent_north_pacific_ocean_region_challenge_check = yes
+		}
+		region:north_pacific_ocean_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -7302,6 +8017,11 @@ wc_oceania_north_pacific_ocean_sub_continent_north_pacific_ocean_region_claim = 
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:north_pacific_ocean_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -7367,7 +8087,11 @@ wc_oceania_south_pacific_ocean_sub_continent_south_pacific_ocean_region_claim = 
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_oceania_south_pacific_ocean_sub_continent_south_pacific_ocean_region_challenge_check = yes
+		}
+		region:south_pacific_ocean_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -7394,6 +8118,11 @@ wc_oceania_south_pacific_ocean_sub_continent_south_pacific_ocean_region_claim = 
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:south_pacific_ocean_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {
@@ -7459,7 +8188,11 @@ wc_oceania_antarctic_ocean_sub_continent_antarctic_ocean_region_claim = {
 		scope:actor = {
 			at_war = no
 			has_raised_levies = no
-			wc_oceania_antarctic_ocean_sub_continent_antarctic_ocean_region_challenge_check = yes
+		}
+		region:antarctic_ocean_region = {
+			any_area_in_region = {
+				adjacent_to_owned_by = scope:actor
+			}
 		}
 	}
 	ai_tick = never
@@ -7486,6 +8219,11 @@ wc_oceania_antarctic_ocean_sub_continent_antarctic_ocean_region_claim = {
 		visible = {
 			situation:wc_world_conquest = this
 			situation_is_active = yes
+			region:antarctic_ocean_region = {
+				any_area_in_region = {
+					adjacent_to_owned_by = scope:actor
+				}
+			}
 		}
 	}
 	select_trigger = {

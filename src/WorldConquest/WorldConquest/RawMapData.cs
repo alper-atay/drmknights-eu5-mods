@@ -1,6 +1,6 @@
 ﻿namespace WorldConquest;
 
-public readonly record struct MapData
+public readonly record struct RawMapData
 {
     public required string ContinentName { get; init; }
 

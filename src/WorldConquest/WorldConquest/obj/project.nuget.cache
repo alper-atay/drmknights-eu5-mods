@@ -1,19 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "Txm4pq2VGkA=",
+  "dgSpecHash": "+LDO/oNGjoQ=",
   "success": true,
   "projectFilePath": "D:\\GitHub\\drmknights-eu5-mods\\src\\WorldConquest\\WorldConquest\\WorldConquest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\echom\\.nuget\\packages\\microsoft.extensions.configuration\\10.0.14\\microsoft.extensions.configuration.10.0.14.nupkg.sha512",
     "C:\\Users\\echom\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\10.0.14\\microsoft.extensions.configuration.abstractions.10.0.14.nupkg.sha512",
+    "C:\\Users\\echom\\.nuget\\packages\\microsoft.extensions.configuration.binder\\10.0.14\\microsoft.extensions.configuration.binder.10.0.14.nupkg.sha512",
     "C:\\Users\\echom\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\10.0.14\\microsoft.extensions.configuration.fileextensions.10.0.14.nupkg.sha512",
     "C:\\Users\\echom\\.nuget\\packages\\microsoft.extensions.configuration.json\\10.0.14\\microsoft.extensions.configuration.json.10.0.14.nupkg.sha512",
     "C:\\Users\\echom\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\10.0.14\\microsoft.extensions.fileproviders.abstractions.10.0.14.nupkg.sha512",
     "C:\\Users\\echom\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\10.0.14\\microsoft.extensions.fileproviders.physical.10.0.14.nupkg.sha512",
     "C:\\Users\\echom\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\10.0.14\\microsoft.extensions.filesystemglobbing.10.0.14.nupkg.sha512",
     "C:\\Users\\echom\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.14\\microsoft.extensions.primitives.10.0.14.nupkg.sha512",
-    "C:\\Users\\echom\\.nuget\\packages\\pdoxcl2sharp\\0.6.2\\pdoxcl2sharp.0.6.2.nupkg.sha512",
-    "C:\\Users\\echom\\.nuget\\packages\\scriban\\7.5.3\\scriban.7.5.3.nupkg.sha512"
+    "C:\\Users\\echom\\.nuget\\packages\\scriban\\7.6.1\\scriban.7.6.1.nupkg.sha512"
   ],
   "logs": []
 }
