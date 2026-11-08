@@ -9,9 +9,10 @@ public class ModLocalizationGenerator(Mod mod)
 
     public async Task GenerateAsync()
     {
-        await Mod.LocalizationGenerator.GenerateAndWriteWargoalAsync();
-        await Mod.LocalizationGenerator.GenerateAndWriteCasusBelliAsync();
-        await Mod.LocalizationGenerator.GenerateAndWriteGenericActionClaimAsync();
+        await GenerateAndWriteWargoalAsync();
+        await GenerateAndWriteCasusBelliAsync();
+        await GenerateAndWriteGenericActionClaimAsync();
+        await GenerateAndWriteLawAndPolicyAsync();
     }
 
     private async Task GenerateAndWriteWargoalAsync()
@@ -77,6 +78,30 @@ public class ModLocalizationGenerator(Mod mod)
             string str = GenericActionClaim.GetLocalizationString(Mod.MapData);
 
             await streamWriter.WriteLineAsync(str);
+        }
+    }
+
+    private async Task GenerateAndWriteLawAndPolicyAsync()
+    {
+        foreach (string supportedLocalization in Mod.Config.SupportedLocalizations)
+        {
+            string outputPath = Path.Combine(
+                Mod.Config.ModDirectory,
+                Mod.Config.LocalizationPath,
+                supportedLocalization,
+                "wc_law_l_" + supportedLocalization + ".yml"
+            );
+
+            using FileStream fileStream = new(outputPath, FileMode.Create, FileAccess.ReadWrite);
+            using StreamWriter streamWriter = new(fileStream, new UTF8Encoding(true));
+
+            await streamWriter.WriteLineAsync("l_" + supportedLocalization + ":");
+
+            string strLaw = Law.GetLawLocalizationString(Mod.MapData);
+            string strPolicy = Law.GetPolicyLocalizationString(Mod.MapData);
+
+            await streamWriter.WriteLineAsync(strLaw);
+            await streamWriter.WriteLineAsync(strPolicy);
         }
     }
 }
