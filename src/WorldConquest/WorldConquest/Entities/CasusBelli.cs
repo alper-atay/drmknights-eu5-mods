@@ -40,18 +40,19 @@ public class CasusBelli : BaseModeEntityGenerator
 
         foreach (MapDataItem item in data)
         {
-            string localizationKey = item.KeyName + "casus_belli";
+            string localizationKey = item.KeyName + "_casus_belli";
             string localizationValue =
                 $"[ShowRegionNameWithNoTooltip('{item.RegionName}')] [region|e]";
 
-            stringBuilder.AppendLine($" {localizationKey}:{localizationValue}");
+            stringBuilder.AppendLine($" {localizationKey}: \"{localizationValue}\"");
+            stringBuilder.AppendLine($" {localizationKey}_PROV: \"{localizationValue}\"");
 
-            //wc_europe_eastern_europe_russian_region_casus_belli_desc
-
-            string localizationDescKey = item.KeyName + "casus_belli_desc";
-            string localizationDescValue =
-                string.Join(", ", item.AreaNames.Select(x => $"[ShowAreaName('{x}')]")) + ".";
-            stringBuilder.AppendLine($" {localizationDescKey}:{localizationDescValue}");
+            string localizationDescKey = item.KeyName + "_casus_belli_desc";
+            string localizationDescValue = string.Join(
+                ", ",
+                item.AreaNames.Select(x => $"[ShowAreaName('{x}')]")
+            );
+            stringBuilder.AppendLine($" {localizationDescKey}: \"{localizationDescValue}\"");
         }
 
         return stringBuilder.ToString();

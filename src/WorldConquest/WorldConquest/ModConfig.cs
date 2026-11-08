@@ -53,5 +53,23 @@ public sealed class ModConfig
 
     public string GenericActionClaimFileName { get; init; }
 
+    public string LawPath { get; init; }
+
+    public string LawTemplatePath { get; init; }
+
+    public string LawFileName { get; init; }
+
     public string LocalizationPath { get; init; }
+
+    public IEnumerable<string> UnacceptedMapTokens { get; set; }
+
+    public IEnumerable<string> AcceptedMapContinents { get; init; }
+
+    public IEnumerable<string> UnacceptedMapContinents { get; init; }
+
+    public IEnumerable<string> UnacceptedMapSubcontinents { get; init; }
+
+    public IEnumerable<string> UnacceptedMapRegions { get; set; }
+
+    public IEnumerable<string> UnacceptedMapAreas { get; init; }
 }

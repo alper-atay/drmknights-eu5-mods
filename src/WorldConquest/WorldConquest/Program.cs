@@ -1,10 +1,10 @@
 ﻿using WorldConquest;
 
-
 Mod mod = new Mod();
 
 await mod.MapData.GenerateAsync();
-await mod.LocalizationGenerator.GenerateAndWriteWargoalAsync();
+await mod.EntityGenerator.GenerateAsync();
+await mod.LocalizationGenerator.GenerateAsync();
 
 //WorldConquestGenericActionClaim world = new WorldConquestGenericActionClaim();
 

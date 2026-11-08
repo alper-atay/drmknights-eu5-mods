@@ -15,11 +15,9 @@ public class ModMapData(Mod mod) : IReadOnlyList<MapDataItem>
 
     public async Task GenerateAsync()
     {
-        RawMapDataParser rawMapDataParser = new();
+        RawMapDataParser rawMapDataParser = new(Mod);
 
-        _rawMapDataItems = await rawMapDataParser.ParseAsync(
-            Mod.Config.RawMapDataPath
-        );
+        _rawMapDataItems = await rawMapDataParser.ParseAsync(Mod.Config.RawMapDataPath);
 
         IEnumerable<string> continents = _rawMapDataItems.Select(x => x.ContinentName).Distinct();
 
@@ -28,7 +26,8 @@ public class ModMapData(Mod mod) : IReadOnlyList<MapDataItem>
             IEnumerable<string> subcontinents = _rawMapDataItems
                 .Where(x => x.ContinentName == continent)
                 .Select(x => x.SubcontinentName)
-                .Distinct(); ;
+                .Distinct();
+            ;
 
             foreach (string subcontinent in subcontinents)
             {

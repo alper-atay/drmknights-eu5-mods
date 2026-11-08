@@ -1,6 +1,6 @@
-﻿using Scriban;
+﻿using System.Text;
+using Scriban;
 using Scriban.Runtime;
-using System.Text;
 
 namespace WorldConquest.Entities;
 
@@ -47,8 +47,10 @@ public class Wargoal : BaseModeEntityGenerator
             stringBuilder.AppendLine($" {localizationKey}: \"{localizationValue}\"");
 
             string localizationDescKey = "war_goal_" + item.KeyName + "_desc";
-            string localizationDescValue =
-                string.Join(", ", item.AreaNames.Select(x => $"[ShowAreaName('{x}')]"));
+            string localizationDescValue = string.Join(
+                ", ",
+                item.AreaNames.Select(x => $"[ShowAreaName('{x}')]")
+            );
             stringBuilder.AppendLine($" {localizationDescKey}: \"{localizationDescValue}\"");
         }
 

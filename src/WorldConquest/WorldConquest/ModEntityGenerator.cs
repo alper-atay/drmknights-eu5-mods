@@ -7,7 +7,7 @@ public class ModEntityGenerator(Mod mod)
 {
     public Mod Mod { get; } = mod;
 
-    public async Task Generate()
+    public async Task GenerateAsync()
     {
         await GenerateAndWriteAll();
     }
@@ -18,6 +18,7 @@ public class ModEntityGenerator(Mod mod)
         await GenerateAndWriteCasusBelli();
         await GenerateAndWriteObtainmentTrigger();
         await GenerateAndWriteGenericActionClaim();
+        await GenerateAndWriteLaw();
     }
 
     private async Task GenerateAndWriteWargoal()
@@ -122,6 +123,34 @@ public class ModEntityGenerator(Mod mod)
         foreach (MapDataItem data in Mod.MapData)
         {
             string genericActionClaimString = genericActionClaim.GetString(data);
+
+            await streamWriter.WriteLineAsync(genericActionClaimString);
+        }
+    }
+
+    private async Task GenerateAndWriteLaw()
+    {
+        Law law = new(Mod);
+
+        using FileStream fileStream = new(
+            Path.Combine(
+                Mod.Config.ModDirectory,
+                Mod.Config.LawPath,
+                string.Join(
+                    Mod.Config.Separator,
+                    Mod.Config.Prefix,
+                    Mod.Config.LawFileName
+                )
+            ),
+            FileMode.Create,
+            FileAccess.ReadWrite
+        );
+
+        using StreamWriter streamWriter = new(fileStream, new UTF8Encoding(true));
+
+        foreach (MapDataItem data in Mod.MapData)
+        {
+            string genericActionClaimString = law.GetString(data);
 
             await streamWriter.WriteLineAsync(genericActionClaimString);
         }

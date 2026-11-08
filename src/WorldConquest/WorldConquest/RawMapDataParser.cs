@@ -1,11 +1,13 @@
 ﻿namespace WorldConquest;
 
-public partial class RawMapDataParser
+public class RawMapDataParser(Mod mod)
 {
     private string? _currentContinentName;
     private string? _currentSubcontinentName;
     private string? _currentRegionName;
     private string? _currentAreaName;
+
+    public Mod Mod { get; } = mod;
 
     public async Task<IReadOnlyList<RawMapDataItem>> ParseAsync(string rawMapDataPath)
     {
@@ -36,22 +38,10 @@ public partial class RawMapDataParser
                 continue;
             }
 
-            if (MapDataRules.HasUnacceptedToken(token))
-            {
-                continue;
-            }
-
             switch (currentIndent)
             {
                 case 0:
-                    if (MapDataRules.IsAcceptedContinent(token))
-                    {
-                        _currentContinentName = token;
-                    }
-                    else
-                    {
-                        continue;
-                    }
+                    _currentContinentName = token;
                     break;
                 case 1:
                     _currentSubcontinentName = token;
@@ -86,6 +76,51 @@ public partial class RawMapDataParser
 
             if (currentIndent == 3)
             {
+                if (!Mod.Config.AcceptedMapContinents.Contains(_currentContinentName))
+                {
+                    continue;
+                }
+
+                if (Mod.Config.UnacceptedMapContinents.Contains(_currentContinentName))
+                {
+                    continue;
+                }
+
+                if (Mod.Config.UnacceptedMapSubcontinents.Contains(_currentSubcontinentName))
+                {
+                    continue;
+                }
+
+                if (Mod.Config.UnacceptedMapRegions.Contains(_currentRegionName))
+                {
+                    continue;
+                }
+
+                if (Mod.Config.UnacceptedMapAreas.Contains(_currentAreaName))
+                {
+                    continue;
+                }
+
+                if (UnacceptedTokenContains(_currentContinentName))
+                {
+                    continue;
+                }
+
+                if (UnacceptedTokenContains(_currentSubcontinentName))
+                {
+                    continue;
+                }
+
+                if (UnacceptedTokenContains(_currentRegionName))
+                {
+                    continue;
+                }
+
+                if (UnacceptedTokenContains(_currentAreaName))
+                {
+                    continue;
+                }
+
                 rawMapDataList.Add(
                     new RawMapDataItem()
                     {
@@ -103,6 +138,8 @@ public partial class RawMapDataParser
 
     public static string? ParseLine(string line)
     {
+        line = line.Trim();
+
         if (line.Contains('#'))
         {
             int commentIndex = line.IndexOf('#');
@@ -116,5 +153,20 @@ public partial class RawMapDataParser
         }
 
         return new string([.. line.Where(x => char.IsLetter(x) || x == '_')]);
+    }
+
+    public bool UnacceptedTokenContains(string token)
+    {
+        IEnumerable<string> unacceptedMapTokens = Mod.Config.UnacceptedMapTokens;
+
+        foreach (string unacceptedToken in unacceptedMapTokens)
+        {
+            if (token.Contains(unacceptedToken))
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 }

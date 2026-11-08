@@ -1,25 +1,20 @@
-﻿{{LawName}} = {
-	law_category = {{LawCategoryName}}
+﻿{{KeyName}}_law = {
+	law_category = wc_world_conquest
 	unique = yes
 	potential = {
-		OR = {
-			has_unlocked_policy_trigger = {
-				type = {{PolicyName}}
-			}
-		}
+		is_human = yes
 	}
 	locked = {
 		is_locked_mechanic = {
 			mechanic = law
-			type = {{PolicyName}}
+			type = {{KeyName}}_law
 		}
 	}
-	{{PolicyName}} = {
+	{{KeyName}}_policy = {
 		unique = yes
 		allow = {
-			has_unlocked_policy_trigger = {
-				type = {{PolicyName}}
-			}
+			is_human = yes
+			{{KeyName}}_obtainment_trigger = yes
 		}
 		country_modifier = {
 			power_projection = 5

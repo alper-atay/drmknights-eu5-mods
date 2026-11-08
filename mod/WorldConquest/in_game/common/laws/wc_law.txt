@@ -1,0 +1,1680 @@
+﻿wc_europe_western_europe_scandinavian_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_europe_western_europe_scandinavian_region_law
+		}
+	}
+	wc_europe_western_europe_scandinavian_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_europe_western_europe_scandinavian_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_europe_western_europe_north_atlantic_islands_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_europe_western_europe_north_atlantic_islands_region_law
+		}
+	}
+	wc_europe_western_europe_north_atlantic_islands_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_europe_western_europe_north_atlantic_islands_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_europe_western_europe_north_german_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_europe_western_europe_north_german_region_law
+		}
+	}
+	wc_europe_western_europe_north_german_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_europe_western_europe_north_german_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_europe_western_europe_south_german_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_europe_western_europe_south_german_region_law
+		}
+	}
+	wc_europe_western_europe_south_german_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_europe_western_europe_south_german_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_europe_western_europe_great_britain_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_europe_western_europe_great_britain_region_law
+		}
+	}
+	wc_europe_western_europe_great_britain_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_europe_western_europe_great_britain_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_europe_western_europe_ireland_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_europe_western_europe_ireland_region_law
+		}
+	}
+	wc_europe_western_europe_ireland_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_europe_western_europe_ireland_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_europe_western_europe_france_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_europe_western_europe_france_region_law
+		}
+	}
+	wc_europe_western_europe_france_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_europe_western_europe_france_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_europe_western_europe_iberia_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_europe_western_europe_iberia_region_law
+		}
+	}
+	wc_europe_western_europe_iberia_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_europe_western_europe_iberia_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_europe_western_europe_italy_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_europe_western_europe_italy_region_law
+		}
+	}
+	wc_europe_western_europe_italy_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_europe_western_europe_italy_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_europe_eastern_europe_carpathia_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_europe_eastern_europe_carpathia_region_law
+		}
+	}
+	wc_europe_eastern_europe_carpathia_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_europe_eastern_europe_carpathia_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_europe_eastern_europe_baltic_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_europe_eastern_europe_baltic_region_law
+		}
+	}
+	wc_europe_eastern_europe_baltic_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_europe_eastern_europe_baltic_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_europe_eastern_europe_ruthenia_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_europe_eastern_europe_ruthenia_region_law
+		}
+	}
+	wc_europe_eastern_europe_ruthenia_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_europe_eastern_europe_ruthenia_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_europe_eastern_europe_caucasus_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_europe_eastern_europe_caucasus_region_law
+		}
+	}
+	wc_europe_eastern_europe_caucasus_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_europe_eastern_europe_caucasus_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_europe_eastern_europe_steppes_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_europe_eastern_europe_steppes_region_law
+		}
+	}
+	wc_europe_eastern_europe_steppes_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_europe_eastern_europe_steppes_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_europe_eastern_europe_russian_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_europe_eastern_europe_russian_region_law
+		}
+	}
+	wc_europe_eastern_europe_russian_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_europe_eastern_europe_russian_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_europe_eastern_europe_ural_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_europe_eastern_europe_ural_region_law
+		}
+	}
+	wc_europe_eastern_europe_ural_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_europe_eastern_europe_ural_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_europe_eastern_europe_balkan_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_europe_eastern_europe_balkan_region_law
+		}
+	}
+	wc_europe_eastern_europe_balkan_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_europe_eastern_europe_balkan_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_asia_central_asia_khorasan_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_asia_central_asia_khorasan_region_law
+		}
+	}
+	wc_asia_central_asia_khorasan_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_asia_central_asia_khorasan_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_asia_middle_east_anatolia_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_asia_middle_east_anatolia_region_law
+		}
+	}
+	wc_asia_middle_east_anatolia_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_asia_middle_east_anatolia_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_asia_middle_east_crescent_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_asia_middle_east_crescent_region_law
+		}
+	}
+	wc_asia_middle_east_crescent_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_asia_middle_east_crescent_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_asia_middle_east_arabia_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_asia_middle_east_arabia_region_law
+		}
+	}
+	wc_asia_middle_east_arabia_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_asia_middle_east_arabia_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_asia_middle_east_persia_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_asia_middle_east_persia_region_law
+		}
+	}
+	wc_asia_middle_east_persia_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_asia_middle_east_persia_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_asia_east_asia_east_china_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_asia_east_asia_east_china_region_law
+		}
+	}
+	wc_asia_east_asia_east_china_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_asia_east_asia_east_china_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_asia_east_asia_japan_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_asia_east_asia_japan_region_law
+		}
+	}
+	wc_asia_east_asia_japan_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_asia_east_asia_japan_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_asia_east_asia_korea_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_asia_east_asia_korea_region_law
+		}
+	}
+	wc_asia_east_asia_korea_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_asia_east_asia_korea_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_asia_east_asia_manchuria_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_asia_east_asia_manchuria_region_law
+		}
+	}
+	wc_asia_east_asia_manchuria_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_asia_east_asia_manchuria_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_asia_east_asia_mongolia_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_asia_east_asia_mongolia_region_law
+		}
+	}
+	wc_asia_east_asia_mongolia_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_asia_east_asia_mongolia_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_asia_east_asia_north_china_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_asia_east_asia_north_china_region_law
+		}
+	}
+	wc_asia_east_asia_north_china_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_asia_east_asia_north_china_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_asia_east_asia_south_china_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_asia_east_asia_south_china_region_law
+		}
+	}
+	wc_asia_east_asia_south_china_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_asia_east_asia_south_china_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_asia_east_asia_tibet_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_asia_east_asia_tibet_region_law
+		}
+	}
+	wc_asia_east_asia_tibet_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_asia_east_asia_tibet_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_asia_east_asia_west_china_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_asia_east_asia_west_china_region_law
+		}
+	}
+	wc_asia_east_asia_west_china_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_asia_east_asia_west_china_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_asia_east_asia_xinjiang_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_asia_east_asia_xinjiang_region_law
+		}
+	}
+	wc_asia_east_asia_xinjiang_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_asia_east_asia_xinjiang_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_asia_north_asia_west_siberia_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_asia_north_asia_west_siberia_region_law
+		}
+	}
+	wc_asia_north_asia_west_siberia_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_asia_north_asia_west_siberia_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_asia_north_asia_east_siberia_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_asia_north_asia_east_siberia_region_law
+		}
+	}
+	wc_asia_north_asia_east_siberia_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_asia_north_asia_east_siberia_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_asia_south_asia_hindustan_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_asia_south_asia_hindustan_region_law
+		}
+	}
+	wc_asia_south_asia_hindustan_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_asia_south_asia_hindustan_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_asia_south_asia_bengal_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_asia_south_asia_bengal_region_law
+		}
+	}
+	wc_asia_south_asia_bengal_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_asia_south_asia_bengal_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_asia_south_asia_central_india_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_asia_south_asia_central_india_region_law
+		}
+	}
+	wc_asia_south_asia_central_india_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_asia_south_asia_central_india_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_asia_south_asia_western_india_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_asia_south_asia_western_india_region_law
+		}
+	}
+	wc_asia_south_asia_western_india_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_asia_south_asia_western_india_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_asia_south_asia_deccan_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_asia_south_asia_deccan_region_law
+		}
+	}
+	wc_asia_south_asia_deccan_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_asia_south_asia_deccan_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_asia_south_east_asia_indochina_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_asia_south_east_asia_indochina_region_law
+		}
+	}
+	wc_asia_south_east_asia_indochina_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_asia_south_east_asia_indochina_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_asia_south_east_asia_indonesia_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_asia_south_east_asia_indonesia_region_law
+		}
+	}
+	wc_asia_south_east_asia_indonesia_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_asia_south_east_asia_indonesia_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_africa_central_africa_central_africa_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_africa_central_africa_central_africa_region_law
+		}
+	}
+	wc_africa_central_africa_central_africa_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_africa_central_africa_central_africa_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_africa_central_africa_kongo_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_africa_central_africa_kongo_region_law
+		}
+	}
+	wc_africa_central_africa_kongo_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_africa_central_africa_kongo_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_africa_east_africa_ethiopia_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_africa_east_africa_ethiopia_region_law
+		}
+	}
+	wc_africa_east_africa_ethiopia_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_africa_east_africa_ethiopia_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_africa_east_africa_nubia_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_africa_east_africa_nubia_region_law
+		}
+	}
+	wc_africa_east_africa_nubia_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_africa_east_africa_nubia_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_africa_east_africa_somalia_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_africa_east_africa_somalia_region_law
+		}
+	}
+	wc_africa_east_africa_somalia_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_africa_east_africa_somalia_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_africa_east_africa_great_lakes_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_africa_east_africa_great_lakes_region_law
+		}
+	}
+	wc_africa_east_africa_great_lakes_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_africa_east_africa_great_lakes_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_africa_east_africa_swahili_coast_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_africa_east_africa_swahili_coast_region_law
+		}
+	}
+	wc_africa_east_africa_swahili_coast_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_africa_east_africa_swahili_coast_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_africa_east_africa_madagascar_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_africa_east_africa_madagascar_region_law
+		}
+	}
+	wc_africa_east_africa_madagascar_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_africa_east_africa_madagascar_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_africa_north_africa_egypt_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_africa_north_africa_egypt_region_law
+		}
+	}
+	wc_africa_north_africa_egypt_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_africa_north_africa_egypt_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_africa_north_africa_macaronesia_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_africa_north_africa_macaronesia_region_law
+		}
+	}
+	wc_africa_north_africa_macaronesia_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_africa_north_africa_macaronesia_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_africa_north_africa_maghreb_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_africa_north_africa_maghreb_region_law
+		}
+	}
+	wc_africa_north_africa_maghreb_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_africa_north_africa_maghreb_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_africa_southern_africa_southern_africa_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_africa_southern_africa_southern_africa_region_law
+		}
+	}
+	wc_africa_southern_africa_southern_africa_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_africa_southern_africa_southern_africa_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_africa_southern_africa_zimbabwe_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_africa_southern_africa_zimbabwe_region_law
+		}
+	}
+	wc_africa_southern_africa_zimbabwe_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_africa_southern_africa_zimbabwe_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_africa_west_africa_guinea_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_africa_west_africa_guinea_region_law
+		}
+	}
+	wc_africa_west_africa_guinea_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_africa_west_africa_guinea_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_africa_west_africa_sahel_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_africa_west_africa_sahel_region_law
+		}
+	}
+	wc_africa_west_africa_sahel_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_africa_west_africa_sahel_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_america_north_america_canada_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_america_north_america_canada_region_law
+		}
+	}
+	wc_america_north_america_canada_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_america_north_america_canada_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_america_north_america_caribbean_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_america_north_america_caribbean_region_law
+		}
+	}
+	wc_america_north_america_caribbean_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_america_north_america_caribbean_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_america_north_america_east_coast_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_america_north_america_east_coast_region_law
+		}
+	}
+	wc_america_north_america_east_coast_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_america_north_america_east_coast_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_america_north_america_great_plains_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_america_north_america_great_plains_region_law
+		}
+	}
+	wc_america_north_america_great_plains_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_america_north_america_great_plains_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_america_north_america_mesoamerica_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_america_north_america_mesoamerica_region_law
+		}
+	}
+	wc_america_north_america_mesoamerica_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_america_north_america_mesoamerica_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_america_north_america_central_america_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_america_north_america_central_america_region_law
+		}
+	}
+	wc_america_north_america_central_america_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_america_north_america_central_america_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_america_north_america_aridoamerica_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_america_north_america_aridoamerica_region_law
+		}
+	}
+	wc_america_north_america_aridoamerica_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_america_north_america_aridoamerica_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_america_north_america_alaska_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_america_north_america_alaska_region_law
+		}
+	}
+	wc_america_north_america_alaska_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_america_north_america_alaska_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_america_north_america_west_coast_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_america_north_america_west_coast_region_law
+		}
+	}
+	wc_america_north_america_west_coast_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_america_north_america_west_coast_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_america_south_america_colombia_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_america_south_america_colombia_region_law
+		}
+	}
+	wc_america_south_america_colombia_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_america_south_america_colombia_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_america_south_america_brazil_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_america_south_america_brazil_region_law
+		}
+	}
+	wc_america_south_america_brazil_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_america_south_america_brazil_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_america_south_america_andes_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_america_south_america_andes_region_law
+		}
+	}
+	wc_america_south_america_andes_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_america_south_america_andes_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_america_south_america_chaco_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_america_south_america_chaco_region_law
+		}
+	}
+	wc_america_south_america_chaco_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_america_south_america_chaco_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+wc_america_south_america_la_plata_region_law = {
+	law_category = wc_world_conquest
+	unique = yes
+	potential = {
+		is_human = yes
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = wc_america_south_america_la_plata_region_law
+		}
+	}
+	wc_america_south_america_la_plata_region_policy = {
+		unique = yes
+		allow = {
+			is_human = yes
+			wc_america_south_america_la_plata_region_obtainment_trigger = yes
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
