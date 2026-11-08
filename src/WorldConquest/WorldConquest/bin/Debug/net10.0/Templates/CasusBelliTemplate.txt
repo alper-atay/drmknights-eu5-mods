@@ -5,7 +5,7 @@
 	create_enabled = {
 		always = no
 	}
-	war_goal_type = {{WargoalName}}_wargoal
+	war_goal_type = {{WargoalName}}
 	province = {
 		any_location_in_province = {
 			always = yes

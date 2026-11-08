@@ -3,7 +3,6 @@ D:\GitHub\drmknights-eu5-mods\src\WorldConquest\WorldConquest\bin\Debug\net10.0\
 D:\GitHub\drmknights-eu5-mods\src\WorldConquest\WorldConquest\bin\Debug\net10.0\WorldConquest.runtimeconfig.json
 D:\GitHub\drmknights-eu5-mods\src\WorldConquest\WorldConquest\bin\Debug\net10.0\WorldConquest.dll
 D:\GitHub\drmknights-eu5-mods\src\WorldConquest\WorldConquest\bin\Debug\net10.0\WorldConquest.pdb
-D:\GitHub\drmknights-eu5-mods\src\WorldConquest\WorldConquest\bin\Debug\net10.0\Pdoxcl2Sharp.dll
 D:\GitHub\drmknights-eu5-mods\src\WorldConquest\WorldConquest\obj\Debug\net10.0\WorldConquest.csproj.AssemblyReference.cache
 D:\GitHub\drmknights-eu5-mods\src\WorldConquest\WorldConquest\obj\Debug\net10.0\WorldConquest.GeneratedMSBuildEditorConfig.editorconfig
 D:\GitHub\drmknights-eu5-mods\src\WorldConquest\WorldConquest\obj\Debug\net10.0\WorldConquest.AssemblyInfoInputs.cache
@@ -17,7 +16,6 @@ D:\GitHub\drmknights-eu5-mods\src\WorldConquest\WorldConquest\obj\Debug\net10.0\
 D:\GitHub\drmknights-eu5-mods\src\WorldConquest\WorldConquest\obj\Debug\net10.0\WorldConquest.genruntimeconfig.cache
 D:\GitHub\drmknights-eu5-mods\src\WorldConquest\WorldConquest\obj\Debug\net10.0\ref\WorldConquest.dll
 D:\GitHub\drmknights-eu5-mods\src\WorldConquest\WorldConquest\bin\Debug\net10.0\Scriban.dll
-D:\GitHub\drmknights-eu5-mods\src\WorldConquest\WorldConquest\bin\Debug\net10.0\MapData.txt
 D:\GitHub\drmknights-eu5-mods\src\WorldConquest\WorldConquest\bin\Debug\net10.0\Templates\GenericActionClaimTemplate.txt
 D:\GitHub\drmknights-eu5-mods\src\WorldConquest\WorldConquest\bin\Debug\net10.0\AppSettings.json
 D:\GitHub\drmknights-eu5-mods\src\WorldConquest\WorldConquest\bin\Debug\net10.0\Templates\CasusBelliTemplate.txt
@@ -33,3 +31,4 @@ D:\GitHub\drmknights-eu5-mods\src\WorldConquest\WorldConquest\bin\Debug\net10.0\
 D:\GitHub\drmknights-eu5-mods\src\WorldConquest\WorldConquest\bin\Debug\net10.0\Microsoft.Extensions.Primitives.dll
 D:\GitHub\drmknights-eu5-mods\src\WorldConquest\WorldConquest\bin\Debug\net10.0\Templates\ObtainmentTriggerTemplate.txt
 D:\GitHub\drmknights-eu5-mods\src\WorldConquest\WorldConquest\bin\Debug\net10.0\Microsoft.Extensions.Configuration.Binder.dll
+D:\GitHub\drmknights-eu5-mods\src\WorldConquest\WorldConquest\bin\Debug\net10.0\RawMapData.txt

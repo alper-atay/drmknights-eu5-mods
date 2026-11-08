@@ -1,4 +1,4 @@
-﻿{{WargoalName}}_wargoal = {
+﻿{{WargoalName}} = {
 	type = take_province
 	attacker = {
 		conquer_cost = 0.5

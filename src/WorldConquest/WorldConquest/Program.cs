@@ -1,15 +1,10 @@
-﻿WorldConquest.WorldConquest worldConquest = new();
-
-//await worldConquest.Generate();
+﻿using WorldConquest;
 
 
+Mod mod = new Mod();
 
-
-
-
-Console.WriteLine("Mod Updated");
-Console.ReadLine();
-
+await mod.MapData.GenerateAsync();
+await mod.LocalizationGenerator.GenerateAndWriteWargoalAsync();
 
 //WorldConquestGenericActionClaim world = new WorldConquestGenericActionClaim();
 

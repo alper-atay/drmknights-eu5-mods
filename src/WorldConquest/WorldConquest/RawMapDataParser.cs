@@ -1,46 +1,35 @@
-﻿using System.Collections;
+﻿namespace WorldConquest;
 
-namespace WorldConquest;
-
-public partial class RawMapDataParser : IReadOnlyList<RawMapData>
+public partial class RawMapDataParser
 {
-    private readonly List<RawMapData> _rawMapDataList = [];
-
     private string? _currentContinentName;
     private string? _currentSubcontinentName;
     private string? _currentRegionName;
     private string? _currentAreaName;
 
-    public RawMapData this[int index] => ((IReadOnlyList<RawMapData>)_rawMapDataList)[index];
-
-    public int Count => ((IReadOnlyCollection<RawMapData>)_rawMapDataList).Count;
-
-    public IEnumerator<RawMapData> GetEnumerator()
+    public async Task<IReadOnlyList<RawMapDataItem>> ParseAsync(string rawMapDataPath)
     {
-        return ((IEnumerable<RawMapData>)_rawMapDataList).GetEnumerator();
-    }
+        List<RawMapDataItem> rawMapDataList = [];
 
-
-    public async Task ParseAsync(string rawMapDataPath)
-    {
         using StreamReader streamReader = File.OpenText(rawMapDataPath);
 
-        string? line;
-        while ((line = await streamReader.ReadLineAsync()) is not null)
+        string? currentLine;
+
+        while ((currentLine = await streamReader.ReadLineAsync()) is not null)
         {
-            if (string.IsNullOrWhiteSpace(line))
+            if (string.IsNullOrWhiteSpace(currentLine))
             {
                 continue;
             }
 
-            if (line.Length < 2)
+            if (currentLine.Length < 2)
             {
                 continue;
             }
 
-            int currentIndent = line.Count(x => x == '\t');
+            int currentIndent = currentLine.Count(x => x == '\t');
 
-            string? token = ParseLine(line);
+            string? token = ParseLine(currentLine);
 
             if (string.IsNullOrWhiteSpace(token))
             {
@@ -61,7 +50,7 @@ public partial class RawMapDataParser : IReadOnlyList<RawMapData>
                     }
                     else
                     {
-                        return;
+                        continue;
                     }
                     break;
                 case 1:
@@ -97,20 +86,19 @@ public partial class RawMapDataParser : IReadOnlyList<RawMapData>
 
             if (currentIndent == 3)
             {
-                _rawMapDataList.Add(new RawMapData()
-                {
-                    ContinentName = _currentContinentName,
-                    SubcontinentName = _currentSubcontinentName,
-                    RegionName = _currentRegionName,
-                    AreaName = _currentAreaName
-                });
+                rawMapDataList.Add(
+                    new RawMapDataItem()
+                    {
+                        ContinentName = _currentContinentName,
+                        SubcontinentName = _currentSubcontinentName,
+                        RegionName = _currentRegionName,
+                        AreaName = _currentAreaName,
+                    }
+                );
             }
         }
-    }
 
-    IEnumerator IEnumerable.GetEnumerator()
-    {
-        return ((IEnumerable)_rawMapDataList).GetEnumerator();
+        return rawMapDataList;
     }
 
     public static string? ParseLine(string line)

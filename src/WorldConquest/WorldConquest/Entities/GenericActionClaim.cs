@@ -1,25 +1,27 @@
 ﻿using Scriban;
 using Scriban.Runtime;
 
-namespace WorldConquest;
+namespace WorldConquest.Entities;
 
-public class WorldConquestWargoal
+public class GenericActionClaim : BaseModeEntityGenerator
 {
     private readonly string _templateSource;
     private readonly Template _template;
     private readonly TemplateContext _templateContext = new();
 
-    public WorldConquestWargoal()
+    public GenericActionClaim(Mod mod)
+        : base(mod)
     {
-        _templateSource = File.ReadAllText(WorldConquestPredefined.WargoalTemplatePath);
+        _templateSource = File.ReadAllText(Mod.Config.GenericActionClaimTemplatePath);
         _template = Template.Parse(_templateSource);
     }
 
-    public string GetString(WorldConquestMapData data)
+    public string GetString(MapDataItem data)
     {
         ScriptObject scriptObject = new()
         {
-            { "WargoalName", data.KeyName },
+            { "KeyName", data.KeyName },
+            { "SituationName", Mod.Config.SituationName },
             { "RegionName", data.RegionName },
         };
 

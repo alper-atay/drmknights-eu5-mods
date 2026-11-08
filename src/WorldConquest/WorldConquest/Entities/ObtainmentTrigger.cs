@@ -2,21 +2,22 @@
 using Scriban;
 using Scriban.Runtime;
 
-namespace WorldConquest;
+namespace WorldConquest.Entities;
 
-public class WorldConquestObtainmentTrigger
+public class ObtainmentTrigger : BaseModeEntityGenerator
 {
     private readonly string _templateSource;
     private readonly Template _template;
     private readonly TemplateContext _templateContext = new();
 
-    public WorldConquestObtainmentTrigger()
+    public ObtainmentTrigger(Mod mod)
+        : base(mod)
     {
-        _templateSource = File.ReadAllText(WorldConquestPredefined.ObtainmentTriggerTemplatePath);
+        _templateSource = File.ReadAllText(Mod.Config.ObtainmentTriggerTemplatePath);
         _template = Template.Parse(_templateSource);
     }
 
-    public string GetString(WorldConquestMapData data)
+    public string GetString(MapDataItem data)
     {
         string owningListString = GetOwningListString(data);
 
@@ -35,7 +36,7 @@ public class WorldConquestObtainmentTrigger
         return result;
     }
 
-    private static string GetOwningListString(WorldConquestMapData data)
+    private static string GetOwningListString(MapDataItem data)
     {
         StringBuilder stringBuilder = new StringBuilder();
 

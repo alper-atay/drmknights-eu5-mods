@@ -2,21 +2,22 @@
 using Scriban;
 using Scriban.Runtime;
 
-namespace WorldConquest;
+namespace WorldConquest.Entities;
 
-public class WorldConquestCasusBelli
+public class CasusBelli : BaseModeEntityGenerator
 {
     private readonly string _templateSource;
     private readonly Template _template;
     private readonly TemplateContext _templateContext = new();
 
-    public WorldConquestCasusBelli()
+    public CasusBelli(Mod mod)
+        : base(mod)
     {
-        _templateSource = File.ReadAllText(WorldConquestPredefined.CasusBelliTemplatePath);
+        _templateSource = File.ReadAllText(Mod.Config.CasusBelliTemplatePath);
         _template = Template.Parse(_templateSource);
     }
 
-    public string GetString(WorldConquestMapData data)
+    public string GetString(MapDataItem data)
     {
         ScriptObject scriptObject = new()
         {
@@ -33,11 +34,11 @@ public class WorldConquestCasusBelli
         return result;
     }
 
-    public static string GetLocalizationString(IReadOnlyList<WorldConquestMapData> data)
+    public static string GetLocalizationString(IReadOnlyList<MapDataItem> data)
     {
         StringBuilder stringBuilder = new();
 
-        foreach (WorldConquestMapData item in data)
+        foreach (MapDataItem item in data)
         {
             string localizationKey = item.KeyName + "casus_belli";
             string localizationValue =

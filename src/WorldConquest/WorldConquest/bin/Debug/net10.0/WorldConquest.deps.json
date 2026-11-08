@@ -11,8 +11,7 @@
           "Microsoft.Extensions.Configuration": "10.0.14",
           "Microsoft.Extensions.Configuration.Binder": "10.0.14",
           "Microsoft.Extensions.Configuration.Json": "10.0.14",
-          "Pdoxcl2Sharp": "0.6.2",
-          "Scriban": "7.5.3"
+          "Scriban": "7.6.1"
         },
         "runtime": {
           "WorldConquest.dll": {}
@@ -122,19 +121,11 @@
           }
         }
       },
-      "Pdoxcl2Sharp/0.6.2": {
-        "runtime": {
-          "lib/netstandard2.0/Pdoxcl2Sharp.dll": {
-            "assemblyVersion": "0.6.2.0",
-            "fileVersion": "0.6.2.0"
-          }
-        }
-      },
-      "Scriban/7.5.3": {
+      "Scriban/7.6.1": {
         "runtime": {
           "lib/net8.0/Scriban.dll": {
             "assemblyVersion": "7.0.0.0",
-            "fileVersion": "7.5.3.0"
+            "fileVersion": "7.6.1.0"
           }
         }
       }
@@ -209,19 +200,12 @@
       "path": "microsoft.extensions.primitives/10.0.14",
       "hashPath": "microsoft.extensions.primitives.10.0.14.nupkg.sha512"
     },
-    "Pdoxcl2Sharp/0.6.2": {
+    "Scriban/7.6.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-PyFHPVcYo7Spoo7zsksccueAAMRBYh0McwUyLHc83XzOYKBbIp7NfGyjUkvkxe/mOyHn76zyislOAzBI9suKaA==",
-      "path": "pdoxcl2sharp/0.6.2",
-      "hashPath": "pdoxcl2sharp.0.6.2.nupkg.sha512"
-    },
-    "Scriban/7.5.3": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-yeusmR5XJYfGJ2Wj8I92TagqV3n6dggeurnq+cfYPZ4YMFmZMuAG8YSLqExrB9Z9Gx99YGR4ABzVkAHcLlTOmw==",
-      "path": "scriban/7.5.3",
-      "hashPath": "scriban.7.5.3.nupkg.sha512"
+      "sha512": "sha512-EHEiHXenLu4qbPE+pplWzPKX937juMGW5BPVCHF8pyllWvQP0H57BAtWxiyMTk4G+aKH8iHLKgcoYSHemP6DJg==",
+      "path": "scriban/7.6.1",
+      "hashPath": "scriban.7.6.1.nupkg.sha512"
     }
   }
 }

@@ -1,6 +1,6 @@
 ﻿namespace WorldConquest;
 
-public readonly struct WorldConquestMapData
+public readonly struct MapDataItem
 {
     public required int EventIndex { get; init; }
 
