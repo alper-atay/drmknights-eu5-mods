@@ -9,9 +9,9 @@
 	local_monthly_prosperity = 0.001
 	local_monthly_development = 0.001
 	local_population_growth = 0.005
-	local_pop_conversion_speed = 0.02
+	local_pop_conversion_speed = 0.01
 	local_pop_conversion_speed_modifier = 0.25
-	local_pop_assimilation_speed = 0.02
+	local_pop_assimilation_speed = 0.01
 	local_pop_assimilation_speed_modifier = 0.25
 	local_integration_speed = 0.25
 }

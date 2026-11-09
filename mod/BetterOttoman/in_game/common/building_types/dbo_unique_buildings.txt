@@ -133,3 +133,109 @@ REPLACE:janissary_barracks = {
 	}
 	construction_demand = early_soldier_building_construction
 }
+
+REPLACE:seljuk_mint = {
+	audio_tier = 4
+	is_special = yes
+	is_foreign = no
+	pop_type = burghers
+	
+	max_levels = 4
+	employment_size = large_foreign_trade_employment
+	
+	category = government_category
+	
+	rural_settlement = no
+	town = yes
+	city = yes
+	megalopolis = yes
+	ai_forbid_shutdown = yes
+	
+	important_for_AI = yes
+	AI_ignore_available_worker_flag = yes
+	build_time = large_capital_build_time
+	ai_unique_location_list = { konya sivas kayseri malatya tokat amasya erzincan aksaray bingol }
+	ai_ignore_maintenance = yes
+
+	expensive = yes
+	
+	country_potential = {
+		culture ?= {
+			OR = {
+				this = culture:turkish_culture
+				this = culture:turkoman_culture
+			}
+		}
+		OR = {
+			owns = location:konya
+			owns = location:sivas
+			owns = location:kayseri
+			owns = location:malatya
+			owns = location:tokat
+			owns = location:amasya
+			owns = location:erzincan
+			owns = location:aksaray
+			owns = location:bingol
+		}
+	}
+
+	location_potential = {
+		is_capital = no
+		is_historical_capital = no
+		OR = {
+			this = location:konya
+			this = location:sivas
+			this = location:kayseri
+			this = location:malatya
+			this = location:tokat
+			this = location:amasya
+			this = location:erzincan
+			this = location:aksaray
+			this = location:bingol
+		}
+	}
+
+	allow = {
+		OR = {
+			has_building = building_type:seljuk_mint
+			has_proximity_source_building = no
+		}
+	}
+
+	remove_if = {
+		owner = {
+			NOT = {
+				culture = {
+					OR = {
+						this = culture:turkish_culture
+						this = culture:turkoman_culture
+					}
+				}
+			}
+		}
+	}
+
+	increase_per_level_cost = 0.2
+
+	always_add_demands = yes
+	
+	modifier = {
+		local_proximity_source = 20
+		local_monthly_development_modifier = 0.025
+		local_crown_estate_power = 0.1
+		local_migration_attraction = 0.1
+	}
+	
+	unique_production_methods = {
+		seljuk_mint_maintenance  = {
+			icon_type = building_type
+			icon = seljuk_mint
+			paper = 0.1
+			books = 0.25
+			silver = 0.1
+			copper = 0.1
+			category = building_maintenance
+		}
+	}
+	construction_demand = castle_construction
+}

@@ -26,45 +26,27 @@
 	}
 }
 
-dbo_destiny_gunpowder_empire_war_machine = {
+dbo_destiny_war_machine = {
 	unique = yes
 	potential = {
 		has_unlocked_government_reform_trigger = {
-			type = dbo_destiny_gunpowder_empire_war_machine
+			type = dbo_destiny_war_machine
 		}
 	}
 	locked = {
 		is_locked_mechanic = {
 			mechanic = government_reform
-			type = dbo_destiny_gunpowder_empire_war_machine
+			type = dbo_destiny_war_machine
 		}
 	}
 	country_modifier = {
-		army_initiative = 0.1
-		army_artillery_build_cost_modifier = -0.1
-		army_artillery_maintenance_cost_modifier = -0.1
-		army_artillery_power = 0.1
-		army_artillery_reinforce_cost_modifier = -0.1
-		army_auxiliary_build_cost_modifier = -0.1
-		army_auxiliary_maintenance_cost_modifier = -0.1
-		army_auxiliary_power = 0.1
-		army_auxiliary_reinforce_cost_modifier = -0.1
-		army_heavy_cavalry_build_cost_modifier = -0.1
-		army_heavy_cavalry_maintenance_cost_modifier = -0.1
-		army_heavy_cavalry_power = 0.1
-		army_heavy_cavalry_reinforce_cost_modifier = -0.1
-		army_light_cavalry_build_cost_modifier = -0.1
-		army_light_cavalry_maintenance_cost_modifier = -0.1
-		army_light_cavalry_power = 0.1
-		army_light_cavalry_reinforce_cost_modifier = -0.1
-		army_heavy_infantry_build_cost_modifier = -0.1
-		army_heavy_infantry_maintenance_cost_modifier = -0.1
-		army_heavy_infantry_power = 0.1
-		army_heavy_infantry_reinforce_cost_modifier = -0.1
-		army_light_infantry_build_cost_modifier = -0.1
-		army_light_infantry_maintenance_cost_modifier = -0.1
-		army_light_infantry_power = 0.1
-		army_light_infantry_reinforce_cost_modifier = -0.1
+		government_reform_slots = 1
+		army_initiative = 0.2
+		army_maintenance_efficiency = 0.2
+		army_light_cavalry_power = 0.2
+		army_heavy_cavalry_power = 0.2
+		army_light_infantry_power = 0.2
+		army_heavy_infantry_power = 0.2
 	}
 }
 
