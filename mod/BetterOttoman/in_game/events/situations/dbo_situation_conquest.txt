@@ -8,27 +8,31 @@ dbo_situation_conquest.1 = {
 	outcome = neutral
 	option = {
 		name = dbo_situation_conquest.1.a
+		change_heir_selection = heir_selection:dbo_destiny_talented_youngest_heir_selection
+		custom_tooltip = {
+			text = dbo_situation_conquest_annex_to_has_government_reform_anatolian_beylik
+			every_country = {
+				limit = {
+					has_reform = government_reform:anatolian_beylik
+					NOT = {
+						tag = TUR
+					}
+				}
+				root = {
+					annex_country = {
+						country = prev
+						reason = Diplomatic
+					}
+				}
+			}
+		}
 		custom_tooltip = {
 			text = dbo_situation_conquest_every_owned_location_add_ottoman_miracle_tt
 			every_owned_location = {
 				add_location_modifier = {
 					modifier = dbo_location_modifier_miracle
-					years = 40
+					years = 100
 					mode = replace
-				}
-			}
-		}
-		every_owned_non_rural_location = {
-			limit = {
-				is_province_capital = yes
-			}
-			if = {
-				limit = {
-					can_build_building = building_type:dbo_beylerbeyi
-				}
-				change_building_level_in_location = {
-					building = building_type:dbo_beylerbeyi
-					value = 1
 				}
 			}
 		}
@@ -40,7 +44,15 @@ dbo_situation_conquest.1 = {
 				}
 			}
 		}
-		dbo_event_severe_bonus = yes
+		unlock_government_reform_effect = {
+			type = dbo_destiny_gunpowder_empire
+		}
+		add_reform = government_reform:dbo_destiny_gunpowder_empire
+		unlock_government_reform_effect = {
+			type = dbo_destiny_gunpowder_empire_war_machine
+		}
+		add_reform = government_reform:dbo_destiny_gunpowder_empire_war_machine
+		dbo_event_extreme_bonus = yes
 		add_gold = 1299
 	}
 }

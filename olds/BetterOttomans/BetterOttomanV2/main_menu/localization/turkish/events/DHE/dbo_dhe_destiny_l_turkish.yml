@@ -1,0 +1,60 @@
+﻿l_turkish:
+ # dbo_destiny_talented_youngest_heir_selection
+ dbo_dhe_destiny.101.title: "[ShowHeirSelectionName('dbo_destiny_talented_youngest_heir_selection')]\n[Concept('heir_selection', 'Veliaht Seçimi')|e]"
+ dbo_dhe_destiny.101.desc: "$dbo_destiny_talented_youngest_heir_selection_desc$"
+ dbo_dhe_destiny.101.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+ # dbo_destiny_devshirme_system
+ dbo_destiny_devshirme_system_can_end_tt: "[ShowModifier('dbo_country_modifier_centralization_politics')] [Concept('modifier', 'Etkeni')|e];\n[ShowTriggerConditionsForScope('dbo_destiny_devshirme_system_check', SituationView.GetPlayer.MakeScope.Self)]"
+ dbo_dhe_destiny.102.title: "[ShowLawName('recruitment_law')]\n[Concept('law', 'Kanunu')|e]"
+ dbo_dhe_destiny.102.desc: "Devlet-i Aliyye'nin insan gücü ve bürokrasi yönetiminin temel taşıdır. Balkanlar ve Anadolu'daki gayrimüslim tebaanın yetenekli çocuklarının seçilerek devlet hizmetine alınması esasına dayanır. Sıkı bir eğitimden geçen bu gençler; askerlik yeteneklerine göre Yeniçeri Ocağı'na, idari zekalarına göre ise Enderun Mektebi'ne gönderilerek devletin en üst düzey yönetici kadrolarını oluştururlar. Bu sistem, hanedana sadık, toprak sahibi soylulardan bağımsız bir yönetici sınıfı yaratarak merkezi otoriteyi güçlendirir."
+ dbo_dhe_destiny.102.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+# Winner Ottoman get all Beyliks
+ dbo_dhe_destiny.103.title: "[ShowSituationName('rise_of_the_ottomans')]\n Zaferimizle Sonuçlandı"
+ dbo_dhe_destiny.103.desc: "Konstantiniyye’nin fethiyle çağ açan devletimiz, Rumeli’nin ardından Anadolu’nun geri kalanı üzerinde de mutlak ve ebedi hâkimiyetini ilan ediyor.\nArtık beylikler arası rekabet dönemi tarihin tozlu sayfalarına karışmış, geride kalan tüm sancaklar merkezi otoritemizin sarsılmaz birer parçası olarak safımıza katılmıştır.\nBir zamanların müstakil beylikleri artık payitahtın eyaletleri olarak gücümüze güç katarken, Anadolu’da tek bir aykırı sesin dahi kalmadığı bu mutlak bütünleşme süreci tamamlanıyor.\nDoğudan batıya uzanan bu devasa coğrafya tek bir mühürle mühürlenirken, sancağımızın gölgesi kıtaları aşan bir dünya devletinin doğuşunu tüm cihana haykırıyor.\nGücümüz birleşti, irademiz tek bir merkezde toplandı; artık hiçbir kuvvet bu görkemli yükselişin önünde duramayacaktır."
+ dbo_dhe_destiny.103.a: "Tüm Anadolu Beylikleri sancağımız altında birleştir!"
+ dbo_dhe_destiny.103.b: "Hayır onları savaş meydanlarında topraklarımıza katacağız!"
+# dbo_destiny_culus_payment
+ dbo_dhe_destiny.104.title: "Cülûs Bahşişi"
+ dbo_dhe_destiny.104.desc: "[ROOT.GetCountry.GetGovernment.GetRuler.GetName] yeni [Concept('ruler', 'Hükümdar')|e] olarak tahta çıktı ve Cülûs Bahşişi için asker ve idari [pops] Bâbüssaâde önünde toplanmaya başladı. Bu ödeme, sadece bir gelenek değil, aynı zamanda yeni [Concept('ruler', 'Hükümdarın')|e] gücünü ve devletin refahını simgeleyen önemli bir törendir. Cülûs ödemesini yaparak, yeni [Concept('ruler', 'Hükümdarın')|e] tahta çıkışını kutlayabilir ve halkın desteğini kazanabilirsiniz. Ancak bu ödeme, devlet hazinesine büyük bir yük getirebilir ve diğer önemli harcamaları kısıtlayabilir. Bu nedenle, cülûs ödemesini yapıp yapmamak konusunda dikkatli bir değerlendirme yapmanız gerekmektedir. Yapmamız durumunda askeri ve idari personel arasında ciddi memnuniyetsizlik oluşabilir, yapmazsak da halkın gözünde yeni [Concept('ruler', 'Hükümdarın')|e] meşruiyeti zedelenebilir. Bu kararı verirken, devletin mevcut mali durumunu, halkın beklentilerini ve uzun vadeli etkilerini göz önünde bulundurmanız önemlidir."
+ dbo_dhe_destiny.104.a: "Cülus ödemesini yapalım!"
+ dbo_dhe_destiny.104.b: "Cülus ödemesini yapmayalım!"
+ dbo_destiny_culus_payment_rejected_soldier_pops_lose_satisfaction_tt: "Cülûs Bahşişi ödemesi yapmama kararı, [ShowPopTypeName('soldiers')] [Concept('pop_type', 'Toplum Türüne')|e] ait her [pops] arasında [ShowNamedValue('pop_satisfaction_extreme_penalty')|+=2%] [pop_satisfaction|e] kaybına neden olur"
+# dbo_destiny_cultural_capital_constantinople
+ dbo_dhe_destiny.201.title: "[ShowGovernmentReformName('dbo_destiny_cultural_capital_constantinople')]\n[Concept('government_reform', 'Hükûmet Islahatı')|e]"
+ dbo_dhe_destiny.201.desc: "$dbo_destiny_cultural_capital_constantinople_desc$"
+ dbo_dhe_destiny.201.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+ # dbo_destiny_legacy_of_seljuks
+ dbo_dhe_destiny.203.title: "[ShowGovernmentReformName('dbo_destiny_legacy_of_seljuks')]\n[Concept('government_reform', 'Hükûmet Islahatı')|e]"
+ dbo_dhe_destiny.203.desc: "$dbo_destiny_legacy_of_seljuks_desc$"
+ dbo_dhe_destiny.203.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+ # dbo_destiny_piri_reis
+ dbo_dhe_destiny.204.title: "[ShowGovernmentReformName('dbo_destiny_piri_reis')]\n[Concept('government_reform', 'Hükûmet Islahatı')|e]"
+ dbo_dhe_destiny.204.desc: "$dbo_destiny_piri_reis_desc$"
+ dbo_dhe_destiny.204.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+ # dbo_destiny_ottoman_empire
+ dbo_dhe_destiny.205.title: "[ShowGovernmentReformName('dbo_destiny_ottoman_empire')]\n[Concept('government_reform', 'Hükûmet Islahatı')|e]"
+ dbo_dhe_destiny.205.desc: "$dbo_destiny_ottoman_empire_desc$"
+ dbo_dhe_destiny.205.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+ # dbo_destiny_mentor_lala
+ dbo_dhe_destiny.206.title: "[ShowGovernmentReformName('dbo_destiny_mentor_lala')]\n[Concept('government_reform', 'Hükûmet Islahatı')|e]"
+ dbo_dhe_destiny.206.desc: "$dbo_destiny_mentor_lala_desc$"
+ dbo_dhe_destiny.206.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+ # dbo_destiny_nobles_privilege_pashas
+ dbo_dhe_destiny.301.title: "[ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')|U] Paşaları Haklarını Talep Ediyor"
+ dbo_dhe_destiny.301.desc: "[ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] zümresinin arasında en önde gelen Paşalar, Devlet-i Aliyye'nin bu günlere gelmesini sağladıklarına inanıyor ve [ShowEstatePrivilegeName('dbo_destiny_nobles_privilege_pashas')] [Concept('estate_privileges', 'Zümre Ayrıcalıklarının')|e] kendilerine verilmesini talep ediyorlar. Bu talepler, [ROOT.GetCountry.GetLongName|U] geleneksel yönetim yapısında önemli bir yer tutan paşaların, devletin idari ve askeri başarısına olan katkılarının tanınması ve ödüllendirilmesi anlamına geliyor. Ancak bu taleplerin kabul edilmesi, devletin merkezi otoritesini zayıflatabilir ve diğer zümreler arasında huzursuzluk yaratabilir. Bu nedenle, bu taleplerin nasıl karşılanacağı, Devlet-i Aliyye'nın gelecekteki siyasi dengeleri üzerinde önemli bir etkiye sahip olabilir."
+ dbo_dhe_destiny.301.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+ dbo_dhe_destiny.301.b: "[ROOT.GetCountry.Custom('common_string_negative')]"
+ dbo_pashas_rising_tt: "[ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')|U] Paşaları, saraya gelerek [ShowEstatePrivilegeName('dbo_destiny_nobles_privilege_pashas')] [Concept('estate_privileges', 'Zümre Ayrıcalıklarının')|e] kendilerine verilmesini talep etmek için üç ay içinde tekrar saraya gelerek daha sert taleplerde bulunacaklarını belirtiyorlar."
+ dbo_dhe_destiny.302.title: "[ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')|U] Önde Gelen Paşaları Saraya Geldi"
+ dbo_dhe_destiny.302.desc: "[ROOT.GetCountry.GetLongName|U] en önde gelen [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')|U] Paşaları, [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')] zümresinin taleplerini iletmek üzere saraya gelerek, [ShowEstatePrivilegeName('dbo_destiny_nobles_privilege_pashas')] [Concept('estate_privileges', 'Zümre Ayrıcalıklarının')|e] kendilerine verilmesini tekrardan talep ediyorlar. Oldukça kızgın olan paşalar, devletin idari ve askeri başarısına olan katkılarının tanınması gerektiğini vurguluyorlar. Taleplerinin kabul edilmemesi durumunda tekrar saraya gelerek daha sert taleplerde bulunacaklarını belirtiyorlar. Bu durum, [ROOT.GetCountry.GetLongName|U] siyasi atmosferinde önemli bir gerilim yaratabilir ve devletin gelecekteki politikalarını şekillendirebilir."
+ dbo_dhe_destiny.302.a: "[ROOT.GetCountry.Custom('common_string_positive')]"
+ dbo_dhe_destiny.302.b: "[ROOT.GetCountry.Custom('common_string_negative')]"
+ dbo_destiny_every_nobles_or_soldier_pops_lose_satisfaction_tt: "[ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')|U] [Concept('estate', 'Zümresine')|e] ve [ShowPopTypeName('soldiers')] [Concept('pop_type', 'Toplum Türüne')|e] ait olan her [pops] [ShowNamedValue('pop_satisfaction_severe_penalty')|+=2%] [pop_satisfaction|e] kaybına neden olur"
+ # dbo_destiny_clergy_privilege_mevlana_dergahi
+ dbo_dhe_destiny.401.title: "[ShowBuildingTypeName('dbo_mevlana_dergahi')]\n[Concept('building', 'Büyük Dergâh')|e]"
+ dbo_dhe_destiny.401.desc: "Mevlana Celaleddin Rumi'nin öğretilerine adanmış bu dergâh, Devlet-i Aliyye'nin kültürel ve manevi zenginliğinin bir simgesi olarak yükseliyor. Mevlana'nın hoşgörü, sevgi ve insanlık mesajları, bu kutsal mekanda hayat buluyor ve ziyaretçilerine ilham veriyor. Dergâh, sadece bir ibadet yeri değil, aynı zamanda bir kültür merkezi olarak da hizmet vererek, Devlet-i Aliyye'nın manevi mirasını gelecek nesillere aktarmaya devam ediyor."
+ dbo_dhe_destiny.401.a: "Dergâhımızı Yenileyelim!"
+ # dbo_destiny_burghers_privilege_trade_center_grand_bazaar
+ dbo_dhe_destiny.501.title: "[ShowEstatePrivilegeName('dbo_destiny_burghers_privilege_trade_center_grand_bazaar')]\n[Concept('estate_privilege', 'Zümre Ayrıcalığı')|e]"
+ dbo_dhe_destiny.501.desc: "$dbo_destiny_burghers_privilege_trade_center_grand_bazaar_desc$"
+ dbo_dhe_destiny.501.a: "[ROOT.GetCountry.Custom('common_string_positive')]"

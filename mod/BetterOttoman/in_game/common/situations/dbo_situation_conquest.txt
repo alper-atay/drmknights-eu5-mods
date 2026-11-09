@@ -12,22 +12,9 @@
 				dbo_situation_can_end = yes
 			}
 		}
-		trigger_else_if = {
-			limit = {
-				country_exists = c:GKTUR
-			}
-			c:GKTUR = {
-				dbo_situation_can_end = yes
-			}
-		}
-		trigger_else = {
-		}
 	}
 	visible = {
-		OR = {
-			tag = TUR
-			tag = GKTUR
-		}
+		tag = TUR
 	}
 	on_start = {
 		c:TUR = {

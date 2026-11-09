@@ -1,0 +1,308 @@
+﻿namespace = dbo_dhe_war_wolf
+# dbo_war_wolf_t1
+dbo_dhe_war_wolf.101 = {
+	type = country_event
+	title = dbo_dhe_war_wolf.101.title
+	desc = dbo_dhe_war_wolf_common_desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_war_wolf.dds"
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = TUR
+		tag = GKTUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_war_wolf_t1_check = yes
+	}
+	option = {
+		name = dbo_dhe_war_wolf_common_option
+		historical_option = yes
+		unlock_government_reform_effect = {
+			type = dbo_war_wolf_t1
+		}
+		add_reform = government_reform:dbo_war_wolf_t1
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_war_wolf_t2
+dbo_dhe_war_wolf.102 = {
+	type = country_event
+	title = dbo_dhe_war_wolf.102.title
+	desc = dbo_dhe_war_wolf_common_desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_war_wolf.dds"
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = TUR
+		tag = GKTUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		has_reform = government_reform:dbo_war_wolf_t1
+		dbo_war_wolf_t2_check = yes
+	}
+	option = {
+		name = dbo_dhe_war_wolf_common_option
+		historical_option = yes
+		remove_reform = government_reform:dbo_war_wolf_t1
+		unlock_government_reform_effect = {
+			type = dbo_war_wolf_t2
+		}
+		add_reform = government_reform:dbo_war_wolf_t2
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_war_wolf_t3
+dbo_dhe_war_wolf.103 = {
+	type = country_event
+	title = dbo_dhe_war_wolf.103.title
+	desc = dbo_dhe_war_wolf_common_desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_war_wolf.dds"
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = TUR
+		tag = GKTUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		has_reform = government_reform:dbo_war_wolf_t2
+		dbo_war_wolf_t3_check = yes
+	}
+	option = {
+		name = dbo_dhe_war_wolf_common_option
+		historical_option = yes
+		remove_reform = government_reform:dbo_war_wolf_t2
+		unlock_government_reform_effect = {
+			type = dbo_war_wolf_t3
+		}
+		add_reform = government_reform:dbo_war_wolf_t3
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_war_wolf_t4
+dbo_dhe_war_wolf.104 = {
+	type = country_event
+	title = dbo_dhe_war_wolf.104.title
+	desc = dbo_dhe_war_wolf_common_desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_war_wolf.dds"
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = TUR
+		tag = GKTUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		has_reform = government_reform:dbo_war_wolf_t3
+		dbo_war_wolf_t4_check = yes
+	}
+	option = {
+		name = dbo_dhe_war_wolf_common_option
+		historical_option = yes
+		remove_reform = government_reform:dbo_war_wolf_t3
+		unlock_government_reform_effect = {
+			type = dbo_war_wolf_t4
+		}
+		add_reform = government_reform:dbo_war_wolf_t4
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_war_wolf_t5
+dbo_dhe_war_wolf.105 = {
+	type = country_event
+	title = dbo_dhe_war_wolf.105.title
+	desc = dbo_dhe_war_wolf_common_desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_war_wolf.dds"
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = TUR
+		tag = GKTUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		has_reform = government_reform:dbo_war_wolf_t4
+		dbo_war_wolf_t5_check = yes
+	}
+	option = {
+		name = dbo_dhe_war_wolf_common_option
+		historical_option = yes
+		remove_reform = government_reform:dbo_war_wolf_t4
+		unlock_government_reform_effect = {
+			type = dbo_war_wolf_t5
+		}
+		add_reform = government_reform:dbo_war_wolf_t5
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_war_wolf_t6
+dbo_dhe_war_wolf.106 = {
+	type = country_event
+	title = dbo_dhe_war_wolf.106.title
+	desc = dbo_dhe_war_wolf_common_desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_war_wolf.dds"
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = TUR
+		tag = GKTUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		has_reform = government_reform:dbo_war_wolf_t5
+		dbo_war_wolf_t6_check = yes
+	}
+	option = {
+		name = dbo_dhe_war_wolf_common_option
+		historical_option = yes
+		remove_reform = government_reform:dbo_war_wolf_t5
+		unlock_government_reform_effect = {
+			type = dbo_war_wolf_t6
+		}
+		add_reform = government_reform:dbo_war_wolf_t6
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_war_wolf_t7
+dbo_dhe_war_wolf.107 = {
+	type = country_event
+	title = dbo_dhe_war_wolf.107.title
+	desc = dbo_dhe_war_wolf_common_desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_war_wolf.dds"
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = TUR
+		tag = GKTUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		has_reform = government_reform:dbo_war_wolf_t6
+		dbo_war_wolf_t7_check = yes
+	}
+	option = {
+		name = dbo_dhe_war_wolf_common_option
+		historical_option = yes
+		remove_reform = government_reform:dbo_war_wolf_t6
+		unlock_government_reform_effect = {
+			type = dbo_war_wolf_t7
+		}
+		add_reform = government_reform:dbo_war_wolf_t7
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_war_wolf_t8
+dbo_dhe_war_wolf.108 = {
+	type = country_event
+	title = dbo_dhe_war_wolf.108.title
+	desc = dbo_dhe_war_wolf_common_desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_war_wolf.dds"
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = TUR
+		tag = GKTUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		has_reform = government_reform:dbo_war_wolf_t7
+		dbo_war_wolf_t8_check = yes
+	}
+	option = {
+		name = dbo_dhe_war_wolf_common_option
+		historical_option = yes
+		remove_reform = government_reform:dbo_war_wolf_t7
+		unlock_government_reform_effect = {
+			type = dbo_war_wolf_t8
+		}
+		add_reform = government_reform:dbo_war_wolf_t8
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_war_wolf_t9
+dbo_dhe_war_wolf.109 = {
+	type = country_event
+	title = dbo_dhe_war_wolf.109.title
+	desc = dbo_dhe_war_wolf_common_desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_war_wolf.dds"
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = TUR
+		tag = GKTUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		has_reform = government_reform:dbo_war_wolf_t8
+		dbo_war_wolf_t9_check = yes
+	}
+	option = {
+		name = dbo_dhe_war_wolf_common_option
+		historical_option = yes
+		remove_reform = government_reform:dbo_war_wolf_t8
+		unlock_government_reform_effect = {
+			type = dbo_war_wolf_t9
+		}
+		add_reform = government_reform:dbo_war_wolf_t9
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_war_wolf_t10
+dbo_dhe_war_wolf.110 = {
+	type = country_event
+	title = dbo_dhe_war_wolf.110.title
+	desc = dbo_dhe_war_wolf_common_desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_war_wolf.dds"
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = TUR
+		tag = GKTUR
+		from = 1337.1.1
+		to = 1837.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		has_reform = government_reform:dbo_war_wolf_t9
+		dbo_war_wolf_t10_check = yes
+	}
+	option = {
+		name = dbo_dhe_war_wolf_common_option
+		historical_option = yes
+		remove_reform = government_reform:dbo_war_wolf_t9
+		unlock_government_reform_effect = {
+			type = dbo_war_wolf_t10
+		}
+		add_reform = government_reform:dbo_war_wolf_t10
+		dbo_event_mild_bonus = yes
+	}
+}

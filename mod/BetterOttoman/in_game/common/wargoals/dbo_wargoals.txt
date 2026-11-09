@@ -228,3 +228,29 @@ dbo_conquest_new_homeland = {
 	}
 	ticking_war_score = 1
 }
+
+dbo_conquest_steppes_region = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:steppes_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}
+
+dbo_conquest_ruthenia_region = {
+	type = take_province
+	attacker = {
+		conquer_cost = 0.5
+		allowed_locations = {
+			scope:location.region = region:ruthenia_region
+		}
+	}
+	defender = {
+	}
+	ticking_war_score = 1
+}

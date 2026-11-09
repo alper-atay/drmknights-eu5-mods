@@ -380,6 +380,67 @@ dbo_conquest_stamp_new_homeland_law = {
 	}
 }
 
+dbo_conquest_stamp_steppes_region_law = {
+	law_category = dbo_conquest
+	unique = yes
+	potential = {
+		OR = {
+			has_unlocked_policy_trigger = {
+				type = dbo_conquest_stamp_steppes_region_policy
+			}
+		}
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = dbo_conquest_stamp_steppes_region_law
+		}
+	}
+	dbo_conquest_stamp_steppes_region_policy = {
+		unique = yes
+		allow = {
+			has_unlocked_policy_trigger = {
+				type = dbo_conquest_stamp_steppes_region_policy
+			}
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+			global_manpower_modifier = 0.1
+		}
+	}
+}
+
+dbo_conquest_stamp_ruthenia_region_law = {
+	law_category = dbo_conquest
+	unique = yes
+	potential = {
+		OR = {
+			has_unlocked_policy_trigger = {
+				type = dbo_conquest_stamp_ruthenia_region_policy
+			}
+		}
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = law
+			type = dbo_conquest_stamp_ruthenia_region_law
+		}
+	}
+	dbo_conquest_stamp_ruthenia_region_policy = {
+		unique = yes
+		allow = {
+			has_unlocked_policy_trigger = {
+				type = dbo_conquest_stamp_ruthenia_region_policy
+			}
+		}
+		country_modifier = {
+			power_projection = 5
+			num_local_governors = 1
+		}
+	}
+}
+
 dbo_conquest_stamp_gokturk_union_law = {
 	law_category = dbo_conquest
 	unique = yes

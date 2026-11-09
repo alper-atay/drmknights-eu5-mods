@@ -1,0 +1,647 @@
+﻿namespace = dbo_dhe_conquest
+# dbo_conquest_anatolian_turks_challenged
+dbo_dhe_conquest.11 = {
+	type = country_event
+	title = dbo_dhe_conquest.11.title
+	desc = dbo_dhe_conquest.11.desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_anatolian_turks_challenged.dds"
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = TUR
+		tag = GKTUR
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_conquest_anatolian_turks_challenge_check = yes
+	}
+	option = {
+		name = dbo_dhe_conquest.11.a
+		historical_option = yes
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_conquest_anatolian_turks_stamp
+dbo_dhe_conquest.12 = {
+	type = country_event
+	title = dbo_dhe_conquest.12.title
+	desc = dbo_dhe_conquest.12.desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_anatolian_turks.dds"
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = TUR
+		tag = GKTUR
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_conquest_anatolian_turks_check = yes
+	}
+	option = {
+		name = dbo_dhe_conquest_common_option
+		historical_option = yes
+		unlock_policy_effect = {
+			type = dbo_conquest_stamp_anatolian_turks_policy
+		}
+		add_policy = policy:dbo_conquest_stamp_anatolian_turks_policy
+		dbo_event_severe_bonus = yes
+	}
+}
+
+# dbo_conquest_rumelia_challenged
+dbo_dhe_conquest.21 = {
+	type = country_event
+	title = dbo_dhe_conquest.21.title
+	desc = dbo_dhe_conquest.21.desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_rumelia_challenged.dds"
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = TUR
+		tag = GKTUR
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_conquest_rumelia_challenge_check = yes
+	}
+	option = {
+		name = dbo_dhe_conquest.21.a
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_conquest_rumelia_stamp
+dbo_dhe_conquest.22 = {
+	type = country_event
+	title = dbo_dhe_conquest.22.title
+	desc = dbo_dhe_conquest.22.desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_rumelia.dds"
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = TUR
+		tag = GKTUR
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_conquest_rumelia_check = yes
+	}
+	option = {
+		name = dbo_dhe_conquest_common_option
+		historical_option = yes
+		unlock_policy_effect = {
+			type = dbo_conquest_stamp_rumelia_policy
+		}
+		add_policy = policy:dbo_conquest_stamp_rumelia_policy
+		dbo_event_severe_bonus = yes
+	}
+}
+
+# dbo_conquest_fertile_crescent_challenged
+dbo_dhe_conquest.31 = {
+	type = country_event
+	title = dbo_dhe_conquest.31.title
+	desc = dbo_dhe_conquest.31.desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_fertile_crescent_challenged.dds"
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = TUR
+		tag = GKTUR
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 20
+	}
+	trigger = {
+		dbo_conquest_fertile_crescent_challenge_check = yes
+	}
+	option = {
+		name = dbo_dhe_conquest.31.a
+		historical_option = yes
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_conquest_fertile_crescent_stamp
+dbo_dhe_conquest.32 = {
+	type = country_event
+	title = dbo_dhe_conquest.32.title
+	desc = dbo_dhe_conquest.32.desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_fertile_crescent.dds"
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = TUR
+		tag = GKTUR
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_conquest_fertile_crescent_check = yes
+	}
+	option = {
+		name = dbo_dhe_conquest_common_option
+		historical_option = yes
+		unlock_policy_effect = {
+			type = dbo_conquest_stamp_fertile_crescent_policy
+		}
+		add_policy = policy:dbo_conquest_stamp_fertile_crescent_policy
+		dbo_event_severe_bonus = yes
+	}
+}
+
+# dbo_conquest_arabian_peninsula_challenged
+dbo_dhe_conquest.41 = {
+	type = country_event
+	title = dbo_dhe_conquest.41.title
+	desc = dbo_dhe_conquest.41.desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_arabian_peninsula_challenged.dds"
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = TUR
+		tag = GKTUR
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_conquest_arabian_peninsula_challenge_check = yes
+	}
+	option = {
+		name = dbo_dhe_conquest.41.a
+		historical_option = yes
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_conquest_arabian_peninsula_stamp
+dbo_dhe_conquest.42 = {
+	type = country_event
+	title = dbo_dhe_conquest.42.title
+	desc = dbo_dhe_conquest.42.desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_arabian_peninsula.dds"
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = TUR
+		tag = GKTUR
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_conquest_arabian_peninsula_check = yes
+	}
+	option = {
+		name = dbo_dhe_conquest_common_option
+		historical_option = yes
+		unlock_policy_effect = {
+			type = dbo_conquest_stamp_arabian_peninsula_policy
+		}
+		add_policy = policy:dbo_conquest_stamp_arabian_peninsula_policy
+		dbo_event_severe_bonus = yes
+	}
+}
+
+# dbo_conquest_nile_river_challenged
+dbo_dhe_conquest.51 = {
+	type = country_event
+	title = dbo_dhe_conquest.51.title
+	desc = dbo_dhe_conquest.51.desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_nile_river_challenged.dds"
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = TUR
+		tag = GKTUR
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_conquest_nile_river_challenge_check = yes
+	}
+	option = {
+		name = dbo_dhe_conquest.51.a
+		historical_option = yes
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_conquest_nile_river_stamp
+dbo_dhe_conquest.52 = {
+	type = country_event
+	title = dbo_dhe_conquest.52.title
+	desc = dbo_dhe_conquest.52.desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_nile_river.dds"
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = TUR
+		tag = GKTUR
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_conquest_nile_river_check = yes
+	}
+	option = {
+		name = dbo_dhe_conquest_common_option
+		historical_option = yes
+		unlock_policy_effect = {
+			type = dbo_conquest_stamp_nile_river_policy
+		}
+		add_policy = policy:dbo_conquest_stamp_nile_river_policy
+		dbo_event_severe_bonus = yes
+	}
+}
+
+# dbo_conquest_black_sea_challenged
+dbo_dhe_conquest.61 = {
+	type = country_event
+	title = dbo_dhe_conquest.61.title
+	desc = dbo_dhe_conquest.61.desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_black_sea_challenged.dds"
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = TUR
+		tag = GKTUR
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_conquest_black_sea_challenge_check = yes
+	}
+	option = {
+		name = dbo_dhe_conquest.61.a
+		historical_option = yes
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_conquest_black_sea_stamp
+dbo_dhe_conquest.62 = {
+	type = country_event
+	title = dbo_dhe_conquest.62.title
+	desc = dbo_dhe_conquest.62.desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_black_sea.dds"
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = TUR
+		tag = GKTUR
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_conquest_black_sea_check = yes
+	}
+	option = {
+		name = dbo_dhe_conquest_common_option
+		historical_option = yes
+		unlock_policy_effect = {
+			type = dbo_conquest_stamp_black_sea_policy
+		}
+		add_policy = policy:dbo_conquest_stamp_black_sea_policy
+		dbo_event_severe_bonus = yes
+	}
+}
+
+# dbo_conquest_europe_eastern_gate_challenged
+dbo_dhe_conquest.71 = {
+	type = country_event
+	title = dbo_dhe_conquest.71.title
+	desc = dbo_dhe_conquest.71.desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_europe_eastern_gate_challenged.dds"
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = TUR
+		tag = GKTUR
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_conquest_europe_eastern_gate_challenge_check = yes
+	}
+	option = {
+		name = dbo_dhe_conquest.71.a
+		historical_option = yes
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_conquest_europe_eastern_gate_stamp
+dbo_dhe_conquest.72 = {
+	type = country_event
+	title = dbo_dhe_conquest.72.title
+	desc = dbo_dhe_conquest.72.desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_europe_eastern_gate.dds"
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = TUR
+		tag = GKTUR
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_conquest_europe_eastern_gate_check = yes
+	}
+	option = {
+		name = dbo_dhe_conquest_common_option
+		historical_option = yes
+		unlock_policy_effect = {
+			type = dbo_conquest_stamp_europe_eastern_gate_policy
+		}
+		add_policy = policy:dbo_conquest_stamp_europe_eastern_gate_policy
+		dbo_event_severe_bonus = yes
+	}
+}
+
+# dbo_conquest_turkish_renaissance_challenged
+dbo_dhe_conquest.81 = {
+	type = country_event
+	title = dbo_dhe_conquest.81.title
+	desc = dbo_dhe_conquest.81.desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_turkish_renaissance_challenged.dds"
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = TUR
+		tag = GKTUR
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_conquest_turkish_renaissance_challenge_check = yes
+	}
+	option = {
+		name = dbo_dhe_conquest.81.a
+		historical_option = yes
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_conquest_turkish_renaissance_stamp
+dbo_dhe_conquest.82 = {
+	type = country_event
+	title = dbo_dhe_conquest.82.title
+	desc = dbo_dhe_conquest.82.desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_turkish_renaissance.dds"
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = TUR
+		tag = GKTUR
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_conquest_turkish_renaissance_check = yes
+	}
+	option = {
+		name = dbo_dhe_conquest_common_option
+		historical_option = yes
+		unlock_policy_effect = {
+			type = dbo_conquest_stamp_turkish_renaissance_policy
+		}
+		add_policy = policy:dbo_conquest_stamp_turkish_renaissance_policy
+		dbo_event_severe_bonus = yes
+	}
+}
+
+# dbo_conquest_pearl_of_east_challenged
+dbo_dhe_conquest.91 = {
+	type = country_event
+	title = dbo_dhe_conquest.91.title
+	desc = dbo_dhe_conquest.91.desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_pearl_of_east_challenged.dds"
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = TUR
+		tag = GKTUR
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_conquest_pearl_of_east_challenge_check = yes
+	}
+	option = {
+		name = dbo_dhe_conquest.91.a
+		historical_option = yes
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_conquest_pearl_of_east_stamp
+dbo_dhe_conquest.92 = {
+	type = country_event
+	title = dbo_dhe_conquest.92.title
+	desc = dbo_dhe_conquest.92.desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_pearl_of_east.dds"
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = TUR
+		tag = GKTUR
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_conquest_pearl_of_east_check = yes
+	}
+	option = {
+		name = dbo_dhe_conquest_common_option
+		historical_option = yes
+		unlock_policy_effect = {
+			type = dbo_conquest_stamp_pearl_of_east_policy
+		}
+		add_policy = policy:dbo_conquest_stamp_pearl_of_east_policy
+		dbo_event_severe_bonus = yes
+	}
+}
+
+# dbo_conquest_maghreb_challenged
+dbo_dhe_conquest.101 = {
+	type = country_event
+	title = dbo_dhe_conquest.101.title
+	desc = dbo_dhe_conquest.101.desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_maghreb_challenged.dds"
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = TUR
+		tag = GKTUR
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_conquest_maghreb_challenge_check = yes
+	}
+	option = {
+		name = dbo_dhe_conquest.101.a
+		historical_option = yes
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_conquest_maghreb_stamp
+dbo_dhe_conquest.102 = {
+	type = country_event
+	title = dbo_dhe_conquest.102.title
+	desc = dbo_dhe_conquest.102.desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_maghreb.dds"
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = TUR
+		tag = GKTUR
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_conquest_maghreb_check = yes
+	}
+	option = {
+		name = dbo_dhe_conquest_common_option
+		historical_option = yes
+		unlock_policy_effect = {
+			type = dbo_conquest_stamp_maghreb_policy
+		}
+		add_policy = policy:dbo_conquest_stamp_maghreb_policy
+		dbo_event_severe_bonus = yes
+	}
+}
+
+# dbo_conquest_steep_mountain_challenged
+dbo_dhe_conquest.111 = {
+	type = country_event
+	title = dbo_dhe_conquest.111.title
+	desc = dbo_dhe_conquest.111.desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_steep_mountain_challenged.dds"
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = TUR
+		tag = GKTUR
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_conquest_steep_mountain_challenge_check = yes
+	}
+	option = {
+		name = dbo_dhe_conquest.111.a
+		historical_option = yes
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_conquest_steep_mountain_stamp
+dbo_dhe_conquest.112 = {
+	type = country_event
+	title = dbo_dhe_conquest.112.title
+	desc = dbo_dhe_conquest.112.desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_steep_mountain.dds"
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = TUR
+		tag = GKTUR
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_conquest_steep_mountain_check = yes
+	}
+	option = {
+		name = dbo_dhe_conquest_common_option
+		historical_option = yes
+		unlock_policy_effect = {
+			type = dbo_conquest_stamp_steep_mountain_policy
+		}
+		add_policy = policy:dbo_conquest_stamp_steep_mountain_policy
+		dbo_event_severe_bonus = yes
+	}
+}
+
+# dbo_conquest_new_homeland_challenged
+dbo_dhe_conquest.121 = {
+	type = country_event
+	title = dbo_dhe_conquest.121.title
+	desc = dbo_dhe_conquest.121.desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_new_homeland_challenged.dds"
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = TUR
+		tag = GKTUR
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_conquest_new_homeland_challenge_check = yes
+	}
+	option = {
+		name = dbo_dhe_conquest.121.a
+		historical_option = yes
+		dbo_event_mild_bonus = yes
+	}
+}
+
+# dbo_conquest_new_homeland
+dbo_dhe_conquest.122 = {
+	type = country_event
+	title = dbo_dhe_conquest.122.title
+	desc = dbo_dhe_conquest.122.desc
+	image = "gfx/interface/illustrations/event/backgrounds/dbo_conquest_new_homeland.dds"
+	fire_only_once = yes
+	outcome = neutral
+	dynamic_historical_event = {
+		tag = TUR
+		tag = GKTUR
+		from = 1337.1.1
+		to = 9999.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		dbo_conquest_new_homeland_check = yes
+	}
+	option = {
+		name = dbo_dhe_conquest_common_option
+		historical_option = yes
+		unlock_policy_effect = {
+			type = dbo_conquest_stamp_new_homeland_policy
+		}
+		add_policy = policy:dbo_conquest_stamp_new_homeland_policy
+		dbo_event_severe_bonus = yes
+	}
+}

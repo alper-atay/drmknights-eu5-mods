@@ -1,0 +1,174 @@
+﻿dbo_beylerbeyi = {
+	is_special = yes
+	is_foreign = no
+	pop_type = nobles
+	max_levels = 1
+	category = government_category
+	# obsolete = bey_fortress
+	employment_size = large_noble_employment
+	rural_settlement = no
+	town = no
+	city = yes
+	megalopolis = yes
+	expensive = yes
+	important_for_AI = yes
+	important_for_UI = yes
+	build_time = small_capital_build_time
+	location_potential = {
+		is_province_capital = yes
+	}
+	country_potential = {
+		has_estate_privilege = estate_privilege:dbo_destiny_nobles_privilege_pashas
+	}
+	modifier = {
+		local_proximity_source = 10
+		local_nobles_estate_power = 1
+		local_monthly_development = 0.001
+		local_monthly_prosperity = 0.001
+		local_max_control = 0.1
+		local_crown_estate_power = 0.25
+		local_manpower = 0.01
+		local_defensive = 0.25
+		can_recruit_regiment_in_this_location = yes
+	}
+	unique_production_methods = {
+		dbo_beylerbeyi_maintenance = {
+			furniture = 0.1
+			glass = 0.05
+			goods_gold = 0.05
+			marble = 0.05
+			paper = 0.2
+			books = 0.1
+			cloth = 0.1
+			fine_cloth = 0.05
+			stone = 0.1
+			tools = 0.2
+			weaponry = 0.2
+			tar = 0.1
+			category = building_maintenance
+		}
+	}
+	construction_demand = local_governor_construction
+}
+
+dbo_topkapi_palace = {
+	is_special = yes
+	is_foreign = no
+	pop_type = nobles
+	max_levels = 1
+	employment_size = insane_noble_employment
+	category = government_category
+	city = yes
+	megalopolis = yes
+	expensive = yes
+	build_time = large_capital_build_time
+	location_potential = {
+		is_capital = yes
+	}
+	country_potential = {
+		has_unlocked_building_trigger = {
+			type = dbo_topkapi_palace
+		}
+	}
+	modifier = {
+		local_monthly_development = 0.001
+		local_monthly_prosperity = 0.001
+	}
+	capital_modifier = {
+		local_cultural_tradition = 0.25
+		local_cultural_influence = 0.25
+		local_crown_estate_power = 0.5
+	}
+	capital_country_modifier = {
+		monthly_towards_centralization = societal_value_monthly_move
+		counter_espionage = 0.1
+		diplomatic_reputation = diplomatic_reputation_mild_bonus
+	}
+	possible_production_methods = {
+		early_capital_building_maintenance
+		early_capital_building_silver_maintenance
+	}
+	construction_demand = capital_building_construction
+}
+
+dbo_mevlana_dergahi = {
+	is_special = yes
+	is_foreign = no
+	pop_type = clergy
+	max_levels = 1
+	category = religious_category
+	employment_size = huge_religious_building_employment
+	rural_settlement = no
+	town = no
+	city = yes
+	megalopolis = yes
+	expensive = yes
+	important_for_AI = yes
+	important_for_UI = yes
+	build_time = large_religious_building_time
+	graphical_tags = {
+		large_religious
+	}
+	location_potential = {
+		this = location:konya
+	}
+	country_potential = {
+		owns = location:konya
+		has_unlocked_building_trigger = {
+			type = dbo_mevlana_dergahi
+		}
+	}
+	modifier = {
+		local_clergy_max_literacy = 20
+		local_clergy_desired_pop = 0.1
+		local_monthly_development = 0.002
+		local_monthly_prosperity = 0.002
+	}
+	unique_production_methods = {
+		dbo_mevlana_dergahi_maintenance = {
+			paper = 0.2
+			books = 0.1
+			cloth = 0.1
+			fine_cloth = 0.05
+			category = building_maintenance
+		}
+	}
+	construction_demand = prestige_building_construction
+}
+
+REPLACE:janissary_barracks = {
+	audio_tier = 4
+	is_special = yes
+	is_foreign = no
+	pop_type = soldiers
+	
+	max_levels = janissary_barracks_size
+	employment_size = slave_soldier_barracks
+	
+	category = military_category
+	
+	rural_settlement = no
+	town = no
+	city = yes
+	megalopolis = yes
+
+	expensive = yes
+	
+	build_time = soldier_building
+	
+	always_add_demands = yes
+	
+	location_potential = {
+		is_province_capital = yes
+	}
+
+	modifier = {
+		local_manpower = 0.025
+		can_recruit_regiment_in_this_location = yes
+	}
+	
+	possible_production_methods = {
+		janissary_barracks_maintenance
+	}
+	construction_demand = early_soldier_building_construction
+}

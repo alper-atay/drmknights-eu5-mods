@@ -283,3 +283,47 @@ dbo_cb_conquest_new_homeland = {
 	}
 	ai_subjugation_desire = -100
 }
+
+dbo_cb_conquest_steppes_region = {
+	create_visible = {
+		always = no
+	}
+	create_enabled = {
+		always = no
+	}
+	war_goal_type = dbo_conquest_steppes_region
+	province = {
+		any_location_in_province = {
+			always = yes
+		}
+	}
+	ai_will_do = {
+		add = {
+			desc = "CB_REASON_IMPORTANT_CB"
+			value = 2000
+		}
+	}
+	ai_subjugation_desire = -100
+}
+
+dbo_cb_conquest_ruthenia_region = {
+	create_visible = {
+		always = no
+	}
+	create_enabled = {
+		always = no
+	}
+	war_goal_type = dbo_conquest_ruthenia_region
+	province = {
+		any_location_in_province = {
+			always = yes
+		}
+	}
+	ai_will_do = {
+		add = {
+			desc = "CB_REASON_IMPORTANT_CB"
+			value = 2000
+		}
+	}
+	ai_subjugation_desire = -100
+}
