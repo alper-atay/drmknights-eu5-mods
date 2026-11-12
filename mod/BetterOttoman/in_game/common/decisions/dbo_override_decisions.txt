@@ -1,0 +1,71 @@
+﻿REPLACE:tur_kanum_i_osmani_decision = {
+	decision_category = country_specific_decisions
+	only_once = yes
+	tags = {
+		TUR
+	}
+	potential = {
+		current_age_or_later = {
+			age = age_3_discovery
+		}
+	}
+	allow = {
+		OR = {
+			ruler_or_regent ?= {
+				has_trait = lawgiver
+			}
+			has_advance = lawcode_of_suleiman
+		}
+		country_rank = country_rank:rank_empire
+	}
+	ai_will_do = {
+		value = 100
+	}
+	illustration_tags = {
+		10 = regular
+		10 = exterior
+	}
+	illustration_scope = {
+		event_illustration_estate_effect = {
+			foreground = estate_type:nobles_estate
+			background = estate_type:nobles_estate
+		}
+		ruler_or_regent ?= {
+			save_scope_as = target_character
+		}
+	}
+	option = {
+		name = tur_kanum_i_osmani_decision.a
+		ai_chance = {
+			value = 100
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_policy = tur_kanum_i_osmani
+					}
+				}
+				add_policy = policy:tur_kanum_i_osmani
+			}
+			custom_tooltip = {
+				text = tur_change_tur_kanum_policy_to_give_values_weighted_by_crown_power
+				set_variable = tur_modified_kanum_policy
+			}
+			add_stability = stability_mild_penalty
+		}
+	}
+	option = {
+		name = tur_kanum_i_osmani_decision.b
+		ai_chance = {
+			value = 0
+		}
+		effect = {
+			change_societal_value = {
+				type = outward_vs_inward
+				value = societal_value_minor_move_to_left
+			}
+			add_stability = stability_mild_bonus
+		}
+	}
+}

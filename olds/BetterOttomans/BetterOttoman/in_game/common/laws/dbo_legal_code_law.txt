@@ -13,10 +13,9 @@
 					has_any_active_disaster = no
 				}
 			}
-			global_max_control = control_weak_bonus
-			tax_income_efficiency = medium_tax_income_efficiency_bonus
-			global_estate_max_tax = 0.05
-			global_distance_from_capital_speed_propagation = 0.05
+			monthly_towards_inward = societal_value_tiny_monthly_move
+			tax_income_efficiency = large_tax_income_efficiency_bonus
+			global_distance_from_capital_speed_propagation = 0.2
 		}
 		country_modifier = {
 			potential_trigger = {

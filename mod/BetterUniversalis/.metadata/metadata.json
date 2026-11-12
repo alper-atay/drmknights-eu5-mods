@@ -1,0 +1,14 @@
+﻿{
+  "name": "Better Universalis",
+  "id": "drmknights.Universalis",
+  "version": "1.0",
+  "game_id": "eu5",
+  "picture": "thumbnail.png",
+  "supported_game_version": "1.4.*",
+  "short_description": "Better Universalis is a mod that enhances the gameplay experience of Europa Universalis V by introducing new features, mechanics, and improvements to the base game. It aims to provide players with a more immersive and engaging experience while maintaining the core essence of the game.",
+  "tags": [
+    "Gameplay"
+  ],
+  "relationships": [],
+  "game_custom_data": {}
+}

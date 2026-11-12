@@ -1,0 +1,29 @@
+﻿INJECT:legal_code_law = {
+	dbo_legal_code_kanunname_i_al_i_osman_policy = {
+		unique = yes
+		potential = {
+			has_or_had_tag = TUR
+		}
+		country_modifier = {
+			monthly_towards_inward = societal_value_tiny_monthly_move
+			tax_income_efficiency = medium_tax_income_efficiency_bonus
+			global_distance_from_capital_speed_propagation = 0.1
+			global_max_bureaucracy_slots = 1
+		}
+		country_modifier = {
+			potential_trigger = {
+				has_variable = dbo_legal_code_kanunname_i_al_i_osman_policy_developed
+			}
+			global_distance_from_capital_speed_propagation = 0.1
+			tax_income_efficiency = tiny_tax_income_efficiency_bonus
+			scale = {
+				value = 1
+				add = {
+					value = "estate_power(estate_type:crown_estate)"
+					multiply = 2
+					max = 1
+				}
+			}
+		}
+	}
+}

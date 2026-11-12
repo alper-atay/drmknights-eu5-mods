@@ -9,3 +9,7 @@
  dbo_crown_noble_marry_past: "[SCOPE.sCharacter('recipient').GetName] [SCOPE.sCharacter('recipient').GetHerselfHimself] evlendi!"
  dbo_crown_noble_marry_act_past: "[SCOPE.sCharacter('recipient').GetName], yerel bir hanımefendiyle evlendi!"
  dbo_crown_noble_marry_tt: "Bu karakter, yerel bir hanımefendiyle evlenecek."
+ dbo_legal_code_kanunname_i_al_i_osman_policy: "Kanunname-i Âl-i Osman"
+ dbo_legal_code_kanunname_i_al_i_osman_policy_desc: "Fatih Sultan Mehmed Han tarafından tedvin edilen bu kanunname, devletin bekâsı ve nizam-ı âlem için örfi hukuku yazılı hale getiren muazzam bir hukuk abidesidir. 'Kardeş Katli' meselesinden teşrifat usullerine, devlet görevlilerinin yetkilerinden ceza hukukuna kadar geniş bir yelpazeyi kapsayan bu yasalar, Devlet-i Aliyye'nin devlet yapısını merkeziyetçi bir mutlakiyet temeline oturtmuştur. Bu kanunlar, devletin sadece kılıçla değil, aynı zamanda sarsılmaz bir adalet ve nizam anlayışıyla yönetilmesini sağlayarak asırlar sürecek olan idari istikrarın kapılarını aralamıştır."
+ dbo_legal_code_kanunname_i_al_i_osman_policy_developed: "$dbo_legal_code_kanunname_i_al_i_osman_policy$ geliştirildi"
+ dbo_legal_code_kanunname_i_al_i_osman_policy_developed_tt: "Kanûnî Sultan Süleyman, devletin idari ve hukuki yapısını mükemmelleştirdi!"

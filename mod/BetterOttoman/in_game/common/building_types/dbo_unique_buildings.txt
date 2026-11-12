@@ -227,7 +227,7 @@ REPLACE:seljuk_mint = {
 	}
 	
 	unique_production_methods = {
-		seljuk_mint_maintenance  = {
+		dbo_seljuk_mint_maintenance  = {
 			icon_type = building_type
 			icon = seljuk_mint
 			paper = 0.1

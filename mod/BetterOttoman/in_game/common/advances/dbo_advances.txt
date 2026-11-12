@@ -1,0 +1,20 @@
+﻿dbo_kanunname_i_al_i_osman = {
+	age = age_3_discovery
+	icon = ira_islamized_persia
+	potential = {
+		has_or_had_tag = TUR
+	}
+	unlock_policy = dbo_legal_code_kanunname_i_al_i_osman_policy
+}
+
+REPLACE:lawcode_of_suleiman = {
+	age = age_4_reformation
+	icon = lawcode_of_suleiman
+	potential = {
+		has_or_had_tag = TUR
+	}
+	custom_tooltip = {
+		text = dbo_legal_code_kanunname_i_al_i_osman_policy_developed
+		set_variable = dbo_legal_code_kanunname_i_al_i_osman_policy_developed
+	}
+}
