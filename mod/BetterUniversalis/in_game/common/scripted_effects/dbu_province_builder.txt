@@ -1,0 +1,88 @@
+﻿dbu_pro = {
+	every_province_definition = {
+		limit = {
+			root = {
+				own_entire_province = PREV
+			}
+			any_location_in_province_definition = {
+				count = all
+				is_ownable = yes
+				location_rank = location_rank:rural_settlement
+			}
+		}
+		ordered_location_in_province_definition = {
+			limit = {
+				NOR = {
+					raw_material = goods:silver
+					raw_material = goods:goods_gold
+					raw_material = goods:iron
+					raw_material = goods:copper
+					raw_material = goods:tin
+					raw_material = goods:lead
+				}
+			}
+			max = 1
+			order_by = population
+			save_temporary_scope_as = new_province_capital
+			construct_location_rank = location_rank:town
+			construct_building = {
+				building_type = building_type:castle
+			}
+			province_definition = {
+				every_location_in_province_definition = {
+					limit = {
+						NOT = {
+							this = scope:new_province_capital
+						}
+					}
+					destroy_building = "building(building_type:stockade|owner)"
+					destroy_building = "building(building_type:castle|owner)"
+					destroy_building = "building(building_type:bastion|owner)"
+					destroy_building = "building(building_type:star_fort|owner)"
+					destroy_building = "building(building_type:fortress|owner)"
+				}
+			}
+		}
+	}
+	every_province_definition = {
+		limit = {
+			root = {
+				own_entire_province = PREV
+			}
+			any_location_in_province_definition = {
+				count > 1
+				is_ownable = yes
+				NOT = {
+					location_rank = location_rank:rural_settlement
+				}
+			}
+		}
+		every_location_in_province_definition = {
+			limit = {
+				is_province_capital = no
+				is_market_center = no
+				is_capital = no
+				NOT = {
+					location_rank = location_rank:rural_settlement
+				}
+			}
+			change_location_rank = location_rank:rural_settlement
+		}
+	}
+	every_province_definition = {
+		limit = {
+			root = {
+				own_entire_province = PREV
+			}
+			random_location_in_province_definition = {
+				limit = {
+					is_province_capital = yes
+					NOR = {
+						location_rank = location_rank:rural_settlement
+					}
+				}
+				change_location_rank = location_rank:rural_settlement
+			}
+		}
+	}
+}

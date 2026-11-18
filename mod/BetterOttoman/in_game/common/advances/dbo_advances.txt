@@ -1,10 +1,11 @@
-﻿dbo_kanunname_i_al_i_osman = {
+﻿dbo_kanunname_i_al_i_osman_advance = {
 	age = age_3_discovery
-	icon = ira_islamized_persia
+	icon = smooth_administration
 	potential = {
 		has_or_had_tag = TUR
 	}
 	unlock_policy = dbo_legal_code_kanunname_i_al_i_osman_policy
+	requires = autonomous_pashas
 }
 
 REPLACE:lawcode_of_suleiman = {

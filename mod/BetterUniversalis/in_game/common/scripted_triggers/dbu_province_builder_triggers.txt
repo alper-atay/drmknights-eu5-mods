@@ -1,0 +1,13 @@
+﻿dbu_province_builder_location_can_be_town = {
+	is_ownable = yes
+	location_rank = location_rank:rural_settlement
+	can_become_rank = town
+	NOR = {
+		raw_material = goods:silver
+		raw_material = goods:goods_gold
+		raw_material = goods:iron
+		raw_material = goods:copper
+		raw_material = goods:tin
+		raw_material = goods:lead
+	}
+}

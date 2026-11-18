@@ -1,0 +1,79 @@
+﻿dbu_province_builder_best_location = {
+	decision_category = other_decisions
+	potential = {
+		is_human = yes
+	}
+	allow = {
+		any_province_definition = {
+			root = {
+				own_entire_province = PREV
+			}
+			any_location_in_province_definition = {
+				count > 0
+				dbu_province_builder_location_can_be_town = yes
+			}
+		}
+		custom_tooltip = {
+			text = dbu_province_builder_best_location_tt
+			always = yes
+		}
+	}
+	ai_will_do = {
+		value = 0
+	}
+	option = {
+		name = dbu_province_builder_best_location.a
+		ai_chance = {
+			value = 100
+		}
+		effect = {
+			ordered_province_definition = {
+				limit = {
+					root = {
+						own_entire_province = PREV
+					}
+					any_location_in_province_definition = {
+						count = all
+						is_ownable = yes
+						location_rank = location_rank:rural_settlement
+					}
+					NOT = {
+						has_local_variable = dbu_province_builder_state
+					}
+				}
+				max = 10
+				order_by = population
+				set_local_variable = {
+					name = dbu_province_builder_state
+					value = 1
+				}
+				ordered_location_in_province_definition = {
+					limit = {
+						dbu_province_builder_location_can_be_town = yes
+					}
+					max = 1
+					order_by = population
+					save_temporary_scope_as = new_province_capital
+					construct_location_rank = location_rank:town
+					construct_building = {
+						building_type = building_type:castle
+					}
+					province_definition = {
+						every_location_in_province_definition = {
+							limit = {
+								NOT = {
+									this = scope:new_province_capital
+								}
+							}
+							destroy_building = "building(building_type:stockade|owner)"
+							destroy_building = "building(building_type:castle|owner)"
+							destroy_building = "building(building_type:bastion|owner)"
+							destroy_building = "building(building_type:star_fort|owner)"
+							destroy_building = "building(building_type:fortress|owner)"
+						}
+					}
+				}
+			}
+		}
+	}
+}
